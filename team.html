@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Profile - Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .team-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 3rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .team-stats-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #667eea;
+    }
+    
+    .form-badge {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        margin: 0 3px;
+        font-size: 1.2rem;
+    }
+    
+    .form-W {
+        background: #10b981;
+        color: white;
+    }
+    
+    .form-D {
+        background: #f59e0b;
+        color: white;
+    }
+    
+    .form-L {
+        background: #ef4444;
+        color: white;
+    }
+    
+    .match-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        transition: 0.3s;
+    }
+    
+    .match-row:hover {
+        background: #f8f9fa;
+    }
+    
+    .team-name {
+        flex: 2;
+        font-weight: 500;
+    }
+    
+    .team-name.highlight {
+        font-weight: 800;
+        color: #667eea;
+    }
+    
+    .score {
+        flex: 1;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    .score-win {
+        color: #10b981;
+    }
+    
+    .score-loss {
+        color: #ef4444;
+    }
+    
+    .score-draw {
+        color: #f59e0b;
+    }
+    
+    .league-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.2);
+        padding: 0.3rem 1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        margin-top: 0.5rem;
+    }
+    
+    .back-button {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        background: #667eea;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .back-button:hover {
+        background: #5a67d8;
+        color: white;
+        transform: translateX(-5px);
+    }
+    
+    .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .match-date {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin-top: 0.25rem;
+    }
+    
+    @media (max-width: 768px) {
+        .stat-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .match-row {
+            flex-direction: column;
+            text-align: center;
+            gap: 0.5rem;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+	<!-- Replace your current logo code with this -->
+<div class="logo-wrapper">
+    <a href="index.html" class="logo-link">
+        <div class="logo-icon">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea"/>
+                        <stop offset="100%" style="stop-color:#764ba2"/>
+                    </linearGradient>
+                </defs>
+                <!-- Shield background -->
+                <path d="M50 5 L85 20 L85 50 C85 75 50 95 50 95 C50 95 15 75 15 50 L15 20 L50 5Z" fill="url(#logoGrad)" stroke="white" stroke-width="2"/>
+                <!-- Football/soccer ball pattern -->
+                <circle cx="50" cy="45" r="15" fill="white" opacity="0.9"/>
+                <polygon points="50,30 55,40 65,40 58,47 60,57 50,52 40,57 42,47 35,40 45,40" fill="url(#logoGrad)"/>
+                <!-- Star -->
+                <polygon points="50,70 52,76 58,76 53,80 55,86 50,82 45,86 47,80 42,76 48,76" fill="white"/>
+            </svg>
+        </div>
+        <div class="logo-text">
+            <span class="logo-main">PUNTERS</span>
+            <span class="logo-sub">LEAGUE</span>
+        </div>
+    </a>
+</div>
+        <a href="index.html" class="nav-branding">
+            <i class="fas fa-futbol"></i> Punters League
+        </a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link" data-league="all">Predictions</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Predictions
+    </a>
+    
+    <div id="teamContent">
+        <div class="loading text-center py-5">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+            <p class="mt-3">Loading team data...</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<!-- Load all scripts in correct order -->
+<script src="js/data.js"></script>
+<script src="js/matchesData.js"></script>
+<script>
+// ==================== TEAM PAGE LOGIC ====================
+
+// Get team name from URL parameter
+function getTeamNameFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('team');
+}
+
+// Clean name for comparison
+function cleanName(name) {
+    return name.toLowerCase().trim();
+}
+
+// Get team stats from league data
+function getTeamStats(teamName, leaguesData) {
+    for (const [leagueName, league] of Object.entries(leaguesData)) {
+        const team = league.teams.find(t => cleanName(t.team) === cleanName(teamName));
+        
+        if (team) {
+            const played = team.MP || 0;
+            const wins = team.MW || 0;
+            const draws = team.MD || 0;
+            const losses = played - wins - draws;
+            const totalGF = team.GF || 0;
+            const totalGA = team.GA || 0;
+            
+            return {
+                found: true,
+                leagueName,
+                leagueLogo: league.logo,
+                isBasketball: league.isBasketball || false,
+                played,
+                wins,
+                draws,
+                losses,
+                totalGF,
+                totalGA,
+                goalDifference: totalGF - totalGA,
+                winRate: played > 0 ? ((wins / played) * 100).toFixed(1) : 0,
+                teamLogo: team.logo || null,
+                avgGF: played > 0 ? (totalGF / played).toFixed(1) : 0,
+                avgGA: played > 0 ? (totalGA / played).toFixed(1) : 0,
+                points: (wins * 3) + draws
+            };
+        }
+    }
+    return { found: false };
+}
+
+// Get recent matches from matchesData
+function getRecentMatches(teamName, matchesData) {
+    const matches = [];
+    
+    for (const [leagueName, leagueMatches] of Object.entries(matchesData)) {
+        for (const match of leagueMatches) {
+            if (cleanName(match.home) === cleanName(teamName) || 
+                cleanName(match.away) === cleanName(teamName)) {
+                matches.push({
+                    ...match,
+                    league: leagueName,
+                    isHome: cleanName(match.home) === cleanName(teamName)
+                });
+            }
+        }
+    }
+    
+    // Sort by date (newest first) if date exists
+    matches.sort((a, b) => {
+        if (a.date && b.date) return new Date(b.date) - new Date(a.date);
+        return 0;
+    });
+    
+    return matches.slice(0, 10);
+}
+
+// Calculate form guide from recent matches
+function calculateForm(teamName, recentMatches) {
+    const form = [];
+    
+    for (const match of recentMatches.slice(0, 5)) {
+        const isHome = cleanName(match.home) === cleanName(teamName);
+        let result = '';
+        
+        if (isHome) {
+            if (match.home_score > match.away_score) result = 'W';
+            else if (match.home_score === match.away_score) result = 'D';
+            else result = 'L';
+        } else {
+            if (match.away_score > match.home_score) result = 'W';
+            else if (match.away_score === match.home_score) result = 'D';
+            else result = 'L';
+        }
+        form.push(result);
+    }
+    
+    return form;
+}
+
+// Calculate head-to-head record
+function getHeadToHead(teamName, recentMatches) {
+    const opponents = new Map();
+    
+    for (const match of recentMatches) {
+        let opponent = '';
+        let result = '';
+        const isHome = cleanName(match.home) === cleanName(teamName);
+        
+        if (isHome) {
+            opponent = match.away;
+            if (match.home_score > match.away_score) result = 'W';
+            else if (match.home_score === match.away_score) result = 'D';
+            else result = 'L';
+        } else {
+            opponent = match.home;
+            if (match.away_score > match.home_score) result = 'W';
+            else if (match.away_score === match.home_score) result = 'D';
+            else result = 'L';
+        }
+        
+        if (!opponents.has(opponent)) {
+            opponents.set(opponent, { wins: 0, draws: 0, losses: 0 });
+        }
+        
+        const stats = opponents.get(opponent);
+        if (result === 'W') stats.wins++;
+        else if (result === 'D') stats.draws++;
+        else stats.losses++;
+    }
+    
+    return Array.from(opponents.entries())
+        .map(([name, stats]) => ({ name, ...stats, total: stats.wins + stats.draws + stats.losses }))
+        .sort((a, b) => b.total - a.total)
+        .slice(0, 5);
+}
+
+// Get upcoming fixtures
+function getUpcomingFixtures(teamName, leaguesData) {
+    const fixtures = [];
+    
+    for (const [leagueName, league] of Object.entries(leaguesData)) {
+        if (!league.fixtures) continue;
+        
+        for (const fixture of league.fixtures) {
+            const [home, away] = fixture;
+            
+            if (cleanName(home) === cleanName(teamName) || cleanName(away) === cleanName(teamName)) {
+                fixtures.push({
+                    league: leagueName,
+                    home: home,
+                    away: away,
+                    isHome: cleanName(home) === cleanName(teamName)
+                });
+            }
+        }
+    }
+    
+    return fixtures.slice(0, 8);
+}
+
+// Render the team page
+function renderTeamPage() {
+    const teamName = getTeamNameFromURL();
+    const contentDiv = document.getElementById('teamContent');
+    
+    if (!teamName) {
+        contentDiv.innerHTML = `
+            <div class="alert alert-danger text-center">
+                <i class="fas fa-exclamation-triangle"></i> No team selected.
+            </div>
+        `;
+        return;
+    }
+    
+    if (typeof leaguesData === 'undefined') {
+        contentDiv.innerHTML = `
+            <div class="alert alert-danger text-center">
+                <i class="fas fa-exclamation-triangle"></i> League data not loaded. Please refresh the page.
+            </div>
+        `;
+        return;
+    }
+    
+    if (typeof matchesData === 'undefined') {
+        contentDiv.innerHTML = `
+            <div class="alert alert-danger text-center">
+                <i class="fas fa-exclamation-triangle"></i> Match data not loaded. Please refresh the page.
+            </div>
+        `;
+        return;
+    }
+    
+    const stats = getTeamStats(teamName, leaguesData);
+    const recentMatches = getRecentMatches(teamName, matchesData);
+    const form = calculateForm(teamName, recentMatches);
+    const headToHead = getHeadToHead(teamName, recentMatches);
+    const upcomingFixtures = getUpcomingFixtures(teamName, leaguesData);
+    
+    if (!stats.found && recentMatches.length === 0) {
+        contentDiv.innerHTML = `
+            <div class="alert alert-warning text-center">
+                <i class="fas fa-search"></i> Team "${teamName}" not found in our database.
+            </div>
+        `;
+        return;
+    }
+    
+    // Helper to get score color class
+    function getScoreClass(match, teamName) {
+        const isHome = cleanName(match.home) === cleanName(teamName);
+        if (isHome) {
+            if (match.home_score > match.away_score) return 'score-win';
+            if (match.home_score === match.away_score) return 'score-draw';
+            return 'score-loss';
+        } else {
+            if (match.away_score > match.home_score) return 'score-win';
+            if (match.away_score === match.home_score) return 'score-draw';
+            return 'score-loss';
+        }
+    }
+    
+    // Build the HTML
+    let html = `
+        <div class="team-hero">
+            ${stats.teamLogo ? `<img src="images/logos/clubs/${stats.teamLogo}" style="height: 80px; margin-bottom: 1rem;" onerror="this.style.display='none'">` : '<i class="fas fa-shield-alt fa-4x"></i>'}
+            <h1>${escapeHtml(teamName)}</h1>
+            ${stats.found ? `<div class="league-badge"><i class="fas ${stats.isBasketball ? 'fa-basketball' : 'fa-futbol'}"></i> ${stats.leagueName}</div>` : ''}
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Stats Card -->
+                <div class="team-stats-card">
+                    <h3><i class="fas fa-chart-line"></i> Team Statistics</h3>
+                    ${stats.found ? `
+                        <div class="stat-grid mt-3">
+                            <div>
+                                <div class="stat-number">${stats.played}</div>
+                                <small>Matches</small>
+                            </div>
+                            <div>
+                                <div class="stat-number" style="color: #10b981;">${stats.wins}</div>
+                                <small>Wins</small>
+                            </div>
+                            <div>
+                                <div class="stat-number" style="color: #f59e0b;">${stats.draws}</div>
+                                <small>Draws</small>
+                            </div>
+                            <div>
+                                <div class="stat-number" style="color: #ef4444;">${stats.losses}</div>
+                                <small>Losses</small>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="stat-grid">
+                            <div>
+                                <div class="stat-number">${stats.totalGF}</div>
+                                <small>Goals For</small>
+                            </div>
+                            <div>
+                                <div class="stat-number">${stats.totalGA}</div>
+                                <small>Goals Against</small>
+                            </div>
+                            <div>
+                                <div class="stat-number ${stats.goalDifference >= 0 ? 'text-success' : 'text-danger'}">${stats.goalDifference >= 0 ? '+' : ''}${stats.goalDifference}</div>
+                                <small>GD</small>
+                            </div>
+                            <div>
+                                <div class="stat-number">${stats.points}</div>
+                                <small>Points</small>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <small>Win Rate: <strong>${stats.winRate}%</strong></small>
+                            <div class="progress mt-1" style="height: 5px;">
+                                <div class="progress-bar bg-success" style="width: ${stats.winRate}%"></div>
+                            </div>
+                        </div>
+                    ` : '<p class="text-muted text-center">Season stats not available</p>'}
+                </div>
+                
+                <!-- Form Guide Card -->
+                ${form.length > 0 ? `
+                <div class="team-stats-card">
+                    <h3><i class="fas fa-chart-simple"></i> Recent Form</h3>
+                    <div class="text-center mt-3">
+                        ${form.map(f => `<span class="form-badge form-${f}">${f}</span>`).join('')}
+                    </div>
+                    <p class="text-muted text-center mt-3 small">Last ${form.length} matches</p>
+                </div>
+                ` : ''}
+                
+                <!-- Advanced Stats -->
+                ${stats.found ? `
+                <div class="team-stats-card">
+                    <h3><i class="fas fa-calculator"></i> Advanced Stats</h3>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Goals per game</span>
+                            <strong>${stats.avgGF}</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Conceded per game</span>
+                            <strong>${stats.avgGA}</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Points per game</span>
+                            <strong>${(stats.points / stats.played).toFixed(2)}</strong>
+                        </div>
+                    </div>
+                </div>
+                ` : ''}
+                
+                <!-- Head to Head Card -->
+                ${headToHead.length > 0 ? `
+                <div class="team-stats-card">
+                    <h3><i class="fas fa-handshake"></i> Head to Head Record</h3>
+                    ${headToHead.map(h2h => `
+                        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                            <span><strong>${escapeHtml(h2h.name)}</strong></span>
+                            <div>
+                                <span class="text-success">W${h2h.wins}</span>
+                                <span class="text-warning mx-1">D${h2h.draws}</span>
+                                <span class="text-danger">L${h2h.losses}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+            </div>
+            
+            <div class="col-md-8">
+                <!-- Recent Matches Card -->
+                <div class="team-stats-card">
+                    <h3><i class="fas fa-history"></i> Recent Matches</h3>
+                    ${recentMatches.length > 0 ? `
+                        <div class="mt-3">
+                            ${recentMatches.map(match => `
+                                <div class="match-row">
+                                    <span class="team-name ${cleanName(match.home) === cleanName(teamName) ? 'highlight' : ''}">
+                                        ${escapeHtml(match.home)}
+                                    </span>
+                                    <span class="score ${getScoreClass(match, teamName)}">
+                                        ${match.home_score} - ${match.away_score}
+                                    </span>
+                                    <span class="team-name ${cleanName(match.away) === cleanName(teamName) ? 'highlight' : ''}">
+                                        ${escapeHtml(match.away)}
+                                    </span>
+                                </div>
+                                ${match.date ? `<div class="match-date text-center">${match.date}</div>` : ''}
+                            `).join('')}
+                        </div>
+                    ` : `
+                        <p class="text-center text-muted py-4">
+                            <i class="fas fa-info-circle"></i> No recent matches recorded.
+                        </p>
+                    `}
+                </div>
+                
+                <!-- Upcoming Fixtures Card -->
+                <div class="team-stats-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Upcoming Fixtures</h3>
+                    ${upcomingFixtures.length > 0 ? `
+                        <div class="mt-3">
+                            ${upcomingFixtures.map(fixture => `
+                                <div class="match-row">
+                                    <span class="team-name ${fixture.isHome ? 'highlight' : ''}">
+                                        ${escapeHtml(fixture.home)}
+                                    </span>
+                                    <span class="score">
+                                        <i class="fas fa-hourglass-half"></i> TBD
+                                    </span>
+                                    <span class="team-name ${!fixture.isHome ? 'highlight' : ''}">
+                                        ${escapeHtml(fixture.away)}
+                                    </span>
+                                </div>
+                                <div class="match-date text-center">${fixture.league}</div>
+                            `).join('')}
+                        </div>
+                    ` : `
+                        <p class="text-center text-muted py-4">No upcoming fixtures found.</p>
+                    `}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    contentDiv.innerHTML = html;
+}
+
+// Escape HTML to prevent XSS
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Hamburger menu toggle
+document.querySelector('.hamburger')?.addEventListener('click', () => {
+    document.querySelector('.nav-menu')?.classList.toggle('active');
+});
+
+// Load the page when ready
+document.addEventListener('DOMContentLoaded', renderTeamPage);
+</script>
+
+</body>
+</html>

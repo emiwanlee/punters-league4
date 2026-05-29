@@ -1,0 +1,461 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* ========== NAVBAR ========== */
+/* Logo Styles */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.02);
+}
+
+.logo-icon {
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, #ffd700 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+.logo-sub {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffd700;
+    letter-spacing: 2px;
+}
+
+/* Responsive logo */
+@media (max-width: 768px) {
+    .logo-main {
+        font-size: 1rem;
+    }
+    .logo-sub {
+        font-size: 0.6rem;
+    }
+    .logo-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-branding:hover {
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: #ffd700;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: 0.3s;
+}
+
+/* ========== MAIN CONTAINER ========== */
+.main-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ========== TIME WIDGET ========== */
+.time-widget {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+/* ========== LEAGUE SELECTOR ========== */
+.league-selector {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.league-btn {
+    margin: 0.3rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.league-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+}
+
+.league-btn.active {
+    background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+    color: #000;
+}
+
+/* ========== ADS LAYOUT ========== */
+.ad-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 2rem;
+}
+
+.ad-space {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+/* ========== LEAGUE HEADER ========== */
+.league-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.league-logo {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+/* ========== MATCH CARDS ========== */
+.match-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.match-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.team {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    background: #333;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin: 0 1rem;
+}
+
+.power-badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* ========== PREDICTION BOX ========== */
+.prediction-box {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.prediction-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-size: 0.9rem;
+}
+
+.prediction-item i {
+    margin-right: 0.5rem;
+    color: #667eea;
+}
+
+/* ========== LOADING ========== */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: white;
+}
+
+.loading i {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background: rgba(0,0,0,0.95);
+    color: white;
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(0,0,0,0.95);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+    
+    .ad-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .ad-space {
+        display: none;
+    }
+    
+    .team-row {
+        flex-direction: column;
+    }
+    
+    .vs {
+        margin: 1rem 0;
+    }
+    
+    .team {
+        width: 100%;
+    }
+}
+
+/* Add to css/style.css */
+.team-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.team-link:hover {
+    color: #667eea;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.team:hover .team-link {
+    color: #667eea;
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        padding: 1rem;
+    }
+    
+    .league-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .prediction-item {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    .team-name {
+        font-size: 0.9rem;
+    }
+}
