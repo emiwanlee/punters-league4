@@ -2,6 +2,7 @@
 // ONLY data declarations - NO functions or thresholds here
 
 const leaguesData = {
+/*
     "English Premier League": {
         id: "epl",
         logo: "epl.png",
@@ -259,7 +260,7 @@ const leaguesData = {
         ["Chaves", "Feirense"]
     ]
 },
-
+*/
 "MLS Eastern Conference": {
     id: "mls-east",
     logo: "mls/mlslogo.jpg",
@@ -281,21 +282,21 @@ const leaguesData = {
         { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
     ],
     fixtures: [
-        ["St. Louis", "Austin"],
-        ["Minnesota", "Real Salt Lake"],
-        ["Real Salt Lake", "Portland"],
-        ["Cincinnati", "Orlando"],
-        ["Charlotte", "New England"],
-        ["DC United", "Montreal"],
-        ["Chicago", "Toronto"],
-        ["Nashville", "New York City"],
-        ["Sporting KC", "NY Red Bulls"],
-        ["San Diego", "Vancouver"],
-        ["Colorado", "Dallas"],
-        ["Portland ", "San Jose"],
-        ["Columbus", "Atlanta"],
-        ["Inter Miami", "Philadelphia"],
-        ["LAFC", "Seattle"]
+        ["Montreal", "Toronto"],
+        ["Chicago", "Vancouver"],
+        ["Seattle", "Portland"],
+        ["Nashville", "Atlanta"],
+        ["LA Galaxy", "LAFC"],
+        ["Cincinnati", "Vancouver"],
+        ["Columbus", "New York City"],
+        ["Inter Miami", "Chicago"],
+        ["Philadelphia", "NY Red Bulls"],
+        ["New England", "Toronto"],
+        ["Charlotte", "Atlanta"],
+       // ["Portland ", "San Jose"],
+       // ["Columbus", "Atlanta"],
+       // ["Inter Miami", "Philadelphia"],
+        //["LAFC", "Seattle"]
     ]
 },
 
@@ -439,16 +440,16 @@ const leaguesData = {
         { team: "Niigata", MP: 38, MW: 4, MD: 12, GF: 36, GA: 67, logo: "japan/niigatalogologo.png" }
     ],
     fixtures: [
-        ["Okayama", "Sanfrecce"],
-        ["Kyoto", "Shimizu"],
-        ["Yokohama FM", "Mito"],
-        ["Tokyo", "Kawasaki"],
-        ["Gamba Osaka", "Vissel Kobe"],
-        ["Urawa Reds", "JEF"],
-        ["Tokyo Verdy", "Kashiwa"],
-        ["Cerezo Osaka", "Avispa Osaka"],
-        ["Kashima Antlers", "Machida"],
-        ["Nagasaki", "Nagoya"]
+        ["Sanfreece", "Kawasaki"],
+        ["Nagoya", "Machida"],
+        ["Vissel Kobe", "Kashima Antlers"],
+        ["Cerezo Osaka", "FC Tokyo"],
+        //["Gamba Osaka", "Vissel Kobe"],
+        //["Urawa Reds", "JEF"],
+       // ["Tokyo Verdy", "Kashiwa"],
+       // ["Cerezo Osaka", "Avispa Osaka"],
+       // ["Kashima Antlers", "Machida"],
+       // ["Nagasaki", "Nagoya"]
     ]
 },
 
