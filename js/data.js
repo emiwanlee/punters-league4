@@ -561,4 +561,45 @@ const leaguesData = {
     }
 };
 
+// ==================== MATCH RESULTS DATA ====================
+// Add this at the end of data.js
+
+const matchesData = {
+    "English Premier League": [
+        { home: "Liverpool", away: "Arsenal", home_score: 2, away_score: 1 },
+        { home: "Manchester City", away: "Chelsea", home_score: 3, away_score: 0 },
+        { home: "Manchester United", away: "Crystal Palace", home_score: 2, away_score: 1 },
+        { home: "Brighton", away: "Nottingham", home_score: 1, away_score: 1 },
+        { home: "Fulham", away: "Tottenham", home_score: 2, away_score: 1 },
+        { home: "Arsenal", away: "Chelsea", home_score: 2, away_score: 1 },
+        { home: "Bournemouth", away: "Brentford", home_score: 0, away_score: 0 },
+        { home: "Everton", away: "Burnley", home_score: 2, away_score: 0 },
+        { home: "Leeds", away: "Sunderland", home_score: 0, away_score: 1 },
+        { home: "Wolves", away: "Liverpool", home_score: 2, away_score: 1 },
+        { home: "Brighton", away: "Arsenal", home_score: 0, away_score: 1 },
+        { home: "Fulham", away: "West Ham", home_score: 0, away_score: 1 },
+        { home: "Manchester City", away: "Nottingham", home_score: 2, away_score: 2 },
+        { home: "Aston Villa", away: "Chelsea", home_score: 1, away_score: 4 },
+        { home: "Newcastle", away: "Manchester United", home_score: 2, away_score: 1 },
+        { home: "Tottenham", away: "Crystal Palace", home_score: 1, away_score: 3 }
+    ],
+    "Spanish La Liga": [
+        { home: "Barcelona", away: "Real Madrid", home_score: 2, away_score: 2 },
+        { home: "Atletico Madrid", away: "Real Sociedad", home_score: 3, away_score: 2 },
+        { home: "Osasuna", away: "Mallorca", home_score: 2, away_score: 2 },
+        { home: "Levante", away: "Girona", home_score: 1, away_score: 1 },
+        { home: "Athletic Club", away: "Barcelona", home_score: 0, away_score: 1 }
+    ],
+    "Italian Serie A": [
+        { home: "Sassuolo", away: "Verona", home_score: 3, away_score: 0 },
+        { home: "Juventus", away: "Como", home_score: 0, away_score: 2 },
+        { home: "Leece", away: "Inter", home_score: 0, away_score: 2 },
+        { home: "Cagliari", away: "Lazio", home_score: 0, away_score: 0 },
+        { home: "Genoa", away: "Torino", home_score: 3, away_score: 0 },
+        { home: "Atalanta", away: "Napoli", home_score: 2, away_score: 1 }
+    ]
+};
+
+console.log("✅ Matches data loaded from data.js");
+
 console.log("✅ Data loaded successfully!", Object.keys(leaguesData).length, "leagues");
