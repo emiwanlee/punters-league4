@@ -513,8 +513,73 @@ const matchesData = {
         { home: "Kyoto", away: "Cerezo Osaka", home_score: 1, away_score: 2 },
         { home: "Shimizu", away: "Okayama", home_score: 1, away_score: 1 },
         { home: "Kashiwa", away: "Machida", home_score: 0, away_score: 1 },
-        { home: "Nagoya", away: "Vissel Kobe", home_score: 0, away_score: 3 }
-    ]
+        { home: "Nagoya", away: "Vissel Kobe", home_score: 0, away_score: 3 },
+		{ home: "Mito", away: "FC Tokyo", home_score: 1, away_score: 1 },
+		{ home: "Kashima Antlers", away: "Kawasaki", home_score: 1, away_score: 0 },
+		{ home: "Nagasaki", away: "Avispa", home_score: 1, away_score: 0 },
+		{ home: "Cerezo Osaka", away: "Okayama", home_score: 1, away_score: 2 },
+		{ home: "Vissel Kobe", away: "Gamba Osaka", home_score: 2, away_score: 2 },
+		{ home: "Mito", away: "Yokohama FM", home_score: 1, away_score: 0 },
+		{ home: "Avispa", away: "Shimizu", home_score: 1, away_score: 1 },
+		{ home: "Nagoya", away: "Sanfreece", home_score: 2, away_score: 1 },
+		{ home: "JEF", away: "FC Tokyo", home_score: 1, away_score: 2 },
+		{ home: "Nagasaki", away: "Kyoto", home_score: 1, away_score: 2 },
+		{ home: "Tokyo Verdy", away: "Kawasaki", home_score: 0, away_score: 2 },
+		{ home: "Machida", away: "Kashima Antlers", home_score: 0, away_score: 3 },
+		{ home: "Urawa Reds", away: "Kashiwa", home_score: 1, away_score: 1 },
+		{ home: "Okayama", away: "Nagasaki", home_score: 0, away_score: 1 },
+		{ home: "Avispa", away: "Gamba Osaka", home_score: 2, away_score: 2 },
+		{ home: "Shimizu", away: "Sanfreece", home_score: 3, away_score: 1 },
+		{ home: "Kyoto", away: "Nagoya", home_score: 1, away_score: 1 },
+		{ home: "Tokyo Verdy", away: "FC Tokyo", home_score: 0, away_score: 0 },
+		{ home: "Cerezo Osaka", away: "Vissel Kobe", home_score: 1, away_score: 1 },
+		{ home: "Kashima Antlers", away: "JEF", home_score: 2, away_score: 1 },
+		{ home: "Kawasaki", away: "Yokohama FM", home_score: 0, away_score: 5 },
+		{ home: "Kashiwa", away: "Mito", home_score: 3, away_score: 0 },
+		{ home: "Urawa Reds", away: "Machida", home_score: 1, away_score: 2 },
+		{ home: "Vissel Kobe", away: "Sanfreece", home_score: 2, away_score: 1 },
+		{ home: "Machida", away: "Kawasaki", home_score: 1, away_score: 1 },
+		{ home: "Machida", away: "FC Tokyo", home_score: 2, away_score: 0 },
+		{ home: "Vissel Kobe", away: "Shimizu", home_score: 2, away_score: 0 },
+		{ home: "JEF", away: "Tokyo Verdy", home_score: 3, away_score: 2 },
+		{ home: "Mito", away: "Kashima Antlers", home_score: 1, away_score: 1 },{ home: "Nagoya", away: "Cerezo Osaka", home_score: 3, away_score: 0 },
+		{ home: "Gamba Osaka", away: "Kyoto", home_score: 2, away_score: 0 },
+		{ home: "Nagasaki", away: "Shimizu", home_score: 0, away_score: 3 },
+		{ home: "Okayama", away: "Vissel Kobe", home_score: 1, away_score: 4 },
+		{ home: "Kashiwa", away: "Yokohama FM", home_score: 3, away_score: 0 },
+		{ home: "Kawasaki", away: "Urawa Reds", home_score: 3, away_score: 2 },
+    ],
+	
+	"Chilean Primera División": [
+    // Matchday 12
+    { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
+    { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
+    { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
+    { home: "Deportes Limache", away: "Universidad Católica", home_score: 0, away_score: 2 },
+    { home: "Huachipato", away: "Unión La Calera", home_score: 3, away_score: 1 },
+    { home: "Cobresal", away: "Universidad de Chile", home_score: 1, away_score: 0 },
+    { home: "Colo-Colo", away: "Ñublense", home_score: 6, away_score: 2 },
+    { home: "Concepción", away: "Everton", home_score: 0, away_score: 2 },
+    
+    // Matchday 13
+    { home: "Everton", away: "Coquimbo", home_score: 1, away_score: 1 },
+    { home: "Audax Italiano", away: "Cobresal", home_score: 2, away_score: 1 },
+    { home: "Ñublense", away: "Universidad de Concepción", home_score: 2, away_score: 2 },
+    { home: "Unión La Calera", away: "Palestino", home_score: 1, away_score: 2 },
+    { home: "Concepción", away: "Huachipato", home_score: 2, away_score: 0 },
+    { home: "La Serena", away: "Deportes Limache", home_score: 4, away_score: 1 },
+    { home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
+    
+    // Matchday 14
+    { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
+    { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
+    { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 }
+],
+	"NBA": [
+    { home: "LA Lakers", away: "Boston Celtics", home_score: 112, away_score: 108 },
+    { home: "Golden State Warriors", away: "Denver Nuggets", home_score: 115, away_score: 120 },
+    // home_score and away_score represent POINTS, not goals
+]
 };
 
 console.log("âœ… Complete matches data loaded successfully!");

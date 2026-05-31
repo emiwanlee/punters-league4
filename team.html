@@ -321,37 +321,71 @@ function cleanName(name) {
     return name.toLowerCase().trim();
 }
 
-// Get team stats from league data
+// Replace your getTeamStats function with this enhanced version:
+
 function getTeamStats(teamName, leaguesData) {
     for (const [leagueName, league] of Object.entries(leaguesData)) {
         const team = league.teams.find(t => cleanName(t.team) === cleanName(teamName));
         
         if (team) {
-            const played = team.MP || 0;
-            const wins = team.MW || 0;
-            const draws = team.MD || 0;
-            const losses = played - wins - draws;
-            const totalGF = team.GF || 0;
-            const totalGA = team.GA || 0;
+            // Check if it's basketball (has points_for instead of GF)
+            const isBasketball = league.isBasketball || (team.points_for !== undefined);
             
-            return {
-                found: true,
-                leagueName,
-                leagueLogo: league.logo,
-                isBasketball: league.isBasketball || false,
-                played,
-                wins,
-                draws,
-                losses,
-                totalGF,
-                totalGA,
-                goalDifference: totalGF - totalGA,
-                winRate: played > 0 ? ((wins / played) * 100).toFixed(1) : 0,
-                teamLogo: team.logo || null,
-                avgGF: played > 0 ? (totalGF / played).toFixed(1) : 0,
-                avgGA: played > 0 ? (totalGA / played).toFixed(1) : 0,
-                points: (wins * 3) + draws
-            };
+            if (isBasketball) {
+                // Basketball stats
+                const played = team.GP || 0;
+                const wins = team.GW || 0;
+                const draws = 0; // No draws in basketball
+                const losses = team.GL || (played - wins);
+                const totalGF = team.points_for || 0;
+                const totalGA = team.points_against || 0;
+                
+                return {
+                    found: true,
+                    leagueName,
+                    leagueLogo: league.logo,
+                    isBasketball: true,
+                    played,
+                    wins,
+                    draws,
+                    losses,
+                    totalGF,
+                    totalGA,
+                    goalDifference: totalGF - totalGA,
+                    winRate: played > 0 ? ((wins / played) * 100).toFixed(1) : 0,
+                    teamLogo: team.logo || null,
+                    avgGF: played > 0 ? (totalGF / played).toFixed(1) : 0,
+                    avgGA: played > 0 ? (totalGA / played).toFixed(1) : 0,
+                    points: wins * 2 // Basketball uses 2 points per win
+                };
+            } else {
+                // Football stats (existing code)
+                const played = team.MP || 0;
+                const wins = team.MW || 0;
+                const draws = team.MD || 0;
+                const losses = played - wins - draws;
+                const totalGF = team.GF || 0;
+                const totalGA = team.GA || 0;
+                
+                return {
+                    found: true,
+                    leagueName,
+                    leagueLogo: league.logo,
+                    isBasketball: false,
+                    played,
+                    wins,
+                    draws,
+                    losses,
+                    totalGF,
+                    totalGA,
+                    goalDifference: totalGF - totalGA,
+                    winRate: played > 0 ? ((wins / played) * 100).toFixed(1) : 0,
+                    teamLogo: team.logo || null,
+                    avgGF: played > 0 ? (totalGF / played).toFixed(1) : 0,
+                    avgGA: played > 0 ? (totalGA / played).toFixed(1) : 0,
+                    points: (wins * 3) + draws
+                };
+            }
         }
     }
     return { found: false };

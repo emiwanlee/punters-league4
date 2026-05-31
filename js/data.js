@@ -2,265 +2,7 @@
 // ONLY data declarations - NO functions or thresholds here
 
 const leaguesData = {
-/*
-    "English Premier League": {
-        id: "epl",
-        logo: "epl.png",
-        isBasketball: false,
-        teams: [
-            { team: "Liverpool", MP: 38, MW: 25, MD: 9, GF: 86, GA: 41 },
-            { team: "Arsenal", MP: 38, MW: 20, MD: 14, GF: 69, GA: 34 },
-            { team: "Manchester City", MP: 38, MW: 21, MD: 8, GF: 72, GA: 44 },
-            { team: "Chelsea", MP: 38, MW: 20, MD: 9, GF: 64, GA: 43 },
-            { team: "Newcastle", MP: 38, MW: 20, MD: 6, GF: 68, GA: 47 },
-            { team: "Aston Villa", MP: 38, MW: 19, MD: 9, GF: 58, GA: 51 },
-            { team: "Brighton", MP: 38, MW: 16, MD: 13, GF: 66, GA: 59 },
-            { team: "Nottingham", MP: 38, MW: 19, MD: 8, GF: 58, GA: 46 },
-            { team: "Bournemouth", MP: 38, MW: 15, MD: 11, GF: 58, GA: 46 },
-            { team: "Brentford", MP: 38, MW: 16, MD: 8, GF: 66, GA: 57 },
-            { team: "Fulham", MP: 38, MW: 15, MD: 9, GF: 54, GA: 54 },
-            { team: "Crystal Palace", MP: 38, MW: 13, MD: 14, GF: 51, GA: 51 },
-            { team: "Everton", MP: 38, MW: 11, MD: 5, GF: 42, GA: 44 },
-            { team: "West Ham", MP: 38, MW: 11, MD: 10, GF: 46, GA: 62 },
-            { team: "Manchester United", MP: 38, MW: 11, MD: 9, GF: 44, GA: 54 },
-            { team: "Wolves", MP: 38, MW: 12, MD: 6, GF: 54, GA: 69 },
-            { team: "Tottenham", MP: 38, MW: 11, MD: 5, GF: 64, GA: 65 },
-            { team: "Leicester", MP: 38, MW: 6, MD: 7, GF: 33, GA: 80 },
-            { team: "Ipswich", MP: 38, MW: 4, MD: 10, GF: 36, GA: 82 },
-            { team: "Southampton", MP: 38, MW: 2, MD: 6, GF: 26, GA: 86 }
-        ],
-        fixtures: [
-            ["Manchester City", "Aston Villa"],
-            ["Brighton", "Manchester United"],
-            ["Fulham", "Newcastle"],
-            ["Tottenham", "Everton"],
-            ["Liverpool", "Brentford"],
-            ["Nottingham", "Bournemouth"],
-            ["West Ham", "Leeds"],
-            ["Crystal Palace", "Arsenal"]
-        ]
-    },
 
-    "Spanish La Liga": {
-        id: "laliga",
-        logo: "laliga.png",
-        isBasketball: false,
-        teams: [
-            { team: "Barcelona", MP: 38, MW: 28, MD: 4, GF: 102, GA: 39 },
-            { team: "Real Madrid", MP: 38, MW: 26, MD: 6, GF: 78, GA: 38 },
-            { team: "Atletico Madrid", MP: 38, MW: 22, MD: 10, GF: 65, GA: 30 },
-            { team: "Athletic Club", MP: 38, MW: 19, MD: 13, GF: 54, GA: 29 },
-            { team: "Villarreal", MP: 38, MW: 20, MD: 10, GF: 71, GA: 51 },
-            { team: "Real Betis", MP: 38, MW: 16, MD: 12, GF: 57, GA: 50 },
-            { team: "Celta Vigo", MP: 38, MW: 16, MD: 7, GF: 59, GA: 57 },
-            { team: "Rayo Vallecano", MP: 38, MW: 13, MD: 13, GF: 41, GA: 45 },
-            { team: "Osasuna", MP: 38, MW: 12, MD: 16, GF: 48, GA: 52 },
-            { team: "Mallorca", MP: 38, MW: 13, MD: 9, GF: 45, GA: 44 },
-            { team: "Real Sociedad", MP: 38, MW: 13, MD: 7, GF: 35, GA: 46 },
-            { team: "Valencia", MP: 38, MW: 11, MD: 13, GF: 44, GA: 54 },
-            { team: "Getafe", MP: 38, MW: 11, MD: 9, GF: 34, GA: 39 },
-            { team: "Espanyol", MP: 38, MW: 11, MD: 9, GF: 40, GA: 51 },
-            { team: "Alaves", MP: 38, MW: 10, MD: 12, GF: 38, GA: 48 },
-            { team: "Girona", MP: 38, MW: 11, MD: 8, GF: 44, GA: 60 },
-            { team: "Sevilla", MP: 38, MW: 10, MD: 11, GF: 42, GA: 55 },
-            { team: "Leganes", MP: 38, MW: 9, MD: 13, GF: 39, GA: 56 },
-            { team: "Las Palmas", MP: 38, MW: 8, MD: 8, GF: 40, GA: 61 },
-            { team: "Valladolid", MP: 38, MW: 4, MD: 4, GF: 26, GA: 90 }
-        ],
-        fixtures: [
-            ["Valencia", "Barcelona"],
-            ["Real Betis", "Levante"],
-            ["Real Madrid", "Athletic Club"],
-            ["Alaves", "Rayo Vallecano"],
-            ["Girona", "Elche"],
-            ["Getafe", "Osasuna"],
-            ["Celta Vigo", "Sevilla"],
-            ["Mallorca", "Oviedo"],
-            ["Espanyol", "Real Sociedad"],
-            ["Villarreal", "Atletico Madrid"]
-        ]
-    },
-
-    "Italian Serie A": {
-        id: "seriea",
-        logo: "seriea.png",
-        isBasketball: false,
-        teams: [
-            { team: "Napoli", MP: 38, MW: 24, MD: 10, GF: 59, GA: 27 },
-            { team: "Inter", MP: 38, MW: 24, MD: 9, GF: 79, GA: 35 },
-            { team: "Atalanta", MP: 38, MW: 22, MD: 8, GF: 78, GA: 38 },
-            { team: "Juventus", MP: 38, MW: 18, MD: 16, GF: 58, GA: 35 },
-            { team: "Roma", MP: 38, MW: 20, MD: 9, GF: 56, GA: 35 },
-            { team: "Fiorentina", MP: 38, MW: 19, MD: 8, GF: 60, GA: 41 },
-            { team: "Lazio", MP: 38, MW: 18, MD: 11, GF: 61, GA: 49 },
-            { team: "Milan", MP: 38, MW: 18, MD: 9, GF: 61, GA: 43 },
-            { team: "Bologna", MP: 38, MW: 16, MD: 14, GF: 57, GA: 47 },
-            { team: "Como", MP: 38, MW: 13, MD: 10, GF: 49, GA: 52 },
-            { team: "Torino", MP: 38, MW: 10, MD: 14, GF: 39, GA: 45 },
-            { team: "Udinese", MP: 38, MW: 12, MD: 8, GF: 41, GA: 56 },
-            { team: "Genoa", MP: 38, MW: 10, MD: 13, GF: 49, GA: 12 },
-            { team: "Verona", MP: 38, MW: 10, MD: 7, GF: 34, GA: 66 },
-            { team: "Cagliari", MP: 38, MW: 9, MD: 9, GF: 40, GA: 56 },
-            { team: "Parma", MP: 38, MW: 7, MD: 15, GF: 44, GA: 58 },
-            { team: "Leece", MP: 38, MW: 8, MD: 10, GF: 27, GA: 58 },
-            { team: "Empoli", MP: 38, MW: 6, MD: 13, GF: 33, GA: 59 },
-            { team: "Venezia", MP: 38, MW: 5, MD: 14, GF: 32, GA: 56 },
-            { team: "Monza", MP: 38, MW: 3, MD: 9, GF: 28, GA: 69 }
-        ],
-        fixtures: [
-            ["Fiorentina", "Atalanta"],
-            ["Bologna", "Inter"],
-            ["Lazio", "Pisa"],
-            ["Parma", "Sassuolo"],
-            ["Napoli", "Udinese"],
-            ["Verona", "Roma"],
-            ["Leece", "Genoa"],
-            ["Milan", "Cagliari"],
-            ["Torino", "Juventus"],
-            ["Cremonese", "Como"]
-        ]
-    },
-
-    "French Ligue 1": {
-        id: "ligue1",
-        logo: "ligue1.png",
-        isBasketball: false,
-        teams: [
-            { team: "PSG", MP: 34, MW: 26, MD: 6, GF: 92, GA: 35 },
-            { team: "Marseille", MP: 34, MW: 20, MD: 5, GF: 74, GA: 47 },
-            { team: "Monaco", MP: 34, MW: 18, MD: 7, GF: 63, GA: 41 },
-            { team: "Nice", MP: 34, MW: 17, MD: 9, GF: 66, GA: 41 },
-            { team: "Lille", MP: 34, MW: 17, MD: 9, GF: 52, GA: 36 },
-            { team: "Lyon", MP: 34, MW: 17, MD: 6, GF: 65, GA: 46 },
-            { team: "Strasbourg", MP: 34, MW: 16, MD: 9, GF: 56, GA: 44 },
-            { team: "Lens", MP: 34, MW: 15, MD: 7, GF: 42, GA: 39 },
-            { team: "Brest", MP: 34, MW: 15, MD: 5, GF: 52, GA: 59 },
-            { team: "Toulouse", MP: 34, MW: 11, MD: 9, GF: 44, GA: 43 },
-            { team: "Auxerre", MP: 34, MW: 11, MD: 9, GF: 48, GA: 51 },
-            { team: "Rennes", MP: 34, MW: 13, MD: 12, GF: 51, GA: 50 },
-            { team: "Nantes", MP: 34, MW: 8, MD: 12, GF: 48, GA: 51 },
-            { team: "Angers", MP: 34, MW: 10, MD: 6, GF: 32, GA: 53 },
-            { team: "Le Havre", MP: 34, MW: 10, MD: 4, GF: 40, GA: 71 },
-            { team: "Reims", MP: 34, MW: 8, MD: 9, GF: 33, GA: 47 },
-            { team: "St.Etienne", MP: 34, MW: 8, MD: 6, GF: 30, GA: 77 },
-            { team: "Montpellier", MP: 34, MW: 4, MD: 4, GF: 23, GA: 79 }
-        ],
-        fixtures: [
-            ["Nantes", "Marseille"],
-            ["PSG", "Lorient"],
-            ["Metz", "Monaco"],
-            ["Nice", "Lens"],
-            ["Lille", "Le Havre"],
-            ["Strasbourg", "Toulouse"],
-            ["Auxerre", "Angers"],
-            ["Paris", "Brest"],
-            ["Lyon", "Rennes"]
-        ]
-    },
-
-    "German Bundesliga": {
-        id: "bundesliga",
-        logo: "bundesliga.png",
-        isBasketball: false,
-        teams: [
-            { team: "Bayern", MP: 34, MW: 25, MD: 7, GF: 99, GA: 32 },
-            { team: "Leverkusen", MP: 34, MW: 19, MD: 12, GF: 72, GA: 43 },
-            { team: "Frankfurt", MP: 34, MW: 17, MD: 9, GF: 46, GA: 22 },
-            { team: "Dortmund", MP: 34, MW: 17, MD: 6, GF: 71, GA: 51 },
-            { team: "Freiburg", MP: 34, MW: 16, MD: 7, GF: 49, GA: 53 },
-            { team: "Mainz", MP: 34, MW: 14, MD: 10, GF: 55, GA: 43 },
-            { team: "Leipzig", MP: 34, MW: 13, MD: 12, GF: 53, GA: 48 },
-            { team: "Werder", MP: 34, MW: 14, MD: 9, GF: 54, GA: 57 },
-            { team: "Stuttgart", MP: 34, MW: 14, MD: 8, GF: 64, GA: 53 },
-            { team: "Monchengladbach", MP: 34, MW: 13, MD: 6, GF: 55, GA: 57 },
-            { team: "Wolfsburg", MP: 34, MW: 11, MD: 10, GF: 56, GA: 54 },
-            { team: "Augsburg", MP: 34, MW: 11, MD: 10, GF: 35, GA: 51 },
-            { team: "Union Berlin", MP: 34, MW: 10, MD: 10, GF: 35, GA: 51 },
-            { team: "St. Pauli", MP: 34, MW: 8, MD: 8, GF: 28, GA: 41 },
-            { team: "Hoffenheim", MP: 34, MW: 7, MD: 11, GF: 46, GA: 68 },
-            { team: "Heidenheim", MP: 34, MW: 8, MD: 5, GF: 37, GA: 64 },
-            { team: "Holstein Kiel", MP: 34, MW: 6, MD: 7, GF: 49, GA: 80 },
-            { team: "Bochum", MP: 34, MW: 6, MD: 7, GF: 33, GA: 67 }
-        ],
-        fixtures: [
-            ["Frankfurt", "Hamburger"],
-            ["Hoffenheim", "Stuttgart"],
-            ["Bayern", "Heidenheim"],
-            ["Werder", "Augsburg"],
-            ["Union Berlin", "Koln"],
-            ["Leverkusen", "Leipzig"],
-            ["St. Pauli", "Mainz"],
-            ["Monchengladbach", "Dortmund"],
-            ["Freiburg", "Wolfsburg"]
-        ]
-    },
-	"Belgian Challenger Pro League": {
-    id: "belgium-challenger",
-    logo: "belgium-challenger.png",
-    isBasketball: false,
-    teams: [
-        { team: "Zulte Waregem", MP: 28, MW: 18, MD: 5, GF: 55, GA: 30 },
-        { team: "La Louviere", MP: 28, MW: 17, MD: 8, GF: 50, GA: 24 },
-        { team: "Daring Brussels", MP: 34, MW: 17, MD: 6, GF: 42, GA: 21 },
-        { team: "Beveren", MP: 28, MW: 14, MD: 9, GF: 41, GA: 47 },
-        { team: "Patro Eisden", MP: 28, MW: 13, MD: 10, GF: 51, GA: 28 },
-        { team: "Club NXT", MP: 28, MW: 14, MD: 5, GF: 46, GA: 35 },
-        { team: "Lokeren-Temse", MP: 28, MW: 12, MD: 5, GF: 32, GA: 35 },
-        { team: "Lierse K", MP: 28, MW: 11, MD: 7, GF: 40, GA: 35 },
-        { team: "Liege", MP: 28, MW: 9, MD: 7, GF: 38, GA: 44 },
-        { team: "Eupen", MP: 28, MW: 8, MD: 6, GF: 38, GA: 47 },
-        { team: "Lommel", MP: 28, MW: 8, MD: 5, GF: 32, GA: 46 },
-        { team: "Francs Borains", MP: 28, MW: 8, MD: 4, GF: 29, GA: 50 },
-        { team: "RSCA Futures", MP: 28, MW: 5, MD: 8, GF: 41, GA: 54 },
-        { team: "Seraing", MP: 28, MW: 3, MD: 10, GF: 28, GA: 55 },
-        { team: "Jong Genk", MP: 28, MW: 3, MD: 5, GF: 30, GA: 62 }
-    ],
-    fixtures: [
-        ["Liege", "Eupen"],
-        ["Beerschot", "Lommel"],
-        ["Kotrijk", "Daring Brussels"],
-        ["Patro Eisden", "Francs Borains"],
-        ["Jong Genk", "Jong Gent"],
-        ["Lierse K", "Lokeren-Temse"],
-        ["Seraing", "Beveren"]
-    ]
-},
-
-"Portuguese Liga 2": {
-    id: "portugal-liga2",
-    logo: "portugal-liga2.png",
-    isBasketball: false,
-    teams: [
-        { team: "Marítimo", MP: 34, MW: 20, MD: 6, GF: 50, GA: 29 },
-        { team: "Académico", MP: 34, MW: 17, MD: 8, GF: 58, GA: 33 },
-        { team: "Torreense", MP: 34, MW: 18, MD: 5, GF: 46, GA: 33 },
-        { team: "Vizela", MP: 34, MW: 14, MD: 9, GF: 39, GA: 40 },
-        { team: "Porto B", MP: 34, MW: 15, MD: 6, GF: 41, GA: 42 },
-        { team: "UD Leiria", MP: 33, MW: 13, MD: 10, GF: 50, GA: 44 },
-        { team: "Leixoes", MP: 33, MW: 14, MD: 5, GF: 44, GA: 54 },
-        { team: "Feirense", MP: 33, MW: 12, MD: 9, GF: 35, GA: 38 },
-        { team: "Chaves", MP: 34, MW: 13, MD: 6, GF: 42, GA: 40 },
-        { team: "Benfica B", MP: 34, MW: 11, MD: 11, GF: 43, GA: 44 },
-        { team: "Felgueiras", MP: 34, MW: 11, MD: 11, GF: 31, GA: 38 },
-        { team: "Lusitania Lourosa", MP: 33, MW: 11, MD: 10, GF: 43, GA: 50 },
-        { team: "Sporting CP B", MP: 34, MW: 13, MD: 3, GF: 41, GA: 34 },
-        { team: "Penafiel", MP: 33, MW: 11, MD: 8, GF: 36, GA: 37 },
-        { team: "Farense", MP: 33, MW: 10, MD: 10, GF: 31, GA: 36 },
-        { team: "Portimonense", MP: 33, MW: 10, MD: 7, GF: 38, GA: 49 },
-        { team: "Pacos Ferreira", MP: 33, MW: 8, MD: 12, GF: 32, GA: 47 },
-        { team: "Oliveirense", MP: 34, MW: 8, MD: 10, GF: 34, GA: 46 }
-    ],
-    fixtures: [
-        ["Panfiel", "Farense"],
-        ["Acadamico", "Vizela"],
-        ["Chaves", "Benfica B"],
-        ["Portimonense", "Oliveirense Borains"],
-        ["Pacos Ferreira", "Felgueiras Gent"],
-        ["Leixoes", "Lousitania Lourosa"],
-        ["Chaves", "Feirense"]
-    ]
-},
-*/
 "MLS Eastern Conference": {
     id: "mls-east",
     logo: "mls/mlslogo.jpg",
@@ -292,11 +34,7 @@ const leaguesData = {
         ["Inter Miami", "Chicago"],
         ["Philadelphia", "NY Red Bulls"],
         ["New England", "Toronto"],
-        ["Charlotte", "Atlanta"],
-       // ["Portland ", "San Jose"],
-       // ["Columbus", "Atlanta"],
-       // ["Inter Miami", "Philadelphia"],
-        //["LAFC", "Seattle"]
+        ["Charlotte", "Atlanta"]
     ]
 },
 
@@ -443,13 +181,7 @@ const leaguesData = {
         ["Sanfreece", "Kawasaki"],
         ["Nagoya", "Machida"],
         ["Vissel Kobe", "Kashima Antlers"],
-        ["Cerezo Osaka", "FC Tokyo"],
-        //["Gamba Osaka", "Vissel Kobe"],
-        //["Urawa Reds", "JEF"],
-       // ["Tokyo Verdy", "Kashiwa"],
-       // ["Cerezo Osaka", "Avispa Osaka"],
-       // ["Kashima Antlers", "Machida"],
-       // ["Nagasaki", "Nagoya"]
+        ["Cerezo Osaka", "FC Tokyo"]
     ]
 },
 
@@ -503,67 +235,110 @@ const leaguesData = {
     ]
 },
 
-    "NBA": {
-        id: "nba",
-        logo: "nba.png",
-        isBasketball: true,
-        teams: [
-            { team: "LA Lakers", MP: 82, MW: 52, GF: 118, GA: 112 },
-            { team: "Boston Celtics", MP: 82, MW: 64, GF: 120, GA: 109 },
-            { team: "Denver Nuggets", MP: 82, MW: 57, GF: 115, GA: 110 },
-            { team: "Milwaukee Bucks", MP: 82, MW: 49, GF: 119, GA: 117 },
-            { team: "Philadelphia 76ers", MP: 82, MW: 54, GF: 117, GA: 111 },
-            { team: "Phoenix Suns", MP: 82, MW: 45, GF: 115, GA: 113 },
-            { team: "Golden State Warriors", MP: 82, MW: 46, GF: 118, GA: 117 },
-            { team: "Miami Heat", MP: 82, MW: 44, GF: 110, GA: 109 },
-            { team: "New York Knicks", MP: 82, MW: 47, GF: 115, GA: 112 },
-            { team: "Dallas Mavericks", MP: 82, MW: 50, GF: 118, GA: 116 }
-        ],
-        fixtures: [
-            ["LA Lakers", "Boston Celtics"],
-            ["Denver Nuggets", "Milwaukee Bucks"],
-            ["Philadelphia 76ers", "Phoenix Suns"],
-            ["Golden State Warriors", "Miami Heat"],
-            ["New York Knicks", "Dallas Mavericks"]
-        ]
-    },
+"Chilean Primera División": {
+    id: "chile",
+    logo: "chile/chile.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Coquimbo", MP: 30, MW: 23, MD: 6, ML: 1, GF: 49, GA: 17, logo: "chile/coquimbo.png" },
+        { rank: 2, team: "Universidad Católica", MP: 30, MW: 17, MD: 7, ML: 6, GF: 44, GA: 26, logo: "chile/ucatolica.png" },
+        { rank: 3, team: "O'Higgins", MP: 30, MW: 16, MD: 8, ML: 6, GF: 43, GA: 34, logo: "chile/ohiggins.png" },
+        { rank: 4, team: "Universidad de Chile", MP: 30, MW: 17, MD: 4, ML: 9, GF: 58, GA: 32, logo: "chile/uchile.png" },
+        { rank: 5, team: "Audax Italiano", MP: 30, MW: 16, MD: 4, ML: 10, GF: 51, GA: 43, logo: "chile/audax.png" },
+        { rank: 6, team: "Palestino", MP: 30, MW: 14, MD: 7, ML: 9, GF: 42, GA: 31, logo: "chile/palestino.png" },
+        { rank: 7, team: "Cobresal", MP: 30, MW: 14, MD: 5, ML: 11, GF: 38, GA: 38, logo: "chile/cobresal.png" },
+        { rank: 8, team: "Colo-Colo", MP: 30, MW: 12, MD: 8, ML: 10, GF: 46, GA: 36, logo: "chile/colocolo.png" },
+        { rank: 9, team: "Huachipato", MP: 30, MW: 12, MD: 7, ML: 11, GF: 43, GA: 42, logo: "chile/huachipato.png" },
+        { rank: 10, team: "Ñublense", MP: 30, MW: 8, MD: 9, ML: 13, GF: 31, GA: 40, logo: "chile/nublense.png" },
+        { rank: 11, team: "Deportes Limache", MP: 30, MW: 8, MD: 7, ML: 15, GF: 36, GA: 43, logo: "chile/limache.png" },
+        { rank: 12, team: "Unión La Calera", MP: 30, MW: 8, MD: 5, ML: 17, GF: 28, GA: 39, logo: "chile/unionlacalera.png" },
+        { rank: 13, team: "La Serena", MP: 30, MW: 7, MD: 6, ML: 17, GF: 32, GA: 52, logo: "chile/laserena.png" },
+        { rank: 14, team: "Everton", MP: 30, MW: 6, MD: 8, ML: 16, GF: 27, GA: 44, logo: "chile/everton.png" },
+        { rank: 15, team: "Deportes Iquique", MP: 30, MW: 6, MD: 6, ML: 18, GF: 34, GA: 60, logo: "chile/iquique.png" },
+        { rank: 16, team: "Unión Española", MP: 30, MW: 6, MD: 3, ML: 21, GF: 33, GA: 58, logo: "chile/unespanola.png" }
+    ],
+    fixtures: [
+        ["Deportes Limache", "Coquimbo"],
+        ["O'Higgins", "Everton"],
+        ["Palestino", "Audax Italiano"]
+    ]
+},
 
-    "EuroLeague": {
-        id: "euroleague",
-        logo: "euroleague.png",
-        isBasketball: true,
-        teams: [
-            { team: "Real Madrid", MP: 34, MW: 27, GF: 88, GA: 79 },
-            { team: "Panathinaikos", MP: 34, MW: 23, GF: 84, GA: 78 },
-            { team: "Monaco", MP: 34, MW: 21, GF: 86, GA: 82 },
-            { team: "Fenerbahce", MP: 34, MW: 20, GF: 83, GA: 81 },
-            { team: "Olympiacos", MP: 34, MW: 22, GF: 85, GA: 80 },
-            { team: "Barcelona", MP: 34, MW: 22, GF: 87, GA: 82 },
-            { team: "Maccabi Tel Aviv", MP: 34, MW: 20, GF: 84, GA: 83 },
-            { team: "Partizan", MP: 34, MW: 19, GF: 82, GA: 81 },
-            { team: "Anadolu Efes", MP: 34, MW: 17, GF: 82, GA: 84 },
-            { team: "Virtus Bologna", MP: 34, MW: 17, GF: 81, GA: 83 },
-            { team: "Valencia", MP: 34, MW: 16, GF: 80, GA: 82 },
-            { team: "Bayern Munich", MP: 34, MW: 15, GF: 79, GA: 83 },
-            { team: "Crvena Zvezda", MP: 34, MW: 14, GF: 78, GA: 84 },
-            { team: "ASVEL", MP: 34, MW: 12, GF: 77, GA: 86 },
-            { team: "ALBA Berlin", MP: 34, MW: 9, GF: 75, GA: 89 },
-            { team: "Baskonia", MP: 34, MW: 15, GF: 79, GA: 81 },
-            { team: "Olimpia Milano", MP: 34, MW: 14, GF: 78, GA: 82 },
-            { team: "Zalgiris Kaunas", MP: 34, MW: 18, GF: 80, GA: 79 }
-        ],
-        fixtures: [
-            ["Valencia", "Barcelona"],
-            ["Real Madrid", "Fenerbahce"],
-            ["Olympiacos", "Barcelona"],
-            ["Maccabi Tel Aviv", "Partizan"],
-            ["Anadolu Efes", "Virtus Bologna"]
-        ]
-    }
+"NBA": {
+    id: "nba",
+    logo: "nba.png",
+    isBasketball: true,
+    teams: [
+        { rank: 1, team: "Boston Celtics", GP: 82, GW: 64, GL: 18, points_for: 9840, points_against: 8938 },
+        { rank: 2, team: "Denver Nuggets", GP: 82, GW: 57, GL: 25, points_for: 9430, points_against: 9020 },
+        { rank: 3, team: "LA Lakers", GP: 82, GW: 52, GL: 30, points_for: 9676, points_against: 9184 },
+        { rank: 4, team: "Philadelphia 76ers", GP: 82, GW: 54, GL: 28, points_for: 9594, points_against: 9102 },
+        { rank: 5, team: "Milwaukee Bucks", GP: 82, GW: 49, GL: 33, points_for: 9758, points_against: 9594 },
+        { rank: 6, team: "Golden State Warriors", GP: 82, GW: 46, GL: 36, points_for: 9676, points_against: 9594 },
+        { rank: 7, team: "Phoenix Suns", GP: 82, GW: 45, GL: 37, points_for: 9430, points_against: 9266 },
+        { rank: 8, team: "Miami Heat", GP: 82, GW: 44, GL: 38, points_for: 9020, points_against: 8938 },
+        { rank: 9, team: "New York Knicks", GP: 82, GW: 47, GL: 35, points_for: 9430, points_against: 9184 },
+        { rank: 10, team: "Dallas Mavericks", GP: 82, GW: 50, GL: 32, points_for: 9676, points_against: 9512 }
+    ],
+    fixtures: [
+        ["Boston Celtics", "LA Lakers"],
+        ["Denver Nuggets", "Milwaukee Bucks"],
+        ["Philadelphia 76ers", "Phoenix Suns"],
+        ["Golden State Warriors", "Miami Heat"],
+        ["New York Knicks", "Dallas Mavericks"]
+    ]
+},
+
+"EuroLeague": {
+    id: "euroleague",
+    logo: "euroleague.png",
+    isBasketball: true,
+    teams: [
+        { rank: 1, team: "Real Madrid", GP: 34, GW: 27, GL: 7, points_for: 2992, points_against: 2686 },
+        { rank: 2, team: "Panathinaikos", GP: 34, GW: 23, GL: 11, points_for: 2856, points_against: 2652 },
+        { rank: 3, team: "Olympiacos", GP: 34, GW: 22, GL: 12, points_for: 2890, points_against: 2720 },
+        { rank: 4, team: "Barcelona", GP: 34, GW: 22, GL: 12, points_for: 2958, points_against: 2788 },
+        { rank: 5, team: "Monaco", GP: 34, GW: 21, GL: 13, points_for: 2924, points_against: 2788 },
+        { rank: 6, team: "Fenerbahce", GP: 34, GW: 20, GL: 14, points_for: 2822, points_against: 2754 },
+        { rank: 7, team: "Maccabi Tel Aviv", GP: 34, GW: 20, GL: 14, points_for: 2856, points_against: 2822 },
+        { rank: 8, team: "Partizan", GP: 34, GW: 19, GL: 15, points_for: 2788, points_against: 2754 },
+        { rank: 9, team: "Zalgiris Kaunas", GP: 34, GW: 18, GL: 16, points_for: 2720, points_against: 2686 },
+        { rank: 10, team: "Anadolu Efes", GP: 34, GW: 17, GL: 17, points_for: 2788, points_against: 2856 }
+    ],
+    fixtures: [
+        ["Real Madrid", "Barcelona"],
+        ["Panathinaikos", "Olympiacos"],
+        ["Monaco", "Fenerbahce"],
+        ["Maccabi Tel Aviv", "Partizan"],
+        ["Anadolu Efes", "Zalgiris Kaunas"]
+    ]
+},
+
+"Spanish ACB": {
+    id: "acb",
+    logo: "acb.png",
+    isBasketball: true,
+    teams: [
+        { rank: 1, team: "Real Madrid", GP: 34, GW: 28, GL: 6, points_for: 3026, points_against: 2652 },
+        { rank: 2, team: "Barcelona", GP: 34, GW: 26, GL: 8, points_for: 2992, points_against: 2686 },
+        { rank: 3, team: "Unicaja", GP: 34, GW: 24, GL: 10, points_for: 2958, points_against: 2720 },
+        { rank: 4, team: "Valencia", GP: 34, GW: 21, GL: 13, points_for: 2890, points_against: 2788 },
+        { rank: 5, team: "Gran Canaria", GP: 34, GW: 20, GL: 14, points_for: 2890, points_against: 2788 },
+        { rank: 6, team: "Baskonia", GP: 34, GW: 19, GL: 15, points_for: 2856, points_against: 2822 },
+        { rank: 7, team: "Joventut", GP: 34, GW: 18, GL: 16, points_for: 2822, points_against: 2856 },
+        { rank: 8, team: "Murcia", GP: 34, GW: 17, GL: 17, points_for: 2788, points_against: 2856 }
+    ],
+    fixtures: [
+        ["Real Madrid", "Barcelona"],
+        ["Unicaja", "Valencia"],
+        ["Gran Canaria", "Baskonia"],
+        ["Joventut", "Murcia"]
+    ]
+}
+
 };
 
 // ==================== MATCH RESULTS DATA ====================
-// Add this at the end of data.js
 
 const matchesData = {
     "English Premier League": [
@@ -598,9 +373,77 @@ const matchesData = {
         { home: "Cagliari", away: "Lazio", home_score: 0, away_score: 0 },
         { home: "Genoa", away: "Torino", home_score: 3, away_score: 0 },
         { home: "Atalanta", away: "Napoli", home_score: 2, away_score: 1 }
+    ],
+    "Japanese J1 League": [
+        { home: "JEF", away: "Kashiwa", home_score: 2, away_score: 1 },
+        { home: "FC Tokyo", away: "Yokohama FM", home_score: 3, away_score: 0 },
+        { home: "Urawa Reds", away: "Mito", home_score: 2, away_score: 0 },
+        { home: "Kashima Antlers", away: "Tokyo Verdy", home_score: 2, away_score: 0 },
+        { home: "Avispa", away: "Nagoya", home_score: 1, away_score: 5 },
+        { home: "Okayama", away: "Kyoto", home_score: 1, away_score: 0 },
+        { home: "Gamba Osaka", away: "Nagasaki", home_score: 3, away_score: 2 },
+        { home: "Yokohama FM", away: "JEF", home_score: 2, away_score: 0 },
+        { home: "Kyoto", away: "Cerezo Osaka", home_score: 1, away_score: 2 },
+        { home: "Shimizu", away: "Okayama", home_score: 1, away_score: 1 },
+        { home: "Kashiwa", away: "Machida", home_score: 0, away_score: 1 },
+        { home: "Nagoya", away: "Vissel Kobe", home_score: 0, away_score: 3 },
+        { home: "Mito", away: "FC Tokyo", home_score: 1, away_score: 1 },
+        { home: "Kashima Antlers", away: "Kawasaki", home_score: 1, away_score: 0 },
+        { home: "Nagasaki", away: "Avispa", home_score: 1, away_score: 0 },
+        { home: "Cerezo Osaka", away: "Okayama", home_score: 1, away_score: 2 },
+        { home: "Vissel Kobe", away: "Gamba Osaka", home_score: 2, away_score: 2 },
+        { home: "Mito", away: "Yokohama FM", home_score: 1, away_score: 0 },
+        { home: "Avispa", away: "Shimizu", home_score: 1, away_score: 1 },
+        { home: "Nagoya", away: "Sanfreece", home_score: 2, away_score: 1 },
+        { home: "JEF", away: "FC Tokyo", home_score: 1, away_score: 2 },
+        { home: "Nagasaki", away: "Kyoto", home_score: 1, away_score: 2 },
+        { home: "Tokyo Verdy", away: "Kawasaki", home_score: 0, away_score: 2 },
+        { home: "Machida", away: "Kashima Antlers", home_score: 0, away_score: 3 },
+        { home: "Urawa Reds", away: "Kashiwa", home_score: 1, away_score: 1 },
+        { home: "Okayama", away: "Nagasaki", home_score: 0, away_score: 1 },
+        { home: "Avispa", away: "Gamba Osaka", home_score: 2, away_score: 2 },
+        { home: "Shimizu", away: "Sanfreece", home_score: 3, away_score: 1 },
+        { home: "Kyoto", away: "Nagoya", home_score: 1, away_score: 1 },
+        { home: "Tokyo Verdy", away: "FC Tokyo", home_score: 0, away_score: 0 },
+        { home: "Cerezo Osaka", away: "Vissel Kobe", home_score: 1, away_score: 1 },
+        { home: "Kashima Antlers", away: "JEF", home_score: 2, away_score: 1 },
+        { home: "Kawasaki", away: "Yokohama FM", home_score: 0, away_score: 5 },
+        { home: "Kashiwa", away: "Mito", home_score: 3, away_score: 0 },
+        { home: "Urawa Reds", away: "Machida", home_score: 1, away_score: 2 },
+        { home: "Vissel Kobe", away: "Sanfreece", home_score: 2, away_score: 1 },
+        { home: "Machida", away: "Kawasaki", home_score: 1, away_score: 1 },
+        { home: "Machida", away: "FC Tokyo", home_score: 2, away_score: 0 },
+        { home: "Vissel Kobe", away: "Shimizu", home_score: 2, away_score: 0 },
+        { home: "JEF", away: "Tokyo Verdy", home_score: 3, away_score: 2 },
+        { home: "Mito", away: "Kashima Antlers", home_score: 1, away_score: 1 },
+        { home: "Nagoya", away: "Cerezo Osaka", home_score: 3, away_score: 0 },
+        { home: "Gamba Osaka", away: "Kyoto", home_score: 2, away_score: 0 },
+        { home: "Nagasaki", away: "Shimizu", home_score: 0, away_score: 3 },
+        { home: "Okayama", away: "Vissel Kobe", home_score: 1, away_score: 4 },
+        { home: "Kashiwa", away: "Yokohama FM", home_score: 3, away_score: 0 },
+        { home: "Kawasaki", away: "Urawa Reds", home_score: 3, away_score: 2 }
+    ],
+    "Chilean Primera División": [
+        { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
+        { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
+        { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
+        { home: "Deportes Limache", away: "Universidad Católica", home_score: 0, away_score: 2 },
+        { home: "Huachipato", away: "Unión La Calera", home_score: 3, away_score: 1 },
+        { home: "Cobresal", away: "Universidad de Chile", home_score: 1, away_score: 0 },
+        { home: "Colo-Colo", away: "Ñublense", home_score: 6, away_score: 2 },
+        { home: "Concepción", away: "Everton", home_score: 0, away_score: 2 },
+        { home: "Everton", away: "Coquimbo", home_score: 1, away_score: 1 },
+        { home: "Audax Italiano", away: "Cobresal", home_score: 2, away_score: 1 },
+        { home: "Ñublense", away: "Universidad de Concepción", home_score: 2, away_score: 2 },
+        { home: "Unión La Calera", away: "Palestino", home_score: 1, away_score: 2 },
+        { home: "Concepción", away: "Huachipato", home_score: 2, away_score: 0 },
+        { home: "La Serena", away: "Deportes Limache", home_score: 4, away_score: 1 },
+        { home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
+        { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
+        { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
+        { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 }
     ]
 };
 
 console.log("✅ Matches data loaded from data.js");
-
 console.log("✅ Data loaded successfully!", Object.keys(leaguesData).length, "leagues");

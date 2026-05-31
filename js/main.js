@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </button>
             ${leagues.map(league => `
                 <button class="league-btn" data-league="${leaguesData[league].id}">
-                    <i class="fas ${leaguesData[league].isBasketball ? 'fa-basketball' : 'fa-futbol'}"></i> 
+                    <i class="fas ${leaguesData[league].isBasketball ? 'fa-basketball-ball' : 'fa-futbol'}"></i> 
                     ${league.split(' ')[0]}
                 </button>
             `).join('')}
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     ${league.logo ? `<img src="images/logos/leagues/${league.logo}" class="league-logo" alt="${leagueName}" onerror="this.style.display='none'">` : ''}
                     <h2>${escapeHtml(leagueName)}</h2>
                     <p class="text-muted">
-                        <i class="fas ${league.isBasketball ? 'fa-basketball' : 'fa-futbol'}"></i> 
-                        ${league.isBasketball ? '🏀 Basketball Predictions' : '⚽ Football Predictions'}
+                        <i class="fas ${league.isBasketball ? 'fa-basketball-ball' : 'fa-futbol'}"></i> 
+                        ${league.isBasketball ? '?? Basketball Predictions' : '? Football Predictions'}
                     </p>
                 </div>
             `;
@@ -88,38 +88,67 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             for (const match of predictions) {
+                // Different styling for basketball vs football
+                const cardClass = league.isBasketball ? 'match-card basketball-card' : 'match-card';
+                
                 html += `
-                    <div class="match-card">
+                    <div class="${cardClass}">
                         <div class="team-row">
                             <div class="team">
                                 ${match.homeLogo ? 
                                     `<img src="images/logos/clubs/${match.homeLogo}" class="team-logo" alt="${match.home}" onerror="this.style.display='none'">` : 
-                                    '<i class="fas fa-shield-alt fa-3x" style="color:#667eea"></i>'}
+                                    `<i class="fas ${league.isBasketball ? 'fa-basketball-ball' : 'fa-shield-alt'} fa-3x" style="color:#667eea"></i>`}
                                 <div class="team-name">
                                     <a href="team.html?team=${encodeURIComponent(match.home)}" class="team-link">
                                         ${escapeHtml(match.home)}
                                     </a>
                                 </div>
+                                ${league.isBasketball && match.homeWinPct ? `
+                                    <div class="team-stats-small">
+                                        <span class="badge bg-info">${match.homeWinPct}% Win</span>
+                                        <span class="badge bg-secondary">${match.homeAvgPoints} PPG</span>
+                                        <span class="badge bg-dark">${match.homeRecord}</span>
+                                    </div>
+                                ` : ''}
                                 <span class="power-badge"><i class="fas fa-chart-line"></i> Power: ${match.homePower}</span>
                             </div>
                             <div class="vs">VS</div>
                             <div class="team">
                                 ${match.awayLogo ? 
                                     `<img src="images/logos/clubs/${match.awayLogo}" class="team-logo" alt="${match.away}" onerror="this.style.display='none'">` : 
-                                    '<i class="fas fa-shield-alt fa-3x" style="color:#764ba2"></i>'}
+                                    `<i class="fas ${league.isBasketball ? 'fa-basketball-ball' : 'fa-shield-alt'} fa-3x" style="color:#764ba2"></i>`}
                                 <div class="team-name">
                                     <a href="team.html?team=${encodeURIComponent(match.away)}" class="team-link">
                                         ${escapeHtml(match.away)}
                                     </a>
                                 </div>
+                                ${league.isBasketball && match.awayWinPct ? `
+                                    <div class="team-stats-small">
+                                        <span class="badge bg-info">${match.awayWinPct}% Win</span>
+                                        <span class="badge bg-secondary">${match.awayAvgPoints} PPG</span>
+                                        <span class="badge bg-dark">${match.awayRecord}</span>
+                                    </div>
+                                ` : ''}
                                 <span class="power-badge"><i class="fas fa-chart-line"></i> Power: ${match.awayPower}</span>
                             </div>
                         </div>
                         <div class="prediction-box">
-                            <div class="prediction-item"><i class="fas fa-chart-line"></i> ${match.prediction}</div>
-                            <div class="prediction-item"><i class="fas fa-exchange-alt"></i> ${match.bothScore}</div>
-                            <div class="prediction-item"><i class="fas fa-chart-simple"></i> ${match.overUnder}</div>
-                            <div class="prediction-item"><i class="fas fa-calculator"></i> Power Diff: ${match.diff}</div>
+                            <div class="prediction-item ${league.isBasketball ? 'basketball-pred' : 'football-pred'}">
+                                <i class="fas ${league.isBasketball ? 'fa-chart-simple' : 'fa-chart-line'}"></i> 
+                                ${match.prediction}
+                            </div>
+                            <div class="prediction-item">
+                                <i class="fas ${league.isBasketball ? 'fa-basketball-ball' : 'fa-exchange-alt'}"></i> 
+                                ${match.bothScore}
+                            </div>
+                            <div class="prediction-item">
+                                <i class="fas ${league.isBasketball ? 'fa-chart-line' : 'fa-chart-simple'}"></i> 
+                                ${match.overUnder}
+                            </div>
+                            <div class="prediction-item">
+                                <i class="fas fa-calculator"></i> 
+                                Power Diff: ${match.diff}
+                            </div>
                         </div>
                     </div>
                 `;
@@ -163,11 +192,14 @@ document.addEventListener('DOMContentLoaded', function() {
         renderContent('all');
     } else {
         console.error('leaguesData not found! Make sure data.js is loaded.');
-        document.getElementById('contentArea').innerHTML = `
-            <div class="alert alert-danger">
-                <i class="fas fa-exclamation-triangle"></i> 
-                Error: No data loaded. Please check the console.
-            </div>
-        `;
+        const contentArea = document.getElementById('contentArea');
+        if (contentArea) {
+            contentArea.innerHTML = `
+                <div class="alert alert-danger">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    Error: No data loaded. Please check the console.
+                </div>
+            `;
+        }
     }
 });
