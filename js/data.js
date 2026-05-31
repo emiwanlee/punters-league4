@@ -233,7 +233,8 @@ const leaguesData = {
         ["Blaublitz Tochigi FC", "Kanazawa"],
         ["Ehime FC", "Mito HollyHock"]
     ]
-},
+	},
+	
 
 "Chilean Primera División": {
     id: "chile",
@@ -262,6 +263,41 @@ const leaguesData = {
         ["O'Higgins", "Everton"],
         ["Palestino", "Audax Italiano"]
     ]
+	},
+	"Chinese Super League": {
+    id: "csl",
+    logo: "china/csl.png",
+    isBasketball: false,
+    teams: [
+        { team: "Shanghai Port", MP: 30, MW: 20, MD: 6, ML: 4, GF: 72, GA: 44, logo: "china/shanghaiport.png" },
+        { team: "Shanghai Shenhua", MP: 30, MW: 19, MD: 7, ML: 4, GF: 67, GA: 35, logo: "china/shanghaishenhua.png" },
+        { team: "Chengdu Rongcheng", MP: 30, MW: 17, MD: 9, ML: 4, GF: 60, GA: 28, logo: "china/chengdu.png" },
+        { team: "Beijing Guoan", MP: 30, MW: 17, MD: 6, ML: 7, GF: 69, GA: 46, logo: "china/beijing.png" },
+        { team: "Shandong Taishan", MP: 30, MW: 15, MD: 8, ML: 7, GF: 69, GA: 46, logo: "china/shandong.png" },
+        { team: "Tianjin Jinmen Tiger", MP: 30, MW: 12, MD: 8, ML: 10, GF: 40, GA: 41, logo: "china/tianjin.png" },
+        { team: "Zhejiang", MP: 30, MW: 10, MD: 12, ML: 8, GF: 60, GA: 51, logo: "china/zhejiang.png" },
+        { team: "Yunnan Yukun", MP: 30, MW: 11, MD: 9, ML: 10, GF: 47, GA: 52, logo: "china/yunnan.png" },
+        { team: "Qingdao Youth Island", MP: 30, MW: 10, MD: 10, ML: 10, GF: 39, GA: 43, logo: "china/qingdao.png" },
+        { team: "Henan", MP: 30, MW: 10, MD: 7, ML: 13, GF: 52, GA: 48, logo: "china/henan.png" },
+        { team: "Dalian Yingbo", MP: 30, MW: 9, MD: 9, ML: 12, GF: 30, GA: 45, logo: "china/dalian.png" },
+        { team: "Shenzhen Peng City", MP: 30, MW: 8, MD: 3, ML: 19, GF: 35, GA: 59, logo: "china/shenzhen.png" },
+        { team: "Wuhan Three Towns", MP: 30, MW: 6, MD: 7, ML: 17, GF: 34, GA: 62, logo: "china/wuhan.png" },
+        { team: "Qingdao Hainiu", MP: 30, MW: 5, MD: 10, ML: 15, GF: 35, GA: 48, logo: "china/qingdaohainiu.png" },
+        { team: "Meizhou Hakka", MP: 30, MW: 5, MD: 6, ML: 19, GF: 36, GA: 71, logo: "china/meizhou.png" },
+        { team: "Changchun Yatai", MP: 30, MW: 4, MD: 7, ML: 19, GF: 26, GA: 52, logo: "china/changchun.png" }
+    ],
+    fixtures: [
+        ["Qingdao Hainiu", "Yunnan Yukun"],
+        ["Shenyang Urban", "Shandong Taishan"],
+        ["Henan", "Shanghai Port"],
+        ["Shenzhen Peng City", "Chengdu Rongcheng"],
+        ["Chongqing Tonglianglong", "Tianjin Jinmen Tiger"],
+        ["Beijing Guoan", "Wuhan Three Towns"],
+        ["Qingdao Youth Island", "Zhejiang"],
+        ["Dalian Yingbo", "Shanghai Shenhua"]
+    ]
+
+
 },
 
 "NBA": {
@@ -441,8 +477,75 @@ const matchesData = {
         { home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
         { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
         { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
-        { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 }
-    ]
+        { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
+		{ home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
+    ],
+    
+	
+	"Chinese Super League": [
+    // Matchday 10
+    { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+    { home: "Shandong Taishan", away: "Shanghai Shenhua", home_score: 4, away_score: 1 },
+    { home: "Shenyang Urban", away: "Chengdu Rongcheng", home_score: 0, away_score: 1 },
+    { home: "Chongqing Tonglianglong", away: "Henan", home_score: 1, away_score: 1 },
+    { home: "Wuhan Three Towns", away: "Qingdao Hainiu", home_score: 1, away_score: 3 },
+    { home: "Beijing Guoan", away: "Dalian Yingbo", home_score: 3, away_score: 0 },
+    { home: "Shanghai Port", away: "Shenzhen Peng City", home_score: 1, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Zhejiang", home_score: 1, away_score: 2 },
+    
+    // Matchday 11
+    { home: "Shanghai Shenhua", away: "Chongqing Tonglianglong", home_score: 2, away_score: 2 },
+    { home: "Chengdu Rongcheng", away: "Henan", home_score: 3, away_score: 0 },
+    { home: "Qingdao Youth Island", away: "Wuhan Three Towns", home_score: 1, away_score: 1 },
+    { home: "Shenzhen Peng City", away: "Shandong Taishan", home_score: 1, away_score: 2 },
+    { home: "Shenyang Urban", away: "Yunnan Yukun", home_score: 1, away_score: 2 },
+    { home: "Zhejiang", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+    { home: "Beijing Guoan", away: "Shanghai Port", home_score: 2, away_score: 2 },
+    { home: "Qingdao Hainiu", away: "Dalian Yingbo", home_score: 3, away_score: 1 },
+    
+    // Matchday 12
+    { home: "Henan", away: "Shenzhen Peng City", home_score: 1, away_score: 0 },
+    { home: "Tianjin Jinmen Tiger", away: "Chengdu Rongcheng", home_score: 1, away_score: 2 },
+    { home: "Shanghai Port", away: "Zhejiang", home_score: 2, away_score: 2 },
+    { home: "Dalian Yingbo", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
+    { home: "Beijing Guoan", away: "Qingdao Hainiu", home_score: 4, away_score: 2 },
+    { home: "Wuhan Three Towns", away: "Shenyang Urban", home_score: 2, away_score: 2 },
+    { home: "Shandong Taishan", away: "Chongqing Tonglianglong", home_score: 3, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Shanghai Shenhua", home_score: 1, away_score: 0 },
+    
+    // Matchday 13
+    { home: "Tianjin Jinmen Tiger", away: "Henan", home_score: 1, away_score: 2 },
+    { home: "Shenzhen Peng City", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
+    { home: "Qingdao Youth Island", away: "Beijing Guoan", home_score: 1, away_score: 1 },
+    { home: "Chengdu Rongcheng", away: "Shanghai Port", home_score: 0, away_score: 1 },
+    { home: "Shenyang Urban", away: "Qingdao Hainiu", home_score: 2, away_score: 1 },
+    { home: "Shanghai Shenhua", away: "Wuhan Three Towns", home_score: 2, away_score: 2 },
+    { home: "Chongqing Tonglianglong", away: "Yunnan Yukun", home_score: 0, away_score: 0 },
+    { home: "Zhejiang", away: "Shandong Taishan", home_score: 4, away_score: 1 },
+    
+    // Matchday 14
+    { home: "Shanghai Port", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+    { home: "Beijing Guoan", away: "Henan", home_score: 1, away_score: 2 },
+    { home: "Dalian Yingbo", away: "Chengdu Rongcheng", home_score: 2, away_score: 0 },
+    { home: "Qingdao Hainiu", away: "Chongqing Tonglianglong", home_score: 0, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
+    { home: "Shandong Taishan", away: "Wuhan Three Towns", home_score: 3, away_score: 3 },
+    { home: "Zhejiang", away: "Shenyang Urban", home_score: 0, away_score: 5 },
+    { home: "Shanghai Shenhua", away: "Shenzhen Peng City", home_score: 1, away_score: 2 },
+    
+    // Matchday 15
+    { home: "Shenyang Urban", away: "Shanghai Port", home_score: 3, away_score: 2 },
+    { home: "Qingdao Youth Island", away: "Shanghai Shenhua", home_score: 2, away_score: 2 },
+    { home: "Henan", away: "Zhejiang", home_score: 0, away_score: 2 },
+    { home: "Chengdu Rongcheng", away: "Shandong Taishan", home_score: 1, away_score: 0 },
+    { home: "Chongqing Tonglianglong", away: "Beijing Guoan", home_score: 2, away_score: 3 },
+    { home: "Shenzhen Peng City", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
+    
+    // Matchday 16
+    { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
+    { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
+]
+	
 };
 
 console.log("✅ Matches data loaded from data.js");

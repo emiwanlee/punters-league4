@@ -575,6 +575,69 @@ const matchesData = {
     { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
     { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 }
 ],
+"Chinese Super League": [
+    // Matchday 10
+    { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+    { home: "Shandong Taishan", away: "Shanghai Shenhua", home_score: 4, away_score: 1 },
+    { home: "Shenyang Urban", away: "Chengdu Rongcheng", home_score: 0, away_score: 1 },
+    { home: "Chongqing Tonglianglong", away: "Henan", home_score: 1, away_score: 1 },
+    { home: "Wuhan Three Towns", away: "Qingdao Hainiu", home_score: 1, away_score: 3 },
+    { home: "Beijing Guoan", away: "Dalian Yingbo", home_score: 3, away_score: 0 },
+    { home: "Shanghai Port", away: "Shenzhen Peng City", home_score: 1, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Zhejiang", home_score: 1, away_score: 2 },
+    
+    // Matchday 11
+    { home: "Shanghai Shenhua", away: "Chongqing Tonglianglong", home_score: 2, away_score: 2 },
+    { home: "Chengdu Rongcheng", away: "Henan", home_score: 3, away_score: 0 },
+    { home: "Qingdao Youth Island", away: "Wuhan Three Towns", home_score: 1, away_score: 1 },
+    { home: "Shenzhen Peng City", away: "Shandong Taishan", home_score: 1, away_score: 2 },
+    { home: "Shenyang Urban", away: "Yunnan Yukun", home_score: 1, away_score: 2 },
+    { home: "Zhejiang", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+    { home: "Beijing Guoan", away: "Shanghai Port", home_score: 2, away_score: 2 },
+    { home: "Qingdao Hainiu", away: "Dalian Yingbo", home_score: 3, away_score: 1 },
+    
+    // Matchday 12
+    { home: "Henan", away: "Shenzhen Peng City", home_score: 1, away_score: 0 },
+    { home: "Tianjin Jinmen Tiger", away: "Chengdu Rongcheng", home_score: 1, away_score: 2 },
+    { home: "Shanghai Port", away: "Zhejiang", home_score: 2, away_score: 2 },
+    { home: "Dalian Yingbo", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
+    { home: "Beijing Guoan", away: "Qingdao Hainiu", home_score: 4, away_score: 2 },
+    { home: "Wuhan Three Towns", away: "Shenyang Urban", home_score: 2, away_score: 2 },
+    { home: "Shandong Taishan", away: "Chongqing Tonglianglong", home_score: 3, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Shanghai Shenhua", home_score: 1, away_score: 0 },
+    
+    // Matchday 13
+    { home: "Tianjin Jinmen Tiger", away: "Henan", home_score: 1, away_score: 2 },
+    { home: "Shenzhen Peng City", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
+    { home: "Qingdao Youth Island", away: "Beijing Guoan", home_score: 1, away_score: 1 },
+    { home: "Chengdu Rongcheng", away: "Shanghai Port", home_score: 0, away_score: 1 },
+    { home: "Shenyang Urban", away: "Qingdao Hainiu", home_score: 2, away_score: 1 },
+    { home: "Shanghai Shenhua", away: "Wuhan Three Towns", home_score: 2, away_score: 2 },
+    { home: "Chongqing Tonglianglong", away: "Yunnan Yukun", home_score: 0, away_score: 0 },
+    { home: "Zhejiang", away: "Shandong Taishan", home_score: 4, away_score: 1 },
+    
+    // Matchday 14
+    { home: "Shanghai Port", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+    { home: "Beijing Guoan", away: "Henan", home_score: 1, away_score: 2 },
+    { home: "Dalian Yingbo", away: "Chengdu Rongcheng", home_score: 2, away_score: 0 },
+    { home: "Qingdao Hainiu", away: "Chongqing Tonglianglong", home_score: 0, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
+    { home: "Shandong Taishan", away: "Wuhan Three Towns", home_score: 3, away_score: 3 },
+    { home: "Zhejiang", away: "Shenyang Urban", home_score: 0, away_score: 5 },
+    { home: "Shanghai Shenhua", away: "Shenzhen Peng City", home_score: 1, away_score: 2 },
+    
+    // Matchday 15
+    { home: "Shenyang Urban", away: "Shanghai Port", home_score: 3, away_score: 2 },
+    { home: "Qingdao Youth Island", away: "Shanghai Shenhua", home_score: 2, away_score: 2 },
+    { home: "Henan", away: "Zhejiang", home_score: 0, away_score: 2 },
+    { home: "Chengdu Rongcheng", away: "Shandong Taishan", home_score: 1, away_score: 0 },
+    { home: "Chongqing Tonglianglong", away: "Beijing Guoan", home_score: 2, away_score: 3 },
+    { home: "Shenzhen Peng City", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
+    
+    // Matchday 16
+    { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
+    { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
+],
 	"NBA": [
     { home: "LA Lakers", away: "Boston Celtics", home_score: 112, away_score: 108 },
     { home: "Golden State Warriors", away: "Denver Nuggets", home_score: 115, away_score: 120 },
