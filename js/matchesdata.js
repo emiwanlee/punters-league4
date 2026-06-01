@@ -483,6 +483,36 @@ const matchesData = {
         { home: "Defensa", away: "Central Cordoba", home_score: 1, away_score: 1 },
         { home: "Riestra", away: "Gimnasia Esgrima", home_score: 0, away_score: 0 }
     ],
+	"Argentine Primera B Metropolitana": [
+    // Matchday 5
+    { home: "Deportivo Camioneros", away: "Villa San Carlos", home_score: 3, away_score: 0 },
+    
+    // Matchday 17
+    { home: "Argentino de Merlo", away: "San Martín Burzaco", home_score: 0, away_score: 1 },
+    
+    // Matchday 5 (continued)
+    { home: "Dep. Armenio", away: "Argentino de Merlo", home_score: 2, away_score: 0 },
+    { home: "Flandria", away: "Arsenal Sarandi", home_score: 0, away_score: 0 },
+    { home: "Dock Sud", away: "Real Pilar", home_score: 2, away_score: 0 },
+    { home: "Brown (A)", away: "Talleres Remedios", home_score: 1, away_score: 2 },
+    { home: "Deportivo Merlo", away: "Liniers", home_score: 0, away_score: 0 },
+    { home: "Comunicaciones", away: "UAI Urquiza", home_score: 3, away_score: 0 },
+    { home: "Ituzaingó", away: "Laferrere", home_score: 0, away_score: 2 },
+    { home: "Sportivo Italiano", away: "San Martín Burzaco", home_score: 1, away_score: 2 },
+    { home: "Defensores Unidos", away: "Dálmine", home_score: 2, away_score: 1 },
+    { home: "Argentino Quilmes", away: "Excursionistas", home_score: 2, away_score: 2 },
+    
+    // Matchday 18
+    { home: "Comunicaciones", away: "Dep. Armenio", home_score: 0, away_score: 1 },
+    { home: "Dock Sud", away: "Brown (A)", home_score: 0, away_score: 1 },
+    { home: "Real Pilar", away: "UAI Urquiza", home_score: 2, away_score: 1 },
+    { home: "Liniers", away: "Dálmine", home_score: 1, away_score: 0 },
+    { home: "Deportivo Camioneros", away: "Talleres Remedios", home_score: 1, away_score: 4 },
+    { home: "Sportivo Italiano", away: "Argentino de Merlo", home_score: 0, away_score: 2 },
+    { home: "Villa San Carlos", away: "Excursionistas", home_score: 0, away_score: 2 },
+    { home: "Defensores Unidos", away: "Flandria", home_score: 1, away_score: 0 },
+	{ home: "San Martín Burzaco", away: "Arsenal Sarandi", home_score: 2, away_score: 0 },
+	{ home: "Argentino Quilmes", away: "Ituzaingó", home_score: 2, away_score: 0 },
 
     "MLS USA": [
         { home: "New York City", away: "Orlando", home_score: 5, away_score: 0 },
@@ -573,7 +603,12 @@ const matchesData = {
     // Matchday 14
     { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
     { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
-    { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 }
+    { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
+	{ home: "Universidad de Concepción", away: "Concepción", home_score: 2, away_score: 1 },
+	{ home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 },
+	{ home: "Huachipato", away: "Universidad Católica", home_score: 0, away_score: 3 },
+	{ home: "O'Higgins", away: "Everton", home_score: 2, away_score: 3 },
+	{ home: "Palestino", away: "Audax Italiano", home_score: 0, away_score: 0 },
 ],
 "Chinese Super League": [
     // Matchday 10

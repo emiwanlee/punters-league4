@@ -111,6 +111,49 @@ const leaguesData = {
     ]
 },
 
+"Argentine Primera B Metropolitana": {
+    id: "argentina-primera-b",
+    logo: "argentina/primera-b.png",
+    isBasketball: false,
+    teams: [
+        { team: "Midland", MP: 20, MW: 11, MD: 7, ML: 2, GF: 24, GA: 5, logo: "argentina/midland.png" },
+        { team: "Real Pilar", MP: 20, MW: 10, MD: 6, ML: 4, GF: 27, GA: 16, logo: "argentina/realpilar.png" },
+        { team: "Argentino de Merlo", MP: 20, MW: 10, MD: 5, ML: 5, GF: 25, GA: 15, logo: "argentina/argentinomerlo.png" },
+        { team: "Acassuso", MP: 20, MW: 9, MD: 7, ML: 4, GF: 25, GA: 18, logo: "argentina/acassuso.png" },
+        { team: "Excursionistas", MP: 20, MW: 9, MD: 5, ML: 6, GF: 21, GA: 16, logo: "argentina/excursionistas.png" },
+        { team: "Dock Sud", MP: 20, MW: 8, MD: 7, ML: 5, GF: 29, GA: 25, logo: "argentina/docksud.png" },
+        { team: "Villa San Carlos", MP: 20, MW: 9, MD: 3, ML: 8, GF: 24, GA: 28, logo: "argentina/villasantacarlos.png" },
+        { team: "Brown (A)", MP: 20, MW: 7, MD: 7, ML: 6, GF: 18, GA: 17, logo: "argentina/brown.png" },
+        { team: "Deportivo Merlo", MP: 20, MW: 7, MD: 7, ML: 6, GF: 16, GA: 17, logo: "argentina/deportivomerlo.png" },
+        { team: "Liniers", MP: 20, MW: 8, MD: 3, ML: 9, GF: 27, GA: 22, logo: "argentina/liniers.png" },
+        { team: "UAI Urquiza", MP: 20, MW: 5, MD: 11, ML: 4, GF: 16, GA: 18, logo: "argentina/uaiurquiza.png" },
+        { team: "Comunicaciones", MP: 20, MW: 7, MD: 4, ML: 9, GF: 19, GA: 18, logo: "argentina/comunicaciones.png" },
+        { team: "Laferrere", MP: 20, MW: 5, MD: 9, ML: 6, GF: 21, GA: 20, logo: "argentina/laferrere.png" },
+        { team: "Argentino Quilmes", MP: 20, MW: 5, MD: 9, ML: 6, GF: 21, GA: 24, logo: "argentina/argentoquilmes.png" },
+        { team: "San Martín Burzaco", MP: 20, MW: 6, MD: 6, ML: 8, GF: 19, GA: 25, logo: "argentina/sanmartinburzaco.png" },
+        { team: "Dep. Armenio", MP: 20, MW: 5, MD: 8, ML: 7, GF: 17, GA: 19, logo: "argentina/deparmenio.png" },
+        { team: "Dálmine", MP: 20, MW: 5, MD: 8, ML: 7, GF: 20, GA: 27, logo: "argentina/dalmine.png" },
+        { team: "Flandria", MP: 20, MW: 5, MD: 7, ML: 8, GF: 12, GA: 18, logo: "argentina/flandria.png" },
+        { team: "Sportivo Italiano", MP: 20, MW: 4, MD: 9, ML: 7, GF: 15, GA: 16, logo: "argentina/sportivoitaliano.png" },
+        { team: "Sacachispas", MP: 20, MW: 2, MD: 9, ML: 9, GF: 13, GA: 24, logo: "argentina/sacachispas.png" },
+        { team: "Fenix Pilar", MP: 20, MW: 1, MD: 7, ML: 12, GF: 8, GA: 29, logo: "argentina/fenixpilar.png" }
+    ],
+    fixtures: [
+        ["San Martín Burzaco", "Arsenal Sarandi"],
+        ["Argentino Quilmes", "Ituzaingó"],
+        ["Deportivo Merlo", "Laferrere"],
+        ["Brown (A)", "Comunicaciones"],
+        ["Dálmine", "Villa San Carlos"],
+        ["Laferrere", "Dock Stud"],
+        ["Flandria", "Argentino Quilmes"],
+        ["UAI Urquiza", "Liniers"],
+        ["Arsenal Sarandi", "Sportivo Italiano"],
+        ["Telleres Remedios", "Deportivo Merlo"],
+        ["Dep. Armenio", "Deportivo Camioneros"],
+		["Ituzaingó", "Real Pilar"]
+    ]
+},
+
 "Argentine Liga Profesional - Group B": {
     id: "argentina-group-b",
     logo: "argentina/argentinaprimeralogo.png",
@@ -480,6 +523,35 @@ const matchesData = {
         { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
 		{ home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
     ],
+	"Argentine Primera B Metropolitana": [
+    // Matchday 5
+    { home: "Deportivo Camioneros", away: "Villa San Carlos", home_score: 3, away_score: 0 },
+    
+    // Matchday 17
+    { home: "Argentino de Merlo", away: "San Martín Burzaco", home_score: 0, away_score: 1 },
+    
+    // Matchday 5 (continued)
+    { home: "Dep. Armenio", away: "Argentino de Merlo", home_score: 2, away_score: 0 },
+    { home: "Flandria", away: "Arsenal Sarandi", home_score: 0, away_score: 0 },
+    { home: "Dock Sud", away: "Real Pilar", home_score: 2, away_score: 0 },
+    { home: "Brown (A)", away: "Talleres Remedios", home_score: 1, away_score: 2 },
+    { home: "Deportivo Merlo", away: "Liniers", home_score: 0, away_score: 0 },
+    { home: "Comunicaciones", away: "UAI Urquiza", home_score: 3, away_score: 0 },
+    { home: "Ituzaingó", away: "Laferrere", home_score: 0, away_score: 2 },
+    { home: "Sportivo Italiano", away: "San Martín Burzaco", home_score: 1, away_score: 2 },
+    { home: "Defensores Unidos", away: "Dálmine", home_score: 2, away_score: 1 },
+    { home: "Argentino Quilmes", away: "Excursionistas", home_score: 2, away_score: 2 },
+    
+    // Matchday 18
+    { home: "Comunicaciones", away: "Dep. Armenio", home_score: 0, away_score: 1 },
+    { home: "Dock Sud", away: "Brown (A)", home_score: 0, away_score: 1 },
+    { home: "Real Pilar", away: "UAI Urquiza", home_score: 2, away_score: 1 },
+    { home: "Liniers", away: "Dálmine", home_score: 1, away_score: 0 },
+    { home: "Deportivo Camioneros", away: "Talleres Remedios", home_score: 1, away_score: 4 },
+    { home: "Sportivo Italiano", away: "Argentino de Merlo", home_score: 0, away_score: 2 },
+    { home: "Villa San Carlos", away: "Excursionistas", home_score: 0, away_score: 2 },
+    { home: "Defensores Unidos", away: "Flandria", home_score: 1, away_score: 0 }
+],
     
 	
 	"Chinese Super League": [
