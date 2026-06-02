@@ -24,23 +24,17 @@ function calculateFootballPower(team) {
     return (mw * 3) + md + ((gf - ga) * 0.2);
 }
 
-// Basketball Power Calculation (NEW)
+// Basketball Power Calculation
 // Formula: Win% × 100 + ((Points For - Points Against) / GP × 0.5)
-// Win% = GW / GP
 function calculateBasketballPower(team) {
     const gp = team.GP || 82;
     const gw = team.GW || 0;
     const pointsFor = team.points_for || 0;
     const pointsAgainst = team.points_against || 0;
     
-    // Win percentage (0-100 scale)
     const winPct = (gw / gp) * 100;
-    
-    // Average point differential per game
     const avgPointDiff = (pointsFor - pointsAgainst) / gp;
     
-    // Power = Win% + (Avg Point Differential × 0.5)
-    // Higher multiplier for blowouts, lower for close games
     return winPct + (avgPointDiff * 0.5);
 }
 
@@ -56,7 +50,20 @@ function generateFootballPredictions(leagueName, leagueData) {
     const predictions = [];
     
     for (const fixture of fixtures) {
-        const [home, away] = fixture;
+        // Support both old and new fixture formats
+        let home, away, fixtureDate;
+        
+        if (Array.isArray(fixture)) {
+            // Old format: ["Home", "Away"]
+            [home, away] = fixture;
+            fixtureDate = null;
+        } else {
+            // New format: { home: "Home", away: "Away", date: "2026-06-15" }
+            home = fixture.home;
+            away = fixture.away;
+            fixtureDate = fixture.date || null;
+        }
+        
         const homeTeam = findTeam(teams, home);
         const awayTeam = findTeam(teams, away);
         
@@ -87,6 +94,7 @@ function generateFootballPredictions(leagueName, leagueData) {
         predictions.push({
             home,
             away,
+            date: fixtureDate,
             homeLogo: homeTeam.logo || null,
             awayLogo: awayTeam.logo || null,
             homePower: homePower.toFixed(1),
@@ -95,7 +103,6 @@ function generateFootballPredictions(leagueName, leagueData) {
             bothScore,
             overUnder,
             diff: diff.toFixed(1),
-            // Additional football stats
             homeAvgGoals: homeAvg.toFixed(1),
             awayAvgGoals: awayAvg.toFixed(1)
         });
@@ -104,14 +111,27 @@ function generateFootballPredictions(leagueName, leagueData) {
     return predictions;
 }
 
-// ==================== BASKETBALL PREDICTION GENERATOR (UPDATED) ====================
+// ==================== BASKETBALL PREDICTION GENERATOR ====================
 
 function generateBasketballPredictions(leagueName, leagueData) {
     const { teams, fixtures } = leagueData;
     const predictions = [];
     
     for (const fixture of fixtures) {
-        const [home, away] = fixture;
+        // Support both old and new fixture formats
+        let home, away, fixtureDate;
+        
+        if (Array.isArray(fixture)) {
+            // Old format: ["Home", "Away"]
+            [home, away] = fixture;
+            fixtureDate = null;
+        } else {
+            // New format: { home: "Home", away: "Away", date: "2026-06-15" }
+            home = fixture.home;
+            away = fixture.away;
+            fixtureDate = fixture.date || null;
+        }
+        
         const homeTeam = findTeam(teams, home);
         const awayTeam = findTeam(teams, away);
         
@@ -151,6 +171,7 @@ function generateBasketballPredictions(leagueName, leagueData) {
         predictions.push({
             home,
             away,
+            date: fixtureDate,
             homeLogo: homeTeam.logo || null,
             awayLogo: awayTeam.logo || null,
             homePower: homePower.toFixed(1),
@@ -159,7 +180,6 @@ function generateBasketballPredictions(leagueName, leagueData) {
             bothScore,
             overUnder,
             diff: diff.toFixed(1),
-            // Basketball specific stats
             homeAvgPoints: homeAvg.toFixed(1),
             awayAvgPoints: awayAvg.toFixed(1),
             homeWinPct: homeWinPct,
@@ -186,13 +206,3 @@ function generatePredictions(leagueName, leagueData) {
 
 // ==================== EXPORT FOR USE (if needed) ====================
 // For browser environment, functions are globally available
-// For Node.js environment, uncomment:
-// if (typeof module !== 'undefined' && module.exports) {
-//     module.exports = { 
-//         generatePredictions, 
-//         calculateFootballPower, 
-//         calculateBasketballPower,
-//         generateFootballPredictions,
-//         generateBasketballPredictions
-//     };
-// }

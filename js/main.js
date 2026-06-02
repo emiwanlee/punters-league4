@@ -21,6 +21,18 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTime();
     setInterval(updateTime, 1000);
     
+    // Format date for display
+    function formatDate(dateString) {
+        if (!dateString) return null;
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', { 
+            weekday: 'short', 
+            month: 'short', 
+            day: 'numeric', 
+            year: 'numeric' 
+        });
+    }
+    
     // Render league selector buttons
     function renderLeagueSelector() {
         const buttonsDiv = document.getElementById('leagueButtons');
@@ -77,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h2>${escapeHtml(leagueName)}</h2>
                     <p class="text-muted">
                         <i class="fas ${league.isBasketball ? 'fa-basketball-ball' : 'fa-futbol'}"></i> 
-                        ${league.isBasketball ? '?? Basketball Predictions' : '? Football Predictions'}
+                        ${league.isBasketball ? '🏀 Basketball Predictions' : '⚽ Football Predictions'}
                     </p>
                 </div>
             `;
@@ -90,9 +102,11 @@ document.addEventListener('DOMContentLoaded', function() {
             for (const match of predictions) {
                 // Different styling for basketball vs football
                 const cardClass = league.isBasketball ? 'match-card basketball-card' : 'match-card';
+                const formattedDate = formatDate(match.date);
                 
                 html += `
                     <div class="${cardClass}">
+                        ${formattedDate ? `<div class="match-date-header"><i class="far fa-calendar-alt"></i> ${formattedDate}</div>` : ''}
                         <div class="team-row">
                             <div class="team">
                                 ${match.homeLogo ? 
@@ -108,6 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <span class="badge bg-info">${match.homeWinPct}% Win</span>
                                         <span class="badge bg-secondary">${match.homeAvgPoints} PPG</span>
                                         <span class="badge bg-dark">${match.homeRecord}</span>
+                                    </div>
+                                ` : ''}
+                                ${!league.isBasketball && match.homeAvgGoals ? `
+                                    <div class="team-stats-small">
+                                        <span class="badge bg-info">${match.homeAvgGoals} Goals/Game</span>
                                     </div>
                                 ` : ''}
                                 <span class="power-badge"><i class="fas fa-chart-line"></i> Power: ${match.homePower}</span>
@@ -127,6 +146,11 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <span class="badge bg-info">${match.awayWinPct}% Win</span>
                                         <span class="badge bg-secondary">${match.awayAvgPoints} PPG</span>
                                         <span class="badge bg-dark">${match.awayRecord}</span>
+                                    </div>
+                                ` : ''}
+                                ${!league.isBasketball && match.awayAvgGoals ? `
+                                    <div class="team-stats-small">
+                                        <span class="badge bg-info">${match.awayAvgGoals} Goals/Game</span>
                                     </div>
                                 ` : ''}
                                 <span class="power-badge"><i class="fas fa-chart-line"></i> Power: ${match.awayPower}</span>

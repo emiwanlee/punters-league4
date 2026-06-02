@@ -57,6 +57,27 @@ body {
     letter-spacing: 2px;
 }
 
+
+/* Match Date Header */
+.match-date-header {
+    background: linear-gradient(135deg, #667eea20, #764ba220);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #667eea;
+    display: inline-block;
+    width: auto;
+}
+
+.match-card {
+    position: relative;
+}
+
+.match-date-header i {
+    margin-right: 8px;
+}
 /* Responsive logo */
 @media (max-width: 768px) {
     .logo-main {

@@ -24,17 +24,22 @@ const leaguesData = {
         { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
     ],
     fixtures: [
-        ["Montreal", "Toronto"],
-        ["Chicago", "Vancouver"],
-        ["Seattle", "Portland"],
-        ["Nashville", "Atlanta"],
-        ["LA Galaxy", "LAFC"],
-        ["Cincinnati", "Vancouver"],
-        ["Columbus", "New York City"],
-        ["Inter Miami", "Chicago"],
-        ["Philadelphia", "NY Red Bulls"],
-        ["New England", "Toronto"],
-        ["Charlotte", "Atlanta"]
+        { home: "Montreal", away: "Toronto", date: "2026-07-17" },
+        { home: "Chicago", away: "Vancouver", date: "2026-07-17" },
+        { home: "Seattle", away: "Portland", date: "2026-07-17" },
+        { home: "Nashville", away: "Atlanta", date: "2026-07-18" },
+        { home: "LA Galaxy", away: "LAFC", date: "2026-07-18" },
+        { home: "Cincinnati", away: "Vancouver", date: "2026-07-23" },
+        { home: "Columbus", away: "New York City", date: "2026-07-23" },
+        { home: "Inter Miami", away: "Chicago", date: "2026-07-23" },
+        { home: "Philadelphia", away: "NY Red Bulls", date: "2026-07-23" },
+        { home: "New England", away: "Toronto", date: "2026-07-23" },
+        { home: "Charlotte", away: "Atlanta", date: "2026-07-23" },
+		{ home: "Austin", away: "Seattle", date: "2026-07-23" },
+		{ home: "Houston", away: "DC United", date: "2026-07-23" },
+		{ home: "Nashville", away: "Montreal", date: "2026-07-23" },
+		{ home: "Sporting KC", away: "Minnesota", date: "2026-07-23" },
+		{ home: "Colorado", away: "San Diego", date: "2026-07-23" }
     ]
 },
 
@@ -61,16 +66,16 @@ const leaguesData = {
         { team: "Sporting KC", MP: 34, MW: 7, MD: 7, GF: 46, GA: 70, logo: "mls/sportingkclogo.png" }
     ],
     fixtures: [
-        ["Toronto", "San Jose"],
-        ["Sporting KC", "Seattle"],
-        ["Real Salt Lake", "Portland"],
-        ["Inter Miami", "Orlando"],
-        ["Atlanta", "Montreal"],
-        ["NY Red Bulls", "Dallas"],
-        ["Columbus", "Minnesota"]
+        { home: "LA Galaxy", away: "St. Louis", date: "2026-07-23" },
+        { home: "LAFC", away: "Real Salt Lake", date: "2026-07-23" },
+        { home: "Portland", away: "Dallas", date: "2026-07-23" },
+        { home: "Eatrhquakes", away: "Orlando", date: "2026-07-23" },
+        { home: "Atlanta", away: "Montreal", date: "2026-06-15" },
+        { home: "NY Red Bulls", away: "Dallas", date: "2026-06-15" },
+        { home: "Columbus", away: "Minnesota", date: "2026-06-15" }
     ]
 },
-
+/*
 "Argentine Liga Profesional - Group A": {
     id: "argentina-group-a",
     logo: "argentina/argentinaprimeralogo.png",
@@ -93,24 +98,24 @@ const leaguesData = {
         { team: "Deportivo Riestra", MP: 16, MW: 1, MD: 8, GF: 5, GA: 12, logo: "argentina/riestralogo.jpg" }
     ],
     fixtures: [
-        ["Barracas Central", "Banfield"],
-        ["Lanus", "Riestra"],
-        ["Central Cordoba", "Boca Juniors"],
-        ["Union", "Telleres"],
-        ["San Lorenzo", "Independiente"],
-        ["Platense", "Estudiantes"],
-        ["Aldosivi", "Independiente Rivadavia"],
-        ["Central", "Tigre"],
-        ["Gimnasia LP", "Argentinos Juniors"],
-        ["Racing Club", "Huracan"],
-        ["Belgrano", "Sarmiento"],
-        ["River Plate", "Atletico Tucuman"],
-        ["Gimnasia Esgrima", "Defensa"],
-        ["Velez Sarsfield", "Newells"],
-        ["Estudiantes De Rio Cuarto", "Instituto"]
+        { home: "Barracas Central", away: "Banfield", date: "2026-06-15" },
+        { home: "Lanus", away: "Riestra", date: "2026-06-15" },
+        { home: "Central Cordoba", away: "Boca Juniors", date: "2026-06-15" },
+        { home: "Union", away: "Telleres", date: "2026-06-15" },
+        { home: "San Lorenzo", away: "Independiente", date: "2026-06-15" },
+        { home: "Platense", away: "Estudiantes", date: "2026-06-15" },
+        { home: "Aldosivi", away: "Independiente Rivadavia", date: "2026-06-15" },
+        { home: "Central", away: "Tigre", date: "2026-06-15" },
+        { home: "Gimnasia LP", away: "Argentinos Juniors", date: "2026-06-15" },
+        { home: "Racing Club", away: "Huracan", date: "2026-06-15" },
+        { home: "Belgrano", away: "Sarmiento", date: "2026-06-15" },
+        { home: "River Plate", away: "Atletico Tucuman", date: "2026-06-15" },
+        { home: "Gimnasia Esgrima", away: "Defensa", date: "2026-06-15" },
+        { home: "Velez Sarsfield", away: "Newells", date: "2026-06-15" },
+        { home: "Estudiantes De Rio Cuarto", away: "Instituto", date: "2026-06-15" }
     ]
 },
-
+*/
 "Argentine Primera B Metropolitana": {
     id: "argentina-primera-b",
     logo: "argentina/primera-b.png",
@@ -139,21 +144,21 @@ const leaguesData = {
         { team: "Fenix Pilar", MP: 20, MW: 1, MD: 7, ML: 12, GF: 8, GA: 29, logo: "argentina/fenixpilar.png" }
     ],
     fixtures: [
-        ["San Martín Burzaco", "Arsenal Sarandi"],
-        ["Argentino Quilmes", "Ituzaingó"],
-        ["Deportivo Merlo", "Laferrere"],
-        ["Brown (A)", "Comunicaciones"],
-        ["Dálmine", "Villa San Carlos"],
-        ["Laferrere", "Dock Stud"],
-        ["Flandria", "Argentino Quilmes"],
-        ["UAI Urquiza", "Liniers"],
-        ["Arsenal Sarandi", "Sportivo Italiano"],
-        ["Telleres Remedios", "Deportivo Merlo"],
-        ["Dep. Armenio", "Deportivo Camioneros"],
-		["Ituzaingó", "Real Pilar"]
+        { home: "Deportivo Merlo", away: "Laferrere", date: "TBD" },
+        { home: "Brown (A)", away: "Comunicaciones", date: "2026-06-05" },
+        { home: "Dálmine", away: "Villa San Carlos", date: "2026-06-06" },
+		{ home: "Flandria", away: "Argentino Quilmes", date: "2026-06-06" },
+		{ home: "Dep. Armenio", away: "Defensores Unidos", date: "2026-06-06" },
+		{ home: "Excursionistas", away: "San Martín Burzaco", date: "2026-06-06" },
+		{ home: "Argentino de Merlo", away: "Deportivo Camioneros", date: "2026-06-06" },
+		{ home: "Laferrere", away: "Dock Stud", date: "2026-06-07" },
+        { home: "UAI Urquiza", away: "liniers", date: "2026-06-08" },
+        //{ home: "Flandria", away: "Argentino Quilmes", date: "2026-06-15" },
+        //{ home: "Dep. Armenio", away: "Deportivo Camioneros", date: "2026-06-15" },
+        //{ home: "Ituzaingó", away: "Real Pilar", date: "2026-06-15" }
     ]
 },
-
+/*
 "Argentine Liga Profesional - Group B": {
     id: "argentina-group-b",
     logo: "argentina/argentinaprimeralogo.png",
@@ -176,24 +181,24 @@ const leaguesData = {
         { team: "Estudiantes de Río Cuarto", MP: 16, MW: 1, MD: 2, GF: 5, GA: 24, logo: "argentina/estudiantesdelriocuartologo.png" }
     ],
     fixtures: [
-        ["Independiente Rivadavia", "River Plate"],
-        ["Argentinos Juniors", "Central"],
-        ["Belgrano", "Gimnasia LP"],
-        ["Huracán", "Racing Club"],
-        ["Barracas Central", "Tigre"],
-        ["Sarmiento", "Banfield"],
-        ["Atlético Tucumán", "Aldosivi"],
-        ["Estudiantes de Río Cuarto", "Independiente Rivadavia"],
-        ["River Plate", "Argentinos Juniors"],
-        ["Central", "Belgrano"],
-        ["Gimnasia LP", "Huracán"],
-        ["Racing Club", "Barracas Central"],
-        ["Tigre", "Sarmiento"],
-        ["Banfield", "Atlético Tucumán"],
-        ["Aldosivi", "Estudiantes de Río Cuarto"]
+        { home: "Independiente Rivadavia", away: "River Plate", date: "2026-06-15" },
+        { home: "Argentinos Juniors", away: "Central", date: "2026-06-15" },
+        { home: "Belgrano", away: "Gimnasia LP", date: "2026-06-15" },
+        { home: "Huracán", away: "Racing Club", date: "2026-06-15" },
+        { home: "Barracas Central", away: "Tigre", date: "2026-06-15" },
+        { home: "Sarmiento", away: "Banfield", date: "2026-06-15" },
+        { home: "Atlético Tucumán", away: "Aldosivi", date: "2026-06-15" },
+        { home: "Estudiantes de Río Cuarto", away: "Independiente Rivadavia", date: "2026-06-15" },
+        { home: "River Plate", away: "Argentinos Juniors", date: "2026-06-15" },
+        { home: "Central", away: "Belgrano", date: "2026-06-15" },
+        { home: "Gimnasia LP", away: "Huracán", date: "2026-06-15" },
+        { home: "Racing Club", away: "Barracas Central", date: "2026-06-15" },
+        { home: "Tigre", away: "Sarmiento", date: "2026-06-15" },
+        { home: "Banfield", away: "Atlético Tucumán", date: "2026-06-15" },
+        { home: "Aldosivi", away: "Estudiantes de Río Cuarto", date: "2026-06-15" }
     ]
 },
-
+*/
 "Japanese J1 League": {
     id: "j1-league",
     logo: "japan/j1logo.png",
@@ -221,10 +226,10 @@ const leaguesData = {
         { team: "Niigata", MP: 38, MW: 4, MD: 12, GF: 36, GA: 67, logo: "japan/niigatalogologo.png" }
     ],
     fixtures: [
-        ["Sanfreece", "Kawasaki"],
-        ["Nagoya", "Machida"],
-        ["Vissel Kobe", "Kashima Antlers"],
-        ["Cerezo Osaka", "FC Tokyo"]
+        { home: "Sanfreece", away: "Kawasaki", date: "2026-06-15" },
+        { home: "Nagoya", away: "Machida", date: "2026-06-15" },
+        { home: "Vissel Kobe", away: "Kashima Antlers", date: "2026-06-15" },
+        { home: "Cerezo Osaka", away: "FC Tokyo", date: "2026-06-15" }
     ]
 },
 
@@ -255,29 +260,28 @@ const leaguesData = {
         { team: "Ehime FC", MP: 38, MW: 3, MD: 13, GF: 35, GA: 71, logo: "japan/ehimelogo.png" }
     ],
     fixtures: [
-        ["Consadole Sapporo", "Jubilo Iwata"],
-        ["Fujieda MYFC", "Iwaki FC"],
-        ["Renofa Yamaguchi", "Roasso Kumamoto"],
-        ["F.C. Gifu", "Omiya Ardija"],
-        ["Vegalta Sendai", "Yokohama FC"],
-        ["Nara Club", "Kataller Toyama"],
-        ["Niigata", "Ehime FC"],
-        ["Sagan Tosu", "Ryukyu"],
-        ["Gunma", "Sagamihara"],
-        ["Nagano", "Ventforet Kofu"],
-        ["Vanraure Hachinohe", "Tochigi SC"],
-        ["Tegevajaro Miyazaki", "Reilac Shiga"],
-        ["Tokushima Vortis", "Imabari"],
-        ["Kitayushu", "Kagoshima United"],
-        ["Matsumoto Yamaga", "Fukushima United"],
-        ["Kamatamare Sanuki", "Osaka"],
-        ["Montedio Yamagata", "Shonan Bellmare"],
-        ["Tottori", "Oita Trinita"],
-        ["Blaublitz Tochigi FC", "Kanazawa"],
-        ["Ehime FC", "Mito HollyHock"]
+        { home: "Consadole Sapporo", away: "Jubilo Iwata", date: "2026-06-15" },
+        { home: "Fujieda MYFC", away: "Iwaki FC", date: "2026-06-15" },
+        { home: "Renofa Yamaguchi", away: "Roasso Kumamoto", date: "2026-06-15" },
+        { home: "F.C. Gifu", away: "Omiya Ardija", date: "2026-06-15" },
+        { home: "Vegalta Sendai", away: "Yokohama FC", date: "2026-06-15" },
+        { home: "Nara Club", away: "Kataller Toyama", date: "2026-06-15" },
+        { home: "Niigata", away: "Ehime FC", date: "2026-06-15" },
+        { home: "Sagan Tosu", away: "Ryukyu", date: "2026-06-15" },
+        { home: "Gunma", away: "Sagamihara", date: "2026-06-15" },
+        { home: "Nagano", away: "Ventforet Kofu", date: "2026-06-15" },
+        { home: "Vanraure Hachinohe", away: "Tochigi SC", date: "2026-06-15" },
+        { home: "Tegevajaro Miyazaki", away: "Reilac Shiga", date: "2026-06-15" },
+        { home: "Tokushima Vortis", away: "Imabari", date: "2026-06-15" },
+        { home: "Kitayushu", away: "Kagoshima United", date: "2026-06-15" },
+        { home: "Matsumoto Yamaga", away: "Fukushima United", date: "2026-06-15" },
+        { home: "Kamatamare Sanuki", away: "Osaka", date: "2026-06-15" },
+        { home: "Montedio Yamagata", away: "Shonan Bellmare", date: "2026-06-15" },
+        { home: "Tottori", away: "Oita Trinita", date: "2026-06-15" },
+        { home: "Blaublitz Tochigi FC", away: "Kanazawa", date: "2026-06-15" },
+        { home: "Ehime FC", away: "Mito HollyHock", date: "2026-06-15" }
     ]
-	},
-	
+},
 
 "Chilean Primera División": {
     id: "chile",
@@ -302,12 +306,13 @@ const leaguesData = {
         { rank: 16, team: "Unión Española", MP: 30, MW: 6, MD: 3, ML: 21, GF: 33, GA: 58, logo: "chile/unespanola.png" }
     ],
     fixtures: [
-        ["Deportes Limache", "Coquimbo"],
-        ["O'Higgins", "Everton"],
-        ["Palestino", "Audax Italiano"]
+        { home: "Deportes Limache", away: "Coquimbo", date: "2026-06-15" },
+        { home: "O'Higgins", away: "Everton", date: "2026-06-15" },
+        { home: "Palestino", away: "Audax Italiano", date: "2026-06-15" }
     ]
-	},
-	"Chinese Super League": {
+},
+
+"Chinese Super League": {
     id: "csl",
     logo: "china/csl.png",
     isBasketball: false,
@@ -330,17 +335,15 @@ const leaguesData = {
         { team: "Changchun Yatai", MP: 30, MW: 4, MD: 7, ML: 19, GF: 26, GA: 52, logo: "china/changchun.png" }
     ],
     fixtures: [
-        ["Qingdao Hainiu", "Yunnan Yukun"],
-        ["Shenyang Urban", "Shandong Taishan"],
-        ["Henan", "Shanghai Port"],
-        ["Shenzhen Peng City", "Chengdu Rongcheng"],
-        ["Chongqing Tonglianglong", "Tianjin Jinmen Tiger"],
-        ["Beijing Guoan", "Wuhan Three Towns"],
-        ["Qingdao Youth Island", "Zhejiang"],
-        ["Dalian Yingbo", "Shanghai Shenhua"]
+        { home: "Qingdao Hainiu", away: "Yunnan Yukun", date: "2026-06-15" },
+        { home: "Shenyang Urban", away: "Shandong Taishan", date: "2026-06-15" },
+        { home: "Henan", away: "Shanghai Port", date: "2026-06-15" },
+        { home: "Shenzhen Peng City", away: "Chengdu Rongcheng", date: "2026-06-15" },
+        { home: "Chongqing Tonglianglong", away: "Tianjin Jinmen Tiger", date: "2026-06-15" },
+        { home: "Beijing Guoan", away: "Wuhan Three Towns", date: "2026-06-15" },
+        { home: "Qingdao Youth Island", away: "Zhejiang", date: "2026-06-15" },
+        { home: "Dalian Yingbo", away: "Shanghai Shenhua", date: "2026-06-15" }
     ]
-
-
 },
 
 "NBA": {
@@ -360,11 +363,11 @@ const leaguesData = {
         { rank: 10, team: "Dallas Mavericks", GP: 82, GW: 50, GL: 32, points_for: 9676, points_against: 9512 }
     ],
     fixtures: [
-        ["Boston Celtics", "LA Lakers"],
-        ["Denver Nuggets", "Milwaukee Bucks"],
-        ["Philadelphia 76ers", "Phoenix Suns"],
-        ["Golden State Warriors", "Miami Heat"],
-        ["New York Knicks", "Dallas Mavericks"]
+        { home: "Boston Celtics", away: "LA Lakers", date: "2026-06-15" },
+        { home: "Denver Nuggets", away: "Milwaukee Bucks", date: "2026-06-15" },
+        { home: "Philadelphia 76ers", away: "Phoenix Suns", date: "2026-06-15" },
+        { home: "Golden State Warriors", away: "Miami Heat", date: "2026-06-15" },
+        { home: "New York Knicks", away: "Dallas Mavericks", date: "2026-06-15" }
     ]
 },
 
@@ -385,11 +388,11 @@ const leaguesData = {
         { rank: 10, team: "Anadolu Efes", GP: 34, GW: 17, GL: 17, points_for: 2788, points_against: 2856 }
     ],
     fixtures: [
-        ["Real Madrid", "Barcelona"],
-        ["Panathinaikos", "Olympiacos"],
-        ["Monaco", "Fenerbahce"],
-        ["Maccabi Tel Aviv", "Partizan"],
-        ["Anadolu Efes", "Zalgiris Kaunas"]
+        { home: "Real Madrid", away: "Barcelona", date: "2026-06-15" },
+        { home: "Panathinaikos", away: "Olympiacos", date: "2026-06-15" },
+        { home: "Monaco", away: "Fenerbahce", date: "2026-06-15" },
+        { home: "Maccabi Tel Aviv", away: "Partizan", date: "2026-06-15" },
+        { home: "Anadolu Efes", away: "Zalgiris Kaunas", date: "2026-06-15" }
     ]
 },
 
@@ -408,10 +411,10 @@ const leaguesData = {
         { rank: 8, team: "Murcia", GP: 34, GW: 17, GL: 17, points_for: 2788, points_against: 2856 }
     ],
     fixtures: [
-        ["Real Madrid", "Barcelona"],
-        ["Unicaja", "Valencia"],
-        ["Gran Canaria", "Baskonia"],
-        ["Joventut", "Murcia"]
+        { home: "Real Madrid", away: "Barcelona", date: "2026-06-15" },
+        { home: "Unicaja", away: "Valencia", date: "2026-06-15" },
+        { home: "Gran Canaria", away: "Baskonia", date: "2026-06-15" },
+        { home: "Joventut", away: "Murcia", date: "2026-06-15" }
     ]
 }
 
@@ -521,103 +524,80 @@ const matchesData = {
         { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
         { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
         { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
-		{ home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
+        { home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
     ],
-	"Argentine Primera B Metropolitana": [
-    // Matchday 5
-    { home: "Deportivo Camioneros", away: "Villa San Carlos", home_score: 3, away_score: 0 },
-    
-    // Matchday 17
-    { home: "Argentino de Merlo", away: "San Martín Burzaco", home_score: 0, away_score: 1 },
-    
-    // Matchday 5 (continued)
-    { home: "Dep. Armenio", away: "Argentino de Merlo", home_score: 2, away_score: 0 },
-    { home: "Flandria", away: "Arsenal Sarandi", home_score: 0, away_score: 0 },
-    { home: "Dock Sud", away: "Real Pilar", home_score: 2, away_score: 0 },
-    { home: "Brown (A)", away: "Talleres Remedios", home_score: 1, away_score: 2 },
-    { home: "Deportivo Merlo", away: "Liniers", home_score: 0, away_score: 0 },
-    { home: "Comunicaciones", away: "UAI Urquiza", home_score: 3, away_score: 0 },
-    { home: "Ituzaingó", away: "Laferrere", home_score: 0, away_score: 2 },
-    { home: "Sportivo Italiano", away: "San Martín Burzaco", home_score: 1, away_score: 2 },
-    { home: "Defensores Unidos", away: "Dálmine", home_score: 2, away_score: 1 },
-    { home: "Argentino Quilmes", away: "Excursionistas", home_score: 2, away_score: 2 },
-    
-    // Matchday 18
-    { home: "Comunicaciones", away: "Dep. Armenio", home_score: 0, away_score: 1 },
-    { home: "Dock Sud", away: "Brown (A)", home_score: 0, away_score: 1 },
-    { home: "Real Pilar", away: "UAI Urquiza", home_score: 2, away_score: 1 },
-    { home: "Liniers", away: "Dálmine", home_score: 1, away_score: 0 },
-    { home: "Deportivo Camioneros", away: "Talleres Remedios", home_score: 1, away_score: 4 },
-    { home: "Sportivo Italiano", away: "Argentino de Merlo", home_score: 0, away_score: 2 },
-    { home: "Villa San Carlos", away: "Excursionistas", home_score: 0, away_score: 2 },
-    { home: "Defensores Unidos", away: "Flandria", home_score: 1, away_score: 0 }
-],
-    
-	
-	"Chinese Super League": [
-    // Matchday 10
-    { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
-    { home: "Shandong Taishan", away: "Shanghai Shenhua", home_score: 4, away_score: 1 },
-    { home: "Shenyang Urban", away: "Chengdu Rongcheng", home_score: 0, away_score: 1 },
-    { home: "Chongqing Tonglianglong", away: "Henan", home_score: 1, away_score: 1 },
-    { home: "Wuhan Three Towns", away: "Qingdao Hainiu", home_score: 1, away_score: 3 },
-    { home: "Beijing Guoan", away: "Dalian Yingbo", home_score: 3, away_score: 0 },
-    { home: "Shanghai Port", away: "Shenzhen Peng City", home_score: 1, away_score: 1 },
-    { home: "Yunnan Yukun", away: "Zhejiang", home_score: 1, away_score: 2 },
-    
-    // Matchday 11
-    { home: "Shanghai Shenhua", away: "Chongqing Tonglianglong", home_score: 2, away_score: 2 },
-    { home: "Chengdu Rongcheng", away: "Henan", home_score: 3, away_score: 0 },
-    { home: "Qingdao Youth Island", away: "Wuhan Three Towns", home_score: 1, away_score: 1 },
-    { home: "Shenzhen Peng City", away: "Shandong Taishan", home_score: 1, away_score: 2 },
-    { home: "Shenyang Urban", away: "Yunnan Yukun", home_score: 1, away_score: 2 },
-    { home: "Zhejiang", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
-    { home: "Beijing Guoan", away: "Shanghai Port", home_score: 2, away_score: 2 },
-    { home: "Qingdao Hainiu", away: "Dalian Yingbo", home_score: 3, away_score: 1 },
-    
-    // Matchday 12
-    { home: "Henan", away: "Shenzhen Peng City", home_score: 1, away_score: 0 },
-    { home: "Tianjin Jinmen Tiger", away: "Chengdu Rongcheng", home_score: 1, away_score: 2 },
-    { home: "Shanghai Port", away: "Zhejiang", home_score: 2, away_score: 2 },
-    { home: "Dalian Yingbo", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
-    { home: "Beijing Guoan", away: "Qingdao Hainiu", home_score: 4, away_score: 2 },
-    { home: "Wuhan Three Towns", away: "Shenyang Urban", home_score: 2, away_score: 2 },
-    { home: "Shandong Taishan", away: "Chongqing Tonglianglong", home_score: 3, away_score: 1 },
-    { home: "Yunnan Yukun", away: "Shanghai Shenhua", home_score: 1, away_score: 0 },
-    
-    // Matchday 13
-    { home: "Tianjin Jinmen Tiger", away: "Henan", home_score: 1, away_score: 2 },
-    { home: "Shenzhen Peng City", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
-    { home: "Qingdao Youth Island", away: "Beijing Guoan", home_score: 1, away_score: 1 },
-    { home: "Chengdu Rongcheng", away: "Shanghai Port", home_score: 0, away_score: 1 },
-    { home: "Shenyang Urban", away: "Qingdao Hainiu", home_score: 2, away_score: 1 },
-    { home: "Shanghai Shenhua", away: "Wuhan Three Towns", home_score: 2, away_score: 2 },
-    { home: "Chongqing Tonglianglong", away: "Yunnan Yukun", home_score: 0, away_score: 0 },
-    { home: "Zhejiang", away: "Shandong Taishan", home_score: 4, away_score: 1 },
-    
-    // Matchday 14
-    { home: "Shanghai Port", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
-    { home: "Beijing Guoan", away: "Henan", home_score: 1, away_score: 2 },
-    { home: "Dalian Yingbo", away: "Chengdu Rongcheng", home_score: 2, away_score: 0 },
-    { home: "Qingdao Hainiu", away: "Chongqing Tonglianglong", home_score: 0, away_score: 1 },
-    { home: "Yunnan Yukun", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
-    { home: "Shandong Taishan", away: "Wuhan Three Towns", home_score: 3, away_score: 3 },
-    { home: "Zhejiang", away: "Shenyang Urban", home_score: 0, away_score: 5 },
-    { home: "Shanghai Shenhua", away: "Shenzhen Peng City", home_score: 1, away_score: 2 },
-    
-    // Matchday 15
-    { home: "Shenyang Urban", away: "Shanghai Port", home_score: 3, away_score: 2 },
-    { home: "Qingdao Youth Island", away: "Shanghai Shenhua", home_score: 2, away_score: 2 },
-    { home: "Henan", away: "Zhejiang", home_score: 0, away_score: 2 },
-    { home: "Chengdu Rongcheng", away: "Shandong Taishan", home_score: 1, away_score: 0 },
-    { home: "Chongqing Tonglianglong", away: "Beijing Guoan", home_score: 2, away_score: 3 },
-    { home: "Shenzhen Peng City", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
-    
-    // Matchday 16
-    { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
-    { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
-]
-	
+    "Argentine Primera B Metropolitana": [
+        { home: "Deportivo Camioneros", away: "Villa San Carlos", home_score: 3, away_score: 0 },
+        { home: "Argentino de Merlo", away: "San Martín Burzaco", home_score: 0, away_score: 1 },
+        { home: "Dep. Armenio", away: "Argentino de Merlo", home_score: 2, away_score: 0 },
+        { home: "Flandria", away: "Arsenal Sarandi", home_score: 0, away_score: 0 },
+        { home: "Dock Sud", away: "Real Pilar", home_score: 2, away_score: 0 },
+        { home: "Brown (A)", away: "Talleres Remedios", home_score: 1, away_score: 2 },
+        { home: "Deportivo Merlo", away: "Liniers", home_score: 0, away_score: 0 },
+        { home: "Comunicaciones", away: "UAI Urquiza", home_score: 3, away_score: 0 },
+        { home: "Ituzaingó", away: "Laferrere", home_score: 0, away_score: 2 },
+        { home: "Sportivo Italiano", away: "San Martín Burzaco", home_score: 1, away_score: 2 },
+        { home: "Defensores Unidos", away: "Dálmine", home_score: 2, away_score: 1 },
+        { home: "Argentino Quilmes", away: "Excursionistas", home_score: 2, away_score: 2 },
+        { home: "Comunicaciones", away: "Dep. Armenio", home_score: 0, away_score: 1 },
+        { home: "Dock Sud", away: "Brown (A)", home_score: 0, away_score: 1 },
+        { home: "Real Pilar", away: "UAI Urquiza", home_score: 2, away_score: 1 },
+        { home: "Liniers", away: "Dálmine", home_score: 1, away_score: 0 },
+        { home: "Deportivo Camioneros", away: "Talleres Remedios", home_score: 1, away_score: 4 },
+        { home: "Sportivo Italiano", away: "Argentino de Merlo", home_score: 0, away_score: 2 },
+        { home: "Villa San Carlos", away: "Excursionistas", home_score: 0, away_score: 2 },
+        { home: "Defensores Unidos", away: "Flandria", home_score: 1, away_score: 0 }
+    ],
+    "Chinese Super League": [
+        { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+        { home: "Shandong Taishan", away: "Shanghai Shenhua", home_score: 4, away_score: 1 },
+        { home: "Shenyang Urban", away: "Chengdu Rongcheng", home_score: 0, away_score: 1 },
+        { home: "Chongqing Tonglianglong", away: "Henan", home_score: 1, away_score: 1 },
+        { home: "Wuhan Three Towns", away: "Qingdao Hainiu", home_score: 1, away_score: 3 },
+        { home: "Beijing Guoan", away: "Dalian Yingbo", home_score: 3, away_score: 0 },
+        { home: "Shanghai Port", away: "Shenzhen Peng City", home_score: 1, away_score: 1 },
+        { home: "Yunnan Yukun", away: "Zhejiang", home_score: 1, away_score: 2 },
+        { home: "Shanghai Shenhua", away: "Chongqing Tonglianglong", home_score: 2, away_score: 2 },
+        { home: "Chengdu Rongcheng", away: "Henan", home_score: 3, away_score: 0 },
+        { home: "Qingdao Youth Island", away: "Wuhan Three Towns", home_score: 1, away_score: 1 },
+        { home: "Shenzhen Peng City", away: "Shandong Taishan", home_score: 1, away_score: 2 },
+        { home: "Shenyang Urban", away: "Yunnan Yukun", home_score: 1, away_score: 2 },
+        { home: "Zhejiang", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+        { home: "Beijing Guoan", away: "Shanghai Port", home_score: 2, away_score: 2 },
+        { home: "Qingdao Hainiu", away: "Dalian Yingbo", home_score: 3, away_score: 1 },
+        { home: "Henan", away: "Shenzhen Peng City", home_score: 1, away_score: 0 },
+        { home: "Tianjin Jinmen Tiger", away: "Chengdu Rongcheng", home_score: 1, away_score: 2 },
+        { home: "Shanghai Port", away: "Zhejiang", home_score: 2, away_score: 2 },
+        { home: "Dalian Yingbo", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
+        { home: "Beijing Guoan", away: "Qingdao Hainiu", home_score: 4, away_score: 2 },
+        { home: "Wuhan Three Towns", away: "Shenyang Urban", home_score: 2, away_score: 2 },
+        { home: "Shandong Taishan", away: "Chongqing Tonglianglong", home_score: 3, away_score: 1 },
+        { home: "Yunnan Yukun", away: "Shanghai Shenhua", home_score: 1, away_score: 0 },
+        { home: "Tianjin Jinmen Tiger", away: "Henan", home_score: 1, away_score: 2 },
+        { home: "Shenzhen Peng City", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
+        { home: "Qingdao Youth Island", away: "Beijing Guoan", home_score: 1, away_score: 1 },
+        { home: "Chengdu Rongcheng", away: "Shanghai Port", home_score: 0, away_score: 1 },
+        { home: "Shenyang Urban", away: "Qingdao Hainiu", home_score: 2, away_score: 1 },
+        { home: "Shanghai Shenhua", away: "Wuhan Three Towns", home_score: 2, away_score: 2 },
+        { home: "Chongqing Tonglianglong", away: "Yunnan Yukun", home_score: 0, away_score: 0 },
+        { home: "Zhejiang", away: "Shandong Taishan", home_score: 4, away_score: 1 },
+        { home: "Shanghai Port", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
+        { home: "Beijing Guoan", away: "Henan", home_score: 1, away_score: 2 },
+        { home: "Dalian Yingbo", away: "Chengdu Rongcheng", home_score: 2, away_score: 0 },
+        { home: "Qingdao Hainiu", away: "Chongqing Tonglianglong", home_score: 0, away_score: 1 },
+        { home: "Yunnan Yukun", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
+        { home: "Shandong Taishan", away: "Wuhan Three Towns", home_score: 3, away_score: 3 },
+        { home: "Zhejiang", away: "Shenyang Urban", home_score: 0, away_score: 5 },
+        { home: "Shanghai Shenhua", away: "Shenzhen Peng City", home_score: 1, away_score: 2 },
+        { home: "Shenyang Urban", away: "Shanghai Port", home_score: 3, away_score: 2 },
+        { home: "Qingdao Youth Island", away: "Shanghai Shenhua", home_score: 2, away_score: 2 },
+        { home: "Henan", away: "Zhejiang", home_score: 0, away_score: 2 },
+        { home: "Chengdu Rongcheng", away: "Shandong Taishan", home_score: 1, away_score: 0 },
+        { home: "Chongqing Tonglianglong", away: "Beijing Guoan", home_score: 2, away_score: 3 },
+        { home: "Shenzhen Peng City", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
+        { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
+        { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
+    ]
 };
 
 console.log("✅ Matches data loaded from data.js");
