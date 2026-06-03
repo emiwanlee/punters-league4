@@ -610,6 +610,96 @@ const matchesData = {
 	{ home: "O'Higgins", away: "Everton", home_score: 2, away_score: 3 },
 	{ home: "Palestino", away: "Audax Italiano", home_score: 0, away_score: 0 },
 ],
+
+"Argentine Reserve League - Group A": [
+    // Round 16
+    { home: "Banfield 2", away: "Sarmiento Junin 2", home_score: 2, away_score: 1, date: "2026-06-02" },
+    { home: "Tigre 2", away: "River Plate 2", home_score: 0, away_score: 2, date: "2026-06-02" },
+    
+    // Round 15
+    { home: "River Plate 2", away: "San Lorenzo 2", home_score: 1, away_score: 1, date: "2026-05-29" },
+    { home: "Aldosivi 2", away: "Talleres Cordoba 2", home_score: 0, away_score: 2, date: "2026-05-28" },
+    { home: "Gimnasia L.P. 2", away: "Barracas Central 2", home_score: 0, away_score: 0, date: "2026-05-28" },
+    { home: "Lanus 2", away: "Platense 2", home_score: 0, away_score: 2, date: "2026-05-28" },
+    { home: "Sarmiento Junin 2", away: "Rosario Central 2", home_score: 0, away_score: 2, date: "2026-05-28" },
+    { home: "Union de Santa Fe 2", away: "Gimnasia Mendoza 2", home_score: 0, away_score: 2, date: "2026-05-28" },
+    { home: "Atl. Tucuman 2", away: "Godoy Cruz 2", home_score: 3, away_score: 1, date: "2026-05-27" },
+    { home: "Velez Sarsfield 2", away: "Instituto 2", home_score: 2, away_score: 3, date: "2026-05-27" },
+    { home: "Argentinos Jrs 2", away: "Banfield 2", home_score: 2, away_score: 0, date: "2026-05-26" },
+    { home: "Racing Club 2", away: "Tigre 2", home_score: 2, away_score: 1, date: "2026-05-26" },
+    
+    // Round 14
+    { home: "Talleres Cordoba 2", away: "Gimnasia L.P. 2", home_score: 1, away_score: 2, date: "2026-05-22" },
+    { home: "Barracas Central 2", away: "Union de Santa Fe 2", home_score: 1, away_score: 1, date: "2026-05-21" },
+    { home: "Gimnasia Mendoza 2", away: "Atl. Tucuman 2", home_score: 1, away_score: 2, date: "2026-05-21" },
+    { home: "Instituto 2", away: "Godoy Cruz 2", home_score: 2, away_score: 1, date: "2026-05-21" },
+    { home: "Velez Sarsfield 2", away: "River Plate 2", home_score: 1, away_score: 0, date: "2026-05-21" },
+    { home: "Rosario Central 2", away: "Argentinos Jrs 2", home_score: 1, away_score: 2, date: "2026-05-20" },
+    { home: "Tigre 2", away: "Sarmiento Junin 2", home_score: 1, away_score: 3, date: "2026-05-20" },
+    { home: "Banfield 2", away: "Aldosivi 2", home_score: 0, away_score: 0, date: "2026-05-19" },
+    { home: "San Lorenzo 2", away: "Racing Club 2", home_score: 1, away_score: 2, date: "2026-05-19" },
+    
+    // Round 13
+    { home: "Godoy Cruz 2", away: "Gimnasia Mendoza 2", home_score: 2, away_score: 3, date: "2026-05-14" },
+    { home: "River Plate 2", away: "Instituto 2", home_score: 1, away_score: 0, date: "2026-05-14" },
+    { home: "Sarmiento Junin 2", away: "San Lorenzo 2", home_score: 1, away_score: 2, date: "2026-05-14" },
+    { home: "Union de Santa Fe 2", away: "Talleres Cordoba 2", home_score: 2, away_score: 1, date: "2026-05-14" },
+    { home: "Argentinos Jrs 2", away: "Tigre 2", home_score: 2, away_score: 0, date: "2026-05-13" },
+    { home: "Atl. Tucuman 2", away: "Barracas Central 2", home_score: 3, away_score: 2, date: "2026-05-13" },
+    { home: "Aldosivi 2", away: "Rosario Central 2", home_score: 1, away_score: 0, date: "2026-05-12" },
+    { home: "Gimnasia L.P. 2", away: "Banfield 2", home_score: 2, away_score: 0, date: "2026-05-12" },
+    { home: "Racing Club 2", away: "Velez Sarsfield 2", home_score: 1, away_score: 1, date: "2026-05-12" },
+    
+    // Round 12
+    { home: "Banfield 2", away: "Union de Santa Fe 2", home_score: 1, away_score: 1, date: "2026-05-07" },
+    { home: "Barracas Central 2", away: "Godoy Cruz 2", home_score: 1, away_score: 0, date: "2026-05-07" },
+    { home: "Talleres Cordoba 2", away: "Atl. Tucuman 2", home_score: 5, away_score: 0, date: "2026-05-07" },
+    { home: "Tigre 2", away: "Aldosivi 2", home_score: 2, away_score: 1, date: "2026-05-07" },
+    { home: "River Plate 2", away: "Racing Club 2", home_score: 2, away_score: 2, date: "2026-05-06" },
+    { home: "Rosario Central 2", away: "Gimnasia L.P. 2", home_score: 0, away_score: 0, date: "2026-05-06" },
+    { home: "San Lorenzo 2", away: "Argentinos Jrs 2", home_score: 2, away_score: 2, date: "2026-05-06" },
+    { home: "Velez Sarsfield 2", away: "Sarmiento Junin 2", home_score: 4, away_score: 0, date: "2026-05-06" },
+    { home: "Instituto 2", away: "Gimnasia Mendoza 2", home_score: 0, away_score: 0, date: "2026-05-05" }
+],
+
+"Argentine Reserve League - Group B": [
+    // Round 16
+    { home: "Colon Santa Fe 2", away: "Huracan 2", home_score: 3, away_score: 1, date: "2026-06-02" },
+    { home: "Ferro 2", away: "Estudiantes Rio Cuarto 2", home_score: 4, away_score: 1, date: "2026-06-02" },
+    { home: "Independiente 2", away: "Newells Old Boys 2", home_score: 1, away_score: 0, date: "2026-06-02" },
+    { home: "Quilmes 2", away: "Deportivo Riestra 2", home_score: 1, away_score: 0, date: "2026-06-02" },
+    
+    // Round 15
+    { home: "Belgrano 2", away: "Quilmes 2", home_score: 1, away_score: 0, date: "2026-05-27" },
+    { home: "Deportivo Riestra 2", away: "Estudiantes L.P. 2", home_score: 1, away_score: 2, date: "2026-05-27" },
+    { home: "Ind. Rivadavia 2", away: "Central Cordoba 2", home_score: 2, away_score: 1, date: "2026-05-27" },
+    { home: "Newells Old Boys 2", away: "Atl. Rafaela 2", home_score: 3, away_score: 0, date: "2026-05-27" },
+    { home: "Defensa y Justicia 2", away: "Independiente 2", home_score: 1, away_score: 1, date: "2026-05-26" },
+    { home: "Estudiantes Rio Cuarto 2", away: "Boca Juniors 2", home_score: 0, away_score: 2, date: "2026-05-26" },
+    { home: "Huracan 2", away: "Ferro 2", home_score: 2, away_score: 0, date: "2026-05-26" },
+    { home: "San Martin S.J. 2", away: "Colon Santa Fe 2", home_score: 1, away_score: 1, date: "2026-05-26" },
+    
+    // Round 14
+    { home: "Boca Juniors 2", away: "Huracan 2", home_score: 1, away_score: 0, date: "2026-05-21" },
+    { home: "Estudiantes L.P. 2", away: "Belgrano 2", home_score: 3, away_score: 1, date: "2026-05-21" },
+    { home: "Atl. Rafaela 2", away: "Defensa y Justicia 2", home_score: 2, away_score: 4, date: "2026-05-20" },
+    { home: "Central Cordoba 2", away: "Deportivo Riestra 2", home_score: 1, away_score: 0, date: "2026-05-20" },
+    { home: "Platense 2", away: "Newells Old Boys 2", home_score: 1, away_score: 1, date: "2026-05-20" },
+    { home: "Colon Santa Fe 2", away: "Ferro 2", home_score: 0, away_score: 1, date: "2026-05-19" },
+    { home: "Independiente 2", away: "Estudiantes Rio Cuarto 2", home_score: 5, away_score: 0, date: "2026-05-19" },
+    { home: "Quilmes 2", away: "Lanus 2", home_score: 0, away_score: 2, date: "2026-05-19" },
+    { home: "San Martin S.J. 2", away: "Ind. Rivadavia 2", home_score: 0, away_score: 2, date: "2026-05-19" },
+    
+    // Round 13
+    { home: "Deportivo Riestra 2", away: "San Martin S.J. 2", home_score: 2, away_score: 2, date: "2026-05-14" },
+    { home: "Huracan 2", away: "Independiente 2", home_score: 1, away_score: 0, date: "2026-05-14" },
+    { home: "Lanus 2", away: "Estudiantes L.P. 2", home_score: 1, away_score: 4, date: "2026-05-14" },
+    { home: "Ferro 2", away: "Boca Juniors 2", home_score: 0, away_score: 0, date: "2026-05-13" },
+    { home: "Ind. Rivadavia 2", away: "Colon Santa Fe 2", home_score: 1, away_score: 2, date: "2026-05-13" },
+    { home: "Defensa y Justicia 2", away: "Platense 2", home_score: 4, away_score: 0, date: "2026-05-12" },
+    { home: "Estudiantes Rio Cuarto 2", away: "Atl. Rafaela 2", home_score: 0, away_score: 2, date: "2026-05-12" },
+    { home: "Newells Old Boys 2", away: "Quilmes 2", home_score: 2, away_score: 0, date: "2026-05-12" }
+],
 "Chinese Super League": [
     // Matchday 10
     { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
