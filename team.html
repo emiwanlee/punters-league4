@@ -306,7 +306,7 @@
 
 <!-- Load all scripts in correct order - ONLY ONCE -->
 <script src="js/data.js"></script>
-<script src="js/matchesData.js"></script>
+
 <script>
 // ==================== TEAM PAGE LOGIC ====================
 
@@ -321,21 +321,18 @@ function cleanName(name) {
     return name.toLowerCase().trim();
 }
 
-// Replace your getTeamStats function with this enhanced version:
-
+// Get team stats from league data
 function getTeamStats(teamName, leaguesData) {
     for (const [leagueName, league] of Object.entries(leaguesData)) {
         const team = league.teams.find(t => cleanName(t.team) === cleanName(teamName));
         
         if (team) {
-            // Check if it's basketball (has points_for instead of GF)
             const isBasketball = league.isBasketball || (team.points_for !== undefined);
             
             if (isBasketball) {
-                // Basketball stats
                 const played = team.GP || 0;
                 const wins = team.GW || 0;
-                const draws = 0; // No draws in basketball
+                const draws = 0;
                 const losses = team.GL || (played - wins);
                 const totalGF = team.points_for || 0;
                 const totalGA = team.points_against || 0;
@@ -356,10 +353,9 @@ function getTeamStats(teamName, leaguesData) {
                     teamLogo: team.logo || null,
                     avgGF: played > 0 ? (totalGF / played).toFixed(1) : 0,
                     avgGA: played > 0 ? (totalGA / played).toFixed(1) : 0,
-                    points: wins * 2 // Basketball uses 2 points per win
+                    points: wins * 2
                 };
             } else {
-                // Football stats (existing code)
                 const played = team.MP || 0;
                 const wins = team.MW || 0;
                 const draws = team.MD || 0;
@@ -391,7 +387,7 @@ function getTeamStats(teamName, leaguesData) {
     return { found: false };
 }
 
-// Get recent matches from matchesData (now in data.js)
+// Get recent matches from matchesData
 function getRecentMatches(teamName, matchesData) {
     const matches = [];
     
@@ -476,7 +472,7 @@ function getHeadToHead(teamName, recentMatches) {
         .slice(0, 5);
 }
 
-// Get upcoming fixtures
+// Get upcoming fixtures (FIXED - handles both array and object formats)
 function getUpcomingFixtures(teamName, leaguesData) {
     const fixtures = [];
     
@@ -484,14 +480,24 @@ function getUpcomingFixtures(teamName, leaguesData) {
         if (!league.fixtures) continue;
         
         for (const fixture of league.fixtures) {
-            const [home, away] = fixture;
+            let home, away;
+            
+            // Handle both array format and object format
+            if (Array.isArray(fixture)) {
+                home = fixture[0];
+                away = fixture[1];
+            } else {
+                home = fixture.home;
+                away = fixture.away;
+            }
             
             if (cleanName(home) === cleanName(teamName) || cleanName(away) === cleanName(teamName)) {
                 fixtures.push({
                     league: leagueName,
                     home: home,
                     away: away,
-                    isHome: cleanName(home) === cleanName(teamName)
+                    isHome: cleanName(home) === cleanName(teamName),
+                    date: fixture.date || null
                 });
             }
         }
@@ -544,7 +550,6 @@ function renderTeamPage() {
         return;
     }
     
-    // Check if matchesData exists (now in data.js)
     if (typeof matchesData === 'undefined') {
         contentDiv.innerHTML = `
             <div class="alert alert-danger text-center">
@@ -574,162 +579,81 @@ function renderTeamPage() {
         <div class="team-hero">
             ${stats.teamLogo ? `<img src="images/logos/clubs/${stats.teamLogo}" style="height: 80px; margin-bottom: 1rem;" onerror="this.style.display='none'">` : '<i class="fas fa-shield-alt fa-4x"></i>'}
             <h1>${escapeHtml(teamName)}</h1>
-            ${stats.found ? `<div class="league-badge"><i class="fas ${stats.isBasketball ? 'fa-basketball' : 'fa-futbol'}"></i> ${stats.leagueName}</div>` : ''}
+            ${stats.found ? `<div class="league-badge"><i class="fas ${stats.isBasketball ? 'fa-basketball-ball' : 'fa-futbol'}"></i> ${stats.leagueName}</div>` : ''}
         </div>
         
         <div class="row">
             <div class="col-md-4">
-                <!-- Stats Card -->
                 <div class="team-stats-card">
                     <h3><i class="fas fa-chart-line"></i> Team Statistics</h3>
                     ${stats.found ? `
                         <div class="stat-grid mt-3">
-                            <div>
-                                <div class="stat-number">${stats.played}</div>
-                                <small>Matches</small>
-                            </div>
-                            <div>
-                                <div class="stat-number" style="color: #10b981;">${stats.wins}</div>
-                                <small>Wins</small>
-                            </div>
-                            <div>
-                                <div class="stat-number" style="color: #f59e0b;">${stats.draws}</div>
-                                <small>Draws</small>
-                            </div>
-                            <div>
-                                <div class="stat-number" style="color: #ef4444;">${stats.losses}</div>
-                                <small>Losses</small>
-                            </div>
+                            <div><div class="stat-number">${stats.played}</div><small>Matches</small></div>
+                            <div><div class="stat-number" style="color: #10b981;">${stats.wins}</div><small>Wins</small></div>
+                            <div><div class="stat-number" style="color: #f59e0b;">${stats.draws}</div><small>Draws</small></div>
+                            <div><div class="stat-number" style="color: #ef4444;">${stats.losses}</div><small>Losses</small></div>
                         </div>
                         <hr>
                         <div class="stat-grid">
-                            <div>
-                                <div class="stat-number">${stats.totalGF}</div>
-                                <small>Goals For</small>
-                            </div>
-                            <div>
-                                <div class="stat-number">${stats.totalGA}</div>
-                                <small>Goals Against</small>
-                            </div>
-                            <div>
-                                <div class="stat-number ${stats.goalDifference >= 0 ? 'text-success' : 'text-danger'}">${stats.goalDifference >= 0 ? '+' : ''}${stats.goalDifference}</div>
-                                <small>GD</small>
-                            </div>
-                            <div>
-                                <div class="stat-number">${stats.points}</div>
-                                <small>Points</small>
-                            </div>
+                            <div><div class="stat-number">${stats.totalGF}</div><small>${stats.isBasketball ? 'Points For' : 'Goals For'}</small></div>
+                            <div><div class="stat-number">${stats.totalGA}</div><small>${stats.isBasketball ? 'Points Against' : 'Goals Against'}</small></div>
+                            <div><div class="stat-number ${stats.goalDifference >= 0 ? 'text-success' : 'text-danger'}">${stats.goalDifference >= 0 ? '+' : ''}${stats.goalDifference}</div><small>Diff</small></div>
+                            <div><div class="stat-number">${stats.points}</div><small>Points</small></div>
                         </div>
                         <div class="mt-3 text-center">
                             <small>Win Rate: <strong>${stats.winRate}%</strong></small>
-                            <div class="progress mt-1" style="height: 5px;">
-                                <div class="progress-bar bg-success" style="width: ${stats.winRate}%"></div>
-                            </div>
+                            <div class="progress mt-1" style="height: 5px;"><div class="progress-bar bg-success" style="width: ${stats.winRate}%"></div></div>
                         </div>
                     ` : '<p class="text-muted text-center">Season stats not available</p>'}
                 </div>
                 
-                <!-- Form Guide Card -->
                 ${form.length > 0 ? `
                 <div class="team-stats-card">
                     <h3><i class="fas fa-chart-simple"></i> Recent Form</h3>
-                    <div class="text-center mt-3">
-                        ${form.map(f => `<span class="form-badge form-${f}">${f}</span>`).join('')}
-                    </div>
+                    <div class="text-center mt-3">${form.map(f => `<span class="form-badge form-${f}">${f}</span>`).join('')}</div>
                     <p class="text-muted text-center mt-3 small">Last ${form.length} matches</p>
                 </div>
                 ` : ''}
                 
-                <!-- Advanced Stats -->
-                ${stats.found ? `
-                <div class="team-stats-card">
-                    <h3><i class="fas fa-calculator"></i> Advanced Stats</h3>
-                    <div class="mt-3">
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>Goals per game</span>
-                            <strong>${stats.avgGF}</strong>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>Conceded per game</span>
-                            <strong>${stats.avgGA}</strong>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>Points per game</span>
-                            <strong>${(stats.points / stats.played).toFixed(2)}</strong>
-                        </div>
-                    </div>
-                </div>
-                ` : ''}
-                
-                <!-- Head to Head Card -->
                 ${headToHead.length > 0 ? `
                 <div class="team-stats-card">
                     <h3><i class="fas fa-handshake"></i> Head to Head Record</h3>
-                    ${headToHead.map(h2h => `
-                        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                            <span><strong>${escapeHtml(h2h.name)}</strong></span>
-                            <div>
-                                <span class="text-success">W${h2h.wins}</span>
-                                <span class="text-warning mx-1">D${h2h.draws}</span>
-                                <span class="text-danger">L${h2h.losses}</span>
-                            </div>
-                        </div>
-                    `).join('')}
+                    ${headToHead.map(h2h => `<div class="d-flex justify-content-between align-items-center py-2 border-bottom"><span><strong>${escapeHtml(h2h.name)}</strong></span><div><span class="text-success">W${h2h.wins}</span> <span class="text-warning">D${h2h.draws}</span> <span class="text-danger">L${h2h.losses}</span></div></div>`).join('')}
                 </div>
                 ` : ''}
             </div>
             
             <div class="col-md-8">
-                <!-- Recent Matches Card -->
                 <div class="team-stats-card">
                     <h3><i class="fas fa-history"></i> Recent Matches</h3>
                     ${recentMatches.length > 0 ? `
                         <div class="mt-3">
                             ${recentMatches.map(match => `
                                 <div class="match-row">
-                                    <span class="team-name ${cleanName(match.home) === cleanName(teamName) ? 'highlight' : ''}">
-                                        ${escapeHtml(match.home)}
-                                    </span>
-                                    <span class="score ${getScoreClass(match, teamName)}">
-                                        ${match.home_score} - ${match.away_score}
-                                    </span>
-                                    <span class="team-name ${cleanName(match.away) === cleanName(teamName) ? 'highlight' : ''}">
-                                        ${escapeHtml(match.away)}
-                                    </span>
+                                    <span class="team-name ${cleanName(match.home) === cleanName(teamName) ? 'highlight' : ''}">${escapeHtml(match.home)}</span>
+                                    <span class="score ${getScoreClass(match, teamName)}">${match.home_score} - ${match.away_score}</span>
+                                    <span class="team-name ${cleanName(match.away) === cleanName(teamName) ? 'highlight' : ''}">${escapeHtml(match.away)}</span>
                                 </div>
                                 ${match.date ? `<div class="match-date text-center">${match.date}</div>` : ''}
                             `).join('')}
                         </div>
-                    ` : `
-                        <p class="text-center text-muted py-4">
-                            <i class="fas fa-info-circle"></i> No recent matches recorded.
-                        </p>
-                    `}
+                    ` : '<p class="text-center text-muted py-4"><i class="fas fa-info-circle"></i> No recent matches recorded.</p>'}
                 </div>
                 
-                <!-- Upcoming Fixtures Card -->
                 <div class="team-stats-card">
                     <h3><i class="fas fa-calendar-alt"></i> Upcoming Fixtures</h3>
                     ${upcomingFixtures.length > 0 ? `
                         <div class="mt-3">
                             ${upcomingFixtures.map(fixture => `
                                 <div class="match-row">
-                                    <span class="team-name ${fixture.isHome ? 'highlight' : ''}">
-                                        ${escapeHtml(fixture.home)}
-                                    </span>
-                                    <span class="score">
-                                        <i class="fas fa-hourglass-half"></i> TBD
-                                    </span>
-                                    <span class="team-name ${!fixture.isHome ? 'highlight' : ''}">
-                                        ${escapeHtml(fixture.away)}
-                                    </span>
+                                    <span class="team-name ${fixture.isHome ? 'highlight' : ''}">${escapeHtml(fixture.home)}</span>
+                                    <span class="score"><i class="fas fa-hourglass-half"></i> TBD</span>
+                                    <span class="team-name ${!fixture.isHome ? 'highlight' : ''}">${escapeHtml(fixture.away)}</span>
                                 </div>
-                                <div class="match-date text-center">${fixture.league}</div>
+                                <div class="match-date text-center">${fixture.league} ${fixture.date ? `- ${fixture.date}` : ''}</div>
                             `).join('')}
                         </div>
-                    ` : `
-                        <p class="text-center text-muted py-4">No upcoming fixtures found.</p>
-                    `}
+                    ` : '<p class="text-center text-muted py-4">No upcoming fixtures found.</p>'}
                 </div>
             </div>
         </div>

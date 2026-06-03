@@ -226,10 +226,13 @@ const leaguesData = {
         { team: "Niigata", MP: 38, MW: 4, MD: 12, GF: 36, GA: 67, logo: "japan/niigatalogologo.png" }
     ],
     fixtures: [
-        { home: "Sanfreece", away: "Kawasaki", date: "2026-06-15" },
-        { home: "Nagoya", away: "Machida", date: "2026-06-15" },
-        { home: "Vissel Kobe", away: "Kashima Antlers", date: "2026-06-15" },
-        { home: "Cerezo Osaka", away: "FC Tokyo", date: "2026-06-15" }
+        { home: "Kashima Antlers", away: "Vissel Kobe", date: "2026-06-06" },
+        { home: "Machida", away: "Nagoya", date: "2026-06-06" },
+        { home: "Tokyo Verdy", away: "Gamba Osaka", date: "2026-06-06" },
+        { home: "Urawa Reds", away: "Okayama", date: "2026-06-06" },
+		{ home: "Yokohama FM", away: "Shimizu", date: "2026-06-06" },
+		{ home: "Kashiwa", away: "Kyoto", date: "2026-06-06" },
+		{ home: "Kawasaki", away: "Sanfrecce", date: "2026-06-06" },
     ]
 },
 
@@ -260,26 +263,26 @@ const leaguesData = {
         { team: "Ehime FC", MP: 38, MW: 3, MD: 13, GF: 35, GA: 71, logo: "japan/ehimelogo.png" }
     ],
     fixtures: [
-        { home: "Consadole Sapporo", away: "Jubilo Iwata", date: "2026-06-15" },
-        { home: "Fujieda MYFC", away: "Iwaki FC", date: "2026-06-15" },
-        { home: "Renofa Yamaguchi", away: "Roasso Kumamoto", date: "2026-06-15" },
-        { home: "F.C. Gifu", away: "Omiya Ardija", date: "2026-06-15" },
-        { home: "Vegalta Sendai", away: "Yokohama FC", date: "2026-06-15" },
-        { home: "Nara Club", away: "Kataller Toyama", date: "2026-06-15" },
-        { home: "Niigata", away: "Ehime FC", date: "2026-06-15" },
-        { home: "Sagan Tosu", away: "Ryukyu", date: "2026-06-15" },
-        { home: "Gunma", away: "Sagamihara", date: "2026-06-15" },
-        { home: "Nagano", away: "Ventforet Kofu", date: "2026-06-15" },
-        { home: "Vanraure Hachinohe", away: "Tochigi SC", date: "2026-06-15" },
-        { home: "Tegevajaro Miyazaki", away: "Reilac Shiga", date: "2026-06-15" },
-        { home: "Tokushima Vortis", away: "Imabari", date: "2026-06-15" },
-        { home: "Kitayushu", away: "Kagoshima United", date: "2026-06-15" },
-        { home: "Matsumoto Yamaga", away: "Fukushima United", date: "2026-06-15" },
-        { home: "Kamatamare Sanuki", away: "Osaka", date: "2026-06-15" },
-        { home: "Montedio Yamagata", away: "Shonan Bellmare", date: "2026-06-15" },
-        { home: "Tottori", away: "Oita Trinita", date: "2026-06-15" },
-        { home: "Blaublitz Tochigi FC", away: "Kanazawa", date: "2026-06-15" },
-        { home: "Ehime FC", away: "Mito HollyHock", date: "2026-06-15" }
+        { home: "Kamatamare Sanuki", away: "Nagano", date: "2026-06-05" },
+        { home: "Niigata", away: "Consadole Sapporo", date: "2026-06-06" },
+        { home: "Omiya Ardija", away: "Kochi United", date: "2026-06-06" },
+        { home: "Tochigi City FC", away: "Reilac Shiga", date: "2026-06-06" },
+        { home: "Sagamihara", away: "Roasso Kumamoto", date: "2026-06-06" },
+        { home: "Matsumoto Yamaga", away: "Nara Club", date: "2026-06-06" },
+        { home: "Yokohama FC", away: "Renofa Yamaguchi", date: "2026-06-06" },
+        { home: "Fujieda MYFC", away: "Ehime FC", date: "2026-06-06" },
+        { home: "FC Gifu", away: "Tottori", date: "2026-06-07" },
+        { home: "Júbilo Iwata", away: "Osaka", date: "2026-06-07" },
+        { home: "Sagan Tosu", away: "Shonan Bellmare", date: "2026-06-07" },
+        { home: "Vanraure Hachinohe", away: "Imabari", date: "2026-06-07" },
+        { home: "Tokushima Vortis", away: "Iwaki FC", date: "2026-06-07" },
+        { home: "Blaublitz", away: "Kagoshima United", date: "2026-06-07" },
+        { home: "Vegalta Sendai", away: "Kataller Toyama", date: "2026-06-06" },
+        { home: "Tegevajaro Miyazaki", away: "Ventforet Kofu", date: "2026-06-06" },
+        //{ home: "Montedio Yamagata", away: "Shonan Bellmare", date: "2026-06-15" },
+        //{ home: "Tottori", away: "Oita Trinita", date: "2026-06-15" },
+        //{ home: "Blaublitz Tochigi FC", away: "Kanazawa", date: "2026-06-15" },
+        //{ home: "Ehime FC", away: "Mito HollyHock", date: "2026-06-15" }
     ]
 },
 
