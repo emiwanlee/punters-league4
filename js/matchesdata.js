@@ -585,6 +585,78 @@ const matchesData = {
     // Matchday 12
     { home: "Operário Ferroviário", away: "Juventude", home_score: 2, away_score: 1, date: "2025-06-06" },
     { home: "Criciúma", away: "Londrina", home_score: 1, away_score: 0, date: "2025-06-06" }
+],
+"Bolivian Primera División": [
+    // Matchday 1
+    { home: "Bolívar", away: "Real Oruro", home_score: 5, away_score: 2, date: "2025-04-03" },
+    { home: "Independiente Petrolero", away: "Nacional Potosí", home_score: 0, away_score: 3, date: "2025-04-03" },
+    { home: "Blooming", away: "Guabirá", home_score: 5, away_score: 0, date: "2025-04-04" },
+    { home: "Always Ready", away: "Real Tomayapo", home_score: 4, away_score: 0, date: "2025-04-04" },
+    { home: "Real Potosí", away: "Aurora", home_score: 0, away_score: 0, date: "2025-04-04" },
+    { home: "SA Bulo Bulo", away: "Oriente Petrolero", home_score: 2, away_score: 0, date: "2025-04-05" },
+    { home: "Gualberto Villarroel San José", away: "Academia del Balompie Boliviano", home_score: 1, away_score: 2, date: "2025-04-05" },
+    { home: "Universitario de Vinto", away: "The Strongest", home_score: 1, away_score: 2, date: "2025-04-05" },
+    
+    // Matchday 2
+    { home: "Guabirá", away: "Independiente Petrolero", home_score: 2, away_score: 2, date: "2025-04-11" },
+    { home: "Academia del Balompie Boliviano", away: "Bolívar", home_score: 0, away_score: 2, date: "2025-04-11" },
+    { home: "Nacional Potosí", away: "Universitario de Vinto", home_score: 1, away_score: 0, date: "2025-04-11" },
+    { home: "Aurora", away: "Always Ready", home_score: 1, away_score: 1, date: "2025-04-12" },
+    { home: "Real Oruro", away: "Blooming", home_score: 2, away_score: 2, date: "2025-04-12" },
+    { home: "The Strongest", away: "SA Bulo Bulo", home_score: 3, away_score: 2, date: "2025-04-12" },
+    { home: "Oriente Petrolero", away: "Gualberto Villarroel San José", home_score: 2, away_score: 1, date: "2025-04-13" },
+    { home: "Real Tomayapo", away: "Real Potosí", home_score: 1, away_score: 1, date: "2025-04-14" },
+    
+    // Matchday 3
+    { home: "Universitario de Vinto", away: "Academia del Balompie Boliviano", home_score: 5, away_score: 2, date: "2025-04-21" },
+    { home: "Gualberto Villarroel San José", away: "Aurora", home_score: 1, away_score: 1, date: "2025-04-21" },
+    { home: "Bolívar", away: "Independiente Petrolero", home_score: 1, away_score: 2, date: "2025-04-22" },
+    { home: "Always Ready", away: "Oriente Petrolero", home_score: 1, away_score: 0, date: "2025-04-22" },
+    { home: "Real Potosí", away: "Guabirá", home_score: 3, away_score: 0, date: "2025-04-22" },
+    { home: "Blooming", away: "Nacional Potosí", home_score: 2, away_score: 1, date: "2025-04-23" },
+    { home: "SA Bulo Bulo", away: "Real Oruro", home_score: 2, away_score: 1, date: "2025-04-23" },
+    { home: "Real Tomayapo", away: "The Strongest", home_score: 0, away_score: 0, date: "2025-04-24" },
+    
+    // Matchday 4
+    { home: "Independiente Petrolero", away: "Universitario de Vinto", home_score: 2, away_score: 1, date: "2025-04-25" },
+    { home: "Nacional Potosí", away: "Gualberto Villarroel San José", home_score: 1, away_score: 1, date: "2025-04-25" },
+    { home: "Academia del Balompie Boliviano", away: "Blooming", home_score: 3, away_score: 2, date: "2025-04-25" },
+    { home: "Guabirá", away: "Always Ready", home_score: 1, away_score: 2, date: "2025-04-26" },
+    { home: "Real Oruro", away: "The Strongest", home_score: 2, away_score: 3, date: "2025-04-26" },
+    { home: "Bolívar", away: "Real Tomayapo", home_score: 6, away_score: 0, date: "2025-04-26" },
+    { home: "Oriente Petrolero", away: "Real Potosí", home_score: 2, away_score: 0, date: "2025-04-27" },
+    { home: "Aurora", away: "SA Bulo Bulo", home_score: 3, away_score: 1, date: "2025-04-28" },
+    
+    // Matchday 5
+    { home: "SA Bulo Bulo", away: "Independiente Petrolero", home_score: 2, away_score: 2, date: "2025-05-01" },
+    { home: "Real Potosí", away: "Real Oruro", home_score: 1, away_score: 2, date: "2025-05-01" },
+    { home: "Always Ready", away: "Nacional Potosí", home_score: 3, away_score: 1, date: "2025-05-02" },
+    { home: "Aurora", away: "Guabirá", home_score: 4, away_score: 2, date: "2025-05-02" },
+    { home: "Oriente Petrolero", away: "Real Tomayapo", home_score: 3, away_score: 1, date: "2025-05-03" },
+    { home: "Gualberto Villarroel San José", away: "Bolívar", home_score: 1, away_score: 2, date: "2025-05-03" },
+    { home: "The Strongest", away: "Academia del Balompie Boliviano", home_score: 3, away_score: 1, date: "2025-05-03" },
+    { home: "Universitario de Vinto", away: "Blooming", home_score: 1, away_score: 1, date: "2025-05-05" },
+    
+    // Matchday 6
+    { home: "Guabirá", away: "Gualberto Villarroel San José", home_score: 3, away_score: 0, date: "2025-05-09" },
+    { home: "Real Tomayapo", away: "SA Bulo Bulo", home_score: 1, away_score: 0, date: "2025-05-10" },
+    { home: "Independiente Petrolero", away: "Always Ready", home_score: 0, away_score: 0, date: "2025-05-10" },
+    { home: "The Strongest", away: "Real Potosí", home_score: 0, away_score: 0, date: "2025-05-10" },
+    { home: "Blooming", away: "Bolívar", home_score: 0, away_score: 0, date: "2025-05-11" },
+    { home: "Academia del Balompie Boliviano", away: "Oriente Petrolero", home_score: 3, away_score: 1, date: "2025-05-11" },
+    
+    // Matchday 7
+    { home: "SA Bulo Bulo", away: "Universitario de Vinto", home_score: 0, away_score: 2, date: "2025-05-12" },
+    { home: "Aurora", away: "Real Oruro", home_score: 1, away_score: 1, date: "2025-05-13" },
+    { home: "Independiente Petrolero", away: "Blooming", home_score: 3, away_score: 1, date: "2025-05-13" },
+    { home: "Bolívar", away: "Nacional Potosí", home_score: 1, away_score: 1, date: "2025-05-14" },
+    { home: "Always Ready", away: "The Strongest", home_score: 0, away_score: 1, date: "2025-05-14" },
+    { home: "Oriente Petrolero", away: "Guabirá", home_score: 2, away_score: 2, date: "2025-05-15" },
+    
+    // Matchday 8
+    { home: "Real Tomayapo", away: "Aurora", home_score: 0, away_score: 2, date: "2025-05-16" },
+    { home: "Universitario de Vinto", away: "Bolívar", home_score: 3, away_score: 2, date: "2025-05-16" },
+    { home: "Guabirá", away: "Nacional Potosí", home_score: 2, away_score: 1, date: "2025-05-18" }
 ]
 };
 

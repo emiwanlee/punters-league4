@@ -569,6 +569,47 @@ const leaguesData = {
         { home: "Fortaleza", away: "América-MG", date: "2026-06-17" }
     ]
 },
+"Bolivian Primera División": {
+    id: "bolivia",
+    logo: "bolivia/bolivia.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Always Ready", MP: 30, MW: 22, MD: 5, ML: 3, GF: 91, GA: 34, logo: "bolivia/alwaysready.png" },
+        { rank: 2, team: "Bolívar", MP: 30, MW: 21, MD: 5, ML: 4, GF: 82, GA: 32, logo: "bolivia/bolivar.png" },
+        { rank: 3, team: "The Strongest", MP: 30, MW: 21, MD: 1, ML: 8, GF: 77, GA: 47, logo: "bolivia/thestrongest.png" },
+        { rank: 4, team: "SA Bulo Bulo", MP: 30, MW: 13, MD: 7, ML: 10, GF: 62, GA: 54, logo: "bolivia/sabulobulo.png" },
+        { rank: 5, team: "Blooming", MP: 30, MW: 14, MD: 4, ML: 12, GF: 53, GA: 56, logo: "bolivia/blooming.png" },
+        { rank: 6, team: "Independiente Petrolero", MP: 30, MW: 13, MD: 6, ML: 11, GF: 56, GA: 57, logo: "bolivia/independientepetrolero.png" },
+        { rank: 7, team: "Nacional Potosí", MP: 30, MW: 12, MD: 7, ML: 11, GF: 51, GA: 41, logo: "bolivia/nacionalpotosi.png" },
+        { rank: 8, team: "Guabirá", MP: 30, MW: 13, MD: 4, ML: 13, GF: 58, GA: 63, logo: "bolivia/guabira.png" },
+        { rank: 9, team: "Gualberto Villarroel San José", MP: 30, MW: 12, MD: 5, ML: 13, GF: 46, GA: 50, logo: "bolivia/gualberto.png" },
+        { rank: 10, team: "Aurora", MP: 30, MW: 11, MD: 4, ML: 15, GF: 53, GA: 63, logo: "bolivia/aurora.png" },
+        { rank: 11, team: "Real Tomayapo", MP: 30, MW: 9, MD: 8, ML: 13, GF: 40, GA: 53, logo: "bolivia/realtomayapo.png" },
+        { rank: 12, team: "Oriente Petrolero", MP: 30, MW: 9, MD: 6, ML: 15, GF: 45, GA: 58, logo: "bolivia/orientepetrolero.png" },
+        { rank: 13, team: "Real Oruro", MP: 30, MW: 8, MD: 7, ML: 15, GF: 60, GA: 66, logo: "bolivia/realoruro.png" },
+        { rank: 14, team: "Universitario de Vinto", MP: 30, MW: 6, MD: 8, ML: 16, GF: 32, GA: 60, logo: "bolivia/universitariovinto.png" },
+        { rank: 15, team: "Academia del Balompie Boliviano", MP: 30, MW: 6, MD: 8, ML: 16, GF: 33, GA: 64, logo: "bolivia/academia.png" },
+        { rank: 16, team: "Jorge Wilstermann", MP: 30, MW: 4, MD: 7, ML: 19, GF: 30, GA: 71, logo: "bolivia/jorgewilstermann.png" }
+    ],
+    fixtures: [
+        // Matchday 9 - June 13
+        { home: "Independiente Petrolero", away: "Real Potosí", date: "2026-06-13" },
+        
+        // Matchday 11 - June 13
+        { home: "Guabirá", away: "Real Oruro", date: "2026-06-13" },
+        { home: "Gualberto Villarroel San José", away: "Universitario de Vinto", date: "2026-06-13" },
+        
+        // Matchday 11 - June 14
+        { home: "Independiente Petrolero", away: "Oriente Petrolero", date: "2026-06-14" },
+        { home: "Always Ready", away: "SA Bulo Bulo", date: "2026-06-14" },
+        
+        // Matchday 11 - June 15
+        { home: "Blooming", away: "The Strongest", date: "2026-06-15" },
+        
+        // Postponed - Time TBD
+        { home: "Bolívar", away: "Real Potosí", date: "TBD" }
+    ]
+},
 
 "NBA": {
     id: "nba",
