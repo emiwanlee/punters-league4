@@ -144,19 +144,30 @@ const leaguesData = {
         { team: "Fenix Pilar", MP: 20, MW: 1, MD: 7, ML: 12, GF: 8, GA: 29, logo: "argentina/fenixpilar.png" }
     ],
     fixtures: [
-        { home: "Deportivo Merlo", away: "Laferrere", date: "TBD" },
-        { home: "Brown (A)", away: "Comunicaciones", date: "2026-06-05" },
-        { home: "Dálmine", away: "Villa San Carlos", date: "2026-06-06" },
-		{ home: "Flandria", away: "Argentino Quilmes", date: "2026-06-06" },
-		{ home: "Dep. Armenio", away: "Defensores Unidos", date: "2026-06-06" },
-		{ home: "Excursionistas", away: "San Martín Burzaco", date: "2026-06-06" },
-		{ home: "Argentino de Merlo", away: "Deportivo Camioneros", date: "2026-06-06" },
-		{ home: "Laferrere", away: "Dock Stud", date: "2026-06-07" },
-        { home: "UAI Urquiza", away: "liniers", date: "2026-06-08" },
-        //{ home: "Flandria", away: "Argentino Quilmes", date: "2026-06-15" },
-        //{ home: "Dep. Armenio", away: "Deportivo Camioneros", date: "2026-06-15" },
-        //{ home: "Ituzaingó", away: "Real Pilar", date: "2026-06-15" }
-    ]
+    // Round 17 - June 8
+    { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
+    { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
+    { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
+    { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
+    { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
+    
+    // Round 17 - June 9
+    { home: "Aldosivi 2", away: "Gimnasia Mendoza 2", date: "2026-06-09" },
+    { home: "Belgrano 2", away: "Atl. Rafaela 2", date: "2026-06-09" },
+    { home: "Deportivo Riestra 2", away: "Platense 2", date: "2026-06-09" },
+    { home: "Lanus 2", away: "Independiente 2", date: "2026-06-09" },
+    { home: "Central Cordoba 2", away: "Colon Santa Fe 2", date: "2026-06-09" },
+    { home: "River Plate 2", away: "Rosario Central 2", date: "2026-06-09" },
+    
+    // Round 17 - June 10
+    { home: "Argentinos Jrs 2", away: "Barracas Central 2", date: "2026-06-10" },
+    { home: "Estudiantes Rio Cuarto 2", away: "Huracan 2", date: "2026-06-10" },
+    { home: "Newells Old Boys 2", away: "Boca Juniors 2", date: "2026-06-10" },
+    { home: "San Lorenzo 2", away: "Instituto 2", date: "2026-06-10" },
+    { home: "San Martin S.J. 2", away: "Estudiantes L.P. 2", date: "2026-06-10" },
+    { home: "Sarmiento Junin 2", away: "Talleres Cordoba 2", date: "2026-06-10" },
+    { home: "Velez Sarsfield 2", away: "Tigre 2", date: "2026-06-10" }
+]
 },
 /*
 "Argentine Liga Profesional - Group B": {
@@ -225,20 +236,31 @@ const leaguesData = {
         { team: "Godoy Cruz 2", MP: 15, MW: 3, MD: 2, ML: 10, GF: 16, GA: 27, logo: "argentina/godoy2.png" },
         { team: "Aldosivi 2", MP: 15, MW: 3, MD: 2, ML: 10, GF: 12, GA: 26, logo: "argentina/aldosivi2.png" }
     ],
-    fixtures: [
-        { home: "Estudiantes L.P. 2", away: "Ind. Rivadavia 2", date: "2026-06-03" },
-        { home: "Gimnasia Mendoza 2", away: "Gimnasia L.P. 2", date: "2026-06-03" },
-        { home: "Instituto 2", away: "Atl. Tucuman 2", date: "2026-06-03" },
-        { home: "Rosario Central 2", away: "Racing Club 2", date: "2026-06-03" },
-        { home: "San Lorenzo 2", away: "Velez Sarsfield 2", date: "2026-06-04" },
-        { home: "Talleres Cordoba 2", away: "Argentinos Jrs 2", date: "2026-06-05" },
-        { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-09" },
-        { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-09" },
-        { home: "Argentinos Jrs 2", away: "Barracas Central 2", date: "2026-06-10" },
-        { home: "San Lorenzo 2", away: "Instituto 2", date: "2026-06-10" },
-        { home: "Sarmiento Junin 2", away: "Talleres Cordoba 2", date: "2026-06-10" },
-        { home: "Velez Sarsfield 2", away: "Tigre 2", date: "2026-06-10" }
-    ]
+   fixtures: [
+    // Round 17 - June 8
+    { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
+    { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
+    { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
+    { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
+    { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
+    
+    // Round 17 - June 9
+    { home: "Aldosivi 2", away: "Gimnasia Mendoza 2", date: "2026-06-09" },
+    { home: "Belgrano 2", away: "Atl. Rafaela 2", date: "2026-06-09" },
+    { home: "Deportivo Riestra 2", away: "Platense 2", date: "2026-06-09" },
+    { home: "Lanus 2", away: "Independiente 2", date: "2026-06-09" },
+    { home: "Central Cordoba 2", away: "Colon Santa Fe 2", date: "2026-06-09" },
+    { home: "River Plate 2", away: "Rosario Central 2", date: "2026-06-09" },
+    
+    // Round 17 - June 10
+    { home: "Argentinos Jrs 2", away: "Barracas Central 2", date: "2026-06-10" },
+    { home: "Estudiantes Rio Cuarto 2", away: "Huracan 2", date: "2026-06-10" },
+    { home: "Newells Old Boys 2", away: "Boca Juniors 2", date: "2026-06-10" },
+    { home: "San Lorenzo 2", away: "Instituto 2", date: "2026-06-10" },
+    { home: "San Martin S.J. 2", away: "Estudiantes L.P. 2", date: "2026-06-10" },
+    { home: "Sarmiento Junin 2", away: "Talleres Cordoba 2", date: "2026-06-10" },
+    { home: "Velez Sarsfield 2", away: "Tigre 2", date: "2026-06-10" }
+]
 },
 
 "Argentine Reserve League - Group B": {
@@ -266,20 +288,30 @@ const leaguesData = {
         { team: "San Martin S.J. 2", MP: 15, MW: 2, MD: 2, ML: 11, GF: 14, GA: 46, logo: "argentina/sanmartin2.png" }
     ],
     fixtures: [
-        { home: "Boca Juniors 2", away: "Defensa y Justicia 2", date: "2026-06-04" },
-        { home: "Atl. Rafaela 2", away: "Lanus 2", date: "2026-06-04" },
-        { home: "Barracas Central 2", away: "Aldosivi 2", date: "2026-06-04" },
-        { home: "Platense 2", away: "Belgrano 2", date: "2026-06-04" },
-        { home: "Central Cordoba 2", away: "San Martin S.J. 2", date: "2026-06-05" },
-        { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
-        { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
-        { home: "Belgrano 2", away: "Atl. Rafaela 2", date: "2026-06-09" },
-        { home: "Deportivo Riestra 2", away: "Platense 2", date: "2026-06-09" },
-        { home: "Lanus 2", away: "Independiente 2", date: "2026-06-09" },
-        { home: "Central Cordoba 2", away: "Colon Santa Fe 2", date: "2026-06-10" },
-        { home: "Newells Old Boys 2", away: "Boca Juniors 2", date: "2026-06-10" },
-        { home: "Estudiantes Rio Cuarto 2", away: "Huracan 2", date: "2026-06-10" }
-    ]
+    // Round 17 - June 8
+    { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
+    { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
+    { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
+    { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
+    { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
+    
+    // Round 17 - June 9
+    { home: "Aldosivi 2", away: "Gimnasia Mendoza 2", date: "2026-06-09" },
+    { home: "Belgrano 2", away: "Atl. Rafaela 2", date: "2026-06-09" },
+    { home: "Deportivo Riestra 2", away: "Platense 2", date: "2026-06-09" },
+    { home: "Lanus 2", away: "Independiente 2", date: "2026-06-09" },
+    { home: "Central Cordoba 2", away: "Colon Santa Fe 2", date: "2026-06-09" },
+    { home: "River Plate 2", away: "Rosario Central 2", date: "2026-06-09" },
+    
+    // Round 17 - June 10
+    { home: "Argentinos Jrs 2", away: "Barracas Central 2", date: "2026-06-10" },
+    { home: "Estudiantes Rio Cuarto 2", away: "Huracan 2", date: "2026-06-10" },
+    { home: "Newells Old Boys 2", away: "Boca Juniors 2", date: "2026-06-10" },
+    { home: "San Lorenzo 2", away: "Instituto 2", date: "2026-06-10" },
+    { home: "San Martin S.J. 2", away: "Estudiantes L.P. 2", date: "2026-06-10" },
+    { home: "Sarmiento Junin 2", away: "Talleres Cordoba 2", date: "2026-06-10" },
+    { home: "Velez Sarsfield 2", away: "Tigre 2", date: "2026-06-10" }
+]
 },
 "Japanese J1 League": {
     id: "j1-league",
@@ -391,15 +423,18 @@ const leaguesData = {
         { rank: 16, team: "Unión Española", MP: 30, MW: 6, MD: 3, ML: 21, GF: 33, GA: 58, logo: "chile/unespanola.png" }
     ],
     fixtures: [
+        // Matchday 15
         { home: "Audax Italiano", away: "La Serena", date: "2026-06-13" },
         { home: "Everton", away: "Palestino", date: "2026-06-13" },
         { home: "Colo-Colo", away: "Cobresal", date: "2026-06-13" },
-		{ home: "Ñublense", away: "Huachipato", date: "2026-06-14" },
-		{ home: "Concepción", away: "Deportes Limache", date: "2026-06-14" },
-		{ home: "Ñublense", away: "Huachipato", date: "2026-06-14" },
-		{ home: "Universidad Católica", away: "Universidad de Concepción", date: "2026-06-14" },
-		{ home: "Union La Calera", away: "Universidad de Chile", date: "2026-06-14" },
-		{ home: "Coquimbo", away: "O'Higgins", date: "2026-06-15" },
+        { home: "Ñublense", away: "Huachipato", date: "2026-06-14" },
+        { home: "Concepción", away: "Deportes Limache", date: "2026-06-14" },
+        { home: "Unión La Calera", away: "Universidad de Chile", date: "2026-06-14" },
+        { home: "Universidad Católica", away: "Universidad de Concepción", date: "2026-06-14" },
+        { home: "Coquimbo", away: "O'Higgins", date: "2026-06-15" },
+        
+        // Matchday 13
+        { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" }
     ]
 },
 

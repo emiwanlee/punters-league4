@@ -360,6 +360,16 @@ const matchesData = {
         { home: "Yokohama F. Marinos", away: "Shimizu S-Pulse", home_score: 3, away_score: 0, date: "2026-06-07" },
         { home: "Kashiwa Reysol", away: "Kyoto", home_score: 0, away_score: 1, date: "2026-06-07" },
         { home: "Kawasaki Frontale", away: "Sanfrecce Hiroshima", home_score: 0, away_score: 1, date: "2026-06-07" },
+		{ home: "Kashima Antlers", away: "Vissel Kobe", home_score: 2, away_score: 0 },
+        { home: "JEF United Chiba", away: "Avispa Fukuoka", home_score: 1, away_score: 2 },
+        { home: "FC Tokyo", away: "Cerezo Osaka", home_score: 1, away_score: 3 },
+        { home: "Mito Hollyhock", away: "V-Varen Nagasaki", home_score: 0, away_score: 1 },
+        { home: "FC Machida Zelvia", away: "Nagoya Grampus", home_score: 2, away_score: 1 },
+        { home: "Urawa Reds", away: "Fagiano Okayama", home_score: 0, away_score: 2 },
+        { home: "Tokyo Verdy", away: "Gamba Osaka", home_score: 2, away_score: 4 },
+        { home: "Yokohama F?Marinos", away: "Shimizu S-Pulse", home_score: 3, away_score: 0 },
+        { home: "Kashiwa Reysol", away: "Kyoto Sanga F.C.", home_score: 0, away_score: 1 },
+        { home: "Kawasaki Frontale", away: "Sanfrecce Hiroshima", home_score: 0, away_score: 1 },
         { home: "Kashima Antlers", away: "Vissel Kobe", home_score: 2, away_score: 0, date: "2026-06-07" }
     ],
 
