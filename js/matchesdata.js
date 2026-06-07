@@ -437,7 +437,155 @@ const matchesData = {
         { home: "Shenzhen Peng City", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
         { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
         { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
-    ]
+    ],
+	"Belarusian Premier League": [
+    // Matchday 4
+    { home: "Vitebsk", away: "Minsk", home_score: 2, away_score: 0, date: "2025-04-18" },
+    { home: "Neman", away: "Naftan", home_score: 3, away_score: 1, date: "2025-04-18" },
+    { home: "Dinamo Brest", away: "Baranovichi", home_score: 3, away_score: 0, date: "2025-04-18" },
+    { home: "Dinamo Minsk", away: "Isloch", home_score: 1, away_score: 1, date: "2025-04-19" },
+    { home: "BATE", away: "Maxline", home_score: 1, away_score: 2, date: "2025-04-19" },
+    { home: "Gomel", away: "Slavia-Mozyr", home_score: 3, away_score: 1, date: "2025-04-19" },
+    { home: "Dnepr", away: "Torpedo Zhodino", home_score: 2, away_score: 2, date: "2025-04-20" },
+    { home: "Arsenal Dzyarzhynsk", away: "Belshina", home_score: 2, away_score: 0, date: "2025-04-20" },
+    
+    // Matchday 5
+    { home: "Slavia-Mozyr", away: "Neman", home_score: 0, away_score: 0, date: "2025-04-24" },
+    { home: "Minsk", away: "BATE", home_score: 1, away_score: 0, date: "2025-04-24" },
+    { home: "Naftan", away: "Vitebsk", home_score: 1, away_score: 1, date: "2025-04-25" },
+    { home: "Baranovichi", away: "Dinamo Minsk", home_score: 2, away_score: 3, date: "2025-04-25" },
+    { home: "Maxline", away: "Dinamo Brest", home_score: 0, away_score: 0, date: "2025-04-25" },
+    { home: "Isloch", away: "Dnepr", home_score: 2, away_score: 1, date: "2025-04-26" },
+    { home: "Belshina", away: "Gomel", home_score: 0, away_score: 2, date: "2025-04-26" },
+    { home: "Torpedo Zhodino", away: "Arsenal Dzyarzhynsk", home_score: 3, away_score: 3, date: "2025-04-26" },
+    
+    // Matchday 6
+    { home: "Arsenal Dzyarzhynsk", away: "Isloch", home_score: 2, away_score: 2, date: "2025-05-01" },
+    { home: "Minsk", away: "Naftan", home_score: 4, away_score: 2, date: "2025-05-01" },
+    { home: "Dnepr", away: "Baranovichi", home_score: 0, away_score: 0, date: "2025-05-02" },
+    { home: "Neman", away: "Belshina", home_score: 2, away_score: 1, date: "2025-05-02" },
+    { home: "Gomel", away: "Torpedo Zhodino", home_score: 1, away_score: 1, date: "2025-05-02" },
+    { home: "Vitebsk", away: "Slavia-Mozyr", home_score: 0, away_score: 0, date: "2025-05-03" },
+    { home: "BATE", away: "Dinamo Brest", home_score: 0, away_score: 3, date: "2025-05-03" },
+    { home: "Dinamo Minsk", away: "Maxline", home_score: 2, away_score: 3, date: "2025-05-03" },
+    
+    // Matchday 7
+    { home: "Baranovichi", away: "Arsenal Dzyarzhynsk", home_score: 1, away_score: 1, date: "2025-05-08" },
+    { home: "Gomel", away: "Isloch", home_score: 2, away_score: 0, date: "2025-05-08" },
+    { home: "Slavia-Mozyr", away: "Minsk", home_score: 1, away_score: 2, date: "2025-05-09" },
+    { home: "Belshina", away: "Vitebsk", home_score: 1, away_score: 0, date: "2025-05-09" },
+    { home: "Torpedo Zhodino", away: "Neman", home_score: 1, away_score: 0, date: "2025-05-09" },
+    { home: "Naftan", away: "BATE", home_score: 0, away_score: 0, date: "2025-05-10" },
+    { home: "Maxline", away: "Dnepr", home_score: 5, away_score: 1, date: "2025-05-10" },
+    { home: "Dinamo Brest", away: "Dinamo Minsk", home_score: 1, away_score: 2, date: "2025-05-10" },
+    
+    // Matchday 8
+    { home: "Gomel", away: "Baranovichi", home_score: 2, away_score: 3, date: "2025-05-14" },
+    { home: "Neman", away: "Isloch", home_score: 0, away_score: 1, date: "2025-05-15" },
+    { home: "Minsk", away: "Belshina", home_score: 5, away_score: 1, date: "2025-05-15" },
+    { home: "Dnepr", away: "Dinamo Brest", home_score: 1, away_score: 1, date: "2025-05-17" },
+    { home: "Naftan", away: "Slavia-Mozyr", home_score: 0, away_score: 1, date: "2025-05-17" },
+    { home: "Torpedo Zhodino", away: "Vitebsk", home_score: 1, away_score: 1, date: "2025-05-17" },
+    { home: "Arsenal Dzyarzhynsk", away: "Maxline", home_score: 0, away_score: 3, date: "2025-05-17" },
+    { home: "BATE", away: "Dinamo Minsk", home_score: 0, away_score: 0, date: "2025-05-20" },
+    
+    // Matchday 9
+    { home: "Maxline", away: "Gomel", home_score: 0, away_score: 0, date: "2025-05-22" },
+    { home: "Belshina", away: "Naftan", home_score: 5, away_score: 1, date: "2025-05-23" },
+    { home: "Isloch", away: "Vitebsk", home_score: 3, away_score: 0, date: "2025-05-23" },
+    { home: "Torpedo Zhodino", away: "Minsk", home_score: 3, away_score: 0, date: "2025-05-23" },
+    { home: "Dinamo Brest", away: "Arsenal Dzyarzhynsk", home_score: 3, away_score: 0, date: "2025-05-23" },
+    { home: "Slavia-Mozyr", away: "BATE", home_score: 1, away_score: 1, date: "2025-05-24" },
+    { home: "Baranovichi", away: "Neman", home_score: 1, away_score: 2, date: "2025-05-24" },
+    { home: "Dinamo Minsk", away: "Dnepr", home_score: 3, away_score: 1, date: "2025-05-24" },
+    
+    // Matchday 10
+    { home: "Naftan", away: "Torpedo Zhodino", home_score: 0, away_score: 4, date: "2025-05-29" },
+    { home: "Minsk", away: "Isloch", home_score: 1, away_score: 1, date: "2025-05-29" },
+    { home: "Arsenal Dzyarzhynsk", away: "Dinamo Minsk", home_score: 0, away_score: 1, date: "2025-05-30" },
+    { home: "Neman", away: "Maxline", home_score: 1, away_score: 2, date: "2025-05-30" },
+    { home: "Gomel", away: "Dinamo Brest", home_score: 2, away_score: 1, date: "2025-05-30" },
+    { home: "Vitebsk", away: "Baranovichi", home_score: 2, away_score: 3, date: "2025-05-31" },
+    { home: "Slavia-Mozyr", away: "Belshina", home_score: 2, away_score: 1, date: "2025-05-31" },
+    { home: "BATE", away: "Dnepr", home_score: 1, away_score: 1, date: "2025-05-31" }
+],
+"Brazilian Série B": [
+    // Matchday 6
+    { home: "Cuiabá", away: "Botafogo", home_score: 1, away_score: 1, date: "2025-04-23" },
+    { home: "Ponte Preta", away: "América-MG", home_score: 1, away_score: 0, date: "2025-04-25" },
+    { home: "Sport", away: "Novorizontino", home_score: 1, away_score: 0, date: "2025-04-26" },
+    { home: "Juventude", away: "Londrina", home_score: 1, away_score: 0, date: "2025-04-26" },
+    { home: "São Bernardo", away: "Goiás", home_score: 1, away_score: 0, date: "2025-04-26" },
+    { home: "Operário Ferroviário", away: "Fortaleza", home_score: 0, away_score: 0, date: "2025-04-26" },
+    { home: "Ceará", away: "Vila Nova", home_score: 3, away_score: 3, date: "2025-04-26" },
+    { home: "Criciúma", away: "CRB", home_score: 3, away_score: 1, date: "2025-04-27" },
+    { home: "Atlético Goianiense", away: "Avaí", home_score: 2, away_score: 1, date: "2025-04-27" },
+    { home: "Athletic (MG)", away: "Náutico", home_score: 0, away_score: 1, date: "2025-04-27" },
+    
+    // Matchday 7
+    { home: "Botafogo", away: "Náutico", home_score: 1, away_score: 1, date: "2025-05-02" },
+    { home: "Cuiabá", away: "Criciúma", home_score: 1, away_score: 1, date: "2025-05-02" },
+    { home: "Fortaleza", away: "Goiás", home_score: 4, away_score: 1, date: "2025-05-03" },
+    { home: "Operário Ferroviário", away: "Londrina", home_score: 3, away_score: 0, date: "2025-05-03" },
+    { home: "São Bernardo", away: "Ponte Preta", home_score: 3, away_score: 0, date: "2025-05-03" },
+    { home: "Sport", away: "Ceará", home_score: 2, away_score: 0, date: "2025-05-03" },
+    { home: "Atlético Goianiense", away: "Juventude", home_score: 0, away_score: 0, date: "2025-05-03" },
+    { home: "América-MG", away: "CRB", home_score: 1, away_score: 2, date: "2025-05-04" },
+    { home: "Avaí", away: "Novorizontino", home_score: 3, away_score: 3, date: "2025-05-04" },
+    { home: "Vila Nova", away: "Athletic (MG)", home_score: 1, away_score: 1, date: "2025-05-04" },
+    
+    // Matchday 8
+    { home: "Goiás", away: "Vila Nova", home_score: 1, away_score: 0, date: "2025-05-09" },
+    { home: "Athletic (MG)", away: "Cuiabá", home_score: 0, away_score: 0, date: "2025-05-09" },
+    { home: "Ponte Preta", away: "Sport", home_score: 1, away_score: 3, date: "2025-05-09" },
+    { home: "Ceará", away: "Atlético Goianiense", home_score: 0, away_score: 1, date: "2025-05-09" },
+    { home: "CRB", away: "Operário Ferroviário", home_score: 3, away_score: 0, date: "2025-05-10" },
+    { home: "Juventude", away: "Criciúma", home_score: 0, away_score: 0, date: "2025-05-10" },
+    { home: "Náutico", away: "América-MG", home_score: 4, away_score: 0, date: "2025-05-10" },
+    { home: "Avaí", away: "Fortaleza", home_score: 0, away_score: 0, date: "2025-05-10" },
+    { home: "Novorizontino", away: "Botafogo", home_score: 1, away_score: 0, date: "2025-05-10" },
+    { home: "Londrina", away: "São Bernardo", home_score: 1, away_score: 3, date: "2025-05-12" },
+    
+    // Matchday 9
+    { home: "Operário Ferroviário", away: "Náutico", home_score: 2, away_score: 6, date: "2025-05-16" },
+    { home: "São Bernardo", away: "América-MG", home_score: 1, away_score: 1, date: "2025-05-16" },
+    { home: "Goiás", away: "Botafogo", home_score: 1, away_score: 0, date: "2025-05-16" },
+    { home: "Cuiabá", away: "Novorizontino", home_score: 0, away_score: 0, date: "2025-05-17" },
+    { home: "Athletic (MG)", away: "Juventude", home_score: 1, away_score: 1, date: "2025-05-17" },
+    { home: "Vila Nova", away: "Avaí", home_score: 2, away_score: 0, date: "2025-05-17" },
+    { home: "Criciúma", away: "Atlético Goianiense", home_score: 1, away_score: 1, date: "2025-05-17" },
+    { home: "Ceará", away: "Fortaleza", home_score: 2, away_score: 1, date: "2025-05-17" },
+    { home: "Sport", away: "CRB", home_score: 1, away_score: 2, date: "2025-05-18" },
+    { home: "Ponte Preta", away: "Londrina", home_score: 1, away_score: 4, date: "2025-05-18" },
+    
+    // Matchday 10
+    { home: "Náutico", away: "Cuiabá", home_score: 1, away_score: 0, date: "2025-05-22" },
+    { home: "Novorizontino", away: "Ceará", home_score: 2, away_score: 1, date: "2025-05-23" },
+    { home: "Fortaleza", away: "Londrina", home_score: 3, away_score: 0, date: "2025-05-23" },
+    { home: "Juventude", away: "Sport", home_score: 0, away_score: 1, date: "2025-05-24" },
+    { home: "Atlético Goianiense", away: "São Bernardo", home_score: 0, away_score: 1, date: "2025-05-24" },
+    { home: "CRB", away: "Ponte Preta", home_score: 4, away_score: 2, date: "2025-05-24" },
+    { home: "América-MG", away: "Vila Nova", home_score: 1, away_score: 2, date: "2025-05-24" },
+    { home: "Avaí", away: "Goiás", home_score: 0, away_score: 2, date: "2025-05-24" },
+    { home: "Operário Ferroviário", away: "Criciúma", home_score: 1, away_score: 1, date: "2025-05-25" },
+    { home: "Botafogo", away: "Athletic (MG)", home_score: 1, away_score: 2, date: "2025-05-25" },
+    
+    // Matchday 11
+    { home: "Juventude", away: "América-MG", home_score: 3, away_score: 0, date: "2025-05-30" },
+    { home: "Avaí", away: "Criciúma", home_score: 1, away_score: 2, date: "2025-05-30" },
+    { home: "Atlético Goianiense", away: "Goiás", home_score: 1, away_score: 1, date: "2025-05-30" },
+    { home: "Athletic (MG)", away: "Fortaleza", home_score: 1, away_score: 0, date: "2025-05-30" },
+    { home: "Sport", away: "Náutico", home_score: 2, away_score: 0, date: "2025-05-31" },
+    { home: "Londrina", away: "Vila Nova", home_score: 0, away_score: 1, date: "2025-05-31" },
+    { home: "São Bernardo", away: "Novorizontino", home_score: 1, away_score: 1, date: "2025-05-31" },
+    { home: "Ceará", away: "Operário Ferroviário", home_score: 1, away_score: 2, date: "2025-05-31" },
+    { home: "Cuiabá", away: "CRB", home_score: 2, away_score: 0, date: "2025-06-01" },
+    { home: "Ponte Preta", away: "Botafogo", home_score: 0, away_score: 0, date: "2025-06-01" },
+    
+    // Matchday 12
+    { home: "Operário Ferroviário", away: "Juventude", home_score: 2, away_score: 1, date: "2025-06-06" },
+    { home: "Criciúma", away: "Londrina", home_score: 1, away_score: 0, date: "2025-06-06" }
+]
 };
 
 console.log("? Complete matches data loaded successfully!");

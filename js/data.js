@@ -471,6 +471,104 @@ const leaguesData = {
         { home: "Dalian Yingbo", away: "Shanghai Shenhua", date: "2026-06-15" }
     ]
 },
+"Belarusian Premier League": {
+    id: "belarus",
+    logo: "belarus/belarus.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Maxline", MP: 30, MW: 21, MD: 5, ML: 4, GF: 53, GA: 18, logo: "belarus/maxline.png" },
+        { rank: 2, team: "Dinamo Minsk", MP: 30, MW: 19, MD: 6, ML: 5, GF: 52, GA: 27, logo: "belarus/dinamominsk.png" },
+        { rank: 3, team: "Slavia-Mozyr", MP: 30, MW: 17, MD: 6, ML: 7, GF: 53, GA: 32, logo: "belarus/slaviamozyr.png" },
+        { rank: 4, team: "Dinamo Brest", MP: 30, MW: 15, MD: 6, ML: 9, GF: 42, GA: 30, logo: "belarus/dinamobrest.png" },
+        { rank: 5, team: "Minsk", MP: 30, MW: 15, MD: 6, ML: 9, GF: 48, GA: 47, logo: "belarus/minsk.png" },
+        { rank: 6, team: "Torpedo Zhodino", MP: 30, MW: 13, MD: 10, ML: 7, GF: 43, GA: 30, logo: "belarus/torpedozhodino.png" },
+        { rank: 7, team: "Isloch", MP: 30, MW: 12, MD: 13, ML: 5, GF: 45, GA: 26, logo: "belarus/isloch.png" },
+        { rank: 8, team: "Neman", MP: 30, MW: 14, MD: 3, ML: 13, GF: 41, GA: 31, logo: "belarus/neman.png" },
+        { rank: 9, team: "Gomel", MP: 30, MW: 12, MD: 7, ML: 11, GF: 35, GA: 34, logo: "belarus/gomel.png" },
+        { rank: 10, team: "BATE", MP: 30, MW: 11, MD: 7, ML: 12, GF: 38, GA: 43, logo: "belarus/bate.png" },
+        { rank: 11, team: "Arsenal Dzyarzhynsk", MP: 30, MW: 7, MD: 12, ML: 11, GF: 27, GA: 35, logo: "belarus/arsenal.png" },
+        { rank: 12, team: "Vitebsk", MP: 30, MW: 9, MD: 4, ML: 17, GF: 37, GA: 46, logo: "belarus/vitebsk.png" },
+        { rank: 13, team: "Naftan", MP: 30, MW: 8, MD: 4, ML: 18, GF: 35, GA: 55, logo: "belarus/naftan.png" },
+        { rank: 14, team: "Smorgon", MP: 30, MW: 7, MD: 7, ML: 16, GF: 23, GA: 43, logo: "belarus/smorgon.png" },
+        { rank: 15, team: "Slutsk", MP: 30, MW: 5, MD: 6, ML: 19, GF: 20, GA: 51, logo: "belarus/slutsk.png" },
+        { rank: 16, team: "Molodechno-DYuSSh-4", MP: 30, MW: 3, MD: 2, ML: 25, GF: 19, GA: 63, logo: "belarus/molodechno.png" }
+    ],
+    fixtures: [
+        // Matchday 11 - June 12
+        { home: "Isloch", away: "Naftan", date: "2026-06-12" },
+        { home: "Belshina", away: "BATE", date: "2026-06-12" },
+        
+        // Matchday 11 - June 13
+        { home: "Baranovichi", away: "Minsk", date: "2026-06-13" },
+        { home: "Maxline", away: "Vitebsk", date: "2026-06-13" },
+        { home: "Dinamo Minsk", away: "Gomel", date: "2026-06-13" },
+        { home: "Dinamo Brest", away: "Neman", date: "2026-06-13" },
+        
+        // Matchday 11 - June 14
+        { home: "Dnepr", away: "Arsenal Dzyarzhynsk", date: "2026-06-14" },
+        { home: "Torpedo Zhodino", away: "Slavia-Mozyr", date: "2026-06-14" }
+    ]
+},
+"Brazilian Série B": {
+    id: "brasil-serie-b",
+    logo: "brazil/serieb.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Coritiba", MP: 38, MW: 19, MD: 11, ML: 8, GF: 39, GA: 23, logo: "brazil/coritiba.png" },
+        { rank: 2, team: "Athletico-PR", MP: 38, MW: 19, MD: 8, ML: 11, GF: 53, GA: 43, logo: "brazil/athleticopr.png" },
+        { rank: 3, team: "Chapecoense", MP: 38, MW: 18, MD: 8, ML: 12, GF: 52, GA: 35, logo: "brazil/chapecoense.png" },
+        { rank: 4, team: "Remo", MP: 38, MW: 16, MD: 14, ML: 8, GF: 51, GA: 39, logo: "brazil/remo.png" },
+        { rank: 5, team: "Criciúma", MP: 38, MW: 17, MD: 10, ML: 11, GF: 47, GA: 33, logo: "brazil/criciuma.png" },
+        { rank: 6, team: "Goiás", MP: 38, MW: 17, MD: 10, ML: 11, GF: 42, GA: 37, logo: "brazil/goias.png" },
+        { rank: 7, team: "Novorizontino", MP: 38, MW: 15, MD: 15, ML: 8, GF: 43, GA: 32, logo: "brazil/novorizontino.png" },
+        { rank: 8, team: "CRB", MP: 38, MW: 16, MD: 8, ML: 14, GF: 45, GA: 40, logo: "brazil/crb.png" },
+        { rank: 9, team: "Avaí", MP: 38, MW: 14, MD: 14, ML: 10, GF: 50, GA: 40, logo: "brazil/avai.png" },
+        { rank: 10, team: "Cuiabá", MP: 38, MW: 14, MD: 12, ML: 12, GF: 43, GA: 44, logo: "brazil/cuiaba.png" },
+        { rank: 11, team: "Atlético Goianiense", MP: 38, MW: 13, MD: 13, ML: 12, GF: 39, GA: 38, logo: "brazil/atleticogoianiense.png" },
+        { rank: 12, team: "Operário Ferroviário", MP: 38, MW: 12, MD: 12, ML: 14, GF: 40, GA: 44, logo: "brazil/operario.png" },
+        { rank: 13, team: "Vila Nova", MP: 38, MW: 11, MD: 14, ML: 13, GF: 40, GA: 44, logo: "brazil/vilanova.png" },
+        { rank: 14, team: "América-MG", MP: 38, MW: 12, MD: 10, ML: 16, GF: 41, GA: 44, logo: "brazil/americamg.png" },
+        { rank: 15, team: "Athletic (MG)", MP: 38, MW: 12, MD: 8, ML: 18, GF: 43, GA: 53, logo: "brazil/athleticmg.png" },
+        { rank: 16, team: "Botafogo", MP: 38, MW: 10, MD: 12, ML: 16, GF: 32, GA: 52, logo: "brazil/botafogosp.png" },
+        { rank: 17, team: "Ferroviária", MP: 38, MW: 8, MD: 16, ML: 14, GF: 43, GA: 52, logo: "brazil/ferroviaria.png" },
+        { rank: 18, team: "Amazonas", MP: 38, MW: 8, MD: 12, ML: 18, GF: 38, GA: 55, logo: "brazil/amazonas.png" },
+        { rank: 19, team: "Volta Redonda", MP: 38, MW: 8, MD: 12, ML: 18, GF: 26, GA: 43, logo: "brazil/voltaredonda.png" },
+        { rank: 20, team: "Paysandu", MP: 38, MW: 5, MD: 13, ML: 20, GF: 36, GA: 52, logo: "brazil/paysandu.png" }
+    ],
+    fixtures: [
+        // June 8
+        { home: "CRB", away: "São Bernardo", date: "2026-06-08" },
+        
+        // June 9
+        { home: "Vila Nova", away: "Botafogo", date: "2026-06-09" },
+        { home: "América-MG", away: "Atlético Goianiense", date: "2026-06-09" },
+        { home: "Ponte Preta", away: "Cuiabá", date: "2026-06-09" },
+        { home: "Náutico", away: "Fortaleza", date: "2026-06-09" },
+        
+        // June 11
+        { home: "Ceará", away: "Avaí", date: "2026-06-11" },
+        { home: "Goiás", away: "Novorizontino", date: "2026-06-11" },
+        { home: "Sport", away: "Athletic (MG)", date: "2026-06-11" },
+        
+        // June 12
+        { home: "Atlético Goianiense", away: "CRB", date: "2026-06-12" },
+        
+        // June 14
+        { home: "Juventude", away: "Ponte Preta", date: "2026-06-14" },
+        { home: "São Bernardo", away: "Sport", date: "2026-06-14" },
+        { home: "Cuiabá", away: "Vila Nova", date: "2026-06-14" },
+        { home: "Athletic (MG)", away: "Goiás", date: "2026-06-14" },
+        { home: "Novorizontino", away: "Náutico", date: "2026-06-14" },
+        { home: "Botafogo", away: "Operário Ferroviário", date: "2026-06-14" },
+        
+        // June 16
+        { home: "Criciúma", away: "Ceará", date: "2026-06-16" },
+        { home: "Londrina", away: "Avaí", date: "2026-06-16" },
+        
+        // June 17
+        { home: "Fortaleza", away: "América-MG", date: "2026-06-17" }
+    ]
+},
 
 "NBA": {
     id: "nba",
