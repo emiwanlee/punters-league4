@@ -514,6 +514,7 @@ const leaguesData = {
 // ==================== MATCH RESULTS DATA ====================
 
 const matchesData = {
+/*
     "English Premier League": [
         { home: "Liverpool", away: "Arsenal", home_score: 2, away_score: 1 },
         { home: "Manchester City", away: "Chelsea", home_score: 3, away_score: 0 },
@@ -547,6 +548,7 @@ const matchesData = {
         { home: "Genoa", away: "Torino", home_score: 3, away_score: 0 },
         { home: "Atalanta", away: "Napoli", home_score: 2, away_score: 1 }
     ],
+	*/
     "Japanese J1 League": [
         { home: "JEF", away: "Kashiwa", home_score: 2, away_score: 1 },
         { home: "FC Tokyo", away: "Yokohama FM", home_score: 3, away_score: 0 },
