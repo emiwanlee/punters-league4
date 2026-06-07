@@ -27,7 +27,6 @@ function getRecentMatchesList(matchesData, limit = 15) {
     
     for (const [leagueName, leagueMatches] of Object.entries(matchesData)) {
         for (const match of leagueMatches) {
-            // Only include matches that have scores
             if (match.home_score !== undefined && match.away_score !== undefined) {
                 allMatches.push({
                     ...match,
@@ -37,7 +36,6 @@ function getRecentMatchesList(matchesData, limit = 15) {
         }
     }
     
-    // Sort by date (newest first) - handle various date formats
     allMatches.sort((a, b) => {
         if (a.date && b.date) {
             return new Date(b.date) - new Date(a.date);
@@ -81,7 +79,6 @@ function renderRecentResults(containerId, matchesData, limit = 12) {
     
     let html = '';
     for (const [league, matches] of Object.entries(grouped)) {
-        // Shorten league name for display
         let shortLeague = league;
         if (league.includes("Primera")) shortLeague = league.substring(0, 25);
         if (league.length > 30) shortLeague = league.substring(0, 27) + "...";
@@ -89,13 +86,11 @@ function renderRecentResults(containerId, matchesData, limit = 12) {
         html += `<div class="recent-league">${escapeHtml(shortLeague)}</div>`;
         
         for (const match of matches) {
-            // Determine winner for color coding
             let scoreClass = '';
             if (match.home_score > match.away_score) scoreClass = 'win-home';
             else if (match.away_score > match.home_score) scoreClass = 'win-away';
             else scoreClass = 'draw';
             
-            // Shorten team names if needed
             let homeShort = match.home;
             let awayShort = match.away;
             if (homeShort.length > 18) homeShort = homeShort.substring(0, 15) + "...";
@@ -140,7 +135,6 @@ function renderLeagueSelector() {
         `).join('')}
     `;
     
-    // Add click handlers
     document.querySelectorAll('.league-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             document.querySelectorAll('.league-btn').forEach(b => b.classList.remove('active'));
@@ -275,7 +269,6 @@ function renderContent(leagueId) {
 
 // ==================== INITIALIZE APP ====================
 
-// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
     
     // Update time
@@ -330,21 +323,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Load recent results after matchesData is available
+    // Load recent results
     setTimeout(function() {
         if (typeof matchesData !== 'undefined') {
             renderRecentResults('recentResultsLeft', matchesData, 12);
             renderRecentResults('recentResultsRight', matchesData, 15);
         } else {
-            console.log('Waiting for matchesData to load...');
-            // Try again after another second
             setTimeout(function() {
                 if (typeof matchesData !== 'undefined') {
                     renderRecentResults('recentResultsLeft', matchesData, 12);
                     renderRecentResults('recentResultsRight', matchesData, 15);
                 } else {
-                    document.getElementById('recentResultsLeft').innerHTML = '<div class="loading-small">Match data not available</div>';
-                    document.getElementById('recentResultsRight').innerHTML = '<div class="loading-small">Match data not available</div>';
+                    const leftEl = document.getElementById('recentResultsLeft');
+                    const rightEl = document.getElementById('recentResultsRight');
+                    if (leftEl) leftEl.innerHTML = '<div class="loading-small">Match data not available</div>';
+                    if (rightEl) rightEl.innerHTML = '<div class="loading-small">Match data not available</div>';
                 }
             }, 1000);
         }
