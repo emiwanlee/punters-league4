@@ -313,6 +313,7 @@ const leaguesData = {
     { home: "Velez Sarsfield 2", away: "Tigre 2", date: "2026-06-10" }
 ]
 },
+/*
 "Japanese J1 League": {
     id: "j1-league",
     logo: "japan/j1logo.png",
@@ -399,7 +400,7 @@ const leaguesData = {
         //{ home: "Ehime FC", away: "Mito HollyHock", date: "2026-06-15" }
     ]
 },
-
+*/
 "Chilean Primera División": {
     id: "chile",
     logo: "chile/chile.png",
