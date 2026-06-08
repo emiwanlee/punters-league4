@@ -3,78 +3,7 @@
 
 const leaguesData = {
 
-"MLS Eastern Conference": {
-    id: "mls-east",
-    logo: "mls/mlslogo.jpg",
-    isBasketball: false,
-    teams: [
-        { team: "Philadelphia", MP: 34, MW: 20, MD: 6, GF: 57, GA: 35, logo: "mls/philadelphialogo.png" },
-        { team: "Cincinnati", MP: 34, MW: 20, MD: 5, GF: 52, GA: 40, logo: "mls/cincinnatlogo.png" },
-        { team: "Inter Miami", MP: 34, MW: 19, MD: 8, GF: 81, GA: 55, logo: "mls/intermiamilogo.png" },
-        { team: "Charlotte", MP: 34, MW: 19, MD: 2, GF: 55, GA: 46, logo: "mls/charlottelogo.png" },
-        { team: "New York", MP: 34, MW: 17, MD: 5, GF: 50, GA: 44, logo: "mls/newyorklogo.png" },
-        { team: "Nashville", MP: 34, MW: 16, MD: 6, GF: 58, GA: 45, logo: "mls/nashvillelogo.png" },
-        { team: "Columbus", MP: 34, MW: 14, MD: 12, GF: 55, GA: 41, logo: "mls/columbuslogo.png" },
-        { team: "Chicago", MP: 34, MW: 15, MD: 8, GF: 68, GA: 60, logo: "mls/chicagologo.png" },
-        { team: "Orlando", MP: 34, MW: 14, MD: 11, GF: 63, GA: 51, logo: "mls/orlandologo.png" },
-        { team: "NY Red Bulls", MP: 34, MW: 12, MD: 7, GF: 48, GA: 47, logo: "mls/nyredbullslogo.png" },
-        { team: "New England", MP: 34, MW: 9, MD: 9, GF: 44, GA: 51, logo: "mls/newenglandlogo.png" },
-        { team: "Toronto", MP: 34, MW: 6, MD: 14, GF: 37, GA: 44, logo: "mls/torontologo.png" },
-        { team: "Montreal", MP: 34, MW: 6, MD: 10, GF: 34, GA: 60, logo: "mls/monteallogo.png" },
-        { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
-    ],
-    fixtures: [
-        { home: "Montreal", away: "Toronto", date: "2026-07-17" },
-        { home: "Chicago", away: "Vancouver", date: "2026-07-17" },
-        { home: "Seattle", away: "Portland", date: "2026-07-17" },
-        { home: "Nashville", away: "Atlanta", date: "2026-07-18" },
-        { home: "LA Galaxy", away: "LAFC", date: "2026-07-18" },
-        { home: "Cincinnati", away: "Vancouver", date: "2026-07-23" },
-        { home: "Columbus", away: "New York City", date: "2026-07-23" },
-        { home: "Inter Miami", away: "Chicago", date: "2026-07-23" },
-        { home: "Philadelphia", away: "NY Red Bulls", date: "2026-07-23" },
-        { home: "New England", away: "Toronto", date: "2026-07-23" },
-        { home: "Charlotte", away: "Atlanta", date: "2026-07-23" },
-		{ home: "Austin", away: "Seattle", date: "2026-07-23" },
-		{ home: "Houston", away: "DC United", date: "2026-07-23" },
-		{ home: "Nashville", away: "Montreal", date: "2026-07-23" },
-		{ home: "Sporting KC", away: "Minnesota", date: "2026-07-23" },
-		{ home: "Colorado", away: "San Diego", date: "2026-07-23" }
-    ]
-},
 
-"MLS Western Conference": {
-    id: "mls-west",
-    logo: "mls/mlslogo.jpg",
-    isBasketball: false,
-    teams: [
-        { team: "DC United", MP: 34, MW: 5, MD: 11, GF: 30, GA: 66, logo: "mls/dcunitedlogo.png" },
-        { team: "San Diego", MP: 34, MW: 19, MD: 6, GF: 64, GA: 41, logo: "mls/sandiegologo.jpg" },
-        { team: "Vancouver", MP: 34, MW: 18, MD: 9, GF: 66, GA: 38, logo: "mls/vancouverlogo.png" },
-        { team: "LAFC", MP: 34, MW: 17, MD: 9, GF: 65, GA: 40, logo: "mls/lafclogo.png" },
-        { team: "Minnesota", MP: 34, MW: 16, MD: 10, GF: 56, GA: 39, logo: "mls/minnesotslogo.png" },
-        { team: "Seattle", MP: 34, MW: 15, MD: 10, GF: 58, GA: 48, logo: "mls/seattlelogo.png" },
-        { team: "Austin", MP: 34, MW: 13, MD: 8, GF: 37, GA: 45, logo: "mls/austinlogo.png" },
-        { team: "Dallas", MP: 34, MW: 11, MD: 11, GF: 52, GA: 55, logo: "mls/dallaslogo.png" },
-        { team: "Portland", MP: 34, MW: 11, MD: 11, GF: 41, GA: 48, logo: "mls/portlandlogo.png" },
-        { team: "Real Salt Lake", MP: 34, MW: 12, MD: 5, GF: 38, GA: 49, logo: "mls/realsaltlakelogo.png" },
-        { team: "San Jose", MP: 34, MW: 11, MD: 8, GF: 60, GA: 63, logo: "mls/sanjoselogo.png" },
-        { team: "Colorado", MP: 34, MW: 11, MD: 8, GF: 40, GA: 56, logo: "mls/coloradologo.png" },
-        { team: "Houston Dynamo", MP: 34, MW: 9, MD: 10, GF: 43, GA: 56, logo: "mls/houstondynamologo.png" },
-        { team: "St. Louis", MP: 34, MW: 8, MD: 8, GF: 44, GA: 58, logo: "mls/stlouislogo.png" },
-        { team: "LA Galaxy", MP: 34, MW: 7, MD: 9, GF: 46, GA: 66, logo: "mls/lagalaxylogo.png" },
-        { team: "Sporting KC", MP: 34, MW: 7, MD: 7, GF: 46, GA: 70, logo: "mls/sportingkclogo.png" }
-    ],
-    fixtures: [
-        { home: "LA Galaxy", away: "St. Louis", date: "2026-07-23" },
-        { home: "LAFC", away: "Real Salt Lake", date: "2026-07-23" },
-        { home: "Portland", away: "Dallas", date: "2026-07-23" },
-        { home: "Eatrhquakes", away: "Orlando", date: "2026-07-23" },
-        { home: "Atlanta", away: "Montreal", date: "2026-06-15" },
-        { home: "NY Red Bulls", away: "Dallas", date: "2026-06-15" },
-        { home: "Columbus", away: "Minnesota", date: "2026-06-15" }
-    ]
-},
 /*
 "Argentine Liga Profesional - Group A": {
     id: "argentina-group-a",
@@ -609,6 +538,79 @@ const leaguesData = {
         
         // Postponed - Time TBD
         { home: "Bolívar", away: "Real Potosí", date: "TBD" }
+    ]
+},
+
+"MLS Eastern Conference": {
+    id: "mls-east",
+    logo: "mls/mlslogo.jpg",
+    isBasketball: false,
+    teams: [
+        { team: "Philadelphia", MP: 34, MW: 20, MD: 6, GF: 57, GA: 35, logo: "mls/philadelphialogo.png" },
+        { team: "Cincinnati", MP: 34, MW: 20, MD: 5, GF: 52, GA: 40, logo: "mls/cincinnatlogo.png" },
+        { team: "Inter Miami", MP: 34, MW: 19, MD: 8, GF: 81, GA: 55, logo: "mls/intermiamilogo.png" },
+        { team: "Charlotte", MP: 34, MW: 19, MD: 2, GF: 55, GA: 46, logo: "mls/charlottelogo.png" },
+        { team: "New York", MP: 34, MW: 17, MD: 5, GF: 50, GA: 44, logo: "mls/newyorklogo.png" },
+        { team: "Nashville", MP: 34, MW: 16, MD: 6, GF: 58, GA: 45, logo: "mls/nashvillelogo.png" },
+        { team: "Columbus", MP: 34, MW: 14, MD: 12, GF: 55, GA: 41, logo: "mls/columbuslogo.png" },
+        { team: "Chicago", MP: 34, MW: 15, MD: 8, GF: 68, GA: 60, logo: "mls/chicagologo.png" },
+        { team: "Orlando", MP: 34, MW: 14, MD: 11, GF: 63, GA: 51, logo: "mls/orlandologo.png" },
+        { team: "NY Red Bulls", MP: 34, MW: 12, MD: 7, GF: 48, GA: 47, logo: "mls/nyredbullslogo.png" },
+        { team: "New England", MP: 34, MW: 9, MD: 9, GF: 44, GA: 51, logo: "mls/newenglandlogo.png" },
+        { team: "Toronto", MP: 34, MW: 6, MD: 14, GF: 37, GA: 44, logo: "mls/torontologo.png" },
+        { team: "Montreal", MP: 34, MW: 6, MD: 10, GF: 34, GA: 60, logo: "mls/monteallogo.png" },
+        { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
+    ],
+    fixtures: [
+        { home: "Montreal", away: "Toronto", date: "2026-07-17" },
+        { home: "Chicago", away: "Vancouver", date: "2026-07-17" },
+        { home: "Seattle", away: "Portland", date: "2026-07-17" },
+        { home: "Nashville", away: "Atlanta", date: "2026-07-18" },
+        { home: "LA Galaxy", away: "LAFC", date: "2026-07-18" },
+        { home: "Cincinnati", away: "Vancouver", date: "2026-07-23" },
+        { home: "Columbus", away: "New York City", date: "2026-07-23" },
+        { home: "Inter Miami", away: "Chicago", date: "2026-07-23" },
+        { home: "Philadelphia", away: "NY Red Bulls", date: "2026-07-23" },
+        { home: "New England", away: "Toronto", date: "2026-07-23" },
+        { home: "Charlotte", away: "Atlanta", date: "2026-07-23" },
+		{ home: "Austin", away: "Seattle", date: "2026-07-23" },
+		{ home: "Houston", away: "DC United", date: "2026-07-23" },
+		{ home: "Nashville", away: "Montreal", date: "2026-07-23" },
+		{ home: "Sporting KC", away: "Minnesota", date: "2026-07-23" },
+		{ home: "Colorado", away: "San Diego", date: "2026-07-23" }
+    ]
+},
+
+"MLS Western Conference": {
+    id: "mls-west",
+    logo: "mls/mlslogo.jpg",
+    isBasketball: false,
+    teams: [
+        { team: "DC United", MP: 34, MW: 5, MD: 11, GF: 30, GA: 66, logo: "mls/dcunitedlogo.png" },
+        { team: "San Diego", MP: 34, MW: 19, MD: 6, GF: 64, GA: 41, logo: "mls/sandiegologo.jpg" },
+        { team: "Vancouver", MP: 34, MW: 18, MD: 9, GF: 66, GA: 38, logo: "mls/vancouverlogo.png" },
+        { team: "LAFC", MP: 34, MW: 17, MD: 9, GF: 65, GA: 40, logo: "mls/lafclogo.png" },
+        { team: "Minnesota", MP: 34, MW: 16, MD: 10, GF: 56, GA: 39, logo: "mls/minnesotslogo.png" },
+        { team: "Seattle", MP: 34, MW: 15, MD: 10, GF: 58, GA: 48, logo: "mls/seattlelogo.png" },
+        { team: "Austin", MP: 34, MW: 13, MD: 8, GF: 37, GA: 45, logo: "mls/austinlogo.png" },
+        { team: "Dallas", MP: 34, MW: 11, MD: 11, GF: 52, GA: 55, logo: "mls/dallaslogo.png" },
+        { team: "Portland", MP: 34, MW: 11, MD: 11, GF: 41, GA: 48, logo: "mls/portlandlogo.png" },
+        { team: "Real Salt Lake", MP: 34, MW: 12, MD: 5, GF: 38, GA: 49, logo: "mls/realsaltlakelogo.png" },
+        { team: "San Jose", MP: 34, MW: 11, MD: 8, GF: 60, GA: 63, logo: "mls/sanjoselogo.png" },
+        { team: "Colorado", MP: 34, MW: 11, MD: 8, GF: 40, GA: 56, logo: "mls/coloradologo.png" },
+        { team: "Houston Dynamo", MP: 34, MW: 9, MD: 10, GF: 43, GA: 56, logo: "mls/houstondynamologo.png" },
+        { team: "St. Louis", MP: 34, MW: 8, MD: 8, GF: 44, GA: 58, logo: "mls/stlouislogo.png" },
+        { team: "LA Galaxy", MP: 34, MW: 7, MD: 9, GF: 46, GA: 66, logo: "mls/lagalaxylogo.png" },
+        { team: "Sporting KC", MP: 34, MW: 7, MD: 7, GF: 46, GA: 70, logo: "mls/sportingkclogo.png" }
+    ],
+    fixtures: [
+        { home: "LA Galaxy", away: "St. Louis", date: "2026-07-23" },
+        { home: "LAFC", away: "Real Salt Lake", date: "2026-07-23" },
+        { home: "Portland", away: "Dallas", date: "2026-07-23" },
+        { home: "Eatrhquakes", away: "Orlando", date: "2026-07-23" },
+        { home: "Atlanta", away: "Montreal", date: "2026-06-15" },
+        { home: "NY Red Bulls", away: "Dallas", date: "2026-06-15" },
+        { home: "Columbus", away: "Minnesota", date: "2026-06-15" }
     ]
 },
 
