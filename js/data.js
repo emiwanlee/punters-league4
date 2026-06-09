@@ -975,6 +975,7 @@ const matchesData = {
     { home: "Racing Club 2", away: "Banfield 2", home_score: 1, away_score: 2, date: "2026-06-08" },
     { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", home_score: 2, away_score: 0, date: "2026-06-08" },
     { home: "UAI Urquiza", away: "Liniers ", home_score: 2, away_score: 1, date: "2026-06-08" },
+	{ home: "Vila Nova", away: "Botafogo ", home_score: 1, away_score: 0, date: "2026-06-09" }
 ]
 };
 
