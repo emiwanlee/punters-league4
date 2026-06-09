@@ -167,11 +167,11 @@ const leaguesData = {
     ],
    fixtures: [
     // Round 17 - June 8
-    { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
-    { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
-    { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
-    { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
-    { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
+    //{ home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
+   // { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
+  //  { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
+   // { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
+   // { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
     
     // Round 17 - June 9
     { home: "Aldosivi 2", away: "Gimnasia Mendoza 2", date: "2026-06-09" },
@@ -218,11 +218,11 @@ const leaguesData = {
     ],
     fixtures: [
     // Round 17 - June 8
-    { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
-    { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
-    { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
-    { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
-    { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
+   // { home: "Defensa y Justicia 2", away: "Ferro 2", date: "2026-06-08" },
+   // { home: "Gimnasia L.P. 2", away: "Godoy Cruz 2", date: "2026-06-08" },
+   // { home: "Ind. Rivadavia 2", away: "Quilmes 2", date: "2026-06-08" },
+   // { home: "Racing Club 2", away: "Banfield 2", date: "2026-06-08" },
+   // { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", date: "2026-06-08" },
     
     // Round 17 - June 9
     { home: "Aldosivi 2", away: "Gimnasia Mendoza 2", date: "2026-06-09" },
@@ -775,7 +775,7 @@ const matchesData = {
         { home: "Kashiwa", away: "Yokohama FM", home_score: 3, away_score: 0 },
         { home: "Kawasaki", away: "Urawa Reds", home_score: 3, away_score: 2 }
     ],
-	*/
+	
     "Chilean Primera División": [
         { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
         { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
@@ -967,6 +967,15 @@ const matchesData = {
         { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
         { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
     ]
+	*/
+	"Argentine Reserve League":[
+ { home: "Defensa y Justicia 2", away: "Ferro 2", home_score: 2, away_score: 1, date: "2026-06-08" },
+    { home: "Gimnasia L.P. 2", away: "Godoy Cruz", home_score: 0, away_score: 2, date: "2026-06-08" },
+    { home: "Ind. Rivadavia 2", away: " Quilmes", home_score: 2, away_score: 0, date: "2026-06-08" },
+    { home: "Racing Club 2", away: "Banfield 2", home_score: 1, away_score: 2, date: "2026-06-08" },
+    { home: "Union de Santa Fe 2", away: "Atl. Tucuman 2", home_score: 2, away_score: 0, date: "2026-06-08" },
+    { home: "UAI Urquiza", away: "Liniers ", home_score: 2, away_score: 1, date: "2026-06-08" },
+]
 };
 
 console.log("✅ Matches data loaded from data.js");
