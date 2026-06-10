@@ -1,7 +1,7 @@
 // ==================== COMPLETE MATCH RESULTS DATA ====================
 
 const matchesData = {
-/*
+
     "English Premier League": [
         { home: "Manchester United", away: "Crystal Palace", home_score: 2, away_score: 1 },
         { home: "Brighton", away: "Nottingham", home_score: 1, away_score: 1 },
@@ -387,7 +387,61 @@ const matchesData = {
         { home: "Yokohama FC", away: "Renofa Yamaguchi", home_score: 2, away_score: 1, date: "2026-06-07" },
         { home: "Gifu", away: "Gainare Tottori", home_score: 1, away_score: 1, date: "2026-06-07", note: "Pen: 2-4" }
     ],
-
+"Australian NPL ACT": [
+    // Round 4
+    { home: "Belconnen Utd.", away: "Tuggeranong Utd", home_score: 1, away_score: 3, date: "2025-06-03" },
+    { home: "Brindabella", away: "Canberra Croatia", home_score: 0, away_score: 2, date: "2025-04-18" },
+    { home: "Canberra White Eagles", away: "Canberra Olympic", home_score: 1, away_score: 6, date: "2025-04-18" },
+    { home: "O'Connor Knights", away: "Canberra Juventus", home_score: 0, away_score: 3, date: "2025-04-18" },
+    { home: "Queanbeyan City", away: "Tigers FC", home_score: 0, away_score: 2, date: "2025-04-18" },
+    
+    // Round 5
+    { home: "Canberra Croatia", away: "Tigers FC", home_score: 2, away_score: 1, date: "2025-04-24" },
+    { home: "Canberra White Eagles", away: "Tuggeranong Utd", home_score: 2, away_score: 4, date: "2025-04-24" },
+    { home: "Monaro Panthers", away: "Canberra Olympic", home_score: 6, away_score: 1, date: "2025-04-24" },
+    { home: "O'Connor Knights", away: "Brindabella", home_score: 2, away_score: 1, date: "2025-04-24" },
+    { home: "Queanbeyan City", away: "Belconnen Utd.", home_score: 4, away_score: 1, date: "2025-04-24" },
+    
+    // Round 6
+    { home: "Monaro Panthers", away: "Canberra Juventus", home_score: 5, away_score: 3, date: "2025-05-02" },
+    { home: "Canberra White Eagles", away: "Brindabella", home_score: 0, away_score: 2, date: "2025-05-02" },
+    { home: "O'Connor Knights", away: "Belconnen Utd.", home_score: 2, away_score: 1, date: "2025-05-02" },
+    { home: "Queanbeyan City", away: "Canberra Olympic", home_score: 1, away_score: 0, date: "2025-05-02" },
+    { home: "Tuggeranong Utd", away: "Tigers FC", home_score: 2, away_score: 1, date: "2025-05-02" },
+    
+    // Round 7
+    { home: "Tigers FC", away: "Belconnen Utd.", home_score: 3, away_score: 2, date: "2025-05-09" },
+    { home: "O'Connor Knights", away: "Monaro Panthers", home_score: 2, away_score: 1, date: "2025-05-09" },
+    { home: "Tuggeranong Utd", away: "Canberra Olympic", home_score: 6, away_score: 4, date: "2025-05-09" },
+    
+    // Round 8
+    { home: "Canberra White Eagles", away: "Canberra Juventus", home_score: 1, away_score: 4, date: "2025-05-17" },
+    { home: "Tuggeranong Utd", away: "Brindabella", home_score: 5, away_score: 1, date: "2025-05-16" },
+    { home: "Tigers FC", away: "Canberra Olympic", home_score: 3, away_score: 2, date: "2025-05-16" },
+    { home: "Belconnen Utd.", away: "Monaro Panthers", home_score: 1, away_score: 3, date: "2025-05-16" },
+    { home: "O'Connor Knights", away: "Canberra Croatia", home_score: 1, away_score: 5, date: "2025-05-16" },
+    
+    // Round 9
+    { home: "Brindabella", away: "Canberra Juventus", home_score: 0, away_score: 1, date: "2025-05-13" },
+    { home: "Canberra Olympic", away: "O'Connor Knights", home_score: 3, away_score: 1, date: "2025-05-13" },
+    { home: "Tigers FC", away: "Monaro Panthers", home_score: 3, away_score: 1, date: "2025-05-13" },
+    { home: "Tuggeranong Utd", away: "Canberra Croatia", home_score: 2, away_score: 3, date: "2025-05-13" },
+    { home: "Canberra White Eagles", away: "Queanbeyan City", home_score: 0, away_score: 3, date: "2025-05-12" },
+    
+    // Round 10
+    { home: "Canberra Croatia", away: "Monaro Panthers", home_score: 4, away_score: 1, date: "2025-05-24" },
+    { home: "Tigers FC", away: "Brindabella", home_score: 7, away_score: 0, date: "2025-05-23" },
+    { home: "Canberra White Eagles", away: "O'Connor Knights", home_score: 0, away_score: 2, date: "2025-05-23" },
+    { home: "Queanbeyan City", away: "Canberra Juventus", home_score: 3, away_score: 1, date: "2025-05-23" },
+    { home: "Canberra Olympic", away: "Belconnen Utd.", home_score: 4, away_score: 4, date: "2025-05-23" },
+    
+    // Round 11
+    { home: "Monaro Panthers", away: "Canberra White Eagles", home_score: 2, away_score: 1, date: "2025-05-30" },
+    { home: "Belconnen Utd.", away: "Canberra Croatia", home_score: 1, away_score: 4, date: "2025-05-30" },
+    { home: "Brindabella", away: "Canberra Olympic", home_score: 0, away_score: 3, date: "2025-05-30" },
+    { home: "Canberra Juventus", away: "Tuggeranong Utd", home_score: 5, away_score: 0, date: "2025-05-30" },
+    { home: "O'Connor Knights", away: "Queanbeyan City", home_score: 0, away_score: 4, date: "2025-05-30" }
+],
     "Chinese Super League": [
         { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
         { home: "Shandong Taishan", away: "Shanghai Shenhua", home_score: 4, away_score: 1 },
