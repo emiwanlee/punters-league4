@@ -295,7 +295,7 @@ const leaguesData = {
     ],
     fixtures: [
 	    { home: "Botafogo U-20", away: "Criciuma U-20", date: "2026-06-10" },	    
-	    { home: "Corinthians U-20", away: "Corinthians U-20", date: "2026-06-10" },	    
+	    { home: "Corinthians U-20", away: "Avaí U-20", date: "2026-06-10" },	    
         { home: "Juventude U-20", away: "Bahia U-20", date: "2026-06-10" },	    
         { home: "Vitória U-20", away: "América (MG) U-20", date: "2026-06-10" },
 	    { home: "Grêmio U-20", away: "Fluminense U-20", date: "2026-06-10" },
