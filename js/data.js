@@ -294,6 +294,11 @@ const leaguesData = {
         { rank: 20, team: "Juventude U-20", MP: 14, MW: 1, MD: 3, ML: 10, GF: 12, GA: 35, logo: "brazil/juventudeu20.png" }
     ],
     fixtures: [
+	    { home: "Botafogo U-20", away: "Criciuma U-20", date: "2026-06-10" },	    
+	    { home: "Corinthians U-20", away: "Corinthians U-20", date: "2026-06-10" },	    
+        { home: "Juventude U-20", away: "Bahia U-20", date: "2026-06-10" },	    
+        { home: "Vitória U-20", away: "América (MG) U-20", date: "2026-06-10" },
+	    { home: "Grêmio U-20", away: "Fluminense U-20", date: "2026-06-10" },
         { home: "Cruzeiro U-20", away: "Fortaleza U-20", date: "2026-06-11" },
         { home: "São Paulo U-20", away: "Bragantino U-20", date: "2026-06-11" },
         { home: "Vasco da Gama U-20", away: "Cuiabá U-20", date: "2026-06-11" },
