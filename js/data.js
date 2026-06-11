@@ -138,7 +138,7 @@ const leaguesData = {
         { home: "Aldosivi", away: "Estudiantes de Río Cuarto", date: "2026-06-15" }
     ]
 },
-*/
+
 
 
 "Argentine Reserve League - Group A": {
@@ -267,6 +267,7 @@ const leaguesData = {
         { home: "Tuggeranong Utd", away: "Monaro Panthers", date: "2026-06-10" }
     ]
 },
+*/
 "Brazilian U-20 League": {
     id: "brazil-u20",
     logo: "brazil/u20.png",
@@ -294,11 +295,11 @@ const leaguesData = {
         { rank: 20, team: "Juventude U-20", MP: 14, MW: 1, MD: 3, ML: 10, GF: 12, GA: 35, logo: "brazil/juventudeu20.png" }
     ],
     fixtures: [
-	    { home: "Botafogo U-20", away: "Criciuma U-20", date: "2026-06-10" },	    
-	    { home: "Corinthians U-20", away: "Avaí U-20", date: "2026-06-10" },	    
-        { home: "Juventude U-20", away: "Bahia U-20", date: "2026-06-10" },	    
-        { home: "Vitória U-20", away: "América (MG) U-20", date: "2026-06-10" },
-	    { home: "Grêmio U-20", away: "Fluminense U-20", date: "2026-06-10" },
+	   // { home: "Botafogo U-20", away: "Criciuma U-20", date: "2026-06-10" },	    
+	   // { home: "Corinthians U-20", away: "Avaí U-20", date: "2026-06-10" },	    
+       // { home: "Juventude U-20", away: "Bahia U-20", date: "2026-06-10" },	    
+        //{ home: "Vitória U-20", away: "América (MG) U-20", date: "2026-06-10" },
+	   // { home: "Grêmio U-20", away: "Fluminense U-20", date: "2026-06-10" },
         { home: "Cruzeiro U-20", away: "Fortaleza U-20", date: "2026-06-11" },
         { home: "São Paulo U-20", away: "Bragantino U-20", date: "2026-06-11" },
         { home: "Vasco da Gama U-20", away: "Cuiabá U-20", date: "2026-06-11" },
@@ -491,6 +492,39 @@ const leaguesData = {
         { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" }
     ]
 },
+"Swedish Superettan": {
+    id: "sweden-superettan",
+    logo: "sweden/superettan.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Västerås", MP: 30, MW: 20, MD: 5, ML: 5, GF: 62, GA: 30, logo: "sweden/vasteras.png" },
+        { rank: 2, team: "Kalmar", MP: 30, MW: 18, MD: 10, ML: 2, GF: 52, GA: 21, logo: "sweden/kalmar.png" },
+        { rank: 3, team: "ÖIS", MP: 30, MW: 16, MD: 8, ML: 6, GF: 57, GA: 33, logo: "sweden/ois.png" },
+        { rank: 4, team: "Oddevold", MP: 30, MW: 13, MD: 9, ML: 8, GF: 42, GA: 36, logo: "sweden/oddevold.png" },
+        { rank: 5, team: "Falkenberg", MP: 30, MW: 12, MD: 10, ML: 8, GF: 53, GA: 36, logo: "sweden/falkenberg.png" },
+        { rank: 6, team: "Varbergs BoIS", MP: 30, MW: 11, MD: 10, ML: 9, GF: 45, GA: 42, logo: "sweden/varbergsbois.png" },
+        { rank: 7, team: "Helsingborg", MP: 30, MW: 11, MD: 8, ML: 11, GF: 42, GA: 39, logo: "sweden/helsingborg.png" },
+        { rank: 8, team: "Brage", MP: 30, MW: 11, MD: 8, ML: 11, GF: 51, GA: 51, logo: "sweden/brage.png" },
+        { rank: 9, team: "Landskrona", MP: 30, MW: 11, MD: 8, ML: 11, GF: 39, GA: 47, logo: "sweden/landskrona.png" },
+        { rank: 10, team: "Sandviken", MP: 30, MW: 12, MD: 5, ML: 13, GF: 36, GA: 47, logo: "sweden/sandviken.png" },
+        { rank: 11, team: "GIF Sundsvall", MP: 30, MW: 11, MD: 7, ML: 12, GF: 36, GA: 38, logo: "sweden/gifsundsvall.png" },
+        { rank: 12, team: "Östersund", MP: 30, MW: 9, MD: 9, ML: 12, GF: 33, GA: 51, logo: "sweden/ostersund.png" },
+        { rank: 13, team: "Utsiktens", MP: 30, MW: 7, MD: 9, ML: 14, GF: 46, GA: 53, logo: "sweden/utsiktens.png" },
+        { rank: 14, team: "Örebro", MP: 30, MW: 4, MD: 10, ML: 16, GF: 39, GA: 54, logo: "sweden/orebro.png" },
+        { rank: 15, team: "Trelleborg", MP: 30, MW: 5, MD: 7, ML: 18, GF: 23, GA: 51, logo: "sweden/trelleborg.png" },
+        { rank: 16, team: "Umeå", MP: 30, MW: 4, MD: 7, ML: 19, GF: 30, GA: 57, logo: "sweden/umea.png" }
+    ],
+    fixtures: [
+        { home: "Norrby", away: "Oddevold", date: "2026-06-14" },
+        { home: "Ljungskile", away: "Ostersund", date: "2026-06-14" },
+        { home: "Falkenberg", away: "Orebro", date: "2026-06-14" },
+        { home: "Sandviken", away: "Brage", date: "2026-06-14" },
+        { home: "GIF Sundsvall", away: "Oster", date: "2026-06-15" },
+        { home: "Norrkoping", away: "Varberg", date: "2026-06-15" },
+        { home: "Varnamo", away: "Helsingborg", date: "2026-06-16" },
+        { home: "Landskrona", away: "Nordic United", date: "2026-06-16" }
+    ]
+},
 
 "Chinese Super League": {
     id: "csl",
@@ -679,7 +713,7 @@ const leaguesData = {
         { home: "Columbus", away: "Minnesota", date: "2026-06-15" }
     ]
 },
-
+/*
 "NBA": {
     id: "nba",
     logo: "nba.png",
@@ -751,7 +785,7 @@ const leaguesData = {
         { home: "Joventut", away: "Murcia", date: "2026-06-15" }
     ]
 }
-
+*/
 };
 
 // ==================== MATCH RESULTS DATA ====================
@@ -1035,16 +1069,16 @@ const matchesData = {
     ]
 	*/
 	"Latest Results":[
- { home: "Aldosivi 2", away: "Gimnasia Mendoza 2", home_score: 1, away_score: 0, date: "2026-06-08" },
-    { home: "Belgrano 2", away: "Atl. Rafaela 2", home_score: 1, away_score: 1, date: "2026-06-08" },
-    { home: "Deportivo Riestra 2", away: "  Platense 2", home_score: 1, away_score: 0, date: "2026-06-08" },
-    { home: "Lanus 2", away: "Independiente 2", home_score: 0, away_score: 4, date: "2026-06-08" },
-    { home: "Central Cordoba 2", away: " Colon Santa Fe 2", home_score: 2, away_score: 0, date: "2026-06-08" },
-    { home: "River Plate 2", away: " Rosario Central 2 ", home_score: 2, away_score: 1, date: "2026-06-08" },
-	{ home: "America MG", away: "Atletico GO ", home_score: 1, away_score: 2, date: "2026-06-09" },
-	{ home: "Vila Nova FC", away: "Botafogo SP", home_score: 1, away_score: 0, date: "2026-06-09" },
-	{ home: "Nautico", away: "Fortaleza", home_score: 0, away_score: 1, date: "2026-06-09" },
-	{ home: "Ponte Preta", away: "Cuiaba ", home_score: 1, away_score: 2, date: "2026-06-09" },
+ { home: "Central Cordoba 2 ", away: "Colon Santa Fe 2", home_score: 2, away_score: 0, date: "2026-06-10" },
+    { home: "River Plate 2", away: "Rosario Central 2", home_score: 2, away_score: 1, date: "2026-06-08" },
+    { home: "Argentinos Jrs 2", away: "Barracas Central 2", home_score: 3, away_score: 1, date: "2026-06-08" },
+    { home: "Estudiantes Rio Cuarto 2", away: " Huracan 2", home_score: 1, away_score: 0, date: "2026-06-08" },
+    { home: "Newells Old Boys 2", away: "Boca Juniors 2", home_score: 3, away_score: 1, date: "2026-06-08" },
+    { home: "San Lorenzo 2", away: "Instituto 2 ", home_score: 2, away_score: 2, date: "2026-06-08" },
+	{ home: "San Martin S.J. 2", away: "Estudiantes L.P. 2", home_score: 0, away_score: 4, date: "2026-06-09" },
+	{ home: "Sarmiento Junin 2", away: " Talleres Cordoba 2", home_score: 1, away_score: 2, date: "2026-06-09" },
+	{ home: "Velez Sarsfield 2", away: "Tigre 2", home_score: 2, away_score: 0, date: "2026-06-09" },
+	{ home: "Belconnen Utd", away: "Canberra White Eagles ", home_score: 1, away_score: 2, date: "2026-06-09" },
 	
 ]
 };
