@@ -315,6 +315,65 @@ body {
     top: 100px;
 }
 
+/* Sidebar Results Styles */
+.sidebar-category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-match {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.75rem;
+}
+
+.sidebar-teams {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.sidebar-home, .sidebar-away {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40%;
+}
+
+.sidebar-vs {
+    color: #999;
+    font-size: 0.7rem;
+}
+
+.sidebar-score {
+    font-weight: 700;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.sidebar-score.win-home {
+    color: #10b981;
+}
+
+.sidebar-score.win-away {
+    color: #ef4444;
+}
+
+.sidebar-score.draw {
+    color: #f59e0b;
+}
+
+.sidebar-league {
+    font-size: 0.65rem;
+    color: #6c757d;
+    text-align: center;
+}
 /* ========== LEAGUE HEADER ========== */
 .league-header {
     text-align: center;

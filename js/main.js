@@ -19,96 +19,65 @@ function formatDate(dateString) {
     });
 }
 
-// ==================== RECENT RESULTS WIDGET ====================
+// ==================== SIDEBAR RESULTS (MANUALLY CONTROLLED) ====================
 
-// Function to get recent matches (last 15-20 across all leagues)
-function getRecentMatchesList(matchesData, limit = 15) {
-    const allMatches = [];
-    
-    for (const [leagueName, leagueMatches] of Object.entries(matchesData)) {
-        for (const match of leagueMatches) {
-            if (match.home_score !== undefined && match.away_score !== undefined) {
-                allMatches.push({
-                    ...match,
-                    league: leagueName
-                });
-            }
-        }
-    }
-    
-    allMatches.sort((a, b) => {
-        if (a.date && b.date) {
-            return new Date(b.date) - new Date(a.date);
-        }
-        return 0;
-    });
-    
-    return allMatches.slice(0, limit);
-}
+// You control exactly what shows here - independent from matchesData
+const sidebarResults = {
+    "Today's Results": [
+        { home: "Muras United", away: "Asia Talas", home_score: 2, away_score: 3, league: "Kyrgyzstan League" },
+        { home: "Bishkek City", away: "Talant", home_score: 1, away_score: 0, league: "Kyrgyzstan League" },
+        { home: "Colo-Colo", away: "Cobresal", home_score: 2, away_score: 1, league: "Chilean Primera" }
+    ],
+    "Yesterday's Results": [
+        { home: "Belconnen Utd.", away: "Canberra White Eagles", home_score: 1, away_score: 2, league: "Australian NPL" },
+        { home: "Canberra Croatia", away: "Queanbeyan City", home_score: 4, away_score: 2, league: "Australian NPL" }
+    ],
+    "Top Matches": [
+        { home: "Shanghai Port", away: "Shanghai Shenhua", home_score: 2, away_score: 1, league: "Chinese Super League" },
+        { home: "Beijing Guoan", away: "Shandong Taishan", home_score: 1, away_score: 1, league: "Chinese Super League" }
+    ]
+};
 
-// Function to group matches by league
-function groupMatchesByLeague(matches) {
-    const grouped = {};
-    for (const match of matches) {
-        if (!grouped[match.league]) {
-            grouped[match.league] = [];
-        }
-        grouped[match.league].push(match);
-    }
-    return grouped;
-}
-
-// Function to render recent results widget
-function renderRecentResults(containerId, matchesData, limit = 12) {
+// Function to render sidebar results from your custom list
+function renderSidebarResults(containerId, resultsData, limit = 10) {
     const container = document.getElementById(containerId);
     if (!container) return;
     
-    if (typeof matchesData === 'undefined') {
-        container.innerHTML = '<div class="loading-small">No match data available</div>';
-        return;
-    }
-    
-    const recentMatches = getRecentMatchesList(matchesData, limit);
-    
-    if (recentMatches.length === 0) {
-        container.innerHTML = '<div class="loading-small">No recent matches found</div>';
-        return;
-    }
-    
-    const grouped = groupMatchesByLeague(recentMatches);
-    
     let html = '';
-    for (const [league, matches] of Object.entries(grouped)) {
-        let shortLeague = league;
-        if (league.includes("Primera")) shortLeague = league.substring(0, 25);
-        if (league.length > 30) shortLeague = league.substring(0, 27) + "...";
+    let count = 0;
+    
+    for (const [category, matches] of Object.entries(resultsData)) {
+        if (count >= limit) break;
         
-        html += `<div class="recent-league">${escapeHtml(shortLeague)}</div>`;
+        html += `<div class="sidebar-category">${escapeHtml(category)}</div>`;
         
         for (const match of matches) {
+            if (count >= limit) break;
+            
             let scoreClass = '';
             if (match.home_score > match.away_score) scoreClass = 'win-home';
             else if (match.away_score > match.home_score) scoreClass = 'win-away';
             else scoreClass = 'draw';
             
-            let homeShort = match.home;
-            let awayShort = match.away;
-            if (homeShort.length > 18) homeShort = homeShort.substring(0, 15) + "...";
-            if (awayShort.length > 18) awayShort = awayShort.substring(0, 15) + "...";
-            
             html += `
-                <div class="recent-result-item">
-                    <div class="recent-match">
-                        <span class="recent-teams" title="${escapeHtml(match.home)} vs ${escapeHtml(match.away)}">
-                            ${escapeHtml(homeShort)} vs ${escapeHtml(awayShort)}
-                        </span>
-                        <span class="recent-score ${scoreClass}">
-                            ${match.home_score}-${match.away_score}
-                        </span>
+                <div class="sidebar-match">
+                    <div class="sidebar-teams">
+                        <span class="sidebar-home">${escapeHtml(match.home)}</span>
+                        <span class="sidebar-vs">vs</span>
+                        <span class="sidebar-away">${escapeHtml(match.away)}</span>
                     </div>
+                    <div class="sidebar-score ${scoreClass}">
+                        ${match.home_score} - ${match.away_score}
+                    </div>
+                    <div class="sidebar-league">${escapeHtml(match.league)}</div>
                 </div>
             `;
+            count++;
         }
+    }
+    
+    if (html === '') {
+        html = '<div class="loading-small">No results to display</div>';
     }
     
     container.innerHTML = html;
@@ -171,7 +140,7 @@ function renderContent(leagueId) {
                 <h2>${escapeHtml(leagueName)}</h2>
                 <p class="text-muted">
                     <i class="fas ${league.isBasketball ? 'fa-basketball-ball' : 'fa-futbol'}"></i> 
-                    ${league.isBasketball ? '?? Basketball Predictions' : '? Football Predictions'}
+                    ${league.isBasketball ? '🏀 Basketball Predictions' : '⚽ Football Predictions'}
                 </p>
             </div>
         `;
@@ -323,23 +292,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Load recent results
+    // Load sidebar results from your manual list (NOT from matchesData)
     setTimeout(function() {
-        if (typeof matchesData !== 'undefined') {
-            renderRecentResults('recentResultsLeft', matchesData, 12);
-            renderRecentResults('recentResultsRight', matchesData, 15);
-        } else {
-            setTimeout(function() {
-                if (typeof matchesData !== 'undefined') {
-                    renderRecentResults('recentResultsLeft', matchesData, 12);
-                    renderRecentResults('recentResultsRight', matchesData, 15);
-                } else {
-                    const leftEl = document.getElementById('recentResultsLeft');
-                    const rightEl = document.getElementById('recentResultsRight');
-                    if (leftEl) leftEl.innerHTML = '<div class="loading-small">Match data not available</div>';
-                    if (rightEl) rightEl.innerHTML = '<div class="loading-small">Match data not available</div>';
-                }
-            }, 1000);
-        }
+        renderSidebarResults('recentResultsLeft', sidebarResults, 12);
+        renderSidebarResults('recentResultsRight', sidebarResults, 15);
     }, 500);
 });
