@@ -3,6 +3,51 @@
 
 const leaguesData = {
 
+"Kyrgyzstan Premier League": {
+    id: "kyrgyzstan",
+    logo: "kyrgyzstan/kyrgyzstan.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Muras United", MP: 10, MW: 8, MD: 2, ML: 0, GF: 21, GA: 7, logo: "kyrgyzstan/murasunited.png" },
+        { rank: 2, team: "Asia Talas", MP: 11, MW: 8, MD: 2, ML: 1, GF: 28, GA: 17, logo: "kyrgyzstan/asiat alas.png" },
+        { rank: 3, team: "Alga", MP: 11, MW: 7, MD: 4, ML: 0, GF: 23, GA: 10, logo: "kyrgyzstan/alga.png" },
+        { rank: 4, team: "Bars", MP: 9, MW: 6, MD: 2, ML: 1, GF: 19, GA: 10, logo: "kyrgyzstan/bars.png" },
+        { rank: 5, team: "Ozgon", MP: 10, MW: 6, MD: 2, ML: 2, GF: 19, GA: 11, logo: "kyrgyzstan/ozgon.png" },
+        { rank: 6, team: "Alay Osh", MP: 11, MW: 5, MD: 4, ML: 2, GF: 14, GA: 11, logo: "kyrgyzstan/alayosh.png" },
+        { rank: 7, team: "Aldier", MP: 11, MW: 3, MD: 5, ML: 3, GF: 13, GA: 16, logo: "kyrgyzstan/aldier.png" },
+        { rank: 8, team: "Asiagoal Bishkek", MP: 12, MW: 3, MD: 4, ML: 5, GF: 13, GA: 17, logo: "kyrgyzstan/asiagoal.png" },
+        { rank: 9, team: "Neftchi Kochkor-Ata", MP: 12, MW: 4, MD: 1, ML: 7, GF: 13, GA: 19, logo: "kyrgyzstan/neftchi.png" },
+        { rank: 10, team: "Bishkek City", MP: 11, MW: 3, MD: 3, ML: 5, GF: 10, GA: 13, logo: "kyrgyzstan/bishkekcity.png" },
+        { rank: 11, team: "Toktogul", MP: 12, MW: 4, MD: 0, ML: 8, GF: 11, GA: 20, logo: "kyrgyzstan/toktogul.png" },
+        { rank: 12, team: "Ilbirs", MP: 10, MW: 2, MD: 5, ML: 3, GF: 12, GA: 15, logo: "kyrgyzstan/ilbirs.png" },
+        { rank: 13, team: "Talant", MP: 10, MW: 2, MD: 4, ML: 4, GF: 12, GA: 13, logo: "kyrgyzstan/talant.png" },
+        { rank: 14, team: "Dordoi Bishkek", MP: 11, MW: 3, MD: 1, ML: 7, GF: 12, GA: 17, logo: "kyrgyzstan/dordoibishkek.png" },
+        { rank: 15, team: "Abdysh-Ata", MP: 12, MW: 2, MD: 1, ML: 9, GF: 10, GA: 20, logo: "kyrgyzstan/abdyshata.png" },
+        { rank: 16, team: "Kyrgyzaltyn", MP: 11, MW: 0, MD: 2, ML: 9, GF: 9, GA: 23, logo: "kyrgyzstan/kyrgyzaltyn.png" }
+    ],
+    fixtures: [
+        // Round 12 - June 12
+        { home: "Bishkek City", away: "Asia Talas", date: "2026-06-12" },
+        { home: "Talant", away: "Alay Osh", date: "2026-06-12" },
+        
+        // Round 12 - June 13
+        { home: "Aldier", away: "Ozgon", date: "2026-06-13" },
+        { home: "Bars", away: "Kyrgyzaltyn", date: "2026-06-13" },
+        { home: "Dordoi Bishkek", away: "Ilbirs", date: "2026-06-13" },
+        { home: "Muras United", away: "Alga", date: "2026-06-13" },
+        
+        // Round 13 - June 23
+        { home: "Alay Osh", away: "Aldier", date: "2026-06-23" },
+        { home: "Alga", away: "Bars", date: "2026-06-23" },
+        { home: "Asia Talas", away: "Muras United", date: "2026-06-23" },
+        { home: "Asiagoal Bishkek", away: "Bishkek City", date: "2026-06-23" },
+        { home: "Ilbirs", away: "Talant", date: "2026-06-23" },
+        { home: "Kyrgyzaltyn", away: "Abdysh-Ata", date: "2026-06-23" },
+        { home: "Neftchi Kochkor-Ata", away: "Dordoi Bishkek", date: "2026-06-23" },
+        { home: "Ozgon", away: "Toktogul", date: "2026-06-23" }
+    ]
+},
+
 
 
 "Argentine Liga Profesional - Group A": {
