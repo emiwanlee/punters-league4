@@ -24,18 +24,17 @@ function formatDate(dateString) {
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
     "Today's Results": [
-        { home: "Muras United", away: "Asia Talas", home_score: 2, away_score: 3, league: "Kyrgyzstan League" },
-        { home: "Bishkek City", away: "Talant", home_score: 1, away_score: 0, league: "Kyrgyzstan League" },
-        { home: "Colo-Colo", away: "Cobresal", home_score: 2, away_score: 1, league: "Chilean Primera" }
+        { home: "A. Italiano", away: "La Serena", home_score: 1, away_score: 1 },
+        
     ],
     "Yesterday's Results": [
-        { home: "Belconnen Utd.", away: "Canberra White Eagles", home_score: 1, away_score: 2, league: "Australian NPL" },
-        { home: "Canberra Croatia", away: "Queanbeyan City", home_score: 4, away_score: 2, league: "Australian NPL" }
-    ],
-    "Top Matches": [
-        { home: "Shanghai Port", away: "Shanghai Shenhua", home_score: 2, away_score: 1, league: "Chinese Super League" },
-        { home: "Beijing Guoan", away: "Shandong Taishan", home_score: 1, away_score: 1, league: "Chinese Super League" }
+	     { home: "Bishkek City", away: "Talant", home_score: 1, away_score: 0, league: "Kyrgyzstan League" },
+        { home: "Colo-Colo", away: "Cobresal", home_score: 2, away_score: 1, league: "Chilean Primera" }
     ]
+    //"Top Matches": [
+        //{ home: "Shanghai Port", away: "Shanghai Shenhua", home_score: 2, away_score: 1, league: "Chinese Super League" },
+       // { home: "Beijing Guoan", away: "Shandong Taishan", home_score: 1, away_score: 1, league: "Chinese Super League" }
+   // ]
 };
 
 // Function to render sidebar results from your custom list

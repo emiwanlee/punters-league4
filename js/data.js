@@ -48,7 +48,7 @@ const leaguesData = {
     ]
 },
 
-
+/*
 
 "Argentine Liga Profesional - Group A": {
     id: "argentina-group-a",
@@ -90,7 +90,7 @@ const leaguesData = {
     ]
 },
 
-/*
+
 "Argentine Reserve League - Group A": {
     id: "arg-reserve-a",
     logo: "argentina/reserve.png",
@@ -246,7 +246,7 @@ const leaguesData = {
     { home: "Velez Sarsfield 2", away: "Tigre 2", date: "2026-06-10" }
 ]
 },
-*/
+
 "Argentine Liga Profesional - Group B": {
     id: "argentina-group-b",
     logo: "argentina/argentinaprimeralogo.png",
@@ -287,9 +287,93 @@ const leaguesData = {
     ]
 },
 
+*/
 
+"Argentine Primera Nacional - Group A": {
+    id: "arg-nacional-a",
+    logo: "argentina/primera-nacional.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Deportivo Moron", MP: 16, MW: 9, MD: 4, ML: 3, GF: 24, GA: 13, logo: "argentina/depormoron.png" },
+        { rank: 2, team: "Ferro", MP: 16, MW: 8, MD: 4, ML: 4, GF: 17, GA: 12, logo: "argentina/ferro.png" },
+        { rank: 3, team: "Ciudad Bolivar", MP: 16, MW: 6, MD: 9, ML: 1, GF: 13, GA: 8, logo: "argentina/ciudadbolivar.png" },
+        { rank: 4, team: "Los Andes", MP: 16, MW: 6, MD: 8, ML: 2, GF: 12, GA: 4, logo: "argentina/losandes.png" },
+        { rank: 5, team: "Colon Santa Fe", MP: 16, MW: 6, MD: 8, ML: 2, GF: 18, GA: 13, logo: "argentina/colonsantafe.png" },
+        { rank: 6, team: "Godoy Cruz", MP: 16, MW: 6, MD: 7, ML: 3, GF: 18, GA: 12, logo: "argentina/godoycruz.png" },
+        { rank: 7, team: "Deportivo Madryn", MP: 16, MW: 6, MD: 6, ML: 4, GF: 20, GA: 15, logo: "argentina/depormadryn.png" },
+        { rank: 8, team: "Def. de Belgrano", MP: 16, MW: 4, MD: 8, ML: 4, GF: 12, GA: 12, logo: "argentina/defbelgrano.png" },
+        { rank: 9, team: "Almirante Brown", MP: 16, MW: 5, MD: 5, ML: 6, GF: 9, GA: 11, logo: "argentina/almirantebrown.png" },
+        { rank: 10, team: "CA Estudiantes", MP: 16, MW: 5, MD: 5, ML: 6, GF: 10, GA: 13, logo: "argentina/caestudiantes.png" },
+        { rank: 11, team: "San Miguel", MP: 16, MW: 4, MD: 8, ML: 4, GF: 12, GA: 17, logo: "argentina/sanmiguel.png" },
+        { rank: 12, team: "Acassuso", MP: 16, MW: 5, MD: 3, ML: 8, GF: 11, GA: 15, logo: "argentina/acassuso.png" },
+        { rank: 13, team: "CA Mitre", MP: 16, MW: 3, MD: 8, ML: 5, GF: 17, GA: 17, logo: "argentina/camitre.png" },
+        { rank: 14, team: "Racing Cordoba", MP: 16, MW: 4, MD: 5, ML: 7, GF: 14, GA: 19, logo: "argentina/racingcordoba.png" },
+        { rank: 15, team: "San Telmo", MP: 16, MW: 3, MD: 7, ML: 6, GF: 12, GA: 16, logo: "argentina/santelmo.png" },
+        { rank: 16, team: "All Boys", MP: 16, MW: 3, MD: 7, ML: 6, GF: 9, GA: 16, logo: "argentina/allboys.png" },
+        { rank: 17, team: "Central Norte", MP: 16, MW: 3, MD: 5, ML: 8, GF: 10, GA: 16, logo: "argentina/centralnorte.png" },
+        { rank: 18, team: "Chaco For Ever", MP: 16, MW: 1, MD: 6, ML: 9, GF: 12, GA: 22, logo: "argentina/chacoforever.png" }
+    ],
+    fixtures: [
+        { home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
+        { home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
+		{ home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
+    { home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
+    
+    // Tomorrow's matches - June 14
+    { home: "Almirante Brown", away: "Godoy Cruz", date: "2026-06-14" },
+    { home: "Estudiantes", away: "All Boys", date: "2026-06-14" },
+    { home: "Deportivo Madryn", away: "San Miguel", date: "2026-06-14" },
+    { home: "Ferro", away: "Acassuso", date: "2026-06-14" },
+    { home: "Mitre", away: "Los Andes", date: "2026-06-14" },
+    { home: "Racing (C)", away: "Chaco For Ever", date: "2026-06-14" },
+    { home: "Central Norte", away: "San Telmo", date: "2026-06-14" }
+    ]
+},
 
-
+"Argentine Primera Nacional - Group B": {
+    id: "arg-nacional-b",
+    logo: "argentina/primera-nacional.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Atletico Atlanta", MP: 16, MW: 9, MD: 3, ML: 4, GF: 21, GA: 10, logo: "argentina/atleticoatlanta.png" },
+        { rank: 2, team: "Gimnasia Jujuy", MP: 15, MW: 8, MD: 3, ML: 4, GF: 21, GA: 18, logo: "argentina/gimnasiajujuy.png" },
+        { rank: 3, team: "Tristan Suarez", MP: 16, MW: 6, MD: 8, ML: 2, GF: 15, GA: 10, logo: "argentina/tristansuarez.png" },
+        { rank: 4, team: "Midland", MP: 16, MW: 7, MD: 4, ML: 5, GF: 17, GA: 11, logo: "argentina/midland.png" },
+        { rank: 5, team: "Atl. Rafaela", MP: 16, MW: 7, MD: 4, ML: 5, GF: 14, GA: 12, logo: "argentina/atlrafaela.png" },
+        { rank: 6, team: "Temperley", MP: 16, MW: 5, MD: 8, ML: 3, GF: 13, GA: 15, logo: "argentina/temperley.png" },
+        { rank: 7, team: "San Martin T.", MP: 16, MW: 5, MD: 7, ML: 4, GF: 14, GA: 12, logo: "argentina/sanmartint.png" },
+        { rank: 8, team: "Deportivo Maipu", MP: 16, MW: 6, MD: 3, ML: 7, GF: 22, GA: 19, logo: "argentina/depormaipu.png" },
+        { rank: 9, team: "San Martin S.J.", MP: 15, MW: 5, MD: 5, ML: 5, GF: 15, GA: 16, logo: "argentina/sanmartinsj.png" },
+        { rank: 10, team: "Gimnasia y Tiro", MP: 16, MW: 5, MD: 5, ML: 6, GF: 16, GA: 18, logo: "argentina/gimnasiaytiro.png" },
+        { rank: 11, team: "Patronato", MP: 16, MW: 4, MD: 7, ML: 5, GF: 11, GA: 14, logo: "argentina/patronato.png" },
+        { rank: 12, team: "Club A. Guemes", MP: 16, MW: 5, MD: 4, ML: 7, GF: 16, GA: 23, logo: "argentina/clubguemes.png" },
+        { rank: 13, team: "Quilmes", MP: 16, MW: 4, MD: 6, ML: 6, GF: 14, GA: 11, logo: "argentina/quilmes.png" },
+        { rank: 14, team: "Nueva Chicago", MP: 14, MW: 4, MD: 6, ML: 4, GF: 13, GA: 12, logo: "argentina/nuevachicago.png" },
+        { rank: 15, team: "Chacarita Juniors", MP: 16, MW: 5, MD: 3, ML: 8, GF: 14, GA: 18, logo: "argentina/chacaritajuniors.png" },
+        { rank: 16, team: "Agropecuario", MP: 16, MW: 4, MD: 6, ML: 6, GF: 13, GA: 18, logo: "argentina/agropecuario.png" },
+        { rank: 17, team: "Colegiales", MP: 16, MW: 4, MD: 5, ML: 7, GF: 12, GA: 16, logo: "argentina/colegiales.png" },
+        { rank: 18, team: "Almagro", MP: 16, MW: 4, MD: 4, ML: 8, GF: 11, GA: 18, logo: "argentina/almagro.png" }
+    ],
+    fixtures: [
+        { home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
+        { home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
+        { home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
+        { home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
+        { home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
+		// Existing fixtures
+    { home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
+    { home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
+    { home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
+    { home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
+    { home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
+    
+    // Tomorrow's matches - June 14
+    { home: "Gimnasia de Jujuy", away: "San Martín", date: "2026-06-14" },
+    { home: "Patronato", away: "Atlético Rafaela", date: "2026-06-14" },
+    { home: "Temperley", away: "Guemes", date: "2026-06-14" },
+    { home: "Deportivo Maipú", away: "Tristan Suarez", date: "2026-06-14" }
+    ]
+},
 "Australian NPL ACT": {
     id: "australia-npl-act",
     logo: "australia/nplact.png",
@@ -876,6 +960,7 @@ const leaguesData = {
 const matchesData = {
     
     "Chilean Primera División": [
+	    { home: "A. Italiano", away: "La Serena", home_score: 1, away_score: 1 },
         { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
         { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
         { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
@@ -946,71 +1031,116 @@ const matchesData = {
         { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
         { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 }
     ],
-	"Argentine Reserve League - Group B": [
-    // Round 16
-	{ home: "Boca Juniors 2", away: "Defensa y Justicia 2", home_score: 5, away_score: 0, date: "2026-06-03" },
-	{ home: "Estudiantes LP. 2", away: "Ind. Rivadavia 2", home_score: 0, away_score: 1, date: "2026-06-03" },
-	{ home: "Gimnasia Mendoza 2", away: "Gimnasia LP. 2", home_score: 0, away_score: 0, date: "2026-06-03" },
-	{ home: "Instituto", away: "Atl Tucuman 2", home_score: 0, away_score: 3, date: "2026-06-03" },
-	{ home: "Rosario Central", away: "Racing Club 2", home_score: 2, away_score: 2, date: "2026-06-03" },
-     { home: "Banfield", away: "Sarmiento Junin 2", home_score: 2, away_score: 1, date: "2026-06-02" },
-    { home: "Colon Santa Fe 2", away: "Huracan 2", home_score: 3, away_score: 1, date: "2026-06-02" },
-    { home: "Ferro 2", away: "Estudiantes Rio Cuarto 2", home_score: 4, away_score: 1, date: "2026-06-02" },
-    { home: "Independiente 2", away: "Newells Old Boys 2", home_score: 1, away_score: 0, date: "2026-06-02" },
-    { home: "Quilmes 2", away: "Deportivo Riestra 2", home_score: 1, away_score: 0, date: "2026-06-02" },
+	"Argentine Primera Nacional - Group A": [
+    // Matchday 14 - May 16-19
+    { home: "Racing (C)", away: "Central Norte", home_score: 1, away_score: 2, date: "2026-05-16" },
+    { home: "Los Andes", away: "Godoy Cruz", home_score: 1, away_score: 0, date: "2026-05-16" },
+    { home: "Almirante Brown", away: "San Telmo", home_score: 0, away_score: 0, date: "2026-05-16" },
+    { home: "Estudiantes", away: "Colón", home_score: 1, away_score: 1, date: "2026-05-16" },
+    { home: "Ciudad de Bolívar", away: "Acassuso", home_score: 1, away_score: 0, date: "2026-05-16" },
+    { home: "Deportivo Madryn", away: "Ferro", home_score: 0, away_score: 1, date: "2026-05-17" },
+    { home: "Mitre", away: "San Miguel", home_score: 4, away_score: 0, date: "2026-05-17" },
+    { home: "Gimnasia y Tiro", away: "San Martín Tucumán", home_score: 1, away_score: 0, date: "2026-05-17" },
+    { home: "Defensores de Belgrano", away: "Chaco For Ever", home_score: 0, away_score: 0, date: "2026-05-18" },
+    { home: "All Boys", away: "Deportivo Morón", home_score: 1, away_score: 0, date: "2026-05-19" },
     
+    // Matchday 15 - May 23-24
+    { home: "Los Andes", away: "Racing (C)", home_score: 2, away_score: 0, date: "2026-05-23" },
+    { home: "San Telmo", away: "Ciudad de Bolívar", home_score: 0, away_score: 1, date: "2026-05-23" },
+    { home: "San Miguel", away: "Almirante Brown", home_score: 1, away_score: 0, date: "2026-05-23" },
+    { home: "Acassuso", away: "Defensores de Belgrano", home_score: 1, away_score: 0, date: "2026-05-24" },
+    { home: "Deportivo Morón", away: "Estudiantes", home_score: 2, away_score: 0, date: "2026-05-24" },
+    { home: "Ferro", away: "Central Norte", home_score: 1, away_score: 0, date: "2026-05-24" },
+    { home: "Chaco For Ever", away: "Deportivo Madryn", home_score: 1, away_score: 2, date: "2026-05-24" },
+    { home: "Godoy Cruz", away: "All Boys", home_score: 4, away_score: 0, date: "2026-05-24" },
+    { home: "Colón", away: "Mitre", home_score: 1, away_score: 1, date: "2026-05-24" },
     
-    // Round 15
-    { home: "Belgrano 2", away: "Quilmes 2", home_score: 1, away_score: 0, date: "2026-05-27" },
-    { home: "Deportivo Riestra 2", away: "Estudiantes L.P. 2", home_score: 1, away_score: 2, date: "2026-05-27" },
-    { home: "Ind. Rivadavia 2", away: "Central Cordoba 2", home_score: 2, away_score: 1, date: "2026-05-27" },
-    { home: "Newells Old Boys 2", away: "Atl. Rafaela 2", home_score: 3, away_score: 0, date: "2026-05-27" },
-    { home: "Defensa y Justicia 2", away: "Independiente 2", home_score: 1, away_score: 1, date: "2026-05-26" },
-    { home: "Estudiantes Rio Cuarto 2", away: "Boca Juniors 2", home_score: 0, away_score: 2, date: "2026-05-26" },
-    { home: "Huracan 2", away: "Ferro 2", home_score: 2, away_score: 0, date: "2026-05-26" },
-    { home: "San Martin S.J. 2", away: "Colon Santa Fe 2", home_score: 1, away_score: 1, date: "2026-05-26" },
+    // Matchday 16 - May 30-31
+    { home: "Racing (C)", away: "Ferro", home_score: 0, away_score: 0, date: "2026-05-30" },
+    { home: "Estudiantes", away: "Godoy Cruz", home_score: 1, away_score: 0, date: "2026-05-30" },
+    { home: "All Boys", away: "Los Andes", home_score: 0, away_score: 0, date: "2026-05-30" },
+    { home: "Almirante Brown", away: "Colón", home_score: 1, away_score: 1, date: "2026-05-30" },
+    { home: "Defensores de Belgrano", away: "San Telmo", home_score: 1, away_score: 0, date: "2026-05-30" },
+    { home: "Deportivo Madryn", away: "Acassuso", home_score: 0, away_score: 0, date: "2026-05-31" },
+    { home: "Ciudad de Bolívar", away: "San Miguel", home_score: 1, away_score: 1, date: "2026-05-31" },
+    { home: "Mitre", away: "Deportivo Morón", home_score: 1, away_score: 3, date: "2026-05-31" },
+    { home: "Central Norte", away: "Chaco For Ever", home_score: 1, away_score: 1, date: "2026-05-31" },
     
-    // Round 14
-    { home: "Boca Juniors 2", away: "Huracan 2", home_score: 1, away_score: 0, date: "2026-05-21" },
-    { home: "Estudiantes L.P. 2", away: "Belgrano 2", home_score: 3, away_score: 1, date: "2026-05-21" },
-    { home: "Atl. Rafaela 2", away: "Defensa y Justicia 2", home_score: 2, away_score: 4, date: "2026-05-20" },
-    { home: "Central Cordoba 2", away: "Deportivo Riestra 2", home_score: 1, away_score: 0, date: "2026-05-20" },
-    { home: "Platense 2", away: "Newells Old Boys 2", home_score: 1, away_score: 1, date: "2026-05-20" },
-    { home: "Colon Santa Fe 2", away: "Ferro 2", home_score: 0, away_score: 1, date: "2026-05-19" },
-    { home: "Independiente 2", away: "Estudiantes Rio Cuarto 2", home_score: 5, away_score: 0, date: "2026-05-19" },
-    { home: "Quilmes 2", away: "Lanus 2", home_score: 0, away_score: 2, date: "2026-05-19" },
-    { home: "San Martin S.J. 2", away: "Ind. Rivadavia 2", home_score: 0, away_score: 2, date: "2026-05-19" },
+    // Matchday 17 - June 6-7
+    { home: "Los Andes", away: "Estudiantes", home_score: 0, away_score: 0, date: "2026-06-06" },
+    { home: "Acassuso", away: "Central Norte", home_score: 2, away_score: 1, date: "2026-06-06" },
+    { home: "San Miguel", away: "Defensores de Belgrano", home_score: 0, away_score: 0, date: "2026-06-06" },
+    { home: "Deportivo Morón", away: "Almirante Brown", home_score: 1, away_score: 0, date: "2026-06-07" },
+    { home: "San Telmo", away: "Deportivo Madryn", home_score: 0, away_score: 0, date: "2026-06-07" },
+    { home: "All Boys", away: "Racing (C)", home_score: 1, away_score: 1, date: "2026-06-07" },
+    { home: "Chaco For Ever", away: "Ferro", home_score: 1, away_score: 2, date: "2026-06-07" },
+    { home: "Godoy Cruz", away: "Mitre", home_score: 2, away_score: 1, date: "2026-06-07" },
+    { home: "Colón", away: "Ciudad de Bolívar", home_score: 0, away_score: 0, date: "2026-06-07" }
+],
+
+"Argentine Primera Nacional - Group B": [
+    // Matchday 14 - May 16-17
+    { home: "Atlanta", away: "Atlético Rafaela", home_score: 2, away_score: 0, date: "2026-05-16" },
+    { home: "Colegiales", away: "Guemes", home_score: 4, away_score: 1, date: "2026-05-16" },
+    { home: "Almagro", away: "San Martín", home_score: 1, away_score: 2, date: "2026-05-17" },
+    { home: "Gimnasia de Jujuy", away: "Temperley", home_score: 1, away_score: 0, date: "2026-05-17" },
+    { home: "Patronato", away: "Chacarita Juniors", home_score: 2, away_score: 0, date: "2026-05-17" },
+    { home: "Midland", away: "Agropecuario", home_score: 2, away_score: 0, date: "2026-05-17" },
+    { home: "Quilmes", away: "Tristan Suarez", home_score: 0, away_score: 1, date: "2026-05-17" },
+    { home: "Deportivo Maipú", away: "Nueva Chicago", home_score: 1, away_score: 0, date: "2026-05-17" },
     
-    // Round 13
-    { home: "Deportivo Riestra 2", away: "San Martin S.J. 2", home_score: 2, away_score: 2, date: "2026-05-14" },
-    { home: "Huracan 2", away: "Independiente 2", home_score: 1, away_score: 0, date: "2026-05-14" },
-    { home: "Lanus 2", away: "Estudiantes L.P. 2", home_score: 1, away_score: 4, date: "2026-05-14" },
-    { home: "Ferro 2", away: "Boca Juniors 2", home_score: 0, away_score: 0, date: "2026-05-13" },
-    { home: "Ind. Rivadavia 2", away: "Colon Santa Fe 2", home_score: 1, away_score: 2, date: "2026-05-13" },
-    { home: "Defensa y Justicia 2", away: "Platense 2", home_score: 4, away_score: 0, date: "2026-05-12" },
-    { home: "Estudiantes Rio Cuarto 2", away: "Atl. Rafaela 2", home_score: 0, away_score: 2, date: "2026-05-12" },
-    { home: "Newells Old Boys 2", away: "Quilmes 2", home_score: 2, away_score: 0, date: "2026-05-12" }
+    // Matchday 15 - May 23-24
+    { home: "Tristan Suarez", away: "Colegiales", home_score: 0, away_score: 0, date: "2026-05-23" },
+    { home: "Nueva Chicago", away: "Temperley", home_score: 1, away_score: 1, date: "2026-05-23" },
+    { home: "Atlético Rafaela", away: "Midland", home_score: 1, away_score: 0, date: "2026-05-23" },
+    { home: "San Martín", away: "Deportivo Maipú", home_score: 2, away_score: 1, date: "2026-05-23" },
+    { home: "Chacarita Juniors", away: "Almagro", home_score: 1, away_score: 0, date: "2026-05-24" },
+    { home: "Agropecuario", away: "Quilmes", home_score: 0, away_score: 0, date: "2026-05-24" },
+    { home: "Guemes", away: "Patronato", home_score: 1, away_score: 0, date: "2026-05-24" },
+    { home: "Gimnasia y Tiro", away: "Gimnasia de Jujuy", home_score: 1, away_score: 1, date: "2026-05-24" },
+    { home: "San Martín Tucumán", away: "Atlanta", home_score: 0, away_score: 1, date: "2026-05-24" },
+    
+    // Matchday 16 - May 30-31
+    { home: "Colegiales", away: "Agropecuario", home_score: 0, away_score: 0, date: "2026-05-30" },
+    { home: "Atlanta", away: "Gimnasia y Tiro", home_score: 1, away_score: 1, date: "2026-05-31" },
+    { home: "Almagro", away: "Guemes", home_score: 2, away_score: 0, date: "2026-05-31" },
+    { home: "Temperley", away: "San Martín", home_score: 2, away_score: 1, date: "2026-05-31" },
+    { home: "Midland", away: "San Martín Tucumán", home_score: 2, away_score: 0, date: "2026-05-31" },
+    { home: "Patronato", away: "Tristan Suarez", home_score: 1, away_score: 1, date: "2026-05-31" },
+    { home: "Quilmes", away: "Atlético Rafaela", home_score: 2, away_score: 0, date: "2026-05-31" },
+    { home: "Deportivo Maipú", away: "Chacarita Juniors", home_score: 3, away_score: 2, date: "2026-05-31" },
+    
+    // Matchday 17 - June 6-7
+    { home: "Gimnasia y Tiro", away: "Midland", home_score: 1, away_score: 0, date: "2026-06-06" },
+    { home: "Atlanta", away: "Gimnasia de Jujuy", home_score: 3, away_score: 0, date: "2026-06-06" },
+    { home: "San Martín", away: "Nueva Chicago", home_score: 1, away_score: 0, date: "2026-06-06" },
+    { home: "Atlético Rafaela", away: "Colegiales", home_score: 1, away_score: 0, date: "2026-06-06" },
+    { home: "Tristan Suarez", away: "Almagro", home_score: 0, away_score: 0, date: "2026-06-06" },
+    { home: "Chacarita Juniors", away: "Temperley", home_score: 0, away_score: 1, date: "2026-06-07" },
+    { home: "Agropecuario", away: "Patronato", home_score: 1, away_score: 1, date: "2026-06-07" },
+    { home: "Guemes", away: "Deportivo Maipú", home_score: 1, away_score: 0, date: "2026-06-07" },
+    { home: "San Martín Tucumán", away: "Quilmes", home_score: 0, away_score: 0, date: "2026-06-07" }
 ],
 "Chilean Primera División": [
-        { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
-        { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
-        { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
-        { home: "Deportes Limache", away: "Universidad Católica", home_score: 0, away_score: 2 },
-        { home: "Huachipato", away: "Unión La Calera", home_score: 3, away_score: 1 },
-        { home: "Cobresal", away: "Universidad de Chile", home_score: 1, away_score: 0 },
-        { home: "Colo-Colo", away: "Ñublense", home_score: 6, away_score: 2 },
-        { home: "Concepción", away: "Everton", home_score: 0, away_score: 2 },
-        { home: "Everton", away: "Coquimbo", home_score: 1, away_score: 1 },
-        { home: "Audax Italiano", away: "Cobresal", home_score: 2, away_score: 1 },
-        { home: "Ñublense", away: "Universidad de Concepción", home_score: 2, away_score: 2 },
-        { home: "Unión La Calera", away: "Palestino", home_score: 1, away_score: 2 },
-        { home: "Concepción", away: "Huachipato", home_score: 2, away_score: 0 },
-        { home: "La Serena", away: "Deportes Limache", home_score: 4, away_score: 1 },
-        { home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
-        { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
-        { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
-        { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
-        { home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
+        { home: "A. Italiano", away: "La Serena", home_score: 1, away_score: 1 },
+       // { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
+       // { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
+       // { home: "Deportes Limache", away: "Universidad Católica", home_score: 0, away_score: 2 },
+       // { home: "Huachipato", away: "Unión La Calera", home_score: 3, away_score: 1 },
+       // { home: "Cobresal", away: "Universidad de Chile", home_score: 1, away_score: 0 },
+       // { home: "Colo-Colo", away: "Ñublense", home_score: 6, away_score: 2 },
+       // { home: "Concepción", away: "Everton", home_score: 0, away_score: 2 },
+        //{ home: "Everton", away: "Coquimbo", home_score: 1, away_score: 1 },
+        //{ home: "Audax Italiano", away: "Cobresal", home_score: 2, away_score: 1 },
+       // { home: "Ñublense", away: "Universidad de Concepción", home_score: 2, away_score: 2 },
+       // { home: "Unión La Calera", away: "Palestino", home_score: 1, away_score: 2 },
+       // { home: "Concepción", away: "Huachipato", home_score: 2, away_score: 0 },
+       // { home: "La Serena", away: "Deportes Limache", home_score: 4, away_score: 1 },
+        //{ home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
+       // { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
+       // { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
+        //{ home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
+       // { home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
     ],
     
 
