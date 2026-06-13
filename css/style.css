@@ -374,6 +374,229 @@ body {
     color: #6c757d;
     text-align: center;
 }
+
+/* League Table Styles */
+.league-table-wrapper {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    overflow-x: auto;
+}
+
+.league-table {
+    width: 100%;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+}
+
+.league-table th {
+    background: #f8f9fa;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: #4a5568;
+}
+
+.league-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.league-table .team-cell {
+    text-align: left;
+    font-weight: 500;
+}
+
+.league-table .team-cell a {
+    text-decoration: none;
+    color: #2d3748;
+    transition: 0.3s;
+}
+
+.league-table .team-cell a:hover {
+    color: #667eea;
+}
+
+.table-team-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.wins-cell { color: #10b981; font-weight: 600; }
+.draws-cell { color: #f59e0b; }
+.losses-cell { color: #ef4444; }
+.gd-positive { color: #10b981; }
+.gd-negative { color: #ef4444; }
+.points-cell { color: #667eea; font-size: 1rem; }
+
+.promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+.relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+.champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
+
+/* Insights Styles */
+.league-insights {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.insight-card {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+.insight-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #667eea;
+}
+
+.insight-label {
+    font-size: 0.7rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.leader-card {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea10, #764ba210);
+    border-radius: 15px;
+}
+
+.leader-icon {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.leader-title {
+    font-size: 0.7rem;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.leader-team {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.leader-stat {
+    font-size: 0.8rem;
+    color: #667eea;
+}
+
+/* Championship Race */
+.championship-race {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.race-progress {
+    text-align: center;
+}
+
+.race-leader {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.leader-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.leader-points {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.race-gap {
+    color: #f59e0b;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.race-chasers {
+    text-align: left;
+}
+
+.chaser {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Form Table */
+.form-table {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.form-ranking-table {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.form-ranking-table th,
+.form-ranking-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-ranking-table .team-cell {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .insights-grid,
+    .leaders-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .league-table {
+        font-size: 0.7rem;
+    }
+    
+    .league-table th,
+    .league-table td {
+        padding: 6px 4px;
+    }
+}
 /* ========== LEAGUE HEADER ========== */
 .league-header {
     text-align: center;

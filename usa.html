@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chilean Football - Primera División & More | Punters League</title>
+<title>MLS USA - Eastern & Western Conference | Punters League</title>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
@@ -38,7 +38,7 @@
         font-weight: 800;
     }
     
-    .league-tabs {
+    .conference-tabs {
         display: flex;
         gap: 0.5rem;
         flex-wrap: wrap;
@@ -47,7 +47,7 @@
         padding-bottom: 0.5rem;
     }
     
-    .league-tab {
+    .conference-tab {
         padding: 0.75rem 1.5rem;
         background: transparent;
         border: none;
@@ -58,12 +58,12 @@
         border-radius: 10px;
     }
     
-    .league-tab:hover {
+    .conference-tab:hover {
         background: #f8f9fa;
         color: #667eea;
     }
     
-    .league-tab.active {
+    .conference-tab.active {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
     }
@@ -80,14 +80,6 @@
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .comparison-card {
-        background: white;
-        border-radius: 20px;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
     
     .comparison-grid {
@@ -114,23 +106,23 @@
         text-align: center;
     }
     
-    .league-table {
+    .mls-table {
         width: 100%;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         border-collapse: collapse;
     }
     
-    .league-table th {
+    .mls-table th {
         background: #f8f9fa;
-        padding: 8px 4px;
+        padding: 8px 3px;
         text-align: center;
         font-weight: 600;
         position: sticky;
         top: 0;
     }
     
-    .league-table td {
-        padding: 6px 4px;
+    .mls-table td {
+        padding: 6px 3px;
         text-align: center;
         border-bottom: 1px solid #e5e7eb;
     }
@@ -150,11 +142,9 @@
         color: #667eea;
     }
     
-    .improved { color: #10b981; font-weight: 600; }
-    .declined { color: #ef4444; font-weight: 600; }
-    .trend-up { color: #10b981; }
-    .trend-down { color: #ef4444; }
-    .trend-stable { color: #f59e0b; }
+    .playoff-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    .qualifier-zone { background: linear-gradient(90deg, #f59e0b10, transparent); }
+    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
     
     .analysis-card {
         background: white;
@@ -177,9 +167,9 @@
         margin-bottom: 1rem;
     }
     
-    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
-    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
-    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    .trend-up { color: #10b981; }
+    .trend-down { color: #ef4444; }
+    .trend-stable { color: #f59e0b; }
     
     @media (max-width: 992px) {
         .comparison-grid {
@@ -224,7 +214,8 @@
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="index.html" class="nav-link" data-league="all">Predictions</a></li>
             <li class="nav-item"><a href="argentina.html" class="nav-link">Argentina</a></li>
-            <li class="nav-item"><a href="chile.html" class="nav-link active">Chile</a></li>
+            <li class="nav-item"><a href="chile.html" class="nav-link">Chile</a></li>
+            <li class="nav-item"><a href="usa.html" class="nav-link active">USA</a></li>
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
@@ -237,39 +228,45 @@
 <div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
     
     <div class="country-hero">
-        <img src="images/logos/leagues/chile.png" alt="Chilean Football" style="height: 60px; margin-bottom: 1rem;" onerror="this.style.display='none'">
-        <h1><i class="fas fa-futbol"></i> Chilean Football</h1>
-        <p>Complete coverage of Primera División, Primera B, and more</p>
+        <img src="images/logos/leagues/mlslogo.jpg" alt="MLS USA" style="height: 60px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+        <h1><i class="fas fa-futbol"></i> Major League Soccer (MLS)</h1>
+        <p>Eastern Conference vs Western Conference | 2025 vs 2026 Season Comparison</p>
     </div>
     
-    <!-- League Tabs -->
-    <div class="league-tabs">
-        <button class="league-tab active" data-tab="primera">🇨🇱 Primera División</button>
-        <button class="league-tab" data-tab="primera-b">📊 Primera B</button>
-        <button class="league-tab" data-tab="stats">📈 Stats & Analysis</button>
+    <!-- Conference Tabs -->
+    <div class="conference-tabs">
+        <button class="conference-tab active" data-tab="east">🌅 Eastern Conference</button>
+        <button class="conference-tab" data-tab="west">🌄 Western Conference</button>
+        <button class="conference-tab" data-tab="analysis">📊 League Analysis</button>
     </div>
     
-    <!-- Primera División Tab -->
-    <div id="tab-primera" class="tab-content active">
-        <div id="comparisonContent">
+    <!-- Eastern Conference Tab -->
+    <div id="tab-east" class="tab-content active">
+        <div id="eastContent">
             <div class="loading text-center py-5">
                 <i class="fas fa-spinner fa-spin fa-3x"></i>
-                <p class="mt-3">Loading Primera División data...</p>
+                <p class="mt-3">Loading Eastern Conference data...</p>
             </div>
         </div>
     </div>
     
-    <!-- Primera B Tab -->
-    <div id="tab-primera-b" class="tab-content">
-        <div class="info-box">
-            <i class="fas fa-info-circle"></i> Primera B data will be available soon. Stay tuned for complete coverage of Chile's second division!
+    <!-- Western Conference Tab -->
+    <div id="tab-west" class="tab-content">
+        <div id="westContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Western Conference data...</p>
+            </div>
         </div>
     </div>
     
-    <!-- Stats & Analysis Tab -->
-    <div id="tab-stats" class="tab-content">
-        <div class="info-box">
-            <i class="fas fa-chart-line"></i> Advanced statistics, player tracking, and historical data coming soon!
+    <!-- League Analysis Tab -->
+    <div id="tab-analysis" class="tab-content">
+        <div id="analysisContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading analysis...</p>
+            </div>
         </div>
     </div>
     
@@ -309,49 +306,89 @@
 </footer>
 
 <script>
-// ==================== CHILEAN LEAGUE DATA ====================
+// ==================== MLS DATA ====================
 
-// 2025 Season (Complete)
-const season2025 = {
+// Eastern Conference 2025 (Last Season)
+const east2025 = {
     teams: [
-        { rank: 1, team: "Coquimbo", MP: 30, MW: 23, MD: 6, ML: 1, GF: 49, GA: 17 },
-        { rank: 2, team: "Universidad Católica", MP: 30, MW: 17, MD: 7, ML: 6, GF: 44, GA: 26 },
-        { rank: 3, team: "O'Higgins", MP: 30, MW: 16, MD: 8, ML: 6, GF: 43, GA: 34 },
-        { rank: 4, team: "Universidad de Chile", MP: 30, MW: 17, MD: 4, ML: 9, GF: 58, GA: 32 },
-        { rank: 5, team: "Audax Italiano", MP: 30, MW: 16, MD: 4, ML: 10, GF: 51, GA: 43 },
-        { rank: 6, team: "Palestino", MP: 30, MW: 14, MD: 7, ML: 9, GF: 42, GA: 31 },
-        { rank: 7, team: "Cobresal", MP: 30, MW: 14, MD: 5, ML: 11, GF: 38, GA: 38 },
-        { rank: 8, team: "Colo-Colo", MP: 30, MW: 12, MD: 8, ML: 10, GF: 46, GA: 36 },
-        { rank: 9, team: "Huachipato", MP: 30, MW: 12, MD: 7, ML: 11, GF: 43, GA: 42 },
-        { rank: 10, team: "Ñublense", MP: 30, MW: 8, MD: 9, ML: 13, GF: 31, GA: 40 },
-        { rank: 11, team: "Deportes Limache", MP: 30, MW: 8, MD: 7, ML: 15, GF: 36, GA: 43 },
-        { rank: 12, team: "Unión La Calera", MP: 30, MW: 8, MD: 5, ML: 17, GF: 28, GA: 39 },
-        { rank: 13, team: "La Serena", MP: 30, MW: 7, MD: 6, ML: 17, GF: 32, GA: 52 },
-        { rank: 14, team: "Everton", MP: 30, MW: 6, MD: 8, ML: 16, GF: 27, GA: 44 },
-        { rank: 15, team: "Deportes Iquique", MP: 30, MW: 6, MD: 6, ML: 18, GF: 34, GA: 60 },
-        { rank: 16, team: "Unión Española", MP: 30, MW: 6, MD: 3, ML: 21, GF: 33, GA: 58 }
+        { rank: 1, team: "Philadelphia", MP: 34, MW: 20, MD: 6, ML: 8, GF: 57, GA: 35 },
+        { rank: 2, team: "Cincinnati", MP: 34, MW: 20, MD: 5, ML: 9, GF: 52, GA: 40 },
+        { rank: 3, team: "Inter Miami", MP: 34, MW: 19, MD: 8, ML: 7, GF: 81, GA: 55 },
+        { rank: 4, team: "Charlotte", MP: 34, MW: 19, MD: 2, ML: 13, GF: 55, GA: 46 },
+        { rank: 5, team: "New York City", MP: 34, MW: 17, MD: 5, ML: 12, GF: 50, GA: 44 },
+        { rank: 6, team: "Nashville", MP: 34, MW: 16, MD: 6, ML: 12, GF: 58, GA: 45 },
+        { rank: 7, team: "Columbus", MP: 34, MW: 14, MD: 12, ML: 8, GF: 55, GA: 51 },
+        { rank: 8, team: "Chicago", MP: 34, MW: 15, MD: 8, ML: 11, GF: 68, GA: 60 },
+        { rank: 9, team: "Orlando City", MP: 34, MW: 14, MD: 11, ML: 9, GF: 63, GA: 51 },
+        { rank: 10, team: "NY Red Bulls", MP: 34, MW: 12, MD: 7, ML: 15, GF: 48, GA: 47 },
+        { rank: 11, team: "New England", MP: 34, MW: 9, MD: 9, ML: 16, GF: 44, GA: 51 },
+        { rank: 12, team: "Toronto", MP: 34, MW: 6, MD: 14, ML: 14, GF: 37, GA: 44 },
+        { rank: 13, team: "Montréal", MP: 34, MW: 6, MD: 10, ML: 18, GF: 34, GA: 60 },
+        { rank: 14, team: "Atlanta United", MP: 34, MW: 5, MD: 13, ML: 16, GF: 38, GA: 63 },
+        { rank: 15, team: "D.C. United", MP: 34, MW: 5, MD: 11, ML: 18, GF: 30, GA: 66 }
     ]
 };
 
-// 2026 Season (Current)
-const season2026 = {
+// Eastern Conference 2026 (Current Season)
+const east2026 = {
     teams: [
-        { rank: 1, team: "Colo-Colo", MP: 14, MW: 11, MD: 0, ML: 3, GF: 26, GA: 12 },
-        { rank: 2, team: "Coquimbo", MP: 15, MW: 7, MD: 3, ML: 5, GF: 22, GA: 18 },
-        { rank: 3, team: "Universidad Católica", MP: 14, MW: 7, MD: 2, ML: 5, GF: 30, GA: 19 },
-        { rank: 4, team: "Everton", MP: 14, MW: 6, MD: 4, ML: 4, GF: 18, GA: 13 },
-        { rank: 5, team: "Huachipato", MP: 14, MW: 7, MD: 1, ML: 6, GF: 21, GA: 20 },
-        { rank: 6, team: "Deportes Limache", MP: 14, MW: 6, MD: 3, ML: 5, GF: 28, GA: 20 },
-        { rank: 7, team: "Palestino", MP: 14, MW: 6, MD: 3, ML: 5, GF: 21, GA: 20 },
-        { rank: 8, team: "Ñublense", MP: 14, MW: 5, MD: 6, ML: 3, GF: 16, GA: 17 },
-        { rank: 9, team: "Universidad de Chile", MP: 13, MW: 5, MD: 5, ML: 3, GF: 13, GA: 8 },
-        { rank: 10, team: "O'Higgins", MP: 14, MW: 6, MD: 2, ML: 6, GF: 19, GA: 20 },
-        { rank: 11, team: "Universidad de Concepción", MP: 14, MW: 5, MD: 4, ML: 5, GF: 12, GA: 21 },
-        { rank: 12, team: "La Serena", MP: 15, MW: 4, MD: 6, ML: 5, GF: 21, GA: 25 },
-        { rank: 13, team: "Audax Italiano", MP: 15, MW: 4, MD: 4, ML: 7, GF: 18, GA: 21 },
-        { rank: 14, team: "Cobresal", MP: 14, MW: 4, MD: 1, ML: 9, GF: 19, GA: 26 },
-        { rank: 15, team: "Concepción", MP: 14, MW: 3, MD: 2, ML: 9, GF: 11, GA: 21 },
-        { rank: 16, team: "Unión La Calera", MP: 14, MW: 3, MD: 2, ML: 9, GF: 12, GA: 26 }
+        { rank: 1, team: "Nashville", MP: 14, MW: 10, MD: 3, ML: 1, GF: 31, GA: 11 },
+        { rank: 2, team: "Inter Miami", MP: 15, MW: 9, MD: 4, ML: 2, GF: 39, GA: 28 },
+        { rank: 3, team: "Chicago", MP: 14, MW: 8, MD: 2, ML: 4, GF: 27, GA: 16 },
+        { rank: 4, team: "New England", MP: 14, MW: 8, MD: 1, ML: 5, GF: 22, GA: 18 },
+        { rank: 5, team: "NY Red Bulls", MP: 15, MW: 6, MD: 4, ML: 5, GF: 25, GA: 32 },
+        { rank: 6, team: "Charlotte", MP: 15, MW: 6, MD: 3, ML: 6, GF: 24, GA: 23 },
+        { rank: 7, team: "Cincinnati", MP: 15, MW: 5, MD: 5, ML: 5, GF: 36, GA: 37 },
+        { rank: 8, team: "New York City", MP: 15, MW: 5, MD: 4, ML: 6, GF: 25, GA: 21 },
+        { rank: 9, team: "D.C. United", MP: 15, MW: 4, MD: 6, ML: 5, GF: 21, GA: 25 },
+        { rank: 10, team: "Columbus", MP: 15, MW: 4, MD: 4, ML: 7, GF: 21, GA: 23 },
+        { rank: 11, team: "Montréal", MP: 14, MW: 4, MD: 2, ML: 8, GF: 22, GA: 31 },
+        { rank: 12, team: "Orlando City", MP: 15, MW: 4, MD: 2, ML: 9, GF: 23, GA: 44 },
+        { rank: 13, team: "Toronto", MP: 14, MW: 3, MD: 5, ML: 6, GF: 22, GA: 29 },
+        { rank: 14, team: "Atlanta United", MP: 14, MW: 3, MD: 2, ML: 9, GF: 14, GA: 23 },
+        { rank: 15, team: "Philadelphia", MP: 15, MW: 1, MD: 4, ML: 10, GF: 18, GA: 30 }
+    ]
+};
+
+// Western Conference 2025 (Last Season)
+const west2025 = {
+    teams: [
+        { rank: 1, team: "San Diego", MP: 34, MW: 19, MD: 6, ML: 9, GF: 64, GA: 41 },
+        { rank: 2, team: "Vancouver", MP: 34, MW: 18, MD: 9, ML: 7, GF: 66, GA: 38 },
+        { rank: 3, team: "LAFC", MP: 34, MW: 17, MD: 9, ML: 8, GF: 65, GA: 40 },
+        { rank: 4, team: "Minnesota", MP: 34, MW: 16, MD: 10, ML: 8, GF: 56, GA: 39 },
+        { rank: 5, team: "Seattle Sounders", MP: 34, MW: 15, MD: 10, ML: 9, GF: 58, GA: 48 },
+        { rank: 6, team: "Austin", MP: 34, MW: 13, MD: 8, ML: 13, GF: 37, GA: 45 },
+        { rank: 7, team: "Dallas", MP: 34, MW: 11, MD: 11, ML: 12, GF: 52, GA: 55 },
+        { rank: 8, team: "Portland", MP: 34, MW: 11, MD: 11, ML: 12, GF: 41, GA: 48 },
+        { rank: 9, team: "Salt Lake", MP: 34, MW: 12, MD: 5, ML: 17, GF: 38, GA: 49 },
+        { rank: 10, team: "San Jose", MP: 34, MW: 11, MD: 8, ML: 15, GF: 60, GA: 63 },
+        { rank: 11, team: "Colorado", MP: 34, MW: 11, MD: 8, ML: 15, GF: 44, GA: 56 },
+        { rank: 12, team: "Houston Dynamo", MP: 34, MW: 9, MD: 10, ML: 15, GF: 43, GA: 56 },
+        { rank: 13, team: "St. Louis", MP: 34, MW: 8, MD: 8, ML: 18, GF: 44, GA: 58 },
+        { rank: 14, team: "LA Galaxy", MP: 34, MW: 7, MD: 9, ML: 18, GF: 46, GA: 66 },
+        { rank: 15, team: "Sporting KC", MP: 34, MW: 7, MD: 7, ML: 20, GF: 46, GA: 70 }
+    ]
+};
+
+// Western Conference 2026 (Current Season)
+const west2026 = {
+    teams: [
+        { rank: 1, team: "Vancouver", MP: 14, MW: 10, MD: 2, ML: 2, GF: 34, GA: 12 },
+        { rank: 2, team: "San Jose", MP: 15, MW: 10, MD: 2, ML: 3, GF: 34, GA: 15 },
+        { rank: 3, team: "Salt Lake", MP: 14, MW: 8, MD: 2, ML: 4, GF: 26, GA: 19 },
+        { rank: 4, team: "Dallas", MP: 15, MW: 7, MD: 4, ML: 4, GF: 30, GA: 22 },
+        { rank: 5, team: "LAFC", MP: 15, MW: 7, MD: 3, ML: 5, GF: 24, GA: 17 },
+        { rank: 6, team: "Seattle Sounders", MP: 13, MW: 7, MD: 3, ML: 3, GF: 17, GA: 11 },
+        { rank: 7, team: "Houston Dynamo", MP: 14, MW: 7, MD: 1, ML: 6, GF: 19, GA: 23 },
+        { rank: 8, team: "Minnesota", MP: 15, MW: 6, MD: 4, ML: 5, GF: 18, GA: 22 },
+        { rank: 9, team: "LA Galaxy", MP: 15, MW: 5, MD: 5, ML: 5, GF: 22, GA: 22 },
+        { rank: 10, team: "San Diego", MP: 15, MW: 4, MD: 5, ML: 6, GF: 30, GA: 27 },
+        { rank: 11, team: "Colorado", MP: 15, MW: 5, MD: 1, ML: 9, GF: 25, GA: 24 },
+        { rank: 12, team: "St. Louis", MP: 14, MW: 4, MD: 4, ML: 6, GF: 16, GA: 20 },
+        { rank: 13, team: "Portland", MP: 14, MW: 4, MD: 2, ML: 8, GF: 22, GA: 28 },
+        { rank: 14, team: "Austin", MP: 15, MW: 3, MD: 5, ML: 7, GF: 19, GA: 31 },
+        { rank: 15, team: "Sporting KC", MP: 14, MW: 3, MD: 2, ML: 9, GF: 14, GA: 36 }
     ]
 };
 
@@ -367,7 +404,7 @@ function calculatePoints(team) {
     return (team.MW * 3) + (team.MD || 0);
 }
 
-function renderTable(season, title, year) {
+function renderTable(season, title, year, isEast) {
     const sortedTeams = [...season.teams].sort((a, b) => a.rank - b.rank);
     
     let html = `
@@ -376,7 +413,7 @@ function renderTable(season, title, year) {
                 ${title} - ${year} Season
             </div>
             <div class="table-responsive">
-                <table class="league-table">
+                <table class="mls-table">
                     <thead>
                         <tr>
                             <th>Rank</th>
@@ -403,8 +440,8 @@ function renderTable(season, title, year) {
         
         let rowClass = '';
         if (team.rank === 1) rowClass = 'champion-row';
-        else if (team.rank <= 4) rowClass = 'promotion-zone';
-        else if (team.rank >= 15) rowClass = 'relegation-zone';
+        else if (team.rank <= 9) rowClass = 'playoff-zone';
+        else if (team.rank === 9 || team.rank === 10) rowClass = 'qualifier-zone';
         
         html += `
             <tr class="${rowClass}">
@@ -432,7 +469,7 @@ function renderTable(season, title, year) {
     return html;
 }
 
-function renderTeamComparison() {
+function renderTeamComparison(season2025, season2026, conferenceName) {
     const teamMap = new Map();
     
     for (const team of season2025.teams) {
@@ -449,9 +486,9 @@ function renderTeamComparison() {
     
     let html = `
         <div class="analysis-card">
-            <h3><i class="fas fa-chart-line"></i> Team Performance Comparison</h3>
+            <h3><i class="fas fa-chart-line"></i> ${conferenceName} - Team Performance Comparison</h3>
             <div class="table-responsive">
-                <table class="league-table">
+                <table class="mls-table">
                     <thead>
                         <tr>
                             <th>Team</th>
@@ -474,32 +511,36 @@ function renderTeamComparison() {
         const prevPoints = calculatePoints(prev);
         const currPoints = calculatePoints(curr);
         const pointDiff = currPoints - prevPoints;
-        const percentChange = prevPoints !== 0 ? ((pointDiff / prevPoints) * 100).toFixed(1) : 0;
+        const avgPPGChange = ((currPoints/curr.MP) - (prevPoints/prev.MP)).toFixed(2);
         
         let trendClass = 'trend-stable';
         let trendIcon = '➡️';
         let insight = 'Similar form';
         
-        if (pointDiff > 5) {
+        if (pointDiff > 10) {
             trendClass = 'trend-up';
             trendIcon = '📈';
-            insight = `Improved by ${pointDiff} pts (${percentChange}%)`;
-        } else if (pointDiff < -5) {
+            insight = `Strong improvement (+${pointDiff} pts)`;
+        } else if (pointDiff > 0) {
+            trendClass = 'trend-up';
+            trendIcon = '📈';
+            insight = `Improved by ${pointDiff} points`;
+        } else if (pointDiff < -10) {
             trendClass = 'trend-down';
             trendIcon = '📉';
-            insight = `Declined by ${Math.abs(pointDiff)} pts (${Math.abs(percentChange)}%)`;
-        } else if (pointDiff > 0) {
-            insight = `Slightly better (+${pointDiff})`;
+            insight = `Major decline (${pointDiff} pts)`;
         } else if (pointDiff < 0) {
-            insight = `Slightly worse (${pointDiff})`;
+            trendClass = 'trend-down';
+            trendIcon = '📉';
+            insight = `Declined by ${Math.abs(pointDiff)} points`;
         }
         
         html += `
             <tr>
                 <td class="team-cell"><strong>${escapeHtml(teamName)}</strong></td>
-                <td>${prevPoints}</td>
-                <td><strong>${currPoints}</strong></td>
-                <td class="${trendClass}">${pointDiff > 0 ? '+' : ''}${pointDiff} (${Math.abs(percentChange)}%)</td>
+                <td>${prevPoints} (${prev.MP}gp)</td>
+                <td><strong>${currPoints} (${curr.MP}gp)</strong></td>
+                <td class="${trendClass}">${pointDiff > 0 ? '+' : ''}${pointDiff} (${avgPPGChange} PPG)</td>
                 <td>${trendIcon}</td>
                 <td><span style="background: ${trendClass === 'trend-up' ? '#10b98120' : (trendClass === 'trend-down' ? '#ef444420' : '#f59e0b20')}; padding: 2px 8px; border-radius: 15px;">${insight}</span></td>
             </tr>
@@ -516,50 +557,62 @@ function renderTeamComparison() {
     return html;
 }
 
-function renderLeagueStats() {
-    const prevTotalGoals = season2025.teams.reduce((sum, t) => sum + t.GF, 0);
-    const currTotalGoals = season2026.teams.reduce((sum, t) => sum + t.GF, 0);
-    const prevAvgGoals = (prevTotalGoals / (season2025.teams[0].MP * season2025.teams.length / 2)).toFixed(2);
-    const currAvgGoals = (currTotalGoals / (season2026.teams[0].MP * season2026.teams.length / 2)).toFixed(2);
+function renderLeagueStats(east2025, east2026, west2025, west2026) {
+    const eastTotal2025 = east2025.teams.reduce((sum, t) => sum + t.GF, 0);
+    const eastTotal2026 = east2026.teams.reduce((sum, t) => sum + t.GF, 0);
+    const westTotal2025 = west2025.teams.reduce((sum, t) => sum + t.GF, 0);
+    const westTotal2026 = west2026.teams.reduce((sum, t) => sum + t.GF, 0);
     
-    const prevChampion = season2025.teams.find(t => t.rank === 1);
-    const currLeader = season2026.teams.find(t => t.rank === 1);
-    const currSecond = season2026.teams.find(t => t.rank === 2);
-    const gap = calculatePoints(currLeader) - calculatePoints(currSecond);
+    const eastAvg2025 = (eastTotal2025 / 34 / 15 * 2).toFixed(2);
+    const eastAvg2026 = (eastTotal2026 / 14 / 15 * 2).toFixed(2);
+    const westAvg2025 = (westTotal2025 / 34 / 15 * 2).toFixed(2);
+    const westAvg2026 = (westTotal2026 / 14 / 15 * 2).toFixed(2);
+    
+    const eastLeader = east2026.teams.find(t => t.rank === 1);
+    const westLeader = west2026.teams.find(t => t.rank === 1);
     
     let html = `
         <div class="analysis-card">
-            <h3><i class="fas fa-chart-simple"></i> League Statistics</h3>
+            <h3><i class="fas fa-chart-simple"></i> MLS League Statistics</h3>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="text-center">
-                        <div class="big-number">${prevAvgGoals}</div>
-                        <small>2025 Avg Goals/Match</small>
+                        <div class="big-number">${eastAvg2025}</div>
+                        <small>East 2025 Goals/Match</small>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="text-center">
-                        <div class="big-number">${currAvgGoals}</div>
-                        <small>2026 Avg Goals/Match</small>
+                        <div class="big-number">${eastAvg2026}</div>
+                        <small>East 2026 Goals/Match</small>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="text-center">
-                        <div class="big-number">${((currAvgGoals - prevAvgGoals) / prevAvgGoals * 100).toFixed(1)}%</div>
-                        <small>Change in Scoring</small>
+                        <div class="big-number">${westAvg2025}</div>
+                        <small>West 2025 Goals/Match</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="big-number">${westAvg2026}</div>
+                        <small>West 2026 Goals/Match</small>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-md-6">
-                    <h5><i class="fas fa-trophy"></i> 2025 Champion</h5>
-                    <p><strong>${escapeHtml(prevChampion?.team)}</strong> - ${calculatePoints(prevChampion)} points (${prevChampion?.MW} wins)</p>
+                    <h5><i class="fas fa-trophy"></i> Eastern Conference Leader</h5>
+                    <p><strong>${escapeHtml(eastLeader?.team)}</strong> - ${calculatePoints(eastLeader)} points (${eastLeader?.MW} wins)</p>
                 </div>
                 <div class="col-md-6">
-                    <h5><i class="fas fa-flag-checkered"></i> 2026 Current Leader</h5>
-                    <p><strong>${escapeHtml(currLeader?.team)}</strong> - ${calculatePoints(currLeader)} points, ${gap} point${gap !== 1 ? 's' : ''} ahead</p>
+                    <h5><i class="fas fa-trophy"></i> Western Conference Leader</h5>
+                    <p><strong>${escapeHtml(westLeader?.team)}</strong> - ${calculatePoints(westLeader)} points (${westLeader?.MW} wins)</p>
                 </div>
+            </div>
+            <div class="info-box mt-3">
+                <i class="fas fa-info-circle"></i> <strong>Playoff Format:</strong> Top 7 teams from each conference qualify for playoffs. Top 8-9 teams enter play-in qualifiers.
             </div>
         </div>
     `;
@@ -567,35 +620,80 @@ function renderLeagueStats() {
     return html;
 }
 
-function renderBiggestMovers() {
-    const movers = [];
+function renderEastConference() {
+    const container = document.getElementById('eastContent');
     
-    for (const currTeam of season2026.teams) {
-        const prevTeam = season2025.teams.find(t => t.team === currTeam.team);
-        if (prevTeam) {
-            const rankChange = prevTeam.rank - currTeam.rank;
-            movers.push({
-                team: currTeam.team,
-                prevRank: prevTeam.rank,
-                currRank: currTeam.rank,
-                change: rankChange
+    let html = `
+        <div class="comparison-grid">
+            ${renderTable(east2025, 'Eastern Conference', 2025, true)}
+            ${renderTable(east2026, 'Eastern Conference', 2026, true)}
+        </div>
+        ${renderTeamComparison(east2025, east2026, 'Eastern Conference')}
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderWestConference() {
+    const container = document.getElementById('westContent');
+    
+    let html = `
+        <div class="comparison-grid">
+            ${renderTable(west2025, 'Western Conference', 2025, false)}
+            ${renderTable(west2026, 'Western Conference', 2026, false)}
+        </div>
+        ${renderTeamComparison(west2025, west2026, 'Western Conference')}
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderAnalysis() {
+    const container = document.getElementById('analysisContent');
+    
+    let html = renderLeagueStats(east2025, east2026, west2025, west2026);
+    
+    // Biggest Movers
+    const allTeams = [];
+    for (const team of east2025.teams) {
+        const currEast = east2026.teams.find(t => t.team === team.team);
+        if (currEast) {
+            allTeams.push({
+                team: team.team,
+                prevRank: team.rank,
+                currRank: currEast.rank,
+                change: team.rank - currEast.rank,
+                conference: 'East'
+            });
+        }
+    }
+    for (const team of west2025.teams) {
+        const currWest = west2026.teams.find(t => t.team === team.team);
+        if (currWest) {
+            allTeams.push({
+                team: team.team,
+                prevRank: team.rank,
+                currRank: currWest.rank,
+                change: team.rank - currWest.rank,
+                conference: 'West'
             });
         }
     }
     
-    movers.sort((a, b) => Math.abs(b.change) - Math.abs(a.change));
-    const biggestRiser = movers.find(m => m.change > 0);
-    const biggestFall = movers.find(m => m.change < 0);
+    allTeams.sort((a, b) => Math.abs(b.change) - Math.abs(a.change));
+    const biggestRiser = allTeams.find(m => m.change > 0);
+    const biggestFall = allTeams.find(m => m.change < 0);
     
-    let html = `
+    html += `
         <div class="analysis-card">
-            <h3><i class="fas fa-rocket"></i> Biggest Movers</h3>
+            <h3><i class="fas fa-rocket"></i> Biggest Movers Across MLS</h3>
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-center p-3" style="background: #10b98110; border-radius: 15px;">
                         <i class="fas fa-arrow-up fa-2x" style="color: #10b981;"></i>
                         <h4 class="mt-2">Biggest Riser</h4>
                         <h3>${escapeHtml(biggestRiser?.team || 'N/A')}</h3>
+                        <p>${biggestRiser?.conference} Conference</p>
                         <p>Ranked #${biggestRiser?.prevRank} in 2025 → #${biggestRiser?.currRank} in 2026</p>
                         <p class="text-success">▲ ${biggestRiser?.change} positions up</p>
                     </div>
@@ -605,28 +703,24 @@ function renderBiggestMovers() {
                         <i class="fas fa-arrow-down fa-2x" style="color: #ef4444;"></i>
                         <h4 class="mt-2">Biggest Fall</h4>
                         <h3>${escapeHtml(biggestFall?.team || 'N/A')}</h3>
+                        <p>${biggestFall?.conference} Conference</p>
                         <p>Ranked #${biggestFall?.prevRank} in 2025 → #${biggestFall?.currRank} in 2026</p>
                         <p class="text-danger">▼ ${Math.abs(biggestFall?.change)} positions down</p>
                     </div>
                 </div>
             </div>
         </div>
-    `;
-    
-    return html;
-}
-
-function renderComparison() {
-    const container = document.getElementById('comparisonContent');
-    
-    let html = `
-        <div class="comparison-grid">
-            ${renderTable(season2025, '2025 Complete Season', 2025)}
-            ${renderTable(season2026, '2026 Current Season', 2026)}
+        
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> Key Insights</h3>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-chart-line text-success"></i> <strong>Nashville</strong> has made an incredible jump from 6th place (54 pts) to leading the Eastern Conference (33 pts in 14 games)</li>
+                <li><i class="fas fa-chart-line text-danger"></i> <strong>Philadelphia</strong> has dramatically fallen from 1st place (66 pts) to last place (7 pts in 15 games)</li>
+                <li><i class="fas fa-futbol"></i> <strong>Inter Miami</strong> remains consistent in playoff contention both seasons</li>
+                <li><i class="fas fa-chart-simple"></i> Western Conference showing higher scoring games compared to Eastern Conference</li>
+                <li><i class="fas fa-map-marker-alt"></i> Vancouver and San Jose leading the Western Conference charge in 2026</li>
+            </ul>
         </div>
-        ${renderLeagueStats()}
-        ${renderTeamComparison()}
-        ${renderBiggestMovers()}
     `;
     
     container.innerHTML = html;
@@ -634,7 +728,7 @@ function renderComparison() {
 
 // Tab switching
 function initTabs() {
-    const tabs = document.querySelectorAll('.league-tab');
+    const tabs = document.querySelectorAll('.conference-tab');
     const contents = document.querySelectorAll('.tab-content');
     
     tabs.forEach(tab => {
@@ -652,7 +746,9 @@ function initTabs() {
 
 // Initialize page
 document.addEventListener('DOMContentLoaded', function() {
-    renderComparison();
+    renderEastConference();
+    renderWestConference();
+    renderAnalysis();
     initTabs();
     
     // Hamburger menu toggle

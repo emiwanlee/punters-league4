@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chilean Football - Primera División & More | Punters League</title>
+<title>Chilean Primera División - Season Comparison | Punters League</title>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <style>
-    .country-hero {
+    .comparison-hero {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
         padding: 2rem;
@@ -33,61 +33,23 @@
         text-align: center;
     }
     
-    .country-hero h1 {
-        font-size: 2rem;
-        font-weight: 800;
-    }
-    
-    .league-tabs {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 0.5rem;
-    }
-    
-    .league-tab {
-        padding: 0.75rem 1.5rem;
-        background: transparent;
-        border: none;
+    .season-badge {
+        display: inline-block;
+        padding: 0.3rem 1rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
         font-weight: 600;
-        color: #6c757d;
-        cursor: pointer;
-        transition: 0.3s;
-        border-radius: 10px;
+        margin: 0 0.5rem;
     }
     
-    .league-tab:hover {
-        background: #f8f9fa;
-        color: #667eea;
-    }
-    
-    .league-tab.active {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    .season-2025 {
+        background: #10b981;
         color: white;
     }
     
-    .tab-content {
-        display: none;
-    }
-    
-    .tab-content.active {
-        display: block;
-        animation: fadeIn 0.5s ease;
-    }
-    
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .comparison-card {
-        background: white;
-        border-radius: 20px;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    .season-2026 {
+        background: #f59e0b;
+        color: white;
     }
     
     .comparison-grid {
@@ -106,7 +68,7 @@
     }
     
     .season-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 700;
         padding: 0.8rem;
         margin-bottom: 1rem;
@@ -114,23 +76,23 @@
         text-align: center;
     }
     
-    .league-table {
+    .comparison-table {
         width: 100%;
         font-size: 0.75rem;
         border-collapse: collapse;
     }
     
-    .league-table th {
+    .comparison-table th {
         background: #f8f9fa;
-        padding: 8px 4px;
+        padding: 10px 5px;
         text-align: center;
         font-weight: 600;
         position: sticky;
         top: 0;
     }
     
-    .league-table td {
-        padding: 6px 4px;
+    .comparison-table td {
+        padding: 8px 5px;
         text-align: center;
         border-bottom: 1px solid #e5e7eb;
     }
@@ -150,8 +112,16 @@
         color: #667eea;
     }
     
-    .improved { color: #10b981; font-weight: 600; }
-    .declined { color: #ef4444; font-weight: 600; }
+    .improved {
+        color: #10b981;
+        font-weight: 600;
+    }
+    
+    .declined {
+        color: #ef4444;
+        font-weight: 600;
+    }
+    
     .trend-up { color: #10b981; }
     .trend-down { color: #ef4444; }
     .trend-stable { color: #f59e0b; }
@@ -170,16 +140,27 @@
         color: #667eea;
     }
     
-    .info-box {
-        background: linear-gradient(135deg, #667eea10, #764ba210);
-        border-radius: 15px;
-        padding: 1rem;
-        margin-bottom: 1rem;
+    .insight-list {
+        list-style: none;
+        padding: 0;
     }
     
-    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
-    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
-    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    .insight-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .form-icon-sm {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 0.65rem;
+        font-weight: bold;
+        margin: 0 2px;
+    }
     
     @media (max-width: 992px) {
         .comparison-grid {
@@ -223,8 +204,7 @@
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="index.html" class="nav-link" data-league="all">Predictions</a></li>
-            <li class="nav-item"><a href="argentina.html" class="nav-link">Argentina</a></li>
-            <li class="nav-item"><a href="chile.html" class="nav-link active">Chile</a></li>
+            <li class="nav-item"><a href="chile-comparison.html" class="nav-link active">Chile 2025 vs 2026</a></li>
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
@@ -236,40 +216,19 @@
 
 <div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
     
-    <div class="country-hero">
-        <img src="images/logos/leagues/chile.png" alt="Chilean Football" style="height: 60px; margin-bottom: 1rem;" onerror="this.style.display='none'">
-        <h1><i class="fas fa-futbol"></i> Chilean Football</h1>
-        <p>Complete coverage of Primera División, Primera B, and more</p>
-    </div>
-    
-    <!-- League Tabs -->
-    <div class="league-tabs">
-        <button class="league-tab active" data-tab="primera">🇨🇱 Primera División</button>
-        <button class="league-tab" data-tab="primera-b">📊 Primera B</button>
-        <button class="league-tab" data-tab="stats">📈 Stats & Analysis</button>
-    </div>
-    
-    <!-- Primera División Tab -->
-    <div id="tab-primera" class="tab-content active">
-        <div id="comparisonContent">
-            <div class="loading text-center py-5">
-                <i class="fas fa-spinner fa-spin fa-3x"></i>
-                <p class="mt-3">Loading Primera División data...</p>
-            </div>
+    <div class="comparison-hero">
+        <h1><i class="fas fa-futbol"></i> Chilean Primera División</h1>
+        <p>Season Comparison: 2025 (Complete) vs 2026 (In Progress)</p>
+        <div>
+            <span class="season-badge season-2025">2025 Champions: Coquimbo</span>
+            <span class="season-badge season-2026">2026 Current Leaders: Colo-Colo</span>
         </div>
     </div>
     
-    <!-- Primera B Tab -->
-    <div id="tab-primera-b" class="tab-content">
-        <div class="info-box">
-            <i class="fas fa-info-circle"></i> Primera B data will be available soon. Stay tuned for complete coverage of Chile's second division!
-        </div>
-    </div>
-    
-    <!-- Stats & Analysis Tab -->
-    <div id="tab-stats" class="tab-content">
-        <div class="info-box">
-            <i class="fas fa-chart-line"></i> Advanced statistics, player tracking, and historical data coming soon!
+    <div id="comparisonContent">
+        <div class="loading text-center py-5">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+            <p class="mt-3">Loading comparison data...</p>
         </div>
     </div>
     
@@ -333,7 +292,7 @@ const season2025 = {
     ]
 };
 
-// 2026 Season (Current)
+// 2026 Season (Current - from your data.js)
 const season2026 = {
     teams: [
         { rank: 1, team: "Colo-Colo", MP: 14, MW: 11, MD: 0, ML: 3, GF: 26, GA: 12 },
@@ -367,7 +326,7 @@ function calculatePoints(team) {
     return (team.MW * 3) + (team.MD || 0);
 }
 
-function renderTable(season, title, year) {
+function renderComparisonTable(season, title, year) {
     const sortedTeams = [...season.teams].sort((a, b) => a.rank - b.rank);
     
     let html = `
@@ -376,7 +335,7 @@ function renderTable(season, title, year) {
                 ${title} - ${year} Season
             </div>
             <div class="table-responsive">
-                <table class="league-table">
+                <table class="comparison-table">
                     <thead>
                         <tr>
                             <th>Rank</th>
@@ -411,12 +370,12 @@ function renderTable(season, title, year) {
                 <td><strong>${team.rank}</strong></td>
                 <td class="team-cell"><a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a></td>
                 <td>${team.MP}</td>
-                <td class="text-success">${wins}</td>
-                <td class="text-warning">${draws}</td>
-                <td class="text-danger">${losses}</td>
+                <td class="wins-cell">${wins}</td>
+                <td class="draws-cell">${draws}</td>
+                <td class="losses-cell">${losses}</td>
                 <td>${team.GF}</td>
                 <td>${team.GA}</td>
-                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${gd >= 0 ? '+' : ''}${gd}</td>
+                <td class="${gd >= 0 ? 'gd-positive' : 'gd-negative'}">${gd >= 0 ? '+' : ''}${gd}</td>
                 <td class="points-cell"><strong>${points}</strong></td>
             </tr>
         `;
@@ -433,6 +392,7 @@ function renderTable(season, title, year) {
 }
 
 function renderTeamComparison() {
+    // Create a map of teams from both seasons
     const teamMap = new Map();
     
     for (const team of season2025.teams) {
@@ -451,13 +411,15 @@ function renderTeamComparison() {
         <div class="analysis-card">
             <h3><i class="fas fa-chart-line"></i> Team Performance Comparison</h3>
             <div class="table-responsive">
-                <table class="league-table">
+                <table class="comparison-table">
                     <thead>
                         <tr>
                             <th>Team</th>
                             <th>2025 Pts</th>
                             <th>2026 Pts</th>
                             <th>Change</th>
+                            <th>2025 PPG</th>
+                            <th>2026 PPG</th>
                             <th>Trend</th>
                             <th>Insight</th>
                         </tr>
@@ -473,6 +435,8 @@ function renderTeamComparison() {
         
         const prevPoints = calculatePoints(prev);
         const currPoints = calculatePoints(curr);
+        const prevPPG = (prevPoints / prev.MP).toFixed(2);
+        const currPPG = (currPoints / curr.MP).toFixed(2);
         const pointDiff = currPoints - prevPoints;
         const percentChange = prevPoints !== 0 ? ((pointDiff / prevPoints) * 100).toFixed(1) : 0;
         
@@ -499,9 +463,11 @@ function renderTeamComparison() {
                 <td class="team-cell"><strong>${escapeHtml(teamName)}</strong></td>
                 <td>${prevPoints}</td>
                 <td><strong>${currPoints}</strong></td>
-                <td class="${trendClass}">${pointDiff > 0 ? '+' : ''}${pointDiff} (${Math.abs(percentChange)}%)</td>
+                <td class="${trendClass}">${pointDiff > 0 ? '+' : ''}${pointDiff} ($ {Math.abs(percentChange)}%)</td>
+                <td>${prevPPG}</td>
+                <td>${currPPG}</td>
                 <td>${trendIcon}</td>
-                <td><span style="background: ${trendClass === 'trend-up' ? '#10b98120' : (trendClass === 'trend-down' ? '#ef444420' : '#f59e0b20')}; padding: 2px 8px; border-radius: 15px;">${insight}</span></td>
+                <td><span class="form-icon-sm" style="background: ${trendClass === 'trend-up' ? '#10b981' : (trendClass === 'trend-down' ? '#ef4444' : '#f59e0b')}; color:white;">${trendIcon}</span> ${insight}</td>
             </tr>
         `;
     }
@@ -616,13 +582,14 @@ function renderBiggestMovers() {
     return html;
 }
 
+// Main render function
 function renderComparison() {
     const container = document.getElementById('comparisonContent');
     
     let html = `
         <div class="comparison-grid">
-            ${renderTable(season2025, '2025 Complete Season', 2025)}
-            ${renderTable(season2026, '2026 Current Season', 2026)}
+            ${renderComparisonTable(season2025, '2025 Complete Season', 2025)}
+            ${renderComparisonTable(season2026, '2026 Current Season', 2026)}
         </div>
         ${renderLeagueStats()}
         ${renderTeamComparison()}
@@ -632,28 +599,9 @@ function renderComparison() {
     container.innerHTML = html;
 }
 
-// Tab switching
-function initTabs() {
-    const tabs = document.querySelectorAll('.league-tab');
-    const contents = document.querySelectorAll('.tab-content');
-    
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const targetTab = tab.dataset.tab;
-            
-            tabs.forEach(t => t.classList.remove('active'));
-            contents.forEach(c => c.classList.remove('active'));
-            
-            tab.classList.add('active');
-            document.getElementById(`tab-${targetTab}`).classList.add('active');
-        });
-    });
-}
-
 // Initialize page
 document.addEventListener('DOMContentLoaded', function() {
     renderComparison();
-    initTabs();
     
     // Hamburger menu toggle
     const hamburger = document.querySelector('.hamburger');
