@@ -696,23 +696,25 @@ const leaguesData = {
     logo: "belarus/belarus.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Maxline", MP: 30, MW: 21, MD: 5, ML: 4, GF: 53, GA: 18, logo: "belarus/maxline.png" },
-        { rank: 2, team: "Dinamo Minsk", MP: 30, MW: 19, MD: 6, ML: 5, GF: 52, GA: 27, logo: "belarus/dinamominsk.png" },
-        { rank: 3, team: "Slavia-Mozyr", MP: 30, MW: 17, MD: 6, ML: 7, GF: 53, GA: 32, logo: "belarus/slaviamozyr.png" },
-        { rank: 4, team: "Dinamo Brest", MP: 30, MW: 15, MD: 6, ML: 9, GF: 42, GA: 30, logo: "belarus/dinamobrest.png" },
-        { rank: 5, team: "Minsk", MP: 30, MW: 15, MD: 6, ML: 9, GF: 48, GA: 47, logo: "belarus/minsk.png" },
-        { rank: 6, team: "Torpedo Zhodino", MP: 30, MW: 13, MD: 10, ML: 7, GF: 43, GA: 30, logo: "belarus/torpedozhodino.png" },
-        { rank: 7, team: "Isloch", MP: 30, MW: 12, MD: 13, ML: 5, GF: 45, GA: 26, logo: "belarus/isloch.png" },
-        { rank: 8, team: "Neman", MP: 30, MW: 14, MD: 3, ML: 13, GF: 41, GA: 31, logo: "belarus/neman.png" },
-        { rank: 9, team: "Gomel", MP: 30, MW: 12, MD: 7, ML: 11, GF: 35, GA: 34, logo: "belarus/gomel.png" },
-        { rank: 10, team: "BATE", MP: 30, MW: 11, MD: 7, ML: 12, GF: 38, GA: 43, logo: "belarus/bate.png" },
-        { rank: 11, team: "Arsenal Dzyarzhynsk", MP: 30, MW: 7, MD: 12, ML: 11, GF: 27, GA: 35, logo: "belarus/arsenal.png" },
-        { rank: 12, team: "Vitebsk", MP: 30, MW: 9, MD: 4, ML: 17, GF: 37, GA: 46, logo: "belarus/vitebsk.png" },
-        { rank: 13, team: "Naftan", MP: 30, MW: 8, MD: 4, ML: 18, GF: 35, GA: 55, logo: "belarus/naftan.png" },
-        { rank: 14, team: "Smorgon", MP: 30, MW: 7, MD: 7, ML: 16, GF: 23, GA: 43, logo: "belarus/smorgon.png" },
-        { rank: 15, team: "Slutsk", MP: 30, MW: 5, MD: 6, ML: 19, GF: 20, GA: 51, logo: "belarus/slutsk.png" },
-        { rank: 16, team: "Molodechno-DYuSSh-4", MP: 30, MW: 3, MD: 2, ML: 25, GF: 19, GA: 63, logo: "belarus/molodechno.png" }
+        { rank: 1, team: "ML Vitebsk", MP: 11, MW: 7, MD: 3, ML: 1, GF: 22, GA: 8, logo: "belarus/mlvitebsk.png" },
+        { rank: 2, team: "Din. Minsk", MP: 10, MW: 7, MD: 2, ML: 1, GF: 17, GA: 9, logo: "belarus/dinamominsk.png" },
+        { rank: 3, team: "Isloch", MP: 11, MW: 5, MD: 4, ML: 2, GF: 16, GA: 10, logo: "belarus/isloch.png" },
+        { rank: 4, team: "FC Gomel", MP: 10, MW: 5, MD: 3, ML: 2, GF: 15, GA: 9, logo: "belarus/gomel.png" },
+        { rank: 5, team: "Neman", MP: 10, MW: 5, MD: 2, ML: 3, GF: 11, GA: 7, logo: "belarus/neman.png" },
+        { rank: 6, team: "FC Minsk", MP: 11, MW: 5, MD: 2, ML: 4, GF: 17, GA: 14, logo: "belarus/minsk.png" },
+        { rank: 7, team: "Zhodino", MP: 10, MW: 4, MD: 4, ML: 2, GF: 17, GA: 9, logo: "belarus/torpedozhodino.png" },
+        { rank: 8, team: "Dynamo Brest", MP: 10, MW: 4, MD: 2, ML: 4, GF: 13, GA: 8, logo: "belarus/dinamobrest.png" },
+        { rank: 9, team: "Slavia Mozyr", MP: 10, MW: 3, MD: 4, ML: 3, GF: 9, GA: 10, logo: "belarus/slaviamozyr.png" },
+        { rank: 10, team: "Vitebsk", MP: 11, MW: 3, MD: 4, ML: 4, GF: 10, GA: 13, logo: "belarus/vitebsk.png" },
+        { rank: 11, team: "Arsenal Dzerzhinsk", MP: 10, MW: 2, MD: 5, ML: 3, GF: 12, GA: 15, logo: "belarus/arsenal.png" },
+        { rank: 12, team: "Baranovici", MP: 11, MW: 3, MD: 2, ML: 6, GF: 12, GA: 23, logo: "belarus/baranovichi.png" },
+        { rank: 13, team: "Belshina", MP: 11, MW: 3, MD: 1, ML: 7, GF: 12, GA: 19, logo: "belarus/belshina.png" },
+        { rank: 14, team: "BATE", MP: 11, MW: 1, MD: 6, ML: 4, GF: 7, GA: 10, logo: "belarus/bate.png" },
+        { rank: 15, team: "Dnepr Mogilev", MP: 10, MW: 1, MD: 5, ML: 4, GF: 9, GA: 16, logo: "belarus/dnepr.png" },
+        { rank: 16, team: "Naftan", MP: 11, MW: 0, MD: 3, ML: 8, GF: 7, GA: 22, logo: "belarus/naftan.png" }
     ],
+   
+}
     fixtures: [
         // Matchday 11 - June 12
        // { home: "Isloch", away: "Naftan", date: "2026-06-12" },
