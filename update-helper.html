@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Match Converter - Punters League</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            resize: vertical;
+            background: #f8f9fa;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+        }
+        
+        .output-area {
+            background: #1a1a2e;
+            color: #10b981;
+            padding: 15px;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .success {
+            color: #10b981;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .error {
+            color: #ef4444;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .info {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .league-select {
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .status-bar {
+            background: #e5e7eb;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #4a5568;
+        }
+        
+        .format-example {
+            background: #1a1a2e;
+            color: #10b981;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Punters League - Quick Match Converter v3.0</h1>
+        
+        <div class="card">
+            <h2>📋 Step 1: Paste Match Results (Any Format)</h2>
+            <div class="info">
+                <strong>✅ Now Supports YOUR format:</strong><br>
+                • Multi-line with date and time<br>
+                • Scores on separate lines<br>
+                • Team names repeated<br>
+                • Just copy-paste directly from Google!
+            </div>
+            <textarea id="input" placeholder="Paste your match results here...
+
+Example format (works perfectly):
+10.06. 20:00
+Malaga
+Malaga
+Las Palmas
+Las Palmas
+1
+1
+09.06. 20:00
+Almeria
+Almeria
+Castellon
+Castellon
+3
+2"></textarea>
+            
+            <div style="margin-top: 15px;">
+                <select id="leagueSelect" class="league-select">
+                    <option value="">-- Select League (optional) --</option>
+                    <option value="La Liga 2">🇪🇸 La Liga 2 (Spain)</option>
+                    <option value="MLS Eastern Conference">🇺🇸 MLS Eastern Conference</option>
+                    <option value="MLS Western Conference">🇺🇸 MLS Western Conference</option>
+                    <option value="Chilean Primera División">🇨🇱 Chilean Primera División</option>
+                    <option value="Argentine Liga Profesional - Group A">🇦🇷 Argentina Group A</option>
+                    <option value="Argentine Liga Profesional - Group B">🇦🇷 Argentina Group B</option>
+                    <option value="Kyrgyzstan Premier League">🇰🇬 Kyrgyzstan Premier League</option>
+                    <option value="Australian NPL ACT">🇦🇺 Australian NPL ACT</option>
+                    <option value="Brazilian Série B">🇧🇷 Brazilian Série B</option>
+                    <option value="Belarusian Premier League">🇧🇾 Belarusian Premier League</option>
+                </select>
+                <button onclick="convertMatches()">🔄 Convert to JSON</button>
+                <button onclick="copyToClipboard()">📋 Copy Output</button>
+                <button onclick="clearAll()">🗑️ Clear All</button>
+                <button onclick="loadExample()">📝 Load Example</button>
+            </div>
+            
+            <div class="status-bar" id="statusBar">
+                Ready to convert. Paste your matches above.
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>📦 Step 2: Copy This JSON</h2>
+            <div id="output" class="output-area">
+                Waiting for input...
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>📝 How It Works</h2>
+            <div class="info">
+                <strong>⚡ Just paste and click Convert!</strong><br><br>
+                The tool automatically detects:<br>
+                • Date/Time lines (ignores them)<br>
+                • Team names (even when repeated)<br>
+                • Score lines (finds the numbers)<br>
+                • Creates clean JSON output<br><br>
+                <strong>✅ Total time: 30 seconds!</strong>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addLog(message, type = 'info') {
+            const statusBar = document.getElementById('statusBar');
+            const timestamp = new Date().toLocaleTimeString();
+            statusBar.innerHTML = `${message} (${timestamp})`;
+            console.log(`[${timestamp}] ${type.toUpperCase()}: ${message}`);
+        }
+        
+        function parseMatchBlock(lines, startIndex) {
+            // Look for team names and scores in the block
+            let homeTeam = null;
+            let awayTeam = null;
+            let homeScore = null;
+            let awayScore = null;
+            
+            // Scan through the block to find teams and scores
+            for (let i = startIndex; i < Math.min(startIndex + 15, lines.length); i++) {
+                const line = lines[i].trim();
+                if (!line) continue;
+                
+                // Skip date/time lines
+                if (line.match(/^\d{2}\.\d{2}\./) || line.match(/^\d{2}:\d{2}/)) {
+                    continue;
+                }
+                
+                // Check if line is a number (score)
+                if (line.match(/^\d+$/) && !homeScore) {
+                    homeScore = parseInt(line);
+                    addLog(`Found home score: ${homeScore}`);
+                    continue;
+                }
+                
+                if (line.match(/^\d+$/) && homeScore !== null && !awayScore) {
+                    awayScore = parseInt(line);
+                    addLog(`Found away score: ${awayScore}`);
+                    continue;
+                }
+                
+                // Team names (skip repeated names)
+                if (line.length > 1 && !line.match(/^\d+$/)) {
+                    if (!homeTeam) {
+                        homeTeam = line;
+                        addLog(`Found home team: ${homeTeam}`);
+                    } else if (homeTeam && line !== homeTeam && !awayTeam) {
+                        awayTeam = line;
+                        addLog(`Found away team: ${awayTeam}`);
+                    }
+                }
+            }
+            
+            return { homeTeam, awayTeam, homeScore, awayScore };
+        }
+        
+        function cleanTeamName(name) {
+            if (!name) return name;
+            
+            // Remove common prefixes
+            name = name.replace(/^\d+\.\d+\.\s+/, '');
+            name = name.replace(/^\d{2}:\d{2}\s+/, '');
+            name = name.trim();
+            
+            // Standardize common names
+            const corrections = {
+                'Malaga': 'Málaga',
+                'Las Palmas': 'Las Palmas',
+                'Almeria': 'Almería',
+                'Castellon': 'Castellón',
+                'NY Red Bulls': 'NY Red Bulls',
+                'New York Red Bulls': 'NY Red Bulls',
+                'Inter Miami CF': 'Inter Miami',
+                'Inter Miami': 'Inter Miami',
+                'Philadelphia Union': 'Philadelphia',
+                'Nashville SC': 'Nashville',
+                'Vancouver Whitecaps': 'Vancouver',
+                'Seattle Sounders FC': 'Seattle Sounders',
+                'LAFC': 'LAFC',
+                'LA Galaxy': 'LA Galaxy'
+            };
+            
+            return corrections[name] || name;
+        }
+        
+        function convertMatches() {
+            addLog('Starting conversion...');
+            const input = document.getElementById('input').value;
+            
+            if (!input.trim()) {
+                addLog('Error: No input provided', 'error');
+                document.getElementById('output').innerHTML = '<div class="error">❌ Please paste some match results first!</div>';
+                return;
+            }
+            
+            const lines = input.split('\n');
+            addLog(`Total lines: ${lines.length}`);
+            
+            const matches = [];
+            let currentBlock = [];
+            let i = 0;
+            
+            while (i < lines.length) {
+                const line = lines[i].trim();
+                
+                // Start a new block when we find a date line or after a blank line
+                if (line.match(/^\d{2}\.\d{2}\./) || (line === '' && currentBlock.length > 0)) {
+                    if (currentBlock.length > 0) {
+                        addLog(`Processing block of ${currentBlock.length} lines`);
+                        const result = parseMatchBlock(currentBlock, 0);
+                        
+                        if (result.homeTeam && result.awayTeam && result.homeScore !== null && result.awayScore !== null) {
+                            const today = new Date().toISOString().split('T')[0];
+                            matches.push({
+                                home: cleanTeamName(result.homeTeam),
+                                away: cleanTeamName(result.awayTeam),
+                                home_score: result.homeScore,
+                                away_score: result.awayScore,
+                                date: today
+                            });
+                            addLog(`✅ Match added: ${result.homeTeam} ${result.homeScore}-${result.awayScore} ${result.awayTeam}`);
+                        } else {
+                            addLog(`⚠️ Could not parse block: missing data`, 'warning');
+                        }
+                        currentBlock = [];
+                    }
+                }
+                
+                currentBlock.push(line);
+                i++;
+            }
+            
+            // Process last block
+            if (currentBlock.length > 0) {
+                addLog(`Processing final block of ${currentBlock.length} lines`);
+                const result = parseMatchBlock(currentBlock, 0);
+                
+                if (result.homeTeam && result.awayTeam && result.homeScore !== null && result.awayScore !== null) {
+                    const today = new Date().toISOString().split('T')[0];
+                    matches.push({
+                        home: cleanTeamName(result.homeTeam),
+                        away: cleanTeamName(result.awayTeam),
+                        home_score: result.homeScore,
+                        away_score: result.awayScore,
+                        date: today
+                    });
+                    addLog(`✅ Match added: ${result.homeTeam} ${result.homeScore}-${result.awayScore} ${result.awayTeam}`);
+                }
+            }
+            
+            const selectedLeague = document.getElementById('leagueSelect').value;
+            const output = document.getElementById('output');
+            
+            if (matches.length === 0) {
+                addLog('No matches were parsed', 'error');
+                output.innerHTML = `<div class="error">❌ No matches found!<br><br>
+                Make sure your format looks like:<br><br>
+                10.06. 20:00<br>
+                Malaga<br>
+                Malaga<br>
+                Las Palmas<br>
+                Las Palmas<br>
+                1<br>
+                1</div>`;
+                return;
+            }
+            
+            addLog(`Successfully parsed ${matches.length} matches!`, 'success');
+            
+            let result = '';
+            const today = new Date().toISOString().split('T')[0];
+            
+            if (selectedLeague) {
+                result = `"${selectedLeague}": [\n`;
+                result += matches.map(m => `    { home: "${m.home}", away: "${m.away}", home_score: ${m.home_score}, away_score: ${m.away_score}, date: "${today}" }`).join(',\n');
+                result += `\n],`;
+            } else {
+                result = `// Add to your matchesData.js\n\n`;
+                result += matches.map(m => `{ home: "${m.home}", away: "${m.away}", home_score: ${m.home_score}, away_score: ${m.away_score}, date: "${today}" }`).join(',\n');
+            }
+            
+            output.innerHTML = `<div class="success">✅ Successfully converted ${matches.length} match${matches.length !== 1 ? 'es' : ''}!</div><br><div style="white-space: pre-wrap;">${escapeHtml(result)}</div>`;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function copyToClipboard() {
+            const output = document.getElementById('output').innerText;
+            let textToCopy = output.replace(/^✅ Successfully converted.*?\n\n/, '');
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                addLog('Copied to clipboard!', 'success');
+                alert('✅ Copied to clipboard!\n\nNow paste into your matchesData.js file.');
+            }).catch(() => {
+                addLog('Failed to copy', 'error');
+                alert('❌ Could not copy. Please select and copy manually (Ctrl+C).');
+            });
+        }
+        
+        function clearAll() {
+            document.getElementById('input').value = '';
+            document.getElementById('output').innerHTML = 'Waiting for input...';
+            addLog('Cleared all fields');
+        }
+        
+        function loadExample() {
+            const example = `10.06. 20:00
+Malaga
+Malaga
+Las Palmas
+Las Palmas
+1
+1
+
+09.06. 20:00
+Almeria
+Almeria
+Castellon
+Castellon
+3
+2
+
+07.06. 20:00
+Las Palmas
+Las Palmas
+Malaga
+Malaga
+0
+1
+
+06.06. 20:00
+Castellon
+Castellon
+Almeria
+Almeria
+1
+1
+
+LaLiga2
+SPAIN:`;
+            
+            document.getElementById('input').value = example;
+            addLog('Example loaded! Click Convert to test.');
+            convertMatches();
+        }
+        
+        // Initialize
+        window.addEventListener('DOMContentLoaded', () => {
+            addLog('Converter ready! Paste your match results and click Convert.');
+        });
+    </script>
+</body>
+</html>

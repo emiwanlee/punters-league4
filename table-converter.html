@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table & Fixtures Converter - Punters League</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            resize: vertical;
+            background: #f8f9fa;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .output-area {
+            background: #1a1a2e;
+            color: #10b981;
+            padding: 15px;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tab-btn {
+            background: #e5e7eb;
+            color: #333;
+            border: none;
+        }
+        
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .success {
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .status-bar {
+            background: #e5e7eb;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Punters League - Table & Fixtures Converter</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('table')">📋 Standings Table</button>
+            <button class="tab-btn" onclick="switchTab('fixtures')">📅 Fixtures</button>
+        </div>
+        
+        <!-- Standings Table Tab -->
+        <div id="tab-table" class="tab-content active">
+            <div class="card">
+                <h2>📋 Step 1: Paste Standings Table</h2>
+                <div class="info" style="background:#f0fdf4; padding:15px; border-radius:10px; margin-bottom:15px;">
+                    <strong>✅ Paste the table exactly as copied from Google/website:</strong><br>
+                    The converter automatically extracts rank, team, MP, W, D, L, GF, GA, GD, Pts!
+                </div>
+                <textarea id="tableInput" placeholder="Paste standings table here...
+
+Example:
+1
+Coquimbo
+30
+23
+6
+1
+49
+17
+32
+75
+WinWinWinDrawWin
+2
+Universidad Católica
+30
+17
+7
+6
+44
+26
+18
+58
+LossWinWinDrawWin"></textarea>
+                
+                <div>
+                    <input type="text" id="leagueNameTable" placeholder="League Name (e.g., Chilean Primera División)" style="padding:10px; width:300px; margin-right:10px;">
+                    <button onclick="convertTable()">🔄 Convert Table to JSON</button>
+                    <button onclick="copyTableOutput()">📋 Copy Output</button>
+                </div>
+                
+                <div class="status-bar" id="tableStatus">Ready to convert table...</div>
+            </div>
+            
+            <div class="card">
+                <h2>📦 Output - Copy to data.js</h2>
+                <div id="tableOutput" class="output-area">Waiting for input...</div>
+            </div>
+        </div>
+        
+        <!-- Fixtures Tab -->
+        <div id="tab-fixtures" class="tab-content">
+            <div class="card">
+                <h2>📅 Step 1: Paste Fixtures</h2>
+                <div class="info" style="background:#f0fdf4; padding:15px; border-radius:10px; margin-bottom:15px;">
+                    <strong>✅ Paste fixtures in this format:</strong><br>
+                    26 Jul TBD Colo-Colo vs Deportes Limache<br>
+                    The converter automatically extracts date, home team, away team!
+                </div>
+                <textarea id="fixturesInput" placeholder="Paste fixtures here...
+
+Example:
+26 Jul TBD Colo-Colo vs Deportes Limache
+26 Jul TBD Audax Italiano vs Universidad de Chile
+26 Jul TBD Universidad Católica vs La Serena
+2 Aug TBD Cobresal vs Unión La Calera"></textarea>
+                
+                <div>
+                    <input type="text" id="leagueNameFixtures" placeholder="League Name (e.g., Chilean Primera División)" style="padding:10px; width:300px; margin-right:10px;">
+                    <button onclick="convertFixtures()">🔄 Convert Fixtures to JSON</button>
+                    <button onclick="copyFixturesOutput()">📋 Copy Output</button>
+                </div>
+                
+                <div class="status-bar" id="fixturesStatus">Ready to convert fixtures...</div>
+            </div>
+            
+            <div class="card">
+                <h2>📦 Output - Copy to data.js</h2>
+                <div id="fixturesOutput" class="output-area">Waiting for input...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentTableOutput = '';
+        let currentFixturesOutput = '';
+        
+        function switchTab(tab) {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            if (tab === 'table') {
+                document.querySelector('.tab-btn:first-child').classList.add('active');
+                document.getElementById('tab-table').classList.add('active');
+            } else {
+                document.querySelector('.tab-btn:last-child').classList.add('active');
+                document.getElementById('tab-fixtures').classList.add('active');
+            }
+        }
+        
+        function convertTable() {
+            const input = document.getElementById('tableInput').value;
+            const leagueName = document.getElementById('leagueNameTable').value;
+            const lines = input.split('\n');
+            
+            const teams = [];
+            let currentTeam = {};
+            let lineIndex = 0;
+            
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (line === '') continue;
+                
+                // Try to parse as rank (number)
+                if (line.match(/^\d+$/) && !currentTeam.rank) {
+                    currentTeam.rank = parseInt(line);
+                }
+                // Team name (not a number, not too short)
+                else if (line.length > 2 && !line.match(/^\d+$/) && !currentTeam.team) {
+                    currentTeam.team = line;
+                }
+                // MP
+                else if (line.match(/^\d+$/) && !currentTeam.MP && currentTeam.team) {
+                    currentTeam.MP = parseInt(line);
+                }
+                // W (Wins)
+                else if (line.match(/^\d+$/) && !currentTeam.MW && currentTeam.MP) {
+                    currentTeam.MW = parseInt(line);
+                }
+                // D (Draws)
+                else if (line.match(/^\d+$/) && !currentTeam.MD && currentTeam.MW !== undefined) {
+                    currentTeam.MD = parseInt(line);
+                }
+                // L (Losses)
+                else if (line.match(/^\d+$/) && !currentTeam.ML && currentTeam.MD !== undefined) {
+                    currentTeam.ML = parseInt(line);
+                }
+                // GF (Goals For)
+                else if (line.match(/^\d+$/) && !currentTeam.GF && currentTeam.ML !== undefined) {
+                    currentTeam.GF = parseInt(line);
+                }
+                // GA (Goals Against)
+                else if (line.match(/^\d+$/) && !currentTeam.GA && currentTeam.GF !== undefined) {
+                    currentTeam.GA = parseInt(line);
+                }
+                // GD (Goal Difference - optional, can be calculated)
+                else if (line.match(/^-?\d+$/) && !currentTeam.GD && currentTeam.GA !== undefined) {
+                    currentTeam.GD = parseInt(line);
+                }
+                // Pts (Points)
+                else if (line.match(/^\d+$/) && !currentTeam.points && currentTeam.GD !== undefined) {
+                    currentTeam.points = parseInt(line);
+                    // Team complete, push to array
+                    teams.push({ ...currentTeam });
+                    currentTeam = {};
+                }
+            }
+            
+            if (teams.length === 0) {
+                document.getElementById('tableStatus').innerHTML = '❌ No teams parsed. Check your format!';
+                document.getElementById('tableOutput').innerHTML = '<div class="error">❌ No teams found. Make sure the table has rank numbers, team names, and stats.</div>';
+                return;
+            }
+            
+            // Build the output
+            let output = '';
+            if (leagueName) {
+                output = `"${leagueName}": {\n`;
+                output += `    id: "${leagueName.toLowerCase().replace(/ /g, '-')}",\n`;
+                output += `    logo: "${leagueName.toLowerCase().split(' ')[0]}/${leagueName.toLowerCase().replace(/ /g, '')}.png",\n`;
+                output += `    isBasketball: false,\n`;
+                output += `    teams: [\n`;
+            }
+            
+            for (let i = 0; i < teams.length; i++) {
+                const t = teams[i];
+                const gd = t.GD || (t.GF - t.GA);
+                output += `        { rank: ${t.rank}, team: "${t.team}", MP: ${t.MP}, MW: ${t.MW}, MD: ${t.MD}, ML: ${t.ML}, GF: ${t.GF}, GA: ${t.GA}, logo: "${t.team.toLowerCase().replace(/ /g, '')}.png" }`;
+                if (i < teams.length - 1) output += `,`;
+                output += `\n`;
+            }
+            
+            if (leagueName) {
+                output += `    ],\n`;
+                output += `    fixtures: []\n`;
+                output += `}`;
+            }
+            
+            currentTableOutput = output;
+            document.getElementById('tableOutput').innerHTML = `<div class="success">✅ Converted ${teams.length} teams!</div><br><div style="white-space: pre-wrap;">${escapeHtml(output)}</div>`;
+            document.getElementById('tableStatus').innerHTML = `✅ Success! ${teams.length} teams converted. Copy the output above.`;
+        }
+        
+        function convertFixtures() {
+            const input = document.getElementById('fixturesInput').value;
+            const leagueName = document.getElementById('leagueNameFixtures').value;
+            const lines = input.split('\n');
+            
+            const fixtures = [];
+            const currentYear = new Date().getFullYear();
+            
+            for (const line of lines) {
+                if (line.trim() === '') continue;
+                
+                // Parse format: "26 Jul TBD Colo-Colo vs Deportes Limache"
+                let match = line.match(/(\d+)\s+(\w+)\s+TBD\s+(.+?)\s+vs\s+(.+)/i);
+                
+                if (match) {
+                    const day = match[1];
+                    const month = match[2];
+                    const homeTeam = match[3].trim();
+                    const awayTeam = match[4].trim();
+                    
+                    // Convert month name to number
+                    const months = {
+                        'Jan': '01', 'Feb': '02', 'Mar': '03', 'Apr': '04', 'May': '05', 'Jun': '06',
+                        'Jul': '07', 'Aug': '08', 'Sep': '09', 'Oct': '10', 'Nov': '11', 'Dec': '12'
+                    };
+                    const monthNum = months[month] || '06';
+                    const date = `${currentYear}-${monthNum}-${day.padStart(2, '0')}`;
+                    
+                    fixtures.push({ home: homeTeam, away: awayTeam, date: date });
+                } else {
+                    // Try simpler format: "Colo-Colo vs Deportes Limache"
+                    match = line.match(/(.+?)\s+vs\s+(.+)/i);
+                    if (match) {
+                        fixtures.push({ home: match[1].trim(), away: match[2].trim(), date: null });
+                    }
+                }
+            }
+            
+            if (fixtures.length === 0) {
+                document.getElementById('fixturesStatus').innerHTML = '❌ No fixtures parsed. Use format: "26 Jul TBD Home vs Away"';
+                document.getElementById('fixturesOutput').innerHTML = '<div class="error">❌ No fixtures found. Use format: "26 Jul TBD Colo-Colo vs Deportes Limache"</div>';
+                return;
+            }
+            
+            let output = '';
+            if (leagueName) {
+                output = `// Add to ${leagueName} fixtures\n`;
+                output += `fixtures: [\n`;
+                for (let i = 0; i < fixtures.length; i++) {
+                    const f = fixtures[i];
+                    if (f.date) {
+                        output += `    { home: "${f.home}", away: "${f.away}", date: "${f.date}" }`;
+                    } else {
+                        output += `    { home: "${f.home}", away: "${f.away}", date: "TBD" }`;
+                    }
+                    if (i < fixtures.length - 1) output += `,`;
+                    output += `\n`;
+                }
+                output += `]`;
+            } else {
+                output = fixtures.map(f => `{ home: "${f.home}", away: "${f.away}", date: "${f.date || 'TBD'}" }`).join(',\n');
+            }
+            
+            currentFixturesOutput = output;
+            document.getElementById('fixturesOutput').innerHTML = `<div class="success">✅ Converted ${fixtures.length} fixtures!</div><br><div style="white-space: pre-wrap;">${escapeHtml(output)}</div>`;
+            document.getElementById('fixturesStatus').innerHTML = `✅ Success! ${fixtures.length} fixtures converted.`;
+        }
+        
+        function copyTableOutput() {
+            if (!currentTableOutput) {
+                alert('No output to copy. Convert a table first!');
+                return;
+            }
+            navigator.clipboard.writeText(currentTableOutput);
+            alert('✅ Copied to clipboard! Paste into your data.js file.');
+        }
+        
+        function copyFixturesOutput() {
+            if (!currentFixturesOutput) {
+                alert('No output to copy. Convert fixtures first!');
+                return;
+            }
+            navigator.clipboard.writeText(currentFixturesOutput);
+            alert('✅ Copied to clipboard! Paste into your data.js fixtures array.');
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // Load example when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            // Load example table
+            document.getElementById('tableInput').value = `1
+Coquimbo
+30
+23
+6
+1
+49
+17
+32
+75
+WinWinWinDrawWin
+2
+Universidad Católica
+30
+17
+7
+6
+44
+26
+18
+58
+LossWinWinDrawWin
+3
+O'Higgins
+30
+16
+8
+6
+43
+34
+9
+56
+WinWinLossWinWin`;
+            
+            document.getElementById('leagueNameTable').value = 'Chilean Primera División';
+            
+            // Load example fixtures
+            document.getElementById('fixturesInput').value = `26 Jul TBD Colo-Colo vs Deportes Limache
+26 Jul TBD Audax Italiano vs Universidad de Chile
+26 Jul TBD Universidad Católica vs La Serena
+2 Aug TBD Cobresal vs Unión La Calera`;
+            
+            document.getElementById('leagueNameFixtures').value = 'Chilean Primera División';
+        });
+    </script>
+</body>
+</html>
