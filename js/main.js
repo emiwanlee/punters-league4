@@ -24,7 +24,7 @@ function formatDate(dateString) {
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
     "Today's Results": [
-        { home: "A. Italiano", away: "La Serena", home_score: 1, away_score: 1 },
+        { home: "Maxline Vitebsk", away: "Vitebsk", home_score: 1, away_score: 2 },
         
     ],
     "Yesterday's Results": [

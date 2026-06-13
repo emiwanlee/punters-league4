@@ -714,7 +714,7 @@ const leaguesData = {
         { rank: 16, team: "Naftan", MP: 11, MW: 0, MD: 3, ML: 8, GF: 7, GA: 22, logo: "belarus/naftan.png" }
     ],
    
-}
+
     fixtures: [
         // Matchday 11 - June 12
        // { home: "Isloch", away: "Naftan", date: "2026-06-12" },
