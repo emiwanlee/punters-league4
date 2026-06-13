@@ -27,8 +27,8 @@ const leaguesData = {
     ],
     fixtures: [
         // Round 12 - June 12
-        { home: "Bishkek City", away: "Asia Talas", date: "2026-06-12" },
-        { home: "Talant", away: "Alay Osh", date: "2026-06-12" },
+       // { home: "Bishkek City", away: "Asia Talas", date: "2026-06-12" },
+       // { home: "Talant", away: "Alay Osh", date: "2026-06-12" },
         
         // Round 12 - June 13
         { home: "Aldier", away: "Ozgon", date: "2026-06-13" },
@@ -485,7 +485,7 @@ const leaguesData = {
        // { home: "Sport", away: "Athletic (MG)", date: "2026-06-11" },
         
         // June 12
-        { home: "Atlético Goianiense", away: "CRB", date: "2026-06-12" },
+       // { home: "Atlético Goianiense", away: "CRB", date: "2026-06-12" },
         
         // June 14
         { home: "Juventude", away: "Ponte Preta", date: "2026-06-14" },
@@ -631,8 +631,8 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 11 - June 12
-        { home: "Isloch", away: "Naftan", date: "2026-06-12" },
-        { home: "Belshina", away: "BATE", date: "2026-06-12" },
+       // { home: "Isloch", away: "Naftan", date: "2026-06-12" },
+       // { home: "Belshina", away: "BATE", date: "2026-06-12" },
         
         // Matchday 11 - June 13
         { home: "Baranovichi", away: "Minsk", date: "2026-06-13" },

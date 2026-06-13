@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argentine Liga Profesional - Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .league-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .league-hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .group-section {
+        margin-bottom: 3rem;
+    }
+    
+    .group-title {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 15px;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    .season-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .season-title {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 0.6rem 1rem;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline-block;
+    }
+    
+    .standings-table {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    
+    .standings-table th {
+        background: #f8f9fa;
+        padding: 8px 4px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+    
+    .standings-table td {
+        padding: 6px 4px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .team-name-cell {
+        text-align: left !important;
+        font-weight: 500;
+    }
+    
+    .team-name-cell a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .team-name-cell a:hover {
+        color: #667eea;
+    }
+    
+    .rank-1 { background: linear-gradient(90deg, #ffd70020, transparent); }
+    .rank-2 { background: linear-gradient(90deg, #c0c0c020, transparent); }
+    .rank-3 { background: linear-gradient(90deg, #cd7f3220, transparent); }
+    .rank-copa { background: #10b98120; }
+    .rank-relegation { background: #ef444420; }
+    
+    .form-bar {
+        display: flex;
+        gap: 3px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .form-icon {
+        width: 22px;
+        height: 22px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 0.65rem;
+        font-weight: bold;
+    }
+    
+    .form-w { background: #10b981; color: white; }
+    .form-d { background: #f59e0b; color: white; }
+    .form-l { background: #ef4444; color: white; }
+    
+    .insight-badge {
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        border-radius: 15px;
+        font-size: 0.65rem;
+        font-weight: 600;
+    }
+    
+    .insight-improved { background: #10b981; color: white; }
+    .insight-declined { background: #ef4444; color: white; }
+    .insight-stable { background: #f59e0b; color: white; }
+    
+    .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    @media (max-width: 992px) {
+        .two-columns {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+    
+    .trend-up { color: #10b981; }
+    .trend-down { color: #ef4444; }
+    
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .stat-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #667eea;
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<!-- Popunder Ad -->
+<script src="https://pl29651537.effectivecpmnetwork.com/86/f7/82/86f782b9da53be2f515c6b32e2ba9be7.js"></script>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M50 5 L85 20 L85 50 C85 75 50 95 50 95 C50 95 15 75 15 50 L15 20 L50 5Z" fill="url(#logoGrad)" stroke="white" stroke-width="2"/>
+                        <circle cx="50" cy="45" r="15" fill="white" opacity="0.9"/>
+                        <polygon points="50,30 55,40 65,40 58,47 60,57 50,52 40,57 42,47 35,40 45,40" fill="url(#logoGrad)"/>
+                        <polygon points="50,70 52,76 58,76 53,80 55,86 50,82 45,86 47,80 42,76 48,76" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">PUNTERS</span>
+                    <span class="logo-sub">LEAGUE</span>
+                </div>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link" data-league="all">Predictions</a></li>
+            <li class="nav-item"><a href="argentina.html" class="nav-link">Argentina</a></li>
+            <li class="nav-item"><a href="chile.html" class="nav-link">Chile</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="league-hero">
+        <img src="images/logos/leagues/argentinaprimeralogo.png" alt="Argentine Liga Profesional" style="height: 60px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+        <h1><i class="fas fa-futbol"></i> Argentine Liga Profesional</h1>
+        <p>Group A & Group B - 2026 Season</p>
+    </div>
+    
+    <div id="contentArea">
+        <div class="loading text-center py-5">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+            <p class="mt-3">Loading Argentine league data...</p>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/predictions.js"></script>
+<script>
+// ==================== ARGENTINE LEAGUE PAGE ====================
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Generate form icons from recent matches
+function generateFormIcons(teamName, groupName) {
+    const form = [];
+    
+    let matchesDataGroup = null;
+    if (groupName.includes("Group A") && matchesData["Argentine Reserve League - Group A"]) {
+        matchesDataGroup = matchesData["Argentine Reserve League - Group A"];
+    } else if (groupName.includes("Group B") && matchesData["Argentine Reserve League - Group B"]) {
+        matchesDataGroup = matchesData["Argentine Reserve League - Group B"];
+    }
+    
+    if (!matchesDataGroup) return '<span>-</span>';
+    
+    let count = 0;
+    for (let i = matchesDataGroup.length - 1; i >= 0 && count < 5; i--) {
+        const match = matchesDataGroup[i];
+        if (match.home === teamName || match.away === teamName) {
+            const isHome = match.home === teamName;
+            let result = '';
+            if (isHome) {
+                result = match.home_score > match.away_score ? 'W' : (match.home_score === match.away_score ? 'D' : 'L');
+            } else {
+                result = match.away_score > match.home_score ? 'W' : (match.away_score === match.home_score ? 'D' : 'L');
+            }
+            form.push(`<span class="form-icon form-${result.toLowerCase()}">${result}</span>`);
+            count++;
+        }
+    }
+    
+    if (form.length === 0) return '<span>-</span>';
+    return form.join('');
+}
+
+function renderTable(leagueData, title, groupName) {
+    if (!leagueData || !leagueData.teams) return '<div class="alert alert-warning">No data available</div>';
+    
+    const sortedTeams = [...leagueData.teams].sort((a, b) => (a.rank || 0) - (b.rank || 0));
+    
+    let html = `
+        <div class="season-card">
+            <div class="season-title">${title}</div>
+            <div class="table-responsive">
+                <table class="standings-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                            <th>Form</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const team of sortedTeams) {
+        const wins = team.MW || 0;
+        const draws = team.MD || 0;
+        const losses = team.ML || (team.MP - wins - draws);
+        const gd = team.GF - team.GA;
+        const points = (wins * 3) + draws;
+        
+        let rowClass = '';
+        if (team.rank === 1) rowClass = 'rank-1';
+        else if (team.rank === 2) rowClass = 'rank-2';
+        else if (team.rank === 3) rowClass = 'rank-3';
+        else if (team.rank <= 4) rowClass = 'rank-copa';
+        
+        html += `
+            <tr class="${rowClass}">
+                <td><strong>${team.rank}</strong></td>
+                <td class="team-name-cell">
+                    <a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a>
+                </td>
+                <td>${team.MP}</td>
+                <td class="text-success">${wins}</td>
+                <td class="text-warning">${draws}</td>
+                <td class="text-danger">${losses}</td>
+                <td>${team.GF}</td>
+                <td>${team.GA}</td>
+                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${gd >= 0 ? '+' : ''}${gd}</td>
+                <td><strong>${points}</strong></td>
+                <td>
+                    <div class="form-bar">
+                        ${generateFormIcons(team.team, groupName)}
+                    </div>
+                </td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderGroupStats(groupData, groupName) {
+    if (!groupData || !groupData.teams) return '';
+    
+    const teams = groupData.teams;
+    const totalTeams = teams.length;
+    const avgGoalsPerGame = teams.reduce((sum, t) => sum + (t.GF / t.MP), 0) / totalTeams;
+    const totalGoals = teams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = teams.reduce((sum, t) => sum + t.MP, 0) / 2;
+    
+    return `
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">${totalTeams}</div>
+                <small>Teams</small>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">${totalMatches}</div>
+                <small>Matches Played</small>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">${totalGoals}</div>
+                <small>Total Goals</small>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">${avgGoalsPerGame.toFixed(1)}</div>
+                <small>Avg Goals/Match</small>
+            </div>
+        </div>
+    `;
+}
+
+function renderArgentinaPage() {
+    const contentDiv = document.getElementById('contentArea');
+    
+    const groupA = leaguesData["Argentine Liga Profesional - Group A"];
+    const groupB = leaguesData["Argentine Liga Profesional - Group B"];
+    
+    if (!groupA && !groupB) {
+        contentDiv.innerHTML = '<div class="alert alert-danger">Argentine league data not found</div>';
+        return;
+    }
+    
+    let html = `
+        <!-- Group A -->
+        <div class="group-section">
+            <div class="group-title">
+                <i class="fas fa-users"></i> Group A - Zona Campeonato
+            </div>
+            ${renderGroupStats(groupA, "Group A")}
+            ${renderTable(groupA, "2026 Season Standings", "Group A")}
+        </div>
+        
+        <!-- Group B -->
+        <div class="group-section">
+            <div class="group-title">
+                <i class="fas fa-users"></i> Group B - Zona Campeonato
+            </div>
+            ${renderGroupStats(groupB, "Group B")}
+            ${renderTable(groupB, "2026 Season Standings", "Group B")}
+        </div>
+        
+        <!-- League Insights -->
+        <div class="season-card">
+            <div class="season-title" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
+                <i class="fas fa-chart-line"></i> League Insights
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-star text-warning"></i> Group A Leaders</h5>
+                    <ul class="list-unstyled">
+                        <li>🏆 Top: <strong>${groupA?.teams[0]?.team || 'N/A'}</strong> (${groupA?.teams[0]?.MW || 0} wins)</li>
+                        <li>⚽ Best Attack: ${groupA?.teams.reduce((best, t) => t.GF > (best?.GF || 0) ? t : best, {})?.team || 'N/A'} (${groupA?.teams.reduce((best, t) => Math.max(best, t.GF), 0)} goals)</li>
+                        <li>🛡️ Best Defense: ${groupA?.teams.reduce((best, t) => t.GA < (best?.GA || 999) ? t : best, {})?.team || 'N/A'} (${groupA?.teams.reduce((best, t) => Math.min(best, t.GA), 999)} conceded)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-star text-warning"></i> Group B Leaders</h5>
+                    <ul class="list-unstyled">
+                        <li>🏆 Top: <strong>${groupB?.teams[0]?.team || 'N/A'}</strong> (${groupB?.teams[0]?.MW || 0} wins)</li>
+                        <li>⚽ Best Attack: ${groupB?.teams.reduce((best, t) => t.GF > (best?.GF || 0) ? t : best, {})?.team || 'N/A'} (${groupB?.teams.reduce((best, t) => Math.max(best, t.GF), 0)} goals)</li>
+                        <li>🛡️ Best Defense: ${groupB?.teams.reduce((best, t) => t.GA < (best?.GA || 999) ? t : best, {})?.team || 'N/A'} (${groupB?.teams.reduce((best, t) => Math.min(best, t.GA), 999)} conceded)</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <h5><i class="fas fa-trophy"></i> Copa Libertadores Qualification</h5>
+                    <p>Top 4 from each group qualify for CONMEBOL Libertadores group stage.</p>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> Teams in <span style="background:#10b98120; padding:2px 8px; border-radius:10px;">green</span> are currently in qualification positions.
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    contentDiv.innerHTML = html;
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    renderArgentinaPage();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+<!-- Social Bar Ad -->
+<script src="https://pl29651539.effectivecpmnetwork.com/80/62/c9/8062c90635e34804ad4b865d4e95ca4f.js"></script>
+</body>
+</html>
