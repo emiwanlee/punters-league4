@@ -1701,6 +1701,40 @@ const matchesData = {
     { home: "Ceará", away: "Avaí", home_score: 2, away_score: 1, date: "2026-06-11" },
     { home: "Goiás", away: "Novorizontino", home_score: 0, away_score: 4, date: "2026-06-11" },
     { home: "Sport", away: "Athletic (MG)", home_score: 1, away_score: 1, date: "2026-06-11" }
+],
+
+"Finland Veikkausliiga": [
+    // Group stage - May 20
+    { home: "Ilves", away: "Inter Turku", home_score: 1, away_score: 3, date: "2026-05-20" },
+    { home: "KuPS", away: "FF Jaro", home_score: 3, away_score: 0, date: "2026-05-20" },
+    
+    // Group stage - May 22
+    { home: "VPS", away: "HJK", home_score: 2, away_score: 1, date: "2026-05-22" },
+    
+    // Group stage - May 23
+    { home: "Inter Turku", away: "Turun", home_score: 2, away_score: 1, date: "2026-05-23" },
+    { home: "KuPS", away: "FC Lahti", home_score: 2, away_score: 1, date: "2026-05-23" },
+    { home: "FF Jaro", away: "IFK Mariehamn", home_score: 3, away_score: 0, date: "2026-05-23" },
+    { home: "SJK", away: "Oulu", home_score: 0, away_score: 1, date: "2026-05-23" },
+    { home: "Ilves", away: "Gnistan", home_score: 2, away_score: 0, date: "2026-05-23" },
+    
+    // Group stage - May 30
+    { home: "HJK", away: "IFK Mariehamn", home_score: 1, away_score: 0, date: "2026-05-30" },
+    { home: "KuPS", away: "Inter Turku", home_score: 1, away_score: 1, date: "2026-05-30" },
+    { home: "Gnistan", away: "SJK", home_score: 3, away_score: 2, date: "2026-05-30" },
+    { home: "FC Lahti", away: "Ilves", home_score: 5, away_score: 0, date: "2026-05-30" },
+    { home: "Turun", away: "VPS", home_score: 1, away_score: 0, date: "2026-05-30" },
+    
+    // Group stage - May 31
+    { home: "Oulu", away: "FF Jaro", home_score: 2, away_score: 1, date: "2026-05-31" },
+    
+    // Group stage - Today (June 14)
+    { home: "Inter Turku", away: "Oulu", home_score: 0, away_score: 0, date: "2026-06-14" },
+    { home: "Ilves", away: "Turun", home_score: 1, away_score: 0, date: "2026-06-14" },
+    { home: "FF Jaro", away: "HJK", home_score: 2, away_score: 5, date: "2026-06-14" },
+    { home: "VPS", away: "KuPS", home_score: 1, away_score: 1, date: "2026-06-14" },
+    { home: "IFK Mariehamn", away: "Gnistan", home_score: 0, away_score: 3, date: "2026-06-14" },
+    { home: "FC Lahti", away: "SJK", home_score: 2, away_score: 3, date: "2026-06-14" }
 ]
     
 
