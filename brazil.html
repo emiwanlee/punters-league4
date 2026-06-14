@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brazilian Football - Série A, Série B & U-20 | Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .country-hero {
+        background: linear-gradient(135deg, #009c3b 0%, #ffdf00 50%, #002776 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .country-hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .competition-tabs {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 0.5rem;
+    }
+    
+    .comp-tab {
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .comp-tab:hover {
+        background: #f8f9fa;
+        color: #009c3b;
+    }
+    
+    .comp-tab.active {
+        background: linear-gradient(135deg, #009c3b 0%, #002776 100%);
+        color: white;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .season-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        overflow-x: auto;
+    }
+    
+    .season-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .brazil-table {
+        width: 100%;
+        font-size: 0.7rem;
+        border-collapse: collapse;
+    }
+    
+    .brazil-table th {
+        background: #f8f9fa;
+        padding: 8px 3px;
+        text-align: center;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+    
+    .brazil-table td {
+        padding: 6px 3px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .team-cell {
+        text-align: left !important;
+        font-weight: 500;
+    }
+    
+    .team-cell a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .team-cell a:hover {
+        color: #009c3b;
+    }
+    
+    .libertadores-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    .sudamericana-zone { background: linear-gradient(90deg, #f59e0b10, transparent); }
+    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
+    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    
+    .analysis-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .big-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #009c3b;
+    }
+    
+    .info-box {
+        background: linear-gradient(135deg, #009c3b10, #00277610);
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .trend-up { color: #10b981; }
+    .trend-down { color: #ef4444; }
+    .trend-stable { color: #f59e0b; }
+    
+    @media (max-width: 992px) {
+        .comparison-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<!-- Popunder Ad -->
+<script src="https://pl29651537.effectivecpmnetwork.com/86/f7/82/86f782b9da53be2f515c6b32e2ba9be7.js"></script>
+
+<header>
+    <nav class="navbar">
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo-link">
+                <div class="logo-icon">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M50 5 L85 20 L85 50 C85 75 50 95 50 95 C50 95 15 75 15 50 L15 20 L50 5Z" fill="url(#logoGrad)" stroke="white" stroke-width="2"/>
+                        <circle cx="50" cy="45" r="15" fill="white" opacity="0.9"/>
+                        <polygon points="50,30 55,40 65,40 58,47 60,57 50,52 40,57 42,47 35,40 45,40" fill="url(#logoGrad)"/>
+                        <polygon points="50,70 52,76 58,76 53,80 55,86 50,82 45,86 47,80 42,76 48,76" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">PUNTERS</span>
+                    <span class="logo-sub">LEAGUE</span>
+                </div>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link" data-league="all">Predictions</a></li>
+            <li class="nav-item"><a href="argentina.html" class="nav-link">Argentina</a></li>
+            <li class="nav-item"><a href="chile.html" class="nav-link">Chile</a></li>
+            <li class="nav-item"><a href="usa.html" class="nav-link">USA</a></li>
+            <li class="nav-item"><a href="brazil.html" class="nav-link active">Brazil</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="country-hero">
+        <i class="fas fa-futbol fa-3x"></i>
+        <h1>Brazilian Football</h1>
+        <p>Série A • Série B • U-20 League | Complete coverage of Brazilian football</p>
+    </div>
+    
+    <!-- Competition Tabs -->
+    <div class="competition-tabs">
+        <button class="comp-tab active" data-tab="seriea">🇧🇷 Série A</button>
+        <button class="comp-tab" data-tab="serieb">📊 Série B</button>
+        <button class="comp-tab" data-tab="u20">⭐ U-20 League</button>
+        <button class="comp-tab" data-tab="analysis">📈 Analysis</button>
+    </div>
+    
+    <!-- Série A Tab -->
+    <div id="tab-seriea" class="tab-content active">
+        <div id="serieaContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Série A data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Série B Tab -->
+    <div id="tab-serieb" class="tab-content">
+        <div id="seriebContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Série B data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- U-20 Tab -->
+    <div id="tab-u20" class="tab-content">
+        <div id="u20Content">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading U-20 League data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Analysis Tab -->
+    <div id="tab-analysis" class="tab-content">
+        <div id="analysisContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading analysis...</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script>
+// ==================== BRAZILIAN LEAGUES DATA ====================
+
+// Série A 2026 (Current)
+const serieA2026 = {
+    teams: [
+        { rank: 1, team: "Palmeiras", MP: 18, MW: 12, MD: 5, ML: 1, GF: 30, GA: 13 },
+        { rank: 2, team: "Flamengo", MP: 17, MW: 10, MD: 4, ML: 3, GF: 31, GA: 16 },
+        { rank: 3, team: "Fluminense", MP: 18, MW: 9, MD: 4, ML: 5, GF: 28, GA: 23 },
+        { rank: 4, team: "Athletico-PR", MP: 18, MW: 9, MD: 3, ML: 6, GF: 24, GA: 18 },
+        { rank: 5, team: "Bragantino", MP: 18, MW: 9, MD: 2, ML: 7, GF: 25, GA: 19 },
+        { rank: 6, team: "Bahia", MP: 17, MW: 7, MD: 5, ML: 5, GF: 25, GA: 23 },
+        { rank: 7, team: "Coritiba", MP: 18, MW: 7, MD: 5, ML: 6, GF: 24, GA: 24 },
+        { rank: 8, team: "São Paulo", MP: 18, MW: 7, MD: 4, ML: 7, GF: 23, GA: 20 },
+        { rank: 9, team: "Atlético Mineiro", MP: 18, MW: 7, MD: 3, ML: 8, GF: 22, GA: 23 },
+        { rank: 10, team: "Corinthians", MP: 18, MW: 6, MD: 6, ML: 6, GF: 18, GA: 19 },
+        { rank: 11, team: "Cruzeiro", MP: 18, MW: 6, MD: 6, ML: 6, GF: 24, GA: 28 },
+        { rank: 12, team: "Botafogo", MP: 17, MW: 6, MD: 4, ML: 7, GF: 31, GA: 31 },
+        { rank: 13, team: "Vitória", MP: 17, MW: 6, MD: 4, ML: 7, GF: 21, GA: 25 },
+        { rank: 14, team: "Internacional", MP: 18, MW: 5, MD: 6, ML: 7, GF: 21, GA: 22 },
+        { rank: 15, team: "Santos", MP: 18, MW: 5, MD: 6, ML: 7, GF: 26, GA: 29 },
+        { rank: 16, team: "Grêmio", MP: 18, MW: 5, MD: 6, ML: 7, GF: 20, GA: 23 },
+        { rank: 17, team: "Vasco", MP: 18, MW: 5, MD: 5, ML: 8, GF: 22, GA: 29 },
+        { rank: 18, team: "Remo", MP: 18, MW: 4, MD: 6, ML: 8, GF: 21, GA: 29 },
+        { rank: 19, team: "Mirassol", MP: 17, MW: 4, MD: 4, ML: 9, GF: 18, GA: 24 },
+        { rank: 20, team: "Chapecoense", MP: 17, MW: 1, MD: 6, ML: 10, GF: 17, GA: 33 }
+    ]
+};
+
+// Série A 2025 (Previous)
+const serieA2025 = {
+    teams: [
+        { rank: 1, team: "Flamengo", MP: 38, MW: 23, MD: 10, ML: 5, GF: 78, GA: 27 },
+        { rank: 2, team: "Palmeiras", MP: 38, MW: 23, MD: 7, ML: 8, GF: 66, GA: 33 },
+        { rank: 3, team: "Cruzeiro", MP: 38, MW: 19, MD: 13, ML: 6, GF: 55, GA: 31 },
+        { rank: 4, team: "Mirassol", MP: 38, MW: 18, MD: 13, ML: 7, GF: 63, GA: 39 },
+        { rank: 5, team: "Fluminense", MP: 38, MW: 19, MD: 7, ML: 12, GF: 50, GA: 39 },
+        { rank: 6, team: "Botafogo", MP: 38, MW: 17, MD: 12, ML: 9, GF: 58, GA: 38 },
+        { rank: 7, team: "Bahia", MP: 38, MW: 17, MD: 9, ML: 12, GF: 50, GA: 46 },
+        { rank: 8, team: "São Paulo", MP: 38, MW: 14, MD: 9, ML: 15, GF: 43, GA: 47 },
+        { rank: 9, team: "Grêmio", MP: 38, MW: 13, MD: 10, ML: 15, GF: 47, GA: 50 },
+        { rank: 10, team: "Bragantino", MP: 38, MW: 14, MD: 6, ML: 18, GF: 45, GA: 57 },
+        { rank: 11, team: "Atlético Mineiro", MP: 38, MW: 12, MD: 12, ML: 14, GF: 43, GA: 44 },
+        { rank: 12, team: "Santos", MP: 38, MW: 12, MD: 11, ML: 15, GF: 45, GA: 50 },
+        { rank: 13, team: "Corinthians", MP: 38, MW: 12, MD: 11, ML: 15, GF: 42, GA: 47 },
+        { rank: 14, team: "Vasco", MP: 38, MW: 13, MD: 6, ML: 19, GF: 55, GA: 60 },
+        { rank: 15, team: "Vitória", MP: 38, MW: 11, MD: 12, ML: 15, GF: 35, GA: 52 },
+        { rank: 16, team: "Internacional", MP: 38, MW: 11, MD: 11, ML: 16, GF: 44, GA: 57 },
+        { rank: 17, team: "Ceará", MP: 38, MW: 11, MD: 10, ML: 17, GF: 34, GA: 40 },
+        { rank: 18, team: "Fortaleza", MP: 38, MW: 11, MD: 10, ML: 17, GF: 43, GA: 58 },
+        { rank: 19, team: "Juventude", MP: 38, MW: 9, MD: 8, ML: 21, GF: 35, GA: 69 },
+        { rank: 20, team: "Sport", MP: 38, MW: 2, MD: 11, ML: 25, GF: 28, GA: 75 }
+    ]
+};
+
+// Helper functions
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function calculatePoints(team) {
+    return (team.MW * 3) + (team.MD || 0);
+}
+
+function renderTable(season, title, year, competition) {
+    const sortedTeams = [...season.teams].sort((a, b) => a.rank - b.rank);
+    
+    let html = `
+        <div class="season-card">
+            <div class="season-title" style="background: ${year === 2026 ? '#009c3b' : '#002776'}; color: white;">
+                ${title} - ${year} Season
+            </div>
+            <div class="table-responsive">
+                <table class="brazil-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const team of sortedTeams) {
+        const wins = team.MW || 0;
+        const draws = team.MD || 0;
+        const losses = team.ML || (team.MP - wins - draws);
+        const gd = team.GF - team.GA;
+        const points = calculatePoints(team);
+        
+        let rowClass = '';
+        if (team.rank === 1) rowClass = 'champion-row';
+        else if (team.rank <= 4) rowClass = 'libertadores-zone';
+        else if (team.rank <= 8) rowClass = 'sudamericana-zone';
+        else if (team.rank >= 17 && competition === 'seriea') rowClass = 'relegation-zone';
+        else if (team.rank <= 4 && competition === 'serieb') rowClass = 'promotion-zone';
+        
+        html += `
+            <tr class="${rowClass}">
+                <td><strong>${team.rank}</strong></td>
+                <td class="team-cell"><a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a></td>
+                <td>${team.MP}</td>
+                <td class="text-success">${wins}</td>
+                <td class="text-warning">${draws}</td>
+                <td class="text-danger">${losses}</td>
+                <td>${team.GF}</td>
+                <td>${team.GA}</td>
+                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${gd >= 0 ? '+' : ''}${gd}</td>
+                <td class="points-cell"><strong>${points}</strong></td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderTeamComparison(season2025, season2026, title) {
+    const teamMap = new Map();
+    
+    for (const team of season2025.teams) {
+        teamMap.set(team.team, { prev: team, curr: null });
+    }
+    
+    for (const team of season2026.teams) {
+        if (teamMap.has(team.team)) {
+            teamMap.get(team.team).curr = team;
+        }
+    }
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> ${title} - Team Performance Comparison</h3>
+            <div class="table-responsive">
+                <table class="brazil-table">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>2025 Pts</th>
+                            <th>2026 Pts</th>
+                            <th>Change</th>
+                            <th>Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const [teamName, data] of teamMap) {
+        const prev = data.prev;
+        const curr = data.curr;
+        
+        if (!prev || !curr) continue;
+        
+        const prevPoints = calculatePoints(prev);
+        const currPoints = calculatePoints(curr);
+        const pointDiff = currPoints - prevPoints;
+        
+        let trendClass = 'trend-stable';
+        let trendIcon = '➡️';
+        
+        if (pointDiff > 5) {
+            trendClass = 'trend-up';
+            trendIcon = '📈';
+        } else if (pointDiff < -5) {
+            trendClass = 'trend-down';
+            trendIcon = '📉';
+        }
+        
+        html += `
+            <tr>
+                <td class="team-cell"><strong>${escapeHtml(teamName)}</strong></td>
+                <td>${prevPoints} (${prev.MP}gp)</td>
+                <td><strong>${currPoints} (${curr.MP}gp)</strong></td>
+                <td class="${trendClass}">${pointDiff > 0 ? '+' : ''}${pointDiff}</td>
+                <td>${trendIcon}</td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+// Load Série A
+function loadSerieA() {
+    const container = document.getElementById('serieaContent');
+    
+    let html = `
+        <div class="comparison-grid">
+            ${renderTable(serieA2026, 'Série A', 2026, 'seriea')}
+            ${renderTable(serieA2025, 'Série A', 2025, 'seriea')}
+        </div>
+        ${renderTeamComparison(serieA2025, serieA2026, 'Série A')}
+        
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> Série A Key Insights</h3>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-chart-line text-success"></i> <strong>Palmeiras</strong> leads the 2026 season with 41 points from 18 matches</li>
+                <li><i class="fas fa-chart-line text-danger"></i> <strong>Flamengo</strong> dropped from 1st place (79 pts) to 2nd place (34 pts in 17 matches)</li>
+                <li><i class="fas fa-trophy"></i> <strong>Mirassol</strong> had a strong 2025 season (4th place) but currently sits in relegation zone</li>
+                <li><i class="fas fa-futbol"></i> Average goals per match: 2.8 in 2026 vs 2.6 in 2025</li>
+            </ul>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// Load Série B
+function loadSerieB() {
+    const container = document.getElementById('seriebContent');
+    
+    // Série B 2026 data
+    const serieB2026 = {
+        teams: [
+            { rank: 1, team: "Vila Nova", MP: 12, MW: 7, MD: 4, ML: 1, GF: 18, GA: 11 },
+            { rank: 2, team: "São Bernardo", MP: 12, MW: 7, MD: 3, ML: 2, GF: 20, GA: 10 },
+            { rank: 3, team: "Sport", MP: 12, MW: 6, MD: 5, ML: 1, GF: 16, GA: 8 },
+            { rank: 4, team: "Fortaleza", MP: 12, MW: 6, MD: 3, ML: 3, GF: 15, GA: 11 },
+            { rank: 5, team: "Novorizontino", MP: 12, MW: 5, MD: 5, ML: 2, GF: 18, GA: 11 },
+            { rank: 6, team: "Criciúma", MP: 12, MW: 5, MD: 5, ML: 2, GF: 14, GA: 10 }
+        ]
+    };
+    
+    let html = `
+        <div class="comparison-grid">
+            <div class="season-card">
+                <div class="season-title" style="background: #009c3b; color: white;">
+                    Série B - 2026 Season
+                </div>
+                <div class="table-responsive">
+                    <table class="brazil-table">
+                        <thead>
+                            <tr><th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
+                        </thead>
+                        <tbody>
+                            ${serieB2026.teams.map(t => `<tr class="promotion-zone"><td><strong>${t.rank}</strong></td><td class="team-cell"><a href="team.html?team=${encodeURIComponent(t.team)}">${escapeHtml(t.team)}</a></td><td>${t.MP}</td><td class="text-success">${t.MW}</td><td class="text-warning">${t.MD}</td><td class="text-danger">${t.ML}</td><td>${t.GF}</td><td>${t.GA}</td><td class="${(t.GF-t.GA)>=0?'text-success':'text-danger'}">${(t.GF-t.GA)>=0?'+':''}${t.GF-t.GA}</td><td><strong>${t.MW*3+t.MD}</strong></td></tr>`).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="season-card">
+                <div class="season-title" style="background: #002776; color: white;">
+                    Série B - 2025 Season
+                </div>
+                <div class="table-responsive">
+                    <table class="brazil-table">
+                        <thead><tr><th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+                        <tbody>
+                            <tr class="champion-row"><td>1</td><td class="team-cell">Coritiba</td><td>38</td><td>19</td><td>11</td><td>8</td><td>39</td><td>23</td><td>+16</td><td><strong>68</strong></td></tr>
+                            <tr><td>2</td><td class="team-cell">Athletico-PR</td><td>38</td><td>19</td><td>8</td><td>11</td><td>53</td><td>43</td><td>+10</td><td><strong>65</strong></td></tr>
+                            <tr><td>3</td><td class="team-cell">Chapecoense</td><td>38</td><td>18</td><td>8</td><td>12</td><td>52</td><td>35</td><td>+17</td><td><strong>62</strong></td></tr>
+                            <tr><td>4</td><td class="team-cell">Remo</td><td>38</td><td>16</td><td>14</td><td>8</td><td>51</td><td>39</td><td>+12</td><td><strong>62</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> Série B Insights</h3>
+            <ul>
+                <li>Vila Nova leads the 2026 promotion race with 25 points</li>
+                <li>Coritiba won promotion to Série A as 2025 champions</li>
+                <li>Traditional clubs like Sport and Fortaleza fighting for return to top flight</li>
+            </ul>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// Load U-20
+function loadU20() {
+    const container = document.getElementById('u20Content');
+    
+    const u202026 = {
+        teams: [
+            { rank: 1, team: "Palmeiras U-20", MP: 15, MW: 10, MD: 5, ML: 0, GF: 37, GA: 19 },
+            { rank: 2, team: "Vasco da Gama U-20", MP: 15, MW: 11, MD: 1, ML: 3, GF: 33, GA: 14 },
+            { rank: 3, team: "Cruzeiro U-20", MP: 15, MW: 8, MD: 4, ML: 3, GF: 31, GA: 17 }
+        ]
+    };
+    
+    let html = `
+        <div class="comparison-grid">
+            <div class="season-card">
+                <div class="season-title" style="background: #009c3b; color: white;">
+                    U-20 League - 2026 Season
+                </div>
+                <div class="table-responsive">
+                    <table class="brazil-table">
+                        <thead><tr><th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+                        <tbody>
+                            ${u202026.teams.map(t => `<tr class="champion-row"><td><strong>${t.rank}</strong></td><td class="team-cell">${escapeHtml(t.team)}</td><td>${t.MP}</td><td class="text-success">${t.MW}</td><td class="text-warning">${t.MD}</td><td class="text-danger">${t.ML}</td><td>${t.GF}</td><td>${t.GA}</td><td class="text-success">+${t.GF-t.GA}</td><td><strong>${t.MW*3+t.MD}</strong></td></tr>`).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="season-card">
+                <div class="season-title" style="background: #002776; color: white;">
+                    U-20 League - 2025 Season
+                </div>
+                <div class="table-responsive">
+                    <table class="brazil-table">
+                        <thead><tr><th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+                        <tbody>
+                            <tr class="champion-row"><td>1</td><td class="team-cell">Palmeiras U-20</td><td>19</td><td class="text-success">14</td><td class="text-warning">3</td><td class="text-danger">2</td><td>44</td><td>21</td><td class="text-success">+23</td><td><strong>45</strong></td></tr>
+                            <tr><td class="text-center">2</td><td class="team-cell">Bragantino U-20</td><td>19</td><td class="text-success">12</td><td class="text-warning">6</td><td class="text-danger">1</td><td>34</td><td>14</td><td class="text-success">+20</td><td><strong>42</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> U-20 League Insights</h3>
+            <ul>
+                <li>Palmeiras U-20 dominates both seasons, undefeated in 2026</li>
+                <li>Vasco da Gama U-20 showing strong improvement in 2026</li>
+                <li>Youth development powerhouse clubs consistently at the top</li>
+            </ul>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// Load Analysis
+function loadAnalysis() {
+    const container = document.getElementById('analysisContent');
+    
+    const palmeiras = serieA2026.teams.find(t => t.team === "Palmeiras");
+    const flamengo = serieA2026.teams.find(t => t.team === "Flamengo");
+    const lider2025 = serieA2025.teams.find(t => t.rank === 1);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> Brazilian Football - Key Insights</h3>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center p-3" style="background: #10b98110; border-radius: 15px;">
+                        <div class="big-number">${palmeiras?.MW || 0}</div>
+                        <small>Palmeiras Wins (2026)</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3" style="background: #f59e0b10; border-radius: 15px;">
+                        <div class="big-number">${lider2025?.MW || 0}</div>
+                        <small>Flamengo Wins (2025 Champion)</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3" style="background: #667eea10; border-radius: 15px;">
+                        <div class="big-number">20</div>
+                        <small>Teams in Série A</small>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <h4><i class="fas fa-trophy"></i> 2025 Champions</h4>
+            <p><strong>Flamengo</strong> won the 2025 Série A with 79 points, while <strong>Coritiba</strong> and <strong>Athletico-PR</strong> earned promotion from Série B.</p>
+            
+            <h4 class="mt-4"><i class="fas fa-chart-line"></i> 2026 Storylines</h4>
+            <ul>
+                <li><strong>Palmeiras</strong> is on pace to break records with 41 points in 18 matches</li>
+                <li><strong>Flamengo</strong> struggling to replicate 2025 championship form</li>
+                <li><strong>Mirassol</strong> surprising fall from 4th place to relegation zone</li>
+                <li><strong>Vila Nova</strong> leads Série B promotion race</li>
+            </ul>
+            
+            <div class="info-box mt-3">
+                <i class="fas fa-info-circle"></i> <strong>Did You Know?</strong> Brazilian football has produced 8 different champions in the last 10 years, making it one of the most competitive leagues in the world!
+            </div>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// Tab switching
+function initTabs() {
+    const tabs = document.querySelectorAll('.comp-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.dataset.tab;
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            tab.classList.add('active');
+            document.getElementById(`tab-${targetTab}`).classList.add('active');
+            
+            // Load content when tab is clicked
+            if (targetTab === 'seriea') loadSerieA();
+            else if (targetTab === 'serieb') loadSerieB();
+            else if (targetTab === 'u20') loadU20();
+            else if (targetTab === 'analysis') loadAnalysis();
+        });
+    });
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    loadSerieA();
+    initTabs();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+<!-- Social Bar Ad -->
+<script src="https://pl29651539.effectivecpmnetwork.com/80/62/c9/8062c90635e34804ad4b865d4e95ca4f.js"></script>
+</body>
+</html>
