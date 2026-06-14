@@ -24,19 +24,16 @@ function formatDate(dateString) {
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
     "Today's Results": [
-        { home: "Midland", away: "Atletico Atlanta", home_score: 1, away_score: 2, date: "2026-06-13" },
-{ home: "Colegiales", away: "San Martin T.", home_score: 2, away_score: 0, date: "2026-06-13" },
-{ home: "Castellón", away: "Almería", home_score: 1, away_score: 1, date: "2026-06-13" }
-        
+    { home: "San Martin Burzaco", away: "Villa Dalmine", home_score: 0, away_score: 2, date: "2026-06-14" },
+    { home: "Villa San Carlos", away: "UAI Urquiza", home_score: 0, away_score: 0, date: "2026-06-14" },
+    { home: "Comunicaciones", away: "Laferrere", home_score: 3, away_score: 3, date: "2026-06-14" },
+    { home: "Defensores Unidos", away: "Brown Adrogue", home_score: 1, away_score: 1, date: "2026-06-14" },
+    { home: "Deportivo Camioneros", away: "Arsenal Sarandi", home_score: 1, away_score: 2, date: "2026-06-14" },
+    { home: "Dock Sud", away: "Talleres (R.E)", home_score: 1, away_score: 1, date: "2026-06-14" },
+    { home: "Flandria", away: "Ituzaingo", home_score: 3, away_score: 2, date: "2026-06-14" },
+    { home: "Sportivo Italiano", away: "Excursionistas", home_score: 0, away_score: 1, date: "2026-06-14" }
     ],
-    "Yesterday's Results": [
-	     { home: "Bishkek City", away: "Talant", home_score: 1, away_score: 0, league: "Kyrgyzstan League" },
-        { home: "Colo-Colo", away: "Cobresal", home_score: 2, away_score: 1, league: "Chilean Primera" }
-    ]
-    //"Top Matches": [
-        //{ home: "Shanghai Port", away: "Shanghai Shenhua", home_score: 2, away_score: 1, league: "Chinese Super League" },
-       // { home: "Beijing Guoan", away: "Shandong Taishan", home_score: 1, away_score: 1, league: "Chinese Super League" }
-   // ]
+    
 };
 
 // Function to render sidebar results from your custom list
