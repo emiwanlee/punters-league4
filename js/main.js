@@ -37,6 +37,7 @@ const sidebarResults = {
 };
 
 // Function to render sidebar results from your custom list
+// Function to render sidebar results from your custom list
 function renderSidebarResults(containerId, resultsData, limit = 10) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -57,6 +58,9 @@ function renderSidebarResults(containerId, resultsData, limit = 10) {
             else if (match.away_score > match.home_score) scoreClass = 'win-away';
             else scoreClass = 'draw';
             
+            // Add league name display
+            const leagueDisplay = match.league ? `<div class="sidebar-league">${escapeHtml(match.league)}</div>` : '';
+            
             html += `
                 <div class="sidebar-match">
                     <div class="sidebar-teams">
@@ -67,7 +71,7 @@ function renderSidebarResults(containerId, resultsData, limit = 10) {
                     <div class="sidebar-score ${scoreClass}">
                         ${match.home_score} - ${match.away_score}
                     </div>
-                    <div class="sidebar-league">${escapeHtml(match.league)}</div>
+                    ${leagueDisplay}
                 </div>
             `;
             count++;

@@ -3,6 +3,7 @@
 
 const basketballThresholds = {
     "NBA": { both: 110, ou: 225.5 },
+    "WNBA": { both: 80, ou: 165.5 },
     "EuroLeague": { both: 80, ou: 160.5 },
     "Spanish ACB": { both: 82, ou: 165.5 },
     "Turkish BSL": { both: 80, ou: 160.5 },

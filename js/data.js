@@ -1033,6 +1033,65 @@ fixtures: [
         { home: "Columbus", away: "Minnesota", date: "2026-06-15" }
     ]
 },
+
+"WNBA": {
+    id: "wnba",
+    logo: "wnba/wnbalogo.png",
+    isBasketball: true,
+    teams: [
+        // Eastern Conference
+        { rank: 1, team: "New York Liberty", GP: 13, GW: 9, GL: 4, points_for: 1178, points_against: 1076, logo: "wnba/liberty.png" },
+        { rank: 2, team: "Atlanta Dream", GP: 12, GW: 8, GL: 4, points_for: 1020, points_against: 978, logo: "wnba/dream.png" },
+        { rank: 3, team: "Indiana Fever", GP: 13, GW: 8, GL: 5, points_for: 1105, points_against: 1066, logo: "wnba/fever.png" },
+        { rank: 4, team: "Toronto Tempo", GP: 13, GW: 7, GL: 6, points_for: 1092, points_against: 1079, logo: "wnba/tempo.png" },
+        { rank: 5, team: "Washington Mystics", GP: 11, GW: 5, GL: 6, points_for: 902, points_against: 924, logo: "wnba/mystics.png" },
+        { rank: 6, team: "Chicago Sky", GP: 13, GW: 4, GL: 9, points_for: 1001, points_against: 1105, logo: "wnba/sky.png" },
+        { rank: 7, team: "Connecticut Sun", GP: 15, GW: 2, GL: 13, points_for: 1140, points_against: 1320, logo: "wnba/sun.png" },
+        
+        // Western Conference
+        { rank: 1, team: "Las Vegas Aces", GP: 13, GW: 10, GL: 3, points_for: 1196, points_against: 1079, logo: "wnba/aces.png" },
+        { rank: 2, team: "Minnesota Lynx", GP: 13, GW: 10, GL: 3, points_for: 1209, points_against: 1079, logo: "wnba/lynx.png" },
+        { rank: 3, team: "Dallas Wings", GP: 13, GW: 8, GL: 5, points_for: 1105, points_against: 1079, logo: "wnba/wings.png" },
+        { rank: 4, team: "Golden State Valkyries", GP: 13, GW: 8, GL: 5, points_for: 1105, points_against: 1079, logo: "wnba/valkyries.png" },
+        { rank: 5, team: "Los Angeles Sparks", GP: 13, GW: 7, GL: 6, points_for: 1118, points_against: 1105, logo: "wnba/sparks.png" },
+        { rank: 6, team: "Portland Fire", GP: 15, GW: 7, GL: 8, points_for: 1275, points_against: 1290, logo: "wnba/fire.png" },
+        { rank: 7, team: "Phoenix Mercury", GP: 15, GW: 4, GL: 11, points_for: 1200, points_against: 1320, logo: "wnba/mercury.png" },
+        { rank: 8, team: "Seattle Storm", GP: 15, GW: 3, GL: 12, points_for: 1170, points_against: 1365, logo: "wnba/storm.png" }
+    ],
+    fixtures: [
+        // Sunday, June 14 - Completed
+        { home: "Minnesota Lynx", away: "Las Vegas Aces", date: "2026-06-14" },
+        { home: "Dallas Wings", away: "Portland Fire", date: "2026-06-14" },
+        { home: "Los Angeles Sparks", away: "Phoenix Mercury", date: "2026-06-14" },
+        { home: "Washington Mystics", away: "New York Liberty", date: "2026-06-14" },
+        { home: "Atlanta Dream", away: "Toronto Tempo", date: "2026-06-14" },
+        
+        // Tuesday, June 16
+        { home: "Las Vegas Aces", away: "Dallas Wings", date: "2026-06-16" },
+        { home: "Portland Fire", away: "Minnesota Lynx", date: "2026-06-16" },
+        { home: "Los Angeles Sparks", away: "Golden State Valkyries", date: "2026-06-16" },
+        
+        // Wednesday, June 17
+        { home: "Toronto Tempo", away: "Indiana Fever", date: "2026-06-17" },
+        
+        // Thursday, June 18
+        { home: "Washington Mystics", away: "Connecticut Sun", date: "2026-06-18" },
+        { home: "New York Liberty", away: "Chicago Sky", date: "2026-06-18" },
+        { home: "Dallas Wings", away: "Golden State Valkyries", date: "2026-06-18" },
+        { home: "Minnesota Lynx", away: "Los Angeles Sparks", date: "2026-06-18" },
+        { home: "Las Vegas Aces", away: "Phoenix Mercury", date: "2026-06-18" },
+        { home: "Seattle Storm", away: "Portland Fire", date: "2026-06-18" },
+        
+        // Friday, June 19
+        { home: "Atlanta Dream", away: "Indiana Fever", date: "2026-06-19" },
+        
+        // Saturday, June 20
+        { home: "Toronto Tempo", away: "Connecticut Sun", date: "2026-06-20" },
+        { home: "Washington Mystics", away: "New York Liberty", date: "2026-06-20" },
+        { home: "Minnesota Lynx", away: "Golden State Valkyries", date: "2026-06-20" },
+        { home: "Indiana Fever", away: "Atlanta Dream", date: "2026-06-20" }
+    ]
+}
 /*
 "NBA": {
     id: "nba",
@@ -2002,6 +2061,22 @@ const matchesData = {
     
     // Matchday 1 - June 7
     { home: "Ranheim TF", away: "Strømmen", home_score: 2, away_score: 2, date: "2026-06-07" }
+],
+
+"WNBA": [
+    // June 14, 2026 results
+    { home: "Las Vegas Aces", away: "Minnesota Lynx", home_score: 100, away_score: 97, date: "2026-06-14" },
+    { home: "Portland Fire", away: "Dallas Wings", home_score: 84, away_score: 83, date: "2026-06-14" },
+    { home: "Los Angeles Sparks", away: "Phoenix Mercury", home_score: 111, away_score: 102, date: "2026-06-14" },
+    
+    // Previous games (for form calculation)
+    { home: "Las Vegas Aces", away: "Seattle Storm", home_score: 95, away_score: 78, date: "2026-06-12" },
+    { home: "Minnesota Lynx", away: "Chicago Sky", home_score: 92, away_score: 80, date: "2026-06-12" },
+    { home: "New York Liberty", away: "Connecticut Sun", home_score: 88, away_score: 72, date: "2026-06-12" },
+    { home: "Indiana Fever", away: "Washington Mystics", home_score: 85, away_score: 82, date: "2026-06-12" },
+    { home: "Atlanta Dream", away: "Toronto Tempo", home_score: 90, away_score: 88, date: "2026-06-12" },
+    { home: "Phoenix Mercury", away: "Dallas Wings", home_score: 95, away_score: 98, date: "2026-06-12" },
+    { home: "Golden State Valkyries", away: "Los Angeles Sparks", home_score: 87, away_score: 85, date: "2026-06-12" }
 ]	
 };
 
