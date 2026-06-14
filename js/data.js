@@ -3,50 +3,7 @@
 
 const leaguesData = {
 
-"Kyrgyzstan Premier League": {
-    id: "kyrgyzstan",
-    logo: "kyrgyzstan/kyrgyzstan.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Muras United", MP: 10, MW: 8, MD: 2, ML: 0, GF: 21, GA: 7, logo: "kyrgyzstan/murasunited.png" },
-        { rank: 2, team: "Asia Talas", MP: 11, MW: 8, MD: 2, ML: 1, GF: 28, GA: 17, logo: "kyrgyzstan/asiat alas.png" },
-        { rank: 3, team: "Alga", MP: 11, MW: 7, MD: 4, ML: 0, GF: 23, GA: 10, logo: "kyrgyzstan/alga.png" },
-        { rank: 4, team: "Bars", MP: 9, MW: 6, MD: 2, ML: 1, GF: 19, GA: 10, logo: "kyrgyzstan/bars.png" },
-        { rank: 5, team: "Ozgon", MP: 10, MW: 6, MD: 2, ML: 2, GF: 19, GA: 11, logo: "kyrgyzstan/ozgon.png" },
-        { rank: 6, team: "Alay Osh", MP: 11, MW: 5, MD: 4, ML: 2, GF: 14, GA: 11, logo: "kyrgyzstan/alayosh.png" },
-        { rank: 7, team: "Aldier", MP: 11, MW: 3, MD: 5, ML: 3, GF: 13, GA: 16, logo: "kyrgyzstan/aldier.png" },
-        { rank: 8, team: "Asiagoal Bishkek", MP: 12, MW: 3, MD: 4, ML: 5, GF: 13, GA: 17, logo: "kyrgyzstan/asiagoal.png" },
-        { rank: 9, team: "Neftchi Kochkor-Ata", MP: 12, MW: 4, MD: 1, ML: 7, GF: 13, GA: 19, logo: "kyrgyzstan/neftchi.png" },
-        { rank: 10, team: "Bishkek City", MP: 11, MW: 3, MD: 3, ML: 5, GF: 10, GA: 13, logo: "kyrgyzstan/bishkekcity.png" },
-        { rank: 11, team: "Toktogul", MP: 12, MW: 4, MD: 0, ML: 8, GF: 11, GA: 20, logo: "kyrgyzstan/toktogul.png" },
-        { rank: 12, team: "Ilbirs", MP: 10, MW: 2, MD: 5, ML: 3, GF: 12, GA: 15, logo: "kyrgyzstan/ilbirs.png" },
-        { rank: 13, team: "Talant", MP: 10, MW: 2, MD: 4, ML: 4, GF: 12, GA: 13, logo: "kyrgyzstan/talant.png" },
-        { rank: 14, team: "Dordoi Bishkek", MP: 11, MW: 3, MD: 1, ML: 7, GF: 12, GA: 17, logo: "kyrgyzstan/dordoibishkek.png" },
-        { rank: 15, team: "Abdysh-Ata", MP: 12, MW: 2, MD: 1, ML: 9, GF: 10, GA: 20, logo: "kyrgyzstan/abdyshata.png" },
-        { rank: 16, team: "Kyrgyzaltyn", MP: 11, MW: 0, MD: 2, ML: 9, GF: 9, GA: 23, logo: "kyrgyzstan/kyrgyzaltyn.png" }
-    ],
-    fixtures: [
-        // Round 12 - June 12
-       // { home: "Bishkek City", away: "Asia Talas", date: "2026-06-12" },
-       // { home: "Talant", away: "Alay Osh", date: "2026-06-12" },
-        
-        // Round 12 - June 13
-        { home: "Aldier", away: "Ozgon", date: "2026-06-13" },
-        { home: "Bars", away: "Kyrgyzaltyn", date: "2026-06-13" },
-        { home: "Dordoi Bishkek", away: "Ilbirs", date: "2026-06-13" },
-        { home: "Muras United", away: "Alga", date: "2026-06-13" },
-        
-        // Round 13 - June 23
-        { home: "Alay Osh", away: "Aldier", date: "2026-06-23" },
-        { home: "Alga", away: "Bars", date: "2026-06-23" },
-        { home: "Asia Talas", away: "Muras United", date: "2026-06-23" },
-        { home: "Asiagoal Bishkek", away: "Bishkek City", date: "2026-06-23" },
-        { home: "Ilbirs", away: "Talant", date: "2026-06-23" },
-        { home: "Kyrgyzaltyn", away: "Abdysh-Ata", date: "2026-06-23" },
-        { home: "Neftchi Kochkor-Ata", away: "Dordoi Bishkek", date: "2026-06-23" },
-        { home: "Ozgon", away: "Toktogul", date: "2026-06-23" }
-    ]
-},
+
 
 /*
 
@@ -314,12 +271,7 @@ const leaguesData = {
         { rank: 18, team: "Chaco For Ever", MP: 16, MW: 1, MD: 6, ML: 9, GF: 12, GA: 22, logo: "argentina/chacoforever.png" }
     ],
     fixtures: [
-        { home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
-        { home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
-		{ home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
-    { home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
-    
-    // Tomorrow's matches - June 14
+	 // Tomorrow's matches - June 14
     { home: "Almirante Brown", away: "Godoy Cruz", date: "2026-06-14" },
     { home: "Estudiantes", away: "All Boys", date: "2026-06-14" },
     { home: "Deportivo Madryn", away: "San Miguel", date: "2026-06-14" },
@@ -327,6 +279,10 @@ const leaguesData = {
     { home: "Mitre", away: "Los Andes", date: "2026-06-14" },
     { home: "Racing (C)", away: "Chaco For Ever", date: "2026-06-14" },
     { home: "Central Norte", away: "San Telmo", date: "2026-06-14" }
+       // { home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
+        //{ home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
+		//{ home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
+   // { home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
     ]
 },
 
@@ -355,23 +311,22 @@ const leaguesData = {
         { rank: 18, team: "Almagro", MP: 16, MW: 4, MD: 4, ML: 8, GF: 11, GA: 18, logo: "argentina/almagro.png" }
     ],
     fixtures: [
-        { home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
-        { home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
-        { home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
-        { home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
-        { home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
-		// Existing fixtures
-    { home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
-    { home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
-    { home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
-    { home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
-    { home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
-    
-    // Tomorrow's matches - June 14
-    { home: "Gimnasia de Jujuy", away: "San Martín", date: "2026-06-14" },
+	// Tomorrow's matches - June 14
+    { home: "Gimnasia Jujuy", away: "San Martín T.", date: "2026-06-14" },
     { home: "Patronato", away: "Atlético Rafaela", date: "2026-06-14" },
     { home: "Temperley", away: "Guemes", date: "2026-06-14" },
-    { home: "Deportivo Maipú", away: "Tristan Suarez", date: "2026-06-14" }
+    { home: "Deportivo Maipú", away: "Tristan Suarez", date: "2026-06-14"}
+        //{ home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
+        //{ home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
+       // { home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
+      //  { home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
+      //  { home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
+		// Existing fixtures
+   // { home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
+   // { home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
+    //{ home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
+    //{ home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
+    //{ home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
     ]
 },
 "Australian NPL ACT": {
@@ -392,10 +347,10 @@ const leaguesData = {
         { rank: 11, team: "Canberra White Eagles", MP: 11, MW: 1, MD: 1, ML: 9, GF: 8, GA: 37, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-        { home: "O'Connor Knights.", away: "Tuggeranong United", date: "2026-06-13" },
-        { home: "Canberra White Eagles", away: "Canberra FC", date: "2026-06-13" },
-        { home: "Brindabella", away: "Belconnen", date: "2026-06-13" },
-        { home: "Queanbeyan City", away: "Monaro Panthers", date: "2026-06-13" },
+       // { home: "O'Connor Knights.", away: "Tuggeranong United", date: "2026-06-13" },
+       // { home: "Canberra White Eagles", away: "Canberra FC", date: "2026-06-13" },
+       // { home: "Brindabella", away: "Belconnen", date: "2026-06-13" },
+      //  { home: "Queanbeyan City", away: "Monaro Panthers", date: "2026-06-13" },
         { home: "Canberra Olympic", away: "Tigers", date: "2026-06-14" }
     ]
 },
@@ -611,9 +566,9 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 15
-        { home: "Audax Italiano", away: "La Serena", date: "2026-06-13" },
-        { home: "Everton", away: "Palestino", date: "2026-06-13" },
-        { home: "Colo-Colo", away: "Cobresal", date: "2026-06-13" },
+        //{ home: "Audax Italiano", away: "La Serena", date: "2026-06-13" },
+        //{ home: "Everton", away: "Palestino", date: "2026-06-13" },
+       // { home: "Colo-Colo", away: "Cobresal", date: "2026-06-13" },
         { home: "Ñublense", away: "Huachipato", date: "2026-06-14" },
         { home: "Concepción", away: "Deportes Limache", date: "2026-06-14" },
         { home: "Unión La Calera", away: "Universidad de Chile", date: "2026-06-14" },
@@ -727,12 +682,12 @@ const leaguesData = {
         { home: "Dinamo Brest", away: "Neman", date: "2026-06-13" },
         
         // Matchday 11 - June 14
-        { home: "Dnepr", away: "Arsenal Dzyarzhynsk", date: "2026-06-14" },
-        { home: "Torpedo Zhodino", away: "Slavia-Mozyr", date: "2026-06-14" }
+        { home: "Dnepr Mogilev", away: "Arsenal Dzerzhinsk", date: "2026-06-14" },
+        { home: "Zhodino", away: "Slavia Mozyr", date: "2026-06-14" }
     ]
 },
 
-
+/*
 "Bolivian Primera División": {
     id: "bolivia",
     logo: "bolivia/bolivia.png",
@@ -774,6 +729,40 @@ const leaguesData = {
         { home: "Bolívar", away: "Real Potosí", date: "TBD" }
     ]
 },
+
+*/
+"Finland Veikkausliiga": {
+    id: "chilean-primera-división",
+    logo: "chilean/chileanprimeradivisión.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Inter Turku", MP: 22, MW: 13, MD: 7, ML: 2, GF: 46, GA: 20, logo: "interturku.png" },
+        { rank: 2, team: "Ilves", MP: 22, MW: 14, MD: 3, ML: 5, GF: 47, GA: 27, logo: "ilves.png" },
+        { rank: 3, team: "HJK", MP: 22, MW: 14, MD: 2, ML: 6, GF: 59, GA: 29, logo: "hjk.png" },
+        { rank: 4, team: "KuPS", MP: 22, MW: 13, MD: 5, ML: 4, GF: 39, GA: 23, logo: "kups.png" },
+        { rank: 5, team: "SJK", MP: 22, MW: 12, MD: 5, ML: 5, GF: 45, GA: 31, logo: "sjk.png" },
+        { rank: 6, team: "Gnistan", MP: 22, MW: 7, MD: 7, ML: 8, GF: 34, GA: 39, logo: "gnistan.png" },
+        { rank: 7, team: "VPS", MP: 22, MW: 6, MD: 7, ML: 9, GF: 32, GA: 34, logo: "vps.png" },
+        { rank: 8, team: "FF Jaro", MP: 22, MW: 7, MD: 4, ML: 11, GF: 25, GA: 36, logo: "ffjaro.png" },
+        { rank: 9, team: "IFK Mariehamn", MP: 22, MW: 5, MD: 6, ML: 11, GF: 25, GA: 48, logo: "ifkmariehamn.png" },
+        { rank: 10, team: "Oulu", MP: 22, MW: 5, MD: 3, ML: 14, GF: 30, GA: 48, logo: "oulu.png" },
+        { rank: 11, team: "Haka", MP: 22, MW: 4, MD: 4, ML: 14, GF: 27, GA: 43, logo: "haka.png" },
+        { rank: 12, team: "KTP", MP: 22, MW: 3, MD: 5, ML: 14, GF: 24, GA: 55, logo: "ktp.png" }
+    ],
+    // Add to your data.js fixtures array
+
+fixtures: [
+    // Round 12 - June 17
+    { home: "HJK", away: "Inter Turku", date: "2026-06-17" },
+    { home: "Ilves", away: "Jaro", date: "2026-06-17" },
+    { home: "TPS", away: "KuPS", date: "2026-06-17" },
+    { home: "Gnistan", away: "Lahti", date: "2026-06-17" },
+    { home: "SJK", away: "VPS", date: "2026-06-17" },
+    
+    // Round 12 - June 18
+    { home: "AC Oulu", away: "Mariehamn", date: "2026-06-18" }
+]
+},
 "Kazakhstan First League": {
     id: "kazakhstan-1st",
     logo: "kazakhstan/1stleague.png",
@@ -806,6 +795,51 @@ const leaguesData = {
         // Matchday 10 - June 19
         { home: "Shakhter", away: "Jaiyq Uralsk", date: "2026-06-19" },
         { home: "Khan Tengri", away: "Taraz", date: "2026-06-19" }
+    ]
+},
+
+"Kyrgyzstan Premier League": {
+    id: "kyrgyzstan",
+    logo: "kyrgyzstan/kyrgyzstan.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Muras United", MP: 10, MW: 8, MD: 2, ML: 0, GF: 21, GA: 7, logo: "kyrgyzstan/murasunited.png" },
+        { rank: 2, team: "Asia Talas", MP: 11, MW: 8, MD: 2, ML: 1, GF: 28, GA: 17, logo: "kyrgyzstan/asiat alas.png" },
+        { rank: 3, team: "Alga", MP: 11, MW: 7, MD: 4, ML: 0, GF: 23, GA: 10, logo: "kyrgyzstan/alga.png" },
+        { rank: 4, team: "Bars", MP: 9, MW: 6, MD: 2, ML: 1, GF: 19, GA: 10, logo: "kyrgyzstan/bars.png" },
+        { rank: 5, team: "Ozgon", MP: 10, MW: 6, MD: 2, ML: 2, GF: 19, GA: 11, logo: "kyrgyzstan/ozgon.png" },
+        { rank: 6, team: "Alay Osh", MP: 11, MW: 5, MD: 4, ML: 2, GF: 14, GA: 11, logo: "kyrgyzstan/alayosh.png" },
+        { rank: 7, team: "Aldier", MP: 11, MW: 3, MD: 5, ML: 3, GF: 13, GA: 16, logo: "kyrgyzstan/aldier.png" },
+        { rank: 8, team: "Asiagoal Bishkek", MP: 12, MW: 3, MD: 4, ML: 5, GF: 13, GA: 17, logo: "kyrgyzstan/asiagoal.png" },
+        { rank: 9, team: "Neftchi Kochkor-Ata", MP: 12, MW: 4, MD: 1, ML: 7, GF: 13, GA: 19, logo: "kyrgyzstan/neftchi.png" },
+        { rank: 10, team: "Bishkek City", MP: 11, MW: 3, MD: 3, ML: 5, GF: 10, GA: 13, logo: "kyrgyzstan/bishkekcity.png" },
+        { rank: 11, team: "Toktogul", MP: 12, MW: 4, MD: 0, ML: 8, GF: 11, GA: 20, logo: "kyrgyzstan/toktogul.png" },
+        { rank: 12, team: "Ilbirs", MP: 10, MW: 2, MD: 5, ML: 3, GF: 12, GA: 15, logo: "kyrgyzstan/ilbirs.png" },
+        { rank: 13, team: "Talant", MP: 10, MW: 2, MD: 4, ML: 4, GF: 12, GA: 13, logo: "kyrgyzstan/talant.png" },
+        { rank: 14, team: "Dordoi Bishkek", MP: 11, MW: 3, MD: 1, ML: 7, GF: 12, GA: 17, logo: "kyrgyzstan/dordoibishkek.png" },
+        { rank: 15, team: "Abdysh-Ata", MP: 12, MW: 2, MD: 1, ML: 9, GF: 10, GA: 20, logo: "kyrgyzstan/abdyshata.png" },
+        { rank: 16, team: "Kyrgyzaltyn", MP: 11, MW: 0, MD: 2, ML: 9, GF: 9, GA: 23, logo: "kyrgyzstan/kyrgyzaltyn.png" }
+    ],
+    fixtures: [
+        // Round 12 - June 12
+       // { home: "Bishkek City", away: "Asia Talas", date: "2026-06-12" },
+       // { home: "Talant", away: "Alay Osh", date: "2026-06-12" },
+        
+        // Round 12 - June 13
+       // { home: "Aldier", away: "Ozgon", date: "2026-06-13" },
+        //{ home: "Bars", away: "Kyrgyzaltyn", date: "2026-06-13" },
+      //  { home: "Dordoi Bishkek", away: "Ilbirs", date: "2026-06-13" },
+       // { home: "Muras United", away: "Alga", date: "2026-06-13" },
+        
+        // Round 13 - June 23
+        { home: "Alay Osh", away: "Aldier", date: "2026-06-23" },
+        { home: "Alga", away: "Bars", date: "2026-06-23" },
+        { home: "Asia Talas", away: "Muras United", date: "2026-06-23" },
+        { home: "Asiagoal Bishkek", away: "Bishkek City", date: "2026-06-23" },
+        { home: "Ilbirs", away: "Talant", date: "2026-06-23" },
+        { home: "Kyrgyzaltyn", away: "Abdysh-Ata", date: "2026-06-23" },
+        { home: "Neftchi Kochkor-Ata", away: "Dordoi Bishkek", date: "2026-06-23" },
+        { home: "Ozgon", away: "Toktogul", date: "2026-06-23" }
     ]
 },
 
