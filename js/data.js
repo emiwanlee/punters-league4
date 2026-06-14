@@ -686,7 +686,125 @@ const leaguesData = {
         { home: "Zhodino", away: "Slavia Mozyr", date: "2026-06-14" }
     ]
 },
+"Kazakhstan Premier League": {
+    id: "kazakhstan",
+    logo: "kazakhstan/kazakhstan.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Kairat", MP: 26, MW: 18, MD: 5, ML: 3, GF: 53, GA: 19, logo: "kazakhstan/kairat.png" },
+        { rank: 2, team: "Astana", MP: 26, MW: 17, MD: 6, ML: 3, GF: 66, GA: 30, logo: "kazakhstan/astana.png" },
+        { rank: 3, team: "Tobol", MP: 26, MW: 16, MD: 6, ML: 4, GF: 45, GA: 25, logo: "kazakhstan/tobol.png" },
+        { rank: 4, team: "Yelimay", MP: 26, MW: 14, MD: 6, ML: 6, GF: 47, GA: 31, logo: "kazakhstan/yelimay.png" },
+        { rank: 5, team: "FC Aktobe", MP: 26, MW: 13, MD: 4, ML: 9, GF: 39, GA: 29, logo: "kazakhstan/aktobe.png" },
+        { rank: 6, team: "Zhenys", MP: 26, MW: 8, MD: 12, ML: 6, GF: 37, GA: 30, logo: "kazakhstan/zhenys.png" },
+        { rank: 7, team: "Ordabasy", MP: 26, MW: 9, MD: 8, ML: 9, GF: 37, GA: 28, logo: "kazakhstan/ordabasy.png" },
+        { rank: 8, team: "Okzhetpes", MP: 26, MW: 10, MD: 5, ML: 11, GF: 37, GA: 43, logo: "kazakhstan/okzhetpes.png" },
+        { rank: 9, team: "Kyzyl-Zhar SK", MP: 26, MW: 6, MD: 9, ML: 11, GF: 25, GA: 32, logo: "kazakhstan/kyzylzhar.png" },
+        { rank: 10, team: "Ulytau", MP: 26, MW: 5, MD: 8, ML: 13, GF: 20, GA: 41, logo: "kazakhstan/ulytau.png" },
+        { rank: 11, team: "Kaisar", MP: 26, MW: 3, MD: 13, ML: 10, GF: 24, GA: 42, logo: "kazakhstan/kaisar.png" },
+        { rank: 12, team: "Zhetysu", MP: 26, MW: 4, MD: 9, ML: 13, GF: 19, GA: 43, logo: "kazakhstan/zhetysu.png" },
+        { rank: 13, team: "Atyrau", MP: 26, MW: 4, MD: 7, ML: 15, GF: 22, GA: 45, logo: "kazakhstan/atyrau.png" },
+        { rank: 14, team: "Turan", MP: 26, MW: 4, MD: 4, ML: 18, GF: 25, GA: 58, logo: "kazakhstan/turan.png" }
+    ],
+    fixtures: [
+        // Today's matches - June 14
+        { home: "Ulytau", away: "Zhenys", date: "2026-06-14" },
+        { home: "Astana", away: "FC Irtysh Pavlodar", date: "2026-06-14" },
+        { home: "Yelimay", away: "Ordabasy", date: "2026-06-14" },
+        { home: "FC Aktobe", away: "Altay", date: "2026-06-14" },
+        { home: "Kaspiy Aktau", away: "Kaisar", date: "2026-06-14" },
+        
+        // Matchday 17 - June 17
+        { home: "Kairat", away: "Kyzyl-Zhar SK", date: "2026-06-17" },
+        
+        // Matchday 14 - June 20
+        { home: "Altay", away: "Zhetysu", date: "2026-06-20" },
+        { home: "Zhenys", away: "FC Irtysh Pavlodar", date: "2026-06-20" },
+        { home: "Kaisar", away: "Ulytau", date: "2026-06-20" },
+        { home: "Ordabasy", away: "Kaspiy Aktau", date: "2026-06-20" },
+        
+        // Matchday 14 - June 21
+        { home: "Okzhetpes", away: "Tobol", date: "2026-06-21" },
+        { home: "Kyzyl-Zhar SK", away: "Kairat", date: "2026-06-21" },
+        { home: "Atyrau", away: "Yelimay", date: "2026-06-21" },
+        { home: "FC Aktobe", away: "Astana", date: "2026-06-21" }
+    ]
+},
 
+"Norwegian First Division": {
+    id: "norway",
+    logo: "norway/norway.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Lillestrøm", MP: 30, MW: 25, MD: 5, ML: 0, GF: 87, GA: 18, logo: "norway/lillestrom.png" },
+        { rank: 2, team: "Start", MP: 30, MW: 16, MD: 7, ML: 7, GF: 58, GA: 35, logo: "norway/start.png" },
+        { rank: 3, team: "Kongsvinger", MP: 30, MW: 15, MD: 9, ML: 6, GF: 61, GA: 42, logo: "norway/kongsvinger.png" },
+        { rank: 4, team: "Aalesund", MP: 30, MW: 14, MD: 10, ML: 6, GF: 56, GA: 35, logo: "norway/aalesund.png" },
+        { rank: 5, team: "Egersund", MP: 30, MW: 15, MD: 7, ML: 8, GF: 51, GA: 38, logo: "norway/egersund.png" },
+        { rank: 6, team: "Ranheim TF", MP: 30, MW: 14, MD: 6, ML: 10, GF: 48, GA: 48, logo: "norway/ranheim.png" },
+        { rank: 7, team: "Lyn", MP: 30, MW: 14, MD: 5, ML: 11, GF: 48, GA: 37, logo: "norway/lyn.png" },
+        { rank: 8, team: "Sogndal", MP: 30, MW: 12, MD: 7, ML: 11, GF: 49, GA: 48, logo: "norway/sogndal.png" },
+        { rank: 9, team: "Odd", MP: 30, MW: 8, MD: 9, ML: 13, GF: 37, GA: 50, logo: "norway/odd.png" },
+        { rank: 10, team: "Hødd", MP: 30, MW: 8, MD: 9, ML: 13, GF: 34, GA: 52, logo: "norway/hodd.png" },
+        { rank: 11, team: "Stabæk", MP: 30, MW: 7, MD: 10, ML: 13, GF: 45, GA: 53, logo: "norway/stabaek.png" },
+        { rank: 12, team: "Åsane", MP: 30, MW: 7, MD: 10, ML: 13, GF: 38, GA: 53, logo: "norway/asane.png" },
+        { rank: 13, team: "Raufoss", MP: 30, MW: 7, MD: 9, ML: 14, GF: 43, GA: 56, logo: "norway/raufoss.png" },
+        { rank: 14, team: "Moss", MP: 30, MW: 7, MD: 7, ML: 16, GF: 41, GA: 65, logo: "norway/moss.png" },
+        { rank: 15, team: "Mjoendalen", MP: 30, MW: 6, MD: 7, ML: 17, GF: 36, GA: 71, logo: "norway/mjoendalen.png" },
+        { rank: 16, team: "Skeid", MP: 30, MW: 2, MD: 9, ML: 19, GF: 35, GA: 66, logo: "norway/skeid.png" }
+    ],
+    fixtures: [
+        // Matchday 11 - June 14
+        { home: "Stroemsgodset", away: "Raufoss", date: "2026-06-14" },
+        { home: "Hødd", away: "Kongsvinger", date: "2026-06-14" },
+        { home: "Haugesund", away: "Ranheim TF", date: "2026-06-14" },
+        { home: "Stabæk", away: "Egersund", date: "2026-06-14" },
+        { home: "Åsane", away: "Odd", date: "2026-06-14" },
+        { home: "Lyn", away: "Bryne FK", date: "2026-06-14" },
+        { home: "Sogndal", away: "Moss", date: "2026-06-14" },
+        { home: "Sandnes Ulf", away: "Strømmen", date: "2026-06-14" },
+        
+        // Matchday 12 - June 19-21
+        { home: "Ranheim TF", away: "Lyn", date: "2026-06-19" },
+        { home: "Egersund", away: "Haugesund", date: "2026-06-21" },
+        { home: "Odd", away: "Hødd", date: "2026-06-21" },
+        { home: "Bryne FK", away: "Åsane", date: "2026-06-21" },
+        { home: "Kongsvinger", away: "Stroemsgodset", date: "2026-06-21" },
+        { home: "Moss", away: "Sandnes Ulf", date: "2026-06-21" },
+        { home: "Raufoss", away: "Sogndal", date: "2026-06-21" },
+        { home: "Strømmen", away: "Stabæk", date: "2026-06-21" }
+    ]
+},
+
+
+"Latvia Nakotnes Liga": {
+    id: "latvia",
+    logo: "latvia/latvia.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Ogre United", MP: 26, MW: 18, MD: 4, ML: 4, GF: 66, GA: 20, logo: "latvia/ogreunited.png" },
+        { rank: 2, team: "JDFS Alberts", MP: 26, MW: 17, MD: 7, ML: 2, GF: 60, GA: 24, logo: "latvia/jdfs alberts.png" },
+        { rank: 3, team: "Riga Mariners", MP: 26, MW: 18, MD: 4, ML: 4, GF: 74, GA: 34, logo: "latvia/rigamariners.png" },
+        { rank: 4, team: "Ventspils", MP: 26, MW: 11, MD: 10, ML: 5, GF: 40, GA: 29, logo: "latvia/ventspils.png" },
+        { rank: 5, team: "RFS 2", MP: 26, MW: 11, MD: 8, ML: 7, GF: 46, GA: 31, logo: "latvia/rfs2.png" },
+        { rank: 6, team: "Skanste", MP: 26, MW: 11, MD: 7, ML: 8, GF: 36, GA: 39, logo: "latvia/skanste.png" },
+        { rank: 7, team: "Leevon PPK", MP: 26, MW: 10, MD: 6, ML: 10, GF: 40, GA: 40, logo: "latvia/leevonppk.png" },
+        { rank: 8, team: "Mārupes", MP: 26, MW: 10, MD: 2, ML: 14, GF: 30, GA: 33, logo: "latvia/marupes.png" },
+        { rank: 9, team: "Rēzeknes FA/BJSS", MP: 26, MW: 8, MD: 7, ML: 11, GF: 36, GA: 57, logo: "latvia/rezeknes.png" },
+        { rank: 10, team: "Smiltene", MP: 26, MW: 8, MD: 4, ML: 14, GF: 46, GA: 48, logo: "latvia/smiltene.png" },
+        { rank: 11, team: "Riga II", MP: 26, MW: 6, MD: 6, ML: 14, GF: 35, GA: 43, logo: "latvia/rigaii.png" },
+        { rank: 12, team: "Tukums II", MP: 26, MW: 7, MD: 2, ML: 17, GF: 37, GA: 60, logo: "latvia/tukumsii.png" },
+        { rank: 13, team: "AFA Olaine", MP: 26, MW: 6, MD: 4, ML: 16, GF: 39, GA: 88, logo: "latvia/afaolaine.png" },
+        { rank: 14, team: "Augšdaugava", MP: 26, MW: 3, MD: 5, ML: 18, GF: 19, GA: 58, logo: "latvia/augsdaugava.png" }
+    ],
+    fixtures: [
+        { home: "Tukums 2000 2", away: "Valmiera", date: "2026-06-14" },
+        { home: "RFS 2", away: "Rezekne", date: "2026-06-14" },
+        { home: "Marupe", away: "JFK Ventspils", date: "2026-06-14" },
+        { home: "Riga FC 2", away: "FK Smiltene", date: "2026-06-14" },
+        { home: "Skanste", away: "Riga Mariners", date: "2026-06-14" }
+    ]
+},  
 /*
 "Bolivian Primera División": {
     id: "bolivia",
@@ -1735,10 +1853,156 @@ const matchesData = {
     { home: "VPS", away: "KuPS", home_score: 1, away_score: 1, date: "2026-06-14" },
     { home: "IFK Mariehamn", away: "Gnistan", home_score: 0, away_score: 3, date: "2026-06-14" },
     { home: "FC Lahti", away: "SJK", home_score: 2, away_score: 3, date: "2026-06-14" }
-]
-    
+],
 
-	
+  "Kazakhstan Premier League": [
+    // Matchday 11 - May 22-23
+    { home: "Ordabasy", away: "Zhetysu", home_score: 2, away_score: 1, date: "2026-05-22" },
+    { home: "Altay", away: "Okzhetpes", home_score: 0, away_score: 1, date: "2026-05-22" },
+    { home: "Astana", away: "Ulytau", home_score: 3, away_score: 0, date: "2026-05-22" },
+    { home: "Kaspiy Aktau", away: "FC Irtysh Pavlodar", home_score: 2, away_score: 2, date: "2026-05-22" },
+    { home: "Zhetysu", away: "Atyrau", home_score: 0, away_score: 0, date: "2026-05-23" },
+    { home: "Yelimay", away: "Zhenys", home_score: 2, away_score: 1, date: "2026-05-23" },
+    { home: "Kairat", away: "Kaisar", home_score: 0, away_score: 0, date: "2026-05-23" },
+    { home: "FC Aktobe", away: "Kyzyl-Zhar SK", home_score: 0, away_score: 0, date: "2026-05-23" },
+    { home: "Tobol", away: "Ordabasy", home_score: 0, away_score: 3, date: "2026-05-23" },
+    
+    // Matchday 12 - May 27-28
+    { home: "Altay", away: "Astana", home_score: 1, away_score: 1, date: "2026-05-27" },
+    { home: "FC Irtysh Pavlodar", away: "Ulytau", home_score: 1, away_score: 1, date: "2026-05-27" },
+    { home: "Okzhetpes", away: "FC Aktobe", home_score: 2, away_score: 2, date: "2026-05-28" },
+    { home: "Kyzyl-Zhar SK", away: "Zhetysu", home_score: 3, away_score: 2, date: "2026-05-28" },
+    { home: "Atyrau", away: "Tobol", home_score: 1, away_score: 1, date: "2026-05-28" },
+    { home: "Zhenys", away: "Kaspiy Aktau", home_score: 1, away_score: 0, date: "2026-05-28" },
+    { home: "Kaisar", away: "Yelimay", home_score: 2, away_score: 3, date: "2026-05-28" },
+    { home: "Ordabasy", away: "Kairat", home_score: 2, away_score: 1, date: "2026-05-28" },
+    
+    // Matchday 13 - June 13
+    { home: "Tobol", away: "Kyzyl-Zhar SK", home_score: 2, away_score: 0, date: "2026-06-13" },
+    { home: "Zhetysu", away: "Okzhetpes", home_score: 2, away_score: 2, date: "2026-06-13" },
+    { home: "Kairat", away: "Atyrau", home_score: 1, away_score: 1, date: "2026-06-13" }
+],
+
+
+"Latvia Nakotnes Liga": [
+    // Matchday 7 - May 9-10
+    { home: "Ventspils", away: "Metta/LU", home_score: 0, away_score: 1, date: "2026-05-09" },
+    { home: "Riga Mariners", away: "Smiltene", home_score: 1, away_score: 0, date: "2026-05-09" },
+    { home: "Skanste", away: "RFS 2", home_score: 4, away_score: 0, date: "2026-05-10" },
+    { home: "Saldus SS/Leevon", away: "Riga II", home_score: 3, away_score: 2, date: "2026-05-10" },
+    
+    // Matchday 8 - May 13-17
+    { home: "Smiltene", away: "SK Super Nova II", home_score: 0, away_score: 2, date: "2026-05-13" },
+    { home: "Riga Mariners", away: "Valmiera", home_score: 3, away_score: 1, date: "2026-05-16" },
+    { home: "Rēzeknes FA/BJSS", away: "Tukums II", home_score: 1, away_score: 4, date: "2026-05-16" },
+    { home: "Metta/LU", away: "JDFS Alberts", home_score: 4, away_score: 1, date: "2026-05-16" },
+    { home: "RFS 2", away: "Saldus SS/Leevon", home_score: 1, away_score: 2, date: "2026-05-16" },
+    { home: "Riga II", away: "Mārupes", home_score: 0, away_score: 4, date: "2026-05-17" },
+    
+    // Matchday 9 - May 23-26
+    { home: "Mārupes", away: "RFS 2", home_score: 1, away_score: 4, date: "2026-05-23" },
+    { home: "Rēzeknes FA/BJSS", away: "Riga II", home_score: 2, away_score: 1, date: "2026-05-23" },
+    { home: "Riga Mariners", away: "Metta/LU", home_score: 2, away_score: 2, date: "2026-05-23" },
+    { home: "Saldus SS/Leevon", away: "Ventspils", home_score: 2, away_score: 1, date: "2026-05-23" },
+    { home: "Tukums II", away: "Smiltene", home_score: 1, away_score: 1, date: "2026-05-24" },
+    { home: "JDFS Alberts", away: "Skanste", home_score: 4, away_score: 1, date: "2026-05-24" },
+    { home: "SK Super Nova II", away: "Valmiera", home_score: 0, away_score: 0, date: "2026-05-26" },
+    
+    // Matchday 2 - May 31
+    { home: "JDFS Alberts", away: "Tukums II", home_score: 6, away_score: 1, date: "2026-05-31" },
+    
+    // Matchday 10 - June 13
+    { home: "JDFS Alberts", away: "Saldus SS/Leevon", home_score: 0, away_score: 0, date: "2026-06-13" },
+    { home: "Metta/LU", away: "SK Super Nova II", home_score: 7, away_score: 3, date: "2026-06-13" }
+],
+
+"Norwegian First Division": [
+    // Matchday 3 - April 17-20
+    { home: "Ranheim TF", away: "Raufoss", home_score: 5, away_score: 1, date: "2026-04-17" },
+    { home: "Hødd", away: "Haugesund", home_score: 0, away_score: 2, date: "2026-04-18" },
+    { home: "Kongsvinger", away: "Moss", home_score: 2, away_score: 1, date: "2026-04-18" },
+    { home: "Stroemsgodset", away: "Sogndal", home_score: 3, away_score: 0, date: "2026-04-18" },
+    { home: "Egersund", away: "Bryne FK", home_score: 1, away_score: 0, date: "2026-04-19" },
+    { home: "Odd", away: "Stabæk", home_score: 2, away_score: 2, date: "2026-04-19" },
+    { home: "Åsane", away: "Strømmen", home_score: 4, away_score: 5, date: "2026-04-19" },
+    { home: "Lyn", away: "Sandnes Ulf", home_score: 0, away_score: 2, date: "2026-04-20" },
+    
+    // Matchday 4 - April 25-27
+    { home: "Sogndal", away: "Åsane", home_score: 2, away_score: 0, date: "2026-04-25" },
+    { home: "Strømmen", away: "Kongsvinger", home_score: 2, away_score: 2, date: "2026-04-25" },
+    { home: "Bryne FK", away: "Odd", home_score: 1, away_score: 2, date: "2026-04-25" },
+    { home: "Raufoss", away: "Hødd", home_score: 1, away_score: 1, date: "2026-04-26" },
+    { home: "Sandnes Ulf", away: "Stroemsgodset", home_score: 1, away_score: 1, date: "2026-04-26" },
+    { home: "Stabæk", away: "Haugesund", home_score: 3, away_score: 2, date: "2026-04-26" },
+    { home: "Moss", away: "Lyn", home_score: 2, away_score: 1, date: "2026-04-26" },
+    { home: "Egersund", away: "Ranheim TF", home_score: 3, away_score: 0, date: "2026-04-27" },
+    
+    // Matchday 5 - May 1
+    { home: "Hødd", away: "Åsane", home_score: 1, away_score: 0, date: "2026-05-01" },
+    { home: "Bryne FK", away: "Sogndal", home_score: 3, away_score: 3, date: "2026-05-01" },
+    { home: "Lyn", away: "Stabæk", home_score: 0, away_score: 4, date: "2026-05-01" },
+    { home: "Haugesund", away: "Sandnes Ulf", home_score: 2, away_score: 0, date: "2026-05-01" },
+    { home: "Kongsvinger", away: "Egersund", home_score: 2, away_score: 1, date: "2026-05-01" },
+    { home: "Stroemsgodset", away: "Strømmen", home_score: 3, away_score: 0, date: "2026-05-01" },
+    { home: "Odd", away: "Raufoss", home_score: 1, away_score: 0, date: "2026-05-01" },
+    { home: "Ranheim TF", away: "Moss", home_score: 4, away_score: 0, date: "2026-05-01" },
+    
+    // Matchday 1 - May 6
+    { home: "Egersund", away: "Raufoss", home_score: 2, away_score: 1, date: "2026-05-06" },
+    
+    // Matchday 6 - May 8-11
+    { home: "Ranheim TF", away: "Kongsvinger", home_score: 1, away_score: 1, date: "2026-05-08" },
+    { home: "Sandnes Ulf", away: "Stabæk", home_score: 0, away_score: 1, date: "2026-05-10" },
+    { home: "Raufoss", away: "Lyn", home_score: 0, away_score: 1, date: "2026-05-10" },
+    { home: "Sogndal", away: "Haugesund", home_score: 5, away_score: 1, date: "2026-05-10" },
+    { home: "Moss", away: "Bryne FK", home_score: 2, away_score: 3, date: "2026-05-10" },
+    { home: "Strømmen", away: "Hødd", home_score: 1, away_score: 2, date: "2026-05-10" },
+    { home: "Åsane", away: "Stroemsgodset", home_score: 0, away_score: 3, date: "2026-05-10" },
+    { home: "Egersund", away: "Odd", home_score: 0, away_score: 1, date: "2026-05-11" },
+    
+    // Matchday 7 - May 15-16
+    { home: "Sandnes Ulf", away: "Egersund", home_score: 4, away_score: 2, date: "2026-05-15" },
+    { home: "Bryne FK", away: "Strømmen", home_score: 4, away_score: 2, date: "2026-05-16" },
+    { home: "Odd", away: "Moss", home_score: 2, away_score: 3, date: "2026-05-16" },
+    { home: "Stroemsgodset", away: "Ranheim TF", home_score: 5, away_score: 4, date: "2026-05-16" },
+    { home: "Lyn", away: "Kongsvinger", home_score: 0, away_score: 3, date: "2026-05-16" },
+    { home: "Haugesund", away: "Åsane", home_score: 1, away_score: 1, date: "2026-05-16" },
+    { home: "Hødd", away: "Sogndal", home_score: 2, away_score: 2, date: "2026-05-16" },
+    { home: "Stabæk", away: "Raufoss", home_score: 1, away_score: 2, date: "2026-05-16" },
+    
+    // Matchday 8 - May 20
+    { home: "Strømmen", away: "Haugesund", home_score: 0, away_score: 7, date: "2026-05-20" },
+    { home: "Raufoss", away: "Bryne FK", home_score: 3, away_score: 0, date: "2026-05-20" },
+    { home: "Kongsvinger", away: "Odd", home_score: 4, away_score: 2, date: "2026-05-20" },
+    { home: "Åsane", away: "Sandnes Ulf", home_score: 2, away_score: 0, date: "2026-05-20" },
+    { home: "Sogndal", away: "Stabæk", home_score: 2, away_score: 2, date: "2026-05-20" },
+    { home: "Egersund", away: "Lyn", home_score: 0, away_score: 0, date: "2026-05-20" },
+    { home: "Moss", away: "Stroemsgodset", home_score: 1, away_score: 1, date: "2026-05-20" },
+    { home: "Ranheim TF", away: "Hødd", home_score: 3, away_score: 2, date: "2026-05-20" },
+    
+    // Matchday 9 - May 25
+    { home: "Lyn", away: "Strømmen", home_score: 1, away_score: 0, date: "2026-05-25" },
+    { home: "Stroemsgodset", away: "Bryne FK", home_score: 1, away_score: 0, date: "2026-05-25" },
+    { home: "Stabæk", away: "Kongsvinger", home_score: 2, away_score: 0, date: "2026-05-25" },
+    { home: "Hødd", away: "Egersund", home_score: 3, away_score: 1, date: "2026-05-25" },
+    { home: "Haugesund", away: "Moss", home_score: 3, away_score: 1, date: "2026-05-25" },
+    { home: "Odd", away: "Ranheim TF", home_score: 3, away_score: 1, date: "2026-05-25" },
+    { home: "Åsane", away: "Raufoss", home_score: 3, away_score: 0, date: "2026-05-25" },
+    { home: "Sandnes Ulf", away: "Sogndal", home_score: 2, away_score: 0, date: "2026-05-25" },
+    
+    // Matchday 10 - May 30-31
+    { home: "Moss", away: "Stabæk", home_score: 2, away_score: 2, date: "2026-05-30" },
+    { home: "Odd", away: "Lyn", home_score: 3, away_score: 0, date: "2026-05-30" },
+    { home: "Raufoss", away: "Haugesund", home_score: 3, away_score: 4, date: "2026-05-31" },
+    { home: "Kongsvinger", away: "Åsane", home_score: 3, away_score: 1, date: "2026-05-31" },
+    { home: "Egersund", away: "Stroemsgodset", home_score: 0, away_score: 5, date: "2026-05-31" },
+    { home: "Bryne FK", away: "Hødd", home_score: 1, away_score: 0, date: "2026-05-31" },
+    { home: "Strømmen", away: "Sogndal", home_score: 2, away_score: 3, date: "2026-05-31" },
+    { home: "Ranheim TF", away: "Sandnes Ulf", home_score: 5, away_score: 1, date: "2026-05-31" },
+    
+    // Matchday 1 - June 7
+    { home: "Ranheim TF", away: "Strømmen", home_score: 2, away_score: 2, date: "2026-06-07" }
+]	
 };
 
 console.log("✅ Matches data loaded from data.js");
