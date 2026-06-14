@@ -636,14 +636,14 @@ const leaguesData = {
         { team: "Changchun Yatai", MP: 30, MW: 4, MD: 7, ML: 19, GF: 26, GA: 52, logo: "china/changchunlogo.png" }
     ],
     fixtures: [
-        { home: "Qingdao Hainiu", away: "Yunnan Yukun", date: "2026-06-15" },
-        { home: "Shenyang Urban", away: "Shandong Taishan", date: "2026-06-15" },
+        { home: "Qingdao Hainiu", away: "Yunnan Yukun", date: "2026-06-26" },
+        { home: "Shenyang Urban", away: "Shandong Taishan", date: "2026-06-27" },
         { home: "Henan", away: "Shanghai Port", date: "2026-06-15" },
-        { home: "Shenzhen Peng City", away: "Chengdu Rongcheng", date: "2026-06-15" },
-        { home: "Chongqing Tonglianglong", away: "Tianjin Jinmen Tiger", date: "2026-06-15" },
-        { home: "Beijing Guoan", away: "Wuhan Three Towns", date: "2026-06-15" },
-        { home: "Qingdao Youth Island", away: "Zhejiang", date: "2026-06-15" },
-        { home: "Dalian Yingbo", away: "Shanghai Shenhua", date: "2026-06-15" }
+        { home: "Shenzhen Peng City", away: "Chengdu Rongcheng", date: "2026-06-27" },
+        { home: "Chongqing Tonglianglong", away: "Tianjin Jinmen Tiger", date: "2026-06-27" },
+        { home: "Beijing Guoan", away: "Wuhan Three Towns", date: "2026-06-27" },
+        { home: "Qingdao Youth Island", away: "Zhejiang", date: "2026-06-28" },
+        { home: "Dalian Yingbo", away: "Shanghai Shenhua", date: "2026-06-28" }
     ]
 },
 "Belarusian Premier League": {
