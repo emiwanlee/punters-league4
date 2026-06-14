@@ -271,18 +271,30 @@ const leaguesData = {
         { rank: 18, team: "Chaco For Ever", MP: 16, MW: 1, MD: 6, ML: 9, GF: 12, GA: 22, logo: "argentina/chacoforever.png" }
     ],
     fixtures: [
-	 // Tomorrow's matches - June 14
-    { home: "Almirante Brown", away: "Godoy Cruz", date: "2026-06-14" },
-    { home: "Estudiantes", away: "All Boys", date: "2026-06-14" },
-    { home: "Deportivo Madryn", away: "San Miguel", date: "2026-06-14" },
-    { home: "Ferro", away: "Acassuso", date: "2026-06-14" },
-    { home: "Mitre", away: "Los Andes", date: "2026-06-14" },
-    { home: "Racing (C)", away: "Chaco For Ever", date: "2026-06-14" },
-    { home: "Central Norte", away: "San Telmo", date: "2026-06-14" }
-       // { home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
-        //{ home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
-		//{ home: "Def. de Belgrano", away: "Colon Santa Fe", date: "2026-06-13" },
-   // { home: "Ciudad Bolivar", away: "Deportivo Moron", date: "2026-06-13" },
+	 // Round 16 - June 17
+        { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
+        
+        // Round 4 (makeup) - June 20
+        { home: "Ciudad Bolivar", away: "CA Estudiantes", date: "2026-06-20" },
+        { home: "Colegiales", away: "Quilmes", date: "2026-06-20" },
+        { home: "San Telmo", away: "Racing Cordoba", date: "2026-06-20" },
+        { home: "Acassuso", away: "San Miguel", date: "2026-06-20" },
+        { home: "Almagro", away: "Atletico Atlanta", date: "2026-06-20" },
+        { home: "Nueva Chicago", away: "Atl. Rafaela", date: "2026-06-20" },
+        { home: "Chaco For Ever", away: "Colon Santa Fe", date: "2026-06-20" },
+        
+        // Round 19 - June 21
+        { home: "Deportivo Madryn", away: "Los Andes", date: "2026-06-21" },
+        { home: "Almirante Brown", away: "CA Mitre", date: "2026-06-21" },
+        { home: "Chacarita Juniors", away: "Tristan Suarez", date: "2026-06-21" },
+        { home: "Def. de Belgrano", away: "All Boys", date: "2026-06-21" },
+        { home: "Ferro", away: "Deportivo Moron", date: "2026-06-21" },
+        { home: "Patronato", away: "Midland", date: "2026-06-21" },
+        { home: "San Martin S.J.", away: "Agropecuario", date: "2026-06-21" },
+        { home: "Club A. Guemes", away: "Gimnasia Jujuy", date: "2026-06-21" },
+        { home: "Temperley", away: "San Martin T.", date: "2026-06-21" },
+        { home: "Central Norte", away: "Godoy Cruz", date: "2026-06-21" },
+        { home: "Deportivo Maipu", away: "Gimnasia y Tiro", date: "2026-06-21" }
     ]
 },
 
@@ -311,22 +323,30 @@ const leaguesData = {
         { rank: 18, team: "Almagro", MP: 16, MW: 4, MD: 4, ML: 8, GF: 11, GA: 18, logo: "argentina/almagro.png" }
     ],
     fixtures: [
-	// Tomorrow's matches - June 14
-    { home: "Gimnasia Jujuy", away: "San Martín T.", date: "2026-06-14" },
-    { home: "Patronato", away: "Atlético Rafaela", date: "2026-06-14" },
-    { home: "Temperley", away: "Guemes", date: "2026-06-14" },
-    { home: "Deportivo Maipú", away: "Tristan Suarez", date: "2026-06-14"}
-        //{ home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
-        //{ home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
-       // { home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
-      //  { home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
-      //  { home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
-		// Existing fixtures
-   // { home: "Midland", away: "Atletico Atlanta", date: "2026-06-13" },
-   // { home: "Colegiales", away: "San Martin T.", date: "2026-06-13" },
-    //{ home: "Almagro", away: "Agropecuario", date: "2026-06-13" },
-    //{ home: "Nueva Chicago", away: "Chacarita Juniors", date: "2026-06-13" },
-    //{ home: "Quilmes", away: "Gimnasia y Tiro", date: "2026-06-13" },
+	// Round 16 - June 17
+        { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
+        
+        // Round 4 (makeup) - June 20
+        { home: "Ciudad Bolivar", away: "CA Estudiantes", date: "2026-06-20" },
+        { home: "Colegiales", away: "Quilmes", date: "2026-06-20" },
+        { home: "San Telmo", away: "Racing Cordoba", date: "2026-06-20" },
+        { home: "Acassuso", away: "San Miguel", date: "2026-06-20" },
+        { home: "Almagro", away: "Atletico Atlanta", date: "2026-06-20" },
+        { home: "Nueva Chicago", away: "Atl. Rafaela", date: "2026-06-20" },
+        { home: "Chaco For Ever", away: "Colon Santa Fe", date: "2026-06-20" },
+        
+        // Round 19 - June 21
+        { home: "Deportivo Madryn", away: "Los Andes", date: "2026-06-21" },
+        { home: "Almirante Brown", away: "CA Mitre", date: "2026-06-21" },
+        { home: "Chacarita Juniors", away: "Tristan Suarez", date: "2026-06-21" },
+        { home: "Def. de Belgrano", away: "All Boys", date: "2026-06-21" },
+        { home: "Ferro", away: "Deportivo Moron", date: "2026-06-21" },
+        { home: "Patronato", away: "Midland", date: "2026-06-21" },
+        { home: "San Martin S.J.", away: "Agropecuario", date: "2026-06-21" },
+        { home: "Club A. Guemes", away: "Gimnasia Jujuy", date: "2026-06-21" },
+        { home: "Temperley", away: "San Martin T.", date: "2026-06-21" },
+        { home: "Central Norte", away: "Godoy Cruz", date: "2026-06-21" },
+        { home: "Deportivo Maipu", away: "Gimnasia y Tiro", date: "2026-06-21" }
     ]
 },
 "Australian NPL ACT": {
@@ -347,14 +367,15 @@ const leaguesData = {
         { rank: 11, team: "Canberra White Eagles", MP: 11, MW: 1, MD: 1, ML: 9, GF: 8, GA: 37, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-       // { home: "O'Connor Knights.", away: "Tuggeranong United", date: "2026-06-13" },
-       // { home: "Canberra White Eagles", away: "Canberra FC", date: "2026-06-13" },
-       // { home: "Brindabella", away: "Belconnen", date: "2026-06-13" },
-      //  { home: "Queanbeyan City", away: "Monaro Panthers", date: "2026-06-13" },
-        { home: "Canberra Olympic", away: "Tigers", date: "2026-06-14" }
+       // Round 15 - June 20
+        { home: "Canberra Olympic", away: "Monaro Panthers", date: "2026-06-20" },
+        { home: "Brindabella", away: "O'Connor Knights", date: "2026-06-20" },
+        { home: "Tuggeranong Utd", away: "Canberra White Eagles", date: "2026-06-20" },
+        { home: "Belconnen Utd.", away: "Queanbeyan City", date: "2026-06-20" },
+        { home: "Tigers FC", away: "Canberra FC", date: "2026-06-20" }
     ]
 },
-/*
+
 "Brazilian U-20 League": {
     id: "brazil-u20",
     logo: "brazil/u20.png",
@@ -382,18 +403,34 @@ const leaguesData = {
         { rank: 20, team: "Juventude U-20", MP: 14, MW: 1, MD: 3, ML: 10, GF: 12, GA: 35, logo: "brazil/juventudeu20.png" }
     ],
     fixtures: [
-	   // { home: "Botafogo U-20", away: "Criciuma U-20", date: "2026-06-10" },	    
-	   // { home: "Corinthians U-20", away: "Avaí U-20", date: "2026-06-10" },	    
-       // { home: "Juventude U-20", away: "Bahia U-20", date: "2026-06-10" },	    
-        //{ home: "Vitória U-20", away: "América (MG) U-20", date: "2026-06-10" },
-	   // { home: "Grêmio U-20", away: "Fluminense U-20", date: "2026-06-10" },
-        { home: "Cruzeiro U-20", away: "Fortaleza U-20", date: "2026-06-11" },
-        { home: "São Paulo U-20", away: "Bragantino U-20", date: "2026-06-11" },
-        { home: "Vasco da Gama U-20", away: "Cuiabá U-20", date: "2026-06-11" },
-        { home: "Palmeiras U-20", away: "Santos U-20", date: "2026-06-11" }
-    ]
+	    // Round 16 - June 16
+        { home: "América MG U20", away: "Santos U20", date: "2026-06-16" },
+        { home: "Athletico-PR U20", away: "Cruzeiro U20", date: "2026-06-16" },
+        { home: "Criciuma U20", away: "Palmeiras U20", date: "2026-06-16" },
+        
+        // Round 16 - June 17
+        { home: "Bahia U20", away: "Vasco U20", date: "2026-06-17" },
+        { home: "Botafogo U20", away: "Grêmio U20", date: "2026-06-17" },
+        { home: "Corinthians U20", away: "Vitória U20", date: "2026-06-17" },
+        { home: "Flamengo U20", away: "Cuiabá U20", date: "2026-06-17" },
+        { home: "Fortaleza U20", away: "Avaí U20", date: "2026-06-17" },
+        { home: "Juventude U20", away: "São Paulo U20", date: "2026-06-17" },
+        { home: "RB Bragantino U20", away: "Fluminense U20", date: "2026-06-17" },
+        
+        // Round 17 - June 20
+        { home: "Avaí U20", away: "Juventude U20", date: "2026-06-20" },
+        { home: "Cruzeiro U20", away: "Corinthians U20", date: "2026-06-20" },
+        { home: "Fluminense U20", away: "Athletico-PR U20", date: "2026-06-20" },
+        { home: "Grêmio U20", away: "Fortaleza U20", date: "2026-06-20" },
+        { home: "Santos U20", away: "Bahia U20", date: "2026-06-20" },
+        { home: "São Paulo U20", away: "Flamengo U20", date: "2026-06-20" },
+        { home: "Vasco U20", away: "RB Bragantino U20", date: "2026-06-20" },
+        { home: "Vitória U20", away: "Botafogo U20", date: "2026-06-20" },
+        { home: "Cuiabá U20", away: "Criciuma U20", date: "2026-06-20" },
+        { home: "Palmeiras U20", away: "América MG U20", date: "2026-06-20" }
+		]
 },
-
+/*
 "Japanese J1 League": {
     id: "j1-league",
     logo: "japan/j1logo.png",
@@ -509,37 +546,32 @@ const leaguesData = {
         { rank: 20, team: "Paysandu", MP: 38, MW: 5, MD: 13, ML: 20, GF: 36, GA: 52, logo: "brazil/paysandu.png" }
     ],
     fixtures: [
-        // June 8
-        //{ home: "CRB", away: "São Bernardo", date: "2026-06-08" },
-        
-        // June 9
-       // { home: "Vila Nova", away: "Botafogo", date: "2026-06-09" },
-       // { home: "América-MG", away: "Atlético Goianiense", date: "2026-06-09" },
-       // { home: "Ponte Preta", away: "Cuiabá", date: "2026-06-09" },
-       // { home: "Náutico", away: "Fortaleza", date: "2026-06-09" },
-        
-        // June 11
-        //{ home: "Ceará", away: "Avaí", date: "2026-06-11" },
-       // { home: "Goiás", away: "Novorizontino", date: "2026-06-11" },
-       // { home: "Sport", away: "Athletic (MG)", date: "2026-06-11" },
-        
-        // June 12
-       // { home: "Atlético Goianiense", away: "CRB", date: "2026-06-12" },
-        
-        // June 14
-        { home: "Juventude", away: "Ponte Preta", date: "2026-06-14" },
-        { home: "São Bernardo", away: "Sport", date: "2026-06-14" },
-        { home: "Cuiabá", away: "Vila Nova", date: "2026-06-14" },
-        { home: "Athletic (MG)", away: "Goiás", date: "2026-06-14" },
-        { home: "Novorizontino", away: "Náutico", date: "2026-06-14" },
-        { home: "Botafogo", away: "Operário Ferroviário", date: "2026-06-14" },
-        
-        // June 16
+       // Tuesday, June 16
         { home: "Criciúma", away: "Ceará", date: "2026-06-16" },
         { home: "Londrina", away: "Avaí", date: "2026-06-16" },
         
-        // June 17
-        { home: "Fortaleza", away: "América-MG", date: "2026-06-17" }
+        // Wednesday, June 17
+        { home: "Fortaleza", away: "América-MG", date: "2026-06-17" },
+        
+        // Friday, June 19
+        { home: "Sport", away: "Atlético Goianiense", date: "2026-06-19" },
+        
+        // Saturday, June 20
+        { home: "Londrina", away: "Athletic (MG)", date: "2026-06-20" },
+        { home: "Vila Nova", away: "Náutico", date: "2026-06-20" },
+        { home: "Ceará", away: "Botafogo", date: "2026-06-20" },
+        
+        // Sunday, June 21
+        { home: "Avaí", away: "Cuiabá", date: "2026-06-21" },
+        { home: "São Bernardo", away: "Juventude", date: "2026-06-21" },
+        { home: "CRB", away: "Fortaleza", date: "2026-06-21" },
+        { home: "Goiás", away: "Operário Ferroviário", date: "2026-06-21" },
+        
+        // Tuesday, June 23
+        { home: "Ponte Preta", away: "Novorizontino", date: "2026-06-23" },
+        
+        // Wednesday, June 24
+        { home: "América-MG", away: "Criciúma", date: "2026-06-24" }
     ],
 	},
 "Chilean Primera División": {
@@ -565,18 +597,18 @@ const leaguesData = {
         { rank: 16, team: "Unión Española", MP: 30, MW: 6, MD: 3, ML: 21, GF: 33, GA: 58, logo: "chile/unespanola.png" }
     ],
     fixtures: [
-        // Matchday 15
-        //{ home: "Audax Italiano", away: "La Serena", date: "2026-06-13" },
-        //{ home: "Everton", away: "Palestino", date: "2026-06-13" },
-       // { home: "Colo-Colo", away: "Cobresal", date: "2026-06-13" },
-        { home: "Ñublense", away: "Huachipato", date: "2026-06-14" },
-        { home: "Concepción", away: "Deportes Limache", date: "2026-06-14" },
-        { home: "Unión La Calera", away: "Universidad de Chile", date: "2026-06-14" },
-        { home: "Universidad Católica", away: "Universidad de Concepción", date: "2026-06-14" },
-        { home: "Coquimbo", away: "O'Higgins", date: "2026-06-15" },
+         // Matchday 16 - Friday, June 19
+        { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" },
         
-        // Matchday 13
-        { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" }
+        // Matchday 17 - July 26 (TBD times)
+        { home: "Colo-Colo", away: "Deportes Limache", date: "2026-07-26" },
+        { home: "Audax Italiano", away: "Universidad de Chile", date: "2026-07-26" },
+        { home: "Universidad Católica", away: "La Serena", date: "2026-07-26" },
+        { home: "Unión La Calera", away: "Everton", date: "2026-07-26" },
+        { home: "Coquimbo", away: "Universidad de Concepción", date: "2026-07-26" },
+        { home: "Palestino", away: "Ñublense", date: "2026-07-26" },
+        { home: "Huachipato", away: "Cobresal", date: "2026-07-26" },
+        { home: "Concepción", away: "O'Higgins", date: "2026-07-26" }
     ]
 },
 "Swedish Superettan": {
@@ -602,14 +634,26 @@ const leaguesData = {
         { rank: 16, team: "Umeå", MP: 30, MW: 4, MD: 7, ML: 19, GF: 30, GA: 57, logo: "sweden/umea.png" }
     ],
     fixtures: [
-        { home: "Norrby", away: "Oddevold", date: "2026-06-14" },
-        { home: "Ljungskile", away: "Ostersund", date: "2026-06-14" },
-        { home: "Falkenberg", away: "Orebro", date: "2026-06-14" },
-        { home: "Sandviken", away: "Brage", date: "2026-06-14" },
-        { home: "GIF Sundsvall", away: "Oster", date: "2026-06-15" },
-        { home: "Norrkoping", away: "Varberg", date: "2026-06-15" },
-        { home: "Varnamo", away: "Helsingborg", date: "2026-06-16" },
-        { home: "Landskrona", away: "Nordic United", date: "2026-06-16" }
+        // Matchday 13
+        // Tomorrow - June 15
+        { home: "GIF Sundsvall", away: "Östers IF", date: "2026-06-15" },
+        { home: "Norrköping", away: "Varbergs BoIS", date: "2026-06-15" },
+        
+        // Tuesday, June 16
+        { home: "Värnamo", away: "Helsingborg", date: "2026-06-16" },
+        { home: "Landskrona", away: "United Nordic", date: "2026-06-16" },
+        
+        // Sunday, June 21
+        { home: "Brage", away: "Värnamo", date: "2026-06-21" },
+        { home: "Helsingborg", away: "GIF Sundsvall", date: "2026-06-21" },
+        { home: "Östers IF", away: "Falkenberg", date: "2026-06-21" },
+        { home: "Östersund", away: "Norrköping", date: "2026-06-21" },
+        { home: "Norrby", away: "United Nordic", date: "2026-06-21" },
+        
+        // Monday, June 22
+        { home: "Oddevold", away: "Ljungskile", date: "2026-06-22" },
+        { home: "Varbergs BoIS", away: "Landskrona", date: "2026-06-22" },
+        { home: "Örebro", away: "Sandviken", date: "2026-06-22" }
     ]
 },
 
@@ -638,7 +682,7 @@ const leaguesData = {
     fixtures: [
         { home: "Qingdao Hainiu", away: "Yunnan Yukun", date: "2026-06-26" },
         { home: "Shenyang Urban", away: "Shandong Taishan", date: "2026-06-27" },
-        { home: "Henan", away: "Shanghai Port", date: "2026-06-15" },
+        { home: "Henan", away: "Shanghai Port", date: "2026-06-27" },
         { home: "Shenzhen Peng City", away: "Chengdu Rongcheng", date: "2026-06-27" },
         { home: "Chongqing Tonglianglong", away: "Tianjin Jinmen Tiger", date: "2026-06-27" },
         { home: "Beijing Guoan", away: "Wuhan Three Towns", date: "2026-06-27" },
@@ -676,14 +720,19 @@ const leaguesData = {
        // { home: "Belshina", away: "BATE", date: "2026-06-12" },
         
         // Matchday 11 - June 13
-        { home: "Baranovichi", away: "Minsk", date: "2026-06-13" },
-        { home: "Maxline", away: "Vitebsk", date: "2026-06-13" },
-        { home: "Dinamo Minsk", away: "Gomel", date: "2026-06-13" },
-        { home: "Dinamo Brest", away: "Neman", date: "2026-06-13" },
+        //{ home: "Baranovichi", away: "Minsk", date: "2026-06-13" },
+        { home: "Naftan", away: "Baranovichi", date: "2026-06-19" },
         
-        // Matchday 11 - June 14
-        { home: "Dnepr Mogilev", away: "Arsenal Dzerzhinsk", date: "2026-06-14" },
-        { home: "Zhodino", away: "Slavia Mozyr", date: "2026-06-14" }
+        // Saturday, June 20
+        { home: "Belshina", away: "Torpedo Zhodino", date: "2026-06-20" },
+        { home: "Slavia-Mozyr", away: "Isloch", date: "2026-06-20" },
+        { home: "Vitebsk", away: "Dinamo Brest", date: "2026-06-20" },
+        { home: "Gomel", away: "Dnepr", date: "2026-06-20" },
+        
+        // Sunday, June 21
+        { home: "Minsk", away: "Maxline", date: "2026-06-21" },
+        { home: "BATE", away: "Arsenal Dzerzhinsk", date: "2026-06-21" },
+        { home: "Neman", away: "Dinamo Minsk", date: "2026-06-21" }
     ]
 },
 "Kazakhstan Premier League": {
@@ -708,11 +757,11 @@ const leaguesData = {
     ],
     fixtures: [
         // Today's matches - June 14
-        { home: "Ulytau", away: "Zhenys", date: "2026-06-14" },
-        { home: "Astana", away: "FC Irtysh Pavlodar", date: "2026-06-14" },
-        { home: "Yelimay", away: "Ordabasy", date: "2026-06-14" },
-        { home: "FC Aktobe", away: "Altay", date: "2026-06-14" },
-        { home: "Kaspiy Aktau", away: "Kaisar", date: "2026-06-14" },
+       // { home: "Ulytau", away: "Zhenys", date: "2026-06-14" },
+        //{ home: "Astana", away: "FC Irtysh Pavlodar", date: "2026-06-14" },
+       // { home: "Yelimay", away: "Ordabasy", date: "2026-06-14" },
+       // { home: "FC Aktobe", away: "Altay", date: "2026-06-14" },
+       // { home: "Kaspiy Aktau", away: "Kaisar", date: "2026-06-14" },
         
         // Matchday 17 - June 17
         { home: "Kairat", away: "Kyzyl-Zhar SK", date: "2026-06-17" },
@@ -755,14 +804,14 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 11 - June 14
-        { home: "Stroemsgodset", away: "Raufoss", date: "2026-06-14" },
-        { home: "Hødd", away: "Kongsvinger", date: "2026-06-14" },
-        { home: "Haugesund", away: "Ranheim TF", date: "2026-06-14" },
-        { home: "Stabæk", away: "Egersund", date: "2026-06-14" },
-        { home: "Åsane", away: "Odd", date: "2026-06-14" },
-        { home: "Lyn", away: "Bryne FK", date: "2026-06-14" },
-        { home: "Sogndal", away: "Moss", date: "2026-06-14" },
-        { home: "Sandnes Ulf", away: "Strømmen", date: "2026-06-14" },
+        //{ home: "Stroemsgodset", away: "Raufoss", date: "2026-06-14" },
+       // { home: "Hødd", away: "Kongsvinger", date: "2026-06-14" },
+       // { home: "Haugesund", away: "Ranheim TF", date: "2026-06-14" },
+       // { home: "Stabæk", away: "Egersund", date: "2026-06-14" },
+       // { home: "Åsane", away: "Odd", date: "2026-06-14" },
+       // { home: "Lyn", away: "Bryne FK", date: "2026-06-14" },
+       // { home: "Sogndal", away: "Moss", date: "2026-06-14" },
+       // { home: "Sandnes Ulf", away: "Strømmen", date: "2026-06-14" },
         
         // Matchday 12 - June 19-21
         { home: "Ranheim TF", away: "Lyn", date: "2026-06-19" },
@@ -798,11 +847,11 @@ const leaguesData = {
         { rank: 14, team: "Augšdaugava", MP: 26, MW: 3, MD: 5, ML: 18, GF: 19, GA: 58, logo: "latvia/augsdaugava.png" }
     ],
     fixtures: [
-        { home: "Tukums 2000 2", away: "Valmiera", date: "2026-06-14" },
-        { home: "RFS 2", away: "Rezekne", date: "2026-06-14" },
-        { home: "Marupe", away: "JFK Ventspils", date: "2026-06-14" },
-        { home: "Riga FC 2", away: "FK Smiltene", date: "2026-06-14" },
-        { home: "Skanste", away: "Riga Mariners", date: "2026-06-14" }
+        { home: "RFS 2", away: "Riga II", date: "2026-06-27" },
+        { home: "Rēzeknes FA/BJSS", away: "JDFS Alberts", date: "2026-06-27" },
+        { home: "Riga Mariners", away: "Mārupes", date: "2026-06-27" },
+        { home: "Smiltene", away: "Skanste", date: "2026-06-28" },
+        { home: "Ventspils", away: "Valmiera", date: "2026-06-28" }
     ]
 },  
 /*
