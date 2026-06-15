@@ -1109,11 +1109,11 @@ fixtures: [
     ],
     fixtures: [
         // Sunday, June 14 - Completed
-        { home: "Minnesota Lynx", away: "Las Vegas Aces", date: "2026-06-14" },
+       /* { home: "Minnesota Lynx", away: "Las Vegas Aces", date: "2026-06-14" },
         { home: "Dallas Wings", away: "Portland Fire", date: "2026-06-14" },
         { home: "Los Angeles Sparks", away: "Phoenix Mercury", date: "2026-06-14" },
         { home: "Washington Mystics", away: "New York Liberty", date: "2026-06-14" },
-        { home: "Atlanta Dream", away: "Toronto Tempo", date: "2026-06-14" },
+        { home: "Atlanta Dream", away: "Toronto Tempo", date: "2026-06-14" },*/
         
         // Tuesday, June 16
         { home: "Las Vegas Aces", away: "Dallas Wings", date: "2026-06-16" },
