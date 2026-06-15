@@ -24,14 +24,14 @@ function formatDate(dateString) {
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
     "Today's Results": [
-    { home: "San Martin Burzaco", away: "Villa Dalmine", home_score: 0, away_score: 2, date: "2026-06-14" },
-    { home: "Villa San Carlos", away: "UAI Urquiza", home_score: 0, away_score: 0, date: "2026-06-14" },
-    { home: "Comunicaciones", away: "Laferrere", home_score: 3, away_score: 3, date: "2026-06-14" },
-    { home: "Defensores Unidos", away: "Brown Adrogue", home_score: 1, away_score: 1, date: "2026-06-14" },
-    { home: "Deportivo Camioneros", away: "Arsenal Sarandi", home_score: 1, away_score: 2, date: "2026-06-14" },
-    { home: "Dock Sud", away: "Talleres (R.E)", home_score: 1, away_score: 1, date: "2026-06-14" },
-    { home: "Flandria", away: "Ituzaingo", home_score: 3, away_score: 2, date: "2026-06-14" },
-    { home: "Sportivo Italiano", away: "Excursionistas", home_score: 0, away_score: 1, date: "2026-06-14" }
+    { home: "Dep. Merlo", away: " Argentino de Merlo", home_score: 2, away_score: 2, date: "2026-06-15" },
+    { home: "Belgium", away: "Egypt", home_score: 1, away_score: 1, date: "2026-06-14" },
+    { home: "Spain", away: "Cape Verde", home_score: 0, away_score: 0, date: "2026-06-14" },
+   // { home: "Defensores Unidos", away: "Brown Adrogue", home_score: 1, away_score: 1, date: "2026-06-14" },
+    //{ home: "Deportivo Camioneros", away: "Arsenal Sarandi", home_score: 1, away_score: 2, date: "2026-06-14" },
+   // { home: "Dock Sud", away: "Talleres (R.E)", home_score: 1, away_score: 1, date: "2026-06-14" },
+   // { home: "Flandria", away: "Ituzaingo", home_score: 3, away_score: 2, date: "2026-06-14" },
+   // { home: "Sportivo Italiano", away: "Excursionistas", home_score: 0, away_score: 1, date: "2026-06-14" }
     ],
     
 };
