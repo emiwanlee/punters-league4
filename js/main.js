@@ -33,7 +33,11 @@ const sidebarResults = {
    // { home: "Flandria", away: "Ituzaingo", home_score: 3, away_score: 2, date: "2026-06-14" },
    // { home: "Sportivo Italiano", away: "Excursionistas", home_score: 0, away_score: 1, date: "2026-06-14" }
     ],
-    
+    "WNBA": [
+    { home: "Minnesota Lynx", away: "Portland Fire", home_score: 107, away_score: 74, date: "2026-06-16" },
+    { home: "Golden State Valkyries", away: " Los Angeles Sparks", home_score: 78, away_score: 58, date: "2026-06-16" },
+   // { home: "Spain", away: "Cape Verde", home_score: 0, away_score: 0, date: "2026-06-14" }
+	]
 };
 
 // Function to render sidebar results from your custom list
