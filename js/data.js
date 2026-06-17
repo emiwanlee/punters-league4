@@ -404,9 +404,9 @@ const leaguesData = {
     ],
     fixtures: [
 	    // Round 16 - June 16
-        { home: "América MG U20", away: "Santos U20", date: "2026-06-16" },
+       /* { home: "América MG U20", away: "Santos U20", date: "2026-06-16" },
         { home: "Athletico-PR U20", away: "Cruzeiro U20", date: "2026-06-16" },
-        { home: "Criciuma U20", away: "Palmeiras U20", date: "2026-06-16" },
+        { home: "Criciuma U20", away: "Palmeiras U20", date: "2026-06-16" },*/
         
         // Round 16 - June 17
         { home: "Bahia U20", away: "Vasco U20", date: "2026-06-17" },
@@ -547,11 +547,11 @@ const leaguesData = {
     ],
     fixtures: [
        // Tuesday, June 16
-        { home: "Criciúma", away: "Ceará", date: "2026-06-16" },
-        { home: "Londrina", away: "Avaí", date: "2026-06-16" },
+       // { home: "Criciúma", away: "Ceará", date: "2026-06-16" },
+       // { home: "Londrina", away: "Avaí", date: "2026-06-16" },
         
         // Wednesday, June 17
-        { home: "Fortaleza", away: "América-MG", date: "2026-06-17" },
+       // { home: "Fortaleza", away: "América-MG", date: "2026-06-17" },
         
         // Friday, June 19
         { home: "Sport", away: "Atlético Goianiense", date: "2026-06-19" },
@@ -636,12 +636,12 @@ const leaguesData = {
     fixtures: [
         // Matchday 13
         // Tomorrow - June 15
-        { home: "GIF Sundsvall", away: "Östers IF", date: "2026-06-15" },
-        { home: "Norrköping", away: "Varbergs BoIS", date: "2026-06-15" },
+      //  { home: "GIF Sundsvall", away: "Östers IF", date: "2026-06-15" },
+       // { home: "Norrköping", away: "Varbergs BoIS", date: "2026-06-15" },
         
         // Tuesday, June 16
-        { home: "Värnamo", away: "Helsingborg", date: "2026-06-16" },
-        { home: "Landskrona", away: "United Nordic", date: "2026-06-16" },
+       // { home: "Värnamo", away: "Helsingborg", date: "2026-06-16" },
+        //{ home: "Landskrona", away: "United Nordic", date: "2026-06-16" },
         
         // Sunday, June 21
         { home: "Brage", away: "Värnamo", date: "2026-06-21" },
@@ -1116,9 +1116,9 @@ fixtures: [
         { home: "Atlanta Dream", away: "Toronto Tempo", date: "2026-06-14" },*/
         
         // Tuesday, June 16
-        { home: "Las Vegas Aces", away: "Dallas Wings", date: "2026-06-16" },
-        { home: "Portland Fire", away: "Minnesota Lynx", date: "2026-06-16" },
-        { home: "Los Angeles Sparks", away: "Golden State Valkyries", date: "2026-06-16" },
+       // { home: "Las Vegas Aces", away: "Dallas Wings", date: "2026-06-16" },
+       // { home: "Portland Fire", away: "Minnesota Lynx", date: "2026-06-16" },
+       // { home: "Los Angeles Sparks", away: "Golden State Valkyries", date: "2026-06-16" },
         
         // Wednesday, June 17
         { home: "Toronto Tempo", away: "Indiana Fever", date: "2026-06-17" },
