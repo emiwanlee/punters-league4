@@ -272,7 +272,7 @@ const leaguesData = {
     ],
     fixtures: [
 	 // Round 16 - June 17
-        { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
+       // { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
         
         // Round 4 (makeup) - June 20
         { home: "Ciudad Bolivar", away: "CA Estudiantes", date: "2026-06-20" },
@@ -324,7 +324,7 @@ const leaguesData = {
     ],
     fixtures: [
 	// Round 16 - June 17
-        { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
+       // { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
         
         // Round 4 (makeup) - June 20
         { home: "Ciudad Bolivar", away: "CA Estudiantes", date: "2026-06-20" },
@@ -409,13 +409,13 @@ const leaguesData = {
         { home: "Criciuma U20", away: "Palmeiras U20", date: "2026-06-16" },*/
         
         // Round 16 - June 17
-        { home: "Bahia U20", away: "Vasco U20", date: "2026-06-17" },
-        { home: "Botafogo U20", away: "Grêmio U20", date: "2026-06-17" },
-        { home: "Corinthians U20", away: "Vitória U20", date: "2026-06-17" },
-        { home: "Flamengo U20", away: "Cuiabá U20", date: "2026-06-17" },
-        { home: "Fortaleza U20", away: "Avaí U20", date: "2026-06-17" },
-        { home: "Juventude U20", away: "São Paulo U20", date: "2026-06-17" },
-        { home: "RB Bragantino U20", away: "Fluminense U20", date: "2026-06-17" },
+       // { home: "Bahia U20", away: "Vasco U20", date: "2026-06-17" },
+       // { home: "Botafogo U20", away: "Grêmio U20", date: "2026-06-17" },
+       // { home: "Corinthians U20", away: "Vitória U20", date: "2026-06-17" },
+       // { home: "Flamengo U20", away: "Cuiabá U20", date: "2026-06-17" },
+       // { home: "Fortaleza U20", away: "Avaí U20", date: "2026-06-17" },
+      //  { home: "Juventude U20", away: "São Paulo U20", date: "2026-06-17" },
+       // { home: "RB Bragantino U20", away: "Fluminense U20", date: "2026-06-17" },
         
         // Round 17 - June 20
         { home: "Avaí U20", away: "Juventude U20", date: "2026-06-20" },
@@ -764,7 +764,7 @@ const leaguesData = {
        // { home: "Kaspiy Aktau", away: "Kaisar", date: "2026-06-14" },
         
         // Matchday 17 - June 17
-        { home: "Kairat", away: "Kyzyl-Zhar SK", date: "2026-06-17" },
+       // { home: "Kairat", away: "Kyzyl-Zhar SK", date: "2026-06-17" },
         
         // Matchday 14 - June 20
         { home: "Altay", away: "Zhetysu", date: "2026-06-20" },
@@ -920,11 +920,11 @@ const leaguesData = {
 
 fixtures: [
     // Round 12 - June 17
-    { home: "HJK", away: "Inter Turku", date: "2026-06-17" },
-    { home: "Ilves", away: "Jaro", date: "2026-06-17" },
-    { home: "TPS", away: "KuPS", date: "2026-06-17" },
-    { home: "Gnistan", away: "Lahti", date: "2026-06-17" },
-    { home: "SJK", away: "VPS", date: "2026-06-17" },
+   // { home: "HJK", away: "Inter Turku", date: "2026-06-17" },
+    //{ home: "Ilves", away: "Jaro", date: "2026-06-17" },
+    //{ home: "TPS", away: "KuPS", date: "2026-06-17" },
+    //{ home: "Gnistan", away: "Lahti", date: "2026-06-17" },
+    //{ home: "SJK", away: "VPS", date: "2026-06-17" },
     
     // Round 12 - June 18
     { home: "AC Oulu", away: "Mariehamn", date: "2026-06-18" }
@@ -1031,9 +1031,9 @@ fixtures: [
         { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
     ],
     fixtures: [
-        { home: "Montreal", away: "Toronto", date: "2026-07-17" },
-        { home: "Chicago", away: "Vancouver", date: "2026-07-17" },
-        { home: "Seattle", away: "Portland", date: "2026-07-17" },
+        //{ home: "Montreal", away: "Toronto", date: "2026-07-17" },
+        //{ home: "Chicago", away: "Vancouver", date: "2026-07-17" },
+        //{ home: "Seattle", away: "Portland", date: "2026-07-17" },
         { home: "Nashville", away: "Atlanta", date: "2026-07-18" },
         { home: "LA Galaxy", away: "LAFC", date: "2026-07-18" },
         { home: "Cincinnati", away: "Vancouver", date: "2026-07-23" },
@@ -1121,7 +1121,7 @@ fixtures: [
        // { home: "Los Angeles Sparks", away: "Golden State Valkyries", date: "2026-06-16" },
         
         // Wednesday, June 17
-        { home: "Toronto Tempo", away: "Indiana Fever", date: "2026-06-17" },
+       // { home: "Toronto Tempo", away: "Indiana Fever", date: "2026-06-17" },
         
         // Thursday, June 18
         { home: "Washington Mystics", away: "Connecticut Sun", date: "2026-06-18" },
