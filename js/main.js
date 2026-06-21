@@ -23,16 +23,14 @@ function formatDate(dateString) {
 
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
-    "Today's Results": [
-    { home: "Gimnasia Jujuy", away: "Nueva Chicago", home_score: 4, away_score: 0, date: "2026-06-17" },
-    { home: "Belgrano Zarate", away: "Buenos Aires City", home_score: 1, away_score: 0, date: "2026-06-17" },
-    { home: "Las Mandarinas", away: "Everton La Plata", home_score: 1, away_score: 2, date: "2026-06-17" },
-    { home: "Uribelarrea", away: "Barrancas", home_score: 2, away_score: 0, date: "2026-06-17" },
-    //{ home: "Deportivo Camioneros", away: "Arsenal Sarandi", home_score: 1, away_score: 2, date: "2026-06-14" },
-   // { home: "Dock Sud", away: "Talleres (R.E)", home_score: 1, away_score: 1, date: "2026-06-14" },
-   // { home: "Flandria", away: "Ituzaingo", home_score: 3, away_score: 2, date: "2026-06-14" },
-   // { home: "Sportivo Italiano", away: "Excursionistas", home_score: 0, away_score: 1, date: "2026-06-14" }
-    ],
+    "Brazilian U-20 League - Recent": [
+    { home: "Palmeiras U20", away: "Santos U20", home_score: 2, away_score: 1, league: "Brazilian U-20 League" },
+    { home: "Vasco U20", away: "Criciuma U20", home_score: 3, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "Cruzeiro U20", away: "Fortaleza U20", home_score: 2, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "Corinthians U20", away: "Avaí U20", home_score: 2, away_score: 1, league: "Brazilian U-20 League" },
+    { home: "São Paulo U20", away: "RB Bragantino U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
+    { home: "Botafogo U20", away: "Grêmio U20", home_score: 1, away_score: 0, league: "Brazilian U-20 League" }
+],
     "WNBA": [
     { home: "Minnesota Lynx", away: "Portland Fire", home_score: 107, away_score: 74, date: "2026-06-16" },
     { home: "Golden State Valkyries", away: " Los Angeles Sparks", home_score: 78, away_score: 58, date: "2026-06-16" },
