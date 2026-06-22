@@ -33,7 +33,7 @@ const sidebarResults = {
     { home: "Central Norte", away: "Godoy Cruz", home_score: 1, away_score: 0, league: "Primera Nacional" },
     { home: "Deportivo Maipu", away: "Gimnasia y Tiro", home_score: 0, away_score: 0, league: "Primera Nacional" },
     { home: "Club A. Guemes", away: "Gimnasia Jujuy", home_score: 1, away_score: 3, league: "Primera Nacional" }
-]
+],
     "WNBA": [
     { home: "Minnesota Lynx", away: "Portland Fire", home_score: 107, away_score: 74, date: "2026-06-16" },
     { home: "Golden State Valkyries", away: " Los Angeles Sparks", home_score: 78, away_score: 58, date: "2026-06-16" },
