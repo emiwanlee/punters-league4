@@ -563,18 +563,18 @@ const leaguesData = {
        // { home: "Fortaleza", away: "América-MG", date: "2026-06-17" },
         
         // Friday, June 19
-        { home: "Sport", away: "Atlético Goianiense", date: "2026-06-19" },
+        //{ home: "Sport", away: "Atlético Goianiense", date: "2026-06-19" },
         
         // Saturday, June 20
-        { home: "Londrina", away: "Athletic (MG)", date: "2026-06-20" },
-        { home: "Vila Nova", away: "Náutico", date: "2026-06-20" },
-        { home: "Ceará", away: "Botafogo", date: "2026-06-20" },
+       // { home: "Londrina", away: "Athletic (MG)", date: "2026-06-20" },
+       // { home: "Vila Nova", away: "Náutico", date: "2026-06-20" },
+       // { home: "Ceará", away: "Botafogo", date: "2026-06-20" },
         
         // Sunday, June 21
-        { home: "Avaí", away: "Cuiabá", date: "2026-06-21" },
-        { home: "São Bernardo", away: "Juventude", date: "2026-06-21" },
-        { home: "CRB", away: "Fortaleza", date: "2026-06-21" },
-        { home: "Goiás", away: "Operário Ferroviário", date: "2026-06-21" },
+       // { home: "Avaí", away: "Cuiabá", date: "2026-06-21" },
+       // { home: "São Bernardo", away: "Juventude", date: "2026-06-21" },
+       // { home: "CRB", away: "Fortaleza", date: "2026-06-21" },
+        //{ home: "Goiás", away: "Operário Ferroviário", date: "2026-06-21" },
         
         // Tuesday, June 23
         { home: "Ponte Preta", away: "Novorizontino", date: "2026-06-23" },
@@ -653,12 +653,12 @@ const leaguesData = {
         //{ home: "Landskrona", away: "United Nordic", date: "2026-06-16" },
         
         // Sunday, June 21
-        { home: "Brage", away: "Värnamo", date: "2026-06-21" },
+       /* { home: "Brage", away: "Värnamo", date: "2026-06-21" },
         { home: "Helsingborg", away: "GIF Sundsvall", date: "2026-06-21" },
         { home: "Östers IF", away: "Falkenberg", date: "2026-06-21" },
         { home: "Östersund", away: "Norrköping", date: "2026-06-21" },
         { home: "Norrby", away: "United Nordic", date: "2026-06-21" },
-        
+        */
         // Monday, June 22
         { home: "Oddevold", away: "Ljungskile", date: "2026-06-22" },
         { home: "Varbergs BoIS", away: "Landskrona", date: "2026-06-22" },
@@ -704,44 +704,50 @@ const leaguesData = {
     logo: "belarus/belarus.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "ML Vitebsk", MP: 11, MW: 7, MD: 3, ML: 1, GF: 22, GA: 8, logo: "belarus/mlvitebsk.png" },
-        { rank: 2, team: "Din. Minsk", MP: 10, MW: 7, MD: 2, ML: 1, GF: 17, GA: 9, logo: "belarus/dinamominsk.png" },
-        { rank: 3, team: "Isloch", MP: 11, MW: 5, MD: 4, ML: 2, GF: 16, GA: 10, logo: "belarus/isloch.png" },
-        { rank: 4, team: "FC Gomel", MP: 10, MW: 5, MD: 3, ML: 2, GF: 15, GA: 9, logo: "belarus/gomel.png" },
-        { rank: 5, team: "Neman", MP: 10, MW: 5, MD: 2, ML: 3, GF: 11, GA: 7, logo: "belarus/neman.png" },
-        { rank: 6, team: "FC Minsk", MP: 11, MW: 5, MD: 2, ML: 4, GF: 17, GA: 14, logo: "belarus/minsk.png" },
-        { rank: 7, team: "Zhodino", MP: 10, MW: 4, MD: 4, ML: 2, GF: 17, GA: 9, logo: "belarus/torpedozhodino.png" },
-        { rank: 8, team: "Dynamo Brest", MP: 10, MW: 4, MD: 2, ML: 4, GF: 13, GA: 8, logo: "belarus/dinamobrest.png" },
-        { rank: 9, team: "Slavia Mozyr", MP: 10, MW: 3, MD: 4, ML: 3, GF: 9, GA: 10, logo: "belarus/slaviamozyr.png" },
-        { rank: 10, team: "Vitebsk", MP: 11, MW: 3, MD: 4, ML: 4, GF: 10, GA: 13, logo: "belarus/vitebsk.png" },
-        { rank: 11, team: "Arsenal Dzerzhinsk", MP: 10, MW: 2, MD: 5, ML: 3, GF: 12, GA: 15, logo: "belarus/arsenal.png" },
-        { rank: 12, team: "Baranovici", MP: 11, MW: 3, MD: 2, ML: 6, GF: 12, GA: 23, logo: "belarus/baranovichi.png" },
-        { rank: 13, team: "Belshina", MP: 11, MW: 3, MD: 1, ML: 7, GF: 12, GA: 19, logo: "belarus/belshina.png" },
-        { rank: 14, team: "BATE", MP: 11, MW: 1, MD: 6, ML: 4, GF: 7, GA: 10, logo: "belarus/bate.png" },
-        { rank: 15, team: "Dnepr Mogilev", MP: 10, MW: 1, MD: 5, ML: 4, GF: 9, GA: 16, logo: "belarus/dnepr.png" },
-        { rank: 16, team: "Naftan", MP: 11, MW: 0, MD: 3, ML: 8, GF: 7, GA: 22, logo: "belarus/naftan.png" }
+        { rank: 1, team: "Dinamo Minsk", MP: 12, MW: 9, MD: 2, ML: 1, GF: 22, GA: 11, logo: "belarus/dinamominsk.png" },
+        { rank: 2, team: "Maxline", MP: 12, MW: 7, MD: 4, ML: 1, GF: 24, GA: 10, logo: "belarus/maxline.png" },
+        { rank: 3, team: "Isloch", MP: 12, MW: 6, MD: 4, ML: 2, GF: 18, GA: 10, logo: "belarus/isloch.png" },
+        { rank: 4, team: "Gomel", MP: 12, MW: 6, MD: 3, ML: 3, GF: 18, GA: 11, logo: "belarus/gomel.png" },
+        { rank: 5, team: "Torpedo Zhodino", MP: 12, MW: 5, MD: 5, ML: 2, GF: 20, GA: 10, logo: "belarus/torpedozhodino.png" },
+        { rank: 6, team: "Neman", MP: 12, MW: 6, MD: 2, ML: 4, GF: 15, GA: 11, logo: "belarus/neman.png" },
+        { rank: 7, team: "Minsk", MP: 12, MW: 5, MD: 3, ML: 4, GF: 19, GA: 16, logo: "belarus/minsk.png" },
+        { rank: 8, team: "Dinamo Brest", MP: 12, MW: 5, MD: 2, ML: 5, GF: 16, GA: 12, logo: "belarus/dinamobrest.png" },
+        { rank: 9, team: "Arsenal Dzerzhinsk", MP: 12, MW: 4, MD: 5, ML: 3, GF: 16, GA: 17, logo: "belarus/arsenal.png" },
+        { rank: 10, team: "Slavia-Mozyr", MP: 12, MW: 3, MD: 5, ML: 4, GF: 10, GA: 13, logo: "belarus/slaviamozyr.png" },
+        { rank: 11, team: "Vitebsk", MP: 12, MW: 3, MD: 4, ML: 5, GF: 11, GA: 15, logo: "belarus/vitebsk.png" },
+        { rank: 12, team: "Baranovichi", MP: 12, MW: 3, MD: 2, ML: 7, GF: 12, GA: 24, logo: "belarus/baranovichi.png" },
+        { rank: 13, team: "Belshina", MP: 12, MW: 3, MD: 1, ML: 8, GF: 12, GA: 21, logo: "belarus/belshina.png" },
+        { rank: 14, team: "BATE", MP: 12, MW: 1, MD: 6, ML: 5, GF: 9, GA: 13, logo: "belarus/bate.png" },
+        { rank: 15, team: "Dnepr", MP: 12, MW: 1, MD: 5, ML: 6, GF: 9, GA: 19, logo: "belarus/dnepr.png" },
+        { rank: 16, team: "Naftan", MP: 12, MW: 1, MD: 3, ML: 8, GF: 7, GA: 25, logo: "belarus/naftan.png" }
     ],
-   
-
     fixtures: [
-        // Matchday 11 - June 12
-       // { home: "Isloch", away: "Naftan", date: "2026-06-12" },
-       // { home: "Belshina", away: "BATE", date: "2026-06-12" },
+        // Matchday 15 - Thursday, July 2
+        { home: "BATE", away: "Gomel", date: "2026-07-02" },
+        { home: "Slavia-Mozyr", away: "Maxline", date: "2026-07-02" },
+        { home: "Minsk", away: "Dinamo Minsk", date: "2026-07-02" },
         
-        // Matchday 11 - June 13
-        //{ home: "Baranovichi", away: "Minsk", date: "2026-06-13" },
-        { home: "Naftan", away: "Baranovichi", date: "2026-06-19" },
+        // Matchday 15 - Friday, July 3
+        { home: "Naftan", away: "Dinamo Brest", date: "2026-07-03" },
         
-        // Saturday, June 20
-        { home: "Belshina", away: "Torpedo Zhodino", date: "2026-06-20" },
-        { home: "Slavia-Mozyr", away: "Isloch", date: "2026-06-20" },
-        { home: "Vitebsk", away: "Dinamo Brest", date: "2026-06-20" },
-        { home: "Gomel", away: "Dnepr", date: "2026-06-20" },
+        // Matchday 15 - Saturday, July 4
+        { home: "Vitebsk", away: "Dnepr", date: "2026-07-04" },
+        { home: "Neman", away: "Arsenal Dzerzhinsk", date: "2026-07-04" },
         
-        // Sunday, June 21
-        { home: "Minsk", away: "Maxline", date: "2026-06-21" },
-        { home: "BATE", away: "Arsenal Dzerzhinsk", date: "2026-06-21" },
-        { home: "Neman", away: "Dinamo Minsk", date: "2026-06-21" }
+        // Matchday 15 - Sunday, July 5
+        { home: "Belshina", away: "Baranovichi", date: "2026-07-05" },
+        { home: "Torpedo Zhodino", away: "Isloch", date: "2026-07-05" },
+        
+        // Matchday 16 - Friday, July 10
+        { home: "Dnepr", away: "Minsk", date: "2026-07-10" },
+        
+        // Matchday 16 - Saturday, July 11
+        { home: "Baranovichi", away: "Torpedo Zhodino", date: "2026-07-11" },
+        { home: "Dinamo Brest", away: "Slavia-Mozyr", date: "2026-07-11" },
+        { home: "Gomel", away: "Neman", date: "2026-07-11" },
+        
+        // Matchday 16 - Sunday, July 12
+        { home: "Arsenal Dzerzhinsk", away: "Vitebsk", date: "2026-07-12" }
     ]
 },
 "Kazakhstan Premier League": {
@@ -749,43 +755,34 @@ const leaguesData = {
     logo: "kazakhstan/kazakhstan.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Kairat", MP: 26, MW: 18, MD: 5, ML: 3, GF: 53, GA: 19, logo: "kazakhstan/kairat.png" },
-        { rank: 2, team: "Astana", MP: 26, MW: 17, MD: 6, ML: 3, GF: 66, GA: 30, logo: "kazakhstan/astana.png" },
-        { rank: 3, team: "Tobol", MP: 26, MW: 16, MD: 6, ML: 4, GF: 45, GA: 25, logo: "kazakhstan/tobol.png" },
-        { rank: 4, team: "Yelimay", MP: 26, MW: 14, MD: 6, ML: 6, GF: 47, GA: 31, logo: "kazakhstan/yelimay.png" },
-        { rank: 5, team: "FC Aktobe", MP: 26, MW: 13, MD: 4, ML: 9, GF: 39, GA: 29, logo: "kazakhstan/aktobe.png" },
-        { rank: 6, team: "Zhenys", MP: 26, MW: 8, MD: 12, ML: 6, GF: 37, GA: 30, logo: "kazakhstan/zhenys.png" },
-        { rank: 7, team: "Ordabasy", MP: 26, MW: 9, MD: 8, ML: 9, GF: 37, GA: 28, logo: "kazakhstan/ordabasy.png" },
-        { rank: 8, team: "Okzhetpes", MP: 26, MW: 10, MD: 5, ML: 11, GF: 37, GA: 43, logo: "kazakhstan/okzhetpes.png" },
-        { rank: 9, team: "Kyzyl-Zhar SK", MP: 26, MW: 6, MD: 9, ML: 11, GF: 25, GA: 32, logo: "kazakhstan/kyzylzhar.png" },
-        { rank: 10, team: "Ulytau", MP: 26, MW: 5, MD: 8, ML: 13, GF: 20, GA: 41, logo: "kazakhstan/ulytau.png" },
-        { rank: 11, team: "Kaisar", MP: 26, MW: 3, MD: 13, ML: 10, GF: 24, GA: 42, logo: "kazakhstan/kaisar.png" },
-        { rank: 12, team: "Zhetysu", MP: 26, MW: 4, MD: 9, ML: 13, GF: 19, GA: 43, logo: "kazakhstan/zhetysu.png" },
-        { rank: 13, team: "Atyrau", MP: 26, MW: 4, MD: 7, ML: 15, GF: 22, GA: 45, logo: "kazakhstan/atyrau.png" },
-        { rank: 14, team: "Turan", MP: 26, MW: 4, MD: 4, ML: 18, GF: 25, GA: 58, logo: "kazakhstan/turan.png" }
+        { rank: 1, team: "Ordabasy", MP: 14, MW: 10, MD: 4, ML: 0, GF: 26, GA: 9, logo: "kazakhstan/ordabasy.png" },
+        { rank: 2, team: "Kairat", MP: 16, MW: 9, MD: 6, ML: 1, GF: 26, GA: 11, logo: "kazakhstan/kairat.png" },
+        { rank: 3, team: "Okzhetpes", MP: 14, MW: 7, MD: 6, ML: 1, GF: 20, GA: 13, logo: "kazakhstan/okzhetpes.png" },
+        { rank: 4, team: "Ulytau", MP: 14, MW: 6, MD: 5, ML: 3, GF: 13, GA: 13, logo: "kazakhstan/ulytau.png" },
+        { rank: 5, team: "FC Aktobe", MP: 14, MW: 6, MD: 4, ML: 4, GF: 18, GA: 13, logo: "kazakhstan/aktobe.png" },
+        { rank: 6, team: "Astana", MP: 14, MW: 6, MD: 4, ML: 4, GF: 19, GA: 15, logo: "kazakhstan/astana.png" },
+        { rank: 7, team: "Yelimay", MP: 14, MW: 5, MD: 5, ML: 4, GF: 21, GA: 19, logo: "kazakhstan/yelimay.png" },
+        { rank: 8, team: "Atyrau", MP: 14, MW: 3, MD: 9, ML: 2, GF: 11, GA: 9, logo: "kazakhstan/atyrau.png" },
+        { rank: 9, team: "Zhenys", MP: 14, MW: 4, MD: 5, ML: 5, GF: 11, GA: 16, logo: "kazakhstan/zhenys.png" },
+        { rank: 10, team: "Zhetysu", MP: 14, MW: 3, MD: 6, ML: 5, GF: 19, GA: 22, logo: "kazakhstan/zhetysu.png" },
+        { rank: 11, team: "Kyzyl-Zhar SK", MP: 15, MW: 4, MD: 3, ML: 8, GF: 17, GA: 22, logo: "kazakhstan/kyzylzhar.png" },
+        { rank: 12, team: "Kaisar", MP: 15, MW: 2, MD: 8, ML: 5, GF: 11, GA: 18, logo: "kazakhstan/kaisar.png" },
+        { rank: 13, team: "Tobol", MP: 14, MW: 3, MD: 3, ML: 8, GF: 13, GA: 22, logo: "kazakhstan/tobol.png" },
+        { rank: 14, team: "FC Irtysh Pavlodar", MP: 14, MW: 1, MD: 7, ML: 6, GF: 13, GA: 19, logo: "kazakhstan/irtysh.png" },
+        { rank: 15, team: "Altay", MP: 14, MW: 1, MD: 7, ML: 6, GF: 9, GA: 15, logo: "kazakhstan/altay.png" },
+        { rank: 16, team: "Kaspiy Aktau", MP: 14, MW: 2, MD: 2, ML: 10, GF: 8, GA: 19, logo: "kazakhstan/kaspiy.png" }
     ],
     fixtures: [
-        // Today's matches - June 14
-       // { home: "Ulytau", away: "Zhenys", date: "2026-06-14" },
-        //{ home: "Astana", away: "FC Irtysh Pavlodar", date: "2026-06-14" },
-       // { home: "Yelimay", away: "Ordabasy", date: "2026-06-14" },
-       // { home: "FC Aktobe", away: "Altay", date: "2026-06-14" },
-       // { home: "Kaspiy Aktau", away: "Kaisar", date: "2026-06-14" },
+        // Saturday, July 4
+        { home: "Altay", away: "Tobol", date: "2026-07-04" },
+        { home: "Kyzyl-Zhar SK", away: "Yelimay", date: "2026-07-04" },
+        { home: "Astana", away: "Zhenys", date: "2026-07-04" },
         
-        // Matchday 17 - June 17
-       // { home: "Kairat", away: "Kyzyl-Zhar SK", date: "2026-06-17" },
-        
-        // Matchday 14 - June 20
-        { home: "Altay", away: "Zhetysu", date: "2026-06-20" },
-        { home: "Zhenys", away: "FC Irtysh Pavlodar", date: "2026-06-20" },
-        { home: "Kaisar", away: "Ulytau", date: "2026-06-20" },
-        { home: "Ordabasy", away: "Kaspiy Aktau", date: "2026-06-20" },
-        
-        // Matchday 14 - June 21
-        { home: "Okzhetpes", away: "Tobol", date: "2026-06-21" },
-        { home: "Kyzyl-Zhar SK", away: "Kairat", date: "2026-06-21" },
-        { home: "Atyrau", away: "Yelimay", date: "2026-06-21" },
-        { home: "FC Aktobe", away: "Astana", date: "2026-06-21" }
+        // Sunday, July 5
+        { home: "Atyrau", away: "Kaspiy Aktau", date: "2026-07-05" },
+        { home: "FC Aktobe", away: "Zhetysu", date: "2026-07-05" },
+        { home: "Ordabasy", away: "Ulytau", date: "2026-07-05" },
+        { home: "Kaisar", away: "FC Irtysh Pavlodar", date: "2026-07-05" }
     ]
 },
 
@@ -794,43 +791,33 @@ const leaguesData = {
     logo: "norway/norway.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Lillestrøm", MP: 30, MW: 25, MD: 5, ML: 0, GF: 87, GA: 18, logo: "norway/lillestrom.png" },
-        { rank: 2, team: "Start", MP: 30, MW: 16, MD: 7, ML: 7, GF: 58, GA: 35, logo: "norway/start.png" },
-        { rank: 3, team: "Kongsvinger", MP: 30, MW: 15, MD: 9, ML: 6, GF: 61, GA: 42, logo: "norway/kongsvinger.png" },
-        { rank: 4, team: "Aalesund", MP: 30, MW: 14, MD: 10, ML: 6, GF: 56, GA: 35, logo: "norway/aalesund.png" },
-        { rank: 5, team: "Egersund", MP: 30, MW: 15, MD: 7, ML: 8, GF: 51, GA: 38, logo: "norway/egersund.png" },
-        { rank: 6, team: "Ranheim TF", MP: 30, MW: 14, MD: 6, ML: 10, GF: 48, GA: 48, logo: "norway/ranheim.png" },
-        { rank: 7, team: "Lyn", MP: 30, MW: 14, MD: 5, ML: 11, GF: 48, GA: 37, logo: "norway/lyn.png" },
-        { rank: 8, team: "Sogndal", MP: 30, MW: 12, MD: 7, ML: 11, GF: 49, GA: 48, logo: "norway/sogndal.png" },
-        { rank: 9, team: "Odd", MP: 30, MW: 8, MD: 9, ML: 13, GF: 37, GA: 50, logo: "norway/odd.png" },
-        { rank: 10, team: "Hødd", MP: 30, MW: 8, MD: 9, ML: 13, GF: 34, GA: 52, logo: "norway/hodd.png" },
-        { rank: 11, team: "Stabæk", MP: 30, MW: 7, MD: 10, ML: 13, GF: 45, GA: 53, logo: "norway/stabaek.png" },
-        { rank: 12, team: "Åsane", MP: 30, MW: 7, MD: 10, ML: 13, GF: 38, GA: 53, logo: "norway/asane.png" },
-        { rank: 13, team: "Raufoss", MP: 30, MW: 7, MD: 9, ML: 14, GF: 43, GA: 56, logo: "norway/raufoss.png" },
-        { rank: 14, team: "Moss", MP: 30, MW: 7, MD: 7, ML: 16, GF: 41, GA: 65, logo: "norway/moss.png" },
-        { rank: 15, team: "Mjoendalen", MP: 30, MW: 6, MD: 7, ML: 17, GF: 36, GA: 71, logo: "norway/mjoendalen.png" },
-        { rank: 16, team: "Skeid", MP: 30, MW: 2, MD: 9, ML: 19, GF: 35, GA: 66, logo: "norway/skeid.png" }
+        { rank: 1, team: "Stroemsgodset", MP: 12, MW: 8, MD: 3, ML: 1, GF: 36, GA: 16, logo: "norway/stroemsgodset.png" },
+        { rank: 2, team: "Kongsvinger", MP: 12, MW: 8, MD: 3, ML: 1, GF: 29, GA: 16, logo: "norway/kongsvinger.png" },
+        { rank: 3, team: "Haugesund", MP: 12, MW: 8, MD: 1, ML: 3, GF: 36, GA: 23, logo: "norway/haugesund.png" },
+        { rank: 4, team: "Odd", MP: 12, MW: 7, MD: 2, ML: 3, GF: 24, GA: 14, logo: "norway/odd.png" },
+        { rank: 5, team: "Stabæk", MP: 12, MW: 6, MD: 3, ML: 3, GF: 25, GA: 14, logo: "norway/stabaek.png" },
+        { rank: 6, team: "Ranheim TF", MP: 12, MW: 6, MD: 2, ML: 4, GF: 32, GA: 26, logo: "norway/ranheim.png" },
+        { rank: 7, team: "Moss", MP: 12, MW: 5, MD: 2, ML: 5, GF: 21, GA: 26, logo: "norway/moss.png" },
+        { rank: 8, team: "Sandnes Ulf", MP: 12, MW: 5, MD: 1, ML: 6, GF: 18, GA: 19, logo: "norway/sandnesulf.png" },
+        { rank: 9, team: "Egersund", MP: 12, MW: 5, MD: 1, ML: 6, GF: 19, GA: 21, logo: "norway/egersund.png" },
+        { rank: 10, team: "Bryne FK", MP: 12, MW: 5, MD: 1, ML: 6, GF: 18, GA: 20, logo: "norway/brynefk.png" },
+        { rank: 11, team: "Hødd", MP: 12, MW: 4, MD: 3, ML: 5, GF: 14, GA: 15, logo: "norway/hodd.png" },
+        { rank: 12, team: "Sogndal", MP: 12, MW: 3, MD: 3, ML: 6, GF: 20, GA: 29, logo: "norway/sogndal.png" },
+        { rank: 13, team: "Raufoss", MP: 12, MW: 3, MD: 1, ML: 8, GF: 16, GA: 28, logo: "norway/raufoss.png" },
+        { rank: 14, team: "Lyn", MP: 12, MW: 3, MD: 1, ML: 8, GF: 10, GA: 24, logo: "norway/lyn.png" },
+        { rank: 15, team: "Åsane", MP: 12, MW: 3, MD: 1, ML: 8, GF: 15, GA: 24, logo: "norway/asane.png" },
+        { rank: 16, team: "Strømmen", MP: 12, MW: 2, MD: 2, ML: 8, GF: 15, GA: 33, logo: "norway/stremmen.png" }
     ],
     fixtures: [
-        // Matchday 11 - June 14
-        //{ home: "Stroemsgodset", away: "Raufoss", date: "2026-06-14" },
-       // { home: "Hødd", away: "Kongsvinger", date: "2026-06-14" },
-       // { home: "Haugesund", away: "Ranheim TF", date: "2026-06-14" },
-       // { home: "Stabæk", away: "Egersund", date: "2026-06-14" },
-       // { home: "Åsane", away: "Odd", date: "2026-06-14" },
-       // { home: "Lyn", away: "Bryne FK", date: "2026-06-14" },
-       // { home: "Sogndal", away: "Moss", date: "2026-06-14" },
-       // { home: "Sandnes Ulf", away: "Strømmen", date: "2026-06-14" },
-        
-        // Matchday 12 - June 19-21
-        { home: "Ranheim TF", away: "Lyn", date: "2026-06-19" },
-        { home: "Egersund", away: "Haugesund", date: "2026-06-21" },
-        { home: "Odd", away: "Hødd", date: "2026-06-21" },
-        { home: "Bryne FK", away: "Åsane", date: "2026-06-21" },
-        { home: "Kongsvinger", away: "Stroemsgodset", date: "2026-06-21" },
-        { home: "Moss", away: "Sandnes Ulf", date: "2026-06-21" },
-        { home: "Raufoss", away: "Sogndal", date: "2026-06-21" },
-        { home: "Strømmen", away: "Stabæk", date: "2026-06-21" }
+        // Saturday, June 27
+        { home: "Haugesund", away: "Kongsvinger", date: "2026-06-27" },
+        { home: "Strømmen", away: "Moss", date: "2026-06-27" },
+        { home: "Stabæk", away: "Bryne FK", date: "2026-06-27" },
+        { home: "Lyn", away: "Hødd", date: "2026-06-27" },
+        { home: "Sandnes Ulf", away: "Raufoss", date: "2026-06-27" },
+        { home: "Åsane", away: "Ranheim TF", date: "2026-06-27" },
+        { home: "Stroemsgodset", away: "Odd", date: "2026-06-27" },
+        { home: "Sogndal", away: "Egersund", date: "2026-06-27" }
     ]
 },
 
@@ -863,114 +850,132 @@ const leaguesData = {
         { home: "Ventspils", away: "Valmiera", date: "2026-06-28" }
     ]
 },  
-/*
+
 "Bolivian Primera División": {
     id: "bolivia",
     logo: "bolivia/bolivia.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Always Ready", MP: 30, MW: 22, MD: 5, ML: 3, GF: 91, GA: 34, logo: "bolivia/alwaysready.png" },
-        { rank: 2, team: "Bolívar", MP: 30, MW: 21, MD: 5, ML: 4, GF: 82, GA: 32, logo: "bolivia/bolivar.png" },
-        { rank: 3, team: "The Strongest", MP: 30, MW: 21, MD: 1, ML: 8, GF: 77, GA: 47, logo: "bolivia/thestrongest.png" },
-        { rank: 4, team: "SA Bulo Bulo", MP: 30, MW: 13, MD: 7, ML: 10, GF: 62, GA: 54, logo: "bolivia/sabulobulo.png" },
-        { rank: 5, team: "Blooming", MP: 30, MW: 14, MD: 4, ML: 12, GF: 53, GA: 56, logo: "bolivia/blooming.png" },
-        { rank: 6, team: "Independiente Petrolero", MP: 30, MW: 13, MD: 6, ML: 11, GF: 56, GA: 57, logo: "bolivia/independientepetrolero.png" },
-        { rank: 7, team: "Nacional Potosí", MP: 30, MW: 12, MD: 7, ML: 11, GF: 51, GA: 41, logo: "bolivia/nacionalpotosi.png" },
-        { rank: 8, team: "Guabirá", MP: 30, MW: 13, MD: 4, ML: 13, GF: 58, GA: 63, logo: "bolivia/guabira.png" },
-        { rank: 9, team: "Gualberto Villarroel San José", MP: 30, MW: 12, MD: 5, ML: 13, GF: 46, GA: 50, logo: "bolivia/gualberto.png" },
-        { rank: 10, team: "Aurora", MP: 30, MW: 11, MD: 4, ML: 15, GF: 53, GA: 63, logo: "bolivia/aurora.png" },
-        { rank: 11, team: "Real Tomayapo", MP: 30, MW: 9, MD: 8, ML: 13, GF: 40, GA: 53, logo: "bolivia/realtomayapo.png" },
-        { rank: 12, team: "Oriente Petrolero", MP: 30, MW: 9, MD: 6, ML: 15, GF: 45, GA: 58, logo: "bolivia/orientepetrolero.png" },
-        { rank: 13, team: "Real Oruro", MP: 30, MW: 8, MD: 7, ML: 15, GF: 60, GA: 66, logo: "bolivia/realoruro.png" },
-        { rank: 14, team: "Universitario de Vinto", MP: 30, MW: 6, MD: 8, ML: 16, GF: 32, GA: 60, logo: "bolivia/universitariovinto.png" },
-        { rank: 15, team: "Academia del Balompie Boliviano", MP: 30, MW: 6, MD: 8, ML: 16, GF: 33, GA: 64, logo: "bolivia/academia.png" },
-        { rank: 16, team: "Jorge Wilstermann", MP: 30, MW: 4, MD: 7, ML: 19, GF: 30, GA: 71, logo: "bolivia/jorgewilstermann.png" }
+        { rank: 1, team: "Always Ready", MP: 8, MW: 5, MD: 2, ML: 1, GF: 14, GA: 5, logo: "bolivia/alwaysready.png" },
+        { rank: 2, team: "The Strongest", MP: 7, MW: 5, MD: 2, ML: 0, GF: 12, GA: 6, logo: "bolivia/thestrongest.png" },
+        { rank: 3, team: "Aurora", MP: 8, MW: 4, MD: 4, ML: 0, GF: 14, GA: 7, logo: "bolivia/aurora.png" },
+        { rank: 4, team: "Bolívar", MP: 8, MW: 4, MD: 2, ML: 2, GF: 19, GA: 9, logo: "bolivia/bolivar.png" },
+        { rank: 5, team: "Blooming", MP: 8, MW: 3, MD: 3, ML: 2, GF: 14, GA: 10, logo: "bolivia/blooming.png" },
+        { rank: 6, team: "Independiente Petrolero", MP: 7, MW: 3, MD: 3, ML: 1, GF: 11, GA: 10, logo: "bolivia/independientepetrolero.png" },
+        { rank: 7, team: "Guabirá", MP: 9, MW: 3, MD: 2, ML: 4, GF: 14, GA: 20, logo: "bolivia/guabira.png" },
+        { rank: 8, team: "Universitario de Vinto", MP: 8, MW: 3, MD: 1, ML: 4, GF: 14, GA: 12, logo: "bolivia/universitariovinto.png" },
+        { rank: 9, team: "Oriente Petrolero", MP: 8, MW: 3, MD: 1, ML: 4, GF: 10, GA: 11, logo: "bolivia/orientepetrolero.png" },
+        { rank: 10, team: "Academia del Balompie Boliviano", MP: 7, MW: 3, MD: 0, ML: 4, GF: 12, GA: 17, logo: "bolivia/academia.png" },
+        { rank: 11, team: "Nacional Potosí", MP: 7, MW: 2, MD: 2, ML: 3, GF: 9, GA: 9, logo: "bolivia/nacionalpotosi.png" },
+        { rank: 12, team: "SA Bulo Bulo", MP: 8, MW: 2, MD: 1, ML: 5, GF: 10, GA: 14, logo: "bolivia/sabulobulo.png" },
+        { rank: 13, team: "Real Potosí", MP: 6, MW: 1, MD: 3, ML: 2, GF: 5, GA: 5, logo: "bolivia/realpotosi.png" },
+        { rank: 14, team: "Real Oruro", MP: 6, MW: 1, MD: 2, ML: 3, GF: 10, GA: 14, logo: "bolivia/realoruro.png" },
+        { rank: 15, team: "Real Tomayapo", MP: 7, MW: 1, MD: 2, ML: 4, GF: 3, GA: 16, logo: "bolivia/realtomayapo.png" },
+        { rank: 16, team: "Gualberto Villarroel San José", MP: 6, MW: 0, MD: 2, ML: 4, GF: 5, GA: 11, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
-        // Matchday 9 - June 13
-        { home: "Independiente Petrolero", away: "Real Potosí", date: "2026-06-13" },
+        // Saturday, July 11
+        { home: "Academia del Balompie Boliviano", away: "Real Oruro", date: "2026-07-11" },
         
-        // Matchday 11 - June 13
-        { home: "Guabirá", away: "Real Oruro", date: "2026-06-13" },
-        { home: "Gualberto Villarroel San José", away: "Universitario de Vinto", date: "2026-06-13" },
+        // Sunday, July 12
+        { home: "Nacional Potosí", away: "The Strongest", date: "2026-07-12" },
+        { home: "Bolívar", away: "Oriente Petrolero", date: "2026-07-12" },
         
-        // Matchday 11 - June 14
-        { home: "Independiente Petrolero", away: "Oriente Petrolero", date: "2026-06-14" },
-        { home: "Always Ready", away: "SA Bulo Bulo", date: "2026-06-14" },
+        // Monday, July 13
+        { home: "Blooming", away: "Always Ready", date: "2026-07-13" },
+        { home: "Universitario de Vinto", away: "Real Potosí", date: "2026-07-13" },
+        { home: "Gualberto Villarroel San José", away: "SA Bulo Bulo", date: "2026-07-13" },
         
-        // Matchday 11 - June 15
-        { home: "Blooming", away: "The Strongest", date: "2026-06-15" },
+        // Tuesday, July 14
+        { home: "Independiente Petrolero", away: "Aurora", date: "2026-07-14" },
         
-        // Postponed - Time TBD
-        { home: "Bolívar", away: "Real Potosí", date: "TBD" }
+        // Wednesday, July 15
+        { home: "Guabirá", away: "Real Tomayapo", date: "2026-07-15" }
     ]
 },
 
-*/
 "Finland Veikkausliiga": {
-    id: "chilean-primera-división",
-    logo: "chilean/chileanprimeradivisión.png",
+    id: "finland-veikkausliiga",
+    logo: "finland/veikkausliiga.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Inter Turku", MP: 22, MW: 13, MD: 7, ML: 2, GF: 46, GA: 20, logo: "interturku.png" },
-        { rank: 2, team: "Ilves", MP: 22, MW: 14, MD: 3, ML: 5, GF: 47, GA: 27, logo: "ilves.png" },
-        { rank: 3, team: "HJK", MP: 22, MW: 14, MD: 2, ML: 6, GF: 59, GA: 29, logo: "hjk.png" },
-        { rank: 4, team: "KuPS", MP: 22, MW: 13, MD: 5, ML: 4, GF: 39, GA: 23, logo: "kups.png" },
-        { rank: 5, team: "SJK", MP: 22, MW: 12, MD: 5, ML: 5, GF: 45, GA: 31, logo: "sjk.png" },
-        { rank: 6, team: "Gnistan", MP: 22, MW: 7, MD: 7, ML: 8, GF: 34, GA: 39, logo: "gnistan.png" },
-        { rank: 7, team: "VPS", MP: 22, MW: 6, MD: 7, ML: 9, GF: 32, GA: 34, logo: "vps.png" },
-        { rank: 8, team: "FF Jaro", MP: 22, MW: 7, MD: 4, ML: 11, GF: 25, GA: 36, logo: "ffjaro.png" },
-        { rank: 9, team: "IFK Mariehamn", MP: 22, MW: 5, MD: 6, ML: 11, GF: 25, GA: 48, logo: "ifkmariehamn.png" },
-        { rank: 10, team: "Oulu", MP: 22, MW: 5, MD: 3, ML: 14, GF: 30, GA: 48, logo: "oulu.png" },
-        { rank: 11, team: "Haka", MP: 22, MW: 4, MD: 4, ML: 14, GF: 27, GA: 43, logo: "haka.png" },
-        { rank: 12, team: "KTP", MP: 22, MW: 3, MD: 5, ML: 14, GF: 24, GA: 55, logo: "ktp.png" }
+        { rank: 1, team: "Inter Turku", MP: 13, MW: 7, MD: 5, ML: 1, GF: 20, GA: 11, logo: "finland/interturku.png" },
+        { rank: 2, team: "Oulu", MP: 12, MW: 8, MD: 1, ML: 3, GF: 18, GA: 9, logo: "finland/oulu.png" },
+        { rank: 3, team: "KuPS", MP: 13, MW: 6, MD: 6, ML: 1, GF: 19, GA: 12, logo: "finland/kups.png" },
+        { rank: 4, team: "HJK", MP: 12, MW: 5, MD: 4, ML: 3, GF: 21, GA: 13, logo: "finland/hjk.png" },
+        { rank: 5, team: "Gnistan", MP: 11, MW: 5, MD: 2, ML: 4, GF: 17, GA: 15, logo: "finland/gnistan.png" },
+        { rank: 6, team: "VPS", MP: 11, MW: 4, MD: 5, ML: 2, GF: 11, GA: 9, logo: "finland/vps.png" },
+        { rank: 7, team: "Turun", MP: 11, MW: 4, MD: 3, ML: 4, GF: 12, GA: 11, logo: "finland/turun.png" },
+        { rank: 8, team: "Ilves", MP: 12, MW: 4, MD: 3, ML: 5, GF: 19, GA: 21, logo: "finland/ilves.png" },
+        { rank: 9, team: "FC Lahti", MP: 11, MW: 3, MD: 2, ML: 6, GF: 14, GA: 14, logo: "finland/fclahti.png" },
+        { rank: 10, team: "SJK", MP: 11, MW: 2, MD: 3, ML: 6, GF: 12, GA: 18, logo: "finland/sjk.png" },
+        { rank: 11, team: "FF Jaro", MP: 12, MW: 1, MD: 4, ML: 7, GF: 10, GA: 27, logo: "finland/ffjaro.png" },
+        { rank: 12, team: "IFK Mariehamn", MP: 11, MW: 0, MD: 4, ML: 7, GF: 6, GA: 19, logo: "finland/ifkmariehamn.png" }
     ],
-    // Add to your data.js fixtures array
-
-fixtures: [
-    // Round 12 - June 17
-   // { home: "HJK", away: "Inter Turku", date: "2026-06-17" },
-    //{ home: "Ilves", away: "Jaro", date: "2026-06-17" },
-    //{ home: "TPS", away: "KuPS", date: "2026-06-17" },
-    //{ home: "Gnistan", away: "Lahti", date: "2026-06-17" },
-    //{ home: "SJK", away: "VPS", date: "2026-06-17" },
-    
-    // Round 12 - June 18
-    { home: "AC Oulu", away: "Mariehamn", date: "2026-06-18" }
-]
+    fixtures: [
+        // Tomorrow - June 23
+        { home: "FC Lahti", away: "Turun", date: "2026-06-23" },
+        { home: "KuPS", away: "Ilves", date: "2026-06-23" },
+        { home: "VPS", away: "Oulu", date: "2026-06-23" },
+        { home: "Inter Turku", away: "SJK", date: "2026-06-23" },
+        { home: "FF Jaro", away: "Gnistan", date: "2026-06-23" },
+        { home: "IFK Mariehamn", away: "HJK", date: "2026-06-23" },
+        
+        // Saturday, June 27
+        { home: "Ilves", away: "SJK", date: "2026-06-27" },
+        { home: "HJK", away: "KuPS", date: "2026-06-27" },
+        { home: "IFK Mariehamn", away: "Inter Turku", date: "2026-06-27" },
+        { home: "Gnistan", away: "VPS", date: "2026-06-27" },
+        { home: "Turun", away: "FF Jaro", date: "2026-06-27" },
+        { home: "Oulu", away: "FC Lahti", date: "2026-06-27" }
+    ]
 },
 "Kazakhstan First League": {
     id: "kazakhstan-1st",
     logo: "kazakhstan/1stleague.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Kairat-Zhastar", MP: 8, MW: 6, MD: 2, ML: 0, GF: 21, GA: 2, logo: "kazakhstan/kairat.png" },
-        { rank: 2, team: "Shakhter", MP: 8, MW: 6, MD: 1, ML: 1, GF: 26, GA: 4, logo: "kazakhstan/shakhter.png" },
-        { rank: 3, team: "Taraz", MP: 9, MW: 5, MD: 1, ML: 3, GF: 17, GA: 10, logo: "kazakhstan/taraz.png" },
-        { rank: 4, team: "Akademiya Ontustik", MP: 9, MW: 5, MD: 1, ML: 3, GF: 15, GA: 12, logo: "kazakhstan/akademiya.png" },
-        { rank: 5, team: "Astana Reserve", MP: 9, MW: 5, MD: 1, ML: 3, GF: 14, GA: 15, logo: "kazakhstan/astanarezerve.png" },
-        { rank: 6, team: "Turan", MP: 8, MW: 5, MD: 0, ML: 3, GF: 13, GA: 8, logo: "kazakhstan/turan.png" },
-        { rank: 7, team: "Jaiyq Uralsk", MP: 9, MW: 5, MD: 0, ML: 4, GF: 8, GA: 11, logo: "kazakhstan/jaiyq.png" },
-        { rank: 8, team: "Khan Tengri", MP: 8, MW: 4, MD: 2, ML: 2, GF: 13, GA: 9, logo: "kazakhstan/khan tengri.png" },
-        { rank: 9, team: "FK Ekibastuz", MP: 8, MW: 3, MD: 2, ML: 3, GF: 7, GA: 14, logo: "kazakhstan/ekibastuz.png" },
-        { rank: 10, team: "Aktobe Jas", MP: 9, MW: 2, MD: 3, ML: 4, GF: 13, GA: 27, logo: "kazakhstan/aktobejas.png" },
-        { rank: 11, team: "Kaspiy Aktau Reserve", MP: 8, MW: 1, MD: 3, ML: 4, GF: 10, GA: 11, logo: "kazakhstan/kaspiyreserve.png" },
-        { rank: 12, team: "Tobol-M", MP: 8, MW: 1, MD: 2, ML: 5, GF: 12, GA: 20, logo: "kazakhstan/tobolm.png" },
-        { rank: 13, team: "Turan", MP: 8, MW: 1, MD: 0, ML: 7, GF: 7, GA: 19, logo: "kazakhstan/turan2.png" },
-        { rank: 14, team: "Yelimay M", MP: 9, MW: 0, MD: 2, ML: 7, GF: 5, GA: 19, logo: "kazakhstan/yelimay.png" }
+        { rank: 1, team: "Kairat-Zhastar", MP: 10, MW: 8, MD: 2, ML: 0, GF: 31, GA: 4, logo: "kazakhstan/kairat.png" },
+        { rank: 2, team: "Shakhter", MP: 10, MW: 8, MD: 1, ML: 1, GF: 31, GA: 4, logo: "kazakhstan/shakhter.png" },
+        { rank: 3, team: "Turan", MP: 10, MW: 7, MD: 0, ML: 3, GF: 20, GA: 8, logo: "kazakhstan/turan.png" },
+        { rank: 4, team: "Akademiya Ontustik", MP: 10, MW: 5, MD: 2, ML: 3, GF: 16, GA: 13, logo: "kazakhstan/akademiya.png" },
+        { rank: 5, team: "Khan Tengri", MP: 10, MW: 5, MD: 2, ML: 3, GF: 15, GA: 12, logo: "kazakhstan/khan tengri.png" },
+        { rank: 6, team: "Taraz", MP: 10, MW: 5, MD: 1, ML: 4, GF: 18, GA: 12, logo: "kazakhstan/taraz.png" },
+        { rank: 7, team: "Astana Reserve", MP: 10, MW: 5, MD: 1, ML: 4, GF: 16, GA: 18, logo: "kazakhstan/astanarezerve.png" },
+        { rank: 8, team: "Jaiyq Uralsk", MP: 10, MW: 5, MD: 0, ML: 5, GF: 8, GA: 14, logo: "kazakhstan/jaiyq.png" },
+        { rank: 9, team: "FK Ekibastuz", MP: 10, MW: 3, MD: 4, ML: 3, GF: 11, GA: 18, logo: "kazakhstan/ekibastuz.png" },
+        { rank: 10, team: "Kaspiy Aktau Reserve", MP: 10, MW: 2, MD: 3, ML: 5, GF: 12, GA: 15, logo: "kazakhstan/kaspiyreserve.png" },
+        { rank: 11, team: "Aktobe Jas", MP: 10, MW: 2, MD: 3, ML: 5, GF: 13, GA: 31, logo: "kazakhstan/aktobejas.png" },
+        { rank: 12, team: "Tobol-M", MP: 10, MW: 1, MD: 3, ML: 6, GF: 15, GA: 30, logo: "kazakhstan/tobolm.png" },
+        { rank: 13, team: "Turan", MP: 10, MW: 1, MD: 1, ML: 8, GF: 9, GA: 22, logo: "kazakhstan/turan2.png" },
+        { rank: 14, team: "Yelimay M", MP: 10, MW: 0, MD: 3, ML: 7, GF: 6, GA: 20, logo: "kazakhstan/yelimay.png" }
     ],
-    
     fixtures: [
-        // Matchday 10 - June 18
-        { home: "Tobol-M", away: "FK Ekibastuz", date: "2026-06-18" },
-        { home: "Astana Reserve", away: "Kairat-Zhastar", date: "2026-06-18" },
-        { home: "Akademiya Ontustik", away: "Yelimay M", date: "2026-06-18" },
-        { home: "Turan", away: "Kaspiy Aktau Reserve", date: "2026-06-18" },
-        { home: "Turan", away: "Aktobe Jas", date: "2026-06-18" },
+        // Wednesday, June 24
+        { home: "Kaspiy Aktau Reserve", away: "Tobol-M", date: "2026-06-24" },
         
-        // Matchday 10 - June 19
-        { home: "Shakhter", away: "Jaiyq Uralsk", date: "2026-06-19" },
-        { home: "Khan Tengri", away: "Taraz", date: "2026-06-19" }
+        // Thursday, June 25
+        { home: "Yelimay M", away: "Turan", date: "2026-06-25" },
+        { home: "Kairat-Zhastar", away: "Khan Tengri", date: "2026-06-25" },
+        { home: "Aktobe Jas", away: "Turan", date: "2026-06-25" },
+        { home: "Jaiyq Uralsk", away: "Akademiya Ontustik", date: "2026-06-25" },
+        
+        // Friday, June 26
+        { home: "Taraz", away: "Shakhter", date: "2026-06-26" },
+        { home: "FK Ekibastuz", away: "Astana Reserve", date: "2026-06-26" },
+        
+        // Wednesday, July 1
+        { home: "Tobol-M", away: "Aktobe Jas", date: "2026-07-01" },
+        
+        // Thursday, July 2
+        { home: "Akademiya Ontustik", away: "Shakhter", date: "2026-07-02" },
+        { home: "Astana Reserve", away: "Kaspiy Aktau Reserve", date: "2026-07-02" },
+        { home: "Khan Tengri", away: "FK Ekibastuz", date: "2026-07-02" },
+        
+        // Friday, July 3
+        { home: "Turan", away: "Yelimay M", date: "2026-07-03" },
+        { home: "Kairat-Zhastar", away: "Taraz", date: "2026-07-03" },
+        { home: "Turan", away: "Jaiyq Uralsk", date: "2026-07-03" }
     ]
 },
 
@@ -1098,56 +1103,72 @@ fixtures: [
     isBasketball: true,
     teams: [
         // Eastern Conference
-        { rank: 1, team: "New York Liberty", GP: 13, GW: 9, GL: 4, points_for: 1178, points_against: 1076, logo: "wnba/liberty.png" },
-        { rank: 2, team: "Atlanta Dream", GP: 12, GW: 8, GL: 4, points_for: 1020, points_against: 978, logo: "wnba/dream.png" },
-        { rank: 3, team: "Indiana Fever", GP: 13, GW: 8, GL: 5, points_for: 1105, points_against: 1066, logo: "wnba/fever.png" },
-        { rank: 4, team: "Toronto Tempo", GP: 13, GW: 7, GL: 6, points_for: 1092, points_against: 1079, logo: "wnba/tempo.png" },
-        { rank: 5, team: "Washington Mystics", GP: 11, GW: 5, GL: 6, points_for: 902, points_against: 924, logo: "wnba/mystics.png" },
-        { rank: 6, team: "Chicago Sky", GP: 13, GW: 4, GL: 9, points_for: 1001, points_against: 1105, logo: "wnba/sky.png" },
-        { rank: 7, team: "Connecticut Sun", GP: 15, GW: 2, GL: 13, points_for: 1140, points_against: 1320, logo: "wnba/sun.png" },
+        { rank: 1, team: "New York Liberty", GP: 17, GW: 11, GL: 6, points_for: 1547, points_against: 1428, logo: "wnba/liberty.png" },
+        { rank: 2, team: "Atlanta Dream", GP: 15, GW: 11, GL: 4, points_for: 1320, points_against: 1215, logo: "wnba/dream.png" },
+        { rank: 3, team: "Indiana Fever", GP: 16, GW: 9, GL: 7, points_for: 1360, points_against: 1326, logo: "wnba/fever.png" },
+        { rank: 4, team: "Washington Mystics", GP: 15, GW: 8, GL: 7, points_for: 1230, points_against: 1245, logo: "wnba/mystics.png" },
+        { rank: 5, team: "Toronto Tempo", GP: 16, GW: 8, GL: 8, points_for: 1344, points_against: 1344, logo: "wnba/tempo.png" },
+        { rank: 6, team: "Chicago Sky", GP: 15, GW: 4, GL: 11, points_for: 1155, points_against: 1275, logo: "wnba/sky.png" },
+        { rank: 7, team: "Connecticut Sun", GP: 17, GW: 2, GL: 15, points_for: 1292, points_against: 1530, logo: "wnba/sun.png" },
         
         // Western Conference
-        { rank: 1, team: "Las Vegas Aces", GP: 13, GW: 10, GL: 3, points_for: 1196, points_against: 1079, logo: "wnba/aces.png" },
-        { rank: 2, team: "Minnesota Lynx", GP: 13, GW: 10, GL: 3, points_for: 1209, points_against: 1079, logo: "wnba/lynx.png" },
-        { rank: 3, team: "Dallas Wings", GP: 13, GW: 8, GL: 5, points_for: 1105, points_against: 1079, logo: "wnba/wings.png" },
-        { rank: 4, team: "Golden State Valkyries", GP: 13, GW: 8, GL: 5, points_for: 1105, points_against: 1079, logo: "wnba/valkyries.png" },
-        { rank: 5, team: "Los Angeles Sparks", GP: 13, GW: 7, GL: 6, points_for: 1118, points_against: 1105, logo: "wnba/sparks.png" },
-        { rank: 6, team: "Portland Fire", GP: 15, GW: 7, GL: 8, points_for: 1275, points_against: 1290, logo: "wnba/fire.png" },
-        { rank: 7, team: "Phoenix Mercury", GP: 15, GW: 4, GL: 11, points_for: 1200, points_against: 1320, logo: "wnba/mercury.png" },
-        { rank: 8, team: "Seattle Storm", GP: 15, GW: 3, GL: 12, points_for: 1170, points_against: 1365, logo: "wnba/storm.png" }
+        { rank: 1, team: "Minnesota Lynx", GP: 17, GW: 13, GL: 4, points_for: 1547, points_against: 1377, logo: "wnba/lynx.png" },
+        { rank: 2, team: "Las Vegas Aces", GP: 16, GW: 12, GL: 4, points_for: 1472, points_against: 1328, logo: "wnba/aces.png" },
+        { rank: 3, team: "Dallas Wings", GP: 16, GW: 10, GL: 6, points_for: 1360, points_against: 1328, logo: "wnba/wings.png" },
+        { rank: 4, team: "Golden State Valkyries", GP: 17, GW: 10, GL: 7, points_for: 1479, points_against: 1428, logo: "wnba/valkyries.png" },
+        { rank: 5, team: "Los Angeles Sparks", GP: 16, GW: 8, GL: 8, points_for: 1376, points_against: 1376, logo: "wnba/sparks.png" },
+        { rank: 6, team: "Portland Fire", GP: 17, GW: 8, GL: 9, points_for: 1445, points_against: 1479, logo: "wnba/fire.png" },
+        { rank: 7, team: "Phoenix Mercury", GP: 17, GW: 5, GL: 12, points_for: 1360, points_against: 1496, logo: "wnba/mercury.png" },
+        { rank: 8, team: "Seattle Storm", GP: 17, GW: 3, GL: 14, points_for: 1326, points_against: 1547, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Sunday, June 14 - Completed
-       /* { home: "Minnesota Lynx", away: "Las Vegas Aces", date: "2026-06-14" },
-        { home: "Dallas Wings", away: "Portland Fire", date: "2026-06-14" },
-        { home: "Los Angeles Sparks", away: "Phoenix Mercury", date: "2026-06-14" },
-        { home: "Washington Mystics", away: "New York Liberty", date: "2026-06-14" },
-        { home: "Atlanta Dream", away: "Toronto Tempo", date: "2026-06-14" },*/
+        // Tuesday, June 23
+        { home: "Chicago Sky", away: "Connecticut Sun", date: "2026-06-23" },
+        { home: "Toronto Tempo", away: "Atlanta Dream", date: "2026-06-23" },
+        { home: "Phoenix Mercury", away: "Indiana Fever", date: "2026-06-23" },
+        { home: "Dallas Wings", away: "Seattle Storm", date: "2026-06-23" },
         
-        // Tuesday, June 16
-       // { home: "Las Vegas Aces", away: "Dallas Wings", date: "2026-06-16" },
-       // { home: "Portland Fire", away: "Minnesota Lynx", date: "2026-06-16" },
-       // { home: "Los Angeles Sparks", away: "Golden State Valkyries", date: "2026-06-16" },
+        // Wednesday, June 24
+        { home: "New York Liberty", away: "Las Vegas Aces", date: "2026-06-24" },
         
-        // Wednesday, June 17
-       // { home: "Toronto Tempo", away: "Indiana Fever", date: "2026-06-17" },
+        // Thursday, June 25
+        { home: "Phoenix Mercury", away: "Indiana Fever", date: "2026-06-25" },
+        { home: "Minnesota Lynx", away: "Washington Mystics", date: "2026-06-25" },
+        { home: "Portland Fire", away: "Chicago Sky", date: "2026-06-25" },
+        { home: "Atlanta Dream", away: "Golden State Valkyries", date: "2026-06-25" },
         
-        // Thursday, June 18
-        { home: "Washington Mystics", away: "Connecticut Sun", date: "2026-06-18" },
-        { home: "New York Liberty", away: "Chicago Sky", date: "2026-06-18" },
-        { home: "Dallas Wings", away: "Golden State Valkyries", date: "2026-06-18" },
-        { home: "Minnesota Lynx", away: "Los Angeles Sparks", date: "2026-06-18" },
-        { home: "Las Vegas Aces", away: "Phoenix Mercury", date: "2026-06-18" },
-        { home: "Seattle Storm", away: "Portland Fire", date: "2026-06-18" },
+        // Friday, June 26
+        { home: "Los Angeles Sparks", away: "Toronto Tempo", date: "2026-06-26" },
+        { home: "Dallas Wings", away: "Las Vegas Aces", date: "2026-06-26" },
+        { home: "New York Liberty", away: "Seattle Storm", date: "2026-06-26" },
         
-        // Friday, June 19
-        { home: "Atlanta Dream", away: "Indiana Fever", date: "2026-06-19" },
+        // Saturday, June 27
+        { home: "Washington Mystics", away: "Connecticut Sun", date: "2026-06-27" },
+        { home: "Portland Fire", away: "Chicago Sky", date: "2026-06-27" },
+        { home: "Atlanta Dream", away: "Golden State Valkyries", date: "2026-06-27" },
+        { home: "Phoenix Mercury", away: "Toronto Tempo", date: "2026-06-27" },
         
-        // Saturday, June 20
-        { home: "Toronto Tempo", away: "Connecticut Sun", date: "2026-06-20" },
-        { home: "Washington Mystics", away: "New York Liberty", date: "2026-06-20" },
-        { home: "Minnesota Lynx", away: "Golden State Valkyries", date: "2026-06-20" },
-        { home: "Indiana Fever", away: "Atlanta Dream", date: "2026-06-20" }
+        // Sunday, June 28
+        { home: "Los Angeles Sparks", away: "Indiana Fever", date: "2026-06-28" },
+        { home: "Atlanta Dream", away: "Seattle Storm", date: "2026-06-28" },
+        { home: "Minnesota Lynx", away: "Dallas Wings", date: "2026-06-28" },
+        { home: "Portland Fire", away: "Washington Mystics", date: "2026-06-28" },
+        { home: "Las Vegas Aces", away: "Chicago Sky", date: "2026-06-28" },
+        
+        // Monday, June 29
+        { home: "New York Liberty", away: "Golden State Valkyries", date: "2026-06-29" },
+        
+        // Wednesday, July 1 - Commissioner's Cup Final
+        { home: "Las Vegas Aces", away: "New York Liberty", date: "2026-07-01" },
+        
+        // Friday, July 3
+        { home: "Atlanta Dream", away: "Washington Mystics", date: "2026-07-03" },
+        { home: "Dallas Wings", away: "Connecticut Sun", date: "2026-07-03" },
+        { home: "Seattle Storm", away: "Phoenix Mercury", date: "2026-07-03" },
+        
+        // Saturday, July 4
+        { home: "Minnesota Lynx", away: "New York Liberty", date: "2026-07-04" },
+        { home: "Chicago Sky", away: "Las Vegas Aces", date: "2026-07-04" }
     ]
 }
 /*
