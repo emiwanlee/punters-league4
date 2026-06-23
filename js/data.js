@@ -274,11 +274,11 @@ const leaguesData = {
     ],
     fixtures: [
         // Today - June 21
-        { home: "Deportivo Madryn", away: "Los Andes", date: "2026-06-21" },
-        { home: "Ferro", away: "Deportivo Morón", date: "2026-06-21" },
-        { home: "Almirante Brown", away: "Mitre", date: "2026-06-21" },
-        { home: "Defensores de Belgrano", away: "All Boys", date: "2026-06-21" },
-        { home: "Central Norte", away: "Godoy Cruz", date: "2026-06-21" },
+       // { home: "Deportivo Madryn", away: "Los Andes", date: "2026-06-21" },
+        //{ home: "Ferro", away: "Deportivo Morón", date: "2026-06-21" },
+       // { home: "Almirante Brown", away: "Mitre", date: "2026-06-21" },
+       // { home: "Defensores de Belgrano", away: "All Boys", date: "2026-06-21" },
+        //{ home: "Central Norte", away: "Godoy Cruz", date: "2026-06-21" },
         
         // Tuesday, June 23
         { home: "Nueva Chicago", away: "Atlético Rafaela", date: "2026-06-23" },
@@ -322,10 +322,10 @@ const leaguesData = {
     ],
     fixtures: [
         // Today - June 21
-        { home: "Patronato", away: "Midland", date: "2026-06-21" },
-        { home: "Chacarita Juniors", away: "Tristan Suarez", date: "2026-06-21" },
-        { home: "Deportivo Maipú", away: "Gimnasia y Tiro", date: "2026-06-21" },
-        { home: "Guemes", away: "Gimnasia de Jujuy", date: "2026-06-21" },
+       // { home: "Patronato", away: "Midland", date: "2026-06-21" },
+        //{ home: "Chacarita Juniors", away: "Tristan Suarez", date: "2026-06-21" },
+       // { home: "Deportivo Maipú", away: "Gimnasia y Tiro", date: "2026-06-21" },
+       // { home: "Guemes", away: "Gimnasia de Jujuy", date: "2026-06-21" },
         
         // Tuesday, June 23
         { home: "Nueva Chicago", away: "Atlético Rafaela", date: "2026-06-23" },
@@ -607,7 +607,7 @@ const leaguesData = {
     ],
     fixtures: [
          // Matchday 16 - Friday, June 19
-        { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" },
+       // { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" },
         
         // Matchday 17 - July 26 (TBD times)
         { home: "Colo-Colo", away: "Deportes Limache", date: "2026-07-26" },
@@ -642,7 +642,7 @@ const leaguesData = {
         { rank: 15, team: "Trelleborg", MP: 30, MW: 5, MD: 7, ML: 18, GF: 23, GA: 51, logo: "sweden/trelleborg.png" },
         { rank: 16, team: "Umeå", MP: 30, MW: 4, MD: 7, ML: 19, GF: 30, GA: 57, logo: "sweden/umea.png" }
     ],
-    fixtures: [
+   // fixtures: [
         // Matchday 13
         // Tomorrow - June 15
       //  { home: "GIF Sundsvall", away: "Östers IF", date: "2026-06-15" },
@@ -658,12 +658,12 @@ const leaguesData = {
         { home: "Östers IF", away: "Falkenberg", date: "2026-06-21" },
         { home: "Östersund", away: "Norrköping", date: "2026-06-21" },
         { home: "Norrby", away: "United Nordic", date: "2026-06-21" },
-        */
+        
         // Monday, June 22
         { home: "Oddevold", away: "Ljungskile", date: "2026-06-22" },
         { home: "Varbergs BoIS", away: "Landskrona", date: "2026-06-22" },
         { home: "Örebro", away: "Sandviken", date: "2026-06-22" }
-    ]
+    ]*/
 },
 
 "Chinese Super League": {
@@ -1045,9 +1045,9 @@ const leaguesData = {
         { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
     ],
     fixtures: [
-        //{ home: "Montreal", away: "Toronto", date: "2026-07-17" },
-        //{ home: "Chicago", away: "Vancouver", date: "2026-07-17" },
-        //{ home: "Seattle", away: "Portland", date: "2026-07-17" },
+        { home: "Montreal", away: "Toronto", date: "2026-07-17" },
+        { home: "Chicago", away: "Vancouver", date: "2026-07-17" },
+        { home: "Seattle", away: "Portland", date: "2026-07-17" },
         { home: "Nashville", away: "Atlanta", date: "2026-07-18" },
         { home: "LA Galaxy", away: "LAFC", date: "2026-07-18" },
         { home: "Cincinnati", away: "Vancouver", date: "2026-07-23" },
