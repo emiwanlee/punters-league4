@@ -22,24 +22,16 @@ function formatDate(dateString) {
 // ==================== SIDEBAR RESULTS (MANUALLY CONTROLLED) ====================
 
 // You control exactly what shows here - independent from matchesData
-const sidebarResults = {
-    "Argentine Primera Nacional - Recent": [
-    { home: "Deportivo Madryn", away: "Los Andes", home_score: 2, away_score: 1, league: "Primera Nacional" },
-    { home: "Almirante Brown", away: "CA Mitre", home_score: 3, away_score: 1, league: "Primera Nacional" },
-    { home: "Chacarita Juniors", away: "Tristan Suarez", home_score: 0, away_score: 0, league: "Primera Nacional" },
-    { home: "Def. de Belgrano", away: "All Boys", home_score: 0, away_score: 1, league: "Primera Nacional" },
-    { home: "Ferro", away: "Deportivo Moron", home_score: 1, away_score: 0, league: "Primera Nacional" },
-    { home: "Patronato", away: "Midland", home_score: 1, away_score: 1, league: "Primera Nacional" },
-    { home: "Central Norte", away: "Godoy Cruz", home_score: 1, away_score: 0, league: "Primera Nacional" },
-    { home: "Deportivo Maipu", away: "Gimnasia y Tiro", home_score: 0, away_score: 0, league: "Primera Nacional" },
-    { home: "Club A. Guemes", away: "Gimnasia Jujuy", home_score: 1, away_score: 3, league: "Primera Nacional" }
+"Brazilian U-20 League - Recent" [
+    { home: "Cruzeiro U20", away: "América MG U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
+    { home: "Grêmio U20", away: "Bahia U20", home_score: 4, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "São Paulo U20", away: "Fortaleza U20", home_score: 1, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "Vitória U20", away: "Santos U20", home_score: 1, away_score: 2, league: "Brazilian U-20 League" },
+    { home: "Cuiabá U20", away: "Juventude U20", home_score: 2, away_score: 0, league: "Brazilian U-20 League" }
 ],
-    "WNBA": [
-    { home: "Minnesota Lynx", away: "Portland Fire", home_score: 107, away_score: 74, date: "2026-06-16" },
-    { home: "Golden State Valkyries", away: " Los Angeles Sparks", home_score: 78, away_score: 58, date: "2026-06-16" },
-   // { home: "Spain", away: "Cape Verde", home_score: 0, away_score: 0, date: "2026-06-14" }
-	]
-};
+   "WNBA - Recent Results" [
+    { home: "New York Liberty", away: "Las Vegas Aces", home_score: 87, away_score: 76, league: "WNBA" }
+]
 
 // Function to render sidebar results from your custom list
 // Function to render sidebar results from your custom list
