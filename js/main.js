@@ -22,16 +22,19 @@ function formatDate(dateString) {
 // ==================== SIDEBAR RESULTS (MANUALLY CONTROLLED) ====================
 
 // You control exactly what shows here - independent from matchesData
-"Brazilian U-20 League - Recent" [
-    { home: "Cruzeiro U20", away: "América MG U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
-    { home: "Grêmio U20", away: "Bahia U20", home_score: 4, away_score: 0, league: "Brazilian U-20 League" },
-    { home: "São Paulo U20", away: "Fortaleza U20", home_score: 1, away_score: 0, league: "Brazilian U-20 League" },
-    { home: "Vitória U20", away: "Santos U20", home_score: 1, away_score: 2, league: "Brazilian U-20 League" },
-    { home: "Cuiabá U20", away: "Juventude U20", home_score: 2, away_score: 0, league: "Brazilian U-20 League" }
-],
-   "WNBA - Recent Results" [
-    { home: "New York Liberty", away: "Las Vegas Aces", home_score: 87, away_score: 76, league: "WNBA" }
-]
+// You control exactly what shows here - independent from matchesData
+const sidebarResults = {
+    "Brazilian U-20 League - Recent": [
+        { home: "Cruzeiro U20", away: "América MG U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
+        { home: "Grêmio U20", away: "Bahia U20", home_score: 4, away_score: 0, league: "Brazilian U-20 League" },
+        { home: "São Paulo U20", away: "Fortaleza U20", home_score: 1, away_score: 0, league: "Brazilian U-20 League" },
+        { home: "Vitória U20", away: "Santos U20", home_score: 1, away_score: 2, league: "Brazilian U-20 League" },
+        { home: "Cuiabá U20", away: "Juventude U20", home_score: 2, away_score: 0, league: "Brazilian U-20 League" }
+    ],
+    "WNBA - Recent Results": [
+        { home: "New York Liberty", away: "Las Vegas Aces", home_score: 87, away_score: 76, league: "WNBA" }
+    ]
+};
 
 // Function to render sidebar results from your custom list
 // Function to render sidebar results from your custom list
