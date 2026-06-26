@@ -382,6 +382,41 @@ const leaguesData = {
         { home: "Monaro Panthers", away: "Queanbeyan City", date: "2026-07-01" }
     ]
 },
+"Australian NPL Victoria": {
+    id: "australia-npl-victoria",
+    logo: "australia/nplvictoria.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Oakleigh Cannons", MP: 17, MW: 11, MD: 4, ML: 2, GF: 39, GA: 17, logo: "australia/oakleigh.png" },
+        { rank: 2, team: "Hume City", MP: 17, MW: 11, MD: 3, ML: 3, GF: 36, GA: 21, logo: "australia/humecity.png" },
+        { rank: 3, team: "Avondale FC", MP: 17, MW: 11, MD: 1, ML: 5, GF: 50, GA: 19, logo: "australia/avondale.png" },
+        { rank: 4, team: "Heidelberg Utd", MP: 17, MW: 9, MD: 3, ML: 5, GF: 30, GA: 22, logo: "australia/heidelberg.png" },
+        { rank: 5, team: "George Cross", MP: 17, MW: 6, MD: 7, ML: 4, GF: 24, GA: 23, logo: "australia/georgecross.png" },
+        { rank: 6, team: "South Melbourne", MP: 17, MW: 8, MD: 1, ML: 8, GF: 27, GA: 30, logo: "australia/southmelbourne.png" },
+        { rank: 7, team: "Melbourne City U21", MP: 16, MW: 6, MD: 5, ML: 5, GF: 30, GA: 20, logo: "australia/melbournecity.png" },
+        { rank: 8, team: "Preston Lions", MP: 16, MW: 9, MD: 2, ML: 5, GF: 23, GA: 13, logo: "australia/prestonlions.png" },
+        { rank: 9, team: "St Albans", MP: 17, MW: 6, MD: 3, ML: 8, GF: 20, GA: 31, logo: "australia/stalbans.png" },
+        { rank: 10, team: "Dandenong City", MP: 17, MW: 6, MD: 4, ML: 7, GF: 23, GA: 24, logo: "australia/dandenongcity.png" },
+        { rank: 11, team: "Altona Magic", MP: 17, MW: 4, MD: 4, ML: 9, GF: 20, GA: 32, logo: "australia/altonamagic.png" },
+        { rank: 12, team: "Bentleigh Greens", MP: 17, MW: 4, MD: 4, ML: 9, GF: 17, GA: 38, logo: "australia/bentleigh.png" },
+        { rank: 13, team: "Dandenong Thunder", MP: 17, MW: 3, MD: 3, ML: 11, GF: 19, GA: 38, logo: "australia/dandenongthunder.png" },
+        { rank: 14, team: "Green Gully", MP: 17, MW: 0, MD: 4, ML: 13, GF: 8, GA: 38, logo: "australia/greengully.png" }
+    ],
+    fixtures: [
+        // Round 18 - June 26
+        { home: "Heidelberg Utd", away: "Oakleigh Cannons", date: "2026-06-26" },
+        { home: "Dandenong City", away: "Avondale FC", date: "2026-06-26" },
+        { home: "Bentleigh Greens", away: "Altona Magic", date: "2026-06-26" },
+        { home: "St Albans", away: "Melbourne City U21", date: "2026-06-26" },
+        
+        // Round 18 - June 27
+        { home: "Dandenong Thunder", away: "Hume City", date: "2026-06-27" },
+        { home: "George Cross", away: "Preston Lions", date: "2026-06-27" },
+        
+        // Round 18 - June 28
+        { home: "South Melbourne", away: "Green Gully", date: "2026-06-28" }
+    ]
+},
 
 "Brazilian U-20 League": {
     id: "brazil-u20",
@@ -850,7 +885,43 @@ const leaguesData = {
         { home: "Ventspils", away: "Valmiera", date: "2026-06-28" }
     ]
 },  
-
+"Swedish Ettan Norra": {
+    id: "sweden-ettan-norra",
+    logo: "sweden/ettan.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Karlstad", MP: 13, MW: 9, MD: 3, ML: 1, GF: 22, GA: 8, logo: "sweden/karlstad.png" },
+        { rank: 2, team: "Hammarby TFF", MP: 13, MW: 9, MD: 2, ML: 2, GF: 31, GA: 11, logo: "sweden/hammarbytff.png" },
+        { rank: 3, team: "Arlanda", MP: 13, MW: 7, MD: 5, ML: 1, GF: 22, GA: 10, logo: "sweden/arlanda.png" },
+        { rank: 4, team: "Enkoping SK", MP: 13, MW: 8, MD: 1, ML: 4, GF: 24, GA: 21, logo: "sweden/enkopingsk.png" },
+        { rank: 5, team: "Stockholm Internazionale", MP: 13, MW: 7, MD: 3, ML: 3, GF: 26, GA: 14, logo: "sweden/stockholmint.png" },
+        { rank: 6, team: "FBK Karlstad", MP: 13, MW: 7, MD: 3, ML: 3, GF: 23, GA: 13, logo: "sweden/fbkkarlstad.png" },
+        { rank: 7, team: "Karlbergs", MP: 14, MW: 5, MD: 3, ML: 6, GF: 23, GA: 23, logo: "sweden/karlbergs.png" },
+        { rank: 8, team: "Umea FC", MP: 13, MW: 4, MD: 4, ML: 5, GF: 19, GA: 21, logo: "sweden/umeafc.png" },
+        { rank: 9, team: "AFC Eskilstuna", MP: 13, MW: 4, MD: 4, ML: 5, GF: 19, GA: 23, logo: "sweden/afceskilstuna.png" },
+        { rank: 10, team: "Vasalund", MP: 13, MW: 4, MD: 3, ML: 6, GF: 19, GA: 27, logo: "sweden/vasalund.png" },
+        { rank: 11, team: "Sollentuna", MP: 13, MW: 2, MD: 7, ML: 4, GF: 11, GA: 15, logo: "sweden/sollentuna.png" },
+        { rank: 12, team: "Jarfalla", MP: 13, MW: 3, MD: 3, ML: 7, GF: 18, GA: 26, logo: "sweden/jarfalla.png" },
+        { rank: 13, team: "Assyriska FF", MP: 13, MW: 2, MD: 5, ML: 6, GF: 19, GA: 28, logo: "sweden/assyriska.png" },
+        { rank: 14, team: "Gefle", MP: 13, MW: 3, MD: 2, ML: 8, GF: 15, GA: 28, logo: "sweden/gefle.png" },
+        { rank: 15, team: "Pitea", MP: 14, MW: 2, MD: 3, ML: 9, GF: 16, GA: 32, logo: "sweden/pitea.png" },
+        { rank: 16, team: "Stocksund", MP: 13, MW: 1, MD: 5, ML: 7, GF: 27, GA: 34, logo: "sweden/stocksund.png" }
+    ],
+    fixtures: [
+        // Round 14 - June 26
+        { home: "FBK Karlstad", away: "Hammarby TFF", date: "2026-06-26" },
+        { home: "Sollentuna", away: "AFC Eskilstuna", date: "2026-06-26" },
+        { home: "Assyriska FF", away: "Vasalund", date: "2026-06-26" },
+        
+        // Round 14 - June 27
+        { home: "Stockholm Internazionale", away: "Enkoping SK", date: "2026-06-27" },
+        { home: "Arlanda", away: "Karlstad", date: "2026-06-27" },
+        { home: "Gefle", away: "Stocksund", date: "2026-06-27" },
+        
+        // Round 14 - June 28
+        { home: "Umea FC", away: "Jarfalla", date: "2026-06-28" }
+    ]
+},
 "Bolivian Primera División": {
     id: "bolivia",
     logo: "bolivia/bolivia.png",
@@ -1390,6 +1461,104 @@ const matchesData = {
     { home: "Agropecuario", away: "Patronato", home_score: 1, away_score: 1, date: "2026-06-07" },
     { home: "Guemes", away: "Deportivo Maipú", home_score: 1, away_score: 0, date: "2026-06-07" },
     { home: "San Martín Tucumán", away: "Quilmes", home_score: 0, away_score: 0, date: "2026-06-07" }
+],
+"Australian NPL Victoria": [
+    // Round 18 - June 26
+    { home: "St Albans", away: "Altona Magic", home_score: 2, away_score: 1 },
+    { home: "Avondale FC", away: "Dandenong Thunder", home_score: 11, away_score: 0 },
+    { home: "George Cross", away: "Dandenong City", home_score: 3, away_score: 2 },
+    { home: "Heidelberg Utd", away: "Preston Lions", home_score: 0, away_score: 1 },
+    { home: "Hume City", away: "Green Gully", home_score: 3, away_score: 2 },
+    { home: "Bentleigh Greens", away: "South Melbourne", home_score: 1, away_score: 5 },
+    { home: "Oakleigh Cannons", away: "Melbourne City U21", home_score: 3, away_score: 1 },
+    
+    // Round 16 - June 7
+    { home: "South Melbourne", away: "Altona Magic", home_score: 2, away_score: 3 },
+    { home: "Dandenong Thunder", away: "George Cross", home_score: 2, away_score: 3 },
+    { home: "Bentleigh Greens", away: "Hume City", home_score: 1, away_score: 5 },
+    { home: "Dandenong City", away: "Heidelberg Utd", home_score: 4, away_score: 1 },
+    { home: "Green Gully", away: "Avondale FC", home_score: 0, away_score: 2 },
+    { home: "Oakleigh Cannons", away: "St Albans", home_score: 2, away_score: 2 },
+    
+    // Round 15 - May 29-31
+    { home: "St Albans", away: "Preston Lions", home_score: 0, away_score: 1 },
+    { home: "Altona Magic", away: "Oakleigh Cannons", home_score: 0, away_score: 2 },
+    { home: "Avondale FC", away: "Bentleigh Greens", home_score: 4, away_score: 0 },
+    { home: "George Cross", away: "Green Gully", home_score: 0, away_score: 0 },
+    { home: "Hume City", away: "South Melbourne", home_score: 1, away_score: 1 },
+    { home: "Melbourne City U21", away: "Dandenong City", home_score: 0, away_score: 1 },
+    { home: "Heidelberg Utd", away: "Dandenong Thunder", home_score: 4, away_score: 2 },
+    
+    // Round 14 - May 22-25
+    { home: "South Melbourne", away: "Avondale FC", home_score: 0, away_score: 4 },
+    { home: "Melbourne City U21", away: "Dandenong Thunder", home_score: 2, away_score: 0 },
+    { home: "Preston Lions", away: "Oakleigh Cannons", home_score: 0, away_score: 1 },
+    { home: "Altona Magic", away: "Hume City", home_score: 1, away_score: 3 },
+    { home: "Bentleigh Greens", away: "George Cross", home_score: 0, away_score: 0 },
+    { home: "Dandenong City", away: "St Albans", home_score: 2, away_score: 1 },
+    { home: "Green Gully", away: "Heidelberg Utd", home_score: 0, away_score: 1 },
+    
+    // Round 13 - May 15-18
+    { home: "South Melbourne", away: "George Cross", home_score: 0, away_score: 4 },
+    { home: "Altona Magic", away: "Preston Lions", home_score: 1, away_score: 0 },
+    { home: "Dandenong Thunder", away: "St Albans", home_score: 2, away_score: 2 },
+    { home: "Hume City", away: "Avondale FC", home_score: 3, away_score: 0 },
+    { home: "Bentleigh Greens", away: "Heidelberg Utd", home_score: 2, away_score: 2 },
+    { home: "Dandenong City", away: "Oakleigh Cannons", home_score: 1, away_score: 1 },
+    { home: "Green Gully", away: "Melbourne City U21", home_score: 1, away_score: 3 },
+    
+    // Round 12 - May 8-9
+    { home: "Avondale FC", away: "Altona Magic", home_score: 5, away_score: 1 },
+    { home: "George Cross", away: "Hume City", home_score: 2, away_score: 4 },
+    { home: "Bentleigh Greens", away: "Melbourne City U21", home_score: 0, away_score: 7 },
+    { home: "Heidelberg Utd", away: "South Melbourne", home_score: 4, away_score: 0 },
+    { home: "Oakleigh Cannons", away: "Dandenong Thunder", home_score: 2, away_score: 0 },
+    { home: "Preston Lions", away: "Dandenong City", home_score: 1, away_score: 0 },
+    { home: "St Albans", away: "Green Gully", home_score: 1, away_score: 0 }
+],
+"Swedish Ettan Norra": [
+    // Round 14 - June 24
+    { home: "Karlbergs", away: "Pitea", home_score: 3, away_score: 1 },
+    
+    // Round 13 - June 18-21
+    { home: "Assyriska FF", away: "Karlstad", home_score: 2, away_score: 2 },
+    { home: "Enkoping SK", away: "Umea FC", home_score: 3, away_score: 1 },
+    { home: "Pitea", away: "AFC Eskilstuna", home_score: 2, away_score: 2 },
+    { home: "Arlanda", away: "Stocksund", home_score: 1, away_score: 0 },
+    { home: "Gefle", away: "Stockholm Internazionale", home_score: 0, away_score: 2 },
+    { home: "Hammarby TFF", away: "Jarfalla", home_score: 1, away_score: 1 },
+    { home: "Sollentuna", away: "FBK Karlstad", home_score: 0, away_score: 2 },
+    { home: "Vasalund", away: "Karlbergs", home_score: 0, away_score: 4 },
+    
+    // Round 12 - June 12-14
+    { home: "AFC Eskilstuna", away: "Assyriska FF", home_score: 1, away_score: 0 },
+    { home: "Enkoping SK", away: "Vasalund", home_score: 1, away_score: 1 },
+    { home: "Stockholm Internazionale", away: "FBK Karlstad", home_score: 3, away_score: 1 },
+    { home: "Karlbergs", away: "Hammarby TFF", home_score: 0, away_score: 2 },
+    { home: "Jarfalla", away: "Arlanda", home_score: 2, away_score: 3 },
+    { home: "Stocksund", away: "Sollentuna", home_score: 3, away_score: 3 },
+    { home: "Karlstad", away: "Gefle", home_score: 2, away_score: 0 },
+    { home: "Umea FC", away: "Pitea", home_score: 2, away_score: 0 },
+    
+    // Round 11 - June 4-8
+    { home: "Jarfalla", away: "Stocksund", home_score: 1, away_score: 6 },
+    { home: "Stockholm Internazionale", away: "Vasalund", home_score: 4, away_score: 1 },
+    { home: "Arlanda", away: "Assyriska FF", home_score: 2, away_score: 0 },
+    { home: "Pitea", away: "Enkoping SK", home_score: 0, away_score: 2 },
+    { home: "Sollentuna", away: "Umea FC", home_score: 1, away_score: 1 },
+    { home: "Gefle", away: "Hammarby TFF", home_score: 0, away_score: 4 },
+    { home: "FBK Karlstad", away: "Karlstad", home_score: 2, away_score: 3 },
+    { home: "AFC Eskilstuna", away: "Karlbergs", home_score: 3, away_score: 2 },
+    
+    // Round 10 - May 30 - June 3
+    { home: "Vasalund", away: "Jarfalla", home_score: 3, away_score: 1 },
+    { home: "Assyriska FF", away: "Enkoping SK", home_score: 4, away_score: 2 },
+    { home: "Arlanda", away: "Gefle", home_score: 2, away_score: 3 },
+    { home: "Karlbergs", away: "FBK Karlstad", home_score: 1, away_score: 1 },
+    { home: "Pitea", away: "Stockholm Internazionale", home_score: 2, away_score: 2 },
+    { home: "Umea FC", away: "Stocksund", home_score: 2, away_score: 2 },
+    { home: "Hammarby TFF", away: "AFC Eskilstuna", home_score: 1, away_score: 2 },
+    { home: "Karlstad", away: "Sollentuna", home_score: 0, away_score: 0 }
 ],
 "Kyrgyzstan Premier League": [
     // Round 12 - June 10-12

@@ -24,13 +24,17 @@ function formatDate(dateString) {
 // You control exactly what shows here - independent from matchesData
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
-    "Brazilian U-20 League - Recent": [
-        { home: "Cruzeiro U20", away: "América MG U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
-        { home: "Grêmio U20", away: "Bahia U20", home_score: 4, away_score: 0, league: "Brazilian U-20 League" },
-        { home: "São Paulo U20", away: "Fortaleza U20", home_score: 1, away_score: 0, league: "Brazilian U-20 League" },
-        { home: "Vitória U20", away: "Santos U20", home_score: 1, away_score: 2, league: "Brazilian U-20 League" },
-        { home: "Cuiabá U20", away: "Juventude U20", home_score: 2, away_score: 0, league: "Brazilian U-20 League" }
-    ],
+   "Brazilian U-20 League - Recent": [
+    { home: "Cruzeiro U20", away: "América MG U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
+    { home: "Grêmio U20", away: "Bahia U20", home_score: 4, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "São Paulo U20", away: "Fortaleza U20", home_score: 1, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "Vitória U20", away: "Santos U20", home_score: 1, away_score: 2, league: "Brazilian U-20 League" },
+    { home: "Cuiabá U20", away: "Juventude U20", home_score: 2, away_score: 0, league: "Brazilian U-20 League" },
+    { home: "Corinthians U20", away: "Flamengo U20", home_score: 2, away_score: 2, league: "Brazilian U-20 League" },
+    { home: "Fluminense U20", away: "Palmeiras U20", home_score: 0, away_score: 3, league: "Brazilian U-20 League" },
+    { home: "RB Bragantino U20", away: "Botafogo U20", home_score: 2, away_score: 5, league: "Brazilian U-20 League" },
+    { home: "Vasco U20", away: "Criciuma U20", home_score: 1, away_score: 2, league: "Brazilian U-20 League" }
+],
     "WNBA - Recent Results": [
         { home: "New York Liberty", away: "Las Vegas Aces", home_score: 87, away_score: 76, league: "WNBA" }
     ]
