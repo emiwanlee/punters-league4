@@ -404,11 +404,11 @@ const leaguesData = {
     ],
     fixtures: [
         // Round 18 - June 26
-        { home: "Heidelberg Utd", away: "Oakleigh Cannons", date: "2026-06-26" },
+       /* { home: "Heidelberg Utd", away: "Oakleigh Cannons", date: "2026-06-26" },
         { home: "Dandenong City", away: "Avondale FC", date: "2026-06-26" },
         { home: "Bentleigh Greens", away: "Altona Magic", date: "2026-06-26" },
         { home: "St Albans", away: "Melbourne City U21", date: "2026-06-26" },
-        
+        */
         // Round 18 - June 27
         { home: "Dandenong Thunder", away: "Hume City", date: "2026-06-27" },
         { home: "George Cross", away: "Preston Lions", date: "2026-06-27" },
@@ -453,13 +453,13 @@ const leaguesData = {
         { home: "Cuiabá U20", away: "Juventude U20", date: "2026-06-23" },*/
         
         // Round 18 - June 24
-        { home: "Avaí U20", away: "Athletico-PR U20", date: "2026-06-24" },
+       /* { home: "Avaí U20", away: "Athletico-PR U20", date: "2026-06-24" },
         
         // Round 18 - June 25
         { home: "Corinthians U20", away: "Flamengo U20", date: "2026-06-25" },
         { home: "Fluminense U20", away: "Palmeiras U20", date: "2026-06-25" },
         { home: "RB Bragantino U20", away: "Botafogo U20", date: "2026-06-25" },
-        { home: "Vasco U20", away: "Criciuma U20", date: "2026-06-25" },
+        { home: "Vasco U20", away: "Criciuma U20", date: "2026-06-25" },*/
         
         // Round 19 - July 1
         { home: "América MG U20", away: "RB Bragantino U20", date: "2026-07-01" },
@@ -615,7 +615,7 @@ const leaguesData = {
       //  { home: "Ponte Preta", away: "Novorizontino", date: "2026-06-23" },
         
         // Wednesday, June 24
-        { home: "América-MG", away: "Criciúma", date: "2026-06-24" }
+       // { home: "América-MG", away: "Criciúma", date: "2026-06-24" }
     ],
 	},
 "Chilean Primera División": {
@@ -645,7 +645,7 @@ const leaguesData = {
        // { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" },
         
         // Matchday 17 - July 26 (TBD times)
-        { home: "Colo-Colo", away: "Deportes Limache", date: "2026-07-26" },
+       // { home: "Colo-Colo", away: "Deportes Limache", date: "2026-07-26" },
         { home: "Audax Italiano", away: "Universidad de Chile", date: "2026-07-26" },
         { home: "Universidad Católica", away: "La Serena", date: "2026-07-26" },
         { home: "Unión La Calera", away: "Everton", date: "2026-07-26" },
@@ -686,7 +686,7 @@ const leaguesData = {
     fixtures: [
         
         // Matchday 14 - Friday, June 26
-        { home: "Brage", away: "Falkenberg", date: "2026-06-26" },
+      //  { home: "Brage", away: "Falkenberg", date: "2026-06-26" },
         
         // Matchday 14 - Saturday, June 27
         { home: "Ljungskile", away: "Örebro", date: "2026-06-27" },
@@ -724,7 +724,7 @@ const leaguesData = {
         { team: "Changchun Yatai", MP: 30, MW: 4, MD: 7, ML: 19, GF: 26, GA: 52, logo: "china/changchunlogo.png" }
     ],
     fixtures: [
-        { home: "Qingdao Hainiu", away: "Yunnan Yukun", date: "2026-06-26" },
+       // { home: "Qingdao Hainiu", away: "Yunnan Yukun", date: "2026-06-26" },
         { home: "Shenyang Urban", away: "Shandong Taishan", date: "2026-06-27" },
         { home: "Henan", away: "Shanghai Port", date: "2026-06-27" },
         { home: "Shenzhen Peng City", away: "Chengdu Rongcheng", date: "2026-06-27" },
@@ -909,10 +909,10 @@ const leaguesData = {
     ],
     fixtures: [
         // Round 14 - June 26
-        { home: "FBK Karlstad", away: "Hammarby TFF", date: "2026-06-26" },
+       /* { home: "FBK Karlstad", away: "Hammarby TFF", date: "2026-06-26" },
         { home: "Sollentuna", away: "AFC Eskilstuna", date: "2026-06-26" },
         { home: "Assyriska FF", away: "Vasalund", date: "2026-06-26" },
-        
+        */
         // Round 14 - June 27
         { home: "Stockholm Internazionale", away: "Enkoping SK", date: "2026-06-27" },
         { home: "Arlanda", away: "Karlstad", date: "2026-06-27" },
@@ -1015,17 +1015,17 @@ const leaguesData = {
     ],
     fixtures: [
         // Wednesday, June 24
-        { home: "Kaspiy Aktau Reserve", away: "Tobol-M", date: "2026-06-24" },
+     /*  { home: "Kaspiy Aktau Reserve", away: "Tobol-M", date: "2026-06-24" },
         
         // Thursday, June 25
         { home: "Yelimay M", away: "Turan", date: "2026-06-25" },
         { home: "Kairat-Zhastar", away: "Khan Tengri", date: "2026-06-25" },
         { home: "Aktobe Jas", away: "Turan", date: "2026-06-25" },
-        { home: "Jaiyq Uralsk", away: "Akademiya Ontustik", date: "2026-06-25" },
+        { home: "Jaiyq Uralsk", away: "Akademiya Ontustik", date: "2026-06-25" },*/
         
         // Friday, June 26
-        { home: "Taraz", away: "Shakhter", date: "2026-06-26" },
-        { home: "FK Ekibastuz", away: "Astana Reserve", date: "2026-06-26" },
+        //{ home: "Taraz", away: "Shakhter", date: "2026-06-26" },
+        //{ home: "FK Ekibastuz", away: "Astana Reserve", date: "2026-06-26" },
         
         // Wednesday, July 1
         { home: "Tobol-M", away: "Aktobe Jas", date: "2026-07-01" },
