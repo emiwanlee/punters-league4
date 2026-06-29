@@ -179,22 +179,6 @@ const leaguesData = {
         { rank: 22, team: "Ituzaingó", MP: 22, MW: 1, MD: 6, ML: 15, GF: 16, GA: 38, logo: "argentina/ituzaingo.png" }
     ],
     fixtures: [
-        // Sunday, June 28
-        { home: "Laferrere", away: "Argentino Quilmes", date: "2026-06-28" },
-        { home: "UAI Urquiza", away: "Sportivo Italiano", date: "2026-06-28" },
-        { home: "Liniers", away: "Villa San Carlos", date: "2026-06-28" },
-        { home: "Arsenal Sarandi", away: "Dock Sud", date: "2026-06-28" },
-        { home: "Argentino de Merlo", away: "Comunicaciones", date: "2026-06-28" },
-        
-        // Saturday, July 4
-        { home: "Deportivo Merlo", away: "Dálmine", date: "2026-07-04" },
-        { home: "Ituzaingó", away: "Villa San Carlos", date: "2026-07-04" },
-        { home: "Flandria", away: "Laferrere", date: "2026-07-04" },
-        { home: "Deportivo Camioneros", away: "UAI Urquiza", date: "2026-07-04" },
-        { home: "Dock Sud", away: "Excursionistas", date: "2026-07-04" },
-        { home: "Comunicaciones", away: "Arsenal Sarandi", date: "2026-07-04" },
-        { home: "Dep. Armenio", away: "Brown (A)", date: "2026-07-04" },
-        
         // Sunday, July 5
         { home: "Sportivo Italiano", away: "Real Pilar", date: "2026-07-05" },
         { home: "Argentino Quilmes", away: "Talleres Remedios", date: "2026-07-05" },
@@ -318,31 +302,6 @@ const leaguesData = {
         { rank: 18, team: "Chaco For Ever", MP: 18, MW: 2, MD: 6, ML: 10, GF: 13, GA: 24, logo: "argentina/chacoforever.png" }
     ],
     fixtures: [
-        // Round 16 - June 17
-        { home: "Gimnasia Jujuy", away: "Nueva Chicago", date: "2026-06-17" },
-        
-        // Round 4 (makeup) - June 20
-        { home: "Ciudad Bolivar", away: "CA Estudiantes", date: "2026-06-20" },
-        { home: "Colegiales", away: "Quilmes", date: "2026-06-20" },
-        { home: "San Telmo", away: "Racing Cordoba", date: "2026-06-20" },
-        { home: "Acassuso", away: "San Miguel", date: "2026-06-20" },
-        { home: "Almagro", away: "Atletico Atlanta", date: "2026-06-20" },
-        { home: "Nueva Chicago", away: "Atl. Rafaela", date: "2026-06-20" },
-        { home: "Chaco For Ever", away: "Colon Santa Fe", date: "2026-06-20" },
-        
-        // Round 19 - June 21
-        { home: "Deportivo Madryn", away: "Los Andes", date: "2026-06-21" },
-        { home: "Almirante Brown", away: "CA Mitre", date: "2026-06-21" },
-        { home: "Chacarita Juniors", away: "Tristan Suarez", date: "2026-06-21" },
-        { home: "Def. de Belgrano", away: "All Boys", date: "2026-06-21" },
-        { home: "Ferro", away: "Deportivo Moron", date: "2026-06-21" },
-        { home: "Patronato", away: "Midland", date: "2026-06-21" },
-        { home: "San Martin S.J.", away: "Agropecuario", date: "2026-06-21" },
-        { home: "Club A. Guemes", away: "Gimnasia Jujuy", date: "2026-06-21" },
-        { home: "Temperley", away: "San Martin T.", date: "2026-06-21" },
-        { home: "Central Norte", away: "Godoy Cruz", date: "2026-06-21" },
-        { home: "Deportivo Maipu", away: "Gimnasia y Tiro", date: "2026-06-21" },
-        
         // Round 20 - July 4
         { home: "Racing (C)", away: "Acassuso", date: "2026-07-04" },
         { home: "All Boys", away: "Almirante Brown", date: "2026-07-04" },
@@ -649,7 +608,7 @@ const leaguesData = {
         { home: "Athletic (MG)", away: "Operário Ferroviário", date: "2026-07-08" }
     ]
 },
-
+/*
 	"Chilean Primera División": {
     id: "chile",
     logo: "chile/chile.png",
@@ -673,9 +632,6 @@ const leaguesData = {
         { rank: 16, team: "Unión La Calera", MP: 15, MW: 3, MD: 3, ML: 9, GF: 14, GA: 28, logo: "chile/unionlacalera.png" }
     ],
     fixtures: [
-        // Matchday 16 - Friday, June 19
-        { home: "Universidad de Chile", away: "O'Higgins", date: "2026-06-19" },
-        
         // Matchday 17 - July 26 (TBD times)
         { home: "Colo-Colo", away: "Deportes Limache", date: "2026-07-26" },
         { home: "Audax Italiano", away: "Universidad de Chile", date: "2026-07-26" },
@@ -687,6 +643,7 @@ const leaguesData = {
         { home: "Concepción", away: "O'Higgins", date: "2026-07-26" }
     ]
 },
+*/
 "Swedish Superettan": {
     id: "sweden-superettan",
     logo: "sweden/superettan.png",
@@ -1246,42 +1203,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 20, GW: 5, GL: 15, points_for: 1622, points_against: 1724, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Tuesday, June 23
-        { home: "Chicago Sky", away: "Connecticut Sun", date: "2026-06-23" },
-        { home: "Toronto Tempo", away: "Atlanta Dream", date: "2026-06-23" },
-        { home: "Phoenix Mercury", away: "Indiana Fever", date: "2026-06-23" },
-        { home: "Dallas Wings", away: "Seattle Storm", date: "2026-06-23" },
-        
-        // Wednesday, June 24
-        { home: "New York Liberty", away: "Las Vegas Aces", date: "2026-06-24" },
-        
-        // Thursday, June 25
-        { home: "Phoenix Mercury", away: "Indiana Fever", date: "2026-06-25" },
-        { home: "Minnesota Lynx", away: "Washington Mystics", date: "2026-06-25" },
-        { home: "Portland Fire", away: "Chicago Sky", date: "2026-06-25" },
-        { home: "Atlanta Dream", away: "Golden State Valkyries", date: "2026-06-25" },
-        
-        // Friday, June 26
-        { home: "Los Angeles Sparks", away: "Toronto Tempo", date: "2026-06-26" },
-        { home: "Dallas Wings", away: "Las Vegas Aces", date: "2026-06-26" },
-        { home: "New York Liberty", away: "Seattle Storm", date: "2026-06-26" },
-        
-        // Saturday, June 27
-        { home: "Washington Mystics", away: "Connecticut Sun", date: "2026-06-27" },
-        { home: "Portland Fire", away: "Chicago Sky", date: "2026-06-27" },
-        { home: "Atlanta Dream", away: "Golden State Valkyries", date: "2026-06-27" },
-        { home: "Phoenix Mercury", away: "Toronto Tempo", date: "2026-06-27" },
-        
-        // Sunday, June 28
-        { home: "Los Angeles Sparks", away: "Indiana Fever", date: "2026-06-28" },
-        { home: "Atlanta Dream", away: "Seattle Storm", date: "2026-06-28" },
-        { home: "Minnesota Lynx", away: "Dallas Wings", date: "2026-06-28" },
-        { home: "Portland Fire", away: "Washington Mystics", date: "2026-06-28" },
-        { home: "Las Vegas Aces", away: "Chicago Sky", date: "2026-06-28" },
-        
-        // Monday, June 29
-        { home: "Golden State Valkyries", away: "New York Liberty", date: "2026-06-29" },
-        
         // Wednesday, July 1 - Commissioner's Cup Final
         { home: "New York Liberty", away: "Las Vegas Aces", date: "2026-07-01" },
         
