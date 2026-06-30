@@ -24,12 +24,9 @@ function formatDate(dateString) {
 // You control exactly what shows here - independent from matchesData
 // You control exactly what shows here - independent from matchesData
 const sidebarResults = {
-   "Primera B Metropolitana - Recent": [
-    { home: "Laferrere", away: "Argentino de Quilmes", home_score: 1, away_score: 1, league: "Primera B Metropolitana" },
-    { home: "Liniers", away: "Villa San Carlos", home_score: 1, away_score: 1, league: "Primera B Metropolitana" },
-    { home: "UAI Urquiza", away: "Sportivo Italiano", home_score: 0, away_score: 0, league: "Primera B Metropolitana" },
-    { home: "Argentino de Merlo", away: "Comunicaciones", home_score: 3, away_score: 2, league: "Primera B Metropolitana" },
-    { home: "Arsenal Sarandi", away: "Dock Sud", home_score: 0, away_score: 0, league: "Primera B Metropolitana" }
+   "Chinese Women's Super League - Recent": [
+    { home: "Guangdong Meizhou W", away: "Wuhan Jiangda W", home_score: 1, away_score: 1, league: "Chinese Women's Super League" },
+    { home: "Guangxi Pingguo W", away: "Beijing Beikong W", home_score: 0, away_score: 2, league: "Chinese Women's Super League" }
 ],
     "WNBA - Recent Results": [
         { home: "New York Liberty", away: "Las Vegas Aces", home_score: 87, away_score: 76, league: "WNBA" }
