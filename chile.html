@@ -200,25 +200,7 @@
     <nav class="navbar">
         <div class="logo-wrapper">
             <a href="index.html" class="logo-link">
-                <div class="logo-icon">
-                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#667eea"/>
-                                <stop offset="100%" style="stop-color:#764ba2"/>
-                            </linearGradient>
-                        </defs>
-                        <path d="M50 5 L85 20 L85 50 C85 75 50 95 50 95 C50 95 15 75 15 50 L15 20 L50 5Z" fill="url(#logoGrad)" stroke="white" stroke-width="2"/>
-                        <circle cx="50" cy="45" r="15" fill="white" opacity="0.9"/>
-                        <polygon points="50,30 55,40 65,40 58,47 60,57 50,52 40,57 42,47 35,40 45,40" fill="url(#logoGrad)"/>
-                        <polygon points="50,70 52,76 58,76 53,80 55,86 50,82 45,86 47,80 42,76 48,76" fill="white"/>
-                    </svg>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-main">PUNTERS</span>
-                    <span class="logo-sub">LEAGUE</span>
-                </div>
-            </a>
+                
         </div>
         <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -596,8 +578,8 @@ function renderBiggestMovers() {
                         <i class="fas fa-arrow-up fa-2x" style="color: #10b981;"></i>
                         <h4 class="mt-2">Biggest Riser</h4>
                         <h3>${escapeHtml(biggestRiser?.team || 'N/A')}</h3>
-                        <p>Ranked #${biggestRiser?.prevRank} in 2025 â†’ #${biggestRiser?.currRank} in 2026</p>
-                        <p class="text-success">â–² ${biggestRiser?.change} positions up</p>
+                        <p>Ranked #${biggestRiser?.prevRank} in 2025 â†?#${biggestRiser?.currRank} in 2026</p>
+                        <p class="text-success">â–?${biggestRiser?.change} positions up</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -605,8 +587,8 @@ function renderBiggestMovers() {
                         <i class="fas fa-arrow-down fa-2x" style="color: #ef4444;"></i>
                         <h4 class="mt-2">Biggest Fall</h4>
                         <h3>${escapeHtml(biggestFall?.team || 'N/A')}</h3>
-                        <p>Ranked #${biggestFall?.prevRank} in 2025 â†’ #${biggestFall?.currRank} in 2026</p>
-                        <p class="text-danger">â–¼ ${Math.abs(biggestFall?.change)} positions down</p>
+                        <p>Ranked #${biggestFall?.prevRank} in 2025 â†?#${biggestFall?.currRank} in 2026</p>
+                        <p class="text-danger">â–?${Math.abs(biggestFall?.change)} positions down</p>
                     </div>
                 </div>
             </div>
