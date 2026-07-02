@@ -297,3 +297,188 @@ document.addEventListener('DOMContentLoaded', function() {
         renderSidebarResults('recentResultsRight', sidebarResults, 15);
     }, 500);
 });
+
+// ===== NAVBAR DROPDOWN FUNCTIONALITY =====
+
+// Option 1: Close dropdowns when clicking outside (recommended)
+document.addEventListener('click', function(event) {
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    const toggles = document.querySelectorAll('.dropdown-toggle');
+    
+    // Check if click is outside any dropdown
+    let isDropdown = false;
+    toggles.forEach(toggle => {
+        if (toggle.contains(event.target)) {
+            isDropdown = true;
+        }
+    });
+    
+    if (!isDropdown) {
+        dropdowns.forEach(menu => {
+            const parent = menu.closest('.dropdown');
+            if (parent && !parent.contains(event.target)) {
+                // Close dropdown using Bootstrap
+                const instance = bootstrap.Dropdown.getInstance(parent.querySelector('.dropdown-toggle'));
+                if (instance) {
+                    instance.hide();
+                }
+            }
+        });
+    }
+});
+
+// Option 2: Set active class based on current page
+function setActiveNavLink() {
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop();
+    
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && currentPage.includes(href)) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+// Option 3: Smooth dropdown animation on mobile
+function enhanceMobileDropdowns() {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 992) {
+                const parent = this.closest('.dropdown');
+                const menu = parent.querySelector('.dropdown-menu');
+                
+                if (menu.classList.contains('show')) {
+                    menu.style.animation = 'dropdownFade 0.3s ease reverse';
+                    setTimeout(() => {
+                        menu.style.animation = '';
+                    }, 300);
+                }
+            }
+        });
+    });
+}
+
+// Option 4: Keyboard accessibility
+function initKeyboardNav() {
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    
+    dropdownItems.forEach(item => {
+        item.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href) {
+                    window.location.href = href;
+                }
+            }
+        });
+    });
+}
+
+// Option 5: Track dropdown interactions (optional analytics)
+function trackDropdownInteractions() {
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const country = this.textContent.trim();
+            const category = this.closest('.dropdown-menu').querySelector('.dropdown-header');
+            const region = category ? category.textContent.trim() : 'Unknown';
+            
+            // Send to Google Analytics or console
+            console.log(`User clicked: ${country} (${region})`);
+            
+            // If using Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'country_click', {
+                    'country': country,
+                    'region': region
+                });
+            }
+        });
+    });
+}
+
+// ===== INITIALIZE =====
+document.addEventListener('DOMContentLoaded', function() {
+    setActiveNavLink();
+    enhanceMobileDropdowns();
+    initKeyboardNav();
+    trackDropdownInteractions();
+});
+
+// ===== HANDLE PAGE NAVIGATION =====
+// Update active class when navigating with JavaScript
+function navigateTo(page) {
+    window.location.href = page;
+}
+
+// ===== RESPONSIVE HANDLING =====
+// Close mobile menu when a link is clicked
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Check if it's a dropdown toggle
+            if (!this.classList.contains('dropdown-toggle')) {
+                // Close mobile menu
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    const toggler = document.querySelector('.navbar-toggler');
+                    if (toggler) {
+                        toggler.click();
+                    }
+                }
+            }
+        });
+    });
+});
+
+// ===== DYNAMIC COUNTRY LIST (if using search feature) =====
+// Uncomment if you want to use the search dropdown feature
+
+
+const countries = [
+    { name: 'Argentina', url: 'argentina.html', region: 'Americas' },
+    { name: 'Brazil', url: 'brazil.html', region: 'Americas' },
+    { name: 'Chile', url: 'chile.html', region: 'Americas' },
+    { name: 'USA', url: 'usa.html', region: 'Americas' },
+    { name: 'England', url: 'england.html', region: 'Europe' },
+    { name: 'Spain', url: 'spain.html', region: 'Europe' },
+    { name: 'Italy', url: 'italy.html', region: 'Europe' },
+    { name: 'Germany', url: 'germany.html', region: 'Europe' },
+    { name: 'France', url: 'france.html', region: 'Europe' },
+    { name: 'Japan', url: 'japan.html', region: 'Asia' },
+    { name: 'China', url: 'china.html', region: 'Asia' },
+    { name: 'South Korea', url: 'korea.html', region: 'Asia' },
+];
+
+function populateCountryList(searchTerm = '') {
+    const list = document.getElementById('countryList');
+    if (!list) return;
+    
+    const filtered = countries.filter(c => 
+        c.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    
+    list.innerHTML = filtered.map(c => 
+        `<li><a href="${c.url}" class="dropdown-item">${c.name}</a></li>`
+    ).join('');
+}
+
+// Search input handler
+const searchInput = document.getElementById('countrySearch');
+if (searchInput) {
+    searchInput.addEventListener('input', function() {
+        populateCountryList(this.value);
+    });
+}

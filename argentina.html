@@ -171,7 +171,23 @@
         .form-win { background: #10b981; }
         .form-draw { background: #f59e0b; }
         .form-loss { background: #ef4444; }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .trend-up { color: #10b981; }
+        .trend-down { color: #ef4444; }
+        .trend-stable { color: #f59e0b; }
 
+        @media (max-width: 992px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
         @media (max-width: 768px) {
             .league-table { font-size: 0.65rem; }
             .league-table th, .league-table td { padding: 4px 2px; }
@@ -182,9 +198,9 @@
 </head>
 <body>
 
-<!-- Popunder Ad -->
+<!-- Popunder Ad --
 <script src="https://pl29651537.effectivecpmnetwork.com/86/f7/82/86f782b9da53be2f515c6b32e2ba9be7.js"></script>
-
+-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container-fluid">
@@ -196,8 +212,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html">Predictions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="argentina.html">Argentina</a></li>
-                    <li class="nav-item"><a class="nav-link" href="chile.html">Chile</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="argentina.html">Argentina</a></li>
                 </ul>
             </div>
         </div>
@@ -273,8 +288,46 @@
 //  DATA – ARGENTINA
 // ============================================================
 
-// -------- LIGA PROFESIONAL (2026 Recent) --------
-const ligaGroups = {
+// -------- LIGA PROFESIONAL 2025 (Previous) --------
+const liga2025 = {
+    A: [
+        { rank:1, team:"Argentinos Jrs", MP:16, W:9, D:6, L:1, GF:24, GA:9 },
+        { rank:2, team:"Boca Juniors", MP:16, W:10, D:3, L:3, GF:24, GA:11 },
+        { rank:3, team:"Racing Club", MP:16, W:9, D:1, L:6, GF:26, GA:16 },
+        { rank:4, team:"Huracan", MP:16, W:7, D:6, L:3, GF:19, GA:12 },
+        { rank:5, team:"Tigre", MP:16, W:8, D:3, L:5, GF:18, GA:12 },
+        { rank:6, team:"Ind. Rivadavia", MP:16, W:7, D:6, L:3, GF:20, GA:17 },
+        { rank:7, team:"Barracas Central", MP:16, W:7, D:5, L:4, GF:20, GA:18 },
+        { rank:8, team:"Estudiantes L.P.", MP:16, W:5, D:6, L:5, GF:18, GA:19 },
+        { rank:9, team:"Newells Old Boys", MP:16, W:5, D:4, L:7, GF:12, GA:15 },
+        { rank:10, team:"Defensa y Justicia", MP:16, W:5, D:4, L:7, GF:18, GA:22 },
+        { rank:11, team:"Central Cordoba", MP:16, W:5, D:3, L:8, GF:21, GA:22 },
+        { rank:12, team:"Belgrano", MP:16, W:3, D:8, L:5, GF:13, GA:23 },
+        { rank:13, team:"Aldosivi", MP:16, W:4, D:3, L:9, GF:18, GA:28 },
+        { rank:14, team:"Banfield", MP:16, W:3, D:5, L:8, GF:14, GA:19 },
+        { rank:15, team:"Union de Santa Fe", MP:16, W:3, D:5, L:8, GF:11, GA:17 }
+    ],
+    B: [
+        { rank:1, team:"Rosario Central", MP:16, W:10, D:5, L:1, GF:22, GA:8 },
+        { rank:2, team:"River Plate", MP:16, W:8, D:7, L:1, GF:21, GA:9 },
+        { rank:3, team:"Independiente", MP:16, W:8, D:5, L:3, GF:23, GA:12 },
+        { rank:4, team:"San Lorenzo", MP:16, W:7, D:6, L:3, GF:14, GA:10 },
+        { rank:5, team:"Dep. Riestra", MP:16, W:5, D:9, L:2, GF:13, GA:7 },
+        { rank:6, team:"Platense", MP:16, W:6, D:5, L:5, GF:13, GA:11 },
+        { rank:7, team:"Lanus", MP:16, W:4, D:8, L:4, GF:13, GA:11 },
+        { rank:8, team:"Instituto", MP:16, W:5, D:3, L:8, GF:16, GA:20 },
+        { rank:9, team:"Godoy Cruz", MP:16, W:3, D:8, L:5, GF:8, GA:18 },
+        { rank:10, team:"Atl. Tucuman", MP:16, W:5, D:1, L:10, GF:17, GA:21 },
+        { rank:11, team:"Gimnasia L.P.", MP:16, W:4, D:4, L:8, GF:9, GA:18 },
+        { rank:12, team:"Sarmiento Junin", MP:16, W:2, D:9, L:5, GF:11, GA:19 },
+        { rank:13, team:"Velez Sarsfield", MP:16, W:4, D:2, L:10, GF:7, GA:22 },
+        { rank:14, team:"Talleres Cordoba", MP:16, W:2, D:7, L:7, GF:11, GA:15 },
+        { rank:15, team:"San Martin S.J.", MP:16, W:2, D:3, L:11, GF:5, GA:18 }
+    ]
+};
+
+// -------- LIGA PROFESIONAL 2026 (Recent) --------
+const liga2026 = {
     A: [
         { rank:1, team:"Estudiantes L.P.", MP:16, W:9, D:4, L:3, GF:19, GA:7 },
         { rank:2, team:"Boca Juniors", MP:16, W:8, D:6, L:2, GF:22, GA:9 },
@@ -311,8 +364,52 @@ const ligaGroups = {
     ]
 };
 
-// -------- PRIMERA NACIONAL (Recent Group A & B) --------
-const nacionalRecent = {
+// -------- PRIMERA NACIONAL (2025 Previous) --------
+const nacional2025 = {
+    A: [
+        { rank:1, team:"Deportivo Madryn", MP:34, W:16, D:12, L:6, GF:45, GA:28 },
+        { rank:2, team:"Atlanta", MP:34, W:14, D:13, L:7, GF:31, GA:28 },
+        { rank:3, team:"Tristan Suarez", MP:34, W:12, D:16, L:6, GF:33, GA:23 },
+        { rank:4, team:"Gimnasia y Tiro", MP:34, W:13, D:12, L:9, GF:34, GA:23 },
+        { rank:5, team:"San Miguel", MP:34, W:12, D:14, L:8, GF:32, GA:28 },
+        { rank:6, team:"San Martín Tucumán", MP:34, W:12, D:13, L:9, GF:32, GA:29 },
+        { rank:7, team:"Deportivo Maipú", MP:34, W:12, D:12, L:10, GF:34, GA:30 },
+        { rank:8, team:"Patronato", MP:34, W:12, D:12, L:10, GF:31, GA:28 },
+        { rank:9, team:"Colegiales", MP:34, W:13, D:8, L:13, GF:26, GA:26 },
+        { rank:10, team:"All Boys", MP:34, W:8, D:17, L:9, GF:26, GA:25 },
+        { rank:11, team:"Racing (C)", MP:34, W:10, D:11, L:13, GF:38, GA:45 },
+        { rank:12, team:"Ferro", MP:34, W:10, D:11, L:13, GF:24, GA:33 },
+        { rank:13, team:"Los Andes", MP:34, W:10, D:10, L:14, GF:28, GA:31 },
+        { rank:14, team:"Guemes", MP:34, W:8, D:16, L:10, GF:28, GA:32 },
+        { rank:15, team:"Quilmes", MP:34, W:8, D:14, L:12, GF:30, GA:32 },
+        { rank:16, team:"Almagro", MP:34, W:7, D:14, L:13, GF:24, GA:31 },
+        { rank:17, team:"Arsenal Sarandi", MP:34, W:8, D:10, L:16, GF:38, GA:47 },
+        { rank:18, team:"Alvarado", MP:34, W:6, D:15, L:13, GF:18, GA:33 }
+    ],
+    B: [
+        { rank:1, team:"Gimnasia y Esgirma", MP:34, W:17, D:12, L:5, GF:35, GA:18 },
+        { rank:2, team:"Estudiantes de Río Cuarto", MP:34, W:16, D:12, L:6, GF:35, GA:22 },
+        { rank:3, team:"Estudiantes", MP:34, W:17, D:8, L:9, GF:41, GA:22 },
+        { rank:4, team:"Deportivo Morón", MP:34, W:15, D:13, L:6, GF:36, GA:19 },
+        { rank:5, team:"Gimnasia de Jujuy", MP:34, W:15, D:12, L:7, GF:36, GA:20 },
+        { rank:6, team:"Temperley", MP:34, W:14, D:13, L:7, GF:30, GA:22 },
+        { rank:7, team:"Agropecuario", MP:34, W:15, D:9, L:10, GF:43, GA:34 },
+        { rank:8, team:"Chaco For Ever", MP:34, W:15, D:8, L:11, GF:34, GA:26 },
+        { rank:9, team:"Chacarita Juniors", MP:34, W:12, D:13, L:9, GF:37, GA:29 },
+        { rank:10, team:"Defensores de Belgrano", MP:34, W:12, D:12, L:10, GF:30, GA:26 },
+        { rank:11, team:"Nueva Chicago", MP:34, W:10, D:11, L:13, GF:27, GA:33 },
+        { rank:12, team:"San Telmo", MP:34, W:10, D:11, L:13, GF:31, GA:42 },
+        { rank:13, team:"Mitre", MP:34, W:10, D:10, L:14, GF:28, GA:31 },
+        { rank:14, team:"Almirante Brown", MP:34, W:8, D:12, L:14, GF:28, GA:38 },
+        { rank:15, team:"Central Norte", MP:34, W:10, D:6, L:18, GF:27, GA:41 },
+        { rank:16, team:"Colón", MP:34, W:9, D:5, L:20, GF:22, GA:39 },
+        { rank:17, team:"Talleres Remedios", MP:34, W:6, D:5, L:23, GF:17, GA:40 },
+        { rank:18, team:"Defensores Unidos", MP:34, W:3, D:12, L:19, GF:17, GA:52 }
+    ]
+};
+
+// -------- PRIMERA NACIONAL (2026 Recent) --------
+const nacional2026 = {
     A: [
         { rank:1, team:"Deportivo Morón", MP:18, W:10, D:4, L:4, GF:26, GA:15 },
         { rank:2, team:"Ferro", MP:18, W:10, D:4, L:4, GF:20, GA:13 },
@@ -355,8 +452,33 @@ const nacionalRecent = {
     ]
 };
 
-// -------- PRIMERA B METROPOLITANA (Recent 2026) --------
-const metroRecent = [
+// -------- PRIMERA B METROPOLITANA (2025 Previous) --------
+const metro2025 = [
+    { rank:1, team:"Midland", MP:20, W:11, D:7, L:2, GF:24, GA:5 },
+    { rank:2, team:"Real Pilar", MP:20, W:10, D:6, L:4, GF:27, GA:16 },
+    { rank:3, team:"Argentino de Merlo", MP:20, W:10, D:5, L:5, GF:25, GA:15 },
+    { rank:4, team:"Acassuso", MP:20, W:9, D:7, L:4, GF:25, GA:18 },
+    { rank:5, team:"Excursionistas", MP:20, W:9, D:5, L:6, GF:21, GA:16 },
+    { rank:6, team:"Dock Sud", MP:20, W:8, D:7, L:5, GF:29, GA:25 },
+    { rank:7, team:"Villa San Carlos", MP:20, W:9, D:3, L:8, GF:24, GA:28 },
+    { rank:8, team:"Brown (A)", MP:20, W:7, D:7, L:6, GF:18, GA:17 },
+    { rank:9, team:"Deportivo Merlo", MP:20, W:7, D:7, L:6, GF:16, GA:17 },
+    { rank:10, team:"Liniers", MP:20, W:8, D:3, L:9, GF:27, GA:22 },
+    { rank:11, team:"UAI Urquiza", MP:20, W:5, D:11, L:4, GF:16, GA:18 },
+    { rank:12, team:"Comunicaciones", MP:20, W:7, D:4, L:9, GF:19, GA:18 },
+    { rank:13, team:"Laferrere", MP:20, W:5, D:9, L:6, GF:21, GA:20 },
+    { rank:14, team:"Argentino Quilmes", MP:20, W:5, D:9, L:6, GF:21, GA:24 },
+    { rank:15, team:"San Martín Burzaco", MP:20, W:6, D:6, L:8, GF:19, GA:25 },
+    { rank:16, team:"Dep. Armenio", MP:20, W:5, D:8, L:7, GF:17, GA:19 },
+    { rank:17, team:"Dálmine", MP:20, W:5, D:8, L:7, GF:20, GA:27 },
+    { rank:18, team:"Flandria", MP:20, W:5, D:7, L:8, GF:12, GA:18 },
+    { rank:19, team:"Sportivo Italiano", MP:20, W:4, D:9, L:7, GF:15, GA:16 },
+    { rank:20, team:"Sacachispas", MP:20, W:2, D:9, L:9, GF:13, GA:24 },
+    { rank:21, team:"Fenix Pilar", MP:20, W:1, D:7, L:12, GF:8, GA:29 }
+];
+
+// -------- PRIMERA B METROPOLITANA (2026 Recent) --------
+const metro2026 = [
     { rank:1, team:"Excursionistas", MP:22, W:13, D:6, L:3, GF:33, GA:12 },
     { rank:2, team:"Talleres Remedios", MP:22, W:12, D:6, L:4, GF:23, GA:10 },
     { rank:3, team:"Arsenal Sarandi", MP:22, W:11, D:8, L:3, GF:31, GA:16 },
@@ -386,27 +508,24 @@ const metroRecent = [
 // ============================================================
 
 function renderForm(team) {
-    // dummy form: just show W/D/L based on W/D/L
     const w = team.W || 0, d = team.D || 0, l = team.L || 0;
     const total = w + d + l;
     if (total === 0) return '';
-    let form = '';
-    // create fake form string: W, D, L repeated
     const arr = [];
     for (let i=0; i<w; i++) arr.push('W');
     for (let i=0; i<d; i++) arr.push('D');
     for (let i=0; i<l; i++) arr.push('L');
-    // shuffle to look real
     const shuffled = arr.sort(() => Math.random() - 0.5);
     const last5 = shuffled.slice(0,5);
     return last5.map(r => `<span class="form-badge form-${r === 'W' ? 'win' : r === 'D' ? 'draw' : 'loss'}">${r}</span>`).join('');
 }
 
-function renderTable(teams, title, subtitle = '') {
-    let html = `<div class="season-card"><div class="season-title" style="background: linear-gradient(135deg, #1a3a5c, #2a5f8a);">${title} ${subtitle}</div>`;
-    html += `<div class="table-responsive"><table class="league-table"><thead><tr>
-        <th>#</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th><th>Form</th>
-    </tr></thead><tbody>`;
+function renderSingleTable(teams, title, year, color) {
+    let html = `<div class="season-card">
+        <div class="season-title" style="background: ${color || 'linear-gradient(135deg, #1a3a5c, #2a5f8a)'};">${title} - ${year}</div>
+        <div class="table-responsive"><table class="league-table"><thead><tr>
+            <th>#</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th><th>Form</th>
+        </tr></thead><tbody>`;
     teams.forEach(t => {
         const gd = t.GF - t.GA;
         const pts = t.W*3 + t.D;
@@ -432,33 +551,103 @@ function renderTable(teams, title, subtitle = '') {
     return html;
 }
 
+function renderComparison(prevData, currData, title, groupName) {
+    let html = `<div class="analysis-card"><h3><i class="fas fa-trophy"></i> ${title}</h3>`;
+    html += `<div class="comparison-grid">
+        ${renderSingleTable(prevData, 'Previous', '2025', 'linear-gradient(135deg, #10b981, #059669)')}
+        ${renderSingleTable(currData, 'Recent', '2026', 'linear-gradient(135deg, #f59e0b, #d97706)')}
+    </div>`;
+    
+    // Team comparison
+    html += `<div class="mt-3"><h5><i class="fas fa-chart-line"></i> Team Performance Comparison</h5>
+    <div class="table-responsive"><table class="league-table"><thead><tr>
+        <th>Team</th><th>2025 Pts</th><th>2026 Pts</th><th>Change</th><th>Trend</th>
+    </tr></thead><tbody>`;
+    
+    const prevMap = {};
+    prevData.forEach(t => { prevMap[t.team] = t; });
+    const allTeams = [...new Set([...prevData.map(t=>t.team), ...currData.map(t=>t.team)])];
+    
+    allTeams.forEach(team => {
+        const prev = prevMap[team];
+        const curr = currData.find(t => t.team === team);
+        if (!prev || !curr) return;
+        const prevPts = prev.W*3 + prev.D;
+        const currPts = curr.W*3 + curr.D;
+        const diff = currPts - prevPts;
+        let trendClass = 'trend-stable';
+        let icon = '➡️';
+        if (diff > 5) { trendClass = 'trend-up'; icon = '📈'; }
+        else if (diff < -5) { trendClass = 'trend-down'; icon = '📉'; }
+        html += `<tr>
+            <td class="team-cell"><strong>${team}</strong></td>
+            <td>${prevPts}</td>
+            <td><strong>${currPts}</strong></td>
+            <td class="${trendClass}">${diff > 0 ? '+' : ''}${diff}</td>
+            <td>${icon}</td>
+        </tr>`;
+    });
+    
+    html += `</tbody></table></div></div>`;
+    return html;
+}
+
 // ============================================================
 //  RENDER ALL SECTIONS
 // ============================================================
 
 function renderLigaProfesional() {
     const container = document.getElementById('profesionalContent');
-    let html = `<div class="analysis-card"><h3><i class="fas fa-trophy"></i> Liga Profesional 2026 – Recent</h3>`;
-    html += `<div class="row"><div class="col-md-6"><div class="group-header">🇦🇷 Group A</div>${renderTable(ligaGroups.A, 'Group A')}</div>`;
-    html += `<div class="col-md-6"><div class="group-header">🇦🇷 Group B</div>${renderTable(ligaGroups.B, 'Group B')}</div></div>`;
-    html += `</div>`;
+    let html = '';
+    html += renderComparison(liga2025.A, liga2026.A, 'Liga Profesional - Group A', 'A');
+    html += renderComparison(liga2025.B, liga2026.B, 'Liga Profesional - Group B', 'B');
     container.innerHTML = html;
 }
 
 function renderPrimeraNacional() {
     const container = document.getElementById('nacionalContent');
-    let html = `<div class="analysis-card"><h3><i class="fas fa-chart-simple"></i> Primera Nacional 2026 – Recent</h3>`;
-    html += `<div class="row"><div class="col-md-6"><div class="group-header">Group A</div>${renderTable(nacionalRecent.A, 'Group A')}</div>`;
-    html += `<div class="col-md-6"><div class="group-header">Group B</div>${renderTable(nacionalRecent.B, 'Group B')}</div></div>`;
-    html += `</div>`;
+    let html = '';
+    html += renderComparison(nacional2025.A, nacional2026.A, 'Primera Nacional - Group A', 'A');
+    html += renderComparison(nacional2025.B, nacional2026.B, 'Primera Nacional - Group B', 'B');
     container.innerHTML = html;
 }
 
 function renderPrimeraMetropolitana() {
     const container = document.getElementById('metropolitanaContent');
-    let html = `<div class="analysis-card"><h3><i class="fas fa-city"></i> Primera B Metropolitana 2026 – Recent</h3>`;
-    html += renderTable(metroRecent, 'Primera B Metropolitana');
-    html += `</div>`;
+    let html = `<div class="analysis-card"><h3><i class="fas fa-city"></i> Primera B Metropolitana</h3>`;
+    html += `<div class="comparison-grid">
+        ${renderSingleTable(metro2025, 'Previous', '2025', 'linear-gradient(135deg, #10b981, #059669)')}
+        ${renderSingleTable(metro2026, 'Recent', '2026', 'linear-gradient(135deg, #f59e0b, #d97706)')}
+    </div>`;
+    
+    // Team comparison for Metro
+    html += `<div class="mt-3"><h5><i class="fas fa-chart-line"></i> Team Performance Comparison</h5>
+    <div class="table-responsive"><table class="league-table"><thead><tr>
+        <th>Team</th><th>2025 Pts</th><th>2026 Pts</th><th>Change</th><th>Trend</th>
+    </tr></thead><tbody>`;
+    const prevMap = {};
+    metro2025.forEach(t => { prevMap[t.team] = t; });
+    const allTeams = [...new Set([...metro2025.map(t=>t.team), ...metro2026.map(t=>t.team)])];
+    allTeams.forEach(team => {
+        const prev = prevMap[team];
+        const curr = metro2026.find(t => t.team === team);
+        if (!prev || !curr) return;
+        const prevPts = prev.W*3 + prev.D;
+        const currPts = curr.W*3 + curr.D;
+        const diff = currPts - prevPts;
+        let trendClass = 'trend-stable';
+        let icon = '➡️';
+        if (diff > 5) { trendClass = 'trend-up'; icon = '📈'; }
+        else if (diff < -5) { trendClass = 'trend-down'; icon = '📉'; }
+        html += `<tr>
+            <td class="team-cell"><strong>${team}</strong></td>
+            <td>${prevPts}</td>
+            <td><strong>${currPts}</strong></td>
+            <td class="${trendClass}">${diff > 0 ? '+' : ''}${diff}</td>
+            <td>${icon}</td>
+        </tr>`;
+    });
+    html += `</tbody></table></div></div>`;
     container.innerHTML = html;
 }
 
