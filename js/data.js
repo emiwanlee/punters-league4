@@ -431,41 +431,39 @@ const leaguesData = {
     logo: "brazil/u20.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Palmeiras U20", MP: 17, MW: 12, MD: 5, ML: 0, GF: 50, GA: 20, logo: "brazil/palmeirasu20.png" },
-        { rank: 2, team: "Vasco U20", MP: 17, MW: 11, MD: 2, ML: 4, GF: 34, GA: 16, logo: "brazil/vascou20.png" },
-        { rank: 3, team: "RB Bragantino U20", MP: 17, MW: 9, MD: 4, ML: 4, GF: 42, GA: 30, logo: "brazil/bragantinou20.png" },
-        { rank: 4, team: "Botafogo U20", MP: 17, MW: 9, MD: 3, ML: 5, GF: 24, GA: 16, logo: "brazil/botafogou20.png" },
-        { rank: 5, team: "Cruzeiro U20", MP: 17, MW: 8, MD: 4, ML: 5, GF: 32, GA: 22, logo: "brazil/cruzeirou20.png" },
-        { rank: 6, team: "Corinthians U20", MP: 17, MW: 8, MD: 4, ML: 5, GF: 29, GA: 22, logo: "brazil/corinthiansu20.png" },
-        { rank: 7, team: "Santos U20", MP: 17, MW: 8, MD: 4, ML: 5, GF: 27, GA: 20, logo: "brazil/santosu20.png" },
-        { rank: 8, team: "Athletico-PR U20", MP: 17, MW: 7, MD: 5, ML: 5, GF: 35, GA: 25, logo: "brazil/athleticopru20.png" },
-        { rank: 9, team: "Bahia U20", MP: 17, MW: 7, MD: 5, ML: 5, GF: 29, GA: 25, logo: "brazil/bahiau20.png" },
-        { rank: 10, team: "Flamengo U20", MP: 17, MW: 7, MD: 5, ML: 5, GF: 24, GA: 25, logo: "brazil/flamengou20.png" },
-        { rank: 11, team: "América MG U20", MP: 17, MW: 6, MD: 6, ML: 5, GF: 23, GA: 30, logo: "brazil/americamgu20.png" },
-        { rank: 12, team: "Vitória U20", MP: 17, MW: 5, MD: 5, ML: 7, GF: 19, GA: 27, logo: "brazil/vitoriau20.png" },
-        { rank: 13, team: "Fluminense U20", MP: 17, MW: 5, MD: 4, ML: 8, GF: 23, GA: 25, logo: "brazil/fluminenseu20.png" },
-        { rank: 14, team: "São Paulo U20", MP: 17, MW: 4, MD: 7, ML: 6, GF: 23, GA: 26, logo: "brazil/saopaulou20.png" },
-        { rank: 15, team: "Grêmio U20", MP: 17, MW: 5, MD: 1, ML: 11, GF: 25, GA: 39, logo: "brazil/gremiou20.png" },
-        { rank: 16, team: "Cuiabá U20", MP: 17, MW: 4, MD: 3, ML: 10, GF: 14, GA: 26, logo: "brazil/cuiabau20.png" },
-        { rank: 17, team: "Juventude U20", MP: 17, MW: 4, MD: 3, ML: 10, GF: 19, GA: 37, logo: "brazil/juventudeu20.png" },
-        { rank: 18, team: "Avaí U20", MP: 17, MW: 3, MD: 6, ML: 8, GF: 22, GA: 39, logo: "brazil/avaiu20.png" },
-        { rank: 19, team: "Fortaleza U20", MP: 17, MW: 2, MD: 8, ML: 7, GF: 17, GA: 23, logo: "brazil/fortalezau20.png" },
-        { rank: 20, team: "Criciuma U20", MP: 17, MW: 3, MD: 2, ML: 12, GF: 19, GA: 37, logo: "brazil/criciumau20.png" }
+        { rank: 1, team: "Palmeiras U20", MP: 19, MW: 13, MD: 5, ML: 1, GF: 54, GA: 23, logo: "brazil/palmeirasu20.png" },
+        { rank: 2, team: "Vasco U20", MP: 19, MW: 11, MD: 3, ML: 5, GF: 36, GA: 19, logo: "brazil/vascou20.png" },
+        { rank: 3, team: "Botafogo U20", MP: 19, MW: 11, MD: 3, ML: 5, GF: 32, GA: 20, logo: "brazil/botafogou20.png" },
+        { rank: 4, team: "RB Bragantino U20", MP: 19, MW: 10, MD: 4, ML: 5, GF: 49, GA: 35, logo: "brazil/bragantinou20.png" },
+        { rank: 5, team: "Athletico-PR U20", MP: 19, MW: 9, MD: 5, ML: 5, GF: 39, GA: 25, logo: "brazil/athleticopru20.png" },
+        { rank: 6, team: "Santos U20", MP: 19, MW: 9, MD: 4, ML: 6, GF: 29, GA: 24, logo: "brazil/santosu20.png" },
+        { rank: 7, team: "Cruzeiro U20", MP: 19, MW: 8, MD: 5, ML: 6, GF: 35, GA: 27, logo: "brazil/cruzeirou20.png" },
+        { rank: 8, team: "Corinthians U20", MP: 19, MW: 8, MD: 5, ML: 6, GF: 31, GA: 25, logo: "brazil/corinthiansu20.png" },
+        { rank: 9, team: "Bahia U20", MP: 19, MW: 8, MD: 5, ML: 6, GF: 32, GA: 30, logo: "brazil/bahiau20.png" },
+        { rank: 10, team: "Flamengo U20", MP: 19, MW: 7, MD: 7, ML: 5, GF: 28, GA: 29, logo: "brazil/flamengou20.png" },
+        { rank: 11, team: "São Paulo U20", MP: 19, MW: 6, MD: 7, ML: 6, GF: 27, GA: 26, logo: "brazil/saopaulou20.png" },
+        { rank: 12, team: "América MG U20", MP: 19, MW: 6, MD: 7, ML: 6, GF: 25, GA: 37, logo: "brazil/americamgu20.png" },
+        { rank: 13, team: "Cuiabá U20", MP: 19, MW: 6, MD: 3, ML: 10, GF: 19, GA: 27, logo: "brazil/cuiabau20.png" },
+        { rank: 14, team: "Vitória U20", MP: 19, MW: 5, MD: 5, ML: 9, GF: 20, GA: 31, logo: "brazil/vitoriau20.png" },
+        { rank: 15, team: "Grêmio U20", MP: 19, MW: 6, MD: 1, ML: 12, GF: 31, GA: 42, logo: "brazil/gremiou20.png" },
+        { rank: 16, team: "Fluminense U20", MP: 19, MW: 5, MD: 4, ML: 10, GF: 25, GA: 31, logo: "brazil/fluminenseu20.png" },
+        { rank: 17, team: "Juventude U20", MP: 19, MW: 5, MD: 3, ML: 11, GF: 20, GA: 39, logo: "brazil/juventudeu20.png" },
+        { rank: 18, team: "Criciuma U20", MP: 19, MW: 5, MD: 2, ML: 12, GF: 24, GA: 40, logo: "brazil/criciumau20.png" },
+        { rank: 19, team: "Avaí U20", MP: 19, MW: 3, MD: 7, ML: 9, GF: 24, GA: 43, logo: "brazil/avaiu20.png" },
+        { rank: 20, team: "Fortaleza U20", MP: 19, MW: 2, MD: 9, ML: 8, GF: 18, GA: 25, logo: "brazil/fortalezau20.png" }
     ],
     fixtures: [
-      
+        // Quarter-finals - First Leg
+        { home: "Athletico-PR U20", away: "RB Bragantino U20", date: "2026-07-14" },
+        { home: "Corinthians U20", away: "Palmeiras U20", date: "2026-07-14" },
+        { home: "Cruzeiro U20", away: "Vasco U20", date: "2026-07-14" },
+        { home: "Santos U20", away: "Botafogo U20", date: "2026-07-14" },
         
-        // Round 19 - July 1
-        { home: "América MG U20", away: "RB Bragantino U20", date: "2026-07-01" },
-        { home: "Athletico-PR U20", away: "Vitória U20", date: "2026-07-01" },
-        { home: "Bahia U20", away: "Cruzeiro U20", date: "2026-07-01" },
-        { home: "Botafogo U20", away: "Fluminense U20", date: "2026-07-01" },
-        { home: "Criciuma U20", away: "Grêmio U20", date: "2026-07-01" },
-        { home: "Flamengo U20", away: "Avaí U20", date: "2026-07-01" },
-        { home: "Fortaleza U20", away: "Vasco U20", date: "2026-07-01" },
-        { home: "Juventude U20", away: "Corinthians U20", date: "2026-07-01" },
-        { home: "Palmeiras U20", away: "Cuiabá U20", date: "2026-07-01" },
-        { home: "Santos U20", away: "São Paulo U20", date: "2026-07-01" }
+        // Quarter-finals - Second Leg
+        { home: "Botafogo U20", away: "Santos U20", date: "2026-07-14" },
+        { home: "RB Bragantino U20", away: "Athletico-PR U20", date: "2026-07-14" },
+        { home: "Palmeiras U20", away: "Corinthians U20", date: "2026-07-14" },
+        { home: "Vasco U20", away: "Cruzeiro U20", date: "2026-07-14" }
     ]
 },
 /*
@@ -584,9 +582,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 15, MW: 1, MD: 3, ML: 11, GF: 10, GA: 26, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        // Wednesday, July 1
-        { home: "Botafogo", away: "CRB", date: "2026-07-01" },
-        
         // Friday, July 3
         { home: "Cuiabá", away: "América-MG", date: "2026-07-03" },
         { home: "Fortaleza", away: "Ponte Preta", date: "2026-07-03" },
@@ -759,11 +754,6 @@ const leaguesData = {
         { rank: 16, team: "Naftan", MP: 12, MW: 1, MD: 3, ML: 8, GF: 7, GA: 25, logo: "belarus/naftan.png" }
     ],
     fixtures: [
-        // Matchday 15 - Thursday, July 2
-        { home: "BATE", away: "Gomel", date: "2026-07-02" },
-        { home: "Slavia-Mozyr", away: "Maxline", date: "2026-07-02" },
-        { home: "Minsk", away: "Dinamo Minsk", date: "2026-07-02" },
-        
         // Matchday 15 - Friday, July 3
         { home: "Naftan", away: "Dinamo Brest", date: "2026-07-03" },
         
@@ -847,7 +837,7 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 14 - July 2-5
-        { home: "Lyn", away: "Åsane", date: "2026-07-02" },
+       
         { home: "Raufoss", away: "Strømmen", date: "2026-07-03" },
         { home: "Kongsvinger", away: "Sogndal", date: "2026-07-03" },
         { home: "Ranheim TF", away: "Stabæk", date: "2026-07-03" },
@@ -1053,15 +1043,6 @@ const leaguesData = {
         { rank: 14, team: "Yelimay M", MP: 10, MW: 0, MD: 3, ML: 7, GF: 6, GA: 20, logo: "kazakhstan/yelimay.png" }
     ],
     fixtures: [
-  
-        // Wednesday, July 1
-        { home: "Tobol-M", away: "Aktobe Jas", date: "2026-07-01" },
-        
-        // Thursday, July 2
-        { home: "Akademiya Ontustik", away: "Shakhter", date: "2026-07-02" },
-        { home: "Astana Reserve", away: "Kaspiy Aktau Reserve", date: "2026-07-02" },
-        { home: "Khan Tengri", away: "FK Ekibastuz", date: "2026-07-02" },
-        
         // Friday, July 3
         { home: "Turan", away: "Yelimay M", date: "2026-07-03" },
         { home: "Kairat-Zhastar", away: "Taraz", date: "2026-07-03" },
@@ -1076,32 +1057,35 @@ const leaguesData = {
     teams: [
         { rank: 1, team: "Alga", MP: 13, MW: 9, MD: 4, ML: 0, GF: 29, GA: 12, logo: "kyrgyzstan/alga.png" },
         { rank: 2, team: "Muras United", MP: 12, MW: 9, MD: 2, ML: 1, GF: 26, GA: 10, logo: "kyrgyzstan/murasunited.png" },
-        { rank: 3, team: "Asia Talas", MP: 13, MW: 9, MD: 2, ML: 2, GF: 31, GA: 23, logo: "kyrgyzstan/asiat alas.png" },
-        { rank: 4, team: "Ozgon", MP: 12, MW: 8, MD: 2, ML: 2, GF: 25, GA: 13, logo: "kyrgyzstan/ozgon.png" },
-        { rank: 5, team: "Bars", MP: 11, MW: 7, MD: 2, ML: 2, GF: 27, GA: 13, logo: "kyrgyzstan/bars.png" },
+        { rank: 3, team: "Asia Talas", MP: 14, MW: 9, MD: 2, ML: 3, GF: 33, GA: 26, logo: "kyrgyzstan/asiat alas.png" },
+        { rank: 4, team: "Bars", MP: 12, MW: 8, MD: 2, ML: 2, GF: 30, GA: 15, logo: "kyrgyzstan/bars.png" },
+        { rank: 5, team: "Ozgon", MP: 13, MW: 8, MD: 2, ML: 3, GF: 25, GA: 14, logo: "kyrgyzstan/ozgon.png" },
         { rank: 6, team: "Alay Osh", MP: 13, MW: 6, MD: 4, ML: 3, GF: 16, GA: 14, logo: "kyrgyzstan/alayosh.png" },
-        { rank: 7, team: "Aldier", MP: 13, MW: 4, MD: 5, ML: 4, GF: 16, GA: 20, logo: "kyrgyzstan/aldier.png" },
-        { rank: 8, team: "Bishkek City", MP: 13, MW: 4, MD: 3, ML: 6, GF: 13, GA: 16, logo: "kyrgyzstan/bishkekcity.png" },
-        { rank: 9, team: "Dordoi Bishkek", MP: 13, MW: 4, MD: 2, ML: 7, GF: 16, GA: 19, logo: "kyrgyzstan/dordoibishkek.png" },
-        { rank: 10, team: "Ilbirs", MP: 12, MW: 2, MD: 7, ML: 3, GF: 13, GA: 16, logo: "kyrgyzstan/ilbirs.png" },
+        { rank: 7, team: "Aldier", MP: 14, MW: 5, MD: 5, ML: 4, GF: 21, GA: 21, logo: "kyrgyzstan/aldier.png" },
+        { rank: 8, team: "Dordoi Bishkek", MP: 14, MW: 5, MD: 2, ML: 7, GF: 18, GA: 20, logo: "kyrgyzstan/dordoibishkek.png" },
+        { rank: 9, team: "Bishkek City", MP: 13, MW: 4, MD: 3, ML: 6, GF: 13, GA: 16, logo: "kyrgyzstan/bishkekcity.png" },
+        { rank: 10, team: "Talant", MP: 13, MW: 3, MD: 5, ML: 5, GF: 14, GA: 15, logo: "kyrgyzstan/talant.png" },
         { rank: 11, team: "Asiagoal Bishkek", MP: 13, MW: 3, MD: 4, ML: 6, GF: 13, GA: 18, logo: "kyrgyzstan/asiagoal.png" },
-        { rank: 12, team: "Neftchi Kochkor-Ata", MP: 13, MW: 4, MD: 1, ML: 8, GF: 14, GA: 22, logo: "kyrgyzstan/neftchi.png" },
-        { rank: 13, team: "Toktogul", MP: 13, MW: 4, MD: 0, ML: 9, GF: 12, GA: 22, logo: "kyrgyzstan/toktogul.png" },
-        { rank: 14, team: "Talant", MP: 12, MW: 2, MD: 5, ML: 5, GF: 13, GA: 15, logo: "kyrgyzstan/talant.png" },
+        { rank: 12, team: "Ilbirs", MP: 13, MW: 2, MD: 7, ML: 4, GF: 14, GA: 21, logo: "kyrgyzstan/ilbirs.png" },
+        { rank: 13, team: "Neftchi Kochkor-Ata", MP: 13, MW: 4, MD: 1, ML: 8, GF: 14, GA: 22, logo: "kyrgyzstan/neftchi.png" },
+        { rank: 14, team: "Toktogul", MP: 13, MW: 4, MD: 0, ML: 9, GF: 12, GA: 22, logo: "kyrgyzstan/toktogul.png" },
         { rank: 15, team: "Abdysh-Ata", MP: 13, MW: 2, MD: 2, ML: 9, GF: 12, GA: 22, logo: "kyrgyzstan/abdyshata.png" },
-        { rank: 16, team: "Kyrgyzaltyn", MP: 13, MW: 0, MD: 3, ML: 10, GF: 11, GA: 32, logo: "kyrgyzstan/kyrgyzaltyn.png" }
+        { rank: 16, team: "Kyrgyzaltyn", MP: 14, MW: 0, MD: 3, ML: 11, GF: 12, GA: 34, logo: "kyrgyzstan/kyrgyzaltyn.png" }
     ],
     fixtures: [
+        // Round 14 - July 4
+        { home: "Bishkek City", away: "Toktogul", date: "2026-07-04" },
+        { home: "Ozgon", away: "Alay Osh", date: "2026-07-04" },
         
-        // Round 14 - July 2
-        { home: "Abdysh-Ata", away: "Alga", date: "2026-07-02" },
-        { home: "Aldier", away: "Ilbirs", date: "2026-07-02" },
-        { home: "Bars", away: "Asia Talas", date: "2026-07-02" },
-        { home: "Dordoi Bishkek", away: "Kyrgyzaltyn", date: "2026-07-02" },
-        { home: "Muras United", away: "Asiagoal Bishkek", date: "2026-07-02" },
-        { home: "Ozgon", away: "Alay Osh", date: "2026-07-02" },
-        { home: "Talant", away: "Neftchi Kochkor-Ata", date: "2026-07-02" },
-        { home: "Toktogul", away: "Bishkek City", date: "2026-07-02" }
+        // Round 15 - July 8
+        { home: "Alay Osh", away: "Toktogul", date: "2026-07-08" },
+        { home: "Alga", away: "Dordoi Bishkek", date: "2026-07-08" },
+        { home: "Asiagoal Bishkek", away: "Bars", date: "2026-07-08" },
+        { home: "Asia Talas", away: "Abdysh-Ata", date: "2026-07-08" },
+        { home: "Bishkek City", away: "Muras United", date: "2026-07-08" },
+        { home: "Ilbirs", away: "Ozgon", date: "2026-07-08" },
+        { home: "Kyrgyzaltyn", away: "Talant", date: "2026-07-08" },
+        { home: "Neftchi Kochkor-Ata", away: "Aldier", date: "2026-07-08" }
     ]
 },
 
@@ -1203,9 +1187,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 20, GW: 5, GL: 15, points_for: 1622, points_against: 1724, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Wednesday, July 1 - Commissioner's Cup Final
-        { home: "New York Liberty", away: "Las Vegas Aces", date: "2026-07-01" },
-        
         // Friday, July 3
         { home: "Washington Mystics", away: "Atlanta Dream", date: "2026-07-03" },
         { home: "Connecticut Sun", away: "Dallas Wings", date: "2026-07-03" },
