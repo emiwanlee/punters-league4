@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liga MX - Mexico Football Analysis | Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .country-hero {
+        background: linear-gradient(135deg, #006847 0%, #ce1126 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .country-hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .country-hero .hero-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .league-tabs {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 0.5rem;
+    }
+    
+    .league-tab {
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .league-tab:hover {
+        background: #f8f9fa;
+        color: #006847;
+    }
+    
+    .league-tab.active {
+        background: linear-gradient(135deg, #006847 0%, #ce1126 100%);
+        color: white;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .season-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        overflow-x: auto;
+    }
+    
+    .season-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .league-table {
+        width: 100%;
+        font-size: 0.75rem;
+        border-collapse: collapse;
+    }
+    
+    .league-table th {
+        background: #f8f9fa;
+        padding: 8px 4px;
+        text-align: center;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+    
+    .league-table td {
+        padding: 6px 4px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .team-cell {
+        text-align: left !important;
+        font-weight: 500;
+    }
+    
+    .team-cell a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .team-cell a:hover {
+        color: #006847;
+    }
+    
+    .improved { color: #10b981; font-weight: 600; }
+    .declined { color: #ef4444; font-weight: 600; }
+    .trend-up { color: #10b981; }
+    .trend-down { color: #ef4444; }
+    .trend-stable { color: #f59e0b; }
+    
+    .analysis-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .big-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #006847;
+    }
+    
+    .info-box {
+        background: linear-gradient(135deg, #00684710, #ce112610);
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
+    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    
+    .liga-mx-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #006847, #ce1126);
+        color: white;
+        padding: 2px 12px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .fixture-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-teams {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-vs {
+        color: #6c757d;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .fixture-date {
+        color: #6c757d;
+        font-size: 0.8rem;
+    }
+    
+    @media (max-width: 992px) {
+        .comparison-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Punters League</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Predictions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="mexico.html">Mexico</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="country-hero">
+        <div class="hero-icon">🇲🇽</div>
+        <h1><i class="fas fa-futbol"></i> Liga MX - Mexico</h1>
+        <p>Complete coverage of Liga MX Apertura & Clausura</p>
+    </div>
+    
+    <!-- League Tabs -->
+    <div class="league-tabs">
+        <button class="league-tab active" data-tab="apertura">🏆 Apertura 2025</button>
+        <button class="league-tab" data-tab="clausura">🏆 Clausura 2026</button>
+        <button class="league-tab" data-tab="fixtures">📅 Fixtures</button>
+        <button class="league-tab" data-tab="stats">📊 Stats & Analysis</button>
+    </div>
+    
+    <!-- Apertura 2025 Tab -->
+    <div id="tab-apertura" class="tab-content active">
+        <div id="aperturaContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Apertura 2025 data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Clausura 2026 Tab -->
+    <div id="tab-clausura" class="tab-content">
+        <div id="clausuraContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Clausura 2026 data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fixtures Tab -->
+    <div id="tab-fixtures" class="tab-content">
+        <div id="fixturesContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading fixtures...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Stats & Analysis Tab -->
+    <div id="tab-stats" class="tab-content">
+        <div id="statsContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading statistics...</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script>
+// ==================== LIGA MX DATA ====================
+
+// Apertura 2025 (Complete Season)
+const apertura2025 = {
+    teams: [
+        { rank: 1, team: "Toluca", MP: 17, MW: 11, MD: 4, ML: 2, GF: 43, GA: 18 },
+        { rank: 2, team: "Tigres UANL", MP: 17, MW: 10, MD: 6, ML: 1, GF: 35, GA: 16 },
+        { rank: 3, team: "Cruz Azul", MP: 17, MW: 10, MD: 5, ML: 2, GF: 32, GA: 20 },
+        { rank: 4, team: "Club America", MP: 17, MW: 10, MD: 4, ML: 3, GF: 33, GA: 18 },
+        { rank: 5, team: "Monterrey", MP: 17, MW: 9, MD: 4, ML: 4, GF: 33, GA: 29 },
+        { rank: 6, team: "Guadalajara Chivas", MP: 17, MW: 9, MD: 2, ML: 6, GF: 29, GA: 22 },
+        { rank: 7, team: "Club Tijuana", MP: 17, MW: 6, MD: 6, ML: 5, GF: 29, GA: 23 },
+        { rank: 8, team: "Juarez", MP: 17, MW: 6, MD: 5, ML: 6, GF: 27, GA: 28 },
+        { rank: 9, team: "Pachuca", MP: 17, MW: 6, MD: 4, ML: 7, GF: 21, GA: 21 },
+        { rank: 10, team: "UNAM Pumas", MP: 17, MW: 5, MD: 6, ML: 6, GF: 24, GA: 25 },
+        { rank: 11, team: "Santos Laguna", MP: 17, MW: 6, MD: 2, ML: 9, GF: 22, GA: 28 },
+        { rank: 12, team: "Queretaro", MP: 17, MW: 6, MD: 2, ML: 9, GF: 19, GA: 29 },
+        { rank: 13, team: "Necaxa", MP: 17, MW: 4, MD: 5, ML: 8, GF: 24, GA: 32 },
+        { rank: 14, team: "Atlas", MP: 17, MW: 4, MD: 5, ML: 8, GF: 24, GA: 35 },
+        { rank: 15, team: "Atl. San Luis", MP: 17, MW: 5, MD: 1, ML: 11, GF: 25, GA: 29 },
+        { rank: 16, team: "Mazatlan FC", MP: 17, MW: 2, MD: 8, ML: 7, GF: 20, GA: 29 },
+        { rank: 17, team: "Club Leon", MP: 17, MW: 3, MD: 4, ML: 10, GF: 14, GA: 31 },
+        { rank: 18, team: "Puebla", MP: 17, MW: 3, MD: 3, ML: 11, GF: 21, GA: 42 }
+    ]
+};
+
+// Clausura 2026 (Current Season - all teams start at 0)
+const clausura2026 = {
+    teams: [
+        { rank: 1, team: "Santos Laguna", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 2, team: "Monterrey", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 3, team: "Cruz Azul", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 4, team: "Atlas", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 5, team: "Atl. San Luis", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 6, team: "Guadalajara Chivas", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 7, team: "Necaxa", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 8, team: "Pachuca", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 9, team: "Toluca", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 10, team: "Atlante", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 11, team: "Club America", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 12, team: "Puebla", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 13, team: "Tigres UANL", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 14, team: "UNAM Pumas", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 15, team: "Queretaro", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 16, team: "Club Tijuana", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 17, team: "Club Leon", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 },
+        { rank: 18, team: "Juarez", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0 }
+    ]
+};
+
+// Matchday 1 Fixtures - Clausura 2026
+const fixtures = [
+    { home: "Santos Laguna", away: "Monterrey", date: "2026-07-10" },
+    { home: "Cruz Azul", away: "Atlas", date: "2026-07-10" },
+    { home: "Atl. San Luis", away: "Guadalajara Chivas", date: "2026-07-10" },
+    { home: "Necaxa", away: "Pachuca", date: "2026-07-11" },
+    { home: "Toluca", away: "Atlante", date: "2026-07-11" },
+    { home: "Club America", away: "Puebla", date: "2026-07-11" },
+    { home: "Tigres UANL", away: "UNAM Pumas", date: "2026-07-11" },
+    { home: "Queretaro", away: "Club Tijuana", date: "2026-07-12" },
+    { home: "Club Leon", away: "Juarez", date: "2026-07-12" }
+];
+
+// ==================== HELPER FUNCTIONS ====================
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function calculatePoints(team) {
+    if (!team) return 0;
+    return (team.MW || 0) * 3 + (team.MD || 0);
+}
+
+function formatDate(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric' 
+    });
+}
+
+// ==================== RENDER FUNCTIONS ====================
+
+function renderTable(season, title, subtitle) {
+    const sortedTeams = [...season.teams].sort((a, b) => (a.rank || 0) - (b.rank || 0));
+    
+    let html = `
+        <div class="season-card">
+            <div class="season-title" style="background: linear-gradient(135deg, #006847, #ce1126); color: white;">
+                ${title} ${subtitle}
+            </div>
+            <div class="table-responsive">
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const team of sortedTeams) {
+        const wins = team.MW || 0;
+        const draws = team.MD || 0;
+        const losses = team.ML || (team.MP - wins - draws);
+        const gd = team.GF - team.GA;
+        const points = calculatePoints(team);
+        
+        let rowClass = '';
+        if (team.rank === 1) rowClass = 'champion-row';
+        else if (team.rank <= 4) rowClass = 'promotion-zone';
+        else if (team.rank >= 15) rowClass = 'relegation-zone';
+        
+        const isNewSeason = team.MP === 0 && team.GF === 0 && team.GA === 0;
+        
+        html += `
+            <tr class="${rowClass}">
+                <td><strong>${team.rank}</strong></td>
+                <td class="team-cell"><a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a></td>
+                <td>${team.MP}</td>
+                <td class="text-success">${wins}</td>
+                <td class="text-warning">${draws}</td>
+                <td class="text-danger">${losses}</td>
+                <td>${isNewSeason ? '-' : team.GF}</td>
+                <td>${isNewSeason ? '-' : team.GA}</td>
+                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${isNewSeason ? '-' : (gd >= 0 ? '+' : '') + gd}</td>
+                <td class="points-cell"><strong>${points}</strong></td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderFixtures() {
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-calendar-alt"></i> Clausura 2026 - Matchday 1 Fixtures</h3>
+            <p class="text-muted">The new season kicks off on July 10, 2026</p>
+    `;
+    
+    for (const fixture of fixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    html += `
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderTeamComparison() {
+    const teamMap = new Map();
+    
+    for (const team of apertura2025.teams) {
+        teamMap.set(team.team, { prev: team, curr: null });
+    }
+    
+    for (const team of clausura2026.teams) {
+        if (teamMap.has(team.team)) {
+            teamMap.get(team.team).curr = team;
+        } else {
+            teamMap.set(team.team, { prev: null, curr: team });
+        }
+    }
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> Team Performance Comparison</h3>
+            <p class="text-muted">Comparing Apertura 2025 to the upcoming Clausura 2026 season</p>
+            <div class="table-responsive">
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Apertura 2025</th>
+                            <th>Clausura 2026</th>
+                            <th>Status</th>
+                            <th>2025 Form</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    const sortedTeams = [...teamMap.entries()].sort((a, b) => {
+        const aPts = calculatePoints(a[1].prev);
+        const bPts = calculatePoints(b[1].prev);
+        return bPts - aPts;
+    });
+    
+    for (const [teamName, data] of sortedTeams) {
+        const prev = data.prev;
+        
+        if (!prev) continue;
+        
+        const prevPoints = calculatePoints(prev);
+        const form = prev.MW + '-' + prev.MD + '-' + prev.ML;
+        
+        let statusClass = 'trend-stable';
+        let statusText = 'Mid-table';
+        let statusIcon = '➡️';
+        
+        if (prev.rank <= 4) {
+            statusClass = 'trend-up';
+            statusText = 'Top 4';
+            statusIcon = '🏆';
+        } else if (prev.rank <= 8) {
+            statusClass = 'trend-up';
+            statusText = 'Playoff Spot';
+            statusIcon = '⚽';
+        } else if (prev.rank >= 15) {
+            statusClass = 'trend-down';
+            statusText = 'Relegation Zone';
+            statusIcon = '⚠️';
+        }
+        
+        html += `
+            <tr>
+                <td class="team-cell"><strong>${escapeHtml(teamName)}</strong></td>
+                <td><strong>${prevPoints}</strong> pts (${prev.MW}W)</td>
+                <td><span class="liga-mx-badge">New Season</span></td>
+                <td class="${statusClass}">${statusIcon} ${statusText}</td>
+                <td>${form}</td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderLeagueStats() {
+    const totalGoals = apertura2025.teams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = (apertura2025.teams.length * apertura2025.teams[0].MP) / 2;
+    const avgGoals = (totalGoals / totalMatches).toFixed(2);
+    
+    const champion = apertura2025.teams.find(t => t.rank === 1);
+    const second = apertura2025.teams.find(t => t.rank === 2);
+    const gap = calculatePoints(champion) - calculatePoints(second);
+    const topScorerTeam = apertura2025.teams.reduce((a, b) => a.GF > b.GF ? a : b);
+    const bestDefense = apertura2025.teams.reduce((a, b) => a.GA < b.GA ? a : b);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> Apertura 2025 League Statistics</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalMatches}</div>
+                    <small>Total Matches</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalGoals}</div>
+                    <small>Total Goals</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${avgGoals}</div>
+                    <small>Goals per Match</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${gap}</div>
+                    <small>Champion's Lead</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-trophy"></i> Champion</h5>
+                    <p><strong>${escapeHtml(champion?.team)}</strong> - ${calculatePoints(champion)} points</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-futbol"></i> Best Attack</h5>
+                    <p><strong>${escapeHtml(topScorerTeam?.team)}</strong> - ${topScorerTeam?.GF} goals</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-shield-alt"></i> Best Defense</h5>
+                    <p><strong>${escapeHtml(bestDefense?.team)}</strong> - ${bestDefense?.GA} conceded</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+// ==================== MAIN RENDER FUNCTIONS ====================
+
+function renderApertura() {
+    const container = document.getElementById('aperturaContent');
+    const html = `
+        <div class="comparison-grid">
+            ${renderTable(apertura2025, 'Apertura', '2025')}
+        </div>
+        ${renderLeagueStats()}
+        ${renderTeamComparison()}
+    `;
+    container.innerHTML = html;
+}
+
+function renderClausura() {
+    const container = document.getElementById('clausuraContent');
+    const html = `
+        <div class="comparison-grid">
+            ${renderTable(clausura2026, 'Clausura', '2026')}
+        </div>
+        <div class="analysis-card">
+            <div class="info-box">
+                <i class="fas fa-info-circle"></i> 
+                <strong>Clausura 2026</strong> - The new season is yet to begin. All teams start with 0 points.
+                The first matchday is scheduled for <strong>July 10, 2026</strong>.
+            </div>
+        </div>
+        ${renderFixtures()}
+    `;
+    container.innerHTML = html;
+}
+
+function renderFixturesTab() {
+    const container = document.getElementById('fixturesContent');
+    const html = renderFixtures();
+    container.innerHTML = html;
+}
+
+function renderStatsTab() {
+    const container = document.getElementById('statsContent');
+    const html = `
+        ${renderLeagueStats()}
+        ${renderTeamComparison()}
+        <div class="analysis-card">
+            <h3><i class="fas fa-history"></i> Historical Context</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>📈 Top Performers</h5>
+                        <p><strong>Toluca</strong> won Apertura 2025 with 37 points</p>
+                        <p><strong>Tigres UANL</strong> finished 2nd with 36 points</p>
+                        <p><strong>Cruz Azul</strong> and <strong>Club America</strong> completed the top 4</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>📊 Key Stats</h5>
+                        <p>Average goals per match: <strong>${((apertura2025.teams.reduce((s,t) => s + t.GF, 0)) / ((apertura2025.teams.length * apertura2025.teams[0].MP) / 2)).toFixed(2)}</strong></p>
+                        <p>Highest scoring team: <strong>${apertura2025.teams.reduce((a,b) => a.GF > b.GF ? a : b).team}</strong></p>
+                        <p>Best defense: <strong>${apertura2025.teams.reduce((a,b) => a.GA < b.GA ? a : b).team}</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    container.innerHTML = html;
+}
+
+// ==================== TAB SWITCHING ====================
+
+function initTabs() {
+    const tabs = document.querySelectorAll('.league-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.dataset.tab;
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            tab.classList.add('active');
+            document.getElementById(`tab-${targetTab}`).classList.add('active');
+        });
+    });
+}
+
+// ==================== INITIALIZE ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Load all tabs
+    renderApertura();
+    renderClausura();
+    renderFixturesTab();
+    renderStatsTab();
+    initTabs();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+</body>
+</html>

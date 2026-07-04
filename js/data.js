@@ -380,9 +380,6 @@ const leaguesData = {
         
         // Round 16 - July 5
         { home: "Canberra Croatia", away: "Canberra Olympic", date: "2026-07-05" },
-        
-        // Round 15 - July 1 (makeup)
-        { home: "Monaro Panthers", away: "Queanbeyan City", date: "2026-07-01" }
     ]
 },
 "Australian NPL Victoria": {
@@ -713,9 +710,6 @@ const leaguesData = {
         { rank: 16, team: "Tianjin Jinmen Tiger", MP: 16, MW: 3, MD: 6, ML: 7, GF: 19, GA: 22, logo: "china/tianjinlogo.png" }
     ],
     fixtures: [
-        
-        // Matchday 17 - July 3-5
-        { home: "Yunnan Yukun", away: "Henan", date: "2026-07-03" },
         { home: "Qingdao Youth Island", away: "Shanghai Port", date: "2026-07-04" },
         { home: "Shenyang Urban", away: "Chongqing Tonglianglong", date: "2026-07-04" },
         { home: "Dalian Yingbo", away: "Wuhan Three Towns", date: "2026-07-04" },
@@ -748,9 +742,6 @@ const leaguesData = {
         { rank: 16, team: "Naftan", MP: 12, MW: 1, MD: 3, ML: 8, GF: 7, GA: 25, logo: "belarus/naftan.png" }
     ],
     fixtures: [
-        // Matchday 15 - Friday, July 3
-        { home: "Naftan", away: "Dinamo Brest", date: "2026-07-03" },
-        
         // Matchday 15 - Saturday, July 4
         { home: "Vitebsk", away: "Dnepr", date: "2026-07-04" },
         { home: "Neman", away: "Arsenal Dzerzhinsk", date: "2026-07-04" },
