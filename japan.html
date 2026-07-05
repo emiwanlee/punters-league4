@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japanese Football - J1 & J2 League Analysis | Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .country-hero {
+        background: linear-gradient(135deg, #bc002d 0%, #ffffff 50%, #bc002d 100%);
+        color: #1a1a2e;
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+        border: 2px solid #1a1a2e;
+    }
+    
+    .country-hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .country-hero .hero-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .country-hero p {
+        color: #1a1a2e;
+    }
+    
+    .league-tabs {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 0.5rem;
+    }
+    
+    .league-tab {
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .league-tab:hover {
+        background: #f8f9fa;
+        color: #bc002d;
+    }
+    
+    .league-tab.active {
+        background: linear-gradient(135deg, #bc002d 0%, #1a1a2e 100%);
+        color: white;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .season-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        overflow-x: auto;
+    }
+    
+    .season-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .league-table {
+        width: 100%;
+        font-size: 0.75rem;
+        border-collapse: collapse;
+    }
+    
+    .league-table th {
+        background: #f8f9fa;
+        padding: 8px 4px;
+        text-align: center;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+    
+    .league-table td {
+        padding: 6px 4px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .team-cell {
+        text-align: left !important;
+        font-weight: 500;
+    }
+    
+    .team-cell a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .team-cell a:hover {
+        color: #bc002d;
+    }
+    
+    .analysis-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .big-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #bc002d;
+    }
+    
+    .info-box {
+        background: linear-gradient(135deg, #bc002d10, #1a1a2e10);
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
+    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    
+    .japan-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #bc002d, #1a1a2e);
+        color: white;
+        padding: 2px 12px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .fixture-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-teams {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-vs {
+        color: #6c757d;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .fixture-date {
+        color: #6c757d;
+        font-size: 0.8rem;
+    }
+    
+    .group-label {
+        display: inline-block;
+        background: #1a1a2e;
+        color: white;
+        padding: 2px 10px;
+        border-radius: 12px;
+        font-size: 0.65rem;
+        font-weight: 600;
+        margin-left: 0.5rem;
+    }
+    
+    .group-a { background: #bc002d; }
+    .group-b { background: #1a1a2e; }
+    
+    .fixture-group {
+        font-size: 0.7rem;
+        color: #6c757d;
+        margin-top: 0.25rem;
+    }
+    
+    @media (max-width: 992px) {
+        .comparison-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Punters League</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Predictions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chile.html">Chile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mexico.html">Mexico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="colombia.html">Colombia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="japan.html">Japan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="country-hero">
+        <div class="hero-icon">🇯🇵</div>
+        <h1><i class="fas fa-futbol"></i> Japanese Football</h1>
+        <p>Complete coverage of J1 League & J2 League</p>
+    </div>
+    
+    <!-- League Tabs -->
+    <div class="league-tabs">
+        <button class="league-tab active" data-tab="j1">🏆 J1 League 2026</button>
+        <button class="league-tab" data-tab="j2">🏆 J2 League 2026</button>
+        <button class="league-tab" data-tab="fixtures">📅 Fixtures</button>
+        <button class="league-tab" data-tab="stats">📊 Stats & Analysis</button>
+    </div>
+    
+    <!-- J1 League Tab -->
+    <div id="tab-j1" class="tab-content active">
+        <div id="j1Content">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading J1 League data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- J2 League Tab -->
+    <div id="tab-j2" class="tab-content">
+        <div id="j2Content">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading J2 League data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fixtures Tab -->
+    <div id="tab-fixtures" class="tab-content">
+        <div id="fixturesContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading fixtures...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Stats & Analysis Tab -->
+    <div id="tab-stats" class="tab-content">
+        <div id="statsContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading statistics...</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script>
+// ==================== JAPANESE LEAGUE DATA ====================
+
+// J1 League 2026
+const j1Data = {
+    teams: [
+        // Group A
+        { rank: 1, team: "Kashima Antlers", MP: 18, MW: 13, MD: 4, ML: 1, GF: 29, GA: 9, group: "A" },
+        { rank: 2, team: "FC Tokyo", MP: 18, MW: 9, MD: 6, ML: 3, GF: 28, GA: 16, group: "A" },
+        { rank: 3, team: "Machida Zelvia", MP: 18, MW: 8, MD: 8, ML: 2, GF: 23, GA: 19, group: "A" },
+        { rank: 4, team: "Kawasaki", MP: 18, MW: 7, MD: 4, ML: 7, GF: 23, GA: 27, group: "A" },
+        { rank: 5, team: "Tokyo Verdy", MP: 18, MW: 7, MD: 4, ML: 7, GF: 19, GA: 25, group: "A" },
+        { rank: 6, team: "Urawa Reds", MP: 18, MW: 7, MD: 4, ML: 7, GF: 25, GA: 18, group: "A" },
+        { rank: 7, team: "Yokohama FM", MP: 18, MW: 6, MD: 2, ML: 10, GF: 28, GA: 29, group: "A" },
+        { rank: 8, team: "Kashiwa Reysol", MP: 18, MW: 6, MD: 1, ML: 11, GF: 21, GA: 24, group: "A" },
+        { rank: 9, team: "Mito HollyHock", MP: 18, MW: 2, MD: 8, ML: 8, GF: 19, GA: 35, group: "A" },
+        { rank: 10, team: "JEF United", MP: 18, MW: 3, MD: 3, ML: 12, GF: 18, GA: 31, group: "A" },
+        // Group B
+        { rank: 1, team: "Vissel Kobe", MP: 18, MW: 9, MD: 6, ML: 3, GF: 27, GA: 21, group: "B" },
+        { rank: 2, team: "Cerezo Osaka", MP: 18, MW: 7, MD: 6, ML: 5, GF: 26, GA: 19, group: "B" },
+        { rank: 3, team: "Nagoya", MP: 18, MW: 8, MD: 5, ML: 5, GF: 31, GA: 28, group: "B" },
+        { rank: 4, team: "Sanfrecce", MP: 18, MW: 8, MD: 4, ML: 6, GF: 29, GA: 21, group: "B" },
+        { rank: 5, team: "Gamba Osaka", MP: 18, MW: 5, MD: 8, ML: 5, GF: 26, GA: 22, group: "B" },
+        { rank: 6, team: "Okayama", MP: 18, MW: 6, MD: 6, ML: 6, GF: 24, GA: 25, group: "B" },
+        { rank: 7, team: "Shimizu S-Pulse", MP: 18, MW: 4, MD: 8, ML: 6, GF: 19, GA: 21, group: "B" },
+        { rank: 8, team: "Kyoto Sanga", MP: 18, MW: 5, MD: 5, ML: 8, GF: 19, GA: 26, group: "B" },
+        { rank: 9, team: "V-Varen Nagasaki", MP: 18, MW: 6, MD: 2, ML: 10, GF: 20, GA: 28, group: "B" },
+        { rank: 10, team: "Avispa Fukuoka", MP: 18, MW: 3, MD: 8, ML: 7, GF: 17, GA: 27, group: "B" }
+    ]
+};
+
+// J2 League 2026
+const j2Data = {
+    teams: [
+        // Group A
+        { rank: 1, team: "Vegalta Sendai", MP: 18, MW: 11, MD: 5, ML: 2, GF: 32, GA: 15, group: "A" },
+        { rank: 2, team: "Blaublitz", MP: 18, MW: 11, MD: 2, ML: 5, GF: 23, GA: 14, group: "A" },
+        { rank: 3, team: "Shonan Bellmare", MP: 18, MW: 8, MD: 4, ML: 6, GF: 25, GA: 19, group: "A" },
+        { rank: 4, team: "Yokohama FC", MP: 18, MW: 8, MD: 3, ML: 7, GF: 34, GA: 27, group: "A" },
+        { rank: 5, team: "Sagamihara", MP: 18, MW: 7, MD: 5, ML: 6, GF: 31, GA: 33, group: "A" },
+        { rank: 6, team: "Gunma", MP: 18, MW: 6, MD: 4, ML: 8, GF: 26, GA: 36, group: "A" },
+        { rank: 7, team: "Montedio Yamagata", MP: 18, MW: 6, MD: 2, ML: 10, GF: 20, GA: 25, group: "A" },
+        { rank: 8, team: "Tochigi City FC", MP: 18, MW: 5, MD: 4, ML: 9, GF: 20, GA: 33, group: "A" },
+        { rank: 9, team: "Vanraure Hachinohe", MP: 18, MW: 4, MD: 6, ML: 8, GF: 15, GA: 19, group: "A" },
+        { rank: 10, team: "Tochigi SC", MP: 18, MW: 4, MD: 5, ML: 9, GF: 23, GA: 28, group: "A" },
+        // Group B
+        { rank: 1, team: "Ventforet Kofu", MP: 18, MW: 10, MD: 3, ML: 5, GF: 21, GA: 13, group: "B" },
+        { rank: 2, team: "Consadole Sapporo", MP: 18, MW: 9, MD: 2, ML: 7, GF: 26, GA: 22, group: "B" },
+        { rank: 3, team: "Iwaki FC", MP: 18, MW: 7, MD: 6, ML: 5, GF: 22, GA: 18, group: "B" },
+        { rank: 4, team: "Omiya Ardija", MP: 18, MW: 9, MD: 2, ML: 7, GF: 38, GA: 28, group: "B" },
+        { rank: 5, team: "Fujieda MYFC", MP: 18, MW: 6, MD: 9, ML: 3, GF: 21, GA: 17, group: "B" },
+        { rank: 6, team: "F.C. Gifu", MP: 18, MW: 8, MD: 3, ML: 7, GF: 24, GA: 26, group: "B" },
+        { rank: 7, team: "Matsumoto Yamaga", MP: 18, MW: 6, MD: 6, ML: 6, GF: 31, GA: 21, group: "B" },
+        { rank: 8, team: "Júbilo Iwata", MP: 18, MW: 5, MD: 6, ML: 7, GF: 16, GA: 23, group: "B" },
+        { rank: 9, team: "Fukushima United", MP: 18, MW: 4, MD: 4, ML: 10, GF: 28, GA: 41, group: "B" },
+        { rank: 10, team: "Nagano", MP: 18, MW: 3, MD: 5, ML: 10, GF: 15, GA: 33, group: "B" },
+        // Group C
+        { rank: 1, team: "Kataller Toyama", MP: 18, MW: 10, MD: 5, ML: 3, GF: 37, GA: 24, group: "C" },
+        { rank: 2, team: "Niigata", MP: 18, MW: 9, MD: 5, ML: 4, GF: 21, GA: 17, group: "C" },
+        { rank: 3, team: "Tokushima Vortis", MP: 18, MW: 9, MD: 3, ML: 6, GF: 36, GA: 22, group: "C" },
+        { rank: 4, team: "Kochi United", MP: 18, MW: 8, MD: 4, ML: 6, GF: 23, GA: 21, group: "C" },
+        { rank: 5, team: "Ehime FC", MP: 18, MW: 8, MD: 3, ML: 7, GF: 25, GA: 18, group: "C" },
+        { rank: 6, team: "Kanazawa", MP: 18, MW: 5, MD: 7, ML: 6, GF: 15, GA: 21, group: "C" },
+        { rank: 7, team: "Nara Club", MP: 18, MW: 5, MD: 4, ML: 9, GF: 25, GA: 34, group: "C" },
+        { rank: 8, team: "Osaka", MP: 18, MW: 3, MD: 8, ML: 7, GF: 15, GA: 18, group: "C" },
+        { rank: 9, team: "Imabari", MP: 18, MW: 5, MD: 4, ML: 9, GF: 14, GA: 18, group: "C" },
+        { rank: 10, team: "Kamatamare Sanuki", MP: 18, MW: 5, MD: 3, ML: 10, GF: 14, GA: 32, group: "C" },
+        // Group D
+        { rank: 1, team: "Tegevajaro Miyazaki", MP: 18, MW: 15, MD: 2, ML: 1, GF: 35, GA: 11, group: "D" },
+        { rank: 2, team: "Kagoshima United", MP: 18, MW: 8, MD: 5, ML: 5, GF: 23, GA: 15, group: "D" },
+        { rank: 3, team: "Sagan Tosu", MP: 18, MW: 8, MD: 6, ML: 4, GF: 24, GA: 14, group: "D" },
+        { rank: 4, team: "Renofa Yamaguchi", MP: 18, MW: 7, MD: 5, ML: 6, GF: 24, GA: 22, group: "D" },
+        { rank: 5, team: "Roasso Kumamoto", MP: 18, MW: 8, MD: 2, ML: 8, GF: 20, GA: 20, group: "D" },
+        { rank: 6, team: "Tottori", MP: 18, MW: 6, MD: 5, ML: 7, GF: 20, GA: 24, group: "D" },
+        { rank: 7, team: "Oita Trinita", MP: 18, MW: 6, MD: 3, ML: 9, GF: 18, GA: 18, group: "D" },
+        { rank: 8, team: "Reilac Shiga", MP: 18, MW: 6, MD: 2, ML: 10, GF: 15, GA: 28, group: "D" },
+        { rank: 9, team: "Ryukyu", MP: 18, MW: 2, MD: 7, ML: 9, GF: 13, GA: 25, group: "D" },
+        { rank: 10, team: "Kitakyushu", MP: 18, MW: 4, MD: 3, ML: 11, GF: 17, GA: 32, group: "D" }
+    ]
+};
+
+// Fixtures
+const j1Fixtures = [
+    // Matchday 1 - August 7
+    { home: "FC Tokyo", away: "Machida Zelvia", date: "2026-08-07", league: "J1" },
+    { home: "Gamba Osaka", away: "Urawa Reds", date: "2026-08-07", league: "J1" },
+    { home: "Nagoya", away: "Shimizu S-Pulse", date: "2026-08-07", league: "J1" },
+    { home: "Avispa Fukuoka", away: "Vissel Kobe", date: "2026-08-07", league: "J1" },
+    { home: "Sanfrecce", away: "JEF United", date: "2026-08-07", league: "J1" },
+    { home: "Tokyo Verdy", away: "Kawasaki", date: "2026-08-07", league: "J1" },
+    { home: "Yokohama FM", away: "Kashima Antlers", date: "2026-08-07", league: "J1" },
+    { home: "V-Varen Nagasaki", away: "Kyoto Sanga", date: "2026-08-07", league: "J1" },
+    { home: "Kashiwa Reysol", away: "Mito HollyHock", date: "2026-08-07", league: "J1" },
+    { home: "Cerezo Osaka", away: "Okayama", date: "2026-08-07", league: "J1" },
+    
+    // Matchday 2 - August 14-15
+    { home: "Tokyo Verdy", away: "Kashiwa Reysol", date: "2026-08-14", league: "J1" },
+    { home: "Urawa Reds", away: "Sanfrecce", date: "2026-08-15", league: "J1" },
+    { home: "Vissel Kobe", away: "FC Tokyo", date: "2026-08-15", league: "J1" },
+    { home: "JEF United", away: "Machida Zelvia", date: "2026-08-15", league: "J1" },
+    { home: "Kashima Antlers", away: "Nagoya", date: "2026-08-15", league: "J1" },
+    { home: "Shimizu S-Pulse", away: "Yokohama FM", date: "2026-08-15", league: "J1" },
+    { home: "Okayama", away: "V-Varen Nagasaki", date: "2026-08-15", league: "J1" },
+    { home: "Kawasaki", away: "Kyoto Sanga", date: "2026-08-15", league: "J1" },
+    { home: "Avispa Fukuoka", away: "Cerezo Osaka", date: "2026-08-15", league: "J1" },
+    { home: "Mito HollyHock", away: "Gamba Osaka", date: "2026-08-15", league: "J1" }
+];
+
+const j2Fixtures = [
+    // Matchday 2 - August 8
+    { home: "Tegevajaro Miyazaki", away: "Yokohama FC", date: "2026-08-08", league: "J2" },
+    { home: "Omiya Ardija", away: "Niigata", date: "2026-08-08", league: "J2" },
+    { home: "Oita Trinita", away: "Shonan Bellmare", date: "2026-08-08", league: "J2" },
+    { home: "Montedio Yamagata", away: "Tochigi City FC", date: "2026-08-08", league: "J2" },
+    { home: "Iwaki FC", away: "Imabari", date: "2026-08-08", league: "J2" },
+    { home: "Consadole Sapporo", away: "Tokushima Vortis", date: "2026-08-08", league: "J2" },
+    { home: "Vanraure Hachinohe", away: "Kataller Toyama", date: "2026-08-08", league: "J2" },
+    { home: "Fujieda MYFC", away: "Vegalta Sendai", date: "2026-08-08", league: "J2" },
+    { home: "Sagan Tosu", away: "Ventforet Kofu", date: "2026-08-08", league: "J2" },
+    { home: "Júbilo Iwata", away: "Blaublitz", date: "2026-08-08", league: "J2" },
+    
+    // Matchday 3 - August 15-16
+    { home: "Niigata", away: "Consadole Sapporo", date: "2026-08-15", league: "J2" },
+    { home: "Shonan Bellmare", away: "Montedio Yamagata", date: "2026-08-15", league: "J2" },
+    { home: "Vegalta Sendai", away: "Oita Trinita", date: "2026-08-15", league: "J2" },
+    { home: "Tochigi City FC", away: "Vanraure Hachinohe", date: "2026-08-15", league: "J2" },
+    { home: "Imabari", away: "Omiya Ardija", date: "2026-08-15", league: "J2" },
+    { home: "Fujieda MYFC", away: "Iwaki FC", date: "2026-08-15", league: "J2" },
+    { home: "Blaublitz", away: "Kataller Toyama", date: "2026-08-15", league: "J2" },
+    { home: "Ventforet Kofu", away: "Tegevajaro Miyazaki", date: "2026-08-15", league: "J2" },
+    { home: "Tokushima Vortis", away: "Sagan Tosu", date: "2026-08-15", league: "J2" },
+    { home: "Yokohama FC", away: "Júbilo Iwata", date: "2026-08-16", league: "J2" }
+];
+
+// ==================== HELPER FUNCTIONS ====================
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function calculatePoints(team) {
+    if (!team) return 0;
+    return (team.MW || 0) * 3 + (team.MD || 0);
+}
+
+function formatDate(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric' 
+    });
+}
+
+// ==================== RENDER FUNCTIONS ====================
+
+function renderJ1Table() {
+    const container = document.getElementById('j1Content');
+    
+    // Split into groups
+    const groupA = j1Data.teams.filter(t => t.group === 'A').sort((a, b) => a.rank - b.rank);
+    const groupB = j1Data.teams.filter(t => t.group === 'B').sort((a, b) => a.rank - b.rank);
+    
+    let html = `
+        <div class="comparison-grid">
+            ${renderTable(groupA, 'J1 League', 'Group A')}
+            ${renderTable(groupB, 'J1 League', 'Group B')}
+        </div>
+        ${renderJ1Stats()}
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderJ2Table() {
+    const container = document.getElementById('j2Content');
+    
+    // Split into groups
+    const groupA = j2Data.teams.filter(t => t.group === 'A').sort((a, b) => a.rank - b.rank);
+    const groupB = j2Data.teams.filter(t => t.group === 'B').sort((a, b) => a.rank - b.rank);
+    const groupC = j2Data.teams.filter(t => t.group === 'C').sort((a, b) => a.rank - b.rank);
+    const groupD = j2Data.teams.filter(t => t.group === 'D').sort((a, b) => a.rank - b.rank);
+    
+    let html = `
+        <div class="comparison-grid">
+            ${renderTable(groupA, 'J2 League', 'Group A')}
+            ${renderTable(groupB, 'J2 League', 'Group B')}
+        </div>
+        <div class="comparison-grid">
+            ${renderTable(groupC, 'J2 League', 'Group C')}
+            ${renderTable(groupD, 'J2 League', 'Group D')}
+        </div>
+        ${renderJ2Stats()}
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderTable(teams, league, group) {
+    let html = `
+        <div class="season-card">
+            <div class="season-title" style="background: linear-gradient(135deg, #bc002d 0%, #1a1a2e 100%); color: white;">
+                ${league} - ${group}
+            </div>
+            <div class="table-responsive">
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const team of teams) {
+        const wins = team.MW || 0;
+        const draws = team.MD || 0;
+        const losses = team.ML || (team.MP - wins - draws);
+        const gd = team.GF - team.GA;
+        const points = calculatePoints(team);
+        
+        let rowClass = '';
+        if (team.rank === 1) rowClass = 'champion-row';
+        else if (team.rank <= 3) rowClass = 'promotion-zone';
+        else if (team.rank >= 9) rowClass = 'relegation-zone';
+        
+        html += `
+            <tr class="${rowClass}">
+                <td><strong>${team.rank}</strong></td>
+                <td class="team-cell"><a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a></td>
+                <td>${team.MP}</td>
+                <td class="text-success">${wins}</td>
+                <td class="text-warning">${draws}</td>
+                <td class="text-danger">${losses}</td>
+                <td>${team.GF}</td>
+                <td>${team.GA}</td>
+                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${gd >= 0 ? '+' : ''}${gd}</td>
+                <td class="points-cell"><strong>${points}</strong></td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderJ1Stats() {
+    const allTeams = j1Data.teams;
+    const totalGoals = allTeams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = (allTeams.length * allTeams[0].MP) / 2;
+    const avgGoals = (totalGoals / totalMatches).toFixed(2);
+    
+    const leader = allTeams.find(t => t.rank === 1 && t.group === 'A');
+    const leaderB = allTeams.find(t => t.rank === 1 && t.group === 'B');
+    const topScorerTeam = allTeams.reduce((a, b) => a.GF > b.GF ? a : b);
+    const bestDefense = allTeams.reduce((a, b) => a.GA < b.GA ? a : b);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> J1 League Statistics</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalMatches}</div>
+                    <small>Total Matches</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalGoals}</div>
+                    <small>Total Goals</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${avgGoals}</div>
+                    <small>Goals per Match</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${calculatePoints(leader)}</div>
+                    <small>Group A Leader Pts</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-trophy"></i> Group A Leader</h5>
+                    <p><strong>${escapeHtml(leader?.team)}</strong> - ${calculatePoints(leader)} points</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-trophy"></i> Group B Leader</h5>
+                    <p><strong>${escapeHtml(leaderB?.team)}</strong> - ${calculatePoints(leaderB)} points</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-futbol"></i> Best Attack</h5>
+                    <p><strong>${escapeHtml(topScorerTeam?.team)}</strong> - ${topScorerTeam?.GF} goals</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderJ2Stats() {
+    const allTeams = j2Data.teams;
+    const totalGoals = allTeams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = (allTeams.length * allTeams[0].MP) / 2;
+    const avgGoals = (totalGoals / totalMatches).toFixed(2);
+    
+    const groupLeaders = {};
+    for (const group of ['A', 'B', 'C', 'D']) {
+        const leader = allTeams.find(t => t.group === group && t.rank === 1);
+        if (leader) groupLeaders[group] = leader;
+    }
+    const topScorerTeam = allTeams.reduce((a, b) => a.GF > b.GF ? a : b);
+    const bestDefense = allTeams.reduce((a, b) => a.GA < b.GA ? a : b);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> J2 League Statistics</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalMatches}</div>
+                    <small>Total Matches</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalGoals}</div>
+                    <small>Total Goals</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${avgGoals}</div>
+                    <small>Goals per Match</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${calculatePoints(groupLeaders['A'])}</div>
+                    <small>Group A Leader Pts</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-trophy"></i> Group Leaders</h5>
+                    ${Object.entries(groupLeaders).map(([group, team]) => `
+                        <p><strong>Group ${group}:</strong> ${escapeHtml(team.team)} - ${calculatePoints(team)} pts</p>
+                    `).join('')}
+                </div>
+                <div class="col-md-6">
+                    <h5><i class="fas fa-futbol"></i> Best Attack</h5>
+                    <p><strong>${escapeHtml(topScorerTeam?.team)}</strong> - ${topScorerTeam?.GF} goals</p>
+                    <h5><i class="fas fa-shield-alt"></i> Best Defense</h5>
+                    <p><strong>${escapeHtml(bestDefense?.team)}</strong> - ${bestDefense?.GA} conceded</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderFixtures() {
+    const container = document.getElementById('fixturesContent');
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-calendar-alt"></i> Upcoming Fixtures</h3>
+            <p class="text-muted">J1 & J2 League match schedules</p>
+    `;
+    
+    // J1 Fixtures
+    html += `<h4 class="mt-4">🇯🇵 J1 League - Matchday 1 & 2</h4>`;
+    for (const fixture of j1Fixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    // J2 Fixtures
+    html += `<h4 class="mt-4">🇯🇵 J2 League - Matchday 2 & 3</h4>`;
+    for (const fixture of j2Fixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    html += `
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderStats() {
+    const container = document.getElementById('statsContent');
+    
+    const j1TotalGoals = j1Data.teams.reduce((sum, t) => sum + t.GF, 0);
+    const j2TotalGoals = j2Data.teams.reduce((sum, t) => sum + t.GF, 0);
+    const j1Matches = (j1Data.teams.length * j1Data.teams[0].MP) / 2;
+    const j2Matches = (j2Data.teams.length * j2Data.teams[0].MP) / 2;
+    const j1Avg = (j1TotalGoals / j1Matches).toFixed(2);
+    const j2Avg = (j2TotalGoals / j2Matches).toFixed(2);
+    
+    const j1LeaderA = j1Data.teams.find(t => t.group === 'A' && t.rank === 1);
+    const j1LeaderB = j1Data.teams.find(t => t.group === 'B' && t.rank === 1);
+    const j2Leaders = {};
+    for (const group of ['A', 'B', 'C', 'D']) {
+        const leader = j2Data.teams.find(t => t.group === group && t.rank === 1);
+        if (leader) j2Leaders[group] = leader;
+    }
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> Japanese Football - Overall Statistics</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <h5>🇯🇵 J1 League</h5>
+                        <p><strong>${j1Matches}</strong> matches played</p>
+                        <p><strong>${j1TotalGoals}</strong> total goals</p>
+                        <p><strong>${j1Avg}</strong> goals per match</p>
+                        <p><strong>Group A Leader:</strong> ${escapeHtml(j1LeaderA?.team)} (${calculatePoints(j1LeaderA)} pts)</p>
+                        <p><strong>Group B Leader:</strong> ${escapeHtml(j1LeaderB?.team)} (${calculatePoints(j1LeaderB)} pts)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <h5>🇯🇵 J2 League</h5>
+                        <p><strong>${j2Matches}</strong> matches played</p>
+                        <p><strong>${j2TotalGoals}</strong> total goals</p>
+                        <p><strong>${j2Avg}</strong> goals per match</p>
+                        <p><strong>Group Leaders:</strong></p>
+                        ${Object.entries(j2Leaders).map(([group, team]) => `
+                            <p>Group ${group}: ${escapeHtml(team.team)} (${calculatePoints(team)} pts)</p>
+                        `).join('')}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <h5>📊 Key Insights</h5>
+                        <p><strong>J1 Best Attack:</strong> ${j1Data.teams.reduce((a,b) => a.GF > b.GF ? a : b).team} (${j1Data.teams.reduce((a,b) => a.GF > b.GF ? a : b).GF} goals)</p>
+                        <p><strong>J1 Best Defense:</strong> ${j1Data.teams.reduce((a,b) => a.GA < b.GA ? a : b).team} (${j1Data.teams.reduce((a,b) => a.GA < b.GA ? a : b).GA} conceded)</p>
+                        <p><strong>J2 Best Attack:</strong> ${j2Data.teams.reduce((a,b) => a.GF > b.GF ? a : b).team} (${j2Data.teams.reduce((a,b) => a.GF > b.GF ? a : b).GF} goals)</p>
+                        <p><strong>J2 Best Defense:</strong> ${j2Data.teams.reduce((a,b) => a.GA < b.GA ? a : b).team} (${j2Data.teams.reduce((a,b) => a.GA < b.GA ? a : b).GA} conceded)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="analysis-card">
+            <h3><i class="fas fa-info-circle"></i> Japanese Football Structure</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>📈 Promotion System</h5>
+                        <p>J1 League: Top teams from each group compete for the championship</p>
+                        <p>J2 League: Top teams from each group compete for promotion to J1</p>
+                        <p>Bottom 4 teams in J1 (2 from each group) are relegated to J2</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>🏆 Current Champions</h5>
+                        <p><strong>J1 League 2025:</strong> Kashima Antlers</p>
+                        <p><strong>J2 League 2025:</strong> To be determined</p>
+                        <p><strong>Most J1 Titles:</strong> Kashima Antlers (8)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// ==================== TAB SWITCHING ====================
+
+function initTabs() {
+    const tabs = document.querySelectorAll('.league-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.dataset.tab;
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            tab.classList.add('active');
+            document.getElementById(`tab-${targetTab}`).classList.add('active');
+        });
+    });
+}
+
+// ==================== INITIALIZE ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Load all tabs
+    renderJ1Table();
+    renderJ2Table();
+    renderFixtures();
+    renderStats();
+    initTabs();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+</body>
+</html>

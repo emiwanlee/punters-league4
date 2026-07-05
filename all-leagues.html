@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Leagues - Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2.5rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    
+    .page-header p {
+        opacity: 0.9;
+        font-size: 1.1rem;
+    }
+    
+    .league-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .league-card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        border: 1px solid #e5e7eb;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .league-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    
+    .league-card .league-icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .league-card .league-name {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1f2937;
+    }
+    
+    .league-card .league-country {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin-bottom: 0.5rem;
+    }
+    
+    .league-card .league-stats {
+        display: flex;
+        gap: 1rem;
+        margin: 0.75rem 0;
+        font-size: 0.8rem;
+    }
+    
+    .league-card .league-stats span {
+        background: #f3f4f6;
+        padding: 2px 10px;
+        border-radius: 20px;
+        color: #4b5563;
+    }
+    
+    .league-card .league-badge {
+        display: inline-block;
+        padding: 2px 12px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .badge-football { background: #dbeafe; color: #2563eb; }
+    .badge-basketball { background: #fce7f3; color: #db2777; }
+    .badge-active { background: #d1fae5; color: #059669; }
+    .badge-upcoming { background: #fef3c7; color: #d97706; }
+    .badge-finished { background: #e5e7eb; color: #6b7280; }
+    
+    .league-card .arrow {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        color: #667eea;
+        font-size: 1.2rem;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .league-card:hover .arrow {
+        opacity: 1;
+    }
+    
+    .league-card .top-teams {
+        font-size: 0.8rem;
+        color: #4b5563;
+        margin-top: 0.5rem;
+    }
+    
+    .league-card .top-teams strong {
+        color: #1f2937;
+    }
+    
+    .filter-section {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #e5e7eb;
+        border-radius: 30px;
+        background: transparent;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: #6c757d;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .filter-btn:hover {
+        border-color: #667eea;
+        color: #667eea;
+    }
+    
+    .filter-btn.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-color: transparent;
+        color: white;
+    }
+    
+    .league-count {
+        text-align: center;
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .featured-league {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .featured-league .featured-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .featured-league h2 { font-weight: 700; }
+    .featured-league .btn-light {
+        border-radius: 30px;
+        padding: 0.5rem 2rem;
+        font-weight: 600;
+    }
+    
+    .featured-league::after {
+        content: '⚽';
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        font-size: 12rem;
+        opacity: 0.1;
+    }
+    
+    @media (max-width: 768px) {
+        .league-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+        .page-header h1 { font-size: 1.8rem; }
+        .featured-league { padding: 1.5rem; }
+    }
+    
+    @media (max-width: 480px) {
+        .league-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Punters League</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Predictions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="all-leagues.html">Leagues</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="page-header">
+        <h1><i class="fas fa-globe-americas"></i> All Leagues</h1>
+        <p>Your complete guide to football & basketball leagues from around the world</p>
+    </div>
+    
+    <!-- Featured League -->
+    <div class="featured-league">
+        <div class="featured-content">
+            <span class="badge bg-warning text-dark mb-2">🔥 HOT</span>
+            <h2>Liga MX - Clausura 2026</h2>
+            <p>The new Mexican season kicks off on July 10! All 18 teams ready to battle for glory.</p>
+            <a href="mexico.html" class="btn btn-light">
+                <i class="fas fa-arrow-right"></i> View League
+            </a>
+        </div>
+    </div>
+    
+    <!-- Filter Buttons -->
+    <div class="filter-section">
+        <button class="filter-btn active" data-filter="all">🌍 All</button>
+        <button class="filter-btn" data-filter="football">⚽ Football</button>
+        <button class="filter-btn" data-filter="basketball">🏀 Basketball</button>
+        <button class="filter-btn" data-filter="active">🟢 Active</button>
+        <button class="filter-btn" data-filter="upcoming">📅 Upcoming</button>
+    </div>
+    
+    <div class="league-count" id="leagueCount">
+        Showing <strong>0</strong> leagues
+    </div>
+    
+    <!-- League Grid -->
+    <div class="league-grid" id="leagueGrid">
+        <!-- Leagues will be populated by JavaScript -->
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script>
+// ==================== LEAGUE DATA ====================
+
+const leagues = [
+    {
+        id: 'argentina',
+        name: 'Primera Nacional',
+        country: 'Argentina',
+        icon: '🇦🇷',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=argentina',
+        teams: 38,
+        leader: 'Deportivo Morón',
+        topScorer: 'Lautaro Gordillo - 7 goals'
+    },
+    {
+        id: 'australia',
+        name: 'NPL ACT',
+        country: 'Australia',
+        icon: '🇦🇺',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=australia',
+        teams: 11,
+        leader: 'Alga',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'belarus',
+        name: 'Belarusian Premier League',
+        country: 'Belarus',
+        icon: '🇧🇾',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=belarus',
+        teams: 16,
+        leader: 'Dinamo Minsk',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'bolivia',
+        name: 'Bolivian Primera División',
+        country: 'Bolivia',
+        icon: '🇧🇴',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=bolivia',
+        teams: 16,
+        leader: 'Always Ready',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'brazil',
+        name: 'Brazilian Série B',
+        country: 'Brazil',
+        icon: '🇧🇷',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=brazil',
+        teams: 20,
+        leader: 'Vila Nova',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'brazil-u20',
+        name: 'Brazilian U-20 League',
+        country: 'Brazil',
+        icon: '🇧🇷',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=brazil-u20',
+        teams: 20,
+        leader: 'Palmeiras U20',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'chile',
+        name: 'Chilean Primera División',
+        country: 'Chile',
+        icon: '🇨🇱',
+        type: 'football',
+        status: 'active',
+        page: 'chile.html',
+        teams: 16,
+        leader: 'Colo-Colo',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'china',
+        name: 'Chinese Super League',
+        country: 'China',
+        icon: '🇨🇳',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=china',
+        teams: 16,
+        leader: 'Chengdu Rongcheng',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'colombia',
+        name: 'Colombia Primera A',
+        country: 'Colombia',
+        icon: '🇨🇴',
+        type: 'football',
+        status: 'active',
+        page: 'colombia.html',
+        teams: 20,
+        leader: 'Atlético Nacional',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'finland',
+        name: 'Finland Veikkausliiga',
+        country: 'Finland',
+        icon: '🇫🇮',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=finland',
+        teams: 12,
+        leader: 'KuPS',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'kazakhstan',
+        name: 'Kazakhstan Premier League',
+        country: 'Kazakhstan',
+        icon: '🇰🇿',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=kazakhstan',
+        teams: 16,
+        leader: 'Kairat',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'kyrgyzstan',
+        name: 'Kyrgyzstan Premier League',
+        country: 'Kyrgyzstan',
+        icon: '🇰🇬',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=kyrgyzstan',
+        teams: 16,
+        leader: 'Alga',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'latvia',
+        name: 'Latvia Nakotnes Liga',
+        country: 'Latvia',
+        icon: '🇱🇻',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=latvia',
+        teams: 14,
+        leader: 'Metta/LU',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'mexico',
+        name: 'Liga MX',
+        country: 'Mexico',
+        icon: '🇲🇽',
+        type: 'football',
+        status: 'upcoming',
+        page: 'mexico.html',
+        teams: 18,
+        leader: 'New season starts July 10',
+        topScorer: '2025: Toluca - 43 goals'
+    },
+    {
+        id: 'norway',
+        name: 'Norwegian First Division',
+        country: 'Norway',
+        icon: '🇳🇴',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=norway',
+        teams: 16,
+        leader: 'Haugesund',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'sweden',
+        name: 'Swedish Superettan',
+        country: 'Sweden',
+        icon: '🇸🇪',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=sweden',
+        teams: 16,
+        leader: 'Falkenberg',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'sweden-ettan',
+        name: 'Swedish Ettan Norra',
+        country: 'Sweden',
+        icon: '🇸🇪',
+        type: 'football',
+        status: 'active',
+        page: 'index.html?league=sweden-ettan',
+        teams: 16,
+        leader: 'Hammarby TFF',
+        topScorer: 'Multiple players'
+    },
+    {
+        id: 'wnba',
+        name: 'WNBA',
+        country: 'USA',
+        icon: '🇺🇸',
+        type: 'basketball',
+        status: 'active',
+        page: 'index.html?league=wnba',
+        teams: 15,
+        leader: 'Minnesota Lynx',
+        topScorer: 'Multiple players'
+    }
+];
+
+// ==================== RENDER FUNCTIONS ====================
+
+function renderLeagues(filter = 'all') {
+    const grid = document.getElementById('leagueGrid');
+    const count = document.getElementById('leagueCount');
+    
+    let filtered = leagues;
+    
+    if (filter === 'football') {
+        filtered = leagues.filter(l => l.type === 'football');
+    } else if (filter === 'basketball') {
+        filtered = leagues.filter(l => l.type === 'basketball');
+    } else if (filter === 'active') {
+        filtered = leagues.filter(l => l.status === 'active');
+    } else if (filter === 'upcoming') {
+        filtered = leagues.filter(l => l.status === 'upcoming');
+    }
+    
+    count.innerHTML = `Showing <strong>${filtered.length}</strong> leagues`;
+    
+    if (filtered.length === 0) {
+        grid.innerHTML = `
+            <div class="text-center py-5" style="grid-column: 1 / -1;">
+                <i class="fas fa-search fa-3x text-muted"></i>
+                <p class="mt-3 text-muted">No leagues found with this filter.</p>
+            </div>
+        `;
+        return;
+    }
+    
+    let html = '';
+    
+    for (const league of filtered) {
+        const statusBadge = league.status === 'active' 
+            ? '<span class="league-badge badge-active">🟢 Active</span>' 
+            : '<span class="league-badge badge-upcoming">📅 Upcoming</span>';
+        
+        const typeBadge = league.type === 'football' 
+            ? '<span class="league-badge badge-football">⚽ Football</span>' 
+            : '<span class="league-badge badge-basketball">🏀 Basketball</span>';
+        
+        html += `
+            <div class="league-card" onclick="window.location.href='${league.page}'">
+                <div class="league-icon">${league.icon}</div>
+                <div class="league-name">${league.name}</div>
+                <div class="league-country"><i class="fas fa-map-pin"></i> ${league.country}</div>
+                <div class="league-stats">
+                    <span><i class="fas fa-users"></i> ${league.teams} teams</span>
+                    <span><i class="fas fa-trophy"></i> ${league.leader}</span>
+                </div>
+                <div class="top-teams"><strong>Top Scorer:</strong> ${league.topScorer}</div>
+                <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    ${typeBadge}
+                    ${statusBadge}
+                </div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        `;
+    }
+    
+    grid.innerHTML = html;
+}
+
+// ==================== FILTER HANDLING ====================
+
+function initFilters() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderLeagues(btn.dataset.filter);
+        });
+    });
+}
+
+// ==================== INITIALIZE ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+    renderLeagues('all');
+    initFilters();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+</body>
+</html>
