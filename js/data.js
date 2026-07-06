@@ -594,28 +594,7 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 16, MW: 1, MD: 3, ML: 12, GF: 10, GA: 27, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        // Matchday 16 - June 27-28
-        { home: "Criciúma", away: "São Bernardo", date: "2026-06-27" },
-        { home: "Atlético Goianiense", away: "Ponte Preta", date: "2026-06-28" },
-        { home: "Juventude", away: "Ceará", date: "2026-06-28" },
-        { home: "Athletic (MG)", away: "Avaí", date: "2026-06-28" },
-        { home: "Fortaleza", away: "Sport", date: "2026-06-28" },
-        { home: "Náutico", away: "Goiás", date: "2026-06-28" },
-        
-        // Matchday 16 - July 1
-        { home: "Botafogo", away: "CRB", date: "2026-07-01" },
-        
-        // Matchday 17 - July 3-6
-        { home: "Cuiabá", away: "América-MG", date: "2026-07-03" },
-        { home: "Fortaleza", away: "Ponte Preta", date: "2026-07-03" },
-        { home: "Londrina", away: "CRB", date: "2026-07-04" },
-        { home: "Criciúma", away: "Sport", date: "2026-07-04" },
-        { home: "Novorizontino", away: "Atlético Goianiense", date: "2026-07-04" },
-        { home: "Goiás", away: "Ceará", date: "2026-07-05" },
-        { home: "Náutico", away: "Juventude", date: "2026-07-05" },
-        { home: "Botafogo", away: "Avaí", date: "2026-07-06" },
-        { home: "Vila Nova", away: "São Bernardo", date: "2026-07-06" },
-        
+       
         // Matchday 17 - July 8
         { home: "Athletic (MG)", away: "Operário Ferroviário", date: "2026-07-08" },
         
