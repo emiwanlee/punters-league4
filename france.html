@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>French Football - Ligue 1 & Ligue 2 Analysis | Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .country-hero {
+        background: linear-gradient(135deg, #002395 0%, #FFFFFF 50%, #ED2939 100%);
+        color: #1a1a2e;
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+        border: 2px solid #1a1a2e;
+    }
+    
+    .country-hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .country-hero .hero-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .country-hero p {
+        color: #1a1a2e;
+    }
+    
+    .league-tabs {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 0.5rem;
+    }
+    
+    .league-tab {
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .league-tab:hover {
+        background: #f8f9fa;
+        color: #002395;
+    }
+    
+    .league-tab.active {
+        background: linear-gradient(135deg, #002395 0%, #ED2939 100%);
+        color: white;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .season-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        overflow-x: auto;
+    }
+    
+    .season-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .league-table {
+        width: 100%;
+        font-size: 0.75rem;
+        border-collapse: collapse;
+    }
+    
+    .league-table th {
+        background: #f8f9fa;
+        padding: 8px 4px;
+        text-align: center;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+    
+    .league-table td {
+        padding: 6px 4px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .team-cell {
+        text-align: left !important;
+        font-weight: 500;
+    }
+    
+    .team-cell a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .team-cell a:hover {
+        color: #002395;
+    }
+    
+    .analysis-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .big-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #002395;
+    }
+    
+    .info-box {
+        background: linear-gradient(135deg, #00239510, #ED293910);
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
+    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    
+    .france-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #002395, #ED2939);
+        color: white;
+        padding: 2px 12px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .fixture-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-teams {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-vs {
+        color: #6c757d;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .fixture-date {
+        color: #6c757d;
+        font-size: 0.8rem;
+    }
+    
+    @media (max-width: 992px) {
+        .comparison-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Punters League</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Predictions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chile.html">Chile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mexico.html">Mexico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="colombia.html">Colombia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="japan.html">Japan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ireland.html">Ireland</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="france.html">France</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="country-hero">
+        <div class="hero-icon">🇫🇷</div>
+        <h1><i class="fas fa-futbol"></i> French Football</h1>
+        <p>Complete coverage of Ligue 1 &amp; Ligue 2</p>
+    </div>
+    
+    <!-- League Tabs -->
+    <div class="league-tabs">
+        <button class="league-tab active" data-tab="ligue1">🏆 Ligue 1 2025</button>
+        <button class="league-tab" data-tab="ligue2">🏆 Ligue 2 2025</button>
+        <button class="league-tab" data-tab="fixtures">📅 Fixtures</button>
+        <button class="league-tab" data-tab="stats">📊 Stats &amp; Analysis</button>
+    </div>
+    
+    <!-- Ligue 1 Tab -->
+    <div id="tab-ligue1" class="tab-content active">
+        <div id="ligue1Content">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Ligue 1 data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ligue 2 Tab -->
+    <div id="tab-ligue2" class="tab-content">
+        <div id="ligue2Content">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Ligue 2 data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fixtures Tab -->
+    <div id="tab-fixtures" class="tab-content">
+        <div id="fixturesContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading fixtures...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Stats & Analysis Tab -->
+    <div id="tab-stats" class="tab-content">
+        <div id="statsContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading statistics...</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script>
+// ==================== FRENCH LEAGUE DATA ====================
+
+// Ligue 1 2025
+const ligue1Data = {
+    teams: [
+        { rank: 1, team: "PSG", MP: 34, MW: 24, MD: 4, ML: 6, GF: 74, GA: 29 },
+        { rank: 2, team: "Lens", MP: 34, MW: 22, MD: 4, ML: 8, GF: 66, GA: 35 },
+        { rank: 3, team: "LOSC", MP: 34, MW: 18, MD: 7, ML: 9, GF: 52, GA: 37 },
+        { rank: 4, team: "OL", MP: 34, MW: 18, MD: 6, ML: 10, GF: 53, GA: 40 },
+        { rank: 5, team: "Marseille", MP: 34, MW: 18, MD: 5, ML: 11, GF: 63, GA: 45 },
+        { rank: 6, team: "Rennes", MP: 34, MW: 17, MD: 8, ML: 9, GF: 59, GA: 50 },
+        { rank: 7, team: "Monaco", MP: 34, MW: 16, MD: 6, ML: 12, GF: 60, GA: 54 },
+        { rank: 8, team: "Strasbourg", MP: 34, MW: 15, MD: 8, ML: 11, GF: 58, GA: 47 },
+        { rank: 9, team: "Toulouse", MP: 34, MW: 12, MD: 9, ML: 13, GF: 47, GA: 46 },
+        { rank: 10, team: "Lorient", MP: 34, MW: 11, MD: 12, ML: 11, GF: 48, GA: 51 },
+        { rank: 11, team: "Paris FC", MP: 34, MW: 11, MD: 11, ML: 12, GF: 47, GA: 50 },
+        { rank: 12, team: "Brest", MP: 34, MW: 10, MD: 9, ML: 15, GF: 43, GA: 55 },
+        { rank: 13, team: "Angers", MP: 34, MW: 9, MD: 9, ML: 16, GF: 29, GA: 48 },
+        { rank: 14, team: "Le Havre", MP: 34, MW: 7, MD: 14, ML: 13, GF: 32, GA: 44 },
+        { rank: 15, team: "Auxerre", MP: 34, MW: 8, MD: 10, ML: 16, GF: 34, GA: 44 },
+        { rank: 16, team: "Nice", MP: 34, MW: 7, MD: 11, ML: 16, GF: 37, GA: 60 },
+        { rank: 17, team: "Nantes", MP: 34, MW: 5, MD: 9, ML: 20, GF: 29, GA: 52 },
+        { rank: 18, team: "Metz", MP: 34, MW: 3, MD: 8, ML: 23, GF: 32, GA: 76 }
+    ]
+};
+
+// Ligue 2 2025
+const ligue2Data = {
+    teams: [
+        { rank: 1, team: "Troyes", MP: 34, MW: 20, MD: 7, ML: 7, GF: 60, GA: 33 },
+        { rank: 2, team: "Le Mans", MP: 34, MW: 16, MD: 14, ML: 4, GF: 50, GA: 31 },
+        { rank: 3, team: "St-Étienne", MP: 34, MW: 18, MD: 6, ML: 10, GF: 59, GA: 38 },
+        { rank: 4, team: "Red Star", MP: 34, MW: 16, MD: 10, ML: 8, GF: 45, GA: 37 },
+        { rank: 5, team: "Rodez", MP: 34, MW: 15, MD: 13, ML: 6, GF: 45, GA: 39 },
+        { rank: 6, team: "Reims", MP: 34, MW: 14, MD: 14, ML: 6, GF: 53, GA: 35 },
+        { rank: 7, team: "Annecy", MP: 34, MW: 15, MD: 7, ML: 12, GF: 49, GA: 39 },
+        { rank: 8, team: "Montpellier", MP: 34, MW: 14, MD: 9, ML: 11, GF: 41, GA: 31 },
+        { rank: 9, team: "Pau", MP: 34, MW: 12, MD: 9, ML: 13, GF: 48, GA: 62 },
+        { rank: 10, team: "Dunkerque", MP: 34, MW: 11, MD: 10, ML: 13, GF: 53, GA: 45 },
+        { rank: 11, team: "Guingamp", MP: 34, MW: 10, MD: 10, ML: 14, GF: 42, GA: 49 },
+        { rank: 12, team: "Grenoble", MP: 34, MW: 8, MD: 15, ML: 11, GF: 33, GA: 39 },
+        { rank: 13, team: "Clermont", MP: 34, MW: 9, MD: 10, ML: 15, GF: 38, GA: 44 },
+        { rank: 14, team: "Nancy", MP: 34, MW: 9, MD: 10, ML: 15, GF: 35, GA: 52 },
+        { rank: 15, team: "Boulogne", MP: 34, MW: 9, MD: 9, ML: 16, GF: 34, GA: 49 },
+        { rank: 16, team: "Laval", MP: 34, MW: 6, MD: 14, ML: 14, GF: 30, GA: 48 },
+        { rank: 17, team: "Bastia", MP: 34, MW: 5, MD: 13, ML: 16, GF: 23, GA: 39 },
+        { rank: 18, team: "Amiens", MP: 34, MW: 6, MD: 6, ML: 22, GF: 37, GA: 65 }
+    ]
+};
+
+// Fixtures
+const ligue1Fixtures = [
+    { home: "Troyes", away: "Paris FC", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Marseille", away: "Strasbourg", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Le Mans", away: "Brest", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Nice", away: "Lorient", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Lens", away: "Auxerre", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Toulouse", away: "OL", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Le Havre", away: "Monaco", date: "2026-08-22", league: "Ligue 1" },
+    { home: "Angers", away: "LOSC", date: "2026-08-22", league: "Ligue 1" }
+];
+
+const ligue2Fixtures = [
+    { home: "Metz", away: "Guingamp", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Clermont", away: "Reims", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Pau", away: "Annecy", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Dunkerque", away: "Grenoble", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Boulogne", away: "Nancy", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Sochaux", away: "St-Étienne", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Montpellier", away: "Dijon", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Nantes", away: "Red Star", date: "2026-08-08", league: "Ligue 2" },
+    { home: "Rodez", away: "Laval", date: "2026-08-08", league: "Ligue 2" }
+];
+
+// ==================== HELPER FUNCTIONS ====================
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function calculatePoints(team) {
+    if (!team) return 0;
+    return (team.MW || 0) * 3 + (team.MD || 0);
+}
+
+function formatDate(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric' 
+    });
+}
+
+// ==================== RENDER FUNCTIONS ====================
+
+function renderTable(season, title, subtitle) {
+    const sortedTeams = [...season.teams].sort((a, b) => (a.rank || 0) - (b.rank || 0));
+    
+    let html = `
+        <div class="season-card">
+            <div class="season-title" style="background: linear-gradient(135deg, #002395 0%, #ED2939 100%); color: white;">
+                ${title} ${subtitle}
+            </div>
+            <div class="table-responsive">
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const team of sortedTeams) {
+        const wins = team.MW || 0;
+        const draws = team.MD || 0;
+        const losses = team.ML || (team.MP - wins - draws);
+        const gd = team.GF - team.GA;
+        const points = calculatePoints(team);
+        
+        let rowClass = '';
+        if (team.rank === 1) rowClass = 'champion-row';
+        else if (team.rank <= 4) rowClass = 'promotion-zone';
+        else if (team.rank >= 17) rowClass = 'relegation-zone';
+        
+        html += `
+            <tr class="${rowClass}">
+                <td><strong>${team.rank}</strong></td>
+                <td class="team-cell"><a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a></td>
+                <td>${team.MP}</td>
+                <td class="text-success">${wins}</td>
+                <td class="text-warning">${draws}</td>
+                <td class="text-danger">${losses}</td>
+                <td>${team.GF}</td>
+                <td>${team.GA}</td>
+                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${gd >= 0 ? '+' : ''}${gd}</td>
+                <td class="points-cell"><strong>${points}</strong></td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderLigue1() {
+    const container = document.getElementById('ligue1Content');
+    const html = `
+        <div class="comparison-grid">
+            ${renderTable(ligue1Data, 'Ligue 1', '2025')}
+        </div>
+        ${renderLigue1Stats()}
+    `;
+    container.innerHTML = html;
+}
+
+function renderLigue2() {
+    const container = document.getElementById('ligue2Content');
+    const html = `
+        <div class="comparison-grid">
+            ${renderTable(ligue2Data, 'Ligue 2', '2025')}
+        </div>
+        ${renderLigue2Stats()}
+    `;
+    container.innerHTML = html;
+}
+
+function renderLigue1Stats() {
+    const allTeams = ligue1Data.teams;
+    const totalGoals = allTeams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = (allTeams.length * allTeams[0].MP) / 2;
+    const avgGoals = (totalGoals / totalMatches).toFixed(2);
+    
+    const champion = allTeams.find(t => t.rank === 1);
+    const second = allTeams.find(t => t.rank === 2);
+    const gap = calculatePoints(champion) - calculatePoints(second);
+    const topScorerTeam = allTeams.reduce((a, b) => a.GF > b.GF ? a : b);
+    const bestDefense = allTeams.reduce((a, b) => a.GA < b.GA ? a : b);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> Ligue 1 2025 Statistics</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${Math.round(totalMatches)}</div>
+                    <small>Total Matches</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalGoals}</div>
+                    <small>Total Goals</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${avgGoals}</div>
+                    <small>Goals per Match</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${gap}</div>
+                    <small>Champion's Lead</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-trophy"></i> Champion</h5>
+                    <p><strong>${escapeHtml(champion?.team)}</strong> - ${calculatePoints(champion)} points</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-futbol"></i> Best Attack</h5>
+                    <p><strong>${escapeHtml(topScorerTeam?.team)}</strong> - ${topScorerTeam?.GF} goals</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-shield-alt"></i> Best Defense</h5>
+                    <p><strong>${escapeHtml(bestDefense?.team)}</strong> - ${bestDefense?.GA} conceded</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderLigue2Stats() {
+    const allTeams = ligue2Data.teams;
+    const totalGoals = allTeams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = (allTeams.length * allTeams[0].MP) / 2;
+    const avgGoals = (totalGoals / totalMatches).toFixed(2);
+    
+    const champion = allTeams.find(t => t.rank === 1);
+    const second = allTeams.find(t => t.rank === 2);
+    const gap = calculatePoints(champion) - calculatePoints(second);
+    const topScorerTeam = allTeams.reduce((a, b) => a.GF > b.GF ? a : b);
+    const bestDefense = allTeams.reduce((a, b) => a.GA < b.GA ? a : b);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> Ligue 2 2025 Statistics</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${Math.round(totalMatches)}</div>
+                    <small>Total Matches</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalGoals}</div>
+                    <small>Total Goals</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${avgGoals}</div>
+                    <small>Goals per Match</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${gap}</div>
+                    <small>Champion's Lead</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-trophy"></i> Champion</h5>
+                    <p><strong>${escapeHtml(champion?.team)}</strong> - ${calculatePoints(champion)} points</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-futbol"></i> Best Attack</h5>
+                    <p><strong>${escapeHtml(topScorerTeam?.team)}</strong> - ${topScorerTeam?.GF} goals</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-shield-alt"></i> Best Defense</h5>
+                    <p><strong>${escapeHtml(bestDefense?.team)}</strong> - ${bestDefense?.GA} conceded</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderFixtures() {
+    const container = document.getElementById('fixturesContent');
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-calendar-alt"></i> 2026/2027 Season Opening Fixtures</h3>
+            <p class="text-muted">Matchday 1 - Ligue 1 &amp; Ligue 2</p>
+    `;
+    
+    // Ligue 1 Fixtures
+    html += `<h4 class="mt-4">🇫🇷 Ligue 1 - Matchday 1 (August 22)</h4>`;
+    for (const fixture of ligue1Fixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    // Ligue 2 Fixtures
+    html += `<h4 class="mt-4">🇫🇷 Ligue 2 - Matchday 1 (August 8)</h4>`;
+    for (const fixture of ligue2Fixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    html += `
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderStats() {
+    const container = document.getElementById('statsContent');
+    
+    const l1TotalGoals = ligue1Data.teams.reduce((sum, t) => sum + t.GF, 0);
+    const l2TotalGoals = ligue2Data.teams.reduce((sum, t) => sum + t.GF, 0);
+    const l1Matches = (ligue1Data.teams.length * ligue1Data.teams[0].MP) / 2;
+    const l2Matches = (ligue2Data.teams.length * ligue2Data.teams[0].MP) / 2;
+    const l1Avg = (l1TotalGoals / l1Matches).toFixed(2);
+    const l2Avg = (l2TotalGoals / l2Matches).toFixed(2);
+    
+    const l1Champion = ligue1Data.teams.find(t => t.rank === 1);
+    const l2Champion = ligue2Data.teams.find(t => t.rank === 1);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> French Football - Overall Statistics</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>🇫🇷 Ligue 1</h5>
+                        <p><strong>${Math.round(l1Matches)}</strong> matches played</p>
+                        <p><strong>${l1TotalGoals}</strong> total goals</p>
+                        <p><strong>${l1Avg}</strong> goals per match</p>
+                        <p><strong>Champion:</strong> ${escapeHtml(l1Champion?.team)} (${calculatePoints(l1Champion)} pts)</p>
+                        <p><strong>Top Scorer:</strong> PSG - 74 goals</p>
+                        <p><strong>Best Defense:</strong> PSG - 29 conceded</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>🇫🇷 Ligue 2</h5>
+                        <p><strong>${Math.round(l2Matches)}</strong> matches played</p>
+                        <p><strong>${l2TotalGoals}</strong> total goals</p>
+                        <p><strong>${l2Avg}</strong> goals per match</p>
+                        <p><strong>Champion:</strong> ${escapeHtml(l2Champion?.team)} (${calculatePoints(l2Champion)} pts)</p>
+                        <p><strong>Top Scorer:</strong> Troyes - 60 goals</p>
+                        <p><strong>Best Defense:</strong> Montpellier - 31 conceded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="analysis-card">
+            <h3><i class="fas fa-info-circle"></i> French Football Structure</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>📈 Promotion &amp; Relegation</h5>
+                        <p><strong>Ligue 1 → Ligue 2:</strong> Bottom 2 teams relegated</p>
+                        <p><strong>Ligue 2 → Ligue 1:</strong> Top 2 teams promoted</p>
+                        <p><strong>Playoffs:</strong> 3rd place in Ligue 2 vs 16th in Ligue 1</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>🏆 European Qualification</h5>
+                        <p><strong>UEFA Champions League:</strong> Top 3 teams</p>
+                        <p><strong>UEFA Europa League:</strong> 4th &amp; 5th place</p>
+                        <p><strong>UEFA Europa Conference:</strong> 6th place &amp; Coupe de France winner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// ==================== TAB SWITCHING ====================
+
+function initTabs() {
+    const tabs = document.querySelectorAll('.league-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.dataset.tab;
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            tab.classList.add('active');
+            document.getElementById(`tab-${targetTab}`).classList.add('active');
+        });
+    });
+}
+
+// ==================== INITIALIZE ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Load all tabs
+    renderLigue1();
+    renderLigue2();
+    renderFixtures();
+    renderStats();
+    initTabs();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+</body>
+</html>

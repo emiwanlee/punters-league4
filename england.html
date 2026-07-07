@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Football - Premier League & EFL | Punters League</title>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TZFW1TD8TC');
+</script>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .country-hero {
+        background: linear-gradient(135deg, #012169 0%, #FFFFFF 50%, #C8102E 100%);
+        color: #1a1a2e;
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        text-align: center;
+        border: 2px solid #1a1a2e;
+    }
+    
+    .country-hero h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .country-hero .hero-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .country-hero p {
+        color: #1a1a2e;
+    }
+    
+    .league-tabs {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 0.5rem;
+    }
+    
+    .league-tab {
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        color: #6c757d;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    .league-tab:hover {
+        background: #f8f9fa;
+        color: #012169;
+    }
+    
+    .league-tab.active {
+        background: linear-gradient(135deg, #012169 0%, #C8102E 100%);
+        color: white;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .season-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        overflow-x: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .season-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .league-table {
+        width: 100%;
+        font-size: 0.75rem;
+        border-collapse: collapse;
+    }
+    
+    .league-table th {
+        background: #f8f9fa;
+        padding: 8px 4px;
+        text-align: center;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+    
+    .league-table td {
+        padding: 6px 4px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .team-cell {
+        text-align: left !important;
+        font-weight: 500;
+    }
+    
+    .team-cell a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+    
+    .team-cell a:hover {
+        color: #012169;
+    }
+    
+    .analysis-card {
+        background: white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .big-number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #012169;
+    }
+    
+    .info-box {
+        background: linear-gradient(135deg, #01216910, #C8102E10);
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .champion-row { background: linear-gradient(90deg, #ffd70020, transparent); }
+    .promotion-zone { background: linear-gradient(90deg, #10b98110, transparent); }
+    .relegation-zone { background: linear-gradient(90deg, #ef444410, transparent); }
+    
+    .england-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #012169, #C8102E);
+        color: white;
+        padding: 2px 12px;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .fixture-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-teams {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .fixture-vs {
+        color: #6c757d;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .fixture-date {
+        color: #6c757d;
+        font-size: 0.8rem;
+    }
+    
+    .league-grid-2col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    @media (max-width: 992px) {
+        .league-grid-2col {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<link rel="icon" type="image/bmp" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Punters League</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Predictions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chile.html">Chile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mexico.html">Mexico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="colombia.html">Colombia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="japan.html">Japan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ireland.html">Ireland</a></li>
+                    <li class="nav-item"><a class="nav-link" href="france.html">France</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="england.html">England</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main-wrapper" style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    
+    <div class="country-hero">
+        <div class="hero-icon">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+        <h1><i class="fas fa-futbol"></i> English Football</h1>
+        <p>Complete coverage of the Premier League, Championship, League One &amp; League Two</p>
+    </div>
+    
+    <!-- League Tabs -->
+    <div class="league-tabs">
+        <button class="league-tab active" data-tab="premier">🏆 Premier League</button>
+        <button class="league-tab" data-tab="championship">🏆 Championship</button>
+        <button class="league-tab" data-tab="leagueone">🏆 League One</button>
+        <button class="league-tab" data-tab="leaguetwo">🏆 League Two</button>
+        <button class="league-tab" data-tab="fixtures">📅 Fixtures</button>
+        <button class="league-tab" data-tab="stats">📊 Stats</button>
+    </div>
+    
+    <!-- Premier League Tab -->
+    <div id="tab-premier" class="tab-content active">
+        <div id="premierContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Premier League data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Championship Tab -->
+    <div id="tab-championship" class="tab-content">
+        <div id="championshipContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading Championship data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- League One Tab -->
+    <div id="tab-leagueone" class="tab-content">
+        <div id="leagueoneContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading League One data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- League Two Tab -->
+    <div id="tab-leaguetwo" class="tab-content">
+        <div id="leaguetwoContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading League Two data...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Fixtures Tab -->
+    <div id="tab-fixtures" class="tab-content">
+        <div id="fixturesContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading fixtures...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Stats Tab -->
+    <div id="tab-stats" class="tab-content">
+        <div id="statsContent">
+            <div class="loading text-center py-5">
+                <i class="fas fa-spinner fa-spin fa-3x"></i>
+                <p class="mt-3">Loading statistics...</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<footer class="footer">
+    <p><strong>Punters League</strong> is your go-to platform for football predictions and stats.</p>
+    <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+    </ul>
+    <div class="legal-warning">
+        <p>⚠️ 18+ Only. Please gamble responsibly. 
+        <a href="#">BeGambleAware.org</a></p>
+        <p>This site contains affiliate links. We may earn commission 
+        from qualifying purchases.</p>
+    </div>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=61579007960417" target="_blank">
+            <img src="images/facebookicon.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://x.com/PuntersLeague1" target="_blank">
+            <img src="images/xicon.png" alt="X" width="30">
+        </a>
+        <a href="https://www.youtube.com/channel/UClNp2eY92X1psjFR2cP-Rnw" target="_blank">
+            <img src="images/youtube-image.png" alt="YouTube" width="30">
+        </a>
+    </div>
+    <p class="disclaimer">Disclaimer: Predictions are for entertainment only. Gamble responsibly. 18+</p>
+    <img src="images/logo.png" alt="Website Logo" width="100">
+    <p>Email: admin@puntersblog.com</p>
+    <p>&copy; 2025 Punters League. All rights reserved.</p>
+</footer>
+
+<script>
+// ==================== ENGLISH LEAGUE DATA ====================
+
+// Premier League 2025
+const premierData = {
+    teams: [
+        { rank: 1, team: "Arsenal", MP: 38, MW: 26, MD: 7, ML: 5, GF: 71, GA: 27 },
+        { rank: 2, team: "Man City", MP: 38, MW: 23, MD: 9, ML: 6, GF: 77, GA: 35 },
+        { rank: 3, team: "Man United", MP: 38, MW: 20, MD: 11, ML: 7, GF: 69, GA: 50 },
+        { rank: 4, team: "Aston Villa", MP: 38, MW: 19, MD: 8, ML: 11, GF: 56, GA: 49 },
+        { rank: 5, team: "Liverpool", MP: 38, MW: 17, MD: 9, ML: 12, GF: 63, GA: 53 },
+        { rank: 6, team: "Bournemouth", MP: 38, MW: 13, MD: 18, ML: 7, GF: 58, GA: 54 },
+        { rank: 7, team: "Sunderland", MP: 38, MW: 14, MD: 12, ML: 12, GF: 42, GA: 48 },
+        { rank: 8, team: "Brighton", MP: 38, MW: 14, MD: 11, ML: 13, GF: 52, GA: 46 },
+        { rank: 9, team: "Brentford", MP: 38, MW: 14, MD: 11, ML: 13, GF: 55, GA: 52 },
+        { rank: 10, team: "Chelsea", MP: 38, MW: 14, MD: 10, ML: 14, GF: 58, GA: 52 },
+        { rank: 11, team: "Fulham", MP: 38, MW: 15, MD: 7, ML: 16, GF: 47, GA: 51 },
+        { rank: 12, team: "Newcastle", MP: 38, MW: 14, MD: 7, ML: 17, GF: 53, GA: 55 },
+        { rank: 13, team: "Everton", MP: 38, MW: 13, MD: 10, ML: 15, GF: 47, GA: 50 },
+        { rank: 14, team: "Leeds", MP: 38, MW: 11, MD: 14, ML: 13, GF: 49, GA: 56 },
+        { rank: 15, team: "Palace", MP: 38, MW: 11, MD: 12, ML: 15, GF: 41, GA: 51 },
+        { rank: 16, team: "Nottm Forest", MP: 38, MW: 11, MD: 11, ML: 16, GF: 48, GA: 51 },
+        { rank: 17, team: "Spurs", MP: 38, MW: 10, MD: 11, ML: 17, GF: 48, GA: 57 },
+        { rank: 18, team: "West Ham", MP: 38, MW: 10, MD: 9, ML: 19, GF: 46, GA: 65 },
+        { rank: 19, team: "Burnley", MP: 38, MW: 4, MD: 10, ML: 24, GF: 38, GA: 75 },
+        { rank: 20, team: "Wolves", MP: 38, MW: 3, MD: 11, ML: 24, GF: 27, GA: 68 }
+    ]
+};
+
+// Championship 2025
+const championshipData = {
+    teams: [
+        { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45 },
+        { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47 },
+        { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49 },
+        { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56 },
+        { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47 },
+        { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66 },
+        { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65 },
+        { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59 },
+        { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56 },
+        { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56 },
+        { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59 },
+        { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59 },
+        { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66 },
+        { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62 },
+        { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73 },
+        { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65 },
+        { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56 },
+        { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64 },
+        { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58 },
+        { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56 },
+        { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58 },
+        { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59 },
+        { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68 },
+        { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89 }
+    ]
+};
+
+// League One 2025
+const leagueOneData = {
+    teams: [
+        { rank: 1, team: "Lincoln City", MP: 46, MW: 31, MD: 10, ML: 5, GF: 89, GA: 41 },
+        { rank: 2, team: "Cardiff City", MP: 46, MW: 27, MD: 10, ML: 9, GF: 90, GA: 50 },
+        { rank: 3, team: "Stockport", MP: 46, MW: 22, MD: 11, ML: 13, GF: 71, GA: 58 },
+        { rank: 4, team: "Bradford City", MP: 46, MW: 22, MD: 11, ML: 13, GF: 58, GA: 51 },
+        { rank: 5, team: "Bolton", MP: 46, MW: 19, MD: 18, ML: 9, GF: 70, GA: 52 },
+        { rank: 6, team: "Stevenage", MP: 46, MW: 21, MD: 12, ML: 13, GF: 49, GA: 46 },
+        { rank: 7, team: "Luton Town", MP: 46, MW: 21, MD: 11, ML: 14, GF: 68, GA: 56 },
+        { rank: 8, team: "Plymouth", MP: 46, MW: 22, MD: 7, ML: 17, GF: 75, GA: 63 },
+        { rank: 9, team: "Huddersfield", MP: 46, MW: 18, MD: 13, ML: 15, GF: 74, GA: 64 },
+        { rank: 10, team: "Mansfield Town", MP: 46, MW: 16, MD: 17, ML: 13, GF: 62, GA: 50 },
+        { rank: 11, team: "Wycombe", MP: 46, MW: 17, MD: 12, ML: 17, GF: 69, GA: 58 },
+        { rank: 12, team: "Reading", MP: 46, MW: 16, MD: 15, ML: 15, GF: 64, GA: 60 },
+        { rank: 13, team: "Blackpool", MP: 46, MW: 17, MD: 9, ML: 20, GF: 54, GA: 65 },
+        { rank: 14, team: "Doncaster", MP: 46, MW: 17, MD: 9, ML: 20, GF: 50, GA: 69 },
+        { rank: 15, team: "Barnsley", MP: 46, MW: 15, MD: 14, ML: 17, GF: 68, GA: 73 },
+        { rank: 16, team: "Wigan Athletic", MP: 46, MW: 14, MD: 14, ML: 18, GF: 49, GA: 58 },
+        { rank: 17, team: "Burton", MP: 46, MW: 13, MD: 15, ML: 18, GF: 50, GA: 60 },
+        { rank: 18, team: "Peterborough", MP: 46, MW: 15, MD: 8, ML: 23, GF: 64, GA: 68 },
+        { rank: 19, team: "AFC Wimbledon", MP: 46, MW: 15, MD: 8, ML: 23, GF: 51, GA: 72 },
+        { rank: 20, team: "Leyton Orient", MP: 46, MW: 14, MD: 10, ML: 22, GF: 59, GA: 71 },
+        { rank: 21, team: "Exeter City", MP: 46, MW: 12, MD: 13, ML: 21, GF: 52, GA: 61 },
+        { rank: 22, team: "Port Vale", MP: 46, MW: 10, MD: 12, ML: 24, GF: 36, GA: 61 },
+        { rank: 23, team: "Rotherham", MP: 46, MW: 10, MD: 11, ML: 25, GF: 41, GA: 71 },
+        { rank: 24, team: "Northampton Town", MP: 46, MW: 9, MD: 8, ML: 29, GF: 39, GA: 74 }
+    ]
+};
+
+// League Two 2025
+const leagueTwoData = {
+    teams: [
+        { rank: 1, team: "Bromley", MP: 46, MW: 24, MD: 15, ML: 7, GF: 71, GA: 46 },
+        { rank: 2, team: "MK Dons", MP: 46, MW: 24, MD: 14, ML: 8, GF: 86, GA: 45 },
+        { rank: 3, team: "Cambridge United", MP: 46, MW: 22, MD: 16, ML: 8, GF: 66, GA: 33 },
+        { rank: 4, team: "Salford City", MP: 46, MW: 25, MD: 6, ML: 15, GF: 61, GA: 51 },
+        { rank: 5, team: "Notts County", MP: 46, MW: 24, MD: 8, ML: 14, GF: 74, GA: 52 },
+        { rank: 6, team: "Chesterfield", MP: 46, MW: 21, MD: 16, ML: 9, GF: 71, GA: 56 },
+        { rank: 7, team: "Grimsby Town", MP: 46, MW: 22, MD: 12, ML: 12, GF: 74, GA: 50 },
+        { rank: 8, team: "Barnet", MP: 46, MW: 21, MD: 13, ML: 12, GF: 70, GA: 53 },
+        { rank: 9, team: "Swindon Town", MP: 46, MW: 22, MD: 9, ML: 15, GF: 70, GA: 59 },
+        { rank: 10, team: "Oldham Athletic", MP: 46, MW: 18, MD: 14, ML: 14, GF: 60, GA: 44 },
+        { rank: 11, team: "Crewe Alexandra", MP: 46, MW: 19, MD: 10, ML: 17, GF: 64, GA: 58 },
+        { rank: 12, team: "Colchester", MP: 46, MW: 18, MD: 12, ML: 16, GF: 62, GA: 49 },
+        { rank: 13, team: "Walsall", MP: 46, MW: 18, MD: 11, ML: 17, GF: 56, GA: 56 },
+        { rank: 14, team: "Bristol Rovers", MP: 46, MW: 19, MD: 5, ML: 22, GF: 56, GA: 65 },
+        { rank: 15, team: "Fleetwood", MP: 46, MW: 15, MD: 16, ML: 15, GF: 57, GA: 58 },
+        { rank: 16, team: "Accrington Stanley", MP: 46, MW: 14, MD: 11, ML: 21, GF: 47, GA: 58 },
+        { rank: 17, team: "Gillingham", MP: 46, MW: 13, MD: 14, ML: 19, GF: 53, GA: 72 },
+        { rank: 18, team: "Cheltenham", MP: 46, MW: 14, MD: 10, ML: 22, GF: 53, GA: 79 },
+        { rank: 19, team: "Shrewsbury", MP: 46, MW: 13, MD: 10, ML: 23, GF: 42, GA: 69 },
+        { rank: 20, team: "Newport County", MP: 46, MW: 12, MD: 7, ML: 27, GF: 48, GA: 77 },
+        { rank: 21, team: "Tranmere", MP: 46, MW: 10, MD: 11, ML: 25, GF: 54, GA: 79 },
+        { rank: 22, team: "Crawley Town", MP: 46, MW: 8, MD: 16, ML: 22, GF: 44, GA: 68 },
+        { rank: 23, team: "Harrogate Town", MP: 46, MW: 10, MD: 9, ML: 27, GF: 39, GA: 68 },
+        { rank: 24, team: "Barrow", MP: 46, MW: 9, MD: 9, ML: 28, GF: 45, GA: 78 }
+    ]
+};
+
+// Fixtures
+const premierFixtures = [
+    { home: "Arsenal", away: "Coventry", date: "2026-08-21", league: "Premier League" },
+    { home: "Hull", away: "Man United", date: "2026-08-22", league: "Premier League" },
+    { home: "Ipswich Town", away: "Sunderland", date: "2026-08-22", league: "Premier League" },
+    { home: "Everton", away: "Palace", date: "2026-08-22", league: "Premier League" },
+    { home: "Nottm Forest", away: "Leeds", date: "2026-08-22", league: "Premier League" },
+    { home: "Brentford", away: "Spurs", date: "2026-08-22", league: "Premier League" },
+    { home: "Man City", away: "Bournemouth", date: "2026-08-23", league: "Premier League" },
+    { home: "Brighton", away: "Aston Villa", date: "2026-08-23", league: "Premier League" },
+    { home: "Newcastle", away: "Liverpool", date: "2026-08-23", league: "Premier League" },
+    { home: "Fulham", away: "Chelsea", date: "2026-08-24", league: "Premier League" }
+];
+
+const championshipFixtures = [
+    { home: "Wolves", away: "Blackburn Rovers", date: "2026-08-14", league: "Championship" },
+    { home: "Bolton", away: "Preston", date: "2026-08-15", league: "Championship" },
+    { home: "Middlesbrough", away: "Lincoln City", date: "2026-08-15", league: "Championship" },
+    { home: "Portsmouth", away: "QPR", date: "2026-08-15", league: "Championship" },
+    { home: "Stoke City", away: "Swansea", date: "2026-08-15", league: "Championship" },
+    { home: "Norwich City", away: "West Brom", date: "2026-08-15", league: "Championship" },
+    { home: "Charlton", away: "Derby County", date: "2026-08-15", league: "Championship" },
+    { home: "Bristol City", away: "Millwall", date: "2026-08-15", league: "Championship" },
+    { home: "Sheffield United", away: "Birmingham", date: "2026-08-15", league: "Championship" },
+    { home: "Watford", away: "Southampton", date: "2026-08-16", league: "Championship" },
+    { home: "Burnley", away: "West Ham", date: "2026-08-16", league: "Championship" },
+    { home: "Cardiff City", away: "Wrexham", date: "2026-08-17", league: "Championship" }
+];
+
+const leagueOneFixtures = [
+    { home: "Reading", away: "Luton Town", date: "2026-08-15", league: "League One" },
+    { home: "Oxford Utd", away: "MK Dons", date: "2026-08-15", league: "League One" },
+    { home: "Notts County", away: "Leicester City", date: "2026-08-15", league: "League One" },
+    { home: "Cambridge United", away: "Wigan Athletic", date: "2026-08-15", league: "League One" },
+    { home: "Barnsley", away: "Bromley", date: "2026-08-15", league: "League One" },
+    { home: "Leyton Orient", away: "Sheffield Wednesday", date: "2026-08-15", league: "League One" },
+    { home: "Huddersfield", away: "AFC Wimbledon", date: "2026-08-15", league: "League One" },
+    { home: "Blackpool", away: "Wycombe", date: "2026-08-15", league: "League One" },
+    { home: "Bradford City", away: "Peterborough", date: "2026-08-15", league: "League One" },
+    { home: "Plymouth", away: "Stockport", date: "2026-08-15", league: "League One" },
+    { home: "Mansfield Town", away: "Doncaster", date: "2026-08-15", league: "League One" },
+    { home: "Burton", away: "Stevenage", date: "2026-08-15", league: "League One" }
+];
+
+const leagueTwoFixtures = [
+    { home: "Newport County", away: "Rochdale", date: "2026-08-15", league: "League Two" },
+    { home: "Oldham Athletic", away: "Port Vale", date: "2026-08-15", league: "League Two" },
+    { home: "Barnet", away: "Salford City", date: "2026-08-15", league: "League Two" },
+    { home: "Grimsby Town", away: "Exeter City", date: "2026-08-15", league: "League Two" },
+    { home: "Gillingham", away: "Walsall", date: "2026-08-15", league: "League Two" },
+    { home: "Accrington Stanley", away: "Colchester", date: "2026-08-15", league: "League Two" },
+    { home: "York City", away: "Bristol Rovers", date: "2026-08-15", league: "League Two" },
+    { home: "Chesterfield", away: "Fleetwood", date: "2026-08-15", league: "League Two" },
+    { home: "Northampton Town", away: "Swindon Town", date: "2026-08-15", league: "League Two" },
+    { home: "Crawley Town", away: "Crewe Alexandra", date: "2026-08-15", league: "League Two" },
+    { home: "Tranmere", away: "Shrewsbury", date: "2026-08-15", league: "League Two" },
+    { home: "Cheltenham", away: "Rotherham", date: "2026-08-15", league: "League Two" }
+];
+
+// ==================== HELPER FUNCTIONS ====================
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function calculatePoints(team) {
+    if (!team) return 0;
+    return (team.MW || 0) * 3 + (team.MD || 0);
+}
+
+function formatDate(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric' 
+    });
+}
+
+// ==================== RENDER FUNCTIONS ====================
+
+function renderTable(season, title, subtitle) {
+    const sortedTeams = [...season.teams].sort((a, b) => (a.rank || 0) - (b.rank || 0));
+    
+    let html = `
+        <div class="season-card">
+            <div class="season-title" style="background: linear-gradient(135deg, #012169 0%, #C8102E 100%); color: white;">
+                ${title} ${subtitle}
+            </div>
+            <div class="table-responsive">
+                <table class="league-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team</th>
+                            <th>MP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const team of sortedTeams) {
+        const wins = team.MW || 0;
+        const draws = team.MD || 0;
+        const losses = team.ML || (team.MP - wins - draws);
+        const gd = team.GF - team.GA;
+        const points = calculatePoints(team);
+        
+        let rowClass = '';
+        if (team.rank === 1) rowClass = 'champion-row';
+        else if (team.rank <= 4) rowClass = 'promotion-zone';
+        else if (team.rank >= 20) rowClass = 'relegation-zone';
+        
+        html += `
+            <tr class="${rowClass}">
+                <td><strong>${team.rank}</strong></td>
+                <td class="team-cell"><a href="team.html?team=${encodeURIComponent(team.team)}">${escapeHtml(team.team)}</a></td>
+                <td>${team.MP}</td>
+                <td class="text-success">${wins}</td>
+                <td class="text-warning">${draws}</td>
+                <td class="text-danger">${losses}</td>
+                <td>${team.GF}</td>
+                <td>${team.GA}</td>
+                <td class="${gd >= 0 ? 'text-success' : 'text-danger'}">${gd >= 0 ? '+' : ''}${gd}</td>
+                <td class="points-cell"><strong>${points}</strong></td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderPremier() {
+    const container = document.getElementById('premierContent');
+    const html = `
+        <div class="league-grid-2col">
+            ${renderTable(premierData, 'Premier League', '2025')}
+        </div>
+        ${renderLeagueStats(premierData, 'Premier League')}
+    `;
+    container.innerHTML = html;
+}
+
+function renderChampionship() {
+    const container = document.getElementById('championshipContent');
+    const html = `
+        <div class="league-grid-2col">
+            ${renderTable(championshipData, 'Championship', '2025')}
+        </div>
+        ${renderLeagueStats(championshipData, 'Championship')}
+    `;
+    container.innerHTML = html;
+}
+
+function renderLeagueOne() {
+    const container = document.getElementById('leagueoneContent');
+    const html = `
+        <div class="league-grid-2col">
+            ${renderTable(leagueOneData, 'League One', '2025')}
+        </div>
+        ${renderLeagueStats(leagueOneData, 'League One')}
+    `;
+    container.innerHTML = html;
+}
+
+function renderLeagueTwo() {
+    const container = document.getElementById('leaguetwoContent');
+    const html = `
+        <div class="league-grid-2col">
+            ${renderTable(leagueTwoData, 'League Two', '2025')}
+        </div>
+        ${renderLeagueStats(leagueTwoData, 'League Two')}
+    `;
+    container.innerHTML = html;
+}
+
+function renderLeagueStats(season, title) {
+    const allTeams = season.teams;
+    const totalGoals = allTeams.reduce((sum, t) => sum + t.GF, 0);
+    const totalMatches = (allTeams.length * allTeams[0].MP) / 2;
+    const avgGoals = (totalGoals / totalMatches).toFixed(2);
+    
+    const champion = allTeams.find(t => t.rank === 1);
+    const second = allTeams.find(t => t.rank === 2);
+    const gap = calculatePoints(champion) - calculatePoints(second);
+    const topScorerTeam = allTeams.reduce((a, b) => a.GF > b.GF ? a : b);
+    const bestDefense = allTeams.reduce((a, b) => a.GA < b.GA ? a : b);
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-simple"></i> ${title} 2025 Statistics</h3>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${Math.round(totalMatches)}</div>
+                    <small>Total Matches</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${totalGoals}</div>
+                    <small>Total Goals</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${avgGoals}</div>
+                    <small>Goals per Match</small>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="big-number">${gap}</div>
+                    <small>Champion's Lead</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-trophy"></i> Champion</h5>
+                    <p><strong>${escapeHtml(champion?.team)}</strong> - ${calculatePoints(champion)} points</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-futbol"></i> Best Attack</h5>
+                    <p><strong>${escapeHtml(topScorerTeam?.team)}</strong> - ${topScorerTeam?.GF} goals</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><i class="fas fa-shield-alt"></i> Best Defense</h5>
+                    <p><strong>${escapeHtml(bestDefense?.team)}</strong> - ${bestDefense?.GA} conceded</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function renderFixtures() {
+    const container = document.getElementById('fixturesContent');
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-calendar-alt"></i> 2026/2027 Season Opening Fixtures</h3>
+            <p class="text-muted">Matchday 1 - All four English leagues</p>
+    `;
+    
+    // Premier League
+    html += `<h4 class="mt-4">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League - Matchday 1 (August 21-24)</h4>`;
+    for (const fixture of premierFixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    // Championship
+    html += `<h4 class="mt-4">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Championship - Matchday 1 (August 14-17)</h4>`;
+    for (const fixture of championshipFixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    // League One
+    html += `<h4 class="mt-4">🏴󠁧󠁢󠁥󠁮󠁧󠁿 League One - Matchday 1 (August 15)</h4>`;
+    for (const fixture of leagueOneFixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    // League Two
+    html += `<h4 class="mt-4">🏴󠁧󠁢󠁥󠁮󠁧󠁿 League Two - Matchday 1 (August 15)</h4>`;
+    for (const fixture of leagueTwoFixtures) {
+        html += `
+            <div class="fixture-card">
+                <div class="fixture-teams">
+                    <span><strong>${escapeHtml(fixture.home)}</strong></span>
+                    <span class="fixture-vs">vs</span>
+                    <span><strong>${escapeHtml(fixture.away)}</strong></span>
+                </div>
+                <div class="fixture-date">
+                    <i class="far fa-calendar-alt"></i> ${formatDate(fixture.date)}
+                </div>
+            </div>
+        `;
+    }
+    
+    html += `
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+function renderStats() {
+    const container = document.getElementById('statsContent');
+    
+    const leagues = [
+        { name: 'Premier League', data: premierData },
+        { name: 'Championship', data: championshipData },
+        { name: 'League One', data: leagueOneData },
+        { name: 'League Two', data: leagueTwoData }
+    ];
+    
+    let html = `
+        <div class="analysis-card">
+            <h3><i class="fas fa-chart-line"></i> English Football - Overall Statistics</h3>
+            <div class="row">
+    `;
+    
+    for (const league of leagues) {
+        const teams = league.data.teams;
+        const totalGoals = teams.reduce((sum, t) => sum + t.GF, 0);
+        const totalMatches = (teams.length * teams[0].MP) / 2;
+        const avgGoals = (totalGoals / totalMatches).toFixed(2);
+        const champion = teams.find(t => t.rank === 1);
+        
+        html += `
+            <div class="col-md-3">
+                <div class="info-box">
+                    <h5>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ${league.name}</h5>
+                    <p><strong>${Math.round(totalMatches)}</strong> matches</p>
+                    <p><strong>${totalGoals}</strong> total goals</p>
+                    <p><strong>${avgGoals}</strong> goals/match</p>
+                    <p><strong>Champion:</strong> ${escapeHtml(champion?.team)}</p>
+                    <p><strong>Pts:</strong> ${calculatePoints(champion)}</p>
+                </div>
+            </div>
+        `;
+    }
+    
+    html += `
+            </div>
+        </div>
+        
+        <div class="analysis-card">
+            <h3><i class="fas fa-info-circle"></i> English Football Structure</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>📈 Promotion &amp; Relegation</h5>
+                        <p><strong>Premier League → Championship:</strong> Bottom 3 relegated</p>
+                        <p><strong>Championship → Premier League:</strong> Top 2 promoted, Playoff winner</p>
+                        <p><strong>League One → Championship:</strong> Top 2 promoted, Playoff winner</p>
+                        <p><strong>League Two → League One:</strong> Top 3 promoted, Playoff winner</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h5>🏆 European Qualification</h5>
+                        <p><strong>UEFA Champions League:</strong> Top 4 Premier League</p>
+                        <p><strong>UEFA Europa League:</strong> 5th &amp; FA Cup winner</p>
+                        <p><strong>UEFA Europa Conference:</strong> 6th &amp; EFL Cup winner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="analysis-card">
+            <h3><i class="fas fa-trophy"></i> Champions by League</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-box text-center">
+                        <h5>🏆 Premier League</h5>
+                        <h4>${escapeHtml(premierData.teams.find(t => t.rank === 1)?.team)}</h4>
+                        <p>${calculatePoints(premierData.teams.find(t => t.rank === 1))} points</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box text-center">
+                        <h5>🏆 Championship</h5>
+                        <h4>${escapeHtml(championshipData.teams.find(t => t.rank === 1)?.team)}</h4>
+                        <p>${calculatePoints(championshipData.teams.find(t => t.rank === 1))} points</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box text-center">
+                        <h5>🏆 League One</h5>
+                        <h4>${escapeHtml(leagueOneData.teams.find(t => t.rank === 1)?.team)}</h4>
+                        <p>${calculatePoints(leagueOneData.teams.find(t => t.rank === 1))} points</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-box text-center">
+                        <h5>🏆 League Two</h5>
+                        <h4>${escapeHtml(leagueTwoData.teams.find(t => t.rank === 1)?.team)}</h4>
+                        <p>${calculatePoints(leagueTwoData.teams.find(t => t.rank === 1))} points</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+}
+
+// ==================== TAB SWITCHING ====================
+
+function initTabs() {
+    const tabs = document.querySelectorAll('.league-tab');
+    const contents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.dataset.tab;
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            tab.classList.add('active');
+            document.getElementById(`tab-${targetTab}`).classList.add('active');
+        });
+    });
+}
+
+// ==================== INITIALIZE ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Load all tabs
+    renderPremier();
+    renderChampionship();
+    renderLeagueOne();
+    renderLeagueTwo();
+    renderFixtures();
+    renderStats();
+    initTabs();
+    
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+});
+</script>
+
+</body>
+</html>
