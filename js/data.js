@@ -393,10 +393,6 @@ const leaguesData = {
         { rank: 11, team: "Canberra White Eagles", MP: 14, MW: 1, MD: 1, ML: 12, GF: 10, GA: 43, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-        
-        // Round 7 (makeup) - July 7
-        { home: "Monaro Panthers", away: "Queanbeyan City", date: "2026-07-07" },
-        
         // Round 17 - July 11
         { home: "Canberra Olympic", away: "Canberra White Eagles", date: "2026-07-11" },
         { home: "Canberra Croatia", away: "Brindabella", date: "2026-07-11" },
@@ -629,7 +625,7 @@ const leaguesData = {
     logo: "england/epl.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Arsenal", MP: 38, MW: 26, MD: 7, ML: 5, GF: 71, GA: 27, logo: "england/arsenal.png" },
+        { rank: 1, team: "Arsenal", MP: 38, MW: 26, MD: 7, ML: 5, GF: 71, GA: 27, logo: "englishpremiershiplogos/arsenallogo.png" },
         { rank: 2, team: "Man City", MP: 38, MW: 23, MD: 9, ML: 6, GF: 77, GA: 35, logo: "england/mancity.png" },
         { rank: 3, team: "Man United", MP: 38, MW: 20, MD: 11, ML: 7, GF: 69, GA: 50, logo: "england/manutd.png" },
         { rank: 4, team: "Aston Villa", MP: 38, MW: 19, MD: 8, ML: 11, GF: 56, GA: 49, logo: "england/astonvilla.png" },
