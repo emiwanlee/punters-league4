@@ -590,12 +590,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 16, MW: 1, MD: 3, ML: 12, GF: 10, GA: 27, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-       
-        // Matchday 17 - July 8
-        { home: "Athletic (MG)", away: "Operário Ferroviário", date: "2026-07-08" },
-        
-        // Matchday 18 - July 9-14
-        { home: "Ponte Preta", away: "Criciúma", date: "2026-07-09" },
         { home: "Juventude", away: "Vila Nova", date: "2026-07-10" },
         { home: "Sport", away: "Botafogo", date: "2026-07-11" },
         { home: "Operário Ferroviário", away: "Novorizontino", date: "2026-07-12" },
@@ -631,20 +625,20 @@ const leaguesData = {
         { rank: 4, team: "Aston Villa", MP: 38, MW: 19, MD: 8, ML: 11, GF: 56, GA: 49, logo: "epllogo/astonvillalogo.png" },
         { rank: 5, team: "Liverpool", MP: 38, MW: 17, MD: 9, ML: 12, GF: 63, GA: 53, logo: "epllogo/liverpoollogo.png" },
         { rank: 6, team: "Bournemouth", MP: 38, MW: 13, MD: 18, ML: 7, GF: 58, GA: 54, logo: "epllogo/bournemouthlogo.png" },
-        { rank: 7, team: "Sunderland", MP: 38, MW: 14, MD: 12, ML: 12, GF: 42, GA: 48, logo: "epllogo/sunderland.png" },
-        { rank: 8, team: "Brighton", MP: 38, MW: 14, MD: 11, ML: 13, GF: 52, GA: 46, logo: "epllogo/brighton.png" },
-        { rank: 9, team: "Brentford", MP: 38, MW: 14, MD: 11, ML: 13, GF: 55, GA: 52, logo: "epllogo/brentford.png" },
-        { rank: 10, team: "Chelsea", MP: 38, MW: 14, MD: 10, ML: 14, GF: 58, GA: 52, logo: "epllogo/chelsea.png" },
-        { rank: 11, team: "Fulham", MP: 38, MW: 15, MD: 7, ML: 16, GF: 47, GA: 51, logo: "epllogo/fulham.png" },
-        { rank: 12, team: "Newcastle", MP: 38, MW: 14, MD: 7, ML: 17, GF: 53, GA: 55, logo: "epllogo/newcastle.png" },
-        { rank: 13, team: "Everton", MP: 38, MW: 13, MD: 10, ML: 15, GF: 47, GA: 50, logo: "epllogo/everton.png" },
-        { rank: 14, team: "Leeds", MP: 38, MW: 11, MD: 14, ML: 13, GF: 49, GA: 56, logo: "epllogo/leeds.png" },
-        { rank: 15, team: "Palace", MP: 38, MW: 11, MD: 12, ML: 15, GF: 41, GA: 51, logo: "epllogo/palace.png" },
-        { rank: 16, team: "Nottm Forest", MP: 38, MW: 11, MD: 11, ML: 16, GF: 48, GA: 51, logo: "epllogo/nottmforest.png" },
-        { rank: 17, team: "Spurs", MP: 38, MW: 10, MD: 11, ML: 17, GF: 48, GA: 57, logo: "epllogo/spurs.png" },
-        { rank: 18, team: "West Ham", MP: 38, MW: 10, MD: 9, ML: 19, GF: 46, GA: 65, logo: "epllogo/westham.png" },
-        { rank: 19, team: "Burnley", MP: 38, MW: 4, MD: 10, ML: 24, GF: 38, GA: 75, logo: "epllogo/burnley.png" },
-        { rank: 20, team: "Wolves", MP: 38, MW: 3, MD: 11, ML: 24, GF: 27, GA: 68, logo: "epllogo/wolves.png" }
+        { rank: 7, team: "Sunderland", MP: 38, MW: 14, MD: 12, ML: 12, GF: 42, GA: 48, logo: "epllogo/sunderlandlogo.png" },
+        { rank: 8, team: "Brighton", MP: 38, MW: 14, MD: 11, ML: 13, GF: 52, GA: 46, logo: "epllogo/brightonlogo.png" },
+        { rank: 9, team: "Brentford", MP: 38, MW: 14, MD: 11, ML: 13, GF: 55, GA: 52, logo: "epllogo/brentfordlogo.png" },
+        { rank: 10, team: "Chelsea", MP: 38, MW: 14, MD: 10, ML: 14, GF: 58, GA: 52, logo: "epllogo/chelsealogo.png" },
+        { rank: 11, team: "Fulham", MP: 38, MW: 15, MD: 7, ML: 16, GF: 47, GA: 51, logo: "epllogo/fulhamlogo.png" },
+        { rank: 12, team: "Newcastle", MP: 38, MW: 14, MD: 7, ML: 17, GF: 53, GA: 55, logo: "epllogo/newcastlelogo.png" },
+        { rank: 13, team: "Everton", MP: 38, MW: 13, MD: 10, ML: 15, GF: 47, GA: 50, logo: "epllogo/evertonlogo.png" },
+        { rank: 14, team: "Leeds", MP: 38, MW: 11, MD: 14, ML: 13, GF: 49, GA: 56, logo: "epllogo/leedslogo.png" },
+        { rank: 15, team: "Palace", MP: 38, MW: 11, MD: 12, ML: 15, GF: 41, GA: 51, logo: "epllogo/palacelogo.png" },
+        { rank: 16, team: "Nottm Forest", MP: 38, MW: 11, MD: 11, ML: 16, GF: 48, GA: 51, logo: "epllogo/nottmforestlogo.png" },
+        { rank: 17, team: "Spurs", MP: 38, MW: 10, MD: 11, ML: 17, GF: 48, GA: 57, logo: "epllogo/spurslogo.png" },
+        { rank: 18, team: "West Ham", MP: 38, MW: 10, MD: 9, ML: 19, GF: 46, GA: 65, logo: "epllogo/westhamlogo.png" },
+        { rank: 19, team: "Burnley", MP: 38, MW: 4, MD: 10, ML: 24, GF: 38, GA: 75, logo: "epllogo/burnleylogo.png" },
+        { rank: 20, team: "Wolves", MP: 38, MW: 3, MD: 11, ML: 24, GF: 27, GA: 68, logo: "epllogo/wolveslogo.png" }
     ],
     fixtures: [
         // Matchday 1 - August 21-24
@@ -666,30 +660,30 @@ const leaguesData = {
     logo: "england/championship.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45, logo: "england/coventry.png" },
-        { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47, logo: "england/ipswich.png" },
-        { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49, logo: "england/millwall.png" },
-        { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56, logo: "england/southampton.png" },
-        { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47, logo: "england/middlesbrough.png" },
-        { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66, logo: "england/hull.png" },
-        { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65, logo: "england/wrexham.png" },
-        { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59, logo: "england/derby.png" },
-        { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56, logo: "england/norwich.png" },
-        { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56, logo: "england/birmingham.png" },
-        { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59, logo: "england/swansea.png" },
-        { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59, logo: "england/bristol.png" },
-        { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66, logo: "england/sheffieldutd.png" },
-        { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62, logo: "england/preston.png" },
-        { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73, logo: "england/qpr.png" },
-        { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65, logo: "england/watford.png" },
-        { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56, logo: "england/stoke.png" },
-        { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64, logo: "england/portsmouth.png" },
-        { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58, logo: "england/charlton.png" },
-        { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56, logo: "england/blackburn.png" },
-        { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58, logo: "england/westbrom.png" },
-        { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59, logo: "england/oxford.png" },
-        { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68, logo: "england/leicester.png" },
-        { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89, logo: "england/sheffieldwed.png" }
+        { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45, logo: "efl1/coventrylogo.png" },
+        { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47, logo: "efl1/ipswichlogo.png" },
+        { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49, logo: "efl1/millwalllogo.png" },
+        { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56, logo: "efl1/southamptonlogo.png" },
+        { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47, logo: "efl1/middlesbroughlogo.png" },
+        { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66, logo: "efl1/hulllogo.png" },
+        { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65, logo: "efl1/wrexhamlogo.png" },
+        { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59, logo: "efl1/derbylogo.png" },
+        { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56, logo: "efl1/norwichlogo.png" },
+        { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56, logo: "efl1/birminghamlogo.png" },
+        { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59, logo: "efl1/swansealogo.png" },
+        { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59, logo: "efl1/bristollogo.png" },
+        { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66, logo: "efl1/sheffieldutdlogo.png" },
+        { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62, logo: "efl1/prestonlogo.png" },
+        { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73, logo: "efl1/qprlogo.png" },
+        { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65, logo: "efl1/watfordlogo.png" },
+        { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56, logo: "efl1/stokelogo.png" },
+        { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64, logo: "efl1/portsmouthlogo.png" },
+        { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58, logo: "efl1/charltonlogo.png" },
+        { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56, logo: "efl1/blackburnlogo.png" },
+        { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58, logo: "efl1/westbromlogo.png" },
+        { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59, logo: "efl1/oxfordlogo.png" },
+        { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68, logo: "efl1/leicesterlogo.png" },
+        { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89, logo: "efl1/sheffieldwedlogo.png" }
     ],
     fixtures: [
         // Matchday 1 - August 14-17
@@ -1502,7 +1496,7 @@ const leaguesData = {
         { home: "Atyrau", away: "Yelimay", date: "2026-07-12" }
     ]
 },
-
+/*
 "Kyrgyzstan Premier League": {
     id: "kyrgyzstan",
     logo: "kyrgyzstan/kyrgyzstan.png",
@@ -1537,7 +1531,7 @@ const leaguesData = {
         { home: "Neftchi Kochkor-Ata", away: "Aldier", date: "2026-07-08" }
     ]
 },
-
+*/
 "Mexican Liga MX": {
     id: "liga-mx",
     logo: "mexico/ligamx.png",
@@ -1720,20 +1714,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 20, GW: 5, GL: 15, points_for: 1622, points_against: 1724, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Tuesday, July 7
-        { home: "Washington Mystics", away: "Golden State Valkyries", date: "2026-07-07" },
-        { home: "Minnesota Lynx", away: "Connecticut Sun", date: "2026-07-07" },
-        { home: "Los Angeles Sparks", away: "Seattle Storm", date: "2026-07-07" },
-        
-        // Wednesday, July 8
-        { home: "New York Liberty", away: "Dallas Wings", date: "2026-07-08" },
-        { home: "Phoenix Mercury", away: "Chicago Sky", date: "2026-07-08" },
-        
-        // Thursday, July 9
-        { home: "Toronto Tempo", away: "Golden State Valkyries", date: "2026-07-09" },
-        { home: "Connecticut Sun", away: "Minnesota Lynx", date: "2026-07-09" },
-        { home: "Los Angeles Sparks", away: "Indiana Fever", date: "2026-07-09" },
-        
         // Friday, July 10
         { home: "Atlanta Dream", away: "Seattle Storm", date: "2026-07-10" },
         { home: "Phoenix Mercury", away: "Indiana Fever", date: "2026-07-10" }
