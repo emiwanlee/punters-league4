@@ -422,12 +422,6 @@ const leaguesData = {
         { rank: 14, team: "Green Gully", MP: 18, MW: 1, MD: 4, ML: 13, GF: 10, GA: 39, logo: "australia/greengully.png" }
     ],
     fixtures: [
-        
-        // Round 20 - July 10-12
-        { home: "Green Gully", away: "Altona Magic", date: "2026-07-10" },
-        { home: "Dandenong City", away: "South Melbourne", date: "2026-07-10" },
-        { home: "Oakleigh Cannons", away: "Avondale FC", date: "2026-07-10" },
-        { home: "Preston Lions", away: "Hume City", date: "2026-07-10" },
         { home: "Dandenong Thunder", away: "Bentleigh Greens", date: "2026-07-11" },
         { home: "Melbourne City U21", away: "Heidelberg Utd", date: "2026-07-12" },
         { home: "St Albans", away: "George Cross", date: "2026-07-12" }
@@ -590,7 +584,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 16, MW: 1, MD: 3, ML: 12, GF: 10, GA: 27, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        { home: "Juventude", away: "Vila Nova", date: "2026-07-10" },
         { home: "Sport", away: "Botafogo", date: "2026-07-11" },
         { home: "Operário Ferroviário", away: "Novorizontino", date: "2026-07-12" },
         { home: "Avaí", away: "Náutico", date: "2026-07-12" },
@@ -707,30 +700,30 @@ const leaguesData = {
     logo: "england/leagueone.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Lincoln City", MP: 46, MW: 31, MD: 10, ML: 5, GF: 89, GA: 41, logo: "england/lincoln.png" },
-        { rank: 2, team: "Cardiff City", MP: 46, MW: 27, MD: 10, ML: 9, GF: 90, GA: 50, logo: "england/cardiff.png" },
-        { rank: 3, team: "Stockport", MP: 46, MW: 22, MD: 11, ML: 13, GF: 71, GA: 58, logo: "england/stockport.png" },
-        { rank: 4, team: "Bradford City", MP: 46, MW: 22, MD: 11, ML: 13, GF: 58, GA: 51, logo: "england/bradford.png" },
-        { rank: 5, team: "Bolton", MP: 46, MW: 19, MD: 18, ML: 9, GF: 70, GA: 52, logo: "england/bolton.png" },
-        { rank: 6, team: "Stevenage", MP: 46, MW: 21, MD: 12, ML: 13, GF: 49, GA: 46, logo: "england/stevenage.png" },
-        { rank: 7, team: "Luton Town", MP: 46, MW: 21, MD: 11, ML: 14, GF: 68, GA: 56, logo: "england/luton.png" },
-        { rank: 8, team: "Plymouth", MP: 46, MW: 22, MD: 7, ML: 17, GF: 75, GA: 63, logo: "england/plymouth.png" },
-        { rank: 9, team: "Huddersfield", MP: 46, MW: 18, MD: 13, ML: 15, GF: 74, GA: 64, logo: "england/huddersfield.png" },
-        { rank: 10, team: "Mansfield Town", MP: 46, MW: 16, MD: 17, ML: 13, GF: 62, GA: 50, logo: "england/mansfield.png" },
-        { rank: 11, team: "Wycombe", MP: 46, MW: 17, MD: 12, ML: 17, GF: 69, GA: 58, logo: "england/wycombe.png" },
-        { rank: 12, team: "Reading", MP: 46, MW: 16, MD: 15, ML: 15, GF: 64, GA: 60, logo: "england/reading.png" },
-        { rank: 13, team: "Blackpool", MP: 46, MW: 17, MD: 9, ML: 20, GF: 54, GA: 65, logo: "england/blackpool.png" },
-        { rank: 14, team: "Doncaster", MP: 46, MW: 17, MD: 9, ML: 20, GF: 50, GA: 69, logo: "england/doncaster.png" },
-        { rank: 15, team: "Barnsley", MP: 46, MW: 15, MD: 14, ML: 17, GF: 68, GA: 73, logo: "england/barnsley.png" },
-        { rank: 16, team: "Wigan Athletic", MP: 46, MW: 14, MD: 14, ML: 18, GF: 49, GA: 58, logo: "england/wigan.png" },
-        { rank: 17, team: "Burton", MP: 46, MW: 13, MD: 15, ML: 18, GF: 50, GA: 60, logo: "england/burton.png" },
-        { rank: 18, team: "Peterborough", MP: 46, MW: 15, MD: 8, ML: 23, GF: 64, GA: 68, logo: "england/peterborough.png" },
-        { rank: 19, team: "AFC Wimbledon", MP: 46, MW: 15, MD: 8, ML: 23, GF: 51, GA: 72, logo: "england/afcwimbledon.png" },
-        { rank: 20, team: "Leyton Orient", MP: 46, MW: 14, MD: 10, ML: 22, GF: 59, GA: 71, logo: "england/leytonorient.png" },
-        { rank: 21, team: "Exeter City", MP: 46, MW: 12, MD: 13, ML: 21, GF: 52, GA: 61, logo: "england/exeter.png" },
-        { rank: 22, team: "Port Vale", MP: 46, MW: 10, MD: 12, ML: 24, GF: 36, GA: 61, logo: "england/portvale.png" },
-        { rank: 23, team: "Rotherham", MP: 46, MW: 10, MD: 11, ML: 25, GF: 41, GA: 71, logo: "england/rotherham.png" },
-        { rank: 24, team: "Northampton Town", MP: 46, MW: 9, MD: 8, ML: 29, GF: 39, GA: 74, logo: "england/northampton.png" }
+        { rank: 1, team: "Lincoln City", MP: 46, MW: 31, MD: 10, ML: 5, GF: 89, GA: 41, logo: "efl2/lincoln.png" },
+        { rank: 2, team: "Cardiff City", MP: 46, MW: 27, MD: 10, ML: 9, GF: 90, GA: 50, logo: "efl2/cardiff.png" },
+        { rank: 3, team: "Stockport", MP: 46, MW: 22, MD: 11, ML: 13, GF: 71, GA: 58, logo: "efl2/stockportlogo.png" },
+        { rank: 4, team: "Bradford City", MP: 46, MW: 22, MD: 11, ML: 13, GF: 58, GA: 51, logo: "efl2/bradfordlogo.png" },
+        { rank: 5, team: "Bolton", MP: 46, MW: 19, MD: 18, ML: 9, GF: 70, GA: 52, logo: "efl2/boltonlogo.png" },
+        { rank: 6, team: "Stevenage", MP: 46, MW: 21, MD: 12, ML: 13, GF: 49, GA: 46, logo: "efl2/stevenagelogo.png" },
+        { rank: 7, team: "Luton Town", MP: 46, MW: 21, MD: 11, ML: 14, GF: 68, GA: 56, logo: "efl2/lutonlogo.png" },
+        { rank: 8, team: "Plymouth", MP: 46, MW: 22, MD: 7, ML: 17, GF: 75, GA: 63, logo: "efl2/plymouthlogo.png" },
+        { rank: 9, team: "Huddersfield", MP: 46, MW: 18, MD: 13, ML: 15, GF: 74, GA: 64, logo: "efl2/huddersfieldlogo.png" },
+        { rank: 10, team: "Mansfield Town", MP: 46, MW: 16, MD: 17, ML: 13, GF: 62, GA: 50, logo: "efl2/mansfieldlogo.png" },
+        { rank: 11, team: "Wycombe", MP: 46, MW: 17, MD: 12, ML: 17, GF: 69, GA: 58, logo: "efl2/wycombelogo.png" },
+        { rank: 12, team: "Reading", MP: 46, MW: 16, MD: 15, ML: 15, GF: 64, GA: 60, logo: "efl2/readinglogo.png" },
+        { rank: 13, team: "Blackpool", MP: 46, MW: 17, MD: 9, ML: 20, GF: 54, GA: 65, logo: "efl2/blackpoollogo.png" },
+        { rank: 14, team: "Doncaster", MP: 46, MW: 17, MD: 9, ML: 20, GF: 50, GA: 69, logo: "efl2/doncasterlogo.png" },
+        { rank: 15, team: "Barnsley", MP: 46, MW: 15, MD: 14, ML: 17, GF: 68, GA: 73, logo: "efl2/barnsleylogo.png" },
+        { rank: 16, team: "Wigan Athletic", MP: 46, MW: 14, MD: 14, ML: 18, GF: 49, GA: 58, logo: "efl2/wiganlogo.png" },
+        { rank: 17, team: "Burton", MP: 46, MW: 13, MD: 15, ML: 18, GF: 50, GA: 60, logo: "efl2/burtonlogo.png" },
+        { rank: 18, team: "Peterborough", MP: 46, MW: 15, MD: 8, ML: 23, GF: 64, GA: 68, logo: "efl2/peterboroughlogo.png" },
+        { rank: 19, team: "AFC Wimbledon", MP: 46, MW: 15, MD: 8, ML: 23, GF: 51, GA: 72, logo: "efl2/afcwimbledonlogo.png" },
+        { rank: 20, team: "Leyton Orient", MP: 46, MW: 14, MD: 10, ML: 22, GF: 59, GA: 71, logo: "efl2/leytonorientlogo.png" },
+        { rank: 21, team: "Exeter City", MP: 46, MW: 12, MD: 13, ML: 21, GF: 52, GA: 61, logo: "efl2/exeterlogo.png" },
+        { rank: 22, team: "Port Vale", MP: 46, MW: 10, MD: 12, ML: 24, GF: 36, GA: 61, logo: "efl2/portvalelogo.png" },
+        { rank: 23, team: "Rotherham", MP: 46, MW: 10, MD: 11, ML: 25, GF: 41, GA: 71, logo: "efl2/rotherhamlogo.png" },
+        { rank: 24, team: "Northampton Town", MP: 46, MW: 9, MD: 8, ML: 29, GF: 39, GA: 74, logo: "efl2/northamptonlogo.png" }
     ],
     fixtures: [
         // Matchday 1 - August 15
@@ -1153,11 +1146,6 @@ const leaguesData = {
         { rank: 16, team: "Wuhan Three Towns", MP: 17, MW: 2, MD: 7, ML: 8, GF: 24, GA: 34, logo: "china/wuhanlogo.png" }
     ],
     fixtures: [
-       
-        // Matchday 18 - July 10-12
-        { home: "Shandong Taishan", away: "Yunnan Yukun", date: "2026-07-10" },
-        { home: "Zhejiang", away: "Qingdao Hainiu", date: "2026-07-11" },
-        { home: "Wuhan Three Towns", away: "Henan", date: "2026-07-11" },
         { home: "Shanghai Shenhua", away: "Beijing Guoan", date: "2026-07-11" },
         { home: "Shenzhen Peng City", away: "Qingdao Youth Island", date: "2026-07-11" },
         { home: "Chengdu Rongcheng", away: "Chongqing Tonglianglong", date: "2026-07-11" },
@@ -1198,9 +1186,6 @@ const leaguesData = {
         { rank: 16, team: "Naftan", MP: 12, MW: 1, MD: 3, ML: 8, GF: 7, GA: 25, logo: "belarus/naftan.png" }
     ],
     fixtures: [
-        // Matchday 16 - Friday, July 10
-        { home: "Dnepr", away: "Minsk", date: "2026-07-10" },
-        
         // Matchday 16 - Saturday, July 11
         { home: "Baranovichi", away: "Torpedo Zhodino", date: "2026-07-11" },
         { home: "Dinamo Brest", away: "Slavia-Mozyr", date: "2026-07-11" },
@@ -1352,9 +1337,6 @@ const leaguesData = {
         { rank: 10, team: "Sligo Rovers", MP: 23, MW: 5, MD: 5, ML: 13, GF: 18, GA: 37, logo: "ireland/sligo.png" }
     ],
     fixtures: [
-        // Matchday 24 - July 10-11
-        { home: "Dundalk", away: "Drogheda United", date: "2026-07-10" },
-        { home: "Waterford", away: "St Patrick's Athletic", date: "2026-07-10" },
         { home: "Galway United", away: "Sligo Rovers", date: "2026-07-11" },
         
         // Matchday 25 - July 24-25
@@ -1446,9 +1428,6 @@ const leaguesData = {
         { rank: 12, team: "IFK Mariehamn", MP: 13, MW: 0, MD: 4, ML: 9, GF: 6, GA: 25, logo: "finland/ifkmariehamn.png" }
     ],
     fixtures: [
-        // Friday, July 10
-        { home: "VPS", away: "SJK", date: "2026-07-10" },
-        
         // Saturday, July 11
         { home: "FC Lahti", away: "HJK", date: "2026-07-11" },
         { home: "Turun", away: "Oulu", date: "2026-07-11" },
@@ -1695,31 +1674,55 @@ const leaguesData = {
     isBasketball: true,
     teams: [
         // Eastern Conference
-        { rank: 1, team: "New York Liberty", GP: 19, GW: 12, GL: 7, points_for: 1689, points_against: 1594, logo: "wnba/liberty.png" },
-        { rank: 2, team: "Atlanta Dream", GP: 19, GW: 12, GL: 7, points_for: 1678, points_against: 1593, logo: "wnba/dream.png" },
-        { rank: 3, team: "Indiana Fever", GP: 19, GW: 11, GL: 8, points_for: 1785, points_against: 1710, logo: "wnba/fever.png" },
-        { rank: 4, team: "Toronto Tempo", GP: 19, GW: 9, GL: 10, points_for: 1725, points_against: 1746, logo: "wnba/tempo.png" },
-        { rank: 5, team: "Washington Mystics", GP: 17, GW: 8, GL: 9, points_for: 1368, points_against: 1429, logo: "wnba/mystics.png" },
-        { rank: 6, team: "Chicago Sky", GP: 18, GW: 6, GL: 12, points_for: 1543, points_against: 1594, logo: "wnba/sky.png" },
-        { rank: 7, team: "Connecticut Sun", GP: 19, GW: 4, GL: 15, points_for: 1506, points_against: 1646, logo: "wnba/sun.png" },
+        { rank: 1, team: "New York Liberty", GP: 22, GW: 13, GL: 9, points_for: 1980, points_against: 1870, logo: "wnba/liberty.png" },
+        { rank: 2, team: "Atlanta Dream", GP: 22, GW: 13, GL: 9, points_for: 1914, points_against: 1848, logo: "wnba/dream.png" },
+        { rank: 3, team: "Indiana Fever", GP: 22, GW: 13, GL: 9, points_for: 2002, points_against: 1892, logo: "wnba/fever.png" },
+        { rank: 4, team: "Washington Mystics", GP: 20, GW: 10, GL: 10, points_for: 1640, points_against: 1680, logo: "wnba/mystics.png" },
+        { rank: 5, team: "Toronto Tempo", GP: 22, GW: 9, GL: 13, points_for: 1892, points_against: 1980, logo: "wnba/tempo.png" },
+        { rank: 6, team: "Chicago Sky", GP: 22, GW: 7, GL: 15, points_for: 1804, points_against: 2002, logo: "wnba/sky.png" },
+        { rank: 7, team: "Connecticut Sun", GP: 23, GW: 5, GL: 18, points_for: 1748, points_against: 2024, logo: "wnba/sun.png" },
         
         // Western Conference
-        { rank: 1, team: "Minnesota Lynx", GP: 18, GW: 14, GL: 4, points_for: 1634, points_against: 1430, logo: "wnba/lynx.png" },
-        { rank: 2, team: "Las Vegas Aces", GP: 18, GW: 13, GL: 5, points_for: 1616, points_against: 1542, logo: "wnba/aces.png" },
-        { rank: 3, team: "Golden State Valkyries", GP: 19, GW: 12, GL: 7, points_for: 1579, points_against: 1490, logo: "wnba/valkyries.png" },
-        { rank: 4, team: "Dallas Wings", GP: 18, GW: 11, GL: 7, points_for: 1603, points_against: 1542, logo: "wnba/wings.png" },
-        { rank: 5, team: "Los Angeles Sparks", GP: 18, GW: 8, GL: 10, points_for: 1598, points_against: 1697, logo: "wnba/sparks.png" },
-        { rank: 6, team: "Portland Fire", GP: 19, GW: 8, GL: 11, points_for: 1570, points_against: 1722, logo: "wnba/fire.png" },
-        { rank: 7, team: "Phoenix Mercury", GP: 20, GW: 7, GL: 13, points_for: 1679, points_against: 1736, logo: "wnba/mercury.png" },
-        { rank: 8, team: "Seattle Storm", GP: 20, GW: 5, GL: 15, points_for: 1622, points_against: 1724, logo: "wnba/storm.png" }
+        { rank: 1, team: "Minnesota Lynx", GP: 22, GW: 16, GL: 6, points_for: 2002, points_against: 1804, logo: "wnba/lynx.png" },
+        { rank: 2, team: "Las Vegas Aces", GP: 22, GW: 16, GL: 6, points_for: 2002, points_against: 1804, logo: "wnba/aces.png" },
+        { rank: 3, team: "Golden State Valkyries", GP: 24, GW: 17, GL: 7, points_for: 2046, points_against: 1892, logo: "wnba/valkyries.png" },
+        { rank: 4, team: "Dallas Wings", GP: 23, GW: 15, GL: 8, points_for: 2000, points_against: 1880, logo: "wnba/wings.png" },
+        { rank: 5, team: "Los Angeles Sparks", GP: 21, GW: 10, GL: 11, points_for: 1848, points_against: 1892, logo: "wnba/sparks.png" },
+        { rank: 6, team: "Portland Fire", GP: 22, GW: 9, GL: 13, points_for: 1892, points_against: 2002, logo: "wnba/fire.png" },
+        { rank: 7, team: "Phoenix Mercury", GP: 23, GW: 8, GL: 15, points_for: 1840, points_against: 2024, logo: "wnba/mercury.png" },
+        { rank: 8, team: "Seattle Storm", GP: 24, GW: 6, GL: 18, points_for: 1848, points_against: 2112, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Friday, July 10
-        { home: "Atlanta Dream", away: "Seattle Storm", date: "2026-07-10" },
-        { home: "Phoenix Mercury", away: "Indiana Fever", date: "2026-07-10" }
+        // Saturday, July 11
+        { home: "Golden State Valkyries", away: "Connecticut Sun", date: "2026-07-11" },
+        { home: "Dallas Wings", away: "Toronto Tempo", date: "2026-07-11" },
+        { home: "Chicago Sky", away: "Los Angeles Sparks", date: "2026-07-11" },
+        { home: "New York Liberty", away: "Minnesota Lynx", date: "2026-07-11" },
+        { home: "Portland Fire", away: "Atlanta Dream", date: "2026-07-11" },
+        { home: "Phoenix Mercury", away: "Las Vegas Aces", date: "2026-07-11" },
+        
+        // Sunday, July 12
+        { home: "New York Liberty", away: "Toronto Tempo", date: "2026-07-12" },
+        { home: "Seattle Storm", away: "Washington Mystics", date: "2026-07-12" },
+        
+        // Monday, July 13
+        { home: "Chicago Sky", away: "Dallas Wings", date: "2026-07-13" },
+        { home: "Indiana Fever", away: "Las Vegas Aces", date: "2026-07-13" },
+        
+        // Tuesday, July 14
+        { home: "Los Angeles Sparks", away: "Atlanta Dream", date: "2026-07-14" },
+        { home: "Phoenix Mercury", away: "Minnesota Lynx", date: "2026-07-14" },
+        { home: "Portland Fire", away: "Connecticut Sun", date: "2026-07-14" },
+        
+        // Wednesday, July 15
+        { home: "Washington Mystics", away: "Toronto Tempo", date: "2026-07-15" },
+        { home: "Seattle Storm", away: "Chicago Sky", date: "2026-07-15" },
+        { home: "Los Angeles Sparks", away: "Minnesota Lynx", date: "2026-07-15" },
+        
+        // Thursday, July 16
+        { home: "Golden State Valkyries", away: "Indiana Fever", date: "2026-07-16" }
     ]
-},
-"Japanese J1 League": {
+},"Japanese J1 League": {
     id: "j1-league",
     logo: "japan/j1logo.png",
     isBasketball: false,
