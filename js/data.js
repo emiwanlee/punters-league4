@@ -400,7 +400,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 16, MW: 1, MD: 3, ML: 12, GF: 10, GA: 27, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        { home: "América-MG", away: "Londrina", date: "2026-07-13" },
         { home: "Ceará", away: "Athletic (MG)", date: "2026-07-14" },
         
         // Matchday 19 - July 17-21
@@ -677,18 +676,18 @@ const leaguesData = {
     logo: "scotland/premiership.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Hearts", MP: 33, MW: 21, MD: 7, ML: 5, GF: 58, GA: 28, logo: "scotland/hearts.png" },
-        { rank: 2, team: "Rangers", MP: 33, MW: 19, MD: 12, ML: 2, GF: 66, GA: 31, logo: "scotland/rangers.png" },
-        { rank: 3, team: "Celtic", MP: 33, MW: 21, MD: 4, ML: 8, GF: 59, GA: 35, logo: "scotland/celtic.png" },
-        { rank: 4, team: "Motherwell", MP: 33, MW: 14, MD: 12, ML: 7, GF: 52, GA: 29, logo: "scotland/motherwell.png" },
-        { rank: 5, team: "Hibernian", MP: 33, MW: 13, MD: 12, ML: 8, GF: 51, GA: 37, logo: "scotland/hibernian.png" },
-        { rank: 6, team: "Falkirk", MP: 33, MW: 13, MD: 7, ML: 13, GF: 45, GA: 48, logo: "scotland/falkirk.png" },
-        { rank: 7, team: "Dundee United", MP: 33, MW: 9, MD: 13, ML: 11, GF: 45, GA: 54, logo: "scotland/dundeeutd.png" },
-        { rank: 8, team: "Aberdeen", MP: 33, MW: 9, MD: 6, ML: 18, GF: 33, GA: 48, logo: "scotland/aberdeen.png" },
-        { rank: 9, team: "Dundee", MP: 33, MW: 8, MD: 9, ML: 16, GF: 34, GA: 53, logo: "scotland/dundee.png" },
-        { rank: 10, team: "St. Mirren", MP: 33, MW: 7, MD: 9, ML: 17, GF: 27, GA: 48, logo: "scotland/stmirren.png" },
-        { rank: 11, team: "Kilmarnock", MP: 33, MW: 6, MD: 10, ML: 17, GF: 37, GA: 65, logo: "scotland/kilmarnock.png" },
-        { rank: 12, team: "Livingston", MP: 33, MW: 1, MD: 13, ML: 19, GF: 35, GA: 66, logo: "scotland/livingston.png" }
+        { rank: 1, team: "Hearts", MP: 33, MW: 21, MD: 7, ML: 5, GF: 58, GA: 28, logo: "scottishpremierleague/heartslogo.png" },
+        { rank: 2, team: "Rangers", MP: 33, MW: 19, MD: 12, ML: 2, GF: 66, GA: 31, logo: "scottishpremierleague/rangerslogo.png" },
+        { rank: 3, team: "Celtic", MP: 33, MW: 21, MD: 4, ML: 8, GF: 59, GA: 35, logo: "scottishpremierleague/celticlogo.png" },
+        { rank: 4, team: "Motherwell", MP: 33, MW: 14, MD: 12, ML: 7, GF: 52, GA: 29, logo: "scottishpremierleague/motherwelllogo.png" },
+        { rank: 5, team: "Hibernian", MP: 33, MW: 13, MD: 12, ML: 8, GF: 51, GA: 37, logo: "scottishpremierleague/hibernianlogo.png" },
+        { rank: 6, team: "Falkirk", MP: 33, MW: 13, MD: 7, ML: 13, GF: 45, GA: 48, logo: "scottishpremierleague/falkirklogo.png" },
+        { rank: 7, team: "Dundee United", MP: 33, MW: 9, MD: 13, ML: 11, GF: 45, GA: 54, logo: "scottishpremierleague/dundeeutdlogo.png" },
+        { rank: 8, team: "Aberdeen", MP: 33, MW: 9, MD: 6, ML: 18, GF: 33, GA: 48, logo: "scottishpremierleague/aberdeenlogo.png" },
+        { rank: 9, team: "Dundee", MP: 33, MW: 8, MD: 9, ML: 16, GF: 34, GA: 53, logo: "scottishpremierleague/dundeelogo.png" },
+        { rank: 10, team: "St. Mirren", MP: 33, MW: 7, MD: 9, ML: 17, GF: 27, GA: 48, logo: "scottishpremierleague/stmirrenlogo.png" },
+        { rank: 11, team: "Kilmarnock", MP: 33, MW: 6, MD: 10, ML: 17, GF: 37, GA: 65, logo: "scottishpremierleague/kilmarnocklogo.png" },
+        { rank: 12, team: "Livingston", MP: 33, MW: 1, MD: 13, ML: 19, GF: 35, GA: 66, logo: "scottishpremierleague/livingstonlogo.png" }
     ],
     fixtures: [
         // Matchday 1 - August 1-3
@@ -713,26 +712,26 @@ const leaguesData = {
     logo: "italy/seriea.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Inter", MP: 38, MW: 27, MD: 6, ML: 5, GF: 89, GA: 35, logo: "italy/inter.png" },
-        { rank: 2, team: "Napoli", MP: 38, MW: 23, MD: 7, ML: 8, GF: 58, GA: 36, logo: "italy/napoli.png" },
-        { rank: 3, team: "Roma", MP: 38, MW: 23, MD: 4, ML: 11, GF: 59, GA: 31, logo: "italy/roma.png" },
-        { rank: 4, team: "Como", MP: 38, MW: 20, MD: 11, ML: 7, GF: 65, GA: 29, logo: "italy/como.png" },
-        { rank: 5, team: "Milan", MP: 38, MW: 20, MD: 10, ML: 8, GF: 53, GA: 35, logo: "italy/milan.png" },
-        { rank: 6, team: "Juventus", MP: 38, MW: 19, MD: 12, ML: 7, GF: 61, GA: 34, logo: "italy/juventus.png" },
-        { rank: 7, team: "Atalanta", MP: 38, MW: 15, MD: 14, ML: 9, GF: 51, GA: 36, logo: "italy/atalanta.png" },
-        { rank: 8, team: "Bologna", MP: 38, MW: 16, MD: 8, ML: 14, GF: 49, GA: 46, logo: "italy/bologna.png" },
-        { rank: 9, team: "Lazio", MP: 38, MW: 14, MD: 12, ML: 12, GF: 41, GA: 40, logo: "italy/lazio.png" },
-        { rank: 10, team: "Udinese", MP: 38, MW: 14, MD: 8, ML: 16, GF: 45, GA: 48, logo: "italy/udinese.png" },
-        { rank: 11, team: "Sassuolo", MP: 38, MW: 14, MD: 7, ML: 17, GF: 46, GA: 50, logo: "italy/sassuolo.png" },
-        { rank: 12, team: "Torino", MP: 38, MW: 12, MD: 9, ML: 17, GF: 44, GA: 63, logo: "italy/torino.png" },
-        { rank: 13, team: "Parma", MP: 38, MW: 11, MD: 12, ML: 15, GF: 28, GA: 46, logo: "italy/parma.png" },
-        { rank: 14, team: "Cagliari", MP: 38, MW: 11, MD: 10, ML: 17, GF: 40, GA: 53, logo: "italy/cagliari.png" },
-        { rank: 15, team: "Fiorentina", MP: 38, MW: 9, MD: 15, ML: 14, GF: 41, GA: 50, logo: "italy/fiorentina.png" },
-        { rank: 16, team: "Genoa", MP: 38, MW: 10, MD: 11, ML: 17, GF: 41, GA: 51, logo: "italy/genoa.png" },
-        { rank: 17, team: "Lecce", MP: 38, MW: 10, MD: 8, ML: 20, GF: 28, GA: 50, logo: "italy/lecce.png" },
-        { rank: 18, team: "Cremonese", MP: 38, MW: 8, MD: 10, ML: 20, GF: 32, GA: 57, logo: "italy/cremonese.png" },
-        { rank: 19, team: "Verona", MP: 38, MW: 3, MD: 12, ML: 23, GF: 25, GA: 61, logo: "italy/verona.png" },
-        { rank: 20, team: "Pisa", MP: 38, MW: 2, MD: 12, ML: 24, GF: 26, GA: 71, logo: "italy/pisa.png" }
+        { rank: 1, team: "Inter", MP: 38, MW: 27, MD: 6, ML: 5, GF: 89, GA: 35, logo: "italianseriea/interlogo.png" },
+        { rank: 2, team: "Napoli", MP: 38, MW: 23, MD: 7, ML: 8, GF: 58, GA: 36, logo: "italianseriea/napolilogo.png" },
+        { rank: 3, team: "Roma", MP: 38, MW: 23, MD: 4, ML: 11, GF: 59, GA: 31, logo: "italianseriea/romalogo.png" },
+        { rank: 4, team: "Como", MP: 38, MW: 20, MD: 11, ML: 7, GF: 65, GA: 29, logo: "italianseriea/comologo.png" },
+        { rank: 5, team: "Milan", MP: 38, MW: 20, MD: 10, ML: 8, GF: 53, GA: 35, logo: "italianseriea/milanlogo.png" },
+        { rank: 6, team: "Juventus", MP: 38, MW: 19, MD: 12, ML: 7, GF: 61, GA: 34, logo: "italianseriea/juventuslogo.png" },
+        { rank: 7, team: "Atalanta", MP: 38, MW: 15, MD: 14, ML: 9, GF: 51, GA: 36, logo: "italianseriea/atalantalogo.png" },
+        { rank: 8, team: "Bologna", MP: 38, MW: 16, MD: 8, ML: 14, GF: 49, GA: 46, logo: "italianseriea/bolognalogo.png" },
+        { rank: 9, team: "Lazio", MP: 38, MW: 14, MD: 12, ML: 12, GF: 41, GA: 40, logo: "italianseriea/laziologo.png" },
+        { rank: 10, team: "Udinese", MP: 38, MW: 14, MD: 8, ML: 16, GF: 45, GA: 48, logo: "italianseriea/udineselogo.png" },
+        { rank: 11, team: "Sassuolo", MP: 38, MW: 14, MD: 7, ML: 17, GF: 46, GA: 50, logo: "italianseriea/sassuolologo.png" },
+        { rank: 12, team: "Torino", MP: 38, MW: 12, MD: 9, ML: 17, GF: 44, GA: 63, logo: "italianseriea/torinologo.png" },
+        { rank: 13, team: "Parma", MP: 38, MW: 11, MD: 12, ML: 15, GF: 28, GA: 46, logo: "italianseriea/parmalogo.png" },
+        { rank: 14, team: "Cagliari", MP: 38, MW: 11, MD: 10, ML: 17, GF: 40, GA: 53, logo: "italianseriea/cagliarilogo.png" },
+        { rank: 15, team: "Fiorentina", MP: 38, MW: 9, MD: 15, ML: 14, GF: 41, GA: 50, logo: "italianseriea/fiorentinalogo.png" },
+        { rank: 16, team: "Genoa", MP: 38, MW: 10, MD: 11, ML: 17, GF: 41, GA: 51, logo: "italianseriea/genoalogo.png" },
+        { rank: 17, team: "Lecce", MP: 38, MW: 10, MD: 8, ML: 20, GF: 28, GA: 50, logo: "italianseriea/leccelogo.png" },
+        { rank: 18, team: "Cremonese", MP: 38, MW: 8, MD: 10, ML: 20, GF: 32, GA: 57, logo: "italianseriea/cremoneselogo.png" },
+        { rank: 19, team: "Verona", MP: 38, MW: 3, MD: 12, ML: 23, GF: 25, GA: 61, logo: "italianseriea/veronalogo.png" },
+        { rank: 20, team: "Pisa", MP: 38, MW: 2, MD: 12, ML: 24, GF: 26, GA: 71, logo: "italianseriea/pisalogo.png" }
     ],
     fixtures: [
         // Matchday 1 - August 22-24
@@ -887,9 +886,6 @@ const leaguesData = {
         { rank: 16, team: "ÖIS", MP: 11, MW: 1, MD: 3, ML: 7, GF: 10, GA: 28, logo: "sweden/ois.png" }
     ],
     fixtures: [
-        { home: "Djurgården", away: "Halmstad", date: "2026-07-13" },
-        
-        // Matchday 14 - July 17-20
         { home: "Mjällby", away: "Västerås", date: "2026-07-17" },
         { home: "AIK", away: "GAIS", date: "2026-07-18" },
         { home: "Göteborg", away: "IF Brommapojkarna", date: "2026-07-19" },
