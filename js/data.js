@@ -330,7 +330,7 @@ const leaguesData = {
         { home: "Dandenong Thunder", away: "Altona Magic", date: "2026-07-25" }
     ]
 },
-
+/*
 "Brazilian U-20 League": {
     id: "brazil-u20",
     logo: "brazil/u20.png",
@@ -372,50 +372,59 @@ const leaguesData = {
     ]
 },
 
-
+*/
 "Brazilian Série B": {
     id: "brasil-serie-b",
     logo: "brazil/serieb.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Novorizontino", MP: 16, MW: 8, MD: 6, ML: 2, GF: 27, GA: 14, logo: "brazil/novorizontino.png" },
-        { rank: 2, team: "Criciúma", MP: 16, MW: 8, MD: 6, ML: 2, GF: 18, GA: 11, logo: "brazil/criciuma.png" },
-        { rank: 3, team: "Vila Nova", MP: 15, MW: 8, MD: 4, ML: 3, GF: 23, GA: 17, logo: "brazil/vilanova.png" },
-        { rank: 4, team: "Fortaleza", MP: 16, MW: 8, MD: 4, ML: 4, GF: 20, GA: 16, logo: "brazil/fortaleza.png" },
-        { rank: 5, team: "Juventude", MP: 16, MW: 7, MD: 5, ML: 4, GF: 16, GA: 8, logo: "brazil/juventude.png" },
-        { rank: 6, team: "São Bernardo", MP: 15, MW: 7, MD: 4, ML: 4, GF: 20, GA: 12, logo: "brazil/saobernardo.png" },
-        { rank: 7, team: "Operário Ferroviário", MP: 15, MW: 7, MD: 4, ML: 4, GF: 19, GA: 17, logo: "brazil/operario.png" },
-        { rank: 8, team: "Sport", MP: 16, MW: 6, MD: 7, ML: 3, GF: 18, GA: 12, logo: "brazil/sport.png" },
-        { rank: 9, team: "Goiás", MP: 16, MW: 7, MD: 3, ML: 6, GF: 16, GA: 21, logo: "brazil/goias.png" },
-        { rank: 10, team: "Cuiabá", MP: 16, MW: 5, MD: 8, ML: 3, GF: 12, GA: 9, logo: "brazil/cuiaba.png" },
-        { rank: 11, team: "Athletic (MG)", MP: 15, MW: 5, MD: 7, ML: 3, GF: 16, GA: 15, logo: "brazil/athleticmg.png" },
-        { rank: 12, team: "Náutico", MP: 16, MW: 6, MD: 3, ML: 7, GF: 21, GA: 19, logo: "brazil/nautico.png" },
-        { rank: 13, team: "Atlético Goianiense", MP: 16, MW: 5, MD: 6, ML: 5, GF: 18, GA: 19, logo: "brazil/atleticogoianiense.png" },
-        { rank: 14, team: "CRB", MP: 16, MW: 5, MD: 4, ML: 7, GF: 24, GA: 29, logo: "brazil/crb.png" },
-        { rank: 15, team: "Londrina", MP: 16, MW: 5, MD: 3, ML: 8, GF: 24, GA: 24, logo: "brazil/londrina.png" },
-        { rank: 16, team: "Ceará", MP: 16, MW: 4, MD: 5, ML: 7, GF: 15, GA: 20, logo: "brazil/ceara.png" },
-        { rank: 17, team: "Botafogo", MP: 15, MW: 4, MD: 4, ML: 7, GF: 14, GA: 14, logo: "brazil/botafogosp.png" },
-        { rank: 18, team: "Avaí", MP: 15, MW: 3, MD: 4, ML: 8, GF: 15, GA: 21, logo: "brazil/avai.png" },
-        { rank: 19, team: "Ponte Preta", MP: 16, MW: 2, MD: 2, ML: 12, GF: 10, GA: 31, logo: "brazil/pontepreta.png" },
-        { rank: 20, team: "América-MG", MP: 16, MW: 1, MD: 3, ML: 12, GF: 10, GA: 27, logo: "brazil/americamg.png" }
+        { rank: 1, team: "Criciúma", MP: 17, MW: 9, MD: 6, ML: 2, GF: 20, GA: 12, logo: "brazil/criciuma.png" },
+        { rank: 2, team: "Vila Nova", MP: 17, MW: 9, MD: 4, ML: 4, GF: 25, GA: 19, logo: "brazil/vilanova.png" },
+        { rank: 3, team: "Operário Ferroviário", MP: 17, MW: 9, MD: 4, ML: 4, GF: 22, GA: 18, logo: "brazil/operario.png" },
+        { rank: 4, team: "Novorizontino", MP: 17, MW: 8, MD: 6, ML: 3, GF: 28, GA: 16, logo: "brazil/novorizontino.png" },
+        { rank: 5, team: "Juventude", MP: 17, MW: 8, MD: 5, ML: 4, GF: 17, GA: 8, logo: "brazil/juventude.png" },
+        { rank: 6, team: "Fortaleza", MP: 17, MW: 8, MD: 4, ML: 5, GF: 20, GA: 17, logo: "brazil/fortaleza.png" },
+        { rank: 7, team: "São Bernardo", MP: 17, MW: 7, MD: 5, ML: 5, GF: 23, GA: 16, logo: "brazil/saobernardo.png" },
+        { rank: 8, team: "Sport", MP: 17, MW: 6, MD: 8, ML: 3, GF: 21, GA: 15, logo: "brazil/sport.png" },
+        { rank: 9, team: "Goiás", MP: 17, MW: 7, MD: 4, ML: 6, GF: 18, GA: 23, logo: "brazil/goias.png" },
+        { rank: 10, team: "Atlético Goianiense", MP: 17, MW: 6, MD: 6, ML: 5, GF: 19, GA: 19, logo: "brazil/atleticogoianiense.png" },
+        { rank: 11, team: "Cuiabá", MP: 17, MW: 5, MD: 9, ML: 3, GF: 14, GA: 11, logo: "brazil/cuiaba.png" },
+        { rank: 12, team: "Athletic (MG)", MP: 17, MW: 5, MD: 8, ML: 4, GF: 16, GA: 16, logo: "brazil/athleticmg.png" },
+        { rank: 13, team: "Náutico", MP: 17, MW: 6, MD: 3, ML: 8, GF: 21, GA: 21, logo: "brazil/nautico.png" },
+        { rank: 14, team: "Botafogo", MP: 17, MW: 5, MD: 5, ML: 7, GF: 20, GA: 18, logo: "brazil/botafogosp.png" },
+        { rank: 15, team: "CRB", MP: 17, MW: 5, MD: 5, ML: 7, GF: 26, GA: 31, logo: "brazil/crb.png" },
+        { rank: 16, team: "Londrina", MP: 17, MW: 5, MD: 4, ML: 8, GF: 25, GA: 25, logo: "brazil/londrina.png" },
+        { rank: 17, team: "Ceará", MP: 17, MW: 4, MD: 6, ML: 7, GF: 15, GA: 20, logo: "brazil/ceara.png" },
+        { rank: 18, team: "Avaí", MP: 17, MW: 4, MD: 4, ML: 9, GF: 18, GA: 24, logo: "brazil/avai.png" },
+        { rank: 19, team: "Ponte Preta", MP: 17, MW: 2, MD: 2, ML: 13, GF: 11, GA: 33, logo: "brazil/pontepreta.png" },
+        { rank: 20, team: "América-MG", MP: 17, MW: 1, MD: 4, ML: 12, GF: 11, GA: 28, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        { home: "Ceará", away: "Athletic (MG)", date: "2026-07-14" },
-        
-        // Matchday 19 - July 17-21
+        // Matchday 18 - July 17-18
         { home: "CRB", away: "Náutico", date: "2026-07-17" },
         { home: "América-MG", away: "Ceará", date: "2026-07-17" },
         { home: "São Bernardo", away: "Avaí", date: "2026-07-17" },
         { home: "Juventude", away: "Cuiabá", date: "2026-07-17" },
         { home: "Fortaleza", away: "Novorizontino", date: "2026-07-18" },
+        { home: "Londrina", away: "Botafogo", date: "2026-07-18" },
         { home: "Ponte Preta", away: "Goiás", date: "2026-07-18" },
         { home: "Sport", away: "Operário Ferroviário", date: "2026-07-18" },
         { home: "Criciúma", away: "Vila Nova", date: "2026-07-18" },
-        { home: "Atlético Goianiense", away: "Athletic (MG)", date: "2026-07-20" },
-        { home: "Londrina", away: "Botafogo", date: "2026-07-21" }
+        { home: "Atlético Goianiense", away: "Athletic (MG)", date: "2026-07-18" },
+        
+        // Matchday 19 - July 21-24
+        { home: "Novorizontino", away: "Criciúma", date: "2026-07-21" },
+        { home: "Avaí", away: "América-MG", date: "2026-07-21" },
+        { home: "Vila Nova", away: "Fortaleza", date: "2026-07-22" },
+        { home: "Operário Ferroviário", away: "Ponte Preta", date: "2026-07-22" },
+        { home: "Ceará", away: "CRB", date: "2026-07-22" },
+        { home: "Goiás", away: "Sport", date: "2026-07-23" },
+        { home: "Náutico", away: "Londrina", date: "2026-07-23" },
+        { home: "Athletic (MG)", away: "São Bernardo", date: "2026-07-23" },
+        { home: "Cuiabá", away: "Atlético Goianiense", date: "2026-07-24" },
+        { home: "Botafogo", away: "Juventude", date: "2026-07-24" }
     ]
 },
-
 "English Premier League": {
     id: "epl",
     logo: "england/epl.png",
@@ -489,7 +498,7 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 1 - August 14-17
-        { home: "Wolves", away: "Blackburn Rovers", date: "2026-08-14" },
+		
         { home: "Bolton", away: "Preston", date: "2026-08-15" },
         { home: "Middlesbrough", away: "Lincoln City", date: "2026-08-15" },
         { home: "Portsmouth", away: "QPR", date: "2026-08-15" },
@@ -1248,7 +1257,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 9 - July 14-16
-        { home: "Real Oruro", away: "Always Ready", date: "2026-07-14" },
         { home: "Blooming", away: "Gualberto Villarroel San José", date: "2026-07-15" },
         { home: "Real Potosí", away: "SA Bulo Bulo", date: "2026-07-15" },
         { home: "The Strongest", away: "Oriente Petrolero", date: "2026-07-16" },
