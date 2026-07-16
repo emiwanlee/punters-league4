@@ -466,6 +466,51 @@ const leaguesData = {
     ]
 },
 
+"Ecuador Liga Pro": {
+    id: "ecuador-liga-pro",
+    logo: "ecuador/ligapro.png",
+    isBasketball: false,
+    teams: [
+        { rank: 1, team: "Ind. del Valle", MP: 18, MW: 14, MD: 1, ML: 3, GF: 40, GA: 19, logo: "ecuador/inddelvalle.png" },
+        { rank: 2, team: "Aucas", MP: 18, MW: 9, MD: 5, ML: 4, GF: 21, GA: 16, logo: "ecuador/aucas.png" },
+        { rank: 3, team: "Barcelona SC", MP: 19, MW: 8, MD: 7, ML: 4, GF: 21, GA: 14, logo: "ecuador/barcelona.png" },
+        { rank: 4, team: "U. Catolica", MP: 19, MW: 8, MD: 5, ML: 6, GF: 29, GA: 18, logo: "ecuador/ucatolica.png" },
+        { rank: 5, team: "Macara", MP: 19, MW: 8, MD: 5, ML: 6, GF: 20, GA: 19, logo: "ecuador/macara.png" },
+        { rank: 6, team: "LDU Quito", MP: 19, MW: 8, MD: 4, ML: 7, GF: 19, GA: 15, logo: "ecuador/lduquito.png" },
+        { rank: 7, team: "Dep. Cuenca", MP: 19, MW: 8, MD: 4, ML: 7, GF: 19, GA: 21, logo: "ecuador/depcuenca.png" },
+        { rank: 8, team: "Leones del Norte", MP: 19, MW: 6, MD: 6, ML: 7, GF: 20, GA: 20, logo: "ecuador/leones.png" },
+        { rank: 9, team: "Emelec", MP: 18, MW: 6, MD: 6, ML: 6, GF: 14, GA: 17, logo: "ecuador/emelec.png" },
+        { rank: 10, team: "Tecnico U.", MP: 19, MW: 7, MD: 2, ML: 10, GF: 19, GA: 20, logo: "ecuador/tecnico.png" },
+        { rank: 11, team: "Orense", MP: 18, MW: 6, MD: 5, ML: 7, GF: 22, GA: 24, logo: "ecuador/orense.png" },
+        { rank: 12, team: "Guayaquil City", MP: 19, MW: 6, MD: 5, ML: 8, GF: 17, GA: 22, logo: "ecuador/guayaquilcity.png" },
+        { rank: 13, team: "Mushuc Runa", MP: 19, MW: 5, MD: 6, ML: 8, GF: 24, GA: 29, logo: "ecuador/mushucruna.png" },
+        { rank: 14, team: "Libertad", MP: 19, MW: 5, MD: 6, ML: 8, GF: 18, GA: 25, logo: "ecuador/libertad.png" },
+        { rank: 15, team: "Delfin", MP: 19, MW: 5, MD: 5, ML: 9, GF: 11, GA: 18, logo: "ecuador/delfin.png" },
+        { rank: 16, team: "Manta", MP: 19, MW: 3, MD: 4, ML: 12, GF: 7, GA: 24, logo: "ecuador/manta.png" }
+    ],
+    fixtures: [
+        // Round 20 - July 18-20
+        { home: "Delfin", away: "Macara", date: "2026-07-18" },
+        { home: "Dep. Cuenca", away: "U. Catolica", date: "2026-07-18" },
+        { home: "LDU Quito", away: "Leones del Norte", date: "2026-07-18" },
+        { home: "Barcelona SC", away: "Libertad", date: "2026-07-19" },
+        { home: "Tecnico U.", away: "Aucas", date: "2026-07-19" },
+        { home: "Guayaquil City", away: "Manta", date: "2026-07-19" },
+        { home: "Ind. del Valle", away: "Emelec", date: "2026-07-20" },
+        { home: "Mushuc Runa", away: "Orense", date: "2026-07-20" },
+        
+        // Round 21 - July 21-24
+        { home: "Libertad", away: "Delfin", date: "2026-07-21" },
+        { home: "U. Catolica", away: "Barcelona SC", date: "2026-07-22" },
+        { home: "Macara", away: "Dep. Cuenca", date: "2026-07-22" },
+        { home: "Ind. del Valle", away: "Tecnico U.", date: "2026-07-22" },
+        { home: "Manta", away: "LDU Quito", date: "2026-07-23" },
+        { home: "Leones del Norte", away: "Guayaquil City", date: "2026-07-23" },
+        { home: "Orense", away: "Aucas", date: "2026-07-23" },
+        { home: "Emelec", away: "Mushuc Runa", date: "2026-07-24" }
+    ]
+},
+
 "English Championship": {
     id: "championship",
     logo: "england/championship.png",
@@ -1256,12 +1301,6 @@ const leaguesData = {
         { rank: 16, team: "Gualberto Villarroel San José", MP: 8, MW: 1, MD: 2, ML: 5, GF: 9, GA: 16, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
-        // Matchday 9 - July 14-16
-        { home: "Blooming", away: "Gualberto Villarroel San José", date: "2026-07-15" },
-        { home: "Real Potosí", away: "SA Bulo Bulo", date: "2026-07-15" },
-        { home: "The Strongest", away: "Oriente Petrolero", date: "2026-07-16" },
-        { home: "Academia del Balompie Boliviano", away: "Independiente Petrolero", date: "2026-07-16" },
-        
         // Matchday 9 - July 18-22
         { home: "Bolívar", away: "Guabirá", date: "2026-07-18" },
         { home: "Always Ready", away: "Universitario de Vinto", date: "2026-07-18" },
@@ -1564,17 +1603,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 24, GW: 6, GL: 18, points_for: 1848, points_against: 2112, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        
-        // Tuesday, July 14
-        { home: "Los Angeles Sparks", away: "Atlanta Dream", date: "2026-07-14" },
-        { home: "Phoenix Mercury", away: "Minnesota Lynx", date: "2026-07-14" },
-        { home: "Portland Fire", away: "Connecticut Sun", date: "2026-07-14" },
-        
-        // Wednesday, July 15
-        { home: "Washington Mystics", away: "Toronto Tempo", date: "2026-07-15" },
-        { home: "Seattle Storm", away: "Chicago Sky", date: "2026-07-15" },
-        { home: "Los Angeles Sparks", away: "Minnesota Lynx", date: "2026-07-15" },
-        
         // Thursday, July 16
         { home: "Golden State Valkyries", away: "Indiana Fever", date: "2026-07-16" }
     ]
