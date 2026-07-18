@@ -311,9 +311,6 @@ const leaguesData = {
         { rank: 14, team: "Green Gully", MP: 20, MW: 2, MD: 4, ML: 14, GF: 14, GA: 42, logo: "NPL Victoria/greengullylogo.png" }
     ],
     fixtures: [
-        // Round 21 - July 17-18
-        { home: "Bentleigh Greens", away: "Dandenong City", date: "2026-07-17" },
-        { home: "Green Gully", away: "Dandenong Thunder", date: "2026-07-17" },
         { home: "Hume City", away: "Oakleigh Cannons", date: "2026-07-18" },
         { home: "Avondale FC", away: "St Albans", date: "2026-07-18" },
         { home: "Altona Magic", away: "Heidelberg Utd", date: "2026-07-18" },
@@ -400,11 +397,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 17, MW: 1, MD: 4, ML: 12, GF: 11, GA: 28, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        // Matchday 18 - July 17-18
-        { home: "CRB", away: "Náutico", date: "2026-07-17" },
-        { home: "América-MG", away: "Ceará", date: "2026-07-17" },
-        { home: "São Bernardo", away: "Avaí", date: "2026-07-17" },
-        { home: "Juventude", away: "Cuiabá", date: "2026-07-17" },
         { home: "Fortaleza", away: "Novorizontino", date: "2026-07-18" },
         { home: "Londrina", away: "Botafogo", date: "2026-07-18" },
         { home: "Ponte Preta", away: "Goiás", date: "2026-07-18" },
@@ -1085,7 +1077,6 @@ const leaguesData = {
         { rank: 16, team: "ÖIS", MP: 11, MW: 1, MD: 3, ML: 7, GF: 10, GA: 28, logo: "sweden/ois.png" }
     ],
     fixtures: [
-        { home: "Mjällby", away: "Västerås", date: "2026-07-17" },
         { home: "AIK", away: "GAIS", date: "2026-07-18" },
         { home: "Göteborg", away: "IF Brommapojkarna", date: "2026-07-19" },
         { home: "Halmstad", away: "Häcken", date: "2026-07-19" },
@@ -1221,10 +1212,6 @@ const leaguesData = {
         { rank: 16, team: "Wuhan Three Towns", MP: 17, MW: 2, MD: 7, ML: 8, GF: 24, GA: 34, logo: "china/wuhanlogo.png" }
     ],
     fixtures: [
-        // Matchday 19 - July 17-18
-        { home: "Beijing Guoan", away: "Shenyang Urban", date: "2026-07-17" },
-        { home: "Henan", away: "Qingdao Hainiu", date: "2026-07-17" },
-        { home: "Yunnan Yukun", away: "Shanghai Port", date: "2026-07-17" },
         { home: "Qingdao Youth Island", away: "Chengdu Rongcheng", date: "2026-07-18" },
         { home: "Chongqing Tonglianglong", away: "Zhejiang", date: "2026-07-18" },
         { home: "Shanghai Shenhua", away: "Tianjin Jinmen Tiger", date: "2026-07-18" },
@@ -1591,9 +1578,6 @@ const leaguesData = {
         { rank: 18, team: "Puebla", MP: 17, MW: 3, MD: 3, ML: 11, GF: 21, GA: 42, logo: "mexico/puebla.png" }
     ],
     fixtures: [
-        // Matchday 2 - July 17-19, 2026
-        { home: "Necaxa", away: "Atlante", date: "2026-07-17" },
-        { home: "Club Tijuana", away: "Tigres UANL", date: "2026-07-17" },
         { home: "Atl. San Luis", away: "Cruz Azul", date: "2026-07-18" },
         { home: "Club Leon", away: "Atlas", date: "2026-07-18" },
         { home: "Juarez", away: "Puebla", date: "2026-07-18" },
@@ -1671,9 +1655,6 @@ const leaguesData = {
         { team: "Atlanta", MP: 34, MW: 5, MD: 13, GF: 38, GA: 63, logo: "mls/atlantalogo.png" }
     ],
     fixtures: [
-        { home: "Montreal", away: "Toronto", date: "2026-07-17" },
-        { home: "Chicago", away: "Vancouver", date: "2026-07-17" },
-        { home: "Seattle", away: "Portland", date: "2026-07-17" },
         { home: "Nashville", away: "Atlanta", date: "2026-07-18" },
         { home: "LA Galaxy", away: "LAFC", date: "2026-07-18" },
         { home: "Cincinnati", away: "Vancouver", date: "2026-07-23" },
@@ -1885,9 +1866,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 26, GW: 6, GL: 20, points_for: 2002, points_against: 2288, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Friday, July 17
-        { home: "Portland Fire", away: "Washington Mystics", date: "2026-07-17" },
-        
         // Saturday, July 18
         { home: "Seattle Storm", away: "Indiana Fever", date: "2026-07-18" },
         { home: "Atlanta Dream", away: "Toronto Tempo", date: "2026-07-18" },
