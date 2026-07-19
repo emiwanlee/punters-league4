@@ -1424,7 +1424,7 @@ const leaguesData = {
         { rank: 11, team: "FF Jaro", MP: 14, MW: 1, MD: 5, ML: 8, GF: 13, GA: 31, logo: "finland/ffjaro.png" },
         { rank: 12, team: "IFK Mariehamn", MP: 13, MW: 0, MD: 4, ML: 9, GF: 6, GA: 25, logo: "finland/ifkmariehamn.png" }
     ],
-        
+        fixtures: [
         // Sunday, July 19
         { home: "FF Jaro", away: "Inter Turku", date: "2026-07-19" }
     ]
