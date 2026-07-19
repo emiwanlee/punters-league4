@@ -1380,29 +1380,40 @@ const leaguesData = {
     logo: "bolivia/bolivia.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "The Strongest", MP: 8, MW: 5, MD: 3, ML: 0, GF: 13, GA: 7, logo: "bolivia/thestrongest.png" },
-        { rank: 2, team: "Always Ready", MP: 8, MW: 5, MD: 2, ML: 1, GF: 14, GA: 5, logo: "bolivia/alwaysready.png" },
-        { rank: 3, team: "Aurora", MP: 9, MW: 4, MD: 4, ML: 1, GF: 14, GA: 9, logo: "bolivia/aurora.png" },
-        { rank: 4, team: "Bolívar", MP: 9, MW: 4, MD: 3, ML: 2, GF: 20, GA: 10, logo: "bolivia/bolivar.png" },
-        { rank: 5, team: "Blooming", MP: 8, MW: 3, MD: 3, ML: 2, GF: 14, GA: 10, logo: "bolivia/blooming.png" },
-        { rank: 6, team: "Nacional Potosí", MP: 9, MW: 3, MD: 3, ML: 3, GF: 12, GA: 10, logo: "bolivia/nacionalpotosi.png" },
-        { rank: 7, team: "Independiente Petrolero", MP: 8, MW: 3, MD: 3, ML: 2, GF: 12, GA: 12, logo: "bolivia/independientepetrolero.png" },
-        { rank: 8, team: "Real Oruro", MP: 8, MW: 3, MD: 2, ML: 3, GF: 17, GA: 16, logo: "bolivia/realoruro.png" },
-        { rank: 9, team: "Guabirá", MP: 9, MW: 3, MD: 2, ML: 4, GF: 14, GA: 20, logo: "bolivia/guabira.png" },
-        { rank: 10, team: "Real Potosí", MP: 8, MW: 2, MD: 4, ML: 2, GF: 9, GA: 7, logo: "bolivia/realpotosi.png" },
-        { rank: 11, team: "Universitario de Vinto", MP: 9, MW: 3, MD: 1, ML: 5, GF: 15, GA: 16, logo: "bolivia/universitariovinto.png" },
-        { rank: 12, team: "Oriente Petrolero", MP: 8, MW: 3, MD: 1, ML: 4, GF: 10, GA: 11, logo: "bolivia/orientepetrolero.png" },
-        { rank: 13, team: "Academia del Balompie Boliviano", MP: 8, MW: 3, MD: 0, ML: 5, GF: 13, GA: 20, logo: "bolivia/academia.png" },
+        { rank: 1, team: "Always Ready", MP: 10, MW: 7, MD: 2, ML: 1, GF: 24, GA: 5, logo: "bolivia/alwaysready.png" },
+        { rank: 2, team: "The Strongest", MP: 9, MW: 6, MD: 3, ML: 0, GF: 15, GA: 8, logo: "bolivia/thestrongest.png" },
+        { rank: 3, team: "Bolívar", MP: 10, MW: 5, MD: 3, ML: 2, GF: 24, GA: 10, logo: "bolivia/bolivar.png" },
+        { rank: 4, team: "Aurora", MP: 10, MW: 4, MD: 5, ML: 1, GF: 16, GA: 11, logo: "bolivia/aurora.png" },
+        { rank: 5, team: "Real Potosí", MP: 9, MW: 3, MD: 4, ML: 2, GF: 14, GA: 7, logo: "bolivia/realpotosi.png" },
+        { rank: 6, team: "Blooming", MP: 9, MW: 3, MD: 4, ML: 2, GF: 15, GA: 11, logo: "bolivia/blooming.png" },
+        { rank: 7, team: "Nacional Potosí", MP: 9, MW: 3, MD: 3, ML: 3, GF: 12, GA: 10, logo: "bolivia/nacionalpotosi.png" },
+        { rank: 8, team: "Independiente Petrolero", MP: 9, MW: 3, MD: 3, ML: 3, GF: 13, GA: 15, logo: "bolivia/independientepetrolero.png" },
+        { rank: 9, team: "Academia del Balompie Boliviano", MP: 9, MW: 4, MD: 0, ML: 5, GF: 16, GA: 21, logo: "bolivia/academia.png" },
+        { rank: 10, team: "Oriente Petrolero", MP: 10, MW: 3, MD: 2, ML: 5, GF: 13, GA: 15, logo: "bolivia/orientepetrolero.png" },
+        { rank: 11, team: "Real Oruro", MP: 9, MW: 3, MD: 2, ML: 4, GF: 17, GA: 22, logo: "bolivia/realoruro.png" },
+        { rank: 12, team: "Guabirá", MP: 10, MW: 3, MD: 2, ML: 5, GF: 14, GA: 24, logo: "bolivia/guabira.png" },
+        { rank: 13, team: "Universitario de Vinto", MP: 10, MW: 3, MD: 1, ML: 6, GF: 15, GA: 20, logo: "bolivia/universitariovinto.png" },
         { rank: 14, team: "Real Tomayapo", MP: 9, MW: 2, MD: 2, ML: 5, GF: 7, GA: 20, logo: "bolivia/realtomayapo.png" },
-        { rank: 15, team: "SA Bulo Bulo", MP: 8, MW: 2, MD: 1, ML: 5, GF: 10, GA: 14, logo: "bolivia/sabulobulo.png" },
-        { rank: 16, team: "Gualberto Villarroel San José", MP: 8, MW: 1, MD: 2, ML: 5, GF: 9, GA: 16, logo: "bolivia/gualberto.png" }
+        { rank: 15, team: "SA Bulo Bulo", MP: 9, MW: 2, MD: 1, ML: 6, GF: 10, GA: 19, logo: "bolivia/sabulobulo.png" },
+        { rank: 16, team: "Gualberto Villarroel San José", MP: 9, MW: 1, MD: 3, ML: 5, GF: 10, GA: 17, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
+       
         { home: "Aurora", away: "Oriente Petrolero", date: "2026-07-19" },
         { home: "Blooming", away: "Real Tomayapo", date: "2026-07-20" },
         { home: "SA Bulo Bulo", away: "Academia del Balompie Boliviano", date: "2026-07-20" },
         { home: "Nacional Potosí", away: "Real Oruro", date: "2026-07-21" },
-        { home: "Independiente Petrolero", away: "Real Potosí", date: "2026-07-22" }
+        { home: "Independiente Petrolero", away: "Real Potosí", date: "2026-07-22" },
+        
+        // Matchday 11 - July 25-27
+        { home: "Aurora", away: "Academia del Balompie Boliviano", date: "2026-07-25" },
+        { home: "Always Ready", away: "SA Bulo Bulo", date: "2026-07-25" },
+        { home: "Guabirá", away: "Real Oruro", date: "2026-07-25" },
+        { home: "Independiente Petrolero", away: "Oriente Petrolero", date: "2026-07-26" },
+        { home: "Nacional Potosí", away: "Real Tomayapo", date: "2026-07-26" },
+        { home: "Bolívar", away: "Real Potosí", date: "2026-07-26" },
+        { home: "Blooming", away: "The Strongest", date: "2026-07-27" },
+        { home: "Gualberto Villarroel San José", away: "Universitario de Vinto", date: "2026-07-27" }
     ]
 },
 
@@ -1411,22 +1422,43 @@ const leaguesData = {
     logo: "finland/veikkausliiga.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "KuPS", MP: 15, MW: 8, MD: 6, ML: 1, GF: 27, GA: 15, logo: "finland/kups.png" },
+        { rank: 1, team: "KuPS", MP: 16, MW: 9, MD: 6, ML: 1, GF: 29, GA: 15, logo: "finland/kups.png" },
         { rank: 2, team: "Inter Turku", MP: 15, MW: 8, MD: 6, ML: 1, GF: 23, GA: 12, logo: "finland/interturku.png" },
-        { rank: 3, team: "Oulu", MP: 14, MW: 8, MD: 2, ML: 4, GF: 20, GA: 15, logo: "finland/oulu.png" },
-        { rank: 4, team: "HJK", MP: 14, MW: 6, MD: 4, ML: 4, GF: 25, GA: 17, logo: "finland/hjk.png" },
-        { rank: 5, team: "VPS", MP: 13, MW: 5, MD: 6, ML: 2, GF: 17, GA: 11, logo: "finland/vps.png" },
-        { rank: 6, team: "Gnistan", MP: 13, MW: 5, MD: 4, ML: 4, GF: 19, GA: 17, logo: "finland/gnistan.png" },
-        { rank: 7, team: "Turun", MP: 13, MW: 5, MD: 4, ML: 4, GF: 15, GA: 13, logo: "finland/turun.png" },
-        { rank: 8, team: "Ilves", MP: 14, MW: 4, MD: 4, ML: 6, GF: 24, GA: 27, logo: "finland/ilves.png" },
-        { rank: 9, team: "FC Lahti", MP: 13, MW: 3, MD: 4, ML: 6, GF: 15, GA: 15, logo: "finland/fclahti.png" },
-        { rank: 10, team: "SJK", MP: 13, MW: 2, MD: 5, ML: 6, GF: 15, GA: 21, logo: "finland/sjk.png" },
-        { rank: 11, team: "FF Jaro", MP: 14, MW: 1, MD: 5, ML: 8, GF: 13, GA: 31, logo: "finland/ffjaro.png" },
-        { rank: 12, team: "IFK Mariehamn", MP: 13, MW: 0, MD: 4, ML: 9, GF: 6, GA: 25, logo: "finland/ifkmariehamn.png" }
+        { rank: 3, team: "VPS", MP: 16, MW: 7, MD: 6, ML: 3, GF: 23, GA: 13, logo: "finland/vps.png" },
+        { rank: 4, team: "Oulu", MP: 16, MW: 8, MD: 2, ML: 6, GF: 20, GA: 20, logo: "finland/oulu.png" },
+        { rank: 5, team: "HJK", MP: 16, MW: 7, MD: 4, ML: 5, GF: 27, GA: 20, logo: "finland/hjk.png" },
+        { rank: 6, team: "Gnistan", MP: 16, MW: 7, MD: 4, ML: 5, GF: 25, GA: 20, logo: "finland/gnistan.png" },
+        { rank: 7, team: "Turun", MP: 15, MW: 6, MD: 4, ML: 5, GF: 19, GA: 16, logo: "finland/turun.png" },
+        { rank: 8, team: "FC Lahti", MP: 15, MW: 5, MD: 4, ML: 6, GF: 18, GA: 15, logo: "finland/fclahti.png" },
+        { rank: 9, team: "Ilves", MP: 15, MW: 4, MD: 4, ML: 7, GF: 25, GA: 29, logo: "finland/ilves.png" },
+        { rank: 10, team: "SJK", MP: 16, MW: 3, MD: 5, ML: 8, GF: 18, GA: 25, logo: "finland/sjk.png" },
+        { rank: 11, team: "FF Jaro", MP: 15, MW: 2, MD: 5, ML: 8, GF: 15, GA: 32, logo: "finland/ffjaro.png" },
+        { rank: 12, team: "IFK Mariehamn", MP: 15, MW: 0, MD: 4, ML: 11, GF: 8, GA: 33, logo: "finland/ifkmariehamn.png" }
     ],
-        fixtures: [
-        // Sunday, July 19
-        { home: "FF Jaro", away: "Inter Turku", date: "2026-07-19" }
+    fixtures: [
+        // Matchday - July 19
+        { home: "FF Jaro", away: "Inter Turku", date: "2026-07-19" },
+        
+        // Matchday - July 20
+        { home: "Turun", away: "Ilves", date: "2026-07-20" },
+        { home: "IFK Mariehamn", away: "FC Lahti", date: "2026-07-20" },
+        
+        // Matchday - July 24
+        { home: "FF Jaro", away: "SJK", date: "2026-07-24" },
+        
+        // Matchday - July 25
+        { home: "IFK Mariehamn", away: "Oulu", date: "2026-07-25" },
+        { home: "KuPS", away: "VPS", date: "2026-07-25" },
+        
+        // Matchday - July 26
+        { home: "Inter Turku", away: "Gnistan", date: "2026-07-26" },
+        { home: "Ilves", away: "FC Lahti", date: "2026-07-26" },
+        { home: "HJK", away: "Turun", date: "2026-07-26" },
+        
+        // Matchday - August 1
+        { home: "Turun", away: "IFK Mariehamn", date: "2026-08-01" },
+        { home: "FC Lahti", away: "FF Jaro", date: "2026-08-01" },
+        { home: "Gnistan", away: "KuPS", date: "2026-08-01" }
     ]
 },
 "Kazakhstan Premier League": {
