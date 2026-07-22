@@ -273,9 +273,6 @@ const leaguesData = {
         { rank: 11, team: "Canberra White Eagles", MP: 15, MW: 1, MD: 1, ML: 13, GF: 11, GA: 45, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-        // Round 14 (makeup) - July 21
-        { home: "Canberra Juventus", away: "Canberra Croatia", date: "2026-07-21" },
-        
         // Round 14 (makeup) - July 22
         { home: "Tuggeranong Utd", away: "Canberra White Eagles", date: "2026-07-22" },
         
@@ -392,8 +389,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 19 - July 21-24
-        { home: "Novorizontino", away: "Criciúma", date: "2026-07-21" },
-        { home: "Avaí", away: "América-MG", date: "2026-07-21" },
         { home: "Vila Nova", away: "Fortaleza", date: "2026-07-22" },
         { home: "Operário Ferroviário", away: "Ponte Preta", date: "2026-07-22" },
         { home: "Ceará", away: "CRB", date: "2026-07-22" },
@@ -468,11 +463,6 @@ const leaguesData = {
         { rank: 16, team: "Manta", MP: 19, MW: 3, MD: 4, ML: 12, GF: 7, GA: 24, logo: "ecuador/manta.png" }
     ],
     fixtures: [
-        { home: "Ind. del Valle", away: "Emelec", date: "2026-07-20" },
-        { home: "Mushuc Runa", away: "Orense", date: "2026-07-20" },
-        
-        // Round 21 - July 21-24
-        { home: "Libertad", away: "Delfin", date: "2026-07-21" },
         { home: "U. Catolica", away: "Barcelona SC", date: "2026-07-22" },
         { home: "Macara", away: "Dep. Cuenca", date: "2026-07-22" },
         { home: "Ind. del Valle", away: "Tecnico U.", date: "2026-07-22" },
@@ -1100,10 +1090,6 @@ const leaguesData = {
         { rank: 16, team: "GIF Sundsvall", MP: 14, MW: 3, MD: 0, ML: 11, GF: 11, GA: 31, logo: "sweden/gifsundsvall.png" }
     ],
     fixtures: [
-        // Matchday 16 - July 21
-        { home: "Falkenberg", away: "Helsingborg", date: "2026-07-21" },
-        
-        // Matchday 17 - July 25
         { home: "Värnamo", away: "Brage", date: "2026-07-25" },
         
         // Matchday 17 - July 26
@@ -1812,30 +1798,53 @@ const leaguesData = {
     isBasketball: true,
     teams: [
         // Eastern Conference
-        { rank: 1, team: "New York Liberty", GP: 24, GW: 13, GL: 11, points_for: 2136, points_against: 2028, logo: "wnba/liberty.png" },
-        { rank: 2, team: "Atlanta Dream", GP: 24, GW: 14, GL: 10, points_for: 2112, points_against: 2040, logo: "wnba/dream.png" },
-        { rank: 3, team: "Indiana Fever", GP: 24, GW: 14, GL: 10, points_for: 2184, points_against: 2064, logo: "wnba/fever.png" },
-        { rank: 4, team: "Washington Mystics", GP: 23, GW: 12, GL: 11, points_for: 1896, points_against: 1932, logo: "wnba/mystics.png" },
-        { rank: 5, team: "Toronto Tempo", GP: 24, GW: 10, GL: 14, points_for: 2064, points_against: 2160, logo: "wnba/tempo.png" },
-        { rank: 6, team: "Chicago Sky", GP: 24, GW: 8, GL: 16, points_for: 1968, points_against: 2184, logo: "wnba/sky.png" },
-        { rank: 7, team: "Connecticut Sun", GP: 24, GW: 6, GL: 18, points_for: 1824, points_against: 2112, logo: "wnba/sun.png" },
+        { rank: 1, team: "New York Liberty", GP: 26, GW: 14, GL: 12, points_for: 2314, points_against: 2196, logo: "wnba/liberty.png" },
+        { rank: 2, team: "Atlanta Dream", GP: 26, GW: 16, GL: 10, points_for: 2288, points_against: 2210, logo: "wnba/dream.png" },
+        { rank: 3, team: "Indiana Fever", GP: 26, GW: 16, GL: 10, points_for: 2366, points_against: 2236, logo: "wnba/fever.png" },
+        { rank: 4, team: "Washington Mystics", GP: 24, GW: 12, GL: 12, points_for: 1978, points_against: 2016, logo: "wnba/mystics.png" },
+        { rank: 5, team: "Toronto Tempo", GP: 26, GW: 10, GL: 16, points_for: 2236, points_against: 2340, logo: "wnba/tempo.png" },
+        { rank: 6, team: "Chicago Sky", GP: 26, GW: 9, GL: 17, points_for: 2132, points_against: 2366, logo: "wnba/sky.png" },
+        { rank: 7, team: "Connecticut Sun", GP: 26, GW: 7, GL: 19, points_for: 1976, points_against: 2288, logo: "wnba/sun.png" },
         
         // Western Conference
-        { rank: 1, team: "Minnesota Lynx", GP: 25, GW: 19, GL: 6, points_for: 2250, points_against: 2025, logo: "wnba/lynx.png" },
-        { rank: 2, team: "Golden State Valkyries", GP: 25, GW: 18, GL: 7, points_for: 2125, points_against: 1975, logo: "wnba/valkyries.png" },
-        { rank: 3, team: "Las Vegas Aces", GP: 24, GW: 17, GL: 7, points_for: 2184, points_against: 1968, logo: "wnba/aces.png" },
-        { rank: 4, team: "Dallas Wings", GP: 24, GW: 16, GL: 8, points_for: 2088, points_against: 1968, logo: "wnba/wings.png" },
-        { rank: 5, team: "Portland Fire", GP: 25, GW: 11, GL: 14, points_for: 2125, points_against: 2250, logo: "wnba/fire.png" },
-        { rank: 6, team: "Los Angeles Sparks", GP: 23, GW: 10, GL: 13, points_for: 2024, points_against: 2116, logo: "wnba/sparks.png" },
-        { rank: 7, team: "Phoenix Mercury", GP: 25, GW: 8, GL: 17, points_for: 2000, points_against: 2200, logo: "wnba/mercury.png" },
-        { rank: 8, team: "Seattle Storm", GP: 26, GW: 6, GL: 20, points_for: 2002, points_against: 2288, logo: "wnba/storm.png" }
+        { rank: 1, team: "Minnesota Lynx", GP: 26, GW: 20, GL: 6, points_for: 2340, points_against: 2106, logo: "wnba/lynx.png" },
+        { rank: 2, team: "Golden State Valkyries", GP: 26, GW: 19, GL: 7, points_for: 2210, points_against: 2054, logo: "wnba/valkyries.png" },
+        { rank: 3, team: "Las Vegas Aces", GP: 25, GW: 18, GL: 7, points_for: 2275, points_against: 2050, logo: "wnba/aces.png" },
+        { rank: 4, team: "Dallas Wings", GP: 26, GW: 17, GL: 9, points_for: 2262, points_against: 2132, logo: "wnba/wings.png" },
+        { rank: 5, team: "Portland Fire", GP: 26, GW: 11, GL: 15, points_for: 2210, points_against: 2340, logo: "wnba/fire.png" },
+        { rank: 6, team: "Los Angeles Sparks", GP: 25, GW: 10, GL: 15, points_for: 2200, points_against: 2300, logo: "wnba/sparks.png" },
+        { rank: 7, team: "Phoenix Mercury", GP: 27, GW: 9, GL: 18, points_for: 2160, points_against: 2376, logo: "wnba/mercury.png" },
+        { rank: 8, team: "Seattle Storm", GP: 27, GW: 6, GL: 21, points_for: 2079, points_against: 2376, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Tuesday, July 21
-        { home: "New York Liberty", away: "Dallas Wings", date: "2026-07-21" },
-        { home: "Las Vegas Aces", away: "Toronto Tempo", date: "2026-07-21" },
-        { home: "Washington Mystics", away: "Golden State Valkyries", date: "2026-07-21" },
-        { home: "Minnesota Lynx", away: "Seattle Storm", date: "2026-07-21" }
+        // Wednesday, July 22
+        { home: "Phoenix Mercury", away: "Los Angeles Sparks", date: "2026-07-22" },
+        { home: "Minnesota Lynx", away: "Seattle Storm", date: "2026-07-22" },
+        
+        // Thursday, July 23
+        { home: "Chicago Sky", away: "New York Liberty", date: "2026-07-23" },
+        { home: "Las Vegas Aces", away: "Washington Mystics", date: "2026-07-23" },
+        { home: "Connecticut Sun", away: "Indiana Fever", date: "2026-07-23" },
+        { home: "Dallas Wings", away: "Portland Fire", date: "2026-07-23" },
+        
+        // Sunday, July 26 - All-Star Game
+        { home: "Team Spoon", away: "Team Coop", date: "2026-07-26" },
+        
+        // Wednesday, July 29
+        { home: "Connecticut Sun", away: "Washington Mystics", date: "2026-07-29" },
+        { home: "Toronto Tempo", away: "Minnesota Lynx", date: "2026-07-29" },
+        { home: "Indiana Fever", away: "Seattle Storm", date: "2026-07-29" },
+        { home: "Portland Fire", away: "Las Vegas Aces", date: "2026-07-29" },
+        { home: "New York Liberty", away: "Los Angeles Sparks", date: "2026-07-29" },
+        
+        // Thursday, July 30
+        { home: "Atlanta Dream", away: "Dallas Wings", date: "2026-07-30" },
+        { home: "Golden State Valkyries", away: "Phoenix Mercury", date: "2026-07-30" },
+        
+        // Friday, July 31
+        { home: "Minnesota Lynx", away: "Toronto Tempo", date: "2026-07-31" },
+        { home: "Connecticut Sun", away: "Chicago Sky", date: "2026-07-31" },
+        { home: "New York Liberty", away: "Las Vegas Aces", date: "2026-07-31" }
     ]
 },
 /*
