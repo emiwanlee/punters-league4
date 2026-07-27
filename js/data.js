@@ -179,9 +179,6 @@ const leaguesData = {
         { rank: 22, team: "Ituzaingó", MP: 27, MW: 1, MD: 8, ML: 18, GF: 20, GA: 47, logo: "argentina/ituzaingo.png" }
     ],
     fixtures: [
-
-        { home: "Laferrere", away: "Talleres Remedios", date: "2026-07-26" },
-        
         // Matchday 29 - August 1
         { home: "Real Pilar", away: "Defensores Unidos", date: "2026-08-01" },
         { home: "Arsenal Sarandi", away: "Brown (A)", date: "2026-08-01" },
@@ -236,10 +233,6 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        { home: "Lanús", away: "San Lorenzo", date: "2026-07-26" },
-        { home: "Atlético Tucumán", away: "Independiente Rivadavia", date: "2026-07-26" },
-        { home: "Estudiantes", away: "Independiente", date: "2026-07-26" },
-        { home: "Deportivo Riestra", away: "Boca Juniors", date: "2026-07-26" },
         { home: "Banfield", away: "Sarmiento", date: "2026-07-28" },
         { home: "San Lorenzo", away: "Gimnasia Mendoza", date: "2026-07-28" },
         
@@ -415,14 +408,6 @@ const leaguesData = {
         { rank: 20, team: "Chapecoense", MP: 20, MW: 1, MD: 7, ML: 12, GF: 19, GA: 41, logo: "brazil/chapecoense.png" }
     ],
     fixtures: [
-        // Matchday 21 - July 26
-        { home: "Cruzeiro", away: "Botafogo", date: "2026-07-26" },
-        { home: "Grêmio", away: "Fluminense", date: "2026-07-26" },
-        { home: "Bragantino", away: "Coritiba", date: "2026-07-26" },
-        { home: "Flamengo", away: "São Paulo", date: "2026-07-26" },
-        { home: "Palmeiras", away: "Atlético Mineiro", date: "2026-07-26" },
-        { home: "Remo", away: "Vitória", date: "2026-07-26" },
-        
         // Matchday 21 - July 29-31
         { home: "Internacional", away: "Flamengo", date: "2026-07-29" },
         { home: "Mirassol", away: "Remo", date: "2026-07-29" },
@@ -476,10 +461,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 21 - July 26-29
-        { home: "Criciúma", away: "Náutico", date: "2026-07-26" },
-        { home: "São Bernardo", away: "Ceará", date: "2026-07-26" },
-        { home: "América-MG", away: "Goiás", date: "2026-07-26" },
-        { home: "Londrina", away: "Novorizontino", date: "2026-07-26" },
         { home: "CRB", away: "Vila Nova", date: "2026-07-27" },
         { home: "Sport", away: "Cuiabá", date: "2026-07-27" },
         { home: "Atlético Goianiense", away: "Operário Ferroviário", date: "2026-07-27" },
@@ -808,8 +789,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 17 - July 26-28
-        { home: "Ñublense", away: "Palestino", date: "2026-07-26" },
-        { home: "Audax Italiano", away: "Universidad de Chile", date: "2026-07-26" },
         { home: "Concepción", away: "O'Higgins", date: "2026-07-27" },
         { home: "Unión La Calera", away: "Everton", date: "2026-07-28" },
         
@@ -1201,11 +1180,6 @@ const leaguesData = {
         { rank: 16, team: "GIF Sundsvall", MP: 14, MW: 3, MD: 0, ML: 11, GF: 11, GA: 31, logo: "sweden/gifsundsvall.png" }
     ],
     fixtures: [
-        // Matchday 17 - July 26
-        { home: "GIF Sundsvall", away: "Falkenberg", date: "2026-07-26" },
-        { home: "Ljungskile", away: "Sandviken", date: "2026-07-26" },
-        { home: "Norrby", away: "Östersund", date: "2026-07-26" },
-        
         // Matchday 17 - July 27
         { home: "Örebro", away: "Oddevold", date: "2026-07-27" },
         { home: "Östers IF", away: "Varbergs BoIS", date: "2026-07-27" },
@@ -1283,11 +1257,6 @@ const leaguesData = {
         { rank: 16, team: "Wuhan Three Towns", MP: 18, MW: 3, MD: 7, ML: 8, GF: 26, GA: 34, logo: "china/wuhanlogo.png" }
     ],
     fixtures: [
-        { home: "Yunnan Yukun", away: "Shenzhen Peng City", date: "2026-07-26" },
-        { home: "Shandong Taishan", away: "Henan", date: "2026-07-26" },
-        { home: "Chengdu Rongcheng", away: "Beijing Guoan", date: "2026-07-26" },
-        { home: "Zhejiang", away: "Dalian Yingbo", date: "2026-07-26" },
-        
         // Matchday 22 - July 31 - August 2
         { home: "Henan", away: "Dalian Yingbo", date: "2026-07-31" },
         { home: "Tianjin Jinmen Tiger", away: "Yunnan Yukun", date: "2026-08-01" },
@@ -1355,12 +1324,6 @@ const leaguesData = {
         { rank: 16, team: "FC Irtysh Pavlodar", MP: 17, MW: 1, MD: 8, ML: 8, GF: 14, GA: 22, logo: "kazakhstan/irtysh.png" }
     ],
     fixtures: [
-        { home: "Tobol", away: "Atyrau", date: "2026-07-26" },
-        { home: "Yelimay", away: "Kaisar", date: "2026-07-26" },
-        { home: "Astana", away: "Altay", date: "2026-07-26" },
-        { home: "Kairat", away: "Ordabasy", date: "2026-07-26" },
-        { home: "Kaspiy Aktau", away: "Zhenys", date: "2026-07-26" },
-        
         // Matchday 20 - August 1-2
         { home: "FC Irtysh Pavlodar", away: "Kaspiy Aktau", date: "2026-08-01" },
         { home: "Kyzyl-Zhar SK", away: "FC Aktobe", date: "2026-08-01" },
@@ -1395,14 +1358,6 @@ const leaguesData = {
         { rank: 16, team: "Strømmen", MP: 14, MW: 3, MD: 2, ML: 9, GF: 18, GA: 36, logo: "norway/stremmen.png" }
     ],
     fixtures: [
-        // Matchday 15 - July 25-27
-        { home: "Stroemsgodset", away: "Lyn", date: "2026-07-25" },
-        { home: "Haugesund", away: "Bryne FK", date: "2026-07-25" },
-        { home: "Åsane", away: "Egersund", date: "2026-07-26" },
-        { home: "Moss", away: "Raufoss", date: "2026-07-26" },
-        { home: "Sogndal", away: "Ranheim TF", date: "2026-07-26" },
-        { home: "Sandnes Ulf", away: "Kongsvinger", date: "2026-07-26" },
-        { home: "Strømmen", away: "Odd", date: "2026-07-26" },
         { home: "Stabæk", away: "Hødd", date: "2026-07-27" },
         
         // Matchday 16 - August 1-3
@@ -1534,9 +1489,6 @@ const leaguesData = {
         { rank: 16, team: "Gualberto Villarroel San José", MP: 10, MW: 1, MD: 4, ML: 5, GF: 10, GA: 17, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
-        { home: "Independiente Petrolero", away: "Oriente Petrolero", date: "2026-07-26" },
-        { home: "Nacional Potosí", away: "Real Tomayapo", date: "2026-07-26" },
-        { home: "Bolívar", away: "Real Potosí", date: "2026-07-26" },
         { home: "Blooming", away: "The Strongest", date: "2026-07-27" },
         { home: "Gualberto Villarroel San José", away: "Universitario de Vinto", date: "2026-07-27" },
         
@@ -1590,12 +1542,6 @@ const leaguesData = {
         { rank: 11, team: "FF Jaro", MP: 15, MW: 2, MD: 5, ML: 8, GF: 15, GA: 32, logo: "finland/ffjaro.png" },
         { rank: 12, team: "IFK Mariehamn", MP: 15, MW: 0, MD: 4, ML: 11, GF: 8, GA: 33, logo: "finland/ifkmariehamn.png" }
     ],
-        fixtures: [
-		// Matchday - July 26
-        { home: "Inter Turku", away: "Gnistan", date: "2026-07-26" },
-        { home: "Ilves", away: "FC Lahti", date: "2026-07-26" },
-        { home: "HJK", away: "Turun", date: "2026-07-26" },
-        
         // Matchday - August 1
         { home: "Turun", away: "IFK Mariehamn", date: "2026-08-01" },
         { home: "FC Lahti", away: "FF Jaro", date: "2026-08-01" },
@@ -1665,8 +1611,6 @@ const leaguesData = {
         { rank: 19, team: "Atlante", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "mexico/atlante.png" }
     ],
     fixtures: [
-        { home: "Guadalajara Chivas", away: "Juarez", date: "2026-07-26" },
-        { home: "Santos Laguna", away: "Atlas", date: "2026-07-26" },
         { home: "Necaxa", away: "Monterrey", date: "2026-07-27" },
         { home: "Pachuca", away: "Queretaro", date: "2026-07-27" },
         
@@ -1710,9 +1654,6 @@ const leaguesData = {
         { rank: 20, team: "Deportivo Pereira", MP: 19, MW: 1, MD: 7, ML: 11, GF: 15, GA: 32, logo: "colombia/pereira.png" }
     ],
      fixtures: [
-        // Matchday 2 - July 26-27
-        { home: "Internacional de Bogotá", away: "América de Cali", date: "2026-07-26" },
-        { home: "Rionegro Águilas", away: "Santa Fe", date: "2026-07-26" },
         { home: "Alianza", away: "Fortaleza FC", date: "2026-07-27" },
         { home: "Once Caldas", away: "Cúcuta Deportivo", date: "2026-07-27" },
         
@@ -1791,22 +1732,6 @@ const leaguesData = {
         { rank: 15, team: "Sporting KC", MP: 17, MW: 4, MD: 2, ML: 11, GF: 18, GA: 34, logo: "mls/sportingkclogo.png" }
     ],
     fixtures: [
-        // Sunday, July 26
-        { home: "Columbus", away: "Cincinnati", date: "2026-07-26" },
-        { home: "Philadelphia", away: "Seattle Sounders", date: "2026-07-26" },
-        { home: "Montréal", away: "Inter Miami", date: "2026-07-26" },
-        { home: "Orlando City", away: "Nashville", date: "2026-07-26" },
-        { home: "New York City", away: "Chicago", date: "2026-07-26" },
-        { home: "D.C. United", away: "Toronto", date: "2026-07-26" },
-        { home: "New England", away: "Atlanta United", date: "2026-07-26" },
-        { home: "Houston Dynamo", away: "Austin", date: "2026-07-26" },
-        { home: "Minnesota", away: "Vancouver", date: "2026-07-26" },
-        { home: "St. Louis", away: "Colorado", date: "2026-07-26" },
-        { home: "San Diego", away: "Dallas", date: "2026-07-26" },
-        { home: "San Jose", away: "LA Galaxy", date: "2026-07-26" },
-        { home: "LAFC", away: "Sporting KC", date: "2026-07-26" },
-        { home: "Portland", away: "Real Salt Lake", date: "2026-07-26" },
-        
         // August 2
         { home: "New York City", away: "Toronto", date: "2026-08-02" },
         { home: "Cincinnati", away: "San Jose", date: "2026-08-02" },
@@ -1990,9 +1915,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 27, GW: 6, GL: 21, points_for: 2079, points_against: 2376, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Sunday, July 26 - All-Star Game
-        { home: "Team Spoon", away: "Team Coop", date: "2026-07-26" },
-        
         // Wednesday, July 29
         { home: "Connecticut Sun", away: "Washington Mystics", date: "2026-07-29" },
         { home: "Toronto Tempo", away: "Minnesota Lynx", date: "2026-07-29" },
