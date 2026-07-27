@@ -1542,7 +1542,7 @@ const leaguesData = {
         { rank: 11, team: "FF Jaro", MP: 15, MW: 2, MD: 5, ML: 8, GF: 15, GA: 32, logo: "finland/ffjaro.png" },
         { rank: 12, team: "IFK Mariehamn", MP: 15, MW: 0, MD: 4, ML: 11, GF: 8, GA: 33, logo: "finland/ifkmariehamn.png" }
     ],
-        // Matchday - August 1
+     fixtures: [   // Matchday - August 1
         { home: "Turun", away: "IFK Mariehamn", date: "2026-08-01" },
         { home: "FC Lahti", away: "FF Jaro", date: "2026-08-01" },
         { home: "Gnistan", away: "KuPS", date: "2026-08-01" }
