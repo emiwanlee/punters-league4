@@ -1968,7 +1968,7 @@ const leaguesData = {
         { home: "Phoenix Mercury", away: "Connecticut Sun", date: "2026-08-08" },
         { home: "Atlanta Dream", away: "Washington Mystics", date: "2026-08-08" }
     ]
-},,
+},
 /*
 "NBA": {
     id: "nba",
