@@ -233,12 +233,6 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        { home: "Banfield", away: "Sarmiento", date: "2026-07-28" },
-        { home: "San Lorenzo", away: "Gimnasia Mendoza", date: "2026-07-28" },
-        
-        // Round 2 - July 28-31
-        { home: "Banfield", away: "Sarmiento Junin", date: "2026-07-28" },
-        { home: "San Lorenzo", away: "Gimnasia Mendoza", date: "2026-07-28" },
         { home: "Argentinos Jrs", away: "Estudiantes Rio Cuarto", date: "2026-07-29" },
         { home: "Rosario Central", away: "Racing Club", date: "2026-07-29" },
         { home: "Barracas Central", away: "Aldosivi", date: "2026-07-29" },
@@ -460,8 +454,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 19, MW: 1, MD: 5, ML: 13, GF: 13, GA: 31, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        { home: "Juventude", away: "Avaí", date: "2026-07-28" },
-        { home: "Ponte Preta", away: "Athletic (MG)", date: "2026-07-28" },
         { home: "Fortaleza", away: "Botafogo", date: "2026-07-29" },
         
         // Matchday 22 - August 7-11
@@ -811,9 +803,6 @@ const leaguesData = {
         { rank: 16, team: "Unión La Calera", MP: 15, MW: 3, MD: 3, ML: 9, GF: 14, GA: 28, logo: "chile/unionlacalera.png" }
     ],
     fixtures: [
-        // Matchday 17 - July 26-28
-        { home: "Unión La Calera", away: "Everton", date: "2026-07-28" },
-        
         // Matchday 18 - August 1-2
         { home: "Universidad de Concepción", away: "Audax Italiano", date: "2026-08-01" },
         { home: "Cobresal", away: "Unión La Calera", date: "2026-08-01" },
