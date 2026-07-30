@@ -233,11 +233,6 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        { home: "Argentinos Jrs", away: "Estudiantes Rio Cuarto", date: "2026-07-29" },
-        { home: "Rosario Central", away: "Racing Club", date: "2026-07-29" },
-        { home: "Barracas Central", away: "Aldosivi", date: "2026-07-29" },
-        { home: "Defensa y Justicia", away: "Deportivo Riestra", date: "2026-07-29" },
-        { home: "Gimnasia L.P.", away: "River Plate", date: "2026-07-29" },
         { home: "Instituto", away: "Platense", date: "2026-07-30" },
         { home: "Ind. Rivadavia", away: "Huracán", date: "2026-07-30" },
         { home: "Talleres Cordoba", away: "Vélez Sarsfield", date: "2026-07-30" },
@@ -281,9 +276,6 @@ const leaguesData = {
         { rank: 11, team: "Brindabella", MP: 15, MW: 2, MD: 0, ML: 13, GF: 8, GA: 46, logo: "australia/brindabella.png" }
     ],
     fixtures: [
-	// Round 7 (makeup) - July 29
-        { home: "Brindabella", away: "Queanbeyan City", date: "2026-07-29" },
-        
         // Round 19 - August 1-2
         { home: "Canberra Olympic", away: "Tuggeranong Utd", date: "2026-08-01" },
         { home: "Queanbeyan City", away: "Brindabella", date: "2026-08-01" },
@@ -402,9 +394,6 @@ const leaguesData = {
         { rank: 20, team: "Chapecoense", MP: 20, MW: 1, MD: 7, ML: 12, GF: 19, GA: 41, logo: "brazil/chapecoense.png" }
     ],
     fixtures: [
-        // Matchday 21 - July 29-31
-        { home: "Internacional", away: "Flamengo", date: "2026-07-29" },
-        { home: "Mirassol", away: "Remo", date: "2026-07-29" },
         { home: "Vitória", away: "Palmeiras", date: "2026-07-30" },
         { home: "Fluminense", away: "Bahia", date: "2026-07-30" },
         { home: "Chapecoense", away: "Vasco", date: "2026-07-30" },
@@ -454,8 +443,6 @@ const leaguesData = {
         { rank: 20, team: "América-MG", MP: 19, MW: 1, MD: 5, ML: 13, GF: 13, GA: 31, logo: "brazil/americamg.png" }
     ],
     fixtures: [
-        { home: "Fortaleza", away: "Botafogo", date: "2026-07-29" },
-        
         // Matchday 22 - August 7-11
         { home: "Operário Ferroviário", away: "São Bernardo", date: "2026-08-07" },
         { home: "Ceará", away: "Ponte Preta", date: "2026-08-08" },
@@ -533,13 +520,6 @@ const leaguesData = {
         { rank: 16, team: "Manta", MP: 22, MW: 3, MD: 5, ML: 14, GF: 8, GA: 27, logo: "ecuador/manta.png" }
     ],
     fixtures: [
-        // Round 22 - July 28-30
-        { home: "Mushuc Runa", away: "Libertad", date: "2026-07-28" },
-        { home: "Aucas", away: "Manta", date: "2026-07-28" },
-        { home: "Dep. Cuenca", away: "Orense", date: "2026-07-28" },
-        { home: "Guayaquil City", away: "U. Catolica", date: "2026-07-29" },
-        { home: "Barcelona SC", away: "LDU Quito", date: "2026-07-29" },
-        { home: "Delfin", away: "Leones del Norte", date: "2026-07-29" },
         { home: "Emelec", away: "Macara", date: "2026-07-30" },
         { home: "Tecnico U.", away: "Ind. del Valle", date: "2026-07-30" },
         
@@ -1165,30 +1145,45 @@ const leaguesData = {
     logo: "sweden/superettan.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Falkenberg", MP: 14, MW: 8, MD: 4, ML: 2, GF: 28, GA: 20, logo: "sweden/falkenberg.png" },
-        { rank: 2, team: "Varbergs BoIS", MP: 14, MW: 8, MD: 3, ML: 3, GF: 28, GA: 17, logo: "sweden/varbergsbois.png" },
-        { rank: 3, team: "Norrköping", MP: 14, MW: 8, MD: 2, ML: 4, GF: 23, GA: 10, logo: "sweden/norrkoping.png" },
-        { rank: 4, team: "Landskrona", MP: 14, MW: 7, MD: 4, ML: 3, GF: 22, GA: 14, logo: "sweden/landskrona.png" },
-        { rank: 5, team: "Östersund", MP: 14, MW: 6, MD: 4, ML: 4, GF: 22, GA: 19, logo: "sweden/ostersund.png" },
-        { rank: 6, team: "United Nordic", MP: 14, MW: 6, MD: 4, ML: 4, GF: 23, GA: 22, logo: "sweden/unitednordic.png" },
-        { rank: 7, team: "Oddevold", MP: 14, MW: 5, MD: 5, ML: 4, GF: 26, GA: 22, logo: "sweden/oddevold.png" },
-        { rank: 8, team: "Östers IF", MP: 14, MW: 6, MD: 2, ML: 6, GF: 21, GA: 23, logo: "sweden/osters.png" },
-        { rank: 9, team: "Helsingborg", MP: 14, MW: 6, MD: 2, ML: 6, GF: 26, GA: 29, logo: "sweden/helsingborg.png" },
-        { rank: 10, team: "Sandviken", MP: 14, MW: 5, MD: 4, ML: 5, GF: 24, GA: 20, logo: "sweden/sandviken.png" },
-        { rank: 11, team: "Brage", MP: 14, MW: 4, MD: 4, ML: 6, GF: 26, GA: 26, logo: "sweden/brage.png" },
-        { rank: 12, team: "Ljungskile", MP: 14, MW: 4, MD: 4, ML: 6, GF: 18, GA: 18, logo: "sweden/ljungskile.png" },
-        { rank: 13, team: "Norrby", MP: 14, MW: 2, MD: 8, ML: 4, GF: 16, GA: 20, logo: "sweden/norrby.png" },
-        { rank: 14, team: "Örebro", MP: 14, MW: 3, MD: 5, ML: 6, GF: 13, GA: 20, logo: "sweden/orebro.png" },
-        { rank: 15, team: "Värnamo", MP: 14, MW: 3, MD: 1, ML: 10, GF: 15, GA: 31, logo: "sweden/varnamo.png" },
-        { rank: 16, team: "GIF Sundsvall", MP: 14, MW: 3, MD: 0, ML: 11, GF: 11, GA: 31, logo: "sweden/gifsundsvall.png" }
+        { rank: 1, team: "Norrköping", MP: 16, MW: 10, MD: 2, ML: 4, GF: 27, GA: 10, logo: "sweden/norrkoping.png" },
+        { rank: 2, team: "Falkenberg", MP: 16, MW: 9, MD: 4, ML: 3, GF: 32, GA: 24, logo: "sweden/falkenberg.png" },
+        { rank: 3, team: "Varbergs BoIS", MP: 16, MW: 9, MD: 3, ML: 4, GF: 32, GA: 22, logo: "sweden/varbergsbois.png" },
+        { rank: 4, team: "Östersund", MP: 16, MW: 7, MD: 5, ML: 4, GF: 26, GA: 21, logo: "sweden/ostersund.png" },
+        { rank: 5, team: "United Nordic", MP: 16, MW: 7, MD: 5, ML: 4, GF: 26, GA: 23, logo: "sweden/unitednordic.png" },
+        { rank: 6, team: "Östers IF", MP: 16, MW: 8, MD: 2, ML: 6, GF: 27, GA: 25, logo: "sweden/osters.png" },
+        { rank: 7, team: "Landskrona", MP: 16, MW: 7, MD: 4, ML: 5, GF: 22, GA: 17, logo: "sweden/landskrona.png" },
+        { rank: 8, team: "Helsingborg", MP: 16, MW: 7, MD: 3, ML: 6, GF: 30, GA: 32, logo: "sweden/helsingborg.png" },
+        { rank: 9, team: "Ljungskile", MP: 16, MW: 6, MD: 4, ML: 6, GF: 23, GA: 21, logo: "sweden/ljungskile.png" },
+        { rank: 10, team: "Oddevold", MP: 16, MW: 5, MD: 6, ML: 5, GF: 28, GA: 26, logo: "sweden/oddevold.png" },
+        { rank: 11, team: "Sandviken", MP: 16, MW: 5, MD: 4, ML: 7, GF: 25, GA: 25, logo: "sweden/sandviken.png" },
+        { rank: 12, team: "Norrby", MP: 16, MW: 3, MD: 9, ML: 4, GF: 21, GA: 23, logo: "sweden/norrby.png" },
+        { rank: 13, team: "Brage", MP: 16, MW: 4, MD: 5, ML: 7, GF: 28, GA: 29, logo: "sweden/brage.png" },
+        { rank: 14, team: "Örebro", MP: 16, MW: 3, MD: 6, ML: 7, GF: 13, GA: 22, logo: "sweden/orebro.png" },
+        { rank: 15, team: "Värnamo", MP: 16, MW: 3, MD: 2, ML: 11, GF: 17, GA: 34, logo: "sweden/varnamo.png" },
+        { rank: 16, team: "GIF Sundsvall", MP: 16, MW: 3, MD: 0, ML: 13, GF: 13, GA: 36, logo: "sweden/gifsundsvall.png" }
     ],
     fixtures: [
-        // Matchday 17 - July 28
-        { home: "Helsingborg", away: "United Nordic", date: "2026-07-28" },
-        { home: "Landskrona", away: "Norrköping", date: "2026-07-28" }
+        // Matchday 17 - July 31 - August 3
+        { home: "Oddevold", away: "Norrby", date: "2026-07-31" },
+        { home: "Östersund", away: "Östers IF", date: "2026-08-01" },
+        { home: "Sandviken", away: "GIF Sundsvall", date: "2026-08-01" },
+        { home: "Varbergs BoIS", away: "Falkenberg", date: "2026-08-01" },
+        { home: "Norrköping", away: "Helsingborg", date: "2026-08-01" },
+        { home: "Brage", away: "Landskrona", date: "2026-08-01" },
+        { home: "United Nordic", away: "Ljungskile", date: "2026-08-02" },
+        { home: "Örebro", away: "Värnamo", date: "2026-08-03" },
+        
+        // Matchday 18 - August 7-11
+        { home: "Östersund", away: "GIF Sundsvall", date: "2026-08-07" },
+        { home: "Ljungskile", away: "Oddevold", date: "2026-08-08" },
+        { home: "Falkenberg", away: "United Nordic", date: "2026-08-08" },
+        { home: "Östers IF", away: "Landskrona", date: "2026-08-08" },
+        { home: "Norrköping", away: "Brage", date: "2026-08-08" },
+        { home: "Varbergs BoIS", away: "Sandviken", date: "2026-08-09" },
+        { home: "Norrby", away: "Örebro", date: "2026-08-10" },
+        { home: "Helsingborg", away: "Värnamo", date: "2026-08-11" }
     ]
 },
-
 "Swedish Ettan Norra": {
     id: "sweden-ettan-norra",
     logo: "sweden/ettan.png",
@@ -1357,8 +1352,6 @@ const leaguesData = {
         { rank: 16, team: "Strømmen", MP: 14, MW: 3, MD: 2, ML: 9, GF: 18, GA: 36, logo: "norway/stremmen.png" }
     ],
     fixtures: [
-        { home: "Stabæk", away: "Hødd", date: "2026-07-27" },
-        
         // Matchday 16 - August 1-3
         { home: "Bryne FK", away: "Stroemsgodset", date: "2026-08-01" },
         { home: "Kongsvinger", away: "Strømmen", date: "2026-08-02" },
@@ -1903,12 +1896,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 29, GW: 6, GL: 23, points_for: 2233, points_against: 2552, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Wednesday, July 29
-        { home: "Connecticut Sun", away: "Washington Mystics", date: "2026-07-29" },
-        { home: "Toronto Tempo", away: "Minnesota Lynx", date: "2026-07-29" },
-        { home: "Indiana Fever", away: "Seattle Storm", date: "2026-07-29" },
-        { home: "Portland Fire", away: "Las Vegas Aces", date: "2026-07-29" },
-        { home: "New York Liberty", away: "Los Angeles Sparks", date: "2026-07-29" },
         
         // Thursday, July 30
         { home: "Atlanta Dream", away: "Dallas Wings", date: "2026-07-30" },
