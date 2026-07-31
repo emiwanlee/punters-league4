@@ -233,8 +233,6 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        { home: "Instituto", away: "Platense", date: "2026-07-30" },
-        { home: "Ind. Rivadavia", away: "Huracán", date: "2026-07-30" },
         { home: "Talleres Cordoba", away: "Vélez Sarsfield", date: "2026-07-30" },
         { home: "Central Cordoba", away: "Atlético Tucumán", date: "2026-07-31" },
         { home: "Independiente", away: "Newell's Old Boys", date: "2026-07-31" },
@@ -394,13 +392,6 @@ const leaguesData = {
         { rank: 20, team: "Chapecoense", MP: 20, MW: 1, MD: 7, ML: 12, GF: 19, GA: 41, logo: "brazil/chapecoense.png" }
     ],
     fixtures: [
-        { home: "Vitória", away: "Palmeiras", date: "2026-07-30" },
-        { home: "Fluminense", away: "Bahia", date: "2026-07-30" },
-        { home: "Chapecoense", away: "Vasco", date: "2026-07-30" },
-        { home: "Atlético Mineiro", away: "Bragantino", date: "2026-07-30" },
-        { home: "São Paulo", away: "Santos", date: "2026-07-30" },
-        { home: "Botafogo", away: "Grêmio", date: "2026-07-30" },
-        { home: "Corinthians", away: "Athletico-PR", date: "2026-07-30" },
         { home: "Coritiba", away: "Cruzeiro", date: "2026-07-31" },
         
         // Matchday 22 - August 8-9
@@ -520,9 +511,6 @@ const leaguesData = {
         { rank: 16, team: "Manta", MP: 22, MW: 3, MD: 5, ML: 14, GF: 8, GA: 27, logo: "ecuador/manta.png" }
     ],
     fixtures: [
-        { home: "Emelec", away: "Macara", date: "2026-07-30" },
-        { home: "Tecnico U.", away: "Ind. del Valle", date: "2026-07-30" },
-        
         // Round 23 - August 1-4
         { home: "Libertad", away: "Orense", date: "2026-08-01" },
         { home: "Manta", away: "Mushuc Runa", date: "2026-08-01" },
@@ -1515,23 +1503,41 @@ const leaguesData = {
     logo: "finland/veikkausliiga.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "KuPS", MP: 16, MW: 9, MD: 6, ML: 1, GF: 29, GA: 15, logo: "finland/kups.png" },
-        { rank: 2, team: "Inter Turku", MP: 15, MW: 8, MD: 6, ML: 1, GF: 23, GA: 12, logo: "finland/interturku.png" },
-        { rank: 3, team: "VPS", MP: 16, MW: 7, MD: 6, ML: 3, GF: 23, GA: 13, logo: "finland/vps.png" },
-        { rank: 4, team: "Oulu", MP: 16, MW: 8, MD: 2, ML: 6, GF: 20, GA: 20, logo: "finland/oulu.png" },
-        { rank: 5, team: "HJK", MP: 16, MW: 7, MD: 4, ML: 5, GF: 27, GA: 20, logo: "finland/hjk.png" },
-        { rank: 6, team: "Gnistan", MP: 16, MW: 7, MD: 4, ML: 5, GF: 25, GA: 20, logo: "finland/gnistan.png" },
-        { rank: 7, team: "Turun", MP: 15, MW: 6, MD: 4, ML: 5, GF: 19, GA: 16, logo: "finland/turun.png" },
-        { rank: 8, team: "FC Lahti", MP: 15, MW: 5, MD: 4, ML: 6, GF: 18, GA: 15, logo: "finland/fclahti.png" },
-        { rank: 9, team: "Ilves", MP: 15, MW: 4, MD: 4, ML: 7, GF: 25, GA: 29, logo: "finland/ilves.png" },
-        { rank: 10, team: "SJK", MP: 16, MW: 3, MD: 5, ML: 8, GF: 18, GA: 25, logo: "finland/sjk.png" },
-        { rank: 11, team: "FF Jaro", MP: 15, MW: 2, MD: 5, ML: 8, GF: 15, GA: 32, logo: "finland/ffjaro.png" },
-        { rank: 12, team: "IFK Mariehamn", MP: 15, MW: 0, MD: 4, ML: 11, GF: 8, GA: 33, logo: "finland/ifkmariehamn.png" }
+        { rank: 1, team: "KuPS", MP: 17, MW: 10, MD: 6, ML: 1, GF: 32, GA: 16, logo: "finland/kups.png" },
+        { rank: 2, team: "Inter Turku", MP: 17, MW: 8, MD: 7, ML: 2, GF: 24, GA: 14, logo: "finland/interturku.png" },
+        { rank: 3, team: "HJK", MP: 17, MW: 8, MD: 4, ML: 5, GF: 28, GA: 20, logo: "finland/hjk.png" },
+        { rank: 4, team: "Gnistan", MP: 17, MW: 8, MD: 4, ML: 5, GF: 27, GA: 21, logo: "finland/gnistan.png" },
+        { rank: 5, team: "VPS", MP: 17, MW: 7, MD: 6, ML: 4, GF: 24, GA: 16, logo: "finland/vps.png" },
+        { rank: 6, team: "Oulu", MP: 17, MW: 8, MD: 3, ML: 6, GF: 21, GA: 21, logo: "finland/oulu.png" },
+        { rank: 7, team: "FC Lahti", MP: 17, MW: 6, MD: 4, ML: 7, GF: 20, GA: 16, logo: "finland/fclahti.png" },
+        { rank: 8, team: "Turun", MP: 17, MW: 6, MD: 4, ML: 7, GF: 20, GA: 20, logo: "finland/turun.png" },
+        { rank: 9, team: "Ilves", MP: 17, MW: 6, MD: 4, ML: 7, GF: 29, GA: 30, logo: "finland/ilves.png" },
+        { rank: 10, team: "FF Jaro", MP: 17, MW: 3, MD: 6, ML: 8, GF: 17, GA: 33, logo: "finland/ffjaro.png" },
+        { rank: 11, team: "SJK", MP: 17, MW: 3, MD: 5, ML: 9, GF: 19, GA: 27, logo: "finland/sjk.png" },
+        { rank: 12, team: "IFK Mariehamn", MP: 17, MW: 0, MD: 5, ML: 12, GF: 9, GA: 36, logo: "finland/ifkmariehamn.png" }
     ],
-     fixtures: [   // Matchday - August 1
+    fixtures: [
+        // August 1
         { home: "Turun", away: "IFK Mariehamn", date: "2026-08-01" },
         { home: "FC Lahti", away: "FF Jaro", date: "2026-08-01" },
-        { home: "Gnistan", away: "KuPS", date: "2026-08-01" }
+        { home: "Gnistan", away: "KuPS", date: "2026-08-01" },
+        
+        // August 2
+        { home: "VPS", away: "Inter Turku", date: "2026-08-02" },
+        { home: "Oulu", away: "Ilves", date: "2026-08-02" },
+        
+        // August 3
+        { home: "SJK", away: "HJK", date: "2026-08-03" },
+        
+        // August 7
+        { home: "SJK", away: "Gnistan", date: "2026-08-07" },
+        
+        // August 8
+        { home: "Oulu", away: "HJK", date: "2026-08-08" },
+        { home: "KuPS", away: "Turun", date: "2026-08-08" },
+        { home: "Inter Turku", away: "FC Lahti", date: "2026-08-08" },
+        { home: "Ilves", away: "IFK Mariehamn", date: "2026-08-08" },
+        { home: "FF Jaro", away: "VPS", date: "2026-08-08" }
     ]
 },
 
@@ -1896,11 +1902,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 29, GW: 6, GL: 23, points_for: 2233, points_against: 2552, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        
-        // Thursday, July 30
-        { home: "Atlanta Dream", away: "Dallas Wings", date: "2026-07-30" },
-        { home: "Golden State Valkyries", away: "Phoenix Mercury", date: "2026-07-30" },
-        
         // Friday, July 31
         { home: "Minnesota Lynx", away: "Toronto Tempo", date: "2026-07-31" },
         { home: "Connecticut Sun", away: "Chicago Sky", date: "2026-07-31" },
