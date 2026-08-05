@@ -234,8 +234,25 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        { home: "Central Cordoba", away: "San Lorenzo", date: "2026-08-04" },
-        { home: "Huracán", away: "Atlético Tucumán", date: "2026-08-04" }
+        // Matchday 4 - August 5-12
+        { home: "Boca", away: "Estudiantes", date: "2026-08-05" },
+        { home: "Tigre", away: "Belgrano", date: "2026-08-06" },
+        { home: "Unión", away: "Lanús", date: "2026-08-06" },
+        { home: "Central", away: "Aldosivi", date: "2026-08-07" },
+        { home: "Independiente Rivadavia", away: "Estudiantes de Río Cuarto", date: "2026-08-08" },
+        { home: "Deportivo Riestra", away: "Estudiantes", date: "2026-08-08" },
+        { home: "Atlético Tucumán", away: "Sarmiento", date: "2026-08-08" },
+        { home: "Tigre", away: "River Plate", date: "2026-08-08" },
+        { home: "Boca", away: "Vélez Sársfield", date: "2026-08-08" },
+        { home: "Independiente", away: "Platense", date: "2026-08-09" },
+        { home: "Instituto", away: "Gimnasia y Esgirma", date: "2026-08-09" },
+        { home: "San Lorenzo", away: "Huracán", date: "2026-08-09" },
+        { home: "Gimnasia LP", away: "Barracas Central", date: "2026-08-09" },
+        { home: "Defensa y Justicia", away: "Newell's", date: "2026-08-09" },
+        { home: "Argentinos Juniors", away: "Racing Club", date: "2026-08-10" },
+        { home: "Banfield", away: "Belgrano", date: "2026-08-10" },
+        { home: "Unión", away: "Central Córdoba", date: "2026-08-11" },
+        { home: "Talleres", away: "Lanús", date: "2026-08-12" }
     ]
 },
 
@@ -507,8 +524,6 @@ const leaguesData = {
         { rank: 16, team: "Manta", MP: 22, MW: 3, MD: 5, ML: 14, GF: 8, GA: 27, logo: "ecuador/manta.png" }
     ],
     fixtures: [
-        { home: "LDU Quito", away: "Delfin", date: "2026-08-04" },
-        
         // Round 24 - August 9
         { home: "Aucas", away: "Leones del Norte", date: "2026-08-09" },
         { home: "Barcelona SC", away: "Macara", date: "2026-08-09" },
@@ -1423,9 +1438,6 @@ const leaguesData = {
         { rank: 16, team: "Gualberto Villarroel San José", MP: 10, MW: 1, MD: 4, ML: 5, GF: 10, GA: 17, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
-        // Matchday 13 - August 4-7
-        { home: "Academia del Balompie Boliviano", away: "Real Oruro", date: "2026-08-04" },
-        { home: "Independiente Petrolero", away: "Aurora", date: "2026-08-04" },
         { home: "Guabirá", away: "Real Tomayapo", date: "2026-08-05" },
         { home: "Gualberto Villarroel San José", away: "SA Bulo Bulo", date: "2026-08-05" },
         { home: "Nacional Potosí", away: "The Strongest", date: "2026-08-05" },
@@ -1821,11 +1833,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 29, GW: 6, GL: 23, points_for: 2233, points_against: 2552, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Tuesday, August 4
-        { home: "Las Vegas Aces", away: "Atlanta Dream", date: "2026-08-04" },
-        { home: "Seattle Storm", away: "New York Liberty", date: "2026-08-04" },
-        { home: "Phoenix Mercury", away: "Chicago Sky", date: "2026-08-04" },
-        
         // Wednesday, August 5
         { home: "Toronto Tempo", away: "Golden State Valkyries", date: "2026-08-05" },
         
