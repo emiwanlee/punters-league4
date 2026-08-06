@@ -235,7 +235,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 4 - August 5-12
-        { home: "Boca", away: "Estudiantes", date: "2026-08-05" },
         { home: "Tigre", away: "Belgrano", date: "2026-08-06" },
         { home: "Unión", away: "Lanús", date: "2026-08-06" },
         { home: "Central", away: "Aldosivi", date: "2026-08-07" },
@@ -274,9 +273,6 @@ const leaguesData = {
         { rank: 11, team: "Brindabella", MP: 15, MW: 2, MD: 0, ML: 13, GF: 8, GA: 46, logo: "australia/brindabella.png" }
     ],
     fixtures: [
-        // Round 16 (makeup) - August 5
-        { home: "Queanbeyan City", away: "Tuggeranong Utd", date: "2026-08-05" },
-        
         // Round 20 - August 8
         { home: "Canberra Olympic", away: "Tigers FC", date: "2026-08-08" },
         { home: "Brindabella", away: "Tuggeranong Utd", date: "2026-08-08" },
@@ -1438,9 +1434,6 @@ const leaguesData = {
         { rank: 16, team: "Gualberto Villarroel San José", MP: 10, MW: 1, MD: 4, ML: 5, GF: 10, GA: 17, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
-        { home: "Guabirá", away: "Real Tomayapo", date: "2026-08-05" },
-        { home: "Gualberto Villarroel San José", away: "SA Bulo Bulo", date: "2026-08-05" },
-        { home: "Nacional Potosí", away: "The Strongest", date: "2026-08-05" },
         { home: "Bolívar", away: "Oriente Petrolero", date: "2026-08-06" },
         { home: "Universitario de Vinto", away: "Real Potosí", date: "2026-08-06" },
         { home: "Blooming", away: "Always Ready", date: "2026-08-07" },
@@ -1589,12 +1582,6 @@ const leaguesData = {
         { rank: 20, team: "Deportivo Pereira", MP: 19, MW: 1, MD: 7, ML: 11, GF: 15, GA: 32, logo: "colombia/pereira.png" }
     ],
      fixtures: [
- // Matchday 4 - August 4-7
-        { home: "Atlético Bucaramanga", away: "Cúcuta Deportivo", date: "2026-08-04" },
-        { home: "Llaneros FC", away: "Fortaleza FC", date: "2026-08-04" },
-        { home: "Tolima", away: "Independiente Medellín", date: "2026-08-05" },
-        { home: "Millonarios", away: "Deportivo Pasto", date: "2026-08-05" },
-        { home: "Internacional de Bogotá", away: "Jaguares de Córdoba", date: "2026-08-05" },
         { home: "Deportivo Pereira", away: "Santa Fe", date: "2026-08-06" },
         { home: "Once Caldas", away: "América de Cali", date: "2026-08-06" },
         { home: "Boyacá Chicó FC", away: "Alianza", date: "2026-08-06" },
@@ -1833,9 +1820,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 29, GW: 6, GL: 23, points_for: 2233, points_against: 2552, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Wednesday, August 5
-        { home: "Toronto Tempo", away: "Golden State Valkyries", date: "2026-08-05" },
-        
         // Thursday, August 6
         { home: "Phoenix Mercury", away: "Atlanta Dream", date: "2026-08-06" },
         { home: "Seattle Storm", away: "New York Liberty", date: "2026-08-06" },
