@@ -234,9 +234,6 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        // Matchday 4 - August 5-12
-        { home: "Tigre", away: "Belgrano", date: "2026-08-06" },
-        { home: "Unión", away: "Lanús", date: "2026-08-06" },
         { home: "Central", away: "Aldosivi", date: "2026-08-07" },
         { home: "Independiente Rivadavia", away: "Estudiantes de Río Cuarto", date: "2026-08-08" },
         { home: "Deportivo Riestra", away: "Estudiantes", date: "2026-08-08" },
@@ -260,27 +257,34 @@ const leaguesData = {
     logo: "australia/nplact.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Canberra Croatia", MP: 16, MW: 13, MD: 1, ML: 2, GF: 48, GA: 18, logo: "australia/canberracroatia.png" },
-        { rank: 2, team: "Monaro Panthers", MP: 16, MW: 13, MD: 0, ML: 3, GF: 56, GA: 22, logo: "australia/monaropanthers.png" },
-        { rank: 3, team: "Tigers FC", MP: 17, MW: 11, MD: 2, ML: 4, GF: 47, GA: 21, logo: "australia/tigersfc.png" },
-        { rank: 4, team: "Tuggeranong Utd", MP: 16, MW: 11, MD: 0, ML: 5, GF: 37, GA: 34, logo: "australia/tuggeranong.png" },
-        { rank: 5, team: "Canberra Juventus", MP: 16, MW: 10, MD: 0, ML: 6, GF: 34, GA: 29, logo: "australia/canberrajuv.png" },
-        { rank: 6, team: "Queanbeyan City", MP: 15, MW: 8, MD: 2, ML: 5, GF: 32, GA: 23, logo: "australia/queanbeyan.png" },
-        { rank: 7, team: "Canberra Olympic", MP: 16, MW: 5, MD: 2, ML: 9, GF: 34, GA: 43, logo: "australia/canberraolympic.png" },
-        { rank: 8, team: "O'Connor Knights", MP: 16, MW: 5, MD: 1, ML: 10, GF: 16, GA: 31, logo: "australia/oconnorknights.png" },
-        { rank: 9, team: "Belconnen Utd.", MP: 16, MW: 2, MD: 3, ML: 11, GF: 24, GA: 35, logo: "australia/belconnenutd.png" },
-        { rank: 10, team: "Canberra White Eagles", MP: 17, MW: 2, MD: 1, ML: 14, GF: 14, GA: 48, logo: "australia/whiteeagles.png" },
-        { rank: 11, team: "Brindabella", MP: 15, MW: 2, MD: 0, ML: 13, GF: 8, GA: 46, logo: "australia/brindabella.png" }
+        { rank: 1, team: "Canberra Croatia", MP: 17, MW: 14, MD: 1, ML: 2, GF: 52, GA: 18, logo: "australia/canberracroatia.png" },
+        { rank: 2, team: "Monaro Panthers", MP: 17, MW: 13, MD: 1, ML: 3, GF: 57, GA: 23, logo: "australia/monaropanthers.png" },
+        { rank: 3, team: "Tigers FC", MP: 18, MW: 12, MD: 2, ML: 4, GF: 48, GA: 21, logo: "australia/tigersfc.png" },
+        { rank: 4, team: "Tuggeranong Utd", MP: 18, MW: 12, MD: 0, ML: 6, GF: 41, GA: 39, logo: "australia/tuggeranong.png" },
+        { rank: 5, team: "Queanbeyan City", MP: 18, MW: 10, MD: 2, ML: 6, GF: 39, GA: 27, logo: "australia/queanbeyan.png" },
+        { rank: 6, team: "Canberra Juventus", MP: 17, MW: 10, MD: 0, ML: 7, GF: 34, GA: 33, logo: "australia/canberrajuv.png" },
+        { rank: 7, team: "Canberra Olympic", MP: 17, MW: 5, MD: 2, ML: 10, GF: 35, GA: 45, logo: "australia/canberraolympic.png" },
+        { rank: 8, team: "O'Connor Knights", MP: 17, MW: 5, MD: 2, ML: 10, GF: 17, GA: 32, logo: "australia/oconnorknights.png" },
+        { rank: 9, team: "Belconnen Utd.", MP: 17, MW: 2, MD: 3, ML: 12, GF: 24, GA: 36, logo: "australia/belconnenutd.png" },
+        { rank: 10, team: "Brindabella", MP: 17, MW: 3, MD: 0, ML: 14, GF: 10, GA: 49, logo: "australia/brindabella.png" },
+        { rank: 11, team: "Canberra White Eagles", MP: 17, MW: 2, MD: 1, ML: 14, GF: 14, GA: 48, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-        // Round 20 - August 8
+        // Round 20 - August 8-9
         { home: "Canberra Olympic", away: "Tigers FC", date: "2026-08-08" },
         { home: "Brindabella", away: "Tuggeranong Utd", date: "2026-08-08" },
         { home: "Canberra Croatia", away: "O'Connor Knights", date: "2026-08-08" },
-        { home: "Monaro Panthers", away: "Belconnen Utd.", date: "2026-08-08" }
+        { home: "Monaro Panthers", away: "Belconnen Utd.", date: "2026-08-08" },
+        { home: "Canberra Juventus", away: "Canberra White Eagles", date: "2026-08-09" },
+        
+        // Round 21 - August 15-16
+        { home: "Brindabella", away: "Tigers FC", date: "2026-08-15" },
+        { home: "O'Connor Knights", away: "Canberra White Eagles", date: "2026-08-15" },
+        { home: "Monaro Panthers", away: "Canberra Croatia", date: "2026-08-15" },
+        { home: "Belconnen Utd.", away: "Canberra Olympic", date: "2026-08-16" },
+        { home: "Canberra Juventus", away: "Queanbeyan City", date: "2026-08-16" }
     ]
-},
-"Australian NPL Victoria": {
+},"Australian NPL Victoria": {
     id: "australia-npl-victoria",
     logo: "australia/nplvictoria.png",
     isBasketball: false,
@@ -1434,8 +1438,6 @@ const leaguesData = {
         { rank: 16, team: "Gualberto Villarroel San José", MP: 10, MW: 1, MD: 4, ML: 5, GF: 10, GA: 17, logo: "bolivia/gualberto.png" }
     ],
     fixtures: [
-        { home: "Bolívar", away: "Oriente Petrolero", date: "2026-08-06" },
-        { home: "Universitario de Vinto", away: "Real Potosí", date: "2026-08-06" },
         { home: "Blooming", away: "Always Ready", date: "2026-08-07" },
         
         // Matchday 14 - August 7-10
@@ -1582,9 +1584,6 @@ const leaguesData = {
         { rank: 20, team: "Deportivo Pereira", MP: 19, MW: 1, MD: 7, ML: 11, GF: 15, GA: 32, logo: "colombia/pereira.png" }
     ],
      fixtures: [
-        { home: "Deportivo Pereira", away: "Santa Fe", date: "2026-08-06" },
-        { home: "Once Caldas", away: "América de Cali", date: "2026-08-06" },
-        { home: "Boyacá Chicó FC", away: "Alianza", date: "2026-08-06" },
         { home: "Deportivo Cali", away: "Rionegro Águilas", date: "2026-08-07" },
         
         // Matchday 5 - August 8-12
@@ -1801,39 +1800,75 @@ const leaguesData = {
     isBasketball: true,
     teams: [
         // Eastern Conference
-        { rank: 1, team: "New York Liberty", GP: 27, GW: 15, GL: 12, points_for: 2403, points_against: 2280, logo: "wnba/liberty.png" },
-        { rank: 2, team: "Atlanta Dream", GP: 26, GW: 16, GL: 10, points_for: 2288, points_against: 2210, logo: "wnba/dream.png" },
-        { rank: 3, team: "Indiana Fever", GP: 27, GW: 17, GL: 10, points_for: 2457, points_against: 2322, logo: "wnba/fever.png" },
-        { rank: 4, team: "Washington Mystics", GP: 26, GW: 14, GL: 12, points_for: 2145, points_against: 2140, logo: "wnba/mystics.png" },
-        { rank: 5, team: "Toronto Tempo", GP: 26, GW: 10, GL: 16, points_for: 2236, points_against: 2340, logo: "wnba/tempo.png" },
-        { rank: 6, team: "Chicago Sky", GP: 27, GW: 9, GL: 18, points_for: 2214, points_against: 2457, logo: "wnba/sky.png" },
-        { rank: 7, team: "Connecticut Sun", GP: 27, GW: 7, GL: 20, points_for: 2052, points_against: 2376, logo: "wnba/sun.png" },
+        { rank: 1, team: "New York Liberty", GP: 32, GW: 19, GL: 13, points_for: 2848, points_against: 2704, logo: "wnba/liberty.png" },
+        { rank: 2, team: "Atlanta Dream", GP: 30, GW: 19, GL: 11, points_for: 2640, points_against: 2550, logo: "wnba/dream.png" },
+        { rank: 3, team: "Indiana Fever", GP: 30, GW: 19, GL: 11, points_for: 2730, points_against: 2580, logo: "wnba/fever.png" },
+        { rank: 4, team: "Washington Mystics", GP: 29, GW: 17, GL: 12, points_for: 2392, points_against: 2386, logo: "wnba/mystics.png" },
+        { rank: 5, team: "Chicago Sky", GP: 31, GW: 12, GL: 19, points_for: 2542, points_against: 2821, logo: "wnba/sky.png" },
+        { rank: 6, team: "Toronto Tempo", GP: 30, GW: 10, GL: 20, points_for: 2580, points_against: 2700, logo: "wnba/tempo.png" },
+        { rank: 7, team: "Connecticut Sun", GP: 30, GW: 7, GL: 23, points_for: 2280, points_against: 2640, logo: "wnba/sun.png" },
         
         // Western Conference
-        { rank: 1, team: "Minnesota Lynx", GP: 28, GW: 22, GL: 6, points_for: 2520, points_against: 2268, logo: "wnba/lynx.png" },
-        { rank: 2, team: "Golden State Valkyries", GP: 27, GW: 19, GL: 8, points_for: 2295, points_against: 2133, logo: "wnba/valkyries.png" },
-        { rank: 3, team: "Dallas Wings", GP: 27, GW: 18, GL: 9, points_for: 2349, points_against: 2214, logo: "wnba/wings.png" },
-        { rank: 4, team: "Las Vegas Aces", GP: 26, GW: 18, GL: 8, points_for: 2366, points_against: 2132, logo: "wnba/aces.png" },
-        { rank: 5, team: "Portland Fire", GP: 27, GW: 11, GL: 16, points_for: 2295, points_against: 2430, logo: "wnba/fire.png" },
-        { rank: 6, team: "Los Angeles Sparks", GP: 26, GW: 10, GL: 16, points_for: 2288, points_against: 2392, logo: "wnba/sparks.png" },
-        { rank: 7, team: "Phoenix Mercury", GP: 28, GW: 10, GL: 18, points_for: 2240, points_against: 2464, logo: "wnba/mercury.png" },
-        { rank: 8, team: "Seattle Storm", GP: 29, GW: 6, GL: 23, points_for: 2233, points_against: 2552, logo: "wnba/storm.png" }
+        { rank: 1, team: "Minnesota Lynx", GP: 31, GW: 25, GL: 6, points_for: 2790, points_against: 2511, logo: "wnba/lynx.png" },
+        { rank: 2, team: "Golden State Valkyries", GP: 30, GW: 21, GL: 9, points_for: 2550, points_against: 2370, logo: "wnba/valkyries.png" },
+        { rank: 3, team: "Las Vegas Aces", GP: 30, GW: 21, GL: 9, points_for: 2730, points_against: 2460, logo: "wnba/aces.png" },
+        { rank: 4, team: "Dallas Wings", GP: 31, GW: 19, GL: 12, points_for: 2697, points_against: 2542, logo: "wnba/wings.png" },
+        { rank: 5, team: "Portland Fire", GP: 30, GW: 11, GL: 19, points_for: 2550, points_against: 2700, logo: "wnba/fire.png" },
+        { rank: 6, team: "Los Angeles Sparks", GP: 29, GW: 11, GL: 18, points_for: 2552, points_against: 2668, logo: "wnba/sparks.png" },
+        { rank: 7, team: "Phoenix Mercury", GP: 32, GW: 12, GL: 20, points_for: 2560, points_against: 2816, logo: "wnba/mercury.png" },
+        { rank: 8, team: "Seattle Storm", GP: 33, GW: 6, GL: 27, points_for: 2541, points_against: 2904, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // Thursday, August 6
-        { home: "Phoenix Mercury", away: "Atlanta Dream", date: "2026-08-06" },
-        { home: "Seattle Storm", away: "New York Liberty", date: "2026-08-06" },
-        { home: "Dallas Wings", away: "Washington Mystics", date: "2026-08-06" },
-        { home: "Los Angeles Sparks", away: "Chicago Sky", date: "2026-08-06" },
-        
-        // Friday, August 7
+        // August 7
         { home: "Las Vegas Aces", away: "Indiana Fever", date: "2026-08-07" },
         { home: "Los Angeles Sparks", away: "Minnesota Lynx", date: "2026-08-07" },
         { home: "Toronto Tempo", away: "Portland Fire", date: "2026-08-07" },
         
-        // Saturday, August 8
+        // August 8
         { home: "Phoenix Mercury", away: "Connecticut Sun", date: "2026-08-08" },
-        { home: "Atlanta Dream", away: "Washington Mystics", date: "2026-08-08" }
+        { home: "Atlanta Dream", away: "Washington Mystics", date: "2026-08-08" },
+        { home: "Golden State Valkyries", away: "Dallas Wings", date: "2026-08-08" },
+        { home: "Las Vegas Aces", away: "Minnesota Lynx", date: "2026-08-08" },
+        { home: "Indiana Fever", away: "Chicago Sky", date: "2026-08-08" },
+        
+        // August 9
+        { home: "Seattle Storm", away: "Portland Fire", date: "2026-08-09" },
+        { home: "Las Vegas Aces", away: "New York Liberty", date: "2026-08-09" },
+        { home: "Phoenix Mercury", away: "Washington Mystics", date: "2026-08-09" },
+        { home: "Dallas Wings", away: "Minnesota Lynx", date: "2026-08-09" },
+        
+        // August 10
+        { home: "Golden State Valkyries", away: "Los Angeles Sparks", date: "2026-08-10" },
+        
+        // August 11
+        { home: "Toronto Tempo", away: "Atlanta Dream", date: "2026-08-11" },
+        { home: "Chicago Sky", away: "Seattle Storm", date: "2026-08-11" },
+        
+        // August 12
+        { home: "New York Liberty", away: "Indiana Fever", date: "2026-08-12" },
+        { home: "Washington Mystics", away: "Las Vegas Aces", date: "2026-08-12" },
+        { home: "Phoenix Mercury", away: "Los Angeles Sparks", date: "2026-08-12" },
+        
+        // August 13
+        { home: "Toronto Tempo", away: "Dallas Wings", date: "2026-08-13" },
+        { home: "Chicago Sky", away: "Golden State Valkyries", date: "2026-08-13" },
+        { home: "Minnesota Lynx", away: "Portland Fire", date: "2026-08-13" },
+        
+        // August 14
+        { home: "Atlanta Dream", away: "Connecticut Sun", date: "2026-08-14" },
+        { home: "Los Angeles Sparks", away: "New York Liberty", date: "2026-08-14" },
+        { home: "Washington Mystics", away: "Las Vegas Aces", date: "2026-08-14" },
+        
+        // August 15
+        { home: "Dallas Wings", away: "Indiana Fever", date: "2026-08-15" },
+        { home: "Portland Fire", away: "Seattle Storm", date: "2026-08-15" },
+        { home: "New York Liberty", away: "Connecticut Sun", date: "2026-08-15" },
+        
+        // August 16
+        { home: "Los Angeles Sparks", away: "Washington Mystics", date: "2026-08-16" },
+        { home: "Minnesota Lynx", away: "Las Vegas Aces", date: "2026-08-16" },
+        { home: "Chicago Sky", away: "Seattle Storm", date: "2026-08-16" },
+        { home: "Indiana Fever", away: "Atlanta Dream", date: "2026-08-16" }
     ]
 },
 /*
