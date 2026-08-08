@@ -22,17 +22,17 @@ function formatDate(dateString) {
 // ==================== SIDEBAR RESULTS (MANUALLY CONTROLLED) ====================
 
 // You control exactly what shows here - independent from matchesData
-// You control exactly what shows here - independent from matchesData
-const sidebarResults = {
-   "Chinese Women's Super League - Recent": [
-    { home: "Guangdong Meizhou W", away: "Wuhan Jiangda W", home_score: 1, away_score: 1, league: "Chinese Women's Super League" },
-    { home: "Guangxi Pingguo W", away: "Beijing Beikong W", home_score: 0, away_score: 2, league: "Chinese Women's Super League" }
-],
-    "WNBA - Recent Results": [
-        { home: "New York Liberty", away: "Las Vegas Aces", home_score: 87, away_score: 76, league: "WNBA" }
-    ]
-};
-
+/*
+const sideBarResults = {
+"Netherlands Eerste Divisie - Recent": [
+    { home: "Dordrecht", away: "Jong Ajax", home_score: 2, away_score: 1, league: "Eerste Divisie" },
+    { home: "FC Emmen", away: "Roda", home_score: 1, away_score: 0, league: "Eerste Divisie" },
+    { home: "Oss", away: "NAC Breda", home_score: 1, away_score: 2, league: "Eerste Divisie" },
+    { home: "Venlo", away: "Heracles", home_score: 3, away_score: 4, league: "Eerste Divisie" },
+    { home: "Vitesse", away: "Waalwijk", home_score: 1, away_score: 1, league: "Eerste Divisie" }
+];
+}
+*/
 // Function to render sidebar results from your custom list
 // Function to render sidebar results from your custom list
 function renderSidebarResults(containerId, resultsData, limit = 10) {
