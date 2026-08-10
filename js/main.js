@@ -22,7 +22,7 @@ function formatDate(dateString) {
 // ==================== SIDEBAR RESULTS (MANUALLY CONTROLLED) ====================
 
 // You control exactly what shows here - independent from matchesData
-/*
+
 const sideBarResults = {
 "Netherlands Eerste Divisie - Recent": [
     { home: "Dordrecht", away: "Jong Ajax", home_score: 2, away_score: 1, league: "Eerste Divisie" },
@@ -30,9 +30,9 @@ const sideBarResults = {
     { home: "Oss", away: "NAC Breda", home_score: 1, away_score: 2, league: "Eerste Divisie" },
     { home: "Venlo", away: "Heracles", home_score: 3, away_score: 4, league: "Eerste Divisie" },
     { home: "Vitesse", away: "Waalwijk", home_score: 1, away_score: 1, league: "Eerste Divisie" }
-];
-}
-*/
+]
+};
+
 // Function to render sidebar results from your custom list
 // Function to render sidebar results from your custom list
 function renderSidebarResults(containerId, resultsData, limit = 10) {
