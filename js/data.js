@@ -243,11 +243,40 @@ const leaguesData = {
         { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
     ],
     fixtures: [
-        { home: "Unión", away: "Central Córdoba", date: "2026-08-11" },
-        { home: "Talleres", away: "Lanús", date: "2026-08-12" }
+        // Matchday 5 - August 15-18
+        { home: "Racing Club", away: "Banfield", date: "2026-08-15" },
+        { home: "San Lorenzo", away: "Unión", date: "2026-08-15" },
+        { home: "Aldosivi", away: "Tigre", date: "2026-08-15" },
+        { home: "Estudiantes", away: "Gimnasia LP", date: "2026-08-15" },
+        { home: "Newell's", away: "Deportivo Riestra", date: "2026-08-15" },
+        { home: "Belgrano", away: "Independiente Rivadavia", date: "2026-08-15" },
+        { home: "Platense", away: "Boca", date: "2026-08-16" },
+        { home: "Sarmiento", away: "Huracán", date: "2026-08-16" },
+        { home: "River Plate", away: "Argentinos Juniors", date: "2026-08-17" },
+        { home: "Central Córdoba", away: "Instituto", date: "2026-08-17" },
+        { home: "Barracas Central", away: "Central", date: "2026-08-17" },
+        { home: "Estudiantes de Río Cuarto", away: "Atlético Tucumán", date: "2026-08-17" },
+        { home: "Lanús", away: "Independiente", date: "2026-08-17" },
+        { home: "Vélez Sársfield", away: "Defensa y Justicia", date: "2026-08-17" },
+        { home: "Gimnasia y Esgirma", away: "Talleres", date: "2026-08-18" },
+        
+        // Matchday 6 - August 21-25
+        { home: "Aldosivi", away: "Unión", date: "2026-08-21" },
+        { home: "Estudiantes de Río Cuarto", away: "San Lorenzo", date: "2026-08-22" },
+        { home: "Gimnasia LP", away: "Gimnasia y Esgirma", date: "2026-08-22" },
+        { home: "Atlético Tucumán", away: "Instituto", date: "2026-08-22" },
+        { home: "Independiente", away: "Independiente Rivadavia", date: "2026-08-22" },
+        { home: "Huracán", away: "Deportivo Riestra", date: "2026-08-23" },
+        { home: "Newell's", away: "Banfield", date: "2026-08-23" },
+        { home: "Barracas Central", away: "Platense", date: "2026-08-23" },
+        { home: "Sarmiento", away: "Estudiantes", date: "2026-08-23" },
+        { home: "Belgrano", away: "Defensa y Justicia", date: "2026-08-23" },
+        { home: "River Plate", away: "Vélez Sársfield", date: "2026-08-23" },
+        { home: "Racing Club", away: "Boca", date: "2026-08-24" },
+        { home: "Tigre", away: "Central Córdoba", date: "2026-08-24" },
+        { home: "Talleres", away: "Central", date: "2026-08-25" }
     ]
 },
-
 "Australian NPL ACT": {
     id: "australia-npl-act",
     logo: "australia/nplact.png",
@@ -440,7 +469,7 @@ const leaguesData = {
     ],
     fixtures: [
 
-        { home: "Avaí", away: "CRB", date: "2026-08-11" }
+
     ]
 },
 "English Premier League": {
@@ -507,8 +536,7 @@ const leaguesData = {
         { rank: 16, team: "Manta", MP: 23, MW: 3, MD: 5, ML: 15, GF: 9, GA: 29, logo: "ecuador/manta.png" }
     ],
     fixtures: [
-        { home: "Dep. Cuenca", away: "Manta", date: "2026-08-11" },
-        
+
         // Round 25 - August 15-18
         { home: "Ind. del Valle", away: "Delfin", date: "2026-08-15" },
         { home: "Manta", away: "Leones del Norte", date: "2026-08-15" },
@@ -752,28 +780,47 @@ const leaguesData = {
     logo: "chile/chile.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Colo-Colo", MP: 16, MW: 13, MD: 0, ML: 3, GF: 32, GA: 13, logo: "chile/colocolo.png" },
-        { rank: 2, team: "Universidad Católica", MP: 16, MW: 8, MD: 3, ML: 5, GF: 38, GA: 23, logo: "chile/ucatolica.png" },
-        { rank: 3, team: "Universidad de Chile", MP: 15, MW: 6, MD: 6, ML: 3, GF: 17, GA: 10, logo: "chile/uchile.png" },
-        { rank: 4, team: "Coquimbo", MP: 15, MW: 7, MD: 3, ML: 5, GF: 22, GA: 18, logo: "chile/coquimbo.png" },
-        { rank: 5, team: "Palestino", MP: 15, MW: 7, MD: 3, ML: 5, GF: 23, GA: 21, logo: "chile/palestino.png" },
-        { rank: 6, team: "Huachipato", MP: 16, MW: 7, MD: 3, ML: 6, GF: 26, GA: 25, logo: "chile/huachipato.png" },
-        { rank: 7, team: "Everton", MP: 15, MW: 6, MD: 4, ML: 5, GF: 19, GA: 15, logo: "chile/everton.png" },
-        { rank: 8, team: "Ñublense", MP: 15, MW: 5, MD: 7, ML: 3, GF: 18, GA: 19, logo: "chile/nublense.png" },
-        { rank: 9, team: "Deportes Limache", MP: 16, MW: 6, MD: 3, ML: 7, GF: 31, GA: 26, logo: "chile/limache.png" },
-        { rank: 10, team: "O'Higgins", MP: 15, MW: 6, MD: 2, ML: 7, GF: 19, GA: 22, logo: "chile/ohiggins.png" },
-        { rank: 11, team: "La Serena", MP: 16, MW: 4, MD: 7, ML: 5, GF: 24, GA: 28, logo: "chile/laserena.png" },
-        { rank: 12, team: "Universidad de Concepción", MP: 15, MW: 5, MD: 4, ML: 6, GF: 13, GA: 26, logo: "chile/uconcepcion.png" },
-        { rank: 13, team: "Audax Italiano", MP: 15, MW: 4, MD: 4, ML: 7, GF: 18, GA: 21, logo: "chile/audax.png" },
-        { rank: 14, team: "Concepción", MP: 15, MW: 4, MD: 2, ML: 9, GF: 14, GA: 23, logo: "chile/concepcion.png" },
-        { rank: 15, team: "Cobresal", MP: 16, MW: 4, MD: 2, ML: 10, GF: 22, GA: 32, logo: "chile/cobresal.png" },
-        { rank: 16, team: "Unión La Calera", MP: 15, MW: 3, MD: 3, ML: 9, GF: 14, GA: 28, logo: "chile/unionlacalera.png" }
+        { rank: 1, team: "Colo-Colo", MP: 18, MW: 15, MD: 0, ML: 3, GF: 38, GA: 17, logo: "chile/colocolo.png" },
+        { rank: 2, team: "Universidad de Chile", MP: 18, MW: 9, MD: 6, ML: 3, GF: 23, GA: 12, logo: "chile/uchile.png" },
+        { rank: 3, team: "Universidad Católica", MP: 18, MW: 9, MD: 3, ML: 6, GF: 40, GA: 26, logo: "chile/ucatolica.png" },
+        { rank: 4, team: "Palestino", MP: 18, MW: 8, MD: 3, ML: 7, GF: 26, GA: 26, logo: "chile/palestino.png" },
+        { rank: 5, team: "Everton", MP: 18, MW: 7, MD: 5, ML: 6, GF: 27, GA: 21, logo: "chile/everton.png" },
+        { rank: 6, team: "Ñublense", MP: 17, MW: 6, MD: 8, ML: 3, GF: 22, GA: 21, logo: "chile/nublense.png" },
+        { rank: 7, team: "Coquimbo", MP: 17, MW: 7, MD: 4, ML: 6, GF: 24, GA: 21, logo: "chile/coquimbo.png" },
+        { rank: 8, team: "Deportes Limache", MP: 17, MW: 7, MD: 3, ML: 7, GF: 34, GA: 27, logo: "chile/limache.png" },
+        { rank: 9, team: "Huachipato", MP: 18, MW: 7, MD: 3, ML: 8, GF: 27, GA: 31, logo: "chile/huachipato.png" },
+        { rank: 10, team: "Concepción", MP: 18, MW: 7, MD: 2, ML: 9, GF: 20, GA: 23, logo: "chile/concepcion.png" },
+        { rank: 11, team: "O'Higgins", MP: 18, MW: 7, MD: 2, ML: 9, GF: 22, GA: 28, logo: "chile/ohiggins.png" },
+        { rank: 12, team: "Audax Italiano", MP: 18, MW: 5, MD: 5, ML: 8, GF: 22, GA: 25, logo: "chile/audax.png" },
+        { rank: 13, team: "La Serena", MP: 18, MW: 4, MD: 8, ML: 6, GF: 26, GA: 31, logo: "chile/laserena.png" },
+        { rank: 14, team: "Universidad de Concepción", MP: 17, MW: 5, MD: 4, ML: 8, GF: 13, GA: 28, logo: "chile/uconcepcion.png" },
+        { rank: 15, team: "Cobresal", MP: 18, MW: 5, MD: 2, ML: 11, GF: 26, GA: 34, logo: "chile/cobresal.png" },
+        { rank: 16, team: "Unión La Calera", MP: 18, MW: 3, MD: 4, ML: 11, GF: 16, GA: 35, logo: "chile/unionlacalera.png" }
     ],
     fixtures: [
-        { home: "Audax Italiano", away: "Ñublense", date: "2026-08-11" }
+        // Matchday 20 - August 15-18
+        { home: "Universidad de Concepción", away: "La Serena", date: "2026-08-15" },
+        { home: "Deportes Limache", away: "Universidad de Chile", date: "2026-08-15" },
+        { home: "Everton", away: "Audax Italiano", date: "2026-08-16" },
+        { home: "Ñublense", away: "Unión La Calera", date: "2026-08-16" },
+        { home: "Cobresal", away: "Concepción", date: "2026-08-16" },
+        { home: "Colo-Colo", away: "O'Higgins", date: "2026-08-16" },
+        { home: "Palestino", away: "Huachipato", date: "2026-08-18" },
+        
+        // Matchday 21 - August 22-25
+        { home: "Audax Italiano", away: "Unión La Calera", date: "2026-08-22" },
+        { home: "Huachipato", away: "Deportes Limache", date: "2026-08-22" },
+        { home: "Universidad Católica", away: "Ñublense", date: "2026-08-23" },
+        { home: "La Serena", away: "Cobresal", date: "2026-08-23" },
+        { home: "Concepción", away: "Coquimbo", date: "2026-08-23" },
+        { home: "Universidad de Chile", away: "Colo-Colo", date: "2026-08-23" },
+        { home: "O'Higgins", away: "Palestino", date: "2026-08-24" },
+        { home: "Everton", away: "Universidad de Concepción", date: "2026-08-25" },
+        
+        // Matchday 19 (makeup) - August 26
+        { home: "Coquimbo", away: "Universidad Católica", date: "2026-08-26" }
     ]
 },
-
 "French Ligue 1": {
     id: "ligue-1",
     logo: "france/ligue1.png",
@@ -1247,25 +1294,43 @@ const leaguesData = {
     logo: "sweden/superettan.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Norrköping", MP: 16, MW: 10, MD: 2, ML: 4, GF: 27, GA: 10, logo: "sweden/norrkoping.png" },
-        { rank: 2, team: "Falkenberg", MP: 16, MW: 9, MD: 4, ML: 3, GF: 32, GA: 24, logo: "sweden/falkenberg.png" },
-        { rank: 3, team: "Varbergs BoIS", MP: 16, MW: 9, MD: 3, ML: 4, GF: 32, GA: 22, logo: "sweden/varbergsbois.png" },
-        { rank: 4, team: "Östersund", MP: 16, MW: 7, MD: 5, ML: 4, GF: 26, GA: 21, logo: "sweden/ostersund.png" },
-        { rank: 5, team: "United Nordic", MP: 16, MW: 7, MD: 5, ML: 4, GF: 26, GA: 23, logo: "sweden/unitednordic.png" },
-        { rank: 6, team: "Östers IF", MP: 16, MW: 8, MD: 2, ML: 6, GF: 27, GA: 25, logo: "sweden/osters.png" },
-        { rank: 7, team: "Landskrona", MP: 16, MW: 7, MD: 4, ML: 5, GF: 22, GA: 17, logo: "sweden/landskrona.png" },
-        { rank: 8, team: "Helsingborg", MP: 16, MW: 7, MD: 3, ML: 6, GF: 30, GA: 32, logo: "sweden/helsingborg.png" },
-        { rank: 9, team: "Ljungskile", MP: 16, MW: 6, MD: 4, ML: 6, GF: 23, GA: 21, logo: "sweden/ljungskile.png" },
-        { rank: 10, team: "Oddevold", MP: 16, MW: 5, MD: 6, ML: 5, GF: 28, GA: 26, logo: "sweden/oddevold.png" },
-        { rank: 11, team: "Sandviken", MP: 16, MW: 5, MD: 4, ML: 7, GF: 25, GA: 25, logo: "sweden/sandviken.png" },
-        { rank: 12, team: "Norrby", MP: 16, MW: 3, MD: 9, ML: 4, GF: 21, GA: 23, logo: "sweden/norrby.png" },
-        { rank: 13, team: "Brage", MP: 16, MW: 4, MD: 5, ML: 7, GF: 28, GA: 29, logo: "sweden/brage.png" },
-        { rank: 14, team: "Örebro", MP: 16, MW: 3, MD: 6, ML: 7, GF: 13, GA: 22, logo: "sweden/orebro.png" },
-        { rank: 15, team: "Värnamo", MP: 16, MW: 3, MD: 2, ML: 11, GF: 17, GA: 34, logo: "sweden/varnamo.png" },
-        { rank: 16, team: "GIF Sundsvall", MP: 16, MW: 3, MD: 0, ML: 13, GF: 13, GA: 36, logo: "sweden/gifsundsvall.png" }
+        { rank: 1, team: "Norrköping", MP: 18, MW: 12, MD: 2, ML: 4, GF: 32, GA: 10, logo: "sweden/norrkoping.png" },
+        { rank: 2, team: "Varbergs BoIS", MP: 18, MW: 10, MD: 3, ML: 5, GF: 34, GA: 24, logo: "sweden/varbergsbois.png" },
+        { rank: 3, team: "Falkenberg", MP: 18, MW: 9, MD: 5, ML: 4, GF: 34, GA: 27, logo: "sweden/falkenberg.png" },
+        { rank: 4, team: "Östersund", MP: 18, MW: 9, MD: 5, ML: 4, GF: 28, GA: 21, logo: "sweden/ostersund.png" },
+        { rank: 5, team: "Sandviken", MP: 18, MW: 8, MD: 4, ML: 6, GF: 33, GA: 23, logo: "sweden/sandviken.png" },
+        { rank: 6, team: "Landskrona", MP: 18, MW: 8, MD: 4, ML: 6, GF: 24, GA: 19, logo: "sweden/landskrona.png" },
+        { rank: 7, team: "United Nordic", MP: 18, MW: 7, MD: 7, ML: 4, GF: 29, GA: 26, logo: "sweden/unitednordic.png" },
+        { rank: 8, team: "Östers IF", MP: 18, MW: 8, MD: 2, ML: 8, GF: 27, GA: 27, logo: "sweden/osters.png" },
+        { rank: 9, team: "Oddevold", MP: 18, MW: 6, MD: 7, ML: 5, GF: 29, GA: 26, logo: "sweden/oddevold.png" },
+        { rank: 10, team: "Helsingborg", MP: 18, MW: 7, MD: 3, ML: 8, GF: 31, GA: 36, logo: "sweden/helsingborg.png" },
+        { rank: 11, team: "Norrby", MP: 18, MW: 4, MD: 10, ML: 4, GF: 24, GA: 24, logo: "sweden/norrby.png" },
+        { rank: 12, team: "Brage", MP: 18, MW: 5, MD: 5, ML: 8, GF: 30, GA: 33, logo: "sweden/brage.png" },
+        { rank: 13, team: "Ljungskile", MP: 18, MW: 5, MD: 5, ML: 8, GF: 23, GA: 26, logo: "sweden/ljungskile.png" },
+        { rank: 14, team: "Värnamo", MP: 18, MW: 5, MD: 2, ML: 11, GF: 22, GA: 36, logo: "sweden/varnamo.png" },
+        { rank: 15, team: "Örebro", MP: 18, MW: 3, MD: 6, ML: 9, GF: 15, GA: 28, logo: "sweden/orebro.png" },
+        { rank: 16, team: "GIF Sundsvall", MP: 18, MW: 3, MD: 0, ML: 15, GF: 13, GA: 42, logo: "sweden/gifsundsvall.png" }
     ],
     fixtures: [
-        { home: "Helsingborg", away: "Värnamo", date: "2026-08-11" }
+        // Matchday 19 - August 14-16
+        { home: "Brage", away: "Örebro", date: "2026-08-14" },
+        { home: "Landskrona", away: "Oddevold", date: "2026-08-14" },
+        { home: "Ljungskile", away: "Östers IF", date: "2026-08-15" },
+        { home: "GIF Sundsvall", away: "Helsingborg", date: "2026-08-15" },
+        { home: "United Nordic", away: "Varbergs BoIS", date: "2026-08-15" },
+        { home: "Sandviken", away: "Norrköping", date: "2026-08-15" },
+        { home: "Falkenberg", away: "Norrby", date: "2026-08-15" },
+        { home: "Värnamo", away: "Östersund", date: "2026-08-16" },
+        
+        // Matchday 20 - August 23-25
+        { home: "Oddevold", away: "Helsingborg", date: "2026-08-23" },
+        { home: "Brage", away: "United Nordic", date: "2026-08-23" },
+        { home: "Norrby", away: "Sandviken", date: "2026-08-23" },
+        { home: "Östersund", away: "Ljungskile", date: "2026-08-24" },
+        { home: "Värnamo", away: "Landskrona", date: "2026-08-24" },
+        { home: "Norrköping", away: "Falkenberg", date: "2026-08-24" },
+        { home: "Östers IF", away: "GIF Sundsvall", date: "2026-08-25" },
+        { home: "Örebro", away: "Varbergs BoIS", date: "2026-08-25" }
     ]
 },
 "Sweden Ettan Norra": {
@@ -1449,23 +1514,33 @@ const leaguesData = {
     logo: "latvia/latvia.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Metta/LU", MP: 13, MW: 11, MD: 1, ML: 1, GF: 46, GA: 11, logo: "latvia/metta.png" },
-        { rank: 2, team: "Valmiera", MP: 13, MW: 10, MD: 2, ML: 1, GF: 35, GA: 12, logo: "latvia/valmiera.png" },
-        { rank: 3, team: "Leevon PPK", MP: 14, MW: 9, MD: 3, ML: 2, GF: 24, GA: 17, logo: "latvia/leevonppk.png" },
-        { rank: 4, team: "Riga Mariners", MP: 14, MW: 8, MD: 5, ML: 1, GF: 27, GA: 13, logo: "latvia/rigamariners.png" },
-        { rank: 5, team: "JDFS Alberts", MP: 14, MW: 7, MD: 3, ML: 4, GF: 29, GA: 22, logo: "latvia/jdfs alberts.png" },
-        { rank: 6, team: "Mārupes", MP: 14, MW: 7, MD: 1, ML: 6, GF: 24, GA: 20, logo: "latvia/marupes.png" },
-        { rank: 7, team: "SK Super Nova II", MP: 14, MW: 5, MD: 5, ML: 4, GF: 21, GA: 20, logo: "latvia/supernova.png" },
-        { rank: 8, team: "Riga II", MP: 13, MW: 6, MD: 1, ML: 6, GF: 21, GA: 23, logo: "latvia/rigaii.png" },
-        { rank: 9, team: "Skanste", MP: 14, MW: 4, MD: 1, ML: 9, GF: 21, GA: 29, logo: "latvia/skanste.png" },
-        { rank: 10, team: "RFS 2", MP: 14, MW: 3, MD: 3, ML: 8, GF: 20, GA: 31, logo: "latvia/rfs2.png" },
-        { rank: 11, team: "Ventspils", MP: 14, MW: 2, MD: 5, ML: 7, GF: 17, GA: 24, logo: "latvia/ventspils.png" },
-        { rank: 12, team: "Tukums II", MP: 13, MW: 3, MD: 2, ML: 8, GF: 18, GA: 31, logo: "latvia/tukumsii.png" },
-        { rank: 13, team: "Smiltene", MP: 14, MW: 1, MD: 4, ML: 9, GF: 16, GA: 38, logo: "latvia/smiltene.png" },
-        { rank: 14, team: "Rēzeknes FA/BJSS", MP: 14, MW: 1, MD: 2, ML: 11, GF: 11, GA: 39, logo: "latvia/rezeknes.png" }
+        { rank: 1, team: "Valmiera", MP: 16, MW: 13, MD: 2, ML: 1, GF: 44, GA: 14, logo: "latvia/valmiera.png" },
+        { rank: 2, team: "Metta/LU", MP: 16, MW: 13, MD: 2, ML: 1, GF: 69, GA: 14, logo: "latvia/metta.png" },
+        { rank: 3, team: "Leevon PPK", MP: 16, MW: 11, MD: 3, ML: 2, GF: 27, GA: 18, logo: "latvia/leevonppk.png" },
+        { rank: 4, team: "Riga Mariners", MP: 16, MW: 10, MD: 5, ML: 1, GF: 34, GA: 15, logo: "latvia/rigamariners.png" },
+        { rank: 5, team: "JDFS Alberts", MP: 16, MW: 8, MD: 4, ML: 4, GF: 32, GA: 23, logo: "latvia/jdfs alberts.png" },
+        { rank: 6, team: "SK Super Nova II", MP: 16, MW: 6, MD: 5, ML: 5, GF: 23, GA: 23, logo: "latvia/supernova.png" },
+        { rank: 7, team: "Mārupes", MP: 16, MW: 7, MD: 1, ML: 8, GF: 26, GA: 25, logo: "latvia/marupes.png" },
+        { rank: 8, team: "Riga II", MP: 16, MW: 6, MD: 2, ML: 8, GF: 23, GA: 30, logo: "latvia/rigaii.png" },
+        { rank: 9, team: "Skanste", MP: 16, MW: 6, MD: 1, ML: 9, GF: 30, GA: 32, logo: "latvia/skanste.png" },
+        { rank: 10, team: "Tukums II", MP: 16, MW: 3, MD: 3, ML: 10, GF: 21, GA: 45, logo: "latvia/tukumsii.png" },
+        { rank: 11, team: "RFS 2", MP: 16, MW: 3, MD: 3, ML: 10, GF: 22, GA: 45, logo: "latvia/rfs2.png" },
+        { rank: 12, team: "Ventspils", MP: 16, MW: 2, MD: 5, ML: 9, GF: 18, GA: 28, logo: "latvia/ventspils.png" },
+        { rank: 13, team: "Smiltene", MP: 16, MW: 2, MD: 4, ML: 10, GF: 19, GA: 43, logo: "latvia/smiltene.png" },
+        { rank: 14, team: "Rēzeknes FA/BJSS", MP: 16, MW: 1, MD: 2, ML: 13, GF: 13, GA: 46, logo: "latvia/rezeknes.png" }
     ],
     fixtures: [
-
+        // Matchday 17 - August 15
+        { home: "Mārupes", away: "SK Super Nova II", date: "2026-08-15" },
+        
+        // Matchday 18 - August 22-24
+        { home: "Valmiera", away: "Mārupes", date: "2026-08-22" },
+        { home: "Tukums II", away: "Ventspils", date: "2026-08-22" },
+        { home: "RFS 2", away: "JDFS Alberts", date: "2026-08-22" },
+        { home: "Leevon PPK", away: "Smiltene", date: "2026-08-23" },
+        { home: "SK Super Nova II", away: "Skanste", date: "2026-08-23" },
+        { home: "Rēzeknes FA/BJSS", away: "Metta/LU", date: "2026-08-23" },
+        { home: "Riga II", away: "Riga Mariners", date: "2026-08-24" }
     ]
 },
 
@@ -1823,13 +1898,20 @@ const leaguesData = {
         { rank: 19, team: "Cúcuta Deportivo", MP: 19, MW: 3, MD: 7, ML: 9, GF: 22, GA: 35, logo: "colombia/cucuta.png" },
         { rank: 20, team: "Deportivo Pereira", MP: 19, MW: 1, MD: 7, ML: 11, GF: 15, GA: 32, logo: "colombia/pereira.png" }
     ],
-     fixtures: [
-        { home: "Alianza", away: "Atlético Bucaramanga", date: "2026-08-11" },
-        { home: "Junior", away: "Deportivo Pereira", date: "2026-08-11" },
-        { home: "Independiente Medellín", away: "Millonarios", date: "2026-08-12" }
+    fixtures: [
+        // Matchday 6 - August 21-25
+        { home: "Jaguares de Córdoba", away: "Boyacá Chicó FC", date: "2026-08-21" },
+        { home: "Rionegro Águilas", away: "Millonarios", date: "2026-08-22" },
+        { home: "Tolima", away: "Atlético Bucaramanga", date: "2026-08-22" },
+        { home: "Santa Fe", away: "América de Cali", date: "2026-08-23" },
+        { home: "Junior", away: "Once Caldas", date: "2026-08-23" },
+        { home: "Fortaleza FC", away: "Atl. Nacional", date: "2026-08-23" },
+        { home: "Deportivo Pasto", away: "Llaneros FC", date: "2026-08-23" },
+        { home: "Deportivo Cali", away: "Internacional de Bogotá", date: "2026-08-24" },
+        { home: "Independiente Medellín", away: "Cúcuta Deportivo", date: "2026-08-24" },
+        { home: "Alianza", away: "Deportivo Pereira", date: "2026-08-25" }
     ]
-},
-"USA MLS": {
+},"USA MLS": {
     id: "mls",
     logo: "mls/mlslogo.jpg",
     isBasketball: false,
@@ -2022,15 +2104,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 33, GW: 6, GL: 27, points_for: 2541, points_against: 2904, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // August 11
-        { home: "Toronto Tempo", away: "Atlanta Dream", date: "2026-08-11" },
-        { home: "Chicago Sky", away: "Seattle Storm", date: "2026-08-11" },
-        
-        // August 12
-        { home: "New York Liberty", away: "Indiana Fever", date: "2026-08-12" },
-        { home: "Washington Mystics", away: "Las Vegas Aces", date: "2026-08-12" },
-        { home: "Phoenix Mercury", away: "Los Angeles Sparks", date: "2026-08-12" },
-        
         // August 13
         { home: "Toronto Tempo", away: "Dallas Wings", date: "2026-08-13" },
         { home: "Chicago Sky", away: "Golden State Valkyries", date: "2026-08-13" },
