@@ -2104,11 +2104,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 33, GW: 6, GL: 27, points_for: 2541, points_against: 2904, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // August 13
-        { home: "Toronto Tempo", away: "Dallas Wings", date: "2026-08-13" },
-        { home: "Chicago Sky", away: "Golden State Valkyries", date: "2026-08-13" },
-        { home: "Minnesota Lynx", away: "Portland Fire", date: "2026-08-13" },
-        
         // August 14
         { home: "Atlanta Dream", away: "Connecticut Sun", date: "2026-08-14" },
         { home: "Los Angeles Sparks", away: "New York Liberty", date: "2026-08-14" },
