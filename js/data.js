@@ -437,6 +437,7 @@ const leaguesData = {
         { home: "Botafogo", away: "Athletico-PR", date: "2026-08-25" }
     ]
 },
+/*
 "Brazilian Série B": {
     id: "brasil-serie-b",
     logo: "brazil/serieb.png",
@@ -467,7 +468,7 @@ const leaguesData = {
 
 
     ]
-},
+},*/
 "English Premier League": {
     id: "epl",
     logo: "england/epl.png",
@@ -1945,7 +1946,7 @@ const leaguesData = {
         { rank: 9, team: "V-Varen Nagasaki", MP: 18, MW: 6, MD: 2, ML: 10, GF: 20, GA: 28, logo: "japan/nagasaki.png" },
         { rank: 10, team: "Avispa Fukuoka", MP: 18, MW: 3, MD: 8, ML: 7, GF: 17, GA: 27, logo: "japan/avispa.png" }
     ],
-    fixtures: [,
+    fixtures: [
         { home: "Urawa Reds", away: "Sanfrecce", date: "2026-08-15" },
         { home: "Vissel Kobe", away: "FC Tokyo", date: "2026-08-15" },
         { home: "JEF United", away: "Machida Zelvia", date: "2026-08-15" },
@@ -2144,7 +2145,7 @@ const leaguesData = {
 const matchesData = {
     
     "Chilean Primera División": [
-	    { home: "A. Italiano", away: "La Serena", home_score: 1, away_score: 1 },
+	    { home: "Audax Italiano", away: "La Serena", home_score: 1, away_score: 1 },
         { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
         { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
         { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
