@@ -1904,7 +1904,7 @@ const leaguesData = {
         { home: "San Diego", away: "LA Galaxy", date: "2026-08-30" },
         { home: "Portland", away: "Austin", date: "2026-08-30" }
     ]
-},,
+},
 "Japanese J1 League": {
     id: "j1-league",
     logo: "japan/j1logo.png",
