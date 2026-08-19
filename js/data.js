@@ -266,8 +266,7 @@ const leaguesData = {
         { rank: 11, team: "Canberra White Eagles", MP: 17, MW: 2, MD: 1, ML: 14, GF: 14, GA: 48, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-        { home: "Belconnen Utd.", away: "Canberra Olympic", date: "2026-08-16" },
-        { home: "Canberra Juventus", away: "Queanbeyan City", date: "2026-08-16" }
+        
     ]
 },"Australian NPL Victoria": {
     id: "australia-npl-victoria",
@@ -485,8 +484,7 @@ const leaguesData = {
         { rank: 16, team: "Manta", MP: 23, MW: 3, MD: 5, ML: 15, GF: 9, GA: 29, logo: "ecuador/manta.png" }
     ],
     fixtures: [
-        { home: "Macara", away: "U. Catolica", date: "2026-08-18" },
-        
+       
         // Round 26 - August 22-25
         { home: "Dep. Cuenca", away: "Mushuc Runa", date: "2026-08-22" },
         { home: "U. Catolica", away: "Manta", date: "2026-08-22" },
@@ -1603,8 +1601,7 @@ const leaguesData = {
         { rank: 16, team: "Real Tomayapo", MP: 14, MW: 2, MD: 3, ML: 9, GF: 10, GA: 31, logo: "bolivia/realtomayapo.png" }
     ],
     fixtures: [
-        { home: "Independiente Petrolero", away: "Gualberto Villarroel San José", date: "2026-08-17" },
-        
+      
         // Matchday 16 - August 21-24
         { home: "The Strongest", away: "Universitario de Vinto", date: "2026-08-21" },
         { home: "Oriente Petrolero", away: "SA Bulo Bulo", date: "2026-08-22" },
@@ -1636,9 +1633,7 @@ const leaguesData = {
         { rank: 12, team: "IFK Mariehamn", MP: 18, MW: 0, MD: 5, ML: 13, GF: 9, GA: 39, logo: "finland/ifkmariehamn.png" }
     ], 
  fixtures: [	
-        // August 17
-        { home: "Gnistan", away: "Ilves", date: "2026-08-17" },
-        
+   
         // August 21
         { home: "SJK", away: "FC Lahti", date: "2026-08-21" },
         
