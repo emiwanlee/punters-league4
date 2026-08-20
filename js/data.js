@@ -253,22 +253,29 @@ const leaguesData = {
     logo: "australia/nplact.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Canberra Croatia", MP: 17, MW: 14, MD: 1, ML: 2, GF: 52, GA: 18, logo: "australia/canberracroatia.png" },
-        { rank: 2, team: "Monaro Panthers", MP: 17, MW: 13, MD: 1, ML: 3, GF: 57, GA: 23, logo: "australia/monaropanthers.png" },
-        { rank: 3, team: "Tigers FC", MP: 18, MW: 12, MD: 2, ML: 4, GF: 48, GA: 21, logo: "australia/tigersfc.png" },
-        { rank: 4, team: "Tuggeranong Utd", MP: 18, MW: 12, MD: 0, ML: 6, GF: 41, GA: 39, logo: "australia/tuggeranong.png" },
-        { rank: 5, team: "Queanbeyan City", MP: 18, MW: 10, MD: 2, ML: 6, GF: 39, GA: 27, logo: "australia/queanbeyan.png" },
-        { rank: 6, team: "Canberra Juventus", MP: 17, MW: 10, MD: 0, ML: 7, GF: 34, GA: 33, logo: "australia/canberrajuv.png" },
-        { rank: 7, team: "Canberra Olympic", MP: 17, MW: 5, MD: 2, ML: 10, GF: 35, GA: 45, logo: "australia/canberraolympic.png" },
-        { rank: 8, team: "O'Connor Knights", MP: 17, MW: 5, MD: 2, ML: 10, GF: 17, GA: 32, logo: "australia/oconnorknights.png" },
-        { rank: 9, team: "Belconnen Utd.", MP: 17, MW: 2, MD: 3, ML: 12, GF: 24, GA: 36, logo: "australia/belconnenutd.png" },
-        { rank: 10, team: "Brindabella", MP: 17, MW: 3, MD: 0, ML: 14, GF: 10, GA: 49, logo: "australia/brindabella.png" },
-        { rank: 11, team: "Canberra White Eagles", MP: 17, MW: 2, MD: 1, ML: 14, GF: 14, GA: 48, logo: "australia/whiteeagles.png" }
+        { rank: 1, team: "Canberra Croatia", MP: 19, MW: 16, MD: 1, ML: 2, GF: 60, GA: 24, logo: "australia/canberracroatia.png" },
+        { rank: 2, team: "Tigers FC", MP: 20, MW: 14, MD: 2, ML: 4, GF: 59, GA: 24, logo: "australia/tigersfc.png" },
+        { rank: 3, team: "Monaro Panthers", MP: 19, MW: 14, MD: 1, ML: 4, GF: 66, GA: 26, logo: "australia/monaropanthers.png" },
+        { rank: 4, team: "Tuggeranong Utd", MP: 19, MW: 13, MD: 0, ML: 6, GF: 47, GA: 39, logo: "australia/tuggeranong.png" },
+        { rank: 5, team: "Queanbeyan City", MP: 19, MW: 11, MD: 2, ML: 6, GF: 41, GA: 28, logo: "australia/queanbeyan.png" },
+        { rank: 6, team: "Canberra Juventus", MP: 19, MW: 11, MD: 0, ML: 8, GF: 39, GA: 37, logo: "australia/canberrajuv.png" },
+        { rank: 7, team: "Canberra Olympic", MP: 19, MW: 6, MD: 2, ML: 11, GF: 40, GA: 51, logo: "australia/canberraolympic.png" },
+        { rank: 8, team: "O'Connor Knights", MP: 19, MW: 6, MD: 2, ML: 11, GF: 24, GA: 38, logo: "australia/oconnorknights.png" },
+        { rank: 9, team: "Belconnen Utd.", MP: 19, MW: 2, MD: 3, ML: 14, GF: 25, GA: 46, logo: "australia/belconnenutd.png" },
+        { rank: 10, team: "Brindabella", MP: 19, MW: 3, MD: 0, ML: 16, GF: 11, GA: 61, logo: "australia/brindabella.png" },
+        { rank: 11, team: "Canberra White Eagles", MP: 19, MW: 2, MD: 1, ML: 16, GF: 17, GA: 55, logo: "australia/whiteeagles.png" }
     ],
     fixtures: [
-        
+        // Round 22 - August 22
+        { home: "Canberra Olympic", away: "Brindabella", date: "2026-08-22" },
+        { home: "Canberra Croatia", away: "Belconnen Utd.", date: "2026-08-22" },
+        { home: "Canberra White Eagles", away: "Monaro Panthers", date: "2026-08-22" },
+        { home: "Queanbeyan City", away: "O'Connor Knights", date: "2026-08-22" },
+        { home: "Tuggeranong Utd", away: "Canberra Juventus", date: "2026-08-22" }
     ]
-},"Australian NPL Victoria": {
+
+},
+"Australian NPL Victoria": {
     id: "australia-npl-victoria",
     logo: "australia/nplvictoria.png",
     isBasketball: false,
@@ -373,8 +380,6 @@ const leaguesData = {
         { rank: 20, team: "Chapecoense", MP: 21, MW: 1, MD: 7, ML: 13, GF: 20, GA: 43, logo: "brazil/chapecoense.png" }
     ],
     fixtures: [
-        { home: "Internacional", away: "Remo", date: "2026-08-18" },
-        
         // Matchday 24 - August 22-25
         { home: "Fluminense", away: "Remo", date: "2026-08-22" },
         { home: "Internacional", away: "Atlético Mineiro", date: "2026-08-22" },
@@ -539,33 +544,75 @@ const leaguesData = {
     logo: "england/championship.png",
     isBasketball: false,
     teams: [
-        { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45, logo: "efl1/coventrylogo.png" },
-        { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47, logo: "efl1/ipswichlogo.png" },
-        { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49, logo: "efl1/millwalllogo.png" },
-        { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56, logo: "efl1/southamptonlogo.png" },
-        { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47, logo: "efl1/middlesbroughlogo.png" },
-        { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66, logo: "efl1/hulllogo.png" },
-        { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65, logo: "efl1/wrexhamlogo.png" },
-        { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59, logo: "efl1/derbylogo.png" },
-        { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56, logo: "efl1/norwichlogo.png" },
-        { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56, logo: "efl1/birminghamlogo.png" },
-        { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59, logo: "efl1/swansealogo.png" },
-        { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59, logo: "efl1/bristollogo.png" },
-        { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66, logo: "efl1/sheffieldutdlogo.png" },
-        { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62, logo: "efl1/prestonlogo.png" },
-        { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73, logo: "efl1/qprlogo.png" },
-        { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65, logo: "efl1/watfordlogo.png" },
-        { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56, logo: "efl1/stokelogo.png" },
-        { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64, logo: "efl1/portsmouthlogo.png" },
-        { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58, logo: "efl1/charltonlogo.png" },
-        { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56, logo: "efl1/blackburnlogo.png" },
-        { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58, logo: "efl1/westbromlogo.png" },
-        { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59, logo: "efl1/oxfordlogo.png" },
-        { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68, logo: "efl1/leicesterlogo.png" },
-        { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89, logo: "efl1/sheffieldwedlogo.png" }
+        { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45, logo: "england/coventry.png" },
+        { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47, logo: "england/ipswich.png" },
+        { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49, logo: "england/millwall.png" },
+        { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56, logo: "england/southampton.png" },
+        { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47, logo: "england/middlesbrough.png" },
+        { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66, logo: "england/hull.png" },
+        { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65, logo: "england/wrexham.png" },
+        { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59, logo: "england/derby.png" },
+        { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56, logo: "england/norwich.png" },
+        { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56, logo: "england/birmingham.png" },
+        { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59, logo: "england/swansea.png" },
+        { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59, logo: "england/bristol.png" },
+        { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66, logo: "england/sheffieldutd.png" },
+        { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62, logo: "england/preston.png" },
+        { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73, logo: "england/qpr.png" },
+        { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65, logo: "england/watford.png" },
+        { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56, logo: "england/stoke.png" },
+        { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64, logo: "england/portsmouth.png" },
+        { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58, logo: "england/charlton.png" },
+        { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56, logo: "england/blackburn.png" },
+        { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58, logo: "england/westbrom.png" },
+        { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59, logo: "england/oxford.png" },
+        { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68, logo: "england/leicester.png" },
+        { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89, logo: "england/sheffieldwed.png" },
+        // Additional teams for 2026/27 season
+        { rank: 25, team: "Wolves", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/wolves.png" },
+        { rank: 26, team: "Burnley", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/burnley.png" },
+        { rank: 27, team: "West Ham", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/westham.png" },
+        { rank: 28, team: "Bolton", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/bolton.png" },
+        { rank: 29, team: "Lincoln City", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/lincoln.png" }
     ],
     fixtures: [
         
+        // Matchday 2 - August 21-23
+        { home: "Standard", away: "RAAL La Louvière", date: "2026-08-21" },
+        { home: "Zulte Waregem", away: "Beveren", date: "2026-08-22" },
+        { home: "Charleroi", away: "Mechelen", date: "2026-08-22" },
+        { home: "Antwerp", away: "Genk", date: "2026-08-22" },
+        { home: "Gent", away: "OH Leuven", date: "2026-08-22" },
+        { home: "Lommel", away: "Westerlo", date: "2026-08-23" },
+        { home: "Club Brugge", away: "Cercle Brugge", date: "2026-08-23" },
+        
+        // Matchday 3 - August 22-23
+        { home: "Birmingham", away: "Bristol City", date: "2026-08-22" },
+        { home: "Millwall", away: "Norwich City", date: "2026-08-22" },
+        { home: "Lincoln City", away: "Portsmouth", date: "2026-08-22" },
+        { home: "Swansea", away: "Sheffield United", date: "2026-08-22" },
+        { home: "Blackburn Rovers", away: "Middlesbrough", date: "2026-08-22" },
+        { home: "Southampton", away: "Stoke City", date: "2026-08-22" },
+        { home: "West Ham", away: "Charlton", date: "2026-08-22" },
+        { home: "Derby County", away: "Cardiff City", date: "2026-08-22" },
+        { home: "QPR", away: "Bolton", date: "2026-08-22" },
+        { home: "Preston", away: "Wolves", date: "2026-08-22" },
+        { home: "Wrexham", away: "Watford", date: "2026-08-22" },
+        { home: "West Brom", away: "Burnley", date: "2026-08-23" },
+        
+        // Matchday 4 - August 28-29
+        { home: "Wrexham", away: "Birmingham", date: "2026-08-28" },
+        { home: "Derby County", away: "Swansea", date: "2026-08-29" },
+        { home: "Middlesbrough", away: "West Brom", date: "2026-08-29" },
+        { home: "Wolves", away: "Stoke City", date: "2026-08-29" },
+        { home: "Charlton", away: "Preston", date: "2026-08-29" },
+        { home: "Bristol City", away: "Portsmouth", date: "2026-08-29" },
+        { home: "Blackburn Rovers", away: "QPR", date: "2026-08-29" },
+        { home: "Bolton", away: "Lincoln City", date: "2026-08-29" },
+        { home: "Southampton", away: "Millwall", date: "2026-08-29" },
+        { home: "Norwich City", away: "Burnley", date: "2026-08-29" },
+        { home: "Cardiff City", away: "Sheffield United", date: "2026-08-29" },
+        { home: "Watford", away: "West Ham", date: "2026-08-29" }
     ]
 },
 
@@ -906,6 +953,7 @@ const leaguesData = {
         { rank: 21, team: "Willem II", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "netherlands/willemii.png" }
     ],
     fixtures: [
+
         // Matchday 3 - August 22-23
         { home: "Fortuna Sittard", away: "AZ Alkmaar", date: "2026-08-22" },
         { home: "Sparta Rotterdam", away: "Utrecht", date: "2026-08-22" },
@@ -913,7 +961,18 @@ const leaguesData = {
         { home: "Heerenveen", away: "PEC Zwolle", date: "2026-08-22" },
         { home: "Go Ahead Eagles", away: "Den Haag", date: "2026-08-23" },
         { home: "PSV", away: "Groningen", date: "2026-08-23" },
-        { home: "Cambuur", away: "Feyenoord", date: "2026-08-23" }
+        { home: "Cambuur", away: "Feyenoord", date: "2026-08-23" },
+        
+        // Matchday 4 - August 28-30
+        { home: "Groningen", away: "Fortuna Sittard", date: "2026-08-28" },
+        { home: "Excelsior", away: "Sparta Rotterdam", date: "2026-08-29" },
+        { home: "AZ Alkmaar", away: "Go Ahead Eagles", date: "2026-08-29" },
+        { home: "PEC Zwolle", away: "NEC", date: "2026-08-29" },
+        { home: "Utrecht", away: "PSV", date: "2026-08-30" },
+        { home: "Willem II", away: "Heerenveen", date: "2026-08-30" },
+        { home: "Feyenoord", away: "Den Haag", date: "2026-08-30" },
+        { home: "Telstar", away: "Ajax", date: "2026-08-30" },
+        { home: "Cambuur", away: "Twente", date: "2026-08-30" }
     ]
 },
 
@@ -941,13 +1000,37 @@ const leaguesData = {
         { rank: 17, team: "Jong AZ", MP: 38, MW: 12, MD: 4, ML: 22, GF: 61, GA: 76, logo: "netherlands/jongaz.png" },
         { rank: 18, team: "Helmond Sport", MP: 38, MW: 10, MD: 9, ML: 19, GF: 42, GA: 62, logo: "netherlands/helmond.png" },
         { rank: 19, team: "MVV", MP: 38, MW: 9, MD: 11, ML: 18, GF: 41, GA: 73, logo: "netherlands/mvv.png" },
-        { rank: 20, team: "Jong Ajax", MP: 38, MW: 9, MD: 8, ML: 21, GF: 50, GA: 73, logo: "netherlands/jongajax.png" }
+        { rank: 20, team: "Jong Ajax", MP: 38, MW: 9, MD: 8, ML: 21, GF: 50, GA: 73, logo: "netherlands/jongajax.png" },
+        // Additional teams for 2026/27 season
+        { rank: 21, team: "NAC", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "netherlands/nac.png" },
+        { rank: 22, team: "Heracles", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "netherlands/heracles.png" }
     ],
     fixtures: [
-	
+        // Matchday 3 - August 21-24
+        { home: "Vitesse", away: "Almere", date: "2026-08-21" },
+        { home: "Den Bosch", away: "FC Eindhoven", date: "2026-08-21" },
+        { home: "MVV", away: "FC Volendam", date: "2026-08-21" },
+        { home: "Dordrecht", away: "Roda", date: "2026-08-21" },
+        { home: "FC Emmen", away: "Jong AZ", date: "2026-08-21" },
+        { home: "Helmond Sport", away: "RKC Waalwijk", date: "2026-08-21" },
+        { home: "NAC", away: "Jong Ajax", date: "2026-08-22" },
+        { home: "VVV", away: "De Graafschap", date: "2026-08-23" },
+        { home: "Jong FC Utrecht", away: "Heracles", date: "2026-08-24" },
+        { home: "Jong PSV", away: "TOP Oss", date: "2026-08-24" },
+        
+        // Matchday 4 - August 28-30
+        { home: "Jong Ajax", away: "Helmond Sport", date: "2026-08-28" },
+        { home: "Den Bosch", away: "Vitesse", date: "2026-08-28" },
+        { home: "FC Volendam", away: "Dordrecht", date: "2026-08-28" },
+        { home: "Jong AZ", away: "MVV", date: "2026-08-28" },
+        { home: "RKC Waalwijk", away: "Jong PSV", date: "2026-08-28" },
+        { home: "Roda", away: "NAC", date: "2026-08-28" },
+        { home: "TOP Oss", away: "Jong FC Utrecht", date: "2026-08-28" },
+        { home: "De Graafschap", away: "Almere", date: "2026-08-29" },
+        { home: "FC Eindhoven", away: "Heracles", date: "2026-08-30" },
+        { home: "VVV", away: "FC Emmen", date: "2026-08-30" }
     ]
 },
-
 "Belgian Pro League": {
     id: "belgian-pro-league",
     logo: "belgium/proleague.png",
@@ -1520,7 +1603,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 20 - August 19-20
-        { home: "Maxline", away: "Baranovichi", date: "2026-08-19" },
         { home: "Winner Dinamo-Minsk / Sileks", away: "Torpedo Zhodino", date: "2026-08-20" },
         
         // Matchday 21 - August 28-30
@@ -1706,9 +1788,6 @@ const leaguesData = {
         { rank: 19, team: "Atlante", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "mexico/atlante.png" }
     ],
     fixtures: [
-        { home: "Club Tijuana", away: "Tigres UANL", date: "2026-07-19" },
-        { home: "Juarez", away: "Queretaro", date: "2026-07-19" },
-        
         // Matchday 3 - July 22-27
         { home: "Cruz Azul", away: "Puebla", date: "2026-07-22" },
         { home: "Toluca", away: "UNAM Pumas", date: "2026-07-22" },
@@ -2026,11 +2105,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 36, GW: 7, GL: 29, points_for: 2772, points_against: 3168, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        { home: "Los Angeles Sparks", away: "Connecticut Sun", date: "2026-08-19" },
-        { home: "Indiana Fever", away: "Toronto Tempo", date: "2026-08-19" },
-        { home: "New York Liberty", away: "Chicago Sky", date: "2026-08-19" },
-        { home: "Atlanta Dream", away: "Las Vegas Aces", date: "2026-08-19" },
-        
         // August 20
         { home: "Toronto Tempo", away: "Washington Mystics", date: "2026-08-20" },
         { home: "Minnesota Lynx", away: "Golden State Valkyries", date: "2026-08-20" },
