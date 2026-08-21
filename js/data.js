@@ -1603,8 +1603,6 @@ const leaguesData = {
     ],
     fixtures: [
         // Matchday 20 - August 19-20
-        { home: "Winner Dinamo-Minsk / Sileks", away: "Torpedo Zhodino", date: "2026-08-20" },
-        
         // Matchday 21 - August 28-30
         { home: "Vitebsk", away: "Naftan", date: "2026-08-28" },
         { home: "Gomel", away: "Belshina", date: "2026-08-28" },
@@ -1788,38 +1786,6 @@ const leaguesData = {
         { rank: 19, team: "Atlante", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "mexico/atlante.png" }
     ],
     fixtures: [
-        // Matchday 3 - July 22-27
-        { home: "Cruz Azul", away: "Puebla", date: "2026-07-22" },
-        { home: "Toluca", away: "UNAM Pumas", date: "2026-07-22" },
-        { home: "Tigres UANL", away: "Atl. San Luis", date: "2026-07-25" },
-        { home: "Club Tijuana", away: "Club Leon", date: "2026-07-25" },
-        { home: "Atlante", away: "Club America", date: "2026-07-25" },
-        { home: "Guadalajara Chivas", away: "Juarez", date: "2026-07-26" },
-        { home: "Santos Laguna", away: "Atlas", date: "2026-07-26" },
-        { home: "Necaxa", away: "Monterrey", date: "2026-07-27" },
-        { home: "Pachuca", away: "Queretaro", date: "2026-07-27" },
-        
-        // Matchday 4 - August 1-3
-        { home: "Puebla", away: "Guadalajara Chivas", date: "2026-08-01" },
-        { home: "Juarez", away: "UNAM Pumas", date: "2026-08-01" },
-        { home: "Atl. San Luis", away: "Club Tijuana", date: "2026-08-01" },
-        { home: "Queretaro", away: "Tigres UANL", date: "2026-08-02" },
-        { home: "Atlas", away: "Monterrey", date: "2026-08-02" },
-        { home: "Club Leon", away: "Pachuca", date: "2026-08-02" },
-        { home: "Cruz Azul", away: "Atlante", date: "2026-08-02" },
-        { home: "Club America", away: "Santos Laguna", date: "2026-08-03" },
-        { home: "Toluca", away: "Necaxa", date: "2026-08-03" },
-        
-        // Matchday 5 - August 16-18
-        { home: "Atlante", away: "Toluca", date: "2026-08-16" },
-        { home: "Monterrey", away: "Juarez", date: "2026-08-16" },
-        { home: "Atlas", away: "Tigres UANL", date: "2026-08-16" },
-        { home: "UNAM Pumas", away: "Queretaro", date: "2026-08-16" },
-        { home: "Club America", away: "Atl. San Luis", date: "2026-08-17" },
-        { home: "Santos Laguna", away: "Guadalajara Chivas", date: "2026-08-17" },
-        { home: "Club Tijuana", away: "Cruz Azul", date: "2026-08-17" },
-        { home: "Necaxa", away: "Club Leon", date: "2026-08-18" },
-        { home: "Pachuca", away: "Puebla", date: "2026-08-18" },
         
         // Matchday 6 - August 22-24
         { home: "Club Leon", away: "Monterrey", date: "2026-08-22" },
@@ -1924,23 +1890,6 @@ const leaguesData = {
         { rank: 15, team: "Sporting KC", MP: 19, MW: 4, MD: 3, ML: 12, GF: 19, GA: 47, logo: "mls/sportingkclogo.png" }
     ],
     fixtures: [
-        // August 20
-        { home: "D.C. United", away: "New England", date: "2026-08-20" },
-        { home: "Columbus", away: "Montréal", date: "2026-08-20" },
-        { home: "Toronto", away: "Charlotte", date: "2026-08-20" },
-        { home: "Orlando City", away: "Chicago", date: "2026-08-20" },
-        { home: "Philadelphia", away: "Inter Miami", date: "2026-08-20" },
-        { home: "Cincinnati", away: "New York City", date: "2026-08-20" },
-        { home: "NY Red Bulls", away: "Nashville", date: "2026-08-20" },
-        { home: "Sporting KC", away: "St. Louis", date: "2026-08-20" },
-        { home: "Minnesota", away: "Atlanta United", date: "2026-08-20" },
-        { home: "Colorado", away: "LAFC", date: "2026-08-20" },
-        { home: "Real Salt Lake", away: "Dallas", date: "2026-08-20" },
-        { home: "Seattle Sounders", away: "Austin", date: "2026-08-20" },
-        { home: "LA Galaxy", away: "San Jose", date: "2026-08-20" },
-        { home: "Vancouver", away: "Houston Dynamo", date: "2026-08-20" },
-        { home: "Portland", away: "San Diego", date: "2026-08-20" },
-        
         // August 23
         { home: "Inter Miami", away: "Toronto", date: "2026-08-23" },
         { home: "Montréal", away: "LA Galaxy", date: "2026-08-23" },
@@ -2009,10 +1958,31 @@ const leaguesData = {
         { rank: 10, team: "Avispa Fukuoka", MP: 18, MW: 3, MD: 8, ML: 7, GF: 17, GA: 27, logo: "japan/avispa.png" }
     ],
     fixtures: [
-	
+        // Matchday 3 - August 22-23
+        { home: "Kashiwa Reysol", away: "V-Varen Nagasaki", date: "2026-08-22" },
+        { home: "FC Tokyo", away: "JEF United", date: "2026-08-22" },
+        { home: "Kashima Antlers", away: "Avispa Fukuoka", date: "2026-08-23" },
+        { home: "Okayama", away: "Tokyo Verdy", date: "2026-08-23" },
+        { home: "Kyoto Sanga", away: "Mito HollyHock", date: "2026-08-23" },
+        { home: "Cerezo Osaka", away: "Shimizu S-Pulse", date: "2026-08-23" },
+        { home: "Nagoya", away: "Gamba Osaka", date: "2026-08-23" },
+        { home: "Sanfrecce", away: "Kawasaki", date: "2026-08-23" },
+        { home: "Yokohama FM", away: "Vissel Kobe", date: "2026-08-23" },
+        { home: "Machida Zelvia", away: "Urawa Reds", date: "2026-08-23" },
+        
+        // Matchday 4 - August 29
+        { home: "Mito HollyHock", away: "Machida Zelvia", date: "2026-08-29" },
+        { home: "Gamba Osaka", away: "Sanfrecce", date: "2026-08-29" },
+        { home: "V-Varen Nagasaki", away: "FC Tokyo", date: "2026-08-29" },
+        { home: "Shimizu S-Pulse", away: "Kashiwa Reysol", date: "2026-08-29" },
+        { home: "Urawa Reds", away: "Yokohama FM", date: "2026-08-29" },
+        { home: "Kawasaki", away: "JEF United", date: "2026-08-29" },
+        { home: "Kyoto Sanga", away: "Avispa Fukuoka", date: "2026-08-29" },
+        { home: "Nagoya", away: "Okayama", date: "2026-08-29" },
+        { home: "Tokyo Verdy", away: "Kashima Antlers", date: "2026-08-29" },
+        { home: "Vissel Kobe", away: "Cerezo Osaka", date: "2026-08-29" }
     ]
 },
-
 "Japanese J2 League": {
     id: "j2-league",
     logo: "japan/j2logo.png",
@@ -2105,10 +2075,6 @@ const leaguesData = {
         { rank: 8, team: "Seattle Storm", GP: 36, GW: 7, GL: 29, points_for: 2772, points_against: 3168, logo: "wnba/storm.png" }
     ],
     fixtures: [
-        // August 20
-        { home: "Toronto Tempo", away: "Washington Mystics", date: "2026-08-20" },
-        { home: "Minnesota Lynx", away: "Golden State Valkyries", date: "2026-08-20" },
-        
         // August 21
         { home: "Indiana Fever", away: "Dallas Wings", date: "2026-08-21" },
         { home: "Connecticut Sun", away: "Las Vegas Aces", date: "2026-08-21" },
