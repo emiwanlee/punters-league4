@@ -206,56 +206,76 @@ const leaguesData = {
     ]
 },
 
-"Argentine Liga Profesional": {
-    id: "argentina-liga-profesional",
-    logo: "argentina/argentinaprimeralogo.png",
-    isBasketball: false,
-    teams: [
-        // Group A
-        { rank: 1, team: "Argentinos Juniors", MP: 16, MW: 9, MD: 6, ML: 1, GF: 24, GA: 9, logo: "argentina/argentinoslogo.png" },
-        { rank: 2, team: "Boca", MP: 16, MW: 10, MD: 3, ML: 3, GF: 24, GA: 11, logo: "argentina/bocalogo.png" },
-        { rank: 3, team: "Racing Club", MP: 16, MW: 9, MD: 1, ML: 6, GF: 26, GA: 16, logo: "argentina/racingclublogo.png" },
-        { rank: 4, team: "Huracán", MP: 16, MW: 7, MD: 6, ML: 3, GF: 19, GA: 12, logo: "argentina/huracanlogo.png" },
-        { rank: 5, team: "Tigre", MP: 16, MW: 8, MD: 3, ML: 5, GF: 18, GA: 12, logo: "argentina/tigrelogo.png" },
-        { rank: 6, team: "Independiente Rivadavia", MP: 16, MW: 7, MD: 6, ML: 3, GF: 20, GA: 17, logo: "argentina/rivadavialogo.png" },
-        { rank: 7, team: "Barracas Central", MP: 16, MW: 7, MD: 5, ML: 4, GF: 20, GA: 18, logo: "argentina/barracascentrallogo.png" },
-        { rank: 8, team: "Estudiantes", MP: 16, MW: 5, MD: 6, ML: 5, GF: 18, GA: 19, logo: "argentina/estudianteslogo.png" },
-        { rank: 9, team: "Newell's", MP: 16, MW: 5, MD: 4, ML: 7, GF: 12, GA: 15, logo: "argentina/newellslogo.png" },
-        { rank: 10, team: "Defensa y Justicia", MP: 16, MW: 5, MD: 4, ML: 7, GF: 18, GA: 22, logo: "argentina/defensalogo.png" },
-        { rank: 11, team: "Central Córdoba", MP: 16, MW: 5, MD: 3, ML: 8, GF: 21, GA: 22, logo: "argentina/centralcordobalogo.png" },
-        { rank: 12, team: "Belgrano", MP: 16, MW: 3, MD: 8, ML: 5, GF: 13, GA: 23, logo: "argentina/belgranologo.png" },
-        { rank: 13, team: "Aldosivi", MP: 16, MW: 4, MD: 3, ML: 9, GF: 18, GA: 28, logo: "argentina/aldosivilogo.png" },
-        { rank: 14, team: "Banfield", MP: 16, MW: 3, MD: 5, ML: 8, GF: 14, GA: 19, logo: "argentina/banfieldlogo.png" },
-        { rank: 15, team: "Unión", MP: 16, MW: 3, MD: 5, ML: 8, GF: 11, GA: 17, logo: "argentina/unionlogo.png" },
-        
-        // Group B
-        { rank: 1, team: "Central", MP: 16, MW: 10, MD: 5, ML: 1, GF: 22, GA: 8, logo: "argentina/centrallogo.png" },
-        { rank: 2, team: "River Plate", MP: 16, MW: 8, MD: 7, ML: 1, GF: 21, GA: 9, logo: "argentina/riverplatelogo.png" },
-        { rank: 3, team: "Independiente", MP: 16, MW: 8, MD: 5, ML: 3, GF: 23, GA: 12, logo: "argentina/independientelogo.png" },
-        { rank: 4, team: "San Lorenzo", MP: 16, MW: 7, MD: 6, ML: 3, GF: 14, GA: 10, logo: "argentina/sanlorenzologo.png" },
-        { rank: 5, team: "Deportivo Riestra", MP: 16, MW: 5, MD: 9, ML: 2, GF: 13, GA: 7, logo: "argentina/riestralogo.jpg" },
-        { rank: 6, team: "Platense", MP: 16, MW: 6, MD: 5, ML: 5, GF: 13, GA: 11, logo: "argentina/platesnselogo.png" },
-        { rank: 7, team: "Lanús", MP: 16, MW: 4, MD: 8, ML: 4, GF: 13, GA: 11, logo: "argentina/lanuslogo.png" },
-        { rank: 8, team: "Instituto", MP: 16, MW: 5, MD: 3, ML: 8, GF: 16, GA: 20, logo: "argentina/institutologo.png" },
-        { rank: 9, team: "Godoy Cruz", MP: 16, MW: 3, MD: 8, ML: 5, GF: 8, GA: 18, logo: "argentina/godoycruzlogo.png" },
-        { rank: 10, team: "Atlético Tucumán", MP: 16, MW: 5, MD: 1, ML: 10, GF: 17, GA: 21, logo: "argentina/atleticotucumanlogo.png" },
-        { rank: 11, team: "Gimnasia LP", MP: 16, MW: 4, MD: 4, ML: 8, GF: 9, GA: 18, logo: "argentina/gimnasialplogo.png" },
-        { rank: 12, team: "Sarmiento", MP: 16, MW: 2, MD: 9, ML: 5, GF: 11, GA: 19, logo: "argentina/sarmientologo.png" },
-        { rank: 13, team: "Vélez Sársfield", MP: 16, MW: 4, MD: 2, ML: 10, GF: 7, GA: 22, logo: "argentina/velezlogo.png" },
-        { rank: 14, team: "Talleres", MP: 16, MW: 2, MD: 7, ML: 7, GF: 11, GA: 15, logo: "argentina/tellereslogo.png" },
-        { rank: 15, team: "San Martín", MP: 16, MW: 2, MD: 3, ML: 11, GF: 5, GA: 18, logo: "argentina/sanmartinlogo.png" }
-    ],
-    fixtures: [
-        { home: "Huracán", away: "Deportivo Riestra", date: "2026-08-23" },
-        { home: "Newell's", away: "Banfield", date: "2026-08-23" },
-        { home: "Barracas Central", away: "Platense", date: "2026-08-23" },
-        { home: "Sarmiento", away: "Estudiantes", date: "2026-08-23" },
-        { home: "Belgrano", away: "Defensa y Justicia", date: "2026-08-23" },
-        { home: "River Plate", away: "Vélez Sársfield", date: "2026-08-23" },
-        { home: "Racing Club", away: "Boca", date: "2026-08-24" },
-        { home: "Tigre", away: "Central Córdoba", date: "2026-08-24" },
-        { home: "Talleres", away: "Central", date: "2026-08-25" }
-    ]
+"Argentine Liga Professional": {
+  "id": "argentine-liga-professional",
+  "logo": "argentina/ligaprofessional.png",
+  "isBasketball": false,
+  "season": "2026",
+      "teams": [
+        { "rank": 1, "team": "Estudiantes", "MP": 16, "MW": 9, "MD": 4, "ML": 3, "GF": 19, "GA": 7, "logo": "argentina/estudiantes.png" },
+        { "rank": 2, "team": "Boca", "MP": 16, "MW": 8, "MD": 6, "ML": 2, "GF": 22, "GA": 9, "logo": "argentina/boca.png" },
+        { "rank": 3, "team": "Vélez Sársfield", "MP": 16, "MW": 7, "MD": 7, "ML": 2, "GF": 18, "GA": 12, "logo": "argentina/velez.png" },
+        { "rank": 4, "team": "Talleres", "MP": 16, "MW": 7, "MD": 5, "ML": 4, "GF": 17, "GA": 13, "logo": "argentina/talleres.png" },
+        { "rank": 5, "team": "Independiente", "MP": 16, "MW": 6, "MD": 6, "ML": 4, "GF": 24, "GA": 20, "logo": "argentina/independiente.png" },
+        { "rank": 6, "team": "Lanús", "MP": 16, "MW": 6, "MD": 6, "ML": 4, "GF": 18, "GA": 15, "logo": "argentina/lanus.png" },
+        { "rank": 7, "team": "San Lorenzo", "MP": 16, "MW": 5, "MD": 7, "ML": 4, "GF": 14, "GA": 14, "logo": "argentina/sanlorenzo.png" },
+        { "rank": 8, "team": "Unión", "MP": 16, "MW": 5, "MD": 6, "ML": 5, "GF": 24, "GA": 20, "logo": "argentina/union.png" },
+        { "rank": 9, "team": "Instituto", "MP": 16, "MW": 6, "MD": 3, "ML": 7, "GF": 17, "GA": 17, "logo": "argentina/instituto.png" },
+        { "rank": 10, "team": "Defensa y Justicia", "MP": 16, "MW": 4, "MD": 7, "ML": 5, "GF": 18, "GA": 21, "logo": "argentina/defensayjusticia.png" },
+        { "rank": 11, "team": "Gimnasia y Esgirma", "MP": 16, "MW": 5, "MD": 4, "ML": 7, "GF": 14, "GA": 22, "logo": "argentina/gimnasiaesgirma.png" },
+        { "rank": 12, "team": "Platense", "MP": 16, "MW": 3, "MD": 7, "ML": 6, "GF": 10, "GA": 15, "logo": "argentina/platense.png" },
+        { "rank": 13, "team": "Central Córdoba", "MP": 16, "MW": 4, "MD": 4, "ML": 8, "GF": 11, "GA": 21, "logo": "argentina/centralcordoba.png" },
+        { "rank": 14, "team": "Newell's", "MP": 16, "MW": 3, "MD": 6, "ML": 7, "GF": 15, "GA": 27, "logo": "argentina/newells.png" },
+        { "rank": 15, "team": "Deportivo Riestra", "MP": 16, "MW": 1, "MD": 8, "ML": 7, "GF": 5, "GA": 12, "logo": "argentina/deportivoriestra.png" },
+   
+        { "rank": 1, "team": "Independiente Rivadavia", "MP": 16, "MW": 10, "MD": 4, "ML": 2, "GF": 29, "GA": 15, "logo": "argentina/independienterivadavia.png" },
+        { "rank": 2, "team": "River Plate", "MP": 16, "MW": 9, "MD": 2, "ML": 5, "GF": 22, "GA": 12, "logo": "argentina/riverplate.png" },
+        { "rank": 3, "team": "Argentinos Juniors", "MP": 16, "MW": 8, "MD": 5, "ML": 3, "GF": 17, "GA": 13, "logo": "argentina/argentinosjuniors.png" },
+        { "rank": 4, "team": "Central", "MP": 16, "MW": 8, "MD": 4, "ML": 4, "GF": 20, "GA": 16, "logo": "argentina/central.png" },
+        { "rank": 5, "team": "Belgrano", "MP": 16, "MW": 7, "MD": 5, "ML": 4, "GF": 17, "GA": 13, "logo": "argentina/belgrano.png" },
+        { "rank": 6, "team": "Gimnasia LP", "MP": 16, "MW": 8, "MD": 2, "ML": 6, "GF": 19, "GA": 19, "logo": "argentina/gimnasialp.png" },
+        { "rank": 7, "team": "Huracán", "MP": 16, "MW": 5, "MD": 7, "ML": 4, "GF": 17, "GA": 13, "logo": "argentina/huracan.png" },
+        { "rank": 8, "team": "Racing Club", "MP": 16, "MW": 5, "MD": 6, "ML": 5, "GF": 17, "GA": 15, "logo": "argentina/racingclub.png" },
+        { "rank": 9, "team": "Barracas Central", "MP": 16, "MW": 5, "MD": 6, "ML": 5, "GF": 15, "GA": 15, "logo": "argentina/barracascentral.png" },
+        { "rank": 10, "team": "Tigre", "MP": 16, "MW": 4, "MD": 8, "ML": 4, "GF": 18, "GA": 15, "logo": "argentina/tigre.png" },
+        { "rank": 11, "team": "Sarmiento", "MP": 16, "MW": 6, "MD": 1, "ML": 9, "GF": 13, "GA": 20, "logo": "argentina/sarmiento.png" },
+        { "rank": 12, "team": "Banfield", "MP": 16, "MW": 5, "MD": 3, "ML": 8, "GF": 17, "GA": 19, "logo": "argentina/banfield.png" },
+        { "rank": 13, "team": "Atlético Tucumán", "MP": 16, "MW": 3, "MD": 5, "ML": 8, "GF": 15, "GA": 20, "logo": "argentina/atleticotucuman.png" },
+        { "rank": 14, "team": "Aldosivi", "MP": 16, "MW": 0, "MD": 8, "ML": 8, "GF": 6, "GA": 19, "logo": "argentina/aldosivi.png" },
+        { "rank": 15, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 1, "MD": 2, "ML": 13, "GF": 5, "GA": 24, "logo": "argentina/estudiantesriocuarto.png" }
+      ],
+  "fixtures": [
+    { "home": "Unión", "away": "Sarmiento", "date": "2026-08-28" },
+    { "home": "Boca", "away": "Lanús", "date": "2026-08-29" },
+    { "home": "Deportivo Riestra", "away": "Vélez Sársfield", "date": "2026-08-29" },
+    { "home": "Central", "away": "Gimnasia LP", "date": "2026-08-29" },
+    { "home": "Huracán", "away": "Estudiantes de Río Cuarto", "date": "2026-08-29" },
+    { "home": "Atlético Tucumán", "away": "Belgrano", "date": "2026-08-30" },
+    { "home": "Talleres", "away": "Central Córdoba", "date": "2026-08-30" },
+    { "home": "Banfield", "away": "River Plate", "date": "2026-08-30" },
+    { "home": "Argentinos Juniors", "away": "Aldosivi", "date": "2026-08-30" },
+    { "home": "Independiente", "away": "Gimnasia y Esgirma", "date": "2026-08-30" },
+    { "home": "Independiente Rivadavia", "away": "Racing Club", "date": "2026-08-31" },
+    { "home": "Estudiantes", "away": "Newell's", "date": "2026-08-31" },
+    { "home": "Defensa y Justicia", "away": "Platense", "date": "2026-08-31" },
+    { "home": "Instituto", "away": "San Lorenzo", "date": "2026-09-01" },
+    { "home": "Tigre", "away": "Barracas Central", "date": "2026-09-01" },
+    { "home": "San Lorenzo", "away": "Talleres", "date": "2026-09-06" },
+    { "home": "Gimnasia LP", "away": "Tigre", "date": "2026-09-06" },
+    { "home": "Belgrano", "away": "Huracán", "date": "2026-09-06" },
+    { "home": "Unión", "away": "Instituto", "date": "2026-09-06" },
+    { "home": "River Plate", "away": "Independiente Rivadavia", "date": "2026-09-06" },
+    { "home": "Platense", "away": "Deportivo Riestra", "date": "2026-09-06" },
+    { "home": "Vélez Sársfield", "away": "Estudiantes", "date": "2026-09-06" },
+    { "home": "Gimnasia y Esgirma", "away": "Boca", "date": "2026-09-06" },
+    { "home": "Central", "away": "Newell's", "date": "2026-09-06" },
+    { "home": "Central Córdoba", "away": "Independiente", "date": "2026-09-06" },
+    { "home": "Racing Club", "away": "Atlético Tucumán", "date": "2026-09-06" },
+    { "home": "Barracas Central", "away": "Argentinos Juniors", "date": "2026-09-06" },
+    { "home": "Aldosivi", "away": "Banfield", "date": "2026-09-06" },
+    { "home": "Estudiantes de Río Cuarto", "away": "Sarmiento", "date": "2026-09-06" },
+    { "home": "Lanús", "away": "Defensa y Justicia", "date": "2026-09-06" }
+  ]
 },
 "Australian NPL ACT": {
     id: "australia-npl-act",
@@ -603,20 +623,6 @@ const leaguesData = {
         { rank: 29, team: "Lincoln City", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/lincoln.png" }
     ],
     fixtures: [
-        // Matchday 3 - August 22-23
-        { home: "Birmingham", away: "Bristol City", date: "2026-08-22" },
-        { home: "Millwall", away: "Norwich City", date: "2026-08-22" },
-        { home: "Lincoln City", away: "Portsmouth", date: "2026-08-22" },
-        { home: "Swansea", away: "Sheffield United", date: "2026-08-22" },
-        { home: "Blackburn Rovers", away: "Middlesbrough", date: "2026-08-22" },
-        { home: "Southampton", away: "Stoke City", date: "2026-08-22" },
-        { home: "West Ham", away: "Charlton", date: "2026-08-22" },
-        { home: "Derby County", away: "Cardiff City", date: "2026-08-22" },
-        { home: "QPR", away: "Bolton", date: "2026-08-22" },
-        { home: "Preston", away: "Wolves", date: "2026-08-22" },
-        { home: "Wrexham", away: "Watford", date: "2026-08-22" },
-        { home: "West Brom", away: "Burnley", date: "2026-08-23" },
-        
         // Matchday 4 - August 28-29
         { home: "Wrexham", away: "Birmingham", date: "2026-08-28" },
         { home: "Derby County", away: "Swansea", date: "2026-08-29" },
@@ -922,8 +928,6 @@ const leaguesData = {
     { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
   ],
   "fixtures": [
-    { "home": "Bologna", "away": "Lazio", "date": "2025-08-24" },
-    { "home": "Roma", "away": "Fiorentina", "date": "2025-08-24" },
     { "home": "Milan", "away": "Venezia", "date": "2025-08-28" },
     { "home": "Sassuolo", "away": "Torino", "date": "2025-08-29" },
     { "home": "Fiorentina", "away": "Frosinone", "date": "2025-08-29" },
@@ -1022,7 +1026,6 @@ const leaguesData = {
     { "rank": 18, "team": "Nantes", "MP": 3, "MW": 0, "MD": 0, "ML": 3, "GF": 3, "GA": 8, "logo": "france/nantes.png" }
   ],
   "fixtures": [
-    { "home": "Reims", "away": "Annecy", "date": "2026-08-24" },
     { "home": "AS Nancy Lorraine", "away": "Dunkerque", "date": "2026-08-28" },
     { "home": "Rodez", "away": "Pau", "date": "2026-08-28" },
     { "home": "Clermont", "away": "Sochaux", "date": "2026-08-28" },
@@ -1242,8 +1245,6 @@ const leaguesData = {
         { rank: 20, team: "Académico de Viseu FC", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "portugal/academico.png" }
     ],
     fixtures: [
-        { home: "Gil Vicente", away: "Casa Pia", date: "2026-08-24" },
-        
         // Matchday 4 - August 28-31
         { home: "Rio Ave", away: "SCP", date: "2026-08-28" },
         { home: "Alverca", away: "Santa Clara", date: "2026-08-29" },
@@ -1281,9 +1282,6 @@ const leaguesData = {
         { rank: 18, team: "AVS", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "portugal/avs.png" }
     ],
     fixtures: [
-        { home: "Farense", away: "Felgueiras", date: "2026-08-24" },
-        { home: "Feirense", away: "FC Porto B", date: "2026-08-24" },
-        
         // Matchday 5 - August 28-30
         { home: "Uniao de Leiria", away: "Tondela", date: "2026-08-28" },
         { home: "Portimonense", away: "Leixoes", date: "2026-08-29" },
@@ -1317,9 +1315,7 @@ const leaguesData = {
         { rank: 15, team: "ÖIS", MP: 17, MW: 3, MD: 4, ML: 10, GF: 21, GA: 40, logo: "sweden/ois.png" },
         { rank: 16, team: "Halmstad", MP: 17, MW: 1, MD: 4, ML: 12, GF: 11, GA: 34, logo: "sweden/halmstad.png" }
     ],
-    fixtures: [
-        { home: "Malmö", away: "Djurgården", date: "2026-08-24" },
-        
+    fixtures: [ 
         // Matchday 20 - August 29-31
         { home: "IF Elfsborg", away: "Degerfors", date: "2026-08-29" },
         { home: "Häcken", away: "Västerås", date: "2026-08-29" },
@@ -1859,9 +1855,6 @@ const leaguesData = {
         { rank: 19, team: "Atlante", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "mexico/atlante.png" }
     ],
     fixtures: [
-        { home: "Atl. San Luis", away: "Pachuca", date: "2026-08-24" },
-        { home: "UNAM Pumas", away: "Necaxa", date: "2026-08-24" },
-        
         // Matchday 7 - August 29-31
         { home: "Atlante", away: "Club Leon", date: "2026-08-29" },
         { home: "Necaxa", away: "Cruz Azul", date: "2026-08-29" },
@@ -1973,9 +1966,6 @@ const leaguesData = {
         { rank: 15, team: "Sporting KC", MP: 19, MW: 4, MD: 3, ML: 12, GF: 19, GA: 47, logo: "mls/sportingkclogo.png" }
     ],
     fixtures: [
-        // August 24
-        { home: "Atlanta United", away: "Sporting KC", date: "2026-08-24" },
-        
         // August 29
         { home: "Seattle Sounders", away: "Chicago", date: "2026-08-29" },
         
