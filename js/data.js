@@ -178,11 +178,6 @@ const leaguesData = {
         { rank: 22, team: "Ituzaingó", MP: 31, MW: 1, MD: 11, ML: 19, GF: 19, GA: 47, logo: "argentina/ituzaingo.png" }
     ],
     fixtures: [
-        { home: "Excursionistas", away: "Argentino de Merlo", date: "2026-08-26" },
-        { home: "Deportivo Camioneros", away: "Comunicaciones", date: "2026-08-26" },
-        { home: "Liniers", away: "Dep. Armenio", date: "2026-08-26" },
-        { home: "Deportivo Merlo", away: "Dock Sud", date: "2026-08-26" },
-        
         // Matchday 33 - August 29
         { home: "Talleres Remedios", away: "UAI Urquiza", date: "2026-08-29" },
         { home: "Defensores Unidos", away: "Deportivo Camioneros", date: "2026-08-29" },
@@ -784,8 +779,6 @@ const leaguesData = {
     { "rank": 16, "team": "Union La Calera", "MP": 20, "MW": 3, "MD": 5, "ML": 12, "GF": 17, "GA": 37, "logo": "chile/unionlacalera.png" }
   ],
   "fixtures": [
-
-    { "home": "Coquimbo", "away": "U. Catolica", "date": "2025-08-26" },
     { "home": "Cobresal", "away": "Palestino", "date": "2025-08-28" },
     { "home": "Limache", "away": "Everton", "date": "2025-08-29" },
     { "home": "Nublense", "away": "D. Concepcion", "date": "2025-08-30" },
@@ -1458,36 +1451,46 @@ const leaguesData = {
     ]
 },
 "Norwegian First Division": {
-    id: "norway",
-    logo: "norway/norway.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Haugesund", MP: 17, MW: 12, MD: 1, ML: 4, GF: 55, GA: 33, logo: "norway/haugesund.png" },
-        { rank: 2, team: "Stabæk", MP: 17, MW: 11, MD: 3, ML: 3, GF: 44, GA: 19, logo: "norway/stabaek.png" },
-        { rank: 3, team: "Kongsvinger", MP: 17, MW: 11, MD: 3, ML: 3, GF: 45, GA: 26, logo: "norway/kongsvinger.png" },
-        { rank: 4, team: "Stroemsgodset", MP: 17, MW: 9, MD: 5, ML: 3, GF: 44, GA: 25, logo: "norway/stroemsgodset.png" },
-        { rank: 5, team: "Odd", MP: 16, MW: 8, MD: 4, ML: 4, GF: 31, GA: 20, logo: "norway/odd.png" },
-        { rank: 6, team: "Hødd", MP: 17, MW: 8, MD: 3, ML: 6, GF: 28, GA: 29, logo: "norway/hodd.png" },
-        { rank: 7, team: "Egersund", MP: 17, MW: 8, MD: 2, ML: 7, GF: 31, GA: 28, logo: "norway/egersund.png" },
-        { rank: 8, team: "Ranheim TF", MP: 17, MW: 7, MD: 2, ML: 8, GF: 43, GA: 42, logo: "norway/ranheim.png" },
-        { rank: 9, team: "Bryne FK", MP: 17, MW: 7, MD: 2, ML: 8, GF: 23, GA: 26, logo: "norway/brynefk.png" },
-        { rank: 10, team: "Sandnes Ulf", MP: 17, MW: 6, MD: 2, ML: 9, GF: 26, GA: 32, logo: "norway/sandnesulf.png" },
-        { rank: 11, team: "Sogndal", MP: 17, MW: 5, MD: 3, ML: 9, GF: 30, GA: 43, logo: "norway/sogndal.png" },
-        { rank: 12, team: "Moss", MP: 16, MW: 5, MD: 2, ML: 9, GF: 25, GA: 36, logo: "norway/moss.png" },
-        { rank: 13, team: "Lyn", MP: 17, MW: 5, MD: 2, ML: 10, GF: 24, GA: 37, logo: "norway/lyn.png" },
-        { rank: 14, team: "Raufoss", MP: 17, MW: 5, MD: 1, ML: 11, GF: 21, GA: 41, logo: "norway/raufoss.png" },
-        { rank: 15, team: "Strømmen", MP: 17, MW: 4, MD: 3, ML: 10, GF: 22, GA: 41, logo: "norway/stremmen.png" },
-        { rank: 16, team: "Åsane", MP: 17, MW: 4, MD: 2, ML: 11, GF: 25, GA: 39, logo: "norway/asane.png" }
-    ],
-    fixtures: [
-        { home: "Strømmen", away: "Raufoss", date: "2026-08-26" },
-        { home: "Stroemsgodset", away: "Hødd", date: "2026-08-26" },
-        { home: "Moss", away: "Sogndal", date: "2026-08-26" },
-        { home: "Haugesund", away: "Egersund", date: "2026-08-26" },
-        { home: "Åsane", away: "Lyn", date: "2026-08-26" },
-        { home: "Stabæk", away: "Ranheim TF", date: "2026-08-26" },
-        { home: "Odd", away: "Kongsvinger", date: "2026-08-26" }
-    ]
+  "id": "norwegian-first-division",
+  "logo": "norway/1division.png",
+  "isBasketball": false,
+  "season": "2026",
+  "teams": [
+    { "rank": 1, "team": "Stabæk", "MP": 19, "MW": 13, "MD": 3, "ML": 3, "GF": 52, "GA": 21, "logo": "norway/stabaek.png" },
+    { "rank": 2, "team": "Kongsvinger", "MP": 19, "MW": 13, "MD": 3, "ML": 3, "GF": 49, "GA": 28, "logo": "norway/kongsvinger.png" },
+    { "rank": 3, "team": "Haugesund", "MP": 19, "MW": 13, "MD": 1, "ML": 5, "GF": 60, "GA": 36, "logo": "norway/haugesund.png" },
+    { "rank": 4, "team": "Stroemsgodset", "MP": 19, "MW": 11, "MD": 5, "ML": 3, "GF": 50, "GA": 27, "logo": "norway/stroemsgodset.png" },
+    { "rank": 5, "team": "Hødd", "MP": 19, "MW": 9, "MD": 3, "ML": 7, "GF": 33, "GA": 35, "logo": "norway/hodd.png" },
+    { "rank": 6, "team": "Odd", "MP": 19, "MW": 8, "MD": 5, "ML": 6, "GF": 35, "GA": 29, "logo": "norway/odd.png" },
+    { "rank": 7, "team": "Bryne FK", "MP": 19, "MW": 9, "MD": 2, "ML": 8, "GF": 26, "GA": 27, "logo": "norway/bryne.png" },
+    { "rank": 8, "team": "Egersund", "MP": 19, "MW": 8, "MD": 2, "ML": 9, "GF": 31, "GA": 35, "logo": "norway/egersund.png" },
+    { "rank": 9, "team": "Ranheim TF", "MP": 19, "MW": 7, "MD": 2, "ML": 10, "GF": 46, "GA": 49, "logo": "norway/ranheim.png" },
+    { "rank": 10, "team": "Lyn", "MP": 19, "MW": 7, "MD": 2, "ML": 10, "GF": 31, "GA": 39, "logo": "norway/lyn.png" },
+    { "rank": 11, "team": "Sogndal", "MP": 19, "MW": 6, "MD": 4, "ML": 9, "GF": 34, "GA": 45, "logo": "norway/sogndal.png" },
+    { "rank": 12, "team": "Sandnes Ulf", "MP": 19, "MW": 6, "MD": 2, "ML": 11, "GF": 26, "GA": 35, "logo": "norway/sandnesulf.png" },
+    { "rank": 13, "team": "Moss", "MP": 19, "MW": 5, "MD": 4, "ML": 10, "GF": 31, "GA": 43, "logo": "norway/moss.png" },
+    { "rank": 14, "team": "Strømmen", "MP": 19, "MW": 5, "MD": 3, "ML": 11, "GF": 28, "GA": 46, "logo": "norway/stroemmen.png" },
+    { "rank": 15, "team": "Åsane", "MP": 19, "MW": 5, "MD": 2, "ML": 12, "GF": 28, "GA": 42, "logo": "norway/asane.png" },
+    { "rank": 16, "team": "Raufoss", "MP": 19, "MW": 5, "MD": 1, "ML": 13, "GF": 23, "GA": 46, "logo": "norway/raufoss.png" }
+  ],
+  "fixtures": [
+    { "home": "Bryne FK", "away": "Haugesund", "date": "2026-08-29" },
+    { "home": "Ranheim TF", "away": "Odd", "date": "2026-08-30" },
+    { "home": "Egersund", "away": "Åsane", "date": "2026-08-30" },
+    { "home": "Sogndal", "away": "Stroemsgodset", "date": "2026-08-30" },
+    { "home": "Kongsvinger", "away": "Lyn", "date": "2026-08-30" },
+    { "home": "Moss", "away": "Strømmen", "date": "2026-08-30" },
+    { "home": "Raufoss", "away": "Sandnes Ulf", "date": "2026-08-30" },
+    { "home": "Hødd", "away": "Stabæk", "date": "2026-08-30" },
+    { "home": "Åsane", "away": "Hødd", "date": "2026-09-05" },
+    { "home": "Sandnes Ulf", "away": "Ranheim TF", "date": "2026-09-05" },
+    { "home": "Odd", "away": "Stroemsgodset", "date": "2026-09-05" },
+    { "home": "Kongsvinger", "away": "Raufoss", "date": "2026-09-05" },
+    { "home": "Haugesund", "away": "Sogndal", "date": "2026-09-05" },
+    { "home": "Strømmen", "away": "Bryne FK", "date": "2026-09-05" },
+    { "home": "Stabæk", "away": "Moss", "date": "2026-09-05" },
+    { "home": "Lyn", "away": "Egersund", "date": "2026-09-06" }
+  ]
 },
 
 "Latvia Nakotnes Liga": {
@@ -1714,12 +1717,6 @@ const leaguesData = {
     { "rank": 16, "team": "Universitario de Vinto", "MP": 16, "MW": 3, "MD": 2, "ML": 11, "GF": 20, "GA": 35, "logo": "bolivia/universitariovinto.png" }
   ],
   "fixtures": [
-    { "home": "Universitario de Vinto", "away": "Nacional Potosí", "date": "2026-08-26" },
-    { "home": "SA Bulo Bulo", "away": "The Strongest", "date": "2026-08-26" },
-    { "home": "Real Potosí", "away": "Real Tomayapo", "date": "2026-08-26" },
-    { "home": "Blooming", "away": "Real Oruro", "date": "2026-08-27" },
-    { "home": "Always Ready", "away": "Aurora", "date": "2026-08-27" },
-    { "home": "Independiente Petrolero", "away": "Guabirá", "date": "2026-08-27" },
     { "home": "Bolívar", "away": "Academia del Balompie Boliviano", "date": "2026-08-28" },
     { "home": "Real Oruro", "away": "SA Bulo Bulo", "date": "2026-09-04" },
     { "home": "Academia del Balompie Boliviano", "away": "Universitario de Vinto", "date": "2026-09-04" },
@@ -1864,11 +1861,6 @@ const leaguesData = {
     { "rank": 20, "team": "Deportivo Pereira", "MP": 19, "MW": 1, "MD": 7, "ML": 11, "GF": 15, "GA": 32, "logo": "colombia/depor pereira.png" }
   ],
   "fixtures": [
-    { "home": "Cúcuta Deportivo", "away": "Alianza", "date": "2026-08-26" },
-    { "home": "Santa Fe", "away": "Jaguares de Córdoba", "date": "TBD" },
-    { "home": "Boyacá Chicó FC", "away": "Fortaleza FC", "date": "2026-08-26" },
-    { "home": "América de Cali", "away": "Junior", "date": "2026-08-27" },
-    { "home": "Atl. Nacional", "away": "Deportivo Cali", "date": "2026-08-27" },
     { "home": "Llaneros FC", "away": "Millonarios", "date": "2026-08-28" },
     { "home": "Once Caldas", "away": "Tolima", "date": "TBD" },
     { "home": "Internacional de Bogotá", "away": "Deportivo Pasto", "date": "2026-08-28" },
@@ -2111,9 +2103,6 @@ const leaguesData = {
     
   
   "fixtures": [
-    { "home": "Connecticut Sun", "away": "Chicago Sky", "date": "2026-08-26" },
-    { "home": "Dallas Wings", "away": "Portland Fire", "date": "2026-08-26" },
-    { "home": "Phoenix Mercury", "away": "Washington Mystics", "date": "2026-08-26" },
     { "home": "Connecticut Sun", "away": "Golden State Valkyries", "date": "2026-08-27" },
     { "home": "Seattle Storm", "away": "Toronto Tempo", "date": "2026-08-27" },
     { "home": "New York Liberty", "away": "Golden State Valkyries", "date": "2026-08-28" },
