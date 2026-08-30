@@ -149,48 +149,63 @@ const leaguesData = {
 ]
 },
 */
-"Argentine Primera B Metropolitana": {
-    id: "argentina-primera-b",
-    logo: "argentina/primera-b.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Excursionistas", MP: 31, MW: 17, MD: 8, ML: 6, GF: 47, GA: 24, logo: "argentina/excursionistas.png" },
-        { rank: 2, team: "Dálmine", MP: 31, MW: 16, MD: 10, ML: 5, GF: 35, GA: 16, logo: "argentina/dalmine.png" },
-        { rank: 3, team: "Talleres Remedios", MP: 31, MW: 16, MD: 8, ML: 7, GF: 34, GA: 17, logo: "argentina/talleresremedios.png" },
-        { rank: 4, team: "Deportivo Camioneros", MP: 30, MW: 15, MD: 10, ML: 5, GF: 35, GA: 18, logo: "argentina/depcamioneros.png" },
-        { rank: 5, team: "Arsenal Sarandi", MP: 31, MW: 14, MD: 12, ML: 5, GF: 39, GA: 22, logo: "argentina/arsenalsarandi.png" },
-        { rank: 6, team: "Sportivo Italiano", MP: 31, MW: 14, MD: 10, ML: 7, GF: 36, GA: 23, logo: "argentina/sportivoitaliano.png" },
-        { rank: 7, team: "Real Pilar", MP: 31, MW: 13, MD: 9, ML: 9, GF: 34, GA: 31, logo: "argentina/realpilar.png" },
-        { rank: 8, team: "Dep. Armenio", MP: 31, MW: 12, MD: 8, ML: 11, GF: 33, GA: 34, logo: "argentina/deparmenio.png" },
-        { rank: 9, team: "Comunicaciones", MP: 31, MW: 11, MD: 10, ML: 10, GF: 32, GA: 29, logo: "argentina/comunicaciones.png" },
-        { rank: 10, team: "Laferrere", MP: 31, MW: 11, MD: 9, ML: 11, GF: 36, GA: 41, logo: "argentina/laferrere.png" },
-        { rank: 11, team: "Argentino de Merlo", MP: 31, MW: 10, MD: 10, ML: 11, GF: 30, GA: 30, logo: "argentina/argentinomerlo.png" },
-        { rank: 12, team: "Deportivo Merlo", MP: 31, MW: 9, MD: 12, ML: 10, GF: 33, GA: 45, logo: "argentina/deportivomerlo.png" },
-        { rank: 13, team: "San Martín Burzaco", MP: 31, MW: 8, MD: 13, ML: 10, GF: 28, GA: 32, logo: "argentina/sanmartinburzaco.png" },
-        { rank: 14, team: "Argentino Quilmes", MP: 31, MW: 8, MD: 13, ML: 10, GF: 26, GA: 30, logo: "argentina/argentoquilmes.png" },
-        { rank: 15, team: "Dock Sud", MP: 30, MW: 8, MD: 12, ML: 10, GF: 32, GA: 31, logo: "argentina/docksud.png" },
-        { rank: 16, team: "Villa San Carlos", MP: 31, MW: 8, MD: 11, ML: 12, GF: 31, GA: 35, logo: "argentina/villasantacarlos.png" },
-        { rank: 17, team: "Liniers", MP: 31, MW: 7, MD: 11, ML: 13, GF: 21, GA: 31, logo: "argentina/liniers.png" },
-        { rank: 18, team: "Flandria", MP: 31, MW: 8, MD: 8, ML: 15, GF: 24, GA: 36, logo: "argentina/flandria.png" },
-        { rank: 19, team: "Brown (A)", MP: 31, MW: 7, MD: 11, ML: 13, GF: 20, GA: 32, logo: "argentina/brown.png" },
-        { rank: 20, team: "Defensores Unidos", MP: 31, MW: 6, MD: 11, ML: 14, GF: 26, GA: 36, logo: "argentina/defensoresunidos.png" },
-        { rank: 21, team: "UAI Urquiza", MP: 31, MW: 3, MD: 19, ML: 9, GF: 15, GA: 26, logo: "argentina/uaiurquiza.png" },
-        { rank: 22, team: "Ituzaingó", MP: 31, MW: 1, MD: 11, ML: 19, GF: 19, GA: 47, logo: "argentina/ituzaingo.png" }
-    ],
-    fixtures: [
-        // Matchday 33 - August 29
-        { home: "Talleres Remedios", away: "UAI Urquiza", date: "2026-08-29" },
-        { home: "Defensores Unidos", away: "Deportivo Camioneros", date: "2026-08-29" },
-        { home: "Comunicaciones", away: "Deportivo Merlo", date: "2026-08-29" },
-        { home: "Argentino de Merlo", away: "Dálmine", date: "2026-08-29" },
-        { home: "Dep. Armenio", away: "Villa San Carlos", date: "2026-08-29" },
-        { home: "Laferrere", away: "Real Pilar", date: "2026-08-29" },
-        { home: "Ituzaingó", away: "Dock Sud", date: "2026-08-29" },
-        { home: "Flandria", away: "San Martín Burzaco", date: "2026-08-29" },
-        { home: "Arsenal Sarandi", away: "Excursionistas", date: "2026-08-29" },
-        { home: "Brown (A)", away: "Liniers", date: "2026-08-29" },
-        { home: "Argentino Quilmes", away: "Sportivo Italiano", date: "2026-08-29" }
-    ]
+"Argentina Primera B Metropolitana": {
+  "id": "argentina-primera-b-metropolitana",
+  "logo": "argentina/primera b metropolitana.png",
+  "isBasketball": false,
+  "season": "2026",
+  "teams": [
+    { "rank": 1, "team": "Excursionistas", "MP": 33, "MW": 18, "MD": 8, "ML": 7, "GF": 49, "GA": 27, "logo": "argentina/excursionistas.png" },
+    { "rank": 2, "team": "Arsenal Sarandi", "MP": 33, "MW": 16, "MD": 12, "ML": 5, "GF": 44, "GA": 22, "logo": "argentina/arsenalsarandi.png" },
+    { "rank": 3, "team": "Deportivo Camioneros", "MP": 33, "MW": 16, "MD": 12, "ML": 5, "GF": 39, "GA": 20, "logo": "argentina/deportivocamioneros.png" },
+    { "rank": 4, "team": "Talleres Remedios", "MP": 33, "MW": 17, "MD": 9, "ML": 7, "GF": 35, "GA": 17, "logo": "argentina/talleresremedios.png" },
+    { "rank": 5, "team": "Dálmine", "MP": 32, "MW": 16, "MD": 11, "ML": 5, "GF": 35, "GA": 16, "logo": "argentina/dalmine.png" },
+    { "rank": 6, "team": "Sportivo Italiano", "MP": 33, "MW": 15, "MD": 10, "ML": 8, "GF": 38, "GA": 25, "logo": "argentina/sportivoitaliano.png" },
+    { "rank": 7, "team": "Real Pilar", "MP": 33, "MW": 14, "MD": 10, "ML": 9, "GF": 37, "GA": 32, "logo": "argentina/realpilar.png" },
+    { "rank": 8, "team": "Laferrere", "MP": 33, "MW": 12, "MD": 10, "ML": 11, "GF": 39, "GA": 42, "logo": "argentina/laferrere.png" },
+    { "rank": 9, "team": "Dep. Armenio", "MP": 32, "MW": 12, "MD": 8, "ML": 12, "GF": 34, "GA": 37, "logo": "argentina/deparmenio.png" },
+    { "rank": 10, "team": "Dock Sud", "MP": 33, "MW": 10, "MD": 13, "ML": 10, "GF": 38, "GA": 34, "logo": "argentina/docksud.png" },
+    { "rank": 11, "team": "Comunicaciones", "MP": 32, "MW": 11, "MD": 10, "ML": 11, "GF": 32, "GA": 31, "logo": "argentina/comunicaciones.png" },
+    { "rank": 12, "team": "Argentino de Merlo", "MP": 32, "MW": 10, "MD": 10, "ML": 12, "GF": 30, "GA": 32, "logo": "argentina/argentinomerlo.png" },
+    { "rank": 13, "team": "San Martín Burzaco", "MP": 32, "MW": 9, "MD": 13, "ML": 10, "GF": 31, "GA": 34, "logo": "argentina/sanmartinburzaco.png" },
+    { "rank": 14, "team": "Deportivo Merlo", "MP": 32, "MW": 9, "MD": 12, "ML": 11, "GF": 34, "GA": 47, "logo": "argentina/deportivomerlo.png" },
+    { "rank": 15, "team": "Villa San Carlos", "MP": 32, "MW": 9, "MD": 11, "ML": 12, "GF": 34, "GA": 37, "logo": "argentina/villasantacarlos.png" },
+    { "rank": 16, "team": "Argentino Quilmes", "MP": 33, "MW": 8, "MD": 13, "ML": 12, "GF": 28, "GA": 35, "logo": "argentina/argentin quilmes.png" },
+    { "rank": 17, "team": "Liniers", "MP": 33, "MW": 8, "MD": 12, "ML": 13, "GF": 25, "GA": 33, "logo": "argentina/liniers.png" },
+    { "rank": 18, "team": "Defensores Unidos", "MP": 33, "MW": 7, "MD": 12, "ML": 14, "GF": 28, "GA": 36, "logo": "argentina/defensoresunidos.png" },
+    { "rank": 19, "team": "Brown (A)", "MP": 33, "MW": 7, "MD": 12, "ML": 14, "GF": 21, "GA": 35, "logo": "argentina/browna.png" },
+    { "rank": 20, "team": "Flandria", "MP": 32, "MW": 8, "MD": 8, "ML": 16, "GF": 26, "GA": 39, "logo": "argentina/flandria.png" },
+    { "rank": 21, "team": "UAI Urquiza", "MP": 33, "MW": 3, "MD": 19, "ML": 11, "GF": 15, "GA": 29, "logo": "argentina/uaiurquiza.png" },
+    { "rank": 22, "team": "Ituzaingó", "MP": 33, "MW": 1, "MD": 11, "ML": 21, "GF": 19, "GA": 51, "logo": "argentina/ituzaingo.png" }
+  ],
+  "fixtures": [
+    { "home": "Dep. Armenio", "away": "Villa San Carlos", "date": "2026-08-30" },
+    { "home": "Argentino de Merlo", "away": "Dálmine", "date": "2026-08-30" },
+    { "home": "Flandria", "away": "San Martín Burzaco", "date": "2026-08-30" },
+    { "home": "Comunicaciones", "away": "Deportivo Merlo", "date": "2026-08-31" },
+    { "home": "Real Pilar", "away": "Talleres Remedios", "date": "2026-09-05" },
+    { "home": "Villa San Carlos", "away": "Brown (A)", "date": "2026-09-05" },
+    { "home": "Deportivo Camioneros", "away": "Argentino Quilmes", "date": "2026-09-05" },
+    { "home": "San Martín Burzaco", "away": "Dep. Armenio", "date": "2026-09-05" },
+    { "home": "Dálmine", "away": "Arsenal Sarandi", "date": "2026-09-05" },
+    { "home": "Deportivo Merlo", "away": "Defensores Unidos", "date": "2026-09-05" },
+    { "home": "UAI Urquiza", "away": "Argentino de Merlo", "date": "2026-09-05" },
+    { "home": "Excursionistas", "away": "Ituzaingó", "date": "2026-09-05" },
+    { "home": "Liniers", "away": "Laferrere", "date": "2026-09-05" },
+    { "home": "Sportivo Italiano", "away": "Flandria", "date": "2026-09-05" },
+    { "home": "Dock Sud", "away": "Comunicaciones", "date": "2026-09-05" },
+    { "home": "Arsenal Sarandi", "away": "UAI Urquiza", "date": "2026-09-12" },
+    { "home": "Brown (A)", "away": "San Martín Burzaco", "date": "2026-09-12" },
+    { "home": "Excursionistas", "away": "Dálmine", "date": "2026-09-12" },
+    { "home": "Defensores Unidos", "away": "Dock Sud", "date": "2026-09-12" },
+    { "home": "Flandria", "away": "Deportivo Camioneros", "date": "2026-09-12" },
+    { "home": "Laferrere", "away": "Villa San Carlos", "date": "2026-09-12" },
+    { "home": "Argentino Quilmes", "away": "Deportivo Merlo", "date": "2026-09-12" },
+    { "home": "Argentino de Merlo", "away": "Real Pilar", "date": "2026-09-12" },
+    { "home": "Ituzaingó", "away": "Comunicaciones", "date": "2026-09-12" },
+    { "home": "Dep. Armenio", "away": "Sportivo Italiano", "date": "2026-09-12" },
+    { "home": "Talleres Remedios", "away": "Liniers", "date": "2026-09-12" }
+  ]
 },
 
 "Argentine Liga Professional": {
@@ -232,10 +247,6 @@ const leaguesData = {
         { "rank": 15, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 1, "MD": 2, "ML": 13, "GF": 5, "GA": 24, "logo": "argentina/estudiantesriocuarto.png" }
       ],
   "fixtures": [
-    { "home": "Boca", "away": "Lanús", "date": "2026-08-29" },
-    { "home": "Deportivo Riestra", "away": "Vélez Sársfield", "date": "2026-08-29" },
-    { "home": "Central", "away": "Gimnasia LP", "date": "2026-08-29" },
-    { "home": "Huracán", "away": "Estudiantes de Río Cuarto", "date": "2026-08-29" },
     { "home": "Atlético Tucumán", "away": "Belgrano", "date": "2026-08-30" },
     { "home": "Talleres", "away": "Central Córdoba", "date": "2026-08-30" },
     { "home": "Banfield", "away": "River Plate", "date": "2026-08-30" },
@@ -263,6 +274,7 @@ const leaguesData = {
     { "home": "Lanús", "away": "Defensa y Justicia", "date": "2026-09-06" }
   ]
 },
+/*
 "Australian NPL ACT": {
     id: "australia-npl-act",
     logo: "australia/nplact.png",
@@ -315,7 +327,7 @@ const leaguesData = {
     { "home": "St Albans Saints", "away": "Dandenong Thunder", "date": "2026-08-29" }
   ]
 },
-/*
+
 "Brazilian U-20 League": {
     id: "brazil-u20",
     logo: "brazil/u20.png",
@@ -386,7 +398,6 @@ const leaguesData = {
     { "rank": 20, "team": "Chapecoense", "MP": 23, "MW": 2, "MD": 8, "ML": 13, "GF": 24, "GA": 46, "logo": "brazil/chapecoense.png" }
   ],
   "fixtures": [
-    { "home": "Atlético Mineiro", "away": "Vitória", "date": "2026-08-29" },
     { "home": "São Paulo", "away": "Bragantino", "date": "2026-08-30" },
     { "home": "Vasco", "away": "Cruzeiro", "date": "2026-08-30" },
     { "home": "Athletico-PR", "away": "Fluminense", "date": "2026-08-30" },
@@ -468,10 +479,6 @@ const leaguesData = {
     { "rank": 20, "team": "Wolves", "MP": 38, "MW": 3, "MD": 11, "ML": 24, "GF": 27, "GA": 68, "logo": "england/wolves.png" }
   ],
   "fixtures": [
-    { "home": "Liverpool", "away": "Nottm Forest", "date": "2026-08-29" },
-    { "home": "Coventry", "away": "Hull", "date": "2026-08-29" },
-    { "home": "Bournemouth", "away": "Everton", "date": "2026-08-29" },
-    { "home": "Spurs", "away": "Newcastle", "date": "2026-08-29" },
     { "home": "Chelsea", "away": "Brighton", "date": "2026-08-30" },
     { "home": "Leeds", "away": "Brentford", "date": "2026-08-30" },
     { "home": "Sunderland", "away": "Fulham", "date": "2026-08-30" },
@@ -513,9 +520,6 @@ const leaguesData = {
     { "rank": 16, "team": "Manta", "MP": 26, "MW": 4, "MD": 5, "ML": 17, "GF": 12, "GA": 37, "logo": "ecuador/manta.png" }
   ],
   "fixtures": [
-    { "home": "Tecnico U.", "away": "Dep. Cuenca", "date": "2025-08-29" },
-    { "home": "Ind. del Valle", "away": "U. Catolica", "date": "2025-08-29" },
-    { "home": "Guayaquil City", "away": "LDU Quito", "date": "2025-08-29" },
     { "home": "Manta", "away": "Barcelona SC", "date": "2025-08-30" },
     { "home": "Aucas", "away": "Libertad", "date": "2025-08-30" },
     { "home": "Orense", "away": "Macara", "date": "2025-08-30" },
@@ -555,156 +559,221 @@ const leaguesData = {
         { rank: 18, team: "St. Pauli", MP: 34, MW: 6, MD: 8, ML: 20, GF: 29, GA: 60, logo: "germany/stpauli.png" }
     ],
     fixtures: [
-        // Matchday 1 - August 28-30
-        { home: "RB Leipzig", away: "Mönchengladbach", date: "2026-08-29" },
-        { home: "Mainz", away: "Paderborn", date: "2026-08-29" },
-        { home: "Köln", away: "Hoffenheim", date: "2026-08-29" },
-        { home: "Union Berlin", away: "Eintracht Frankfurt", date: "2026-08-29" },
-        { home: "SV Elversberg", away: "Leverkusen", date: "2026-08-29" },
-        { home: "Dortmund", away: "Hamburg", date: "2026-08-29" },
         { home: "Freiburg", away: "Werder", date: "2026-08-30" },
         { home: "Augsburg", away: "Schalke", date: "2026-08-30" }
     ]
 },
 
 "English Championship": {
-    id: "championship",
-    logo: "england/championship.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45, logo: "england/coventry.png" },
-        { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47, logo: "england/ipswich.png" },
-        { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49, logo: "england/millwall.png" },
-        { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56, logo: "england/southampton.png" },
-        { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47, logo: "england/middlesbrough.png" },
-        { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66, logo: "england/hull.png" },
-        { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65, logo: "england/wrexham.png" },
-        { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59, logo: "england/derby.png" },
-        { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56, logo: "england/norwich.png" },
-        { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56, logo: "england/birmingham.png" },
-        { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59, logo: "england/swansea.png" },
-        { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59, logo: "england/bristol.png" },
-        { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66, logo: "england/sheffieldutd.png" },
-        { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62, logo: "england/preston.png" },
-        { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73, logo: "england/qpr.png" },
-        { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65, logo: "england/watford.png" },
-        { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56, logo: "england/stoke.png" },
-        { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64, logo: "england/portsmouth.png" },
-        { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58, logo: "england/charlton.png" },
-        { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56, logo: "england/blackburn.png" },
-        { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58, logo: "england/westbrom.png" },
-        { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59, logo: "england/oxford.png" },
-        { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68, logo: "england/leicester.png" },
-        { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89, logo: "england/sheffieldwed.png" },
-        // Additional teams for 2026/27 season
-        { rank: 25, team: "Wolves", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/wolves.png" },
-        { rank: 26, team: "Burnley", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/burnley.png" },
-        { rank: 27, team: "West Ham", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/westham.png" },
-        { rank: 28, team: "Bolton", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/bolton.png" },
-        { rank: 29, team: "Lincoln City", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/lincoln.png" }
-    ],
-    fixtures: [
-        // Matchday 4 - August 28-29
-        { home: "Derby County", away: "Swansea", date: "2026-08-29" },
-        { home: "Middlesbrough", away: "West Brom", date: "2026-08-29" },
-        { home: "Wolves", away: "Stoke City", date: "2026-08-29" },
-        { home: "Charlton", away: "Preston", date: "2026-08-29" },
-        { home: "Bristol City", away: "Portsmouth", date: "2026-08-29" },
-        { home: "Blackburn Rovers", away: "QPR", date: "2026-08-29" },
-        { home: "Bolton", away: "Lincoln City", date: "2026-08-29" },
-        { home: "Southampton", away: "Millwall", date: "2026-08-29" },
-        { home: "Norwich City", away: "Burnley", date: "2026-08-29" },
-        { home: "Cardiff City", away: "Sheffield United", date: "2026-08-29" },
-        { home: "Watford", away: "West Ham", date: "2026-08-29" }
-    ]
+  "id": "championship",
+  "logo": "england/championship.png",
+  "isBasketball": false,
+  "season": "2026-27",
+  "teams": [
+    { "rank": 1, "team": "Coventry", "MP": 46, "MW": 28, "MD": 11, "ML": 7, "GF": 97, "GA": 45, "logo": "england/coventry.png" },
+    { "rank": 2, "team": "Ipswich Town", "MP": 46, "MW": 23, "MD": 15, "ML": 8, "GF": 80, "GA": 47, "logo": "england/ipswich.png" },
+    { "rank": 3, "team": "Millwall", "MP": 46, "MW": 24, "MD": 11, "ML": 11, "GF": 64, "GA": 49, "logo": "england/millwall.png" },
+    { "rank": 4, "team": "Southampton", "MP": 46, "MW": 22, "MD": 14, "ML": 10, "GF": 82, "GA": 56, "logo": "england/southampton.png" },
+    { "rank": 5, "team": "Middlesbrough", "MP": 46, "MW": 22, "MD": 14, "ML": 10, "GF": 72, "GA": 47, "logo": "england/middlesbrough.png" },
+    { "rank": 6, "team": "Hull", "MP": 46, "MW": 21, "MD": 10, "ML": 15, "GF": 70, "GA": 66, "logo": "england/hull.png" },
+    { "rank": 7, "team": "Wrexham", "MP": 46, "MW": 19, "MD": 14, "ML": 13, "GF": 69, "GA": 65, "logo": "england/wrexham.png" },
+    { "rank": 8, "team": "Derby County", "MP": 46, "MW": 20, "MD": 9, "ML": 17, "GF": 67, "GA": 59, "logo": "england/derby.png" },
+    { "rank": 9, "team": "Norwich City", "MP": 46, "MW": 19, "MD": 8, "ML": 19, "GF": 63, "GA": 56, "logo": "england/norwich.png" },
+    { "rank": 10, "team": "Birmingham", "MP": 46, "MW": 17, "MD": 13, "ML": 16, "GF": 57, "GA": 56, "logo": "england/birmingham.png" },
+    { "rank": 11, "team": "Swansea", "MP": 46, "MW": 18, "MD": 10, "ML": 18, "GF": 57, "GA": 59, "logo": "england/swansea.png" },
+    { "rank": 12, "team": "Bristol City", "MP": 46, "MW": 17, "MD": 11, "ML": 18, "GF": 59, "GA": 59, "logo": "england/bristol.png" },
+    { "rank": 13, "team": "Sheffield United", "MP": 46, "MW": 18, "MD": 6, "ML": 22, "GF": 66, "GA": 66, "logo": "england/sheffieldutd.png" },
+    { "rank": 14, "team": "Preston", "MP": 46, "MW": 15, "MD": 15, "ML": 16, "GF": 55, "GA": 62, "logo": "england/preston.png" },
+    { "rank": 15, "team": "QPR", "MP": 46, "MW": 16, "MD": 10, "ML": 20, "GF": 61, "GA": 73, "logo": "england/qpr.png" },
+    { "rank": 16, "team": "Watford", "MP": 46, "MW": 14, "MD": 15, "ML": 17, "GF": 53, "GA": 65, "logo": "england/watford.png" },
+    { "rank": 17, "team": "Stoke City", "MP": 46, "MW": 15, "MD": 10, "ML": 21, "GF": 51, "GA": 56, "logo": "england/stoke.png" },
+    { "rank": 18, "team": "Portsmouth", "MP": 46, "MW": 14, "MD": 13, "ML": 19, "GF": 49, "GA": 64, "logo": "england/portsmouth.png" },
+    { "rank": 19, "team": "Charlton", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 44, "GA": 58, "logo": "england/charlton.png" },
+    { "rank": 20, "team": "Blackburn Rovers", "MP": 46, "MW": 13, "MD": 13, "ML": 20, "GF": 42, "GA": 56, "logo": "england/blackburn.png" },
+    { "rank": 21, "team": "West Brom", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 48, "GA": 58, "logo": "england/westbrom.png" },
+    { "rank": 22, "team": "Oxford Utd", "MP": 46, "MW": 11, "MD": 14, "ML": 21, "GF": 45, "GA": 59, "logo": "england/oxford.png" },
+    { "rank": 23, "team": "Leicester City", "MP": 46, "MW": 12, "MD": 16, "ML": 18, "GF": 58, "GA": 68, "logo": "england/leicester.png" },
+    { "rank": 24, "team": "Sheffield Wednesday", "MP": 46, "MW": 2, "MD": 12, "ML": 32, "GF": 29, "GA": 89, "logo": "england/sheffieldwed.png" },
+    { "rank": 25, "team": "Wolves", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/wolves.png" },
+    { "rank": 26, "team": "Burnley", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/burnley.png" },
+    { "rank": 27, "team": "West Ham", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/westham.png" },
+    { "rank": 28, "team": "Bolton", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/bolton.png" },
+    { "rank": 29, "team": "Lincoln City", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/lincoln.png" }
+  ],
+  "fixtures": [
+    { "home": "Preston", "away": "Bristol City", "date": "2026-09-01" },
+    { "home": "Portsmouth", "away": "Derby County", "date": "2026-09-01" },
+    { "home": "Lincoln City", "away": "Blackburn Rovers", "date": "2026-09-01" },
+    { "home": "West Ham", "away": "Wolves", "date": "2026-09-01" },
+    { "home": "Sheffield United", "away": "Bolton", "date": "2026-09-01" },
+    { "home": "Swansea", "away": "Watford", "date": "2026-09-01" },
+    { "home": "Stoke City", "away": "Norwich City", "date": "2026-09-01" },
+    { "home": "Birmingham", "away": "Southampton", "date": "2026-09-01" },
+    { "home": "West Brom", "away": "Charlton", "date": "2026-09-02" },
+    { "home": "Millwall", "away": "Wrexham", "date": "2026-09-02" },
+    { "home": "QPR", "away": "Cardiff City", "date": "2026-09-02" },
+    { "home": "Burnley", "away": "Middlesbrough", "date": "2026-09-02" },
+    { "home": "Lincoln City", "away": "Southampton", "date": "2026-09-05" },
+    { "home": "Stoke City", "away": "Charlton", "date": "2026-09-05" },
+    { "home": "Preston", "away": "Blackburn Rovers", "date": "2026-09-05" },
+    { "home": "Burnley", "away": "Bristol City", "date": "2026-09-05" },
+    { "home": "Millwall", "away": "Bolton", "date": "2026-09-05" },
+    { "home": "QPR", "away": "Middlesbrough", "date": "2026-09-05" },
+    { "home": "Sheffield United", "away": "Norwich City", "date": "2026-09-05" },
+    { "home": "West Brom", "away": "Watford", "date": "2026-09-05" },
+    { "home": "West Ham", "away": "Derby County", "date": "2026-09-05" },
+    { "home": "Portsmouth", "away": "Cardiff City", "date": "2026-09-05" },
+    { "home": "Swansea", "away": "Wrexham", "date": "2026-09-05" },
+    { "home": "Birmingham", "away": "Wolves", "date": "2026-09-06" }
+  ]
 },
-
 "English League One": {
-    id: "league-one",
-    logo: "england/leagueone.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Lincoln City", MP: 46, MW: 31, MD: 10, ML: 5, GF: 89, GA: 41, logo: "efl2/lincoln.png" },
-        { rank: 2, team: "Cardiff City", MP: 46, MW: 27, MD: 10, ML: 9, GF: 90, GA: 50, logo: "efl2/cardiff.png" },
-        { rank: 3, team: "Stockport", MP: 46, MW: 22, MD: 11, ML: 13, GF: 71, GA: 58, logo: "efl2/stockportlogo.png" },
-        { rank: 4, team: "Bradford City", MP: 46, MW: 22, MD: 11, ML: 13, GF: 58, GA: 51, logo: "efl2/bradfordlogo.png" },
-        { rank: 5, team: "Bolton", MP: 46, MW: 19, MD: 18, ML: 9, GF: 70, GA: 52, logo: "efl2/boltonlogo.png" },
-        { rank: 6, team: "Stevenage", MP: 46, MW: 21, MD: 12, ML: 13, GF: 49, GA: 46, logo: "efl2/stevenagelogo.png" },
-        { rank: 7, team: "Luton Town", MP: 46, MW: 21, MD: 11, ML: 14, GF: 68, GA: 56, logo: "efl2/lutonlogo.png" },
-        { rank: 8, team: "Plymouth", MP: 46, MW: 22, MD: 7, ML: 17, GF: 75, GA: 63, logo: "efl2/plymouthlogo.png" },
-        { rank: 9, team: "Huddersfield", MP: 46, MW: 18, MD: 13, ML: 15, GF: 74, GA: 64, logo: "efl2/huddersfieldlogo.png" },
-        { rank: 10, team: "Mansfield Town", MP: 46, MW: 16, MD: 17, ML: 13, GF: 62, GA: 50, logo: "efl2/mansfieldlogo.png" },
-        { rank: 11, team: "Wycombe", MP: 46, MW: 17, MD: 12, ML: 17, GF: 69, GA: 58, logo: "efl2/wycombelogo.png" },
-        { rank: 12, team: "Reading", MP: 46, MW: 16, MD: 15, ML: 15, GF: 64, GA: 60, logo: "efl2/readinglogo.png" },
-        { rank: 13, team: "Blackpool", MP: 46, MW: 17, MD: 9, ML: 20, GF: 54, GA: 65, logo: "efl2/blackpoollogo.png" },
-        { rank: 14, team: "Doncaster", MP: 46, MW: 17, MD: 9, ML: 20, GF: 50, GA: 69, logo: "efl2/doncasterlogo.png" },
-        { rank: 15, team: "Barnsley", MP: 46, MW: 15, MD: 14, ML: 17, GF: 68, GA: 73, logo: "efl2/barnsleylogo.png" },
-        { rank: 16, team: "Wigan Athletic", MP: 46, MW: 14, MD: 14, ML: 18, GF: 49, GA: 58, logo: "efl2/wiganlogo.png" },
-        { rank: 17, team: "Burton", MP: 46, MW: 13, MD: 15, ML: 18, GF: 50, GA: 60, logo: "efl2/burtonlogo.png" },
-        { rank: 18, team: "Peterborough", MP: 46, MW: 15, MD: 8, ML: 23, GF: 64, GA: 68, logo: "efl2/peterboroughlogo.png" },
-        { rank: 19, team: "AFC Wimbledon", MP: 46, MW: 15, MD: 8, ML: 23, GF: 51, GA: 72, logo: "efl2/afcwimbledonlogo.png" },
-        { rank: 20, team: "Leyton Orient", MP: 46, MW: 14, MD: 10, ML: 22, GF: 59, GA: 71, logo: "efl2/leytonorientlogo.png" },
-        { rank: 21, team: "Exeter City", MP: 46, MW: 12, MD: 13, ML: 21, GF: 52, GA: 61, logo: "efl2/exeterlogo.png" },
-        { rank: 22, team: "Port Vale", MP: 46, MW: 10, MD: 12, ML: 24, GF: 36, GA: 61, logo: "efl2/portvalelogo.png" },
-        { rank: 23, team: "Rotherham", MP: 46, MW: 10, MD: 11, ML: 25, GF: 41, GA: 71, logo: "efl2/rotherhamlogo.png" },
-        { rank: 24, team: "Northampton Town", MP: 46, MW: 9, MD: 8, ML: 29, GF: 39, GA: 74, logo: "efl2/northamptonlogo.png" }
-    ],
-    fixtures: [
-    ]
+  "id": "league-one",
+  "logo": "england/leagueone.png",
+  "isBasketball": false,
+  "season": "2026-27",
+  "teams": [
+    { "rank": 1, "team": "Lincoln City", "MP": 46, "MW": 31, "MD": 10, "ML": 5, "GF": 89, "GA": 41, "logo": "england/lincoln.png" },
+    { "rank": 2, "team": "Cardiff City", "MP": 46, "MW": 27, "MD": 10, "ML": 9, "GF": 90, "GA": 50, "logo": "england/cardiff.png" },
+    { "rank": 3, "team": "Stockport", "MP": 46, "MW": 22, "MD": 11, "ML": 13, "GF": 71, "GA": 58, "logo": "england/stockport.png" },
+    { "rank": 4, "team": "Bradford City", "MP": 46, "MW": 22, "MD": 11, "ML": 13, "GF": 58, "GA": 51, "logo": "england/bradford.png" },
+    { "rank": 5, "team": "Bolton", "MP": 46, "MW": 19, "MD": 18, "ML": 9, "GF": 70, "GA": 52, "logo": "england/bolton.png" },
+    { "rank": 6, "team": "Stevenage", "MP": 46, "MW": 21, "MD": 12, "ML": 13, "GF": 49, "GA": 46, "logo": "england/stevenage.png" },
+    { "rank": 7, "team": "Luton Town", "MP": 46, "MW": 21, "MD": 11, "ML": 14, "GF": 68, "GA": 56, "logo": "england/luton.png" },
+    { "rank": 8, "team": "Plymouth", "MP": 46, "MW": 22, "MD": 7, "ML": 17, "GF": 75, "GA": 63, "logo": "england/plymouth.png" },
+    { "rank": 9, "team": "Huddersfield", "MP": 46, "MW": 18, "MD": 13, "ML": 15, "GF": 74, "GA": 64, "logo": "england/huddersfield.png" },
+    { "rank": 10, "team": "Mansfield Town", "MP": 46, "MW": 16, "MD": 17, "ML": 13, "GF": 62, "GA": 50, "logo": "england/mansfield.png" },
+    { "rank": 11, "team": "Wycombe", "MP": 46, "MW": 17, "MD": 12, "ML": 17, "GF": 69, "GA": 58, "logo": "england/wycombe.png" },
+    { "rank": 12, "team": "Reading", "MP": 46, "MW": 16, "MD": 15, "ML": 15, "GF": 64, "GA": 60, "logo": "england/reading.png" },
+    { "rank": 13, "team": "Blackpool", "MP": 46, "MW": 17, "MD": 9, "ML": 20, "GF": 54, "GA": 65, "logo": "england/blackpool.png" },
+    { "rank": 14, "team": "Doncaster", "MP": 46, "MW": 17, "MD": 9, "ML": 20, "GF": 50, "GA": 69, "logo": "england/doncaster.png" },
+    { "rank": 15, "team": "Barnsley", "MP": 46, "MW": 15, "MD": 14, "ML": 17, "GF": 68, "GA": 73, "logo": "england/barnsley.png" },
+    { "rank": 16, "team": "Wigan Athletic", "MP": 46, "MW": 14, "MD": 14, "ML": 18, "GF": 49, "GA": 58, "logo": "england/wigan.png" },
+    { "rank": 17, "team": "Burton", "MP": 46, "MW": 13, "MD": 15, "ML": 18, "GF": 50, "GA": 60, "logo": "england/burton.png" },
+    { "rank": 18, "team": "Peterborough", "MP": 46, "MW": 15, "MD": 8, "ML": 23, "GF": 64, "GA": 68, "logo": "england/peterborough.png" },
+    { "rank": 19, "team": "AFC Wimbledon", "MP": 46, "MW": 15, "MD": 8, "ML": 23, "GF": 51, "GA": 72, "logo": "england/afcwimbledon.png" },
+    { "rank": 20, "team": "Leyton Orient", "MP": 46, "MW": 14, "MD": 10, "ML": 22, "GF": 59, "GA": 71, "logo": "england/leytonorient.png" },
+    { "rank": 21, "team": "Exeter City", "MP": 46, "MW": 12, "MD": 13, "ML": 21, "GF": 52, "GA": 61, "logo": "england/exeter.png" },
+    { "rank": 22, "team": "Port Vale", "MP": 46, "MW": 10, "MD": 12, "ML": 24, "GF": 36, "GA": 61, "logo": "england/portvale.png" },
+    { "rank": 23, "team": "Rotherham", "MP": 46, "MW": 10, "MD": 11, "ML": 25, "GF": 41, "GA": 71, "logo": "england/rotherham.png" },
+    { "rank": 24, "team": "Northampton Town", "MP": 46, "MW": 9, "MD": 8, "ML": 29, "GF": 39, "GA": 74, "logo": "england/northampton.png" }
+  ],
+  "fixtures": [
+    { "home": "Bromley", "away": "Leyton Orient", "date": "2026-09-01" },
+    { "home": "Wycombe", "away": "Sheffield Wednesday", "date": "2026-09-01" },
+    { "home": "Doncaster", "away": "Notts County", "date": "2026-09-01" },
+    { "home": "Peterborough", "away": "Stevenage", "date": "2026-09-01" },
+    { "home": "Bradford City", "away": "Cambridge United", "date": "2026-09-01" },
+    { "home": "Huddersfield", "away": "Oxford Utd", "date": "2026-09-01" },
+    { "home": "Leicester City", "away": "Plymouth", "date": "2026-09-01" },
+    { "home": "Wigan Athletic", "away": "MK Dons", "date": "2026-09-02" },
+    { "home": "Luton Town", "away": "Stockport", "date": "2026-09-02" },
+    { "home": "Burton", "away": "AFC Wimbledon", "date": "2026-09-02" },
+    { "home": "Barnsley", "away": "Blackpool", "date": "2026-09-02" },
+    { "home": "Reading", "away": "Mansfield Town", "date": "2026-09-02" },
+    { "home": "Peterborough", "away": "Sheffield Wednesday", "date": "2026-09-05" },
+    { "home": "Wigan Athletic", "away": "Stockport", "date": "2026-09-05" },
+    { "home": "Leicester City", "away": "Oxford Utd", "date": "2026-09-05" },
+    { "home": "Wycombe", "away": "MK Dons", "date": "2026-09-05" },
+    { "home": "Reading", "away": "Blackpool", "date": "2026-09-05" },
+    { "home": "Doncaster", "away": "Plymouth", "date": "2026-09-05" },
+    { "home": "Bradford City", "away": "Mansfield Town", "date": "2026-09-05" },
+    { "home": "Barnsley", "away": "Stevenage", "date": "2026-09-05" },
+    { "home": "Burton", "away": "Cambridge United", "date": "2026-09-05" },
+    { "home": "Huddersfield", "away": "Notts County", "date": "2026-09-05" },
+    { "home": "Luton Town", "away": "Leyton Orient", "date": "2026-09-05" },
+    { "home": "Bromley", "away": "AFC Wimbledon", "date": "2026-09-07" },
+    { "home": "Oxford Utd", "away": "Reading", "date": "2026-09-08" },
+    { "home": "Stevenage", "away": "Luton Town", "date": "2026-09-10" },
+    { "home": "Leyton Orient", "away": "Wycombe", "date": "2026-09-12" },
+    { "home": "Notts County", "away": "Bradford City", "date": "2026-09-12" },
+    { "home": "Sheffield Wednesday", "away": "Wigan Athletic", "date": "2026-09-12" },
+    { "home": "Stockport", "away": "Leicester City", "date": "2026-09-12" },
+    { "home": "Plymouth", "away": "Barnsley", "date": "2026-09-12" },
+    { "home": "Oxford Utd", "away": "Burton", "date": "2026-09-12" },
+    { "home": "Cambridge United", "away": "Reading", "date": "2026-09-12" },
+    { "home": "MK Dons", "away": "Peterborough", "date": "2026-09-12" },
+    { "home": "Blackpool", "away": "Bromley", "date": "2026-09-12" },
+    { "home": "Mansfield Town", "away": "Huddersfield", "date": "2026-09-12" },
+    { "home": "AFC Wimbledon", "away": "Doncaster", "date": "2026-09-12" }
+  ]
 },
 
 "English League Two": {
-    id: "league-two",
-    logo: "england/leaguetwo.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Bromley", MP: 46, MW: 24, MD: 15, ML: 7, GF: 71, GA: 46, logo: "england/bromley.png" },
-        { rank: 2, team: "MK Dons", MP: 46, MW: 24, MD: 14, ML: 8, GF: 86, GA: 45, logo: "england/mkdons.png" },
-        { rank: 3, team: "Cambridge United", MP: 46, MW: 22, MD: 16, ML: 8, GF: 66, GA: 33, logo: "england/cambridge.png" },
-        { rank: 4, team: "Salford City", MP: 46, MW: 25, MD: 6, ML: 15, GF: 61, GA: 51, logo: "england/salford.png" },
-        { rank: 5, team: "Notts County", MP: 46, MW: 24, MD: 8, ML: 14, GF: 74, GA: 52, logo: "england/nottscounty.png" },
-        { rank: 6, team: "Chesterfield", MP: 46, MW: 21, MD: 16, ML: 9, GF: 71, GA: 56, logo: "england/chesterfield.png" },
-        { rank: 7, team: "Grimsby Town", MP: 46, MW: 22, MD: 12, ML: 12, GF: 74, GA: 50, logo: "england/grimsby.png" },
-        { rank: 8, team: "Barnet", MP: 46, MW: 21, MD: 13, ML: 12, GF: 70, GA: 53, logo: "england/barnet.png" },
-        { rank: 9, team: "Swindon Town", MP: 46, MW: 22, MD: 9, ML: 15, GF: 70, GA: 59, logo: "england/swindon.png" },
-        { rank: 10, team: "Oldham Athletic", MP: 46, MW: 18, MD: 14, ML: 14, GF: 60, GA: 44, logo: "england/oldham.png" },
-        { rank: 11, team: "Crewe Alexandra", MP: 46, MW: 19, MD: 10, ML: 17, GF: 64, GA: 58, logo: "england/crewe.png" },
-        { rank: 12, team: "Colchester", MP: 46, MW: 18, MD: 12, ML: 16, GF: 62, GA: 49, logo: "england/colchester.png" },
-        { rank: 13, team: "Walsall", MP: 46, MW: 18, MD: 11, ML: 17, GF: 56, GA: 56, logo: "england/walsall.png" },
-        { rank: 14, team: "Bristol Rovers", MP: 46, MW: 19, MD: 5, ML: 22, GF: 56, GA: 65, logo: "england/bristolrovers.png" },
-        { rank: 15, team: "Fleetwood", MP: 46, MW: 15, MD: 16, ML: 15, GF: 57, GA: 58, logo: "england/fleetwood.png" },
-        { rank: 16, team: "Accrington Stanley", MP: 46, MW: 14, MD: 11, ML: 21, GF: 47, GA: 58, logo: "england/accrington.png" },
-        { rank: 17, team: "Gillingham", MP: 46, MW: 13, MD: 14, ML: 19, GF: 53, GA: 72, logo: "england/gillingham.png" },
-        { rank: 18, team: "Cheltenham", MP: 46, MW: 14, MD: 10, ML: 22, GF: 53, GA: 79, logo: "england/cheltenham.png" },
-        { rank: 19, team: "Shrewsbury", MP: 46, MW: 13, MD: 10, ML: 23, GF: 42, GA: 69, logo: "england/shrewsbury.png" },
-        { rank: 20, team: "Newport County", MP: 46, MW: 12, MD: 7, ML: 27, GF: 48, GA: 77, logo: "england/newport.png" },
-        { rank: 21, team: "Tranmere", MP: 46, MW: 10, MD: 11, ML: 25, GF: 54, GA: 79, logo: "england/tranmere.png" },
-        { rank: 22, team: "Crawley Town", MP: 46, MW: 8, MD: 16, ML: 22, GF: 44, GA: 68, logo: "england/crawley.png" },
-        { rank: 23, team: "Harrogate Town", MP: 46, MW: 10, MD: 9, ML: 27, GF: 39, GA: 68, logo: "england/harrogate.png" },
-        { rank: 24, team: "Barrow", MP: 46, MW: 9, MD: 9, ML: 28, GF: 45, GA: 78, logo: "england/barrow.png" },
-        // Additional teams for 2026/27 season
-        { rank: 25, team: "Port Vale", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/portvale.png" },
-        { rank: 26, team: "Rotherham", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/rotherham.png" },
-        { rank: 27, team: "York City", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/yorkcity.png" },
-        { rank: 28, team: "Exeter City", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/exeter.png" },
-        { rank: 29, team: "Northampton Town", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/northampton.png" },
-        { rank: 30, team: "Rochdale", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "england/rochdale.png" }
-    ],
-    fixtures: [
-        // Matchday 4 - August 29
-        { home: "Port Vale", away: "Crewe Alexandra", date: "2026-08-29" },
-        { home: "Barnet", away: "Cheltenham", date: "2026-08-29" },
-        { home: "Rotherham", away: "Chesterfield", date: "2026-08-29" },
-        { home: "Shrewsbury", away: "Salford City", date: "2026-08-29" },
-        { home: "Gillingham", away: "Northampton Town", date: "2026-08-29" },
-        { home: "Colchester", away: "Rochdale", date: "2026-08-29" },
-        { home: "Oldham Athletic", away: "Swindon Town", date: "2026-08-29" },
-        { home: "York City", away: "Exeter City", date: "2026-08-29" },
-        { home: "Grimsby Town", away: "Fleetwood", date: "2026-08-29" },
-        { home: "Newport County", away: "Tranmere", date: "2026-08-29" },
-        { home: "Walsall", away: "Accrington Stanley", date: "2026-08-29" },
-        { home: "Crawley Town", away: "Bristol Rovers", date: "2026-08-29" }
-    ]
+  "id": "league-two",
+  "logo": "england/leaguetwo.png",
+  "isBasketball": false,
+  "season": "2026-27",
+  "teams": [
+    { "rank": 1, "team": "Bromley", "MP": 46, "MW": 24, "MD": 15, "ML": 7, "GF": 71, "GA": 46, "logo": "england/bromley.png" },
+    { "rank": 2, "team": "MK Dons", "MP": 46, "MW": 24, "MD": 14, "ML": 8, "GF": 86, "GA": 45, "logo": "england/mkdons.png" },
+    { "rank": 3, "team": "Cambridge United", "MP": 46, "MW": 22, "MD": 16, "ML": 8, "GF": 66, "GA": 33, "logo": "england/cambridge.png" },
+    { "rank": 4, "team": "Salford City", "MP": 46, "MW": 25, "MD": 6, "ML": 15, "GF": 61, "GA": 51, "logo": "england/salford.png" },
+    { "rank": 5, "team": "Notts County", "MP": 46, "MW": 24, "MD": 8, "ML": 14, "GF": 74, "GA": 52, "logo": "england/nottscounty.png" },
+    { "rank": 6, "team": "Chesterfield", "MP": 46, "MW": 21, "MD": 16, "ML": 9, "GF": 71, "GA": 56, "logo": "england/chesterfield.png" },
+    { "rank": 7, "team": "Grimsby Town", "MP": 46, "MW": 22, "MD": 12, "ML": 12, "GF": 74, "GA": 50, "logo": "england/grimsby.png" },
+    { "rank": 8, "team": "Barnet", "MP": 46, "MW": 21, "MD": 13, "ML": 12, "GF": 70, "GA": 53, "logo": "england/barnet.png" },
+    { "rank": 9, "team": "Swindon Town", "MP": 46, "MW": 22, "MD": 9, "ML": 15, "GF": 70, "GA": 59, "logo": "england/swindon.png" },
+    { "rank": 10, "team": "Oldham Athletic", "MP": 46, "MW": 18, "MD": 14, "ML": 14, "GF": 60, "GA": 44, "logo": "england/oldham.png" },
+    { "rank": 11, "team": "Crewe Alexandra", "MP": 46, "MW": 19, "MD": 10, "ML": 17, "GF": 64, "GA": 58, "logo": "england/crewe.png" },
+    { "rank": 12, "team": "Colchester", "MP": 46, "MW": 18, "MD": 12, "ML": 16, "GF": 62, "GA": 49, "logo": "england/colchester.png" },
+    { "rank": 13, "team": "Walsall", "MP": 46, "MW": 18, "MD": 11, "ML": 17, "GF": 56, "GA": 56, "logo": "england/walsall.png" },
+    { "rank": 14, "team": "Bristol Rovers", "MP": 46, "MW": 19, "MD": 5, "ML": 22, "GF": 56, "GA": 65, "logo": "england/bristolrovers.png" },
+    { "rank": 15, "team": "Fleetwood", "MP": 46, "MW": 15, "MD": 16, "ML": 15, "GF": 57, "GA": 58, "logo": "england/fleetwood.png" },
+    { "rank": 16, "team": "Accrington Stanley", "MP": 46, "MW": 14, "MD": 11, "ML": 21, "GF": 47, "GA": 58, "logo": "england/accrington.png" },
+    { "rank": 17, "team": "Gillingham", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 53, "GA": 72, "logo": "england/gillingham.png" },
+    { "rank": 18, "team": "Cheltenham", "MP": 46, "MW": 14, "MD": 10, "ML": 22, "GF": 53, "GA": 79, "logo": "england/cheltenham.png" },
+    { "rank": 19, "team": "Shrewsbury", "MP": 46, "MW": 13, "MD": 10, "ML": 23, "GF": 42, "GA": 69, "logo": "england/shrewsbury.png" },
+    { "rank": 20, "team": "Newport County", "MP": 46, "MW": 12, "MD": 7, "ML": 27, "GF": 48, "GA": 77, "logo": "england/newport.png" },
+    { "rank": 21, "team": "Tranmere", "MP": 46, "MW": 10, "MD": 11, "ML": 25, "GF": 54, "GA": 79, "logo": "england/tranmere.png" },
+    { "rank": 22, "team": "Crawley Town", "MP": 46, "MW": 8, "MD": 16, "ML": 22, "GF": 44, "GA": 68, "logo": "england/crawley.png" },
+    { "rank": 23, "team": "Harrogate Town", "MP": 46, "MW": 10, "MD": 9, "ML": 27, "GF": 39, "GA": 68, "logo": "england/harrogate.png" },
+    { "rank": 24, "team": "Barrow", "MP": 46, "MW": 9, "MD": 9, "ML": 28, "GF": 45, "GA": 78, "logo": "england/barrow.png" },
+    { "rank": 25, "team": "Port Vale", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/portvale.png" },
+    { "rank": 26, "team": "Rotherham", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/rotherham.png" },
+    { "rank": 27, "team": "York City", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/yorkcity.png" },
+    { "rank": 28, "team": "Exeter City", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/exeter.png" },
+    { "rank": 29, "team": "Northampton Town", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/northampton.png" },
+    { "rank": 30, "team": "Rochdale", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/rochdale.png" }
+  ],
+  "fixtures": [
+    { "home": "Cheltenham", "away": "York City", "date": "2026-09-01" },
+    { "home": "Accrington Stanley", "away": "Grimsby", "date": "2026-09-01" },
+    { "home": "Bristol Rovers", "away": "Colchester", "date": "2026-09-01" },
+    { "home": "Exeter City", "away": "Barnet", "date": "2026-09-01" },
+    { "home": "Salford City", "away": "Newport County", "date": "2026-09-01" },
+    { "home": "Rochdale", "away": "Shrewsbury", "date": "2026-09-01" },
+    { "home": "Swindon Town", "away": "Port Vale", "date": "2026-09-01" },
+    { "home": "Fleetwood", "away": "Oldham Athletic", "date": "2026-09-01" },
+    { "home": "Tranmere", "away": "Rotherham", "date": "2026-09-01" },
+    { "home": "Northampton Town", "away": "Crawley Town", "date": "2026-09-01" },
+    { "home": "Crewe", "away": "Walsall", "date": "2026-09-01" },
+    { "home": "Chesterfield", "away": "Gillingham", "date": "2026-09-01" },
+    { "home": "Salford City", "away": "Port Vale", "date": "2026-09-05" },
+    { "home": "Fleetwood", "away": "Shrewsbury", "date": "2026-09-05" },
+    { "home": "Crewe", "away": "York City", "date": "2026-09-05" },
+    { "home": "Northampton Town", "away": "Newport County", "date": "2026-09-05" },
+    { "home": "Accrington Stanley", "away": "Crawley Town", "date": "2026-09-05" },
+    { "home": "Tranmere", "away": "Oldham Athletic", "date": "2026-09-05" },
+    { "home": "Exeter City", "away": "Walsall", "date": "2026-09-05" },
+    { "home": "Cheltenham", "away": "Grimsby", "date": "2026-09-05" },
+    { "home": "Swindon Town", "away": "Colchester", "date": "2026-09-05" },
+    { "home": "Chesterfield", "away": "Barnet", "date": "2026-09-05" },
+    { "home": "Rochdale", "away": "Gillingham", "date": "2026-09-05" },
+    { "home": "Bristol Rovers", "away": "Rotherham", "date": "2026-09-05" },
+    { "home": "Crawley Town", "away": "Cheltenham", "date": "2026-09-12" },
+    { "home": "Grimsby", "away": "Bristol Rovers", "date": "2026-09-12" },
+    { "home": "Shrewsbury", "away": "Northampton Town", "date": "2026-09-12" },
+    { "home": "Rotherham", "away": "Salford City", "date": "2026-09-12" },
+    { "home": "York City", "away": "Swindon Town", "date": "2026-09-12" },
+    { "home": "Walsall", "away": "Rochdale", "date": "2026-09-12" },
+    { "home": "Gillingham", "away": "Tranmere", "date": "2026-09-12" },
+    { "home": "Barnet", "away": "Accrington Stanley", "date": "2026-09-12" },
+    { "home": "Port Vale", "away": "Exeter City", "date": "2026-09-12" },
+    { "home": "Colchester", "away": "Crewe", "date": "2026-09-12" },
+    { "home": "Oldham Athletic", "away": "Chesterfield", "date": "2026-09-12" },
+    { "home": "Newport County", "away": "Fleetwood", "date": "2026-09-12" }
+  ]
 },
 
 "German Bundesliga 2": {
@@ -737,10 +806,6 @@ const leaguesData = {
         { rank: 22, team: "St. Pauli", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "germany/stpauli.png" }
     ],
     fixtures: [
-        { home: "Heidenheim", away: "Dynamo", date: "2026-08-29" },
-        { home: "Karlsruher", away: "Wolfsburg", date: "2026-08-29" },
-        { home: "Energie Cottbus", away: "Fürth", date: "2026-08-29" },
-        { home: "Nürnberg", away: "Arminia", date: "2026-08-29" },
         { home: "St. Pauli", away: "1. FCK", date: "2026-08-30" },
         { home: "Darmstadt", away: "Hannover 96", date: "2026-08-30" },
         { home: "1. FC Magdeburg", away: "Holstein Kiel", date: "2026-08-30" }
@@ -770,7 +835,6 @@ const leaguesData = {
     { "rank": 16, "team": "Union La Calera", "MP": 20, "MW": 3, "MD": 5, "ML": 12, "GF": 17, "GA": 37, "logo": "chile/unionlacalera.png" }
   ],
   "fixtures": [
-    { "home": "Limache", "away": "Everton", "date": "2025-08-29" },
     { "home": "Nublense", "away": "D. Concepcion", "date": "2025-08-30" },
     { "home": "U. De Concepcion", "away": "U. De Chile", "date": "2025-08-30" },
     { "home": "Colo Colo", "away": "A. Italiano", "date": "2025-08-30" },
@@ -817,11 +881,6 @@ const leaguesData = {
         { rank: 20, team: "Le Mans", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "france/lemans.png" }
     ],
     fixtures: [
-        { home: "Strasbourg", away: "Lens", date: "2026-08-29" },
-        { home: "Auxerre", away: "Angers", date: "2026-08-29" },
-        { home: "Brest", away: "Toulouse", date: "2026-08-29" },
-        { home: "OL", away: "Le Havre", date: "2026-08-29" },
-        { home: "Lorient", away: "Troyes", date: "2026-08-29" },
         { home: "Paris FC", away: "Nice", date: "2026-08-30" },
         { home: "Rennes", away: "Le Mans", date: "2026-08-30" },
         { home: "Monaco", away: "Marseille", date: "2026-08-30" }
@@ -848,12 +907,6 @@ const leaguesData = {
         { rank: 12, team: "Livingston", MP: 33, MW: 1, MD: 13, ML: 19, GF: 35, GA: 66, logo: "scotland/livingston.png" }
     ],
     fixtures: [
-        // Matchday 5 - August 29-30
-        { home: "Dundee", away: "Hibernian", date: "2026-08-29" },
-        { home: "Hearts", away: "St. Johnstone", date: "2026-08-29" },
-        { home: "Kilmarnock", away: "Dundee United", date: "2026-08-29" },
-        { home: "Celtic", away: "Falkirk", date: "2026-08-29" },
-        { home: "St. Mirren", away: "Motherwell", date: "2026-08-29" },
         { home: "Aberdeen", away: "Rangers", date: "2026-08-30" }
     ]
 },
@@ -885,10 +938,6 @@ const leaguesData = {
     { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
   ],
   "fixtures": [
-    { "home": "Sassuolo", "away": "Torino", "date": "2025-08-29" },
-    { "home": "Fiorentina", "away": "Frosinone", "date": "2025-08-29" },
-    { "home": "Monza", "away": "Udinese", "date": "2025-08-29" },
-    { "home": "Juventus", "away": "Parma", "date": "2025-08-29" },
     { "home": "Napoli", "away": "Como", "date": "2025-08-30" },
     { "home": "Cagliari", "away": "Inter", "date": "2025-08-30" },
     { "home": "Lazio", "away": "Genoa", "date": "2025-08-30" },
@@ -934,9 +983,6 @@ const leaguesData = {
     { "rank": 20, "team": "Pescara", "MP": 38, "MW": 7, "MD": 14, "ML": 17, "GF": 51, "GA": 66, "logo": "italy/pescara.png" }
   ],
   "fixtures": [
-    { "home": "Sampdoria", "away": "Juve Stabia", "date": "2025-08-29" },
-    { "home": "Entella", "away": "Cesena", "date": "2025-08-29" },
-    { "home": "Padova", "away": "Verona", "date": "2025-08-29" },
     { "home": "Ascoli", "away": "Carrarese", "date": "2025-08-29" },
     { "home": "Avellino", "away": "LR Vicenza", "date": "2025-08-29" },
     { "home": "Mantova", "away": "Empoli", "date": "2025-08-30" },
@@ -981,9 +1027,6 @@ const leaguesData = {
     { "rank": 18, "team": "Nantes", "MP": 3, "MW": 0, "MD": 0, "ML": 3, "GF": 3, "GA": 8, "logo": "france/nantes.png" }
   ],
   "fixtures": [
-    { "home": "Red Star", "away": "Reims", "date": "2026-08-29" },
-    { "home": "Annecy", "away": "Metz", "date": "2026-08-29" },
-    { "home": "Guingamp", "away": "Nantes", "date": "2026-08-29" },
     { "home": "Dijon", "away": "St-Étienne", "date": "2026-08-31" },
     { "home": "Dunkerque", "away": "Clermont", "date": "2026-09-04" },
     { "home": "Laval", "away": "Red Star", "date": "2026-09-04" },
@@ -1025,10 +1068,6 @@ const leaguesData = {
         { rank: 21, team: "Willem II", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "netherlands/willemii.png" }
     ],
     fixtures: [
-        // Matchday 4 - August 28-30
-        { home: "Excelsior", away: "Sparta Rotterdam", date: "2026-08-29" },
-        { home: "AZ Alkmaar", away: "Go Ahead Eagles", date: "2026-08-29" },
-        { home: "PEC Zwolle", away: "NEC", date: "2026-08-29" },
         { home: "Utrecht", away: "PSV", date: "2026-08-30" },
         { home: "Willem II", away: "Heerenveen", date: "2026-08-30" },
         { home: "Feyenoord", away: "Den Haag", date: "2026-08-30" },
@@ -1067,8 +1106,6 @@ const leaguesData = {
         { rank: 22, team: "Heracles", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "netherlands/heracles.png" }
     ],
     fixtures: [ 
-        { home: "TOP Oss", away: "Jong FC Utrecht", date: "2026-08-28" },
-        { home: "De Graafschap", away: "Almere", date: "2026-08-29" },
         { home: "FC Eindhoven", away: "Heracles", date: "2026-08-30" },
         { home: "VVV", away: "FC Emmen", date: "2026-08-30" }
     ]
@@ -1097,10 +1134,6 @@ const leaguesData = {
     { "rank": 16, "team": "Dender", "MP": 30, "MW": 3, "MD": 10, "ML": 17, "GF": 24, "GA": 51, "logo": "belgium/dender.png" }
   ],
   "fixtures": [
-    { "home": "La Louvière", "away": "Mechelen", "date": "2025-08-29" },
-    { "home": "Kortrijk", "away": "Charleroi", "date": "2025-08-29" },
-    { "home": "Cercle Brugge", "away": "Lommel", "date": "2025-08-29" },
-    { "home": "OH Leuven", "away": "Standard", "date": "2025-08-29" },
     { "home": "Gent", "away": "Club Brugge", "date": "2025-08-30" },
     { "home": "Antwerp", "away": "STVV", "date": "2025-08-30" },
     { "home": "Union", "away": "Anderlecht", "date": "2025-08-30" },
@@ -1121,39 +1154,48 @@ const leaguesData = {
 },
 
 "Belgian Challenger Pro League": {
-    id: "belgian-challenger",
-    logo: "belgium/challenger.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Beveren", MP: 32, MW: 28, MD: 4, ML: 0, GF: 74, GA: 23, logo: "belgium/beveren.png" },
-        { rank: 2, team: "Kortrijk", MP: 32, MW: 21, MD: 4, ML: 7, GF: 59, GA: 33, logo: "belgium/kortrijk.png" },
-        { rank: 3, team: "Beerschot", MP: 32, MW: 19, MD: 7, ML: 6, GF: 52, GA: 31, logo: "belgium/beerschot.png" },
-        { rank: 4, team: "RFC Liège", MP: 32, MW: 16, MD: 5, ML: 11, GF: 44, GA: 39, logo: "belgium/rfc liege.png" },
-        { rank: 5, team: "Lommel", MP: 32, MW: 15, MD: 8, ML: 9, GF: 59, GA: 46, logo: "belgium/lommel.png" },
-        { rank: 6, team: "Patro Eisden", MP: 32, MW: 14, MD: 9, ML: 9, GF: 44, GA: 40, logo: "belgium/patroeisden.png" },
-        { rank: 7, team: "Eupen", MP: 32, MW: 12, MD: 11, ML: 9, GF: 44, GA: 36, logo: "belgium/eupen.png" },
-        { rank: 8, team: "Lokeren", MP: 32, MW: 10, MD: 12, ML: 10, GF: 48, GA: 45, logo: "belgium/lokeren.png" },
-        { rank: 9, team: "Jong KAA Gent", MP: 32, MW: 12, MD: 5, ML: 15, GF: 42, GA: 51, logo: "belgium/jonggent.png" },
-        { rank: 10, team: "Lierse SK", MP: 32, MW: 10, MD: 8, ML: 14, GF: 35, GA: 42, logo: "belgium/liersesk.png" },
-        { rank: 11, team: "RFC Seraing", MP: 32, MW: 8, MD: 11, ML: 13, GF: 37, GA: 44, logo: "belgium/rfcseraing.png" },
-        { rank: 12, team: "Royal Francs Borains", MP: 32, MW: 9, MD: 8, ML: 15, GF: 33, GA: 47, logo: "belgium/francsborains.png" },
-        { rank: 13, team: "Daring Brussels", MP: 32, MW: 9, MD: 9, ML: 14, GF: 50, GA: 54, logo: "belgium/daringbrussels.png" },
-        { rank: 14, team: "RSCA FUTURES", MP: 32, MW: 7, MD: 10, ML: 15, GF: 46, GA: 55, logo: "belgium/rscafutures.png" },
-        { rank: 15, team: "Jong Genk", MP: 32, MW: 7, MD: 10, ML: 15, GF: 42, GA: 59, logo: "belgium/jonggenk.png" },
-        { rank: 16, team: "Club NXT", MP: 32, MW: 5, MD: 6, ML: 21, GF: 33, GA: 55, logo: "belgium/clubnxt.png" },
-        { rank: 17, team: "R.O.C. Charleroi", MP: 32, MW: 3, MD: 7, ML: 22, GF: 26, GA: 68, logo: "belgium/roccharleroi.png" },
-        // Additional teams for 2026/27 season
-        { rank: 18, team: "Virton", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "belgium/virton.png" },
-        { rank: 19, team: "Sporting Hasselt", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "belgium/sportinghasselt.png" },
-        { rank: 20, team: "Dender", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "belgium/dender.png" }
-    ],
-    fixtures: [
-        { home: "RFC Liège", away: "Dender", date: "2026-08-29" },
-        { home: "RSCA FUTURES", away: "Beerschot", date: "2026-08-29" },
-        { home: "Patro Eisden", away: "Club NXT", date: "2026-08-29" },
-        { home: "Virton", away: "Royal Francs Borains", date: "2026-08-30" },
-        { home: "RFC Seraing", away: "Lierse SK", date: "2026-08-30" }
-    ]
+  "id": "belgian-challenger",
+  "logo": "belgium/challenger.png",
+  "isBasketball": false,
+  "season": "2026-27",
+  "teams": [
+    { "rank": 1, "team": "Beveren", "MP": 32, "MW": 28, "MD": 4, "ML": 0, "GF": 74, "GA": 23, "logo": "belgium/beveren.png" },
+    { "rank": 2, "team": "Kortrijk", "MP": 32, "MW": 21, "MD": 4, "ML": 7, "GF": 59, "GA": 33, "logo": "belgium/kortrijk.png" },
+    { "rank": 3, "team": "Beerschot", "MP": 32, "MW": 19, "MD": 7, "ML": 6, "GF": 52, "GA": 31, "logo": "belgium/beerschot.png" },
+    { "rank": 4, "team": "RFC Liège", "MP": 32, "MW": 16, "MD": 5, "ML": 11, "GF": 44, "GA": 39, "logo": "belgium/rfcliege.png" },
+    { "rank": 5, "team": "Lommel", "MP": 32, "MW": 15, "MD": 8, "ML": 9, "GF": 59, "GA": 46, "logo": "belgium/lommel.png" },
+    { "rank": 6, "team": "Patro Eisden", "MP": 32, "MW": 14, "MD": 9, "ML": 9, "GF": 44, "GA": 40, "logo": "belgium/patroeisden.png" },
+    { "rank": 7, "team": "Eupen", "MP": 32, "MW": 12, "MD": 11, "ML": 9, "GF": 44, "GA": 36, "logo": "belgium/eupen.png" },
+    { "rank": 8, "team": "Lokeren", "MP": 32, "MW": 10, "MD": 12, "ML": 10, "GF": 48, "GA": 45, "logo": "belgium/lokeren.png" },
+    { "rank": 9, "team": "Jong KAA Gent", "MP": 32, "MW": 12, "MD": 5, "ML": 15, "GF": 42, "GA": 51, "logo": "belgium/jonggent.png" },
+    { "rank": 10, "team": "Lierse SK", "MP": 32, "MW": 10, "MD": 8, "ML": 14, "GF": 35, "GA": 42, "logo": "belgium/liersesk.png" },
+    { "rank": 11, "team": "RFC Seraing", "MP": 32, "MW": 8, "MD": 11, "ML": 13, "GF": 37, "GA": 44, "logo": "belgium/rfcseraing.png" },
+    { "rank": 12, "team": "Royal Francs Borains", "MP": 32, "MW": 9, "MD": 8, "ML": 15, "GF": 33, "GA": 47, "logo": "belgium/francsborains.png" },
+    { "rank": 13, "team": "Daring Brussels", "MP": 32, "MW": 9, "MD": 9, "ML": 14, "GF": 50, "GA": 54, "logo": "belgium/daringbrussels.png" },
+    { "rank": 14, "team": "RSCA FUTURES", "MP": 32, "MW": 7, "MD": 10, "ML": 15, "GF": 46, "GA": 55, "logo": "belgium/rscafutures.png" },
+    { "rank": 15, "team": "Jong Genk", "MP": 32, "MW": 7, "MD": 10, "ML": 15, "GF": 42, "GA": 59, "logo": "belgium/jonggenk.png" },
+    { "rank": 16, "team": "Club NXT", "MP": 32, "MW": 5, "MD": 6, "ML": 21, "GF": 33, "GA": 55, "logo": "belgium/clubnxt.png" },
+    { "rank": 17, "team": "R.O.C. Charleroi", "MP": 32, "MW": 3, "MD": 7, "ML": 22, "GF": 26, "GA": 68, "logo": "belgium/roccharleroi.png" },
+    { "rank": 18, "team": "Virton", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "belgium/virton.png" },
+    { "rank": 19, "team": "Sporting Hasselt", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "belgium/sportinghasselt.png" },
+    { "rank": 20, "team": "Dender", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "belgium/dender.png" }
+  ],
+  "fixtures": [
+    { "home": "Dender", "away": "RFC Seraing", "date": "2026-09-04" },
+    { "home": "Beerschot", "away": "Patro Eisden", "date": "2026-09-04" },
+    { "home": "Jong KAA Gent", "away": "RSCA FUTURES", "date": "2026-09-05" },
+    { "home": "Club NXT", "away": "Eupen", "date": "2026-09-05" },
+    { "home": "Jong Genk", "away": "Sporting Hasselt", "date": "2026-09-05" },
+    { "home": "Lierse SK", "away": "RFC Liège", "date": "2026-09-06" },
+    { "home": "Francs Borains", "away": "Lokeren", "date": "2026-09-06" },
+    { "home": "Jong KAA Gent", "away": "Dender", "date": "2026-09-11" },
+    { "home": "Beerschot", "away": "Lierse SK", "date": "2026-09-11" },
+    { "home": "RFC Seraing", "away": "Sporting Hasselt", "date": "2026-09-12" },
+    { "home": "RSCA FUTURES", "away": "Lokeren", "date": "2026-09-12" },
+    { "home": "Virton", "away": "Jong Genk", "date": "2026-09-12" },
+    { "home": "RFC Liège", "away": "Club NXT", "date": "2026-09-13" },
+    { "home": "Patro Eisden", "away": "Eupen", "date": "2026-09-13" }
+  ]
 },
 "Portuguese Primeira Liga": {
     id: "portugal-primeira-liga",
@@ -1183,9 +1225,6 @@ const leaguesData = {
         { rank: 20, team: "Académico de Viseu FC", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "portugal/academico.png" }
     ],
     fixtures: [
-        { home: "Alverca", away: "Santa Clara", date: "2026-08-29" },
-        { home: "Arouca", away: "Marítimo", date: "2026-08-29" },
-        { home: "Académico de Viseu FC", away: "Porto", date: "2026-08-29" },
         { home: "Nacional", away: "Estrela Amadora", date: "2026-08-30" },
         { home: "Casa Pia", away: "Moreirense", date: "2026-08-30" },
         { home: "Famalicão", away: "Gil Vicente", date: "2026-08-30" },
@@ -1218,9 +1257,6 @@ const leaguesData = {
         { rank: 18, team: "AVS", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "portugal/avs.png" }
     ],
     fixtures: [
-        { home: "Portimonense", away: "Leixoes", date: "2026-08-29" },
-        { home: "Academica", away: "Lusitania Lourosa", date: "2026-08-29" },
-        { home: "Torreense", away: "Vizela", date: "2026-08-29" },
         { home: "Amarante FC", away: "Benfica B", date: "2026-08-30" },
         { home: "AVS", away: "Feirense", date: "2026-08-30" },
         { home: "Felgueiras", away: "Chaves", date: "2026-08-30" },
@@ -1250,10 +1286,6 @@ const leaguesData = {
         { rank: 16, team: "Halmstad", MP: 17, MW: 1, MD: 4, ML: 12, GF: 11, GA: 34, logo: "sweden/halmstad.png" }
     ],
     fixtures: [ 
-        // Matchday 20 - August 29-31
-        { home: "IF Elfsborg", away: "Degerfors", date: "2026-08-29" },
-        { home: "Häcken", away: "Västerås", date: "2026-08-29" },
-        { home: "Halmstad", away: "Kalmar", date: "2026-08-29" },
         { home: "AIK", away: "Hammarby", date: "2026-08-30" },
         { home: "Göteborg", away: "ÖIS", date: "2026-08-30" },
         { home: "GAIS", away: "IF Brommapojkarna", date: "2026-08-31" },
@@ -1286,10 +1318,6 @@ const leaguesData = {
     { "rank": 16, "team": "GIF Sundsvall", "MP": 19, "MW": 3, "MD": 1, "ML": 15, "GF": 14, "GA": 43, "logo": "sweden/gifsundsvall.png" }
   ],
   "fixtures": [
-    { "home": "Landskrona", "away": "Östersund", "date": "2026-08-29" },
-    { "home": "Ljungskile", "away": "Värnamo", "date": "2026-08-29" },
-    { "home": "Falkenberg", "away": "Brage", "date": "2026-08-29" },
-    { "home": "United Nordic", "away": "Norrköping", "date": "2026-08-29" },
     { "home": "Varbergs BoIS", "away": "Oddevold", "date": "2026-08-30" },
     { "home": "Sandviken", "away": "Östers IF", "date": "2026-08-30" },
     { "home": "GIF Sundsvall", "away": "Norrby", "date": "2026-08-31" },
@@ -1328,10 +1356,6 @@ const leaguesData = {
     { "rank": 16, "team": "Stocksund", "MP": 18, "MW": 2, "MD": 5, "ML": 11, "GF": 36, "GA": 44, "logo": "sweden/stocksund.png" }
   ],
   "fixtures": [
-    { "home": "AFC Eskilstuna", "away": "Sollentuna", "date": "2026-08-29" },
-    { "home": "Gefle", "away": "Karlstad", "date": "2026-08-29" },
-    { "home": "Jarfalla", "away": "Assyriska FF", "date": "2026-08-29" },
-    { "home": "Stocksund", "away": "Arlanda", "date": "2026-08-29" },
     { "home": "Enkoping SK", "away": "Stockholm Internazionale", "date": "2026-08-30" },
     { "home": "FBK Karlstad", "away": "Pitea", "date": "2026-08-30" },
     { "home": "Umea FC", "away": "Vasalund", "date": "2026-08-30" },
@@ -1347,40 +1371,51 @@ const leaguesData = {
   ]
 },
 "Greek Super League": {
-    id: "greece-super-league",
-    logo: "greece/superleague.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "AEK", MP: 26, MW: 18, MD: 6, ML: 2, GF: 49, GA: 17, logo: "greece/aek.png" },
-        { rank: 2, team: "Olympiacos", MP: 26, MW: 17, MD: 7, ML: 2, GF: 45, GA: 11, logo: "greece/olympiacos.png" },
-        { rank: 3, team: "PAOK", MP: 26, MW: 17, MD: 6, ML: 3, GF: 52, GA: 17, logo: "greece/paok.png" },
-        { rank: 4, team: "Panathinaikos", MP: 26, MW: 14, MD: 7, ML: 5, GF: 44, GA: 26, logo: "greece/panathinaikos.png" },
-        { rank: 5, team: "Levadiakos", MP: 26, MW: 12, MD: 6, ML: 8, GF: 51, GA: 37, logo: "greece/levadiakos.png" },
-        { rank: 6, team: "OFI", MP: 26, MW: 10, MD: 2, ML: 14, GF: 34, GA: 45, logo: "greece/oficrete.png" },
-        { rank: 7, team: "Volos", MP: 26, MW: 9, MD: 4, ML: 13, GF: 26, GA: 38, logo: "greece/volos.png" },
-        { rank: 8, team: "Aris", MP: 26, MW: 6, MD: 12, ML: 8, GF: 20, GA: 27, logo: "greece/aris.png" },
-        { rank: 9, team: "Atromitos", MP: 26, MW: 7, MD: 8, ML: 11, GF: 26, GA: 30, logo: "greece/atromitos.png" },
-        { rank: 10, team: "Kifisia", MP: 26, MW: 6, MD: 9, ML: 11, GF: 32, GA: 42, logo: "greece/kifisia.png" },
-        { rank: 11, team: "Panetolikos", MP: 26, MW: 7, MD: 5, ML: 14, GF: 24, GA: 38, logo: "greece/panetolikos.png" },
-        { rank: 12, team: "AEL", MP: 26, MW: 4, MD: 11, ML: 11, GF: 22, GA: 39, logo: "greece/ael.png" },
-        { rank: 13, team: "Panserraikos", MP: 26, MW: 4, MD: 5, ML: 17, GF: 16, GA: 55, logo: "greece/panserraikos.png" },
-        { rank: 14, team: "Asteras Tripolis", MP: 26, MW: 3, MD: 8, ML: 15, GF: 22, GA: 41, logo: "greece/asteras.png" },
-        // Additional teams for 2026/27 season
-        { rank: 15, team: "Iraklis", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "greece/iraklis.png" },
-        { rank: 16, team: "Kalamata", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "greece/kalamata.png" }
-    ],
-    fixtures: [
-        // Matchday 2 - August 29
-        { home: "Aris", away: "OFI", date: "2026-08-29" },
-        { home: "Atromitos", away: "PAOK", date: "2026-08-29" },
-        { home: "Kifisia", away: "AEK", date: "2026-08-29" },
-        { home: "Volos", away: "Iraklis", date: "2026-08-29" },
-        { home: "Asteras Tripolis", away: "Olympiacos", date: "2026-08-29" },
-        { home: "Levadiakos", away: "Panathinaikos", date: "2026-08-29" },
-        { home: "Panetolikos", away: "Kalamata", date: "2026-08-29" }
-    ]
+  "id": "greece-super-league",
+  "logo": "greece/superleague.png",
+  "isBasketball": false,
+  "season": "2026-27",
+  "teams": [
+    { "rank": 1, "team": "AEK", "MP": 26, "MW": 18, "MD": 6, "ML": 2, "GF": 49, "GA": 17, "logo": "greece/aek.png" },
+    { "rank": 2, "team": "Olympiacos", "MP": 26, "MW": 17, "MD": 7, "ML": 2, "GF": 45, "GA": 11, "logo": "greece/olympiacos.png" },
+    { "rank": 3, "team": "PAOK", "MP": 26, "MW": 17, "MD": 6, "ML": 3, "GF": 52, "GA": 17, "logo": "greece/paok.png" },
+    { "rank": 4, "team": "Panathinaikos", "MP": 26, "MW": 14, "MD": 7, "ML": 5, "GF": 44, "GA": 26, "logo": "greece/panathinaikos.png" },
+    { "rank": 5, "team": "Levadiakos", "MP": 26, "MW": 12, "MD": 6, "ML": 8, "GF": 51, "GA": 37, "logo": "greece/levadiakos.png" },
+    { "rank": 6, "team": "OFI", "MP": 26, "MW": 10, "MD": 2, "ML": 14, "GF": 34, "GA": 45, "logo": "greece/oficrete.png" },
+    { "rank": 7, "team": "Volos", "MP": 26, "MW": 9, "MD": 4, "ML": 13, "GF": 26, "GA": 38, "logo": "greece/volos.png" },
+    { "rank": 8, "team": "Aris", "MP": 26, "MW": 6, "MD": 12, "ML": 8, "GF": 20, "GA": 27, "logo": "greece/aris.png" },
+    { "rank": 9, "team": "Atromitos", "MP": 26, "MW": 7, "MD": 8, "ML": 11, "GF": 26, "GA": 30, "logo": "greece/atromitos.png" },
+    { "rank": 10, "team": "Kifisia", "MP": 26, "MW": 6, "MD": 9, "ML": 11, "GF": 32, "GA": 42, "logo": "greece/kifisia.png" },
+    { "rank": 11, "team": "Panetolikos", "MP": 26, "MW": 7, "MD": 5, "ML": 14, "GF": 24, "GA": 38, "logo": "greece/panetolikos.png" },
+    { "rank": 12, "team": "AEL", "MP": 26, "MW": 4, "MD": 11, "ML": 11, "GF": 22, "GA": 39, "logo": "greece/ael.png" },
+    { "rank": 13, "team": "Panserraikos", "MP": 26, "MW": 4, "MD": 5, "ML": 17, "GF": 16, "GA": 55, "logo": "greece/panserraikos.png" },
+    { "rank": 14, "team": "Asteras Tripolis", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 22, "GA": 41, "logo": "greece/asteras.png" },
+    { "rank": 15, "team": "Iraklis", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "greece/iraklis.png" },
+    { "rank": 16, "team": "Kalamata", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "greece/kalamata.png" }
+  ],
+  "fixtures": [
+    { "home": "Aris", "away": "OFI", "date": "2026-08-30" },
+    { "home": "Atromitos", "away": "PAOK", "date": "2026-08-30" },
+    { "home": "Kifisia", "away": "AEK", "date": "2026-08-30" },
+    { "home": "Asteras Tripolis", "away": "Olympiacos", "date": "2026-08-30" },
+    { "home": "Levadiakos", "away": "Panathinaikos", "date": "2026-08-31" },
+    { "home": "Volos", "away": "Olympiacos", "date": "2026-09-05" },
+    { "home": "AEK", "away": "Aris", "date": "2026-09-05" },
+    { "home": "Atromitos", "away": "Kalamata", "date": "2026-09-06" },
+    { "home": "OFI", "away": "Kifisia", "date": "2026-09-06" },
+    { "home": "Levadiakos", "away": "Panetolikos", "date": "2026-09-06" },
+    { "home": "Panathinaikos", "away": "PAOK", "date": "2026-09-06" },
+    { "home": "Asteras Tripolis", "away": "Iraklis", "date": "2026-09-07" },
+    { "home": "Panathinaikos", "away": "Kifisia", "date": "2026-09-09" },
+    { "home": "Olympiacos", "away": "OFI", "date": "2026-09-12" },
+    { "home": "Iraklis", "away": "Atromitos", "date": "2026-09-12" },
+    { "home": "Kalamata", "away": "Volos", "date": "2026-09-13" },
+    { "home": "Asteras Tripolis", "away": "AEK", "date": "2026-09-13" },
+    { "home": "Kifisia", "away": "Levadiakos", "date": "2026-09-13" },
+    { "home": "PAOK", "away": "Aris", "date": "2026-09-13" },
+    { "home": "Panathinaikos", "away": "Panetolikos", "date": "2026-09-13" }
+  ]
 },
-
 "Norwegian Eliteserien": {
     id: "norway-eliteserien",
     logo: "norway/eliteserien.png",
@@ -1404,9 +1439,6 @@ const leaguesData = {
         { rank: 16, team: "Start", MP: 17, MW: 2, MD: 4, ML: 11, GF: 16, GA: 38, logo: "norway/start.png" }
     ],
     fixtures: [
-        // Matchday 19 - August 29-30
-        { home: "Vålerenga", away: "Molde", date: "2026-08-29" },
-        { home: "Viking", away: "Aalesund", date: "2026-08-29" },
         { home: "Bodø/Glimt", away: "Rosenborg", date: "2026-08-30" },
         { home: "Tromso", away: "Sarpsborg", date: "2026-08-30" },
         { home: "Sandefjord", away: "Brann", date: "2026-08-30" },
@@ -1439,7 +1471,6 @@ const leaguesData = {
     { "rank": 16, "team": "Raufoss", "MP": 19, "MW": 5, "MD": 1, "ML": 13, "GF": 23, "GA": 46, "logo": "norway/raufoss.png" }
   ],
   "fixtures": [
-    { "home": "Bryne FK", "away": "Haugesund", "date": "2026-08-29" },
     { "home": "Ranheim TF", "away": "Odd", "date": "2026-08-30" },
     { "home": "Egersund", "away": "Åsane", "date": "2026-08-30" },
     { "home": "Sogndal", "away": "Stroemsgodset", "date": "2026-08-30" },
@@ -1480,11 +1511,6 @@ const leaguesData = {
     { "rank": 14, "team": "Rēzeknes FA/BJSS", "MP": 17, "MW": 1, "MD": 2, "ML": 14, "GF": 13, "GA": 48, "logo": "latvia/rezekne.png" }
   ],
   "fixtures": [
-    { "home": "Leevon PPK", "away": "SK Super Nova II", "date": "2026-08-29" },
-    { "home": "Ventspils", "away": "Riga II", "date": "2026-08-29" },
-    { "home": "Riga Mariners", "away": "RFS 2", "date": "2026-08-29" },
-    { "home": "Smiltene", "away": "Metta/LU", "date": "2026-08-29" },
-    { "home": "Mārupes", "away": "JDFS Alberts", "date": "2026-08-29" },
     { "home": "Skanste", "away": "Tukums II", "date": "2026-08-30" },
     { "home": "Rēzeknes FA/BJSS", "away": "Valmiera", "date": "2026-08-30" },
     { "home": "Valmiera", "away": "Metta/LU", "date": "2026-09-05" },
@@ -1544,35 +1570,46 @@ const leaguesData = {
     ]
 },
 "Chinese Super League": {
-    id: "csl",
-    logo: "china/csl.png",
-    isBasketball: false,
-    teams: [
-        { rank: 1, team: "Chengdu Rongcheng", MP: 23, MW: 14, MD: 6, ML: 3, GF: 45, GA: 24, logo: "china/chengdurongchenglogo.png" },
-        { rank: 2, team: "Yunnan Yukun", MP: 23, MW: 10, MD: 4, ML: 9, GF: 46, GA: 42, logo: "china/yunnanlogo.png" },
-        { rank: 3, team: "Shandong Taishan", MP: 23, MW: 12, MD: 3, ML: 8, GF: 42, GA: 38, logo: "china/shandongtaishanlogo.png" },
-        { rank: 4, team: "Qingdao Youth Island", MP: 23, MW: 7, MD: 12, ML: 4, GF: 26, GA: 29, logo: "china/qingdaologo.png" },
-        { rank: 5, team: "Beijing Guoan", MP: 22, MW: 10, MD: 7, ML: 5, GF: 42, GA: 29, logo: "china/beijinggouanlogo.png" },
-        { rank: 6, team: "Dalian Yingbo", MP: 22, MW: 10, MD: 2, ML: 10, GF: 33, GA: 39, logo: "china/dalianlogo.png" },
-        { rank: 7, team: "Chongqing Tonglianglong", MP: 23, MW: 7, MD: 9, ML: 7, GF: 25, GA: 27, logo: "china/chongqing.png" },
-        { rank: 8, team: "Shenzhen Peng City", MP: 23, MW: 8, MD: 2, ML: 13, GF: 32, GA: 42, logo: "china/shenzhenlogo.png" },
-        { rank: 9, team: "Shanghai Port", MP: 22, MW: 8, MD: 6, ML: 8, GF: 36, GA: 31, logo: "china/shanghaiportlogo.png" },
-        { rank: 10, team: "Shanghai Shenhua", MP: 22, MW: 10, MD: 5, ML: 7, GF: 42, GA: 35, logo: "china/shanghaishenhualogo.png" },
-        { rank: 11, team: "Zhejiang", MP: 22, MW: 8, MD: 5, ML: 9, GF: 33, GA: 39, logo: "china/zhejianglogo.png" },
-        { rank: 12, team: "Shenyang Urban", MP: 22, MW: 7, MD: 3, ML: 12, GF: 29, GA: 35, logo: "china/shenyang.png" },
-        { rank: 13, team: "Henan", MP: 22, MW: 8, MD: 5, ML: 9, GF: 27, GA: 29, logo: "china/henanlogo.png" },
-        { rank: 14, team: "Tianjin Jinmen Tiger", MP: 22, MW: 7, MD: 6, ML: 9, GF: 32, GA: 30, logo: "china/tianjinlogo.png" },
-        { rank: 15, team: "Wuhan Three Towns", MP: 21, MW: 4, MD: 8, ML: 9, GF: 30, GA: 38, logo: "china/wuhanlogo.png" },
-        { rank: 16, team: "Qingdao Hainiu", MP: 23, MW: 6, MD: 3, ML: 14, GF: 31, GA: 44, logo: "china/qingdaohainiulogo.png" }
-    ],
-    fixtures: [
-        { home: "Qingdao Hainiu", away: "Wuhan Three Towns", date: "2026-08-29" },
-        { home: "Zhejiang", away: "Yunnan Yukun", date: "2026-08-29" },
-        { home: "Tianjin Jinmen Tiger", away: "Qingdao Youth Island", date: "2026-08-29" },
-        { home: "Shanghai Shenhua", away: "Shandong Taishan", date: "2026-08-29" },
-        { home: "Chengdu Rongcheng", away: "Shenyang Urban", date: "2026-08-29" },
-        { home: "Henan", away: "Chongqing Tonglianglong", date: "2026-08-29" }
-    ]
+  "id": "chinese-super-league",
+  "logo": "china/superleague.png",
+  "isBasketball": false,
+  "season": "2026",
+  "teams": [
+    { "rank": 1, "team": "Chengdu Rongcheng", "MP": 25, "MW": 15, "MD": 6, "ML": 4, "GF": 51, "GA": 30, "logo": "china/chengdu.png" },
+    { "rank": 2, "team": "Beijing Guoan", "MP": 25, "MW": 11, "MD": 9, "ML": 5, "GF": 49, "GA": 33, "logo": "china/beijing.png" },
+    { "rank": 3, "team": "Qingdao Youth Island", "MP": 25, "MW": 8, "MD": 13, "ML": 4, "GF": 29, "GA": 30, "logo": "china/qingdaoyouth.png" },
+    { "rank": 4, "team": "Dalian Yingbo", "MP": 25, "MW": 11, "MD": 4, "ML": 10, "GF": 36, "GA": 41, "logo": "china/dalian.png" },
+    { "rank": 5, "team": "Shandong Taishan", "MP": 25, "MW": 13, "MD": 3, "ML": 9, "GF": 45, "GA": 42, "logo": "china/shandong.png" },
+    { "rank": 6, "team": "Yunnan Yukun", "MP": 25, "MW": 10, "MD": 5, "ML": 10, "GF": 49, "GA": 51, "logo": "china/yunnan.png" },
+    { "rank": 7, "team": "Shanghai Port", "MP": 25, "MW": 10, "MD": 7, "ML": 8, "GF": 40, "GA": 33, "logo": "china/shanghaiport.png" },
+    { "rank": 8, "team": "Chongqing Tonglianglong", "MP": 25, "MW": 7, "MD": 10, "ML": 8, "GF": 26, "GA": 29, "logo": "china/chongqing.png" },
+    { "rank": 9, "team": "Shanghai Shenhua", "MP": 25, "MW": 11, "MD": 5, "ML": 9, "GF": 49, "GA": 45, "logo": "china/shanghaishenhua.png" },
+    { "rank": 10, "team": "Zhejiang", "MP": 24, "MW": 9, "MD": 6, "ML": 9, "GF": 40, "GA": 40, "logo": "china/zhejiang.png" },
+    { "rank": 11, "team": "Shenzhen Peng City", "MP": 25, "MW": 8, "MD": 3, "ML": 14, "GF": 33, "GA": 44, "logo": "china/shenzhen.png" },
+    { "rank": 12, "team": "Henan", "MP": 24, "MW": 8, "MD": 7, "ML": 9, "GF": 32, "GA": 34, "logo": "china/henan.png" },
+    { "rank": 13, "team": "Shenyang Urban", "MP": 24, "MW": 7, "MD": 4, "ML": 13, "GF": 34, "GA": 41, "logo": "china/shenyang.png" },
+    { "rank": 14, "team": "Tianjin Jinmen Tiger", "MP": 24, "MW": 7, "MD": 8, "ML": 9, "GF": 33, "GA": 31, "logo": "china/tianjin.png" },
+    { "rank": 15, "team": "Wuhan Three Towns", "MP": 23, "MW": 5, "MD": 9, "ML": 9, "GF": 35, "GA": 39, "logo": "china/wuhan.png" },
+    { "rank": 16, "team": "Qingdao Hainiu", "MP": 25, "MW": 6, "MD": 3, "ML": 16, "GF": 33, "GA": 51, "logo": "china/qingdaohainiu.png" }
+  ],
+  "fixtures": [
+    { "home": "Wuhan Three Towns", "away": "Qingdao Youth Island", "date": "2026-09-05" },
+    { "home": "Shanghai Port", "away": "Beijing Guoan", "date": "2026-09-05" },
+    { "home": "Dalian Yingbo", "away": "Qingdao Hainiu", "date": "2026-09-05" },
+    { "home": "Shandong Taishan", "away": "Shenzhen Peng City", "date": "2026-09-05" },
+    { "home": "Chongqing Tonglianglong", "away": "Shanghai Shenhua", "date": "2026-09-06" },
+    { "home": "Yunnan Yukun", "away": "Shenyang Urban", "date": "2026-09-06" },
+    { "home": "Henan", "away": "Chengdu Rongcheng", "date": "2026-09-06" },
+    { "home": "Tianjin Jinmen Tiger", "away": "Zhejiang", "date": "2026-09-06" },
+    { "home": "Shenzhen Peng City", "away": "Henan", "date": "2026-10-09" },
+    { "home": "Zhejiang", "away": "Shanghai Port", "date": "2026-10-09" },
+    { "home": "Chengdu Rongcheng", "away": "Tianjin Jinmen Tiger", "date": "2026-10-10" },
+    { "home": "Shanghai Shenhua", "away": "Yunnan Yukun", "date": "2026-10-10" },
+    { "home": "Qingdao Hainiu", "away": "Beijing Guoan", "date": "2026-10-10" },
+    { "home": "Qingdao Youth Island", "away": "Dalian Yingbo", "date": "2026-10-11" },
+    { "home": "Shenyang Urban", "away": "Wuhan Three Towns", "date": "2026-10-11" },
+    { "home": "Chongqing Tonglianglong", "away": "Shandong Taishan", "date": "2026-10-11" }
+  ]
 },
 "Belarusian Premier League": {
     id: "belarus",
@@ -1597,9 +1634,6 @@ const leaguesData = {
         { rank: 16, team: "Naftan", MP: 17, MW: 2, MD: 4, ML: 11, GF: 16, GA: 40, logo: "belarus/naftan.png" }
     ],
     fixtures: [
-        { home: "Winner Dinamo-Minsk / Sileks", away: "Baranovichi", date: "2026-08-29" },
-        { home: "Dinamo Brest", away: "Maxline", date: "2026-08-29" },
-        { home: "Neman", away: "Slavia-Mozyr", date: "2026-08-29" },
         { home: "Arsenal Dzyarzhynsk", away: "Torpedo Zhodino", date: "2026-08-30" },
         { home: "Dnepr", away: "Isloch", date: "2026-08-30" },
         { home: "BATE", away: "Minsk", date: "2026-08-30" }
@@ -1628,11 +1662,6 @@ const leaguesData = {
         { rank: 16, team: "FC Irtysh Pavlodar", MP: 21, MW: 3, MD: 8, ML: 10, GF: 20, GA: 30, logo: "kazakhstan/irtysh.png" }
     ],
     fixtures: [
-        // Matchday 24 - August 29-30
-        { home: "Ulytau", away: "Zhetysu", date: "2026-08-29" },
-        { home: "Zhenys", away: "Altay", date: "2026-08-29" },
-        { home: "Kaisar", away: "Okzhetpes", date: "2026-08-29" },
-        { home: "Ordabasy", away: "Kyzyl-Zhar SK", date: "2026-08-29" },
         { home: "FC Irtysh Pavlodar", away: "FC Aktobe", date: "2026-08-30" },
         { home: "Yelimay", away: "Kairat", date: "2026-08-30" },
         { home: "Atyrau", away: "Astana", date: "2026-08-30" },
@@ -1766,11 +1795,6 @@ const leaguesData = {
         { rank: 19, team: "Atlante", MP: 0, MW: 0, MD: 0, ML: 0, GF: 0, GA: 0, logo: "mexico/atlante.png" }
     ],
     fixtures: [
-        // Matchday 7 - August 29-31
-        { home: "Atlante", away: "Club Leon", date: "2026-08-29" },
-        { home: "Necaxa", away: "Cruz Azul", date: "2026-08-29" },
-        { home: "Club Tijuana", away: "UNAM Pumas", date: "2026-08-29" },
-        { home: "Atlas", away: "Queretaro", date: "2026-08-30" },
         { home: "Pachuca", away: "Guadalajara Chivas", date: "2026-08-30" },
         { home: "Club America", away: "Puebla", date: "2026-08-30" },
         { home: "Santos Laguna", away: "Tigres UANL", date: "2026-08-30" },
@@ -1806,7 +1830,6 @@ const leaguesData = {
     { "rank": 20, "team": "Deportivo Pereira", "MP": 19, "MW": 1, "MD": 7, "ML": 11, "GF": 15, "GA": 32, "logo": "colombia/depor pereira.png" }
   ],
   "fixtures": [
-    { "home": "Jaguares de Córdoba", "away": "América de Cali", "date": "2026-08-29" },
     { "home": "Junior", "away": "Santa Fe", "date": "2026-08-30" },
     { "home": "Alianza", "away": "Atl. Nacional", "date": "2026-08-30" },
     { "home": "Rionegro Águilas", "away": "Boyacá Chicó FC", "date": "2026-08-30" },
@@ -1868,9 +1891,6 @@ const leaguesData = {
         { rank: 15, team: "Sporting KC", MP: 19, MW: 4, MD: 3, ML: 12, GF: 19, GA: 47, logo: "mls/sportingkclogo.png" }
     ],
     fixtures: [
-        // August 29
-        { home: "Seattle Sounders", away: "Chicago", date: "2026-08-29" },
-        
         // August 30
         { home: "D.C. United", away: "LAFC", date: "2026-08-30" },
         { home: "Inter Miami", away: "Montréal", date: "2026-08-30" },
@@ -1919,16 +1939,6 @@ const leaguesData = {
     
  
   "fixtures": [
-    { "home": "Mito HollyHock", "away": "Machida Zelvia", "date": "2026-08-29" },
-    { "home": "Gamba Osaka", "away": "Sanfrecce", "date": "2026-08-29" },
-    { "home": "V-Varen Nagasaki", "away": "FC Tokyo", "date": "2026-08-29" },
-    { "home": "Shimizu S-Pulse", "away": "Kashiwa Reysol", "date": "2026-08-29" },
-    { "home": "Urawa Reds", "away": "Yokohama FM", "date": "2026-08-29" },
-    { "home": "Kawasaki", "away": "JEF United", "date": "2026-08-29" },
-    { "home": "Kyoto Sanga", "away": "Avispa Fukuoka", "date": "2026-08-29" },
-    { "home": "Nagoya", "away": "Okayama", "date": "2026-08-29" },
-    { "home": "Tokyo Verdy", "away": "Kashima Antlers", "date": "2026-08-29" },
-    { "home": "Vissel Kobe", "away": "Cerezo Osaka", "date": "2026-08-29" },
     { "home": "Sanfrecce", "away": "Nagoya", "date": "2026-09-02" },
     { "home": "Mito HollyHock", "away": "Kashima Antlers", "date": "2026-09-02" },
     { "home": "JEF United", "away": "Okayama", "date": "2026-09-02" },
@@ -1941,14 +1951,12 @@ const leaguesData = {
     { "home": "V-Varen Nagasaki", "away": "Gamba Osaka", "date": "2026-09-02" }
   ]
 },
-/*
+
   "Japanese J2 League": {
     "id": "japanese-j2-league",
     "logo": "japan/j2league.png",
     "isBasketball": false,
     "season": "2026",
-    "groups": {
-      "Group A": {
         "teams": [
           { "rank": 1, "team": "Vegalta Sendai", "MP": 18, "MW": 11, "MD": 5, "ML": 2, "GF": 32, "GA": 15, "logo": "japan/vegalta.png" },
           { "rank": 2, "team": "Blaublitz", "MP": 18, "MW": 11, "MD": 2, "ML": 5, "GF": 23, "GA": 14, "logo": "japan/blaublitz.png" },
@@ -1959,11 +1967,7 @@ const leaguesData = {
           { "rank": 7, "team": "Montedio Yamagata", "MP": 18, "MW": 6, "MD": 2, "ML": 10, "GF": 20, "GA": 25, "logo": "japan/montedio.png" },
           { "rank": 8, "team": "Tochigi City FC", "MP": 18, "MW": 5, "MD": 4, "ML": 9, "GF": 20, "GA": 33, "logo": "japan/tochigicity.png" },
           { "rank": 9, "team": "Vanraure Hachinohe", "MP": 18, "MW": 4, "MD": 6, "ML": 8, "GF": 15, "GA": 19, "logo": "japan/vanraure.png" },
-          { "rank": 10, "team": "Tochigi SC", "MP": 18, "MW": 4, "MD": 5, "ML": 9, "GF": 23, "GA": 28, "logo": "japan/tochigisc.png" }
-        ]
-      },
-      "Group B": {
-        "teams": [
+          { "rank": 10, "team": "Tochigi SC", "MP": 18, "MW": 4, "MD": 5, "ML": 9, "GF": 23, "GA": 28, "logo": "japan/tochigisc.png" },
           { "rank": 1, "team": "Ventforet Kofu", "MP": 18, "MW": 10, "MD": 3, "ML": 5, "GF": 21, "GA": 13, "logo": "japan/ventforet.png" },
           { "rank": 2, "team": "Consadole Sapporo", "MP": 18, "MW": 9, "MD": 2, "ML": 7, "GF": 26, "GA": 22, "logo": "japan/consadole.png" },
           { "rank": 3, "team": "Iwaki FC", "MP": 18, "MW": 7, "MD": 6, "ML": 5, "GF": 22, "GA": 18, "logo": "japan/iwaki.png" },
@@ -1973,11 +1977,7 @@ const leaguesData = {
           { "rank": 7, "team": "Matsumoto Yamaga", "MP": 18, "MW": 6, "MD": 6, "ML": 6, "GF": 31, "GA": 21, "logo": "japan/matsumoto.png" },
           { "rank": 8, "team": "Júbilo Iwata", "MP": 18, "MW": 5, "MD": 6, "ML": 7, "GF": 16, "GA": 23, "logo": "japan/jubilo.png" },
           { "rank": 9, "team": "Fukushima United", "MP": 18, "MW": 4, "MD": 4, "ML": 10, "GF": 28, "GA": 41, "logo": "japan/fukushima.png" },
-          { "rank": 10, "team": "Nagano", "MP": 18, "MW": 3, "MD": 5, "ML": 10, "GF": 15, "GA": 33, "logo": "japan/nagano.png" }
-        ]
-      },
-      "Group C": {
-        "teams": [
+          { "rank": 10, "team": "Nagano", "MP": 18, "MW": 3, "MD": 5, "ML": 10, "GF": 15, "GA": 33, "logo": "japan/nagano.png" },
           { "rank": 1, "team": "Kataller Toyama", "MP": 18, "MW": 10, "MD": 5, "ML": 3, "GF": 37, "GA": 24, "logo": "japan/kataller.png" },
           { "rank": 2, "team": "Niigata", "MP": 18, "MW": 9, "MD": 5, "ML": 4, "GF": 21, "GA": 17, "logo": "japan/niigata.png" },
           { "rank": 3, "team": "Tokushima Vortis", "MP": 18, "MW": 9, "MD": 3, "ML": 6, "GF": 36, "GA": 22, "logo": "japan/tokushima.png" },
@@ -1987,11 +1987,7 @@ const leaguesData = {
           { "rank": 7, "team": "Nara Club", "MP": 18, "MW": 5, "MD": 4, "ML": 9, "GF": 25, "GA": 34, "logo": "japan/nara.png" },
           { "rank": 8, "team": "Osaka", "MP": 18, "MW": 3, "MD": 8, "ML": 7, "GF": 15, "GA": 18, "logo": "japan/osaka.png" },
           { "rank": 9, "team": "Imabari", "MP": 18, "MW": 5, "MD": 4, "ML": 9, "GF": 14, "GA": 18, "logo": "japan/imabari.png" },
-          { "rank": 10, "team": "Kamatamare Sanuki", "MP": 18, "MW": 5, "MD": 3, "ML": 10, "GF": 14, "GA": 32, "logo": "japan/kamatamare.png" }
-        ]
-      },
-      "Group D": {
-        "teams": [
+          { "rank": 10, "team": "Kamatamare Sanuki", "MP": 18, "MW": 5, "MD": 3, "ML": 10, "GF": 14, "GA": 32, "logo": "japan/kamatamare.png" },
           { "rank": 1, "team": "Tegevajaro Miyazaki", "MP": 18, "MW": 15, "MD": 2, "ML": 1, "GF": 35, "GA": 11, "logo": "japan/tegevajaro.png" },
           { "rank": 2, "team": "Kagoshima United", "MP": 18, "MW": 8, "MD": 5, "ML": 5, "GF": 23, "GA": 15, "logo": "japan/kagoshima.png" },
           { "rank": 3, "team": "Sagan Tosu", "MP": 18, "MW": 8, "MD": 6, "ML": 4, "GF": 24, "GA": 14, "logo": "japan/sagan.png" },
@@ -2001,24 +1997,32 @@ const leaguesData = {
           { "rank": 7, "team": "Oita Trinita", "MP": 18, "MW": 6, "MD": 3, "ML": 9, "GF": 18, "GA": 18, "logo": "japan/oita.png" },
           { "rank": 8, "team": "Reilac Shiga", "MP": 18, "MW": 6, "MD": 2, "ML": 10, "GF": 15, "GA": 28, "logo": "japan/reilac.png" },
           { "rank": 9, "team": "Ryukyu", "MP": 18, "MW": 2, "MD": 7, "ML": 9, "GF": 13, "GA": 25, "logo": "japan/ryukyu.png" },
-          { "rank": 10, "team": "Kitakyushu", "MP": 18, "MW": 4, "MD": 3, "ML": 11, "GF": 17, "GA": 32, "logo": "japan/kitakyushu.png" }
-        ]
-      }
-    },
-    "fixtures": [
-      { "home": "Iwaki FC", "away": "Niigata", "date": "2026-08-29" },
-      { "home": "Tochigi City FC", "away": "Júbilo Iwata", "date": "2026-08-29" },
-      { "home": "Kataller Toyama", "away": "Fujieda MYFC", "date": "2026-08-29" },
-      { "home": "Vanraure Hachinohe", "away": "Blaublitz", "date": "2026-08-29" },
-      { "home": "Yokohama FC", "away": "Sagan Tosu", "date": "2026-08-29" },
-      { "home": "Imabari", "away": "Montedio Yamagata", "date": "2026-08-29" },
-      { "home": "Ventforet Kofu", "away": "Consadole Sapporo", "date": "2026-08-29" },
-      { "home": "Omiya Ardija", "away": "Shonan Bellmare", "date": "2026-08-29" },
-      { "home": "Tokushima Vortis", "away": "Oita Trinita", "date": "2026-08-29" },
-      { "home": "Vegalta Sendai", "away": "Tegevajaro Miyazaki", "date": "2026-08-29" }
-    ]
+          { "rank": 10, "team": "Kitakyushu", "MP": 18, "MW": 4, "MD": 3, "ML": 11, "GF": 17, "GA": 32, "logo": "japan/kitakyushu.png" },
+		  ],
+ "fixtures": [
+  { "home": "Fujieda MYFC", "away": "Vanraure Hachinohe", "date": "2026-09-05" },
+  { "home": "Shonan Bellmare", "away": "Vegalta Sendai", "date": "2026-09-05" },
+  { "home": "Sagan Tosu", "away": "Tegevajaro Miyazaki", "date": "2026-09-05" },
+  { "home": "Montedio Yamagata", "away": "Ventforet Kofu", "date": "2026-09-05" },
+  { "home": "Tokushima Vortis", "away": "Iwaki FC", "date": "2026-09-05" },
+  { "home": "Consadole Sapporo", "away": "Tochigi City FC", "date": "2026-09-06" },
+  { "home": "Blaublitz", "away": "Omiya Ardija", "date": "2026-09-06" },
+  { "home": "Yokohama FC", "away": "Niigata", "date": "2026-09-06" },
+  { "home": "Júbilo Iwata", "away": "Kataller Toyama", "date": "2026-09-06" },
+  { "home": "Oita Trinita", "away": "Imabari", "date": "2026-09-06" },
+  { "home": "Iwaki FC", "away": "Yokohama FC", "date": "2026-09-12" },
+  { "home": "Blaublitz", "away": "Tokushima Vortis", "date": "2026-09-12" },
+  { "home": "Vanraure Hachinohe", "away": "Shonan Bellmare", "date": "2026-09-12" },
+  { "home": "Kataller Toyama", "away": "Tochigi City FC", "date": "2026-09-12" },
+  { "home": "Tegevajaro Miyazaki", "away": "Fujieda MYFC", "date": "2026-09-12" },
+  { "home": "Omiya Ardija", "away": "Oita Trinita", "date": "2026-09-12" },
+  { "home": "Imabari", "away": "Sagan Tosu", "date": "2026-09-12" },
+  { "home": "Ventforet Kofu", "away": "Júbilo Iwata", "date": "2026-09-12" },
+  { "home": "Vegalta Sendai", "away": "Consadole Sapporo", "date": "2026-09-13" },
+  { "home": "Niigata", "away": "Montedio Yamagata", "date": "2026-09-13" }
+]
   },
-  */
+  
 "WNBA": {
   "id": "wnba",
   "logo": "wnba/wnbalogo.png",
@@ -2045,11 +2049,7 @@ const leaguesData = {
     
   
   "fixtures": [
-    { "home": "Atlanta Dream", "away": "Portland Fire", "date": "2026-08-29" },
-    { "home": "Indiana Fever", "away": "Connecticut Sun", "date": "2026-08-29" },
-    { "home": "Las Vegas Aces", "away": "Toronto Tempo", "date": "2026-08-29" },
-    { "home": "Los Angeles Sparks", "away": "Washington Mystics", "date": "2026-08-29" },
-    { "home": "New York Liberty", "away": "Chicago Sky", "date": "2026-08-29" },
+
     { "home": "Phoenix Mercury", "away": "Toronto Tempo", "date": "2026-08-30" },
     { "home": "Atlanta Dream", "away": "Minnesota Lynx", "date": "2026-08-30" },
     { "home": "Seattle Storm", "away": "Los Angeles Sparks", "date": "2026-08-30" },
@@ -2135,74 +2135,198 @@ const leaguesData = {
 };
 
 // ==================== MATCH RESULTS DATA ====================
-// ==================== MATCH RESULTS DATA ====================
 
 const matchesData = {
     
-    "Chilean Primera División": [
-	    { home: "Audax Italiano", away: "La Serena", home_score: 1, away_score: 1 },
-        { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
-        { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
-        { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
-        { home: "Deportes Limache", away: "Universidad Católica", home_score: 0, away_score: 2 },
-        { home: "Huachipato", away: "Unión La Calera", home_score: 3, away_score: 1 },
-        { home: "Cobresal", away: "Universidad de Chile", home_score: 1, away_score: 0 },
-        { home: "Colo-Colo", away: "Ñublense", home_score: 6, away_score: 2 },
-        { home: "Concepción", away: "Everton", home_score: 0, away_score: 2 },
-        { home: "Everton", away: "Coquimbo", home_score: 1, away_score: 1 },
-        { home: "Audax Italiano", away: "Cobresal", home_score: 2, away_score: 1 },
-        { home: "Ñublense", away: "Universidad de Concepción", home_score: 2, away_score: 2 },
-        { home: "Unión La Calera", away: "Palestino", home_score: 1, away_score: 2 },
-        { home: "Concepción", away: "Huachipato", home_score: 2, away_score: 0 },
-        { home: "La Serena", away: "Deportes Limache", home_score: 4, away_score: 1 },
-        { home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
-        { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
-        { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
-        { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
-        { home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 }
-    ],
+   "Chilean Primera División": [
+    // Round 21
+    { home: "Ñublense", away: "Concepción", home_score: 0, away_score: 1 },
+    { home: "Deportes Limache", away: "Everton", home_score: 0, away_score: 3 },
+    { home: "Cobresal", away: "Palestino", home_score: 2, away_score: 0 },
+    // Round 19
+    { home: "Coquimbo", away: "Universidad Católica", home_score: 1, away_score: 2 },
+    // Round 20
+    { home: "Everton", away: "Universidad de Concepción", home_score: 3, away_score: 1 },
+    { home: "O'Higgins", away: "Palestino", home_score: 0, away_score: 1 },
+    { home: "Universidad de Chile", away: "Colo-Colo", home_score: 1, away_score: 2 },
+    { home: "Concepción", away: "Coquimbo", home_score: 1, away_score: 1 },
+    { home: "La Serena", away: "Cobresal", home_score: 3, away_score: 3 },
+    { home: "Universidad Católica", away: "Ñublense", home_score: 1, away_score: 2 },
+    { home: "Huachipato", away: "Deportes Limache", home_score: 1, away_score: 3 },
+    { home: "Audax Italiano", away: "Unión La Calera", home_score: 0, away_score: 0 },
+    // Round 19
+    { home: "Palestino", away: "Huachipato", home_score: 5, away_score: 1 },
+    { home: "Colo-Colo", away: "O'Higgins", home_score: 2, away_score: 2 },
+    { home: "Cobresal", away: "Concepción", home_score: 0, away_score: 2 },
+    { home: "Ñublense", away: "Unión La Calera", home_score: 2, away_score: 1 },
+    { home: "Everton", away: "Audax Italiano", home_score: 1, away_score: 1 },
+    { home: "Deportes Limache", away: "Universidad de Chile", home_score: 1, away_score: 3 },
+    { home: "Universidad de Concepción", away: "La Serena", home_score: 0, away_score: 2 },
+    // Round 18
+    { home: "Audax Italiano", away: "Ñublense", home_score: 2, away_score: 2 },
+    { home: "Universidad de Chile", away: "Palestino", home_score: 2, away_score: 1 },
+    { home: "Unión La Calera", away: "Colo-Colo", home_score: 1, away_score: 2 },
+    { home: "O'Higgins", away: "Deportes Limache", home_score: 1, away_score: 3 },
+    { home: "Concepción", away: "Universidad de Concepción", home_score: 1, away_score: 0 },
+    { home: "Coquimbo", away: "La Serena", home_score: 1, away_score: 1 },
+    { home: "Huachipato", away: "Everton", home_score: 1, away_score: 4 },
+    { home: "Universidad Católica", away: "Cobresal", home_score: 2, away_score: 0 },
+    // Round 17
+    { home: "Universidad de Chile", away: "Huachipato", home_score: 2, away_score: 0 },
+    { home: "La Serena", away: "O'Higgins", home_score: 1, away_score: 2 },
+    { home: "Concepción", away: "Universidad Católica", home_score: 3, away_score: 0 },
+    { home: "Palestino", away: "Coquimbo", home_score: 2, away_score: 1 },
+    { home: "Everton", away: "Colo-Colo", home_score: 3, away_score: 4 },
+    { home: "Cobresal", away: "Unión La Calera", home_score: 4, away_score: 0 },
+    { home: "Universidad de Concepción", away: "Audax Italiano", home_score: 0, away_score: 1 },
+    // Round 16
+    { home: "Unión La Calera", away: "Everton", home_score: 1, away_score: 1 },
+    { home: "Concepción", away: "O'Higgins", home_score: 2, away_score: 0 },
+    { home: "Audax Italiano", away: "Universidad de Chile", home_score: 1, away_score: 2 },
+    { home: "Ñublense", away: "Palestino", home_score: 2, away_score: 0 },
+    { home: "Universidad Católica", away: "La Serena", home_score: 3, away_score: 3 },
+    { home: "Huachipato", away: "Cobresal", home_score: 3, away_score: 3 },
+    { home: "Colo-Colo", away: "Deportes Limache", home_score: 3, away_score: 1 },
+    // Round 13
+    { home: "Universidad de Chile", away: "O'Higgins", home_score: 2, away_score: 0 },
+    // Round 15
+    { home: "Universidad Católica", away: "Universidad de Concepción", home_score: 5, away_score: 1 },
+    { home: "Unión La Calera", away: "Universidad de Chile", home_score: 2, away_score: 2 },
+    { home: "Concepción", away: "Deportes Limache", home_score: 3, away_score: 2 },
+    { home: "Ñublense", away: "Huachipato", home_score: 2, away_score: 2 },
+    { home: "Colo-Colo", away: "Cobresal", home_score: 3, away_score: 0 },
+    { home: "Everton", away: "Palestino", home_score: 1, away_score: 2 },
+    { home: "Coquimbo", away: "O'Higgins", home_score: 0, away_score: 0 },
+    { home: "Audax Italiano", away: "La Serena", home_score: 1, away_score: 1 },
+    // Round 14
+    { home: "Palestino", away: "Audax Italiano", home_score: 0, away_score: 0 },
+    { home: "O'Higgins", away: "Everton", home_score: 2, away_score: 3 },
+    { home: "Huachipato", away: "Universidad Católica", home_score: 0, away_score: 3 },
+    { home: "Deportes Limache", away: "Coquimbo", home_score: 2, away_score: 3 },
+    { home: "Universidad de Chile", away: "Concepción", home_score: 2, away_score: 1 },
+    { home: "La Serena", away: "Colo-Colo", home_score: 2, away_score: 4 },
+    { home: "Universidad de Concepción", away: "Unión La Calera", home_score: 0, away_score: 0 },
+    { home: "Cobresal", away: "Ñublense", home_score: 0, away_score: 1 },
+    // Round 13
+    { home: "Universidad Católica", away: "Colo-Colo", home_score: 1, away_score: 2 },
+    { home: "La Serena", away: "Deportes Limache", home_score: 4, away_score: 1 },
+    { home: "Concepción", away: "Huachipato", home_score: 2, away_score: 0 },
+    { home: "Unión La Calera", away: "Palestino", home_score: 1, away_score: 2 },
+    { home: "Ñublense", away: "Universidad de Concepción", home_score: 2, away_score: 2 },
+    { home: "Audax Italiano", away: "Cobresal", home_score: 2, away_score: 1 },
+    { home: "Everton", away: "Coquimbo", home_score: 1, away_score: 1 },
+    // Round 12
+    { home: "Concepción", away: "Everton", home_score: 0, away_score: 2 },
+    { home: "Colo-Colo", away: "Ñublense", home_score: 6, away_score: 2 },
+    { home: "Cobresal", away: "Universidad de Chile", home_score: 1, away_score: 0 },
+    { home: "Huachipato", away: "Unión La Calera", home_score: 3, away_score: 1 },
+    { home: "Deportes Limache", away: "Universidad Católica", home_score: 0, away_score: 2 },
+    { home: "O'Higgins", away: "Universidad de Concepción", home_score: 0, away_score: 1 },
+    { home: "Coquimbo", away: "Audax Italiano", home_score: 3, away_score: 0 },
+    { home: "Palestino", away: "La Serena", home_score: 5, away_score: 1 },
+    // Round 9
+    { home: "Colo-Colo", away: "Coquimbo", home_score: 3, away_score: 1 },
+    // Round 11
+    { home: "Everton", away: "Cobresal", home_score: 3, away_score: 1 },
+    { home: "Universidad de Concepción", away: "Colo-Colo", home_score: 1, away_score: 2 },
+    { home: "La Serena", away: "Huachipato", home_score: 0, away_score: 0 },
+    { home: "Universidad de Chile", away: "Universidad Católica", home_score: 1, away_score: 0 },
+    { home: "Ñublense", away: "O'Higgins", home_score: 0, away_score: 2 },
+    { home: "Audax Italiano", away: "Deportes Limache", home_score: 2, away_score: 2 },
+    { home: "Unión La Calera", away: "Coquimbo", home_score: 1, away_score: 2 },
+    { home: "Palestino", away: "Concepción", home_score: 0, away_score: 1 },
+    // Round 10
+    { home: "Universidad Católica", away: "Unión La Calera", home_score: 1, away_score: 2 },
+    { home: "Huachipato", away: "Audax Italiano", home_score: 3, away_score: 2 },
+    { home: "Colo-Colo", away: "Palestino", home_score: 0, away_score: 1 },
+    { home: "Cobresal", away: "O'Higgins", home_score: 2, away_score: 3 },
+    { home: "Coquimbo", away: "Ñublense", home_score: 1, away_score: 1 },
+    { home: "Concepción", away: "La Serena", home_score: 3, away_score: 3 },
+    { home: "Everton", away: "Universidad de Chile", home_score: 0, away_score: 0 },
+    { home: "Deportes Limache", away: "Universidad de Concepción", home_score: 3, away_score: 0 },
+    // Round 9
+    { home: "Unión La Calera", away: "Concepción", home_score: 1, away_score: 0 },
+    { home: "Universidad de Concepción", away: "Cobresal", home_score: 1, away_score: 0 },
+    { home: "Ñublense", away: "Universidad de Chile", home_score: 1, away_score: 0 },
+    { home: "Palestino", away: "Deportes Limache", home_score: 1, away_score: 0 },
+    { home: "Audax Italiano", away: "Universidad Católica", home_score: 3, away_score: 4 },
+    { home: "La Serena", away: "Everton", home_score: 1, away_score: 0 },
+    { home: "O'Higgins", away: "Huachipato", home_score: 0, away_score: 2 },
+    // Round 8
+    { home: "Huachipato", away: "Universidad de Concepción", home_score: 5, away_score: 1 },
+    { home: "Universidad de Chile", away: "La Serena", home_score: 4, away_score: 0 },
+    { home: "Concepción", away: "Colo-Colo", home_score: 0, away_score: 1 },
+    { home: "Everton", away: "Ñublense", home_score: 0, away_score: 0 },
+    { home: "Deportes Limache", away: "Unión La Calera", home_score: 4, away_score: 0 },
+    { home: "O'Higgins", away: "Audax Italiano", home_score: 2, away_score: 1 },
+    { home: "Coquimbo", away: "Cobresal", home_score: 3, away_score: 2 },
+    { home: "Universidad Católica", away: "Palestino", home_score: 6, away_score: 1 },
+    // Round 7
+    { home: "Colo-Colo", away: "Huachipato", home_score: 2, away_score: 0 },
+    { home: "Unión La Calera", away: "O'Higgins", home_score: 3, away_score: 3 },
+    { home: "Ñublense", away: "La Serena", home_score: 2, away_score: 2 },
+    { home: "Cobresal", away: "Deportes Limache", home_score: 2, away_score: 5 },
+    { home: "Universidad de Concepción", away: "Palestino", home_score: 1, away_score: 0 },
+    { home: "Universidad Católica", away: "Everton", home_score: 2, away_score: 2 },
+    { home: "Coquimbo", away: "Universidad de Chile", home_score: 0, away_score: 1 },
+    { home: "Audax Italiano", away: "Concepción", home_score: 3, away_score: 0 },
+    // Round 6
+    { home: "Universidad de Chile", away: "Universidad de Concepción", home_score: 1, away_score: 1 },
+    { home: "Palestino", away: "Cobresal", home_score: 4, away_score: 2 },
+    { home: "O'Higgins", away: "Universidad Católica", home_score: 1, away_score: 0 },
+    { home: "Audax Italiano", away: "Colo-Colo", home_score: 0, away_score: 1 },
+    { home: "Everton", away: "Deportes Limache", home_score: 1, away_score: 0 },
+    { home: "Huachipato", away: "Coquimbo", home_score: 1, away_score: 3 },
+    { home: "Concepción", away: "Ñublense", home_score: 0, away_score: 2 },
+    { home: "La Serena", away: "Unión La Calera", home_score: 3, away_score: 0 },
+    // Round 5
+    { home: "Ñublense", away: "Universidad Católica", home_score: 1, away_score: 2 },
+    { home: "Colo-Colo", away: "Universidad de Chile", home_score: 0, away_score: 1 },
+    { home: "Universidad de Concepción", away: "Everton", home_score: 0, away_score: 3 },
+    { home: "Palestino", away: "O'Higgins", home_score: 4, away_score: 2 },
+    { home: "Deportes Limache", away: "Huachipato", home_score: 3, away_score: 0 },
+    { home: "Coquimbo", away: "Concepción", home_score: 0, away_score: 1 },
+    { home: "Unión La Calera", away: "Audax Italiano", home_score: 3, away_score: 0 },
+    { home: "Cobresal", away: "La Serena", home_score: 0, away_score: 1 },
+    // Round 4
+    { home: "Universidad de Chile", away: "Deportes Limache", home_score: 2, away_score: 2 },
+    { home: "Audax Italiano", away: "Everton", home_score: 1, away_score: 0 },
+    { home: "La Serena", away: "Universidad de Concepción", home_score: 1, away_score: 1 },
+    { home: "Universidad Católica", away: "Coquimbo", home_score: 3, away_score: 1 },
+    { home: "O'Higgins", away: "Colo-Colo", home_score: 0, away_score: 1 },
+    { home: "Huachipato", away: "Palestino", home_score: 2, away_score: 1 },
+    { home: "Concepción", away: "Cobresal", home_score: 1, away_score: 1 },
+    { home: "Unión La Calera", away: "Ñublense", home_score: 0, away_score: 1 },
+    // Round 3
+    { home: "Colo-Colo", away: "Unión La Calera", home_score: 1, away_score: 0 },
+    { home: "Ñublense", away: "Audax Italiano", home_score: 1, away_score: 0 },
+    { home: "Universidad de Concepción", away: "Concepción", home_score: 2, away_score: 1 },
+    { home: "Cobresal", away: "Universidad Católica", home_score: 3, away_score: 2 },
+    { home: "Deportes Limache", away: "O'Higgins", home_score: 2, away_score: 1 },
+    { home: "La Serena", away: "Coquimbo", home_score: 0, away_score: 1 },
+    { home: "Palestino", away: "Universidad de Chile", home_score: 0, away_score: 0 },
+    { home: "Everton", away: "Huachipato", home_score: 0, away_score: 3 },
+    // Round 2
+    { home: "Unión La Calera", away: "Cobresal", home_score: 0, away_score: 3 },
+    { home: "Universidad Católica", away: "Concepción", home_score: 2, away_score: 0 },
+    { home: "Ñublense", away: "Deportes Limache", home_score: 1, away_score: 1 },
+    { home: "Huachipato", away: "Universidad de Chile", home_score: 2, away_score: 1 },
+    { home: "Colo-Colo", away: "Everton", home_score: 2, away_score: 0 },
+    { home: "O'Higgins", away: "La Serena", home_score: 1, away_score: 0 },
+    { home: "Coquimbo", away: "Palestino", home_score: 3, away_score: 1 },
+    { home: "Audax Italiano", away: "Universidad de Concepción", home_score: 3, away_score: 0 },
+    // Round 1
+    { home: "O'Higgins", away: "Concepción", home_score: 2, away_score: 1 },
+    { home: "Everton", away: "Unión La Calera", home_score: 3, away_score: 0 },
+    { home: "Palestino", away: "Ñublense", home_score: 1, away_score: 1 },
+    { home: "La Serena", away: "Universidad Católica", home_score: 2, away_score: 2 },
+    { home: "Cobresal", away: "Huachipato", home_score: 1, away_score: 0 },
+    { home: "Universidad de Concepción", away: "Coquimbo", home_score: 1, away_score: 0 },
+    { home: "Deportes Limache", away: "Colo-Colo", home_score: 3, away_score: 1 },
+    { home: "Universidad de Chile", away: "Audax Italiano", home_score: 0, away_score: 0 }
+],
 	"Chinese Super League": [
-        // Matchday 10 - May 5-6
-    { home: "Qingdao Youth Island", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
-    { home: "Shandong Taishan", away: "Shanghai Shenhua", home_score: 4, away_score: 1 },
-    { home: "Shenyang Urban", away: "Chengdu Rongcheng", home_score: 0, away_score: 1 },
-    { home: "Chongqing Tonglianglong", away: "Henan", home_score: 1, away_score: 1 },
-    { home: "Wuhan Three Towns", away: "Qingdao Hainiu", home_score: 1, away_score: 3 },
-    { home: "Beijing Guoan", away: "Dalian Yingbo", home_score: 3, away_score: 0 },
-    { home: "Shanghai Port", away: "Shenzhen Peng City", home_score: 1, away_score: 1 },
-    { home: "Yunnan Yukun", away: "Zhejiang", home_score: 1, away_score: 2 },
-    
-    // Matchday 11 - May 9-10
-    { home: "Shanghai Shenhua", away: "Chongqing Tonglianglong", home_score: 2, away_score: 2 },
-    { home: "Chengdu Rongcheng", away: "Henan", home_score: 3, away_score: 0 },
-    { home: "Qingdao Youth Island", away: "Wuhan Three Towns", home_score: 1, away_score: 1 },
-    { home: "Shenzhen Peng City", away: "Shandong Taishan", home_score: 1, away_score: 2 },
-    { home: "Shenyang Urban", away: "Yunnan Yukun", home_score: 1, away_score: 2 },
-    { home: "Zhejiang", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
-    { home: "Beijing Guoan", away: "Shanghai Port", home_score: 2, away_score: 2 },
-    { home: "Qingdao Hainiu", away: "Dalian Yingbo", home_score: 3, away_score: 1 },
-    
-    // Matchday 12 - May 15-16
-    { home: "Henan", away: "Shenzhen Peng City", home_score: 1, away_score: 0 },
-    { home: "Tianjin Jinmen Tiger", away: "Chengdu Rongcheng", home_score: 1, away_score: 2 },
-    { home: "Shanghai Port", away: "Zhejiang", home_score: 2, away_score: 2 },
-    { home: "Dalian Yingbo", away: "Qingdao Youth Island", home_score: 2, away_score: 3 },
-    { home: "Beijing Guoan", away: "Qingdao Hainiu", home_score: 4, away_score: 2 },
-    { home: "Wuhan Three Towns", away: "Shenyang Urban", home_score: 2, away_score: 2 },
-    { home: "Shandong Taishan", away: "Chongqing Tonglianglong", home_score: 3, away_score: 1 },
-    { home: "Yunnan Yukun", away: "Shanghai Shenhua", home_score: 1, away_score: 0 },
-    
-    // Matchday 13 - May 19-20
-    { home: "Tianjin Jinmen Tiger", away: "Henan", home_score: 1, away_score: 2 },
-    { home: "Shenzhen Peng City", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
-    { home: "Qingdao Youth Island", away: "Beijing Guoan", home_score: 1, away_score: 1 },
-    { home: "Chengdu Rongcheng", away: "Shanghai Port", home_score: 0, away_score: 1 },
-    { home: "Shenyang Urban", away: "Qingdao Hainiu", home_score: 2, away_score: 1 },
-    { home: "Shanghai Shenhua", away: "Wuhan Three Towns", home_score: 2, away_score: 2 },
-    { home: "Chongqing Tonglianglong", away: "Yunnan Yukun", home_score: 0, away_score: 0 },
-    { home: "Zhejiang", away: "Shandong Taishan", home_score: 4, away_score: 1 },
-    
-    // Matchday 14 - May 23-24
+    // Matchday 15
     { home: "Shanghai Port", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 1 },
     { home: "Beijing Guoan", away: "Henan", home_score: 1, away_score: 2 },
     { home: "Dalian Yingbo", away: "Chengdu Rongcheng", home_score: 2, away_score: 0 },
@@ -2211,8 +2335,7 @@ const matchesData = {
     { home: "Shandong Taishan", away: "Wuhan Three Towns", home_score: 3, away_score: 3 },
     { home: "Zhejiang", away: "Shenyang Urban", home_score: 0, away_score: 5 },
     { home: "Shanghai Shenhua", away: "Shenzhen Peng City", home_score: 1, away_score: 2 },
-    
-    // Matchday 15 - May 29-31
+    // Matchday 15 (continued - 29-31 May)
     { home: "Shenyang Urban", away: "Shanghai Port", home_score: 3, away_score: 2 },
     { home: "Qingdao Youth Island", away: "Shanghai Shenhua", home_score: 2, away_score: 2 },
     { home: "Henan", away: "Zhejiang", home_score: 0, away_score: 2 },
@@ -2221,15 +2344,98 @@ const matchesData = {
     { home: "Shenzhen Peng City", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
     { home: "Tianjin Jinmen Tiger", away: "Dalian Yingbo", home_score: 1, away_score: 0 },
     { home: "Wuhan Three Towns", away: "Yunnan Yukun", home_score: 1, away_score: 1 },
-    
-    // Matchday 16 - June 26-27
+    // Matchday 16
     { home: "Qingdao Hainiu", away: "Yunnan Yukun", home_score: 4, away_score: 2 },
     { home: "Shenyang Urban", away: "Shandong Taishan", home_score: 1, away_score: 5 },
     { home: "Henan", away: "Shanghai Port", home_score: 1, away_score: 2 },
     { home: "Shenzhen Peng City", away: "Chengdu Rongcheng", home_score: 2, away_score: 3 },
     { home: "Chongqing Tonglianglong", away: "Tianjin Jinmen Tiger", home_score: 1, away_score: 0 },
-    { home: "Beijing Guoan", away: "Wuhan Three Towns", home_score: 1, away_score: 0 }
-    ],
+    { home: "Beijing Guoan", away: "Wuhan Three Towns", home_score: 1, away_score: 0 },
+    { home: "Qingdao Youth Island", away: "Zhejiang", home_score: 3, away_score: 1 },
+    { home: "Dalian Yingbo", away: "Shanghai Shenhua", home_score: 1, away_score: 4 },
+    // Matchday 17
+    { home: "Yunnan Yukun", away: "Henan", home_score: 2, away_score: 1 },
+    { home: "Shenyang Urban", away: "Chongqing Tonglianglong", home_score: 3, away_score: 1 },
+    { home: "Qingdao Youth Island", away: "Shanghai Port", home_score: 2, away_score: 1 },
+    { home: "Dalian Yingbo", away: "Wuhan Three Towns", home_score: 3, away_score: 2 },
+    { home: "Beijing Guoan", away: "Shandong Taishan", home_score: 2, away_score: 0 },
+    { home: "Tianjin Jinmen Tiger", away: "Shenzhen Peng City", home_score: 3, away_score: 0 },
+    { home: "Qingdao Hainiu", away: "Chengdu Rongcheng", home_score: 1, away_score: 1 },
+    { home: "Shanghai Shenhua", away: "Zhejiang", home_score: 3, away_score: 2 },
+    // Matchday 18
+    { home: "Shandong Taishan", away: "Yunnan Yukun", home_score: 4, away_score: 3 },
+    // Note: Wuhan Three Towns vs Henan - Postponed
+    { home: "Shenzhen Peng City", away: "Qingdao Youth Island", home_score: 3, away_score: 0 },
+    { home: "Chengdu Rongcheng", away: "Chongqing Tonglianglong", home_score: 1, away_score: 1 },
+    // Note: Tianjin Jinmen Tiger vs Shenyang Urban - Postponed
+    { home: "Zhejiang", away: "Qingdao Hainiu", home_score: 3, away_score: 2 },
+    // Matchday 19
+    { home: "Qingdao Youth Island", away: "Chengdu Rongcheng", home_score: 1, away_score: 1 },
+    { home: "Beijing Guoan", away: "Shenyang Urban", home_score: 1, away_score: 1 },
+    { home: "Henan", away: "Qingdao Hainiu", home_score: 5, away_score: 1 },
+    { home: "Yunnan Yukun", away: "Shanghai Port", home_score: 2, away_score: 2 },
+    { home: "Chongqing Tonglianglong", away: "Zhejiang", home_score: 1, away_score: 1 },
+    { home: "Shanghai Shenhua", away: "Tianjin Jinmen Tiger", home_score: 0, away_score: 2 },
+    { home: "Dalian Yingbo", away: "Shandong Taishan", home_score: 3, away_score: 1 },
+    { home: "Wuhan Three Towns", away: "Shenzhen Peng City", home_score: 2, away_score: 0 },
+    // Matchday 20
+    { home: "Qingdao Hainiu", away: "Tianjin Jinmen Tiger", home_score: 0, away_score: 2 },
+    { home: "Shenyang Urban", away: "Qingdao Youth Island", home_score: 0, away_score: 1 },
+    { home: "Shanghai Port", away: "Shanghai Shenhua", home_score: 2, away_score: 0 },
+    { home: "Wuhan Three Towns", away: "Chongqing Tonglianglong", home_score: 1, away_score: 0 },
+    { home: "Yunnan Yukun", away: "Shenzhen Peng City", home_score: 4, away_score: 3 },
+    { home: "Shandong Taishan", away: "Henan", home_score: 1, away_score: 2 },
+    { home: "Chengdu Rongcheng", away: "Beijing Guoan", home_score: 2, away_score: 2 },
+    { home: "Zhejiang", away: "Dalian Yingbo", home_score: 3, away_score: 2 },
+    // Matchday 21
+    { home: "Henan", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
+    { home: "Tianjin Jinmen Tiger", away: "Yunnan Yukun", home_score: 3, away_score: 2 },
+    { home: "Beijing Guoan", away: "Zhejiang", home_score: 2, away_score: 1 },
+    { home: "Shanghai Port", away: "Shandong Taishan", home_score: 0, away_score: 1 },
+    { home: "Chengdu Rongcheng", away: "Wuhan Three Towns", home_score: 1, away_score: 1 },
+    { home: "Qingdao Youth Island", away: "Qingdao Hainiu", home_score: 2, away_score: 0 },
+    { home: "Shenyang Urban", away: "Shanghai Shenhua", home_score: 3, away_score: 1 },
+    { home: "Shenzhen Peng City", away: "Chongqing Tonglianglong", home_score: 2, away_score: 0 },
+    // Matchday 22
+    { home: "Beijing Guoan", away: "Shenzhen Peng City", home_score: 4, away_score: 0 },
+    { home: "Qingdao Hainiu", away: "Shanghai Shenhua", home_score: 0, away_score: 1 },
+    // Note: Zhejiang vs Wuhan Three Towns - Postponed
+    { home: "Dalian Yingbo", away: "Shenyang Urban", home_score: 1, away_score: 0 },
+    { home: "Yunnan Yukun", away: "Chengdu Rongcheng", home_score: 1, away_score: 0 },
+    { home: "Henan", away: "Qingdao Youth Island", home_score: 0, away_score: 0 },
+    { home: "Chongqing Tonglianglong", away: "Shanghai Port", home_score: 2, away_score: 3 },
+    { home: "Shandong Taishan", away: "Tianjin Jinmen Tiger", home_score: 2, away_score: 1 },
+    // Matchday 23
+    { home: "Wuhan Three Towns", away: "Shanghai Port", home_score: 2, away_score: 3 },
+    { home: "Shandong Taishan", away: "Qingdao Hainiu", home_score: 3, away_score: 1 },
+    { home: "Qingdao Youth Island", away: "Chongqing Tonglianglong", home_score: 0, away_score: 0 },
+    { home: "Shenyang Urban", away: "Shenzhen Peng City", home_score: 1, away_score: 2 },
+    { home: "Zhejiang", away: "Chengdu Rongcheng", home_score: 2, away_score: 3 },
+    { home: "Tianjin Jinmen Tiger", away: "Beijing Guoan", home_score: 2, away_score: 4 },
+    { home: "Yunnan Yukun", away: "Dalian Yingbo", home_score: 3, away_score: 1 },
+    { home: "Shanghai Shenhua", away: "Henan", home_score: 4, away_score: 1 },
+    // Matchday 18 (continued - rearranged matches)
+    { home: "Shanghai Shenhua", away: "Beijing Guoan", home_score: 0, away_score: 3 },
+    { home: "Shanghai Port", away: "Dalian Yingbo", home_score: 1, away_score: 1 },
+    // Matchday 24
+    { home: "Wuhan Three Towns", away: "Tianjin Jinmen Tiger", home_score: 0, away_score: 0 },
+    { home: "Shenzhen Peng City", away: "Zhejiang", home_score: 1, away_score: 1 },
+    { home: "Chengdu Rongcheng", away: "Shanghai Shenhua", home_score: 4, away_score: 5 },
+    { home: "Qingdao Youth Island", away: "Shandong Taishan", home_score: 2, away_score: 0 },
+    { home: "Beijing Guoan", away: "Yunnan Yukun", home_score: 3, away_score: 3 },
+    { home: "Shenyang Urban", away: "Henan", home_score: 4, away_score: 4 },
+    { home: "Shanghai Port", away: "Qingdao Hainiu", home_score: 2, away_score: 1 },
+    { home: "Chongqing Tonglianglong", away: "Dalian Yingbo", home_score: 0, away_score: 1 },
+    // Matchday 25
+    { home: "Shanghai Shenhua", away: "Shandong Taishan", home_score: 2, away_score: 3 },
+    { home: "Dalian Yingbo", away: "Beijing Guoan", home_score: 1, away_score: 1 },
+    { home: "Shenzhen Peng City", away: "Shanghai Port", home_score: 0, away_score: 1 },
+    { home: "Qingdao Hainiu", away: "Wuhan Three Towns", home_score: 1, away_score: 5 },
+    { home: "Zhejiang", away: "Yunnan Yukun", home_score: 6, away_score: 0 },
+    { home: "Tianjin Jinmen Tiger", away: "Qingdao Youth Island", home_score: 1, away_score: 1 },
+    { home: "Chengdu Rongcheng", away: "Shenyang Urban", home_score: 2, away_score: 1 },
+    { home: "Henan", away: "Chongqing Tonglianglong", home_score: 1, away_score: 1 }
+],
 	"Argentine Primera Nacional - Group A": [
     // Matchday 14 - May 16-19
     { home: "Racing (C)", away: "Central Norte", home_score: 1, away_score: 2, date: "2026-05-16" },
