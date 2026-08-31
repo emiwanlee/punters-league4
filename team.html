@@ -676,6 +676,16 @@ document.querySelector('.hamburger')?.addEventListener('click', () => {
 // Load the page when ready
 document.addEventListener('DOMContentLoaded', renderTeamPage);
 </script>
+<!-- ===== JAVASCRIPT - CORRECT ORDER ===== -->
+<!-- 1. Load data first -->
+<script src="js/data.js"></script>
+<script src="js/matchesData.js"></script>
+
+<!-- 2. Load prediction engine -->
+<script src="js/predictions.js"></script>
+
+<!-- 3. Load team page logic -->
+<script src="js/team.js"></script>
 <script src="https://pl29651539.effectivecpmnetwork.com/80/62/c9/8062c90635e34804ad4b865d4e95ca4f.js"></script>
 </body>
 </html>
