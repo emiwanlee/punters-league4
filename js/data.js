@@ -1343,14 +1343,14 @@ const leaguesData = {
     { "rank": 16, "team": "Manta", "MP": 26, "MW": 4, "MD": 5, "ML": 17, "GF": 12, "GA": 37, "logo": "ecuador/manta.png" }
   ],
   "fixtures": [
-    { "home": "Delfin", "away": "Tecnico U.", "date": "2025-09-01" },
-    { "home": "LDU Quito", "away": "Mushuc Runa", "date": "2025-09-02" },
-    { "home": "Macara", "away": "Manta", "date": "2025-09-02" },
-    { "home": "Dep. Cuenca", "away": "Guayaquil City", "date": "2025-09-02" },
-    { "home": "Barcelona SC", "away": "Ind. del Valle", "date": "2025-09-03" },
-    { "home": "U. Catolica", "away": "Aucas", "date": "2025-09-03" },
-    { "home": "Leones del Norte", "away": "Orense", "date": "2025-09-03" },
-    { "home": "Libertad", "away": "Emelec", "date": "2025-09-04" }
+    { "home": "Delfin", "away": "Tecnico U.", "date": "2026-09-01" },
+    { "home": "LDU Quito", "away": "Mushuc Runa", "date": "2026-09-02" },
+    { "home": "Macara", "away": "Manta", "date": "2026-09-02" },
+    { "home": "Dep. Cuenca", "away": "Guayaquil City", "date": "2026-09-02" },
+    { "home": "Barcelona SC", "away": "Ind. del Valle", "date": "2026-09-03" },
+    { "home": "U. Catolica", "away": "Aucas", "date": "2026-09-03" },
+    { "home": "Leones del Norte", "away": "Orense", "date": "2026-09-03" },
+    { "home": "Libertad", "away": "Emelec", "date": "2026-09-04" }
   ]
 },
 
