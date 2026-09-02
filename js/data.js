@@ -835,14 +835,6 @@ const leaguesData = {
     { "rank": 29, "team": "Lincoln City", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/lincoln.png" }
   ],
   "fixtures": [
-    { "home": "Preston", "away": "Bristol City", "date": "2026-09-01" },
-    { "home": "Portsmouth", "away": "Derby County", "date": "2026-09-01" },
-    { "home": "Lincoln City", "away": "Blackburn Rovers", "date": "2026-09-01" },
-    { "home": "West Ham", "away": "Wolves", "date": "2026-09-01" },
-    { "home": "Sheffield United", "away": "Bolton", "date": "2026-09-01" },
-    { "home": "Swansea", "away": "Watford", "date": "2026-09-01" },
-    { "home": "Stoke City", "away": "Norwich City", "date": "2026-09-01" },
-    { "home": "Birmingham", "away": "Southampton", "date": "2026-09-01" },
     { "home": "West Brom", "away": "Charlton", "date": "2026-09-02" },
     { "home": "Millwall", "away": "Wrexham", "date": "2026-09-02" },
     { "home": "QPR", "away": "Cardiff City", "date": "2026-09-02" },
@@ -898,13 +890,6 @@ const leaguesData = {
     { "rank": 24, "team": "Northampton Town", "MP": 46, "MW": 9, "MD": 8, "ML": 29, "GF": 39, "GA": 74, "logo": "england/northampton.png" }
   ],
   "fixtures": [
-    { "home": "Bromley", "away": "Leyton Orient", "date": "2026-09-01" },
-    { "home": "Wycombe", "away": "Sheffield Wednesday", "date": "2026-09-01" },
-    { "home": "Doncaster", "away": "Notts County", "date": "2026-09-01" },
-    { "home": "Peterborough", "away": "Stevenage", "date": "2026-09-01" },
-    { "home": "Bradford City", "away": "Cambridge United", "date": "2026-09-01" },
-    { "home": "Huddersfield", "away": "Oxford Utd", "date": "2026-09-01" },
-    { "home": "Leicester City", "away": "Plymouth", "date": "2026-09-01" },
     { "home": "Wigan Athletic", "away": "MK Dons", "date": "2026-09-02" },
     { "home": "Luton Town", "away": "Stockport", "date": "2026-09-02" },
     { "home": "Burton", "away": "AFC Wimbledon", "date": "2026-09-02" },
@@ -981,18 +966,6 @@ const leaguesData = {
     { "rank": 30, "team": "Rochdale", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/rochdale.png" }
   ],
   "fixtures": [
-    { "home": "Cheltenham", "away": "York City", "date": "2026-09-01" },
-    { "home": "Accrington Stanley", "away": "Grimsby", "date": "2026-09-01" },
-    { "home": "Bristol Rovers", "away": "Colchester", "date": "2026-09-01" },
-    { "home": "Exeter City", "away": "Barnet", "date": "2026-09-01" },
-    { "home": "Salford City", "away": "Newport County", "date": "2026-09-01" },
-    { "home": "Rochdale", "away": "Shrewsbury", "date": "2026-09-01" },
-    { "home": "Swindon Town", "away": "Port Vale", "date": "2026-09-01" },
-    { "home": "Fleetwood", "away": "Oldham Athletic", "date": "2026-09-01" },
-    { "home": "Tranmere", "away": "Rotherham", "date": "2026-09-01" },
-    { "home": "Northampton Town", "away": "Crawley Town", "date": "2026-09-01" },
-    { "home": "Crewe", "away": "Walsall", "date": "2026-09-01" },
-    { "home": "Chesterfield", "away": "Gillingham", "date": "2026-09-01" },
     { "home": "Salford City", "away": "Port Vale", "date": "2026-09-05" },
     { "home": "Fleetwood", "away": "Shrewsbury", "date": "2026-09-05" },
     { "home": "Crewe", "away": "York City", "date": "2026-09-05" },
@@ -1152,8 +1125,6 @@ const leaguesData = {
             { rank: 30, team: "Estudiantes de Río Cuarto", MP: 16, MW: 1, MD: 2, ML: 13, GF: 5, GA: 24, logo: "argentina/estudiantesriocuarto.png" }
         ],
        fixtures: [
-  { "home": "Instituto", "away": "San Lorenzo", "home_score": null, "away_score": null, "date": "2026-09-01" },
-  { "home": "Tigre", "away": "Barracas Central", "home_score": null, "away_score": null, "date": "2026-09-01" },
   { "home": "San Lorenzo", "away": "Talleres", "home_score": null, "away_score": null, "date": "2026-09-06" },
   { "home": "Gimnasia LP", "away": "Tigre", "home_score": null, "away_score": null, "date": "2026-09-06" },
   { "home": "Belgrano", "away": "Huracán", "home_score": null, "away_score": null, "date": "2026-09-06" },
@@ -1343,7 +1314,6 @@ const leaguesData = {
     { "rank": 16, "team": "Manta", "MP": 26, "MW": 4, "MD": 5, "ML": 17, "GF": 12, "GA": 37, "logo": "ecuador/manta.png" }
   ],
   "fixtures": [
-    { "home": "Delfin", "away": "Tecnico U.", "date": "2026-09-01" },
     { "home": "LDU Quito", "away": "Mushuc Runa", "date": "2026-09-02" },
     { "home": "Macara", "away": "Manta", "date": "2026-09-02" },
     { "home": "Dep. Cuenca", "away": "Guayaquil City", "date": "2026-09-02" },

@@ -367,7 +367,8 @@ const matchesData = {
   { "home": "Real Madrid", "away": "Málaga", "home_score": 4, "away_score": 0, "date": "2026-08-30" },
   { "home": "Deportivo", "away": "Valencia", "home_score": 3, "away_score": 1, "date": "2026-08-30" },
   { "home": "Celta", "away": "Athletic", "home_score": 0, "away_score": 2, "date": "2026-08-30" },
-  { "home": "Osasuna", "away": "Getafe", "home_score": 1, "away_score": 0, "date": "2026-08-31" }
+  { "home": "Osasuna", "away": "Getafe", "home_score": 1, "away_score": 0, "date": "2026-08-31" },
+  { "home": "Barcelona", "away": "Rayo Vallecano", "home_score": 5, "away_score": 2, "date": "2026-08-31" }
 ],
 
     // ============================================================
@@ -704,7 +705,10 @@ const matchesData = {
   { "home": "Häcken", "away": "Västerås", "home_score": 1, "away_score": 3, "date": "2026-08-29" },
   { "home": "Halmstad", "away": "Kalmar", "home_score": 1, "away_score": 0, "date": "2026-08-29" },
   { "home": "AIK", "away": "Hammarby", "home_score": 3, "away_score": 2, "date": "2026-08-30" },
-  { "home": "Göteborg", "away": "ÖIS", "home_score": 1, "away_score": 0, "date": "2026-08-30" }
+  { "home": "Göteborg", "away": "ÖIS", "home_score": 1, "away_score": 0, "date": "2026-08-30" },
+  { "home": "Djurgården", "away": "Mjällby", "home_score": 4, "away_score": 0, "date": "2026-08-31" },
+  { "home": "GAIS", "away": "Brommapojkarna", "home_score": 4, "away_score": 0, "date": "2026-08-31" },
+  { "home": "Sirius", "away": "Malmö", "home_score": 0, "away_score": 1, "date": "2026-08-31" }
 ],
 
  // ============================================================
@@ -1938,7 +1942,10 @@ const matchesData = {
   { "home": "Blooming", "away": "Real Oruro", "home_score": 1, "away_score": 1, "date": "2026-08-27" },
   { "home": "Always Ready", "away": "Aurora", "home_score": 2, "away_score": 2, "date": "2026-08-27" },
   { "home": "Independiente Petrolero", "away": "Guabirá", "home_score": 3, "away_score": 1, "date": "2026-08-27" },
-  { "home": "Bolívar", "away": "Academia del Balompie Boliviano", "home_score": 4, "away_score": 1, "date": "2026-08-28" }
+  { "home": "Bolívar", "away": "Academia del Balompie Boliviano", "home_score": 4, "away_score": 1, "date": "2026-08-28" },
+  { "home": "Bolivar", "away": "The Strongest", "home_score": 4, "away_score": 2, "date": "2026-08-31" },
+  { "home": "Blooming", "away": "Oriente Petrolero", "home_score": 0, "away_score": 3, "date": "2026-08-31" },
+  { "home": "SA Bulo Bulo", "away": "Guabirá", "home_score": 5, "away_score": 1, "date": "2026-08-31" }
 ],
 
  // ============================================================
