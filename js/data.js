@@ -715,7 +715,6 @@ const leaguesData = {
       { "rank": 16, "team": "Dender", "MP": 30, "MW": 3, "MD": 10, "ML": 17, "GF": 24, "GA": 51, "logo": "belgium/dender.png" }
     ],
     "fixtures": [
-      { "home": "STVV", "away": "Union", "date": "2026-09-02" },
       { "home": "Gent", "away": "OH Leuven", "date": "2026-09-03" },
       { "home": "Anderlecht", "away": "Kortrijk", "date": "2026-09-03" },
       { "home": "Lommel", "away": "Club Brugge", "date": "2026-09-04" },
@@ -835,10 +834,6 @@ const leaguesData = {
     { "rank": 29, "team": "Lincoln City", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/lincoln.png" }
   ],
   "fixtures": [
-    { "home": "West Brom", "away": "Charlton", "date": "2026-09-02" },
-    { "home": "Millwall", "away": "Wrexham", "date": "2026-09-02" },
-    { "home": "QPR", "away": "Cardiff City", "date": "2026-09-02" },
-    { "home": "Burnley", "away": "Middlesbrough", "date": "2026-09-02" },
     { "home": "Lincoln City", "away": "Southampton", "date": "2026-09-05" },
     { "home": "Stoke City", "away": "Charlton", "date": "2026-09-05" },
     { "home": "Preston", "away": "Blackburn Rovers", "date": "2026-09-05" },
@@ -890,11 +885,6 @@ const leaguesData = {
     { "rank": 24, "team": "Northampton Town", "MP": 46, "MW": 9, "MD": 8, "ML": 29, "GF": 39, "GA": 74, "logo": "england/northampton.png" }
   ],
   "fixtures": [
-    { "home": "Wigan Athletic", "away": "MK Dons", "date": "2026-09-02" },
-    { "home": "Luton Town", "away": "Stockport", "date": "2026-09-02" },
-    { "home": "Burton", "away": "AFC Wimbledon", "date": "2026-09-02" },
-    { "home": "Barnsley", "away": "Blackpool", "date": "2026-09-02" },
-    { "home": "Reading", "away": "Mansfield Town", "date": "2026-09-02" },
     { "home": "Peterborough", "away": "Sheffield Wednesday", "date": "2026-09-05" },
     { "home": "Wigan Athletic", "away": "Stockport", "date": "2026-09-05" },
     { "home": "Leicester City", "away": "Oxford Utd", "date": "2026-09-05" },
@@ -1214,7 +1204,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 24, "MW": 2, "MD": 8, "ML": 14, "GF": 25, "GA": 49, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Flamengo", "away": "Mirassol", "date": "2026-09-02" },
       { "home": "Bragantino", "away": "Bahia", "date": "2026-09-05" },
       { "home": "São Paulo", "away": "Atlético Mineiro", "date": "2026-09-05" },
       { "home": "Fluminense", "away": "Vasco", "date": "2026-09-06" },
@@ -1266,7 +1255,6 @@ const leaguesData = {
       { "rank": 16, "team": "D. Concepcion", "MP": 25, "MW": 3, "MD": 6, "ML": 16, "GF": 19, "GA": 43, "logo": "chile/dconcepcion.png" }
     ],
     "fixtures": [
-      { "home": "Coquimbo", "away": "U. De Concepcion", "date": "2026-09-02" },
       { "home": "Limache", "away": "Nublense", "date": "2026-09-03" },
       { "home": "D. Concepcion", "away": "A. Italiano", "date": "2026-09-05" },
       { "home": "Everton", "away": "U. Catolica", "date": "2026-09-05" },
@@ -1314,9 +1302,6 @@ const leaguesData = {
     { "rank": 16, "team": "Manta", "MP": 26, "MW": 4, "MD": 5, "ML": 17, "GF": 12, "GA": 37, "logo": "ecuador/manta.png" }
   ],
   "fixtures": [
-    { "home": "LDU Quito", "away": "Mushuc Runa", "date": "2026-09-02" },
-    { "home": "Macara", "away": "Manta", "date": "2026-09-02" },
-    { "home": "Dep. Cuenca", "away": "Guayaquil City", "date": "2026-09-02" },
     { "home": "Barcelona SC", "away": "Ind. del Valle", "date": "2026-09-03" },
     { "home": "U. Catolica", "away": "Aucas", "date": "2026-09-03" },
     { "home": "Leones del Norte", "away": "Orense", "date": "2026-09-03" },
@@ -1529,46 +1514,56 @@ const leaguesData = {
     //  JAPAN - J1 LEAGUE
     // ============================================================
 
-    "Japanese J1 League": {
-        id: "japanese-j1-league",
-        logo: "japan/j1league.png",
-        isBasketball: false,
-        season: "2026",
-        teams: [
-            { rank: 1, team: "Kashima Antlers", MP: 18, MW: 13, MD: 4, ML: 1, GF: 29, GA: 9, logo: "japan/kashima.png" },
-            { rank: 2, team: "FC Tokyo", MP: 18, MW: 9, MD: 6, ML: 3, GF: 28, GA: 16, logo: "japan/fctokyo.png" },
-            { rank: 3, team: "Machida", MP: 18, MW: 8, MD: 8, ML: 2, GF: 23, GA: 19, logo: "japan/machida.png" },
-            { rank: 4, team: "Kawasaki", MP: 18, MW: 7, MD: 4, ML: 7, GF: 23, GA: 27, logo: "japan/kawasaki.png" },
-            { rank: 5, team: "Tokyo Verdy", MP: 18, MW: 7, MD: 4, ML: 7, GF: 19, GA: 25, logo: "japan/tokyoverdy.png" },
-            { rank: 6, team: "Urawa Reds", MP: 18, MW: 7, MD: 4, ML: 7, GF: 25, GA: 18, logo: "japan/urawa.png" },
-            { rank: 7, team: "Yokohama FM", MP: 18, MW: 6, MD: 2, ML: 10, GF: 28, GA: 29, logo: "japan/yokohamafm.png" },
-            { rank: 8, team: "Kashiwa", MP: 18, MW: 6, MD: 1, ML: 11, GF: 21, GA: 24, logo: "japan/kashiwa.png" },
-            { rank: 9, team: "Mito", MP: 18, MW: 2, MD: 8, ML: 8, GF: 19, GA: 35, logo: "japan/mito.png" },
-            { rank: 10, team: "JEF", MP: 18, MW: 3, MD: 3, ML: 12, GF: 18, GA: 31, logo: "japan/jefunited.png" },
-            { rank: 11, team: "Vissel Kobe", MP: 18, MW: 9, MD: 6, ML: 3, GF: 27, GA: 21, logo: "japan/visselkobe.png" },
-            { rank: 12, team: "Cerezo Osaka", MP: 18, MW: 7, MD: 6, ML: 5, GF: 26, GA: 19, logo: "japan/cerezo.png" },
-            { rank: 13, team: "Nagoya", MP: 18, MW: 8, MD: 5, ML: 5, GF: 31, GA: 28, logo: "japan/nagoya.png" },
-            { rank: 14, team: "Sanfrecce", MP: 18, MW: 8, MD: 4, ML: 6, GF: 29, GA: 21, logo: "japan/sanfrecce.png" },
-            { rank: 15, team: "Gamba Osaka", MP: 18, MW: 5, MD: 8, ML: 5, GF: 26, GA: 22, logo: "japan/gamba.png" },
-            { rank: 16, team: "Okayama", MP: 18, MW: 6, MD: 6, ML: 6, GF: 24, GA: 25, logo: "japan/okayama.png" },
-            { rank: 17, team: "Shimizu", MP: 18, MW: 4, MD: 8, ML: 6, GF: 19, GA: 21, logo: "japan/shimizu.png" },
-            { rank: 18, team: "Kyoto", MP: 18, MW: 5, MD: 5, ML: 8, GF: 19, GA: 26, logo: "japan/kyoto.png" },
-            { rank: 19, team: "Nagasaki", MP: 18, MW: 6, MD: 2, ML: 10, GF: 20, GA: 28, logo: "japan/vvaren.png" },
-            { rank: 20, team: "Avispa", MP: 18, MW: 3, MD: 8, ML: 7, GF: 17, GA: 27, logo: "japan/avispa.png" }
-        ],
-        fixtures: [
-            { home: "Sanfrecce", away: "Nagoya", date: "2026-09-02" },
-            { home: "Mito", away: "Kashima Antlers", date: "2026-09-02" },
-            { home: "JEF", away: "Okayama", date: "2026-09-02" },
-            { home: "Cerezo Osaka", away: "Kashiwa", date: "2026-09-02" },
-            { home: "Yokohama FM", away: "Kyoto", date: "2026-09-02" },
-            { home: "Machida", away: "Kawasaki", date: "2026-09-02" },
-            { home: "Tokyo Verdy", away: "Vissel Kobe", date: "2026-09-02" },
-            { home: "Shimizu", away: "FC Tokyo", date: "2026-09-02" },
-            { home: "Avispa", away: "Urawa Reds", date: "2026-09-02" },
-            { home: "Nagasaki", away: "Gamba Osaka", date: "2026-09-02" }
-        ]
-    },
+   "Japanese J1": {
+    "id": "japanese-j1",
+    "logo": "japan/j1.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Kashima Antlers", "MP": 18, "MW": 13, "MD": 4, "ML": 1, "GF": 29, "GA": 9, "logo": "japan/kashima.png" },
+      { "rank": 2, "team": "FC Tokyo", "MP": 18, "MW": 9, "MD": 6, "ML": 3, "GF": 28, "GA": 16, "logo": "japan/fctokyo.png" },
+      { "rank": 3, "team": "Machida Zelvia", "MP": 18, "MW": 8, "MD": 8, "ML": 2, "GF": 23, "GA": 19, "logo": "japan/machida.png" },
+      { "rank": 4, "team": "Kawasaki", "MP": 18, "MW": 7, "MD": 4, "ML": 7, "GF": 23, "GA": 27, "logo": "japan/kawasaki.png" },
+      { "rank": 5, "team": "Tokyo Verdy", "MP": 18, "MW": 7, "MD": 4, "ML": 7, "GF": 19, "GA": 25, "logo": "japan/tokyoverdy.png" },
+      { "rank": 6, "team": "Urawa Reds", "MP": 18, "MW": 7, "MD": 4, "ML": 7, "GF": 25, "GA": 18, "logo": "japan/urawa.png" },
+      { "rank": 7, "team": "Yokohama FM", "MP": 18, "MW": 6, "MD": 2, "ML": 10, "GF": 28, "GA": 29, "logo": "japan/yokohamafm.png" },
+      { "rank": 8, "team": "Kashiwa Reysol", "MP": 18, "MW": 6, "MD": 1, "ML": 11, "GF": 21, "GA": 24, "logo": "japan/kashiwa.png" },
+      { "rank": 9, "team": "Mito HollyHock", "MP": 18, "MW": 2, "MD": 8, "ML": 8, "GF": 19, "GA": 35, "logo": "japan/mito.png" },
+      { "rank": 10, "team": "JEF United", "MP": 18, "MW": 3, "MD": 3, "ML": 12, "GF": 18, "GA": 31, "logo": "japan/jefunited.png" },
+      { "rank": 11, "team": "Vissel Kobe", "MP": 18, "MW": 9, "MD": 6, "ML": 3, "GF": 27, "GA": 21, "logo": "japan/visselkobe.png" },
+      { "rank": 12, "team": "Cerezo Osaka", "MP": 18, "MW": 7, "MD": 6, "ML": 5, "GF": 26, "GA": 19, "logo": "japan/cerezo.png" },
+      { "rank": 13, "team": "Nagoya", "MP": 18, "MW": 8, "MD": 5, "ML": 5, "GF": 31, "GA": 28, "logo": "japan/nagoya.png" },
+      { "rank": 14, "team": "Sanfrecce", "MP": 18, "MW": 8, "MD": 4, "ML": 6, "GF": 29, "GA": 21, "logo": "japan/sanfrecce.png" },
+      { "rank": 15, "team": "Gamba Osaka", "MP": 18, "MW": 5, "MD": 8, "ML": 5, "GF": 26, "GA": 22, "logo": "japan/gamba.png" },
+      { "rank": 16, "team": "Okayama", "MP": 18, "MW": 6, "MD": 6, "ML": 6, "GF": 24, "GA": 25, "logo": "japan/okayama.png" },
+      { "rank": 17, "team": "Shimizu S-Pulse", "MP": 18, "MW": 4, "MD": 8, "ML": 6, "GF": 19, "GA": 21, "logo": "japan/shimizu.png" },
+      { "rank": 18, "team": "Kyoto Sanga", "MP": 18, "MW": 5, "MD": 5, "ML": 8, "GF": 19, "GA": 26, "logo": "japan/kyoto.png" },
+      { "rank": 19, "team": "V-Varen Nagasaki", "MP": 18, "MW": 6, "MD": 2, "ML": 10, "GF": 20, "GA": 28, "logo": "japan/vvaren.png" },
+      { "rank": 20, "team": "Avispa Fukuoka", "MP": 18, "MW": 3, "MD": 8, "ML": 7, "GF": 17, "GA": 27, "logo": "japan/avispa.png" }
+    ],
+    "fixtures": [
+      { "home": "Avispa Fukuoka", "away": "Mito HollyHock", "date": "2026-09-05" },
+      { "home": "JEF United", "away": "Gamba Osaka", "date": "2026-09-06" },
+      { "home": "Okayama", "away": "Sanfrecce", "date": "2026-09-06" },
+      { "home": "Kashima Antlers", "away": "Urawa Reds", "date": "2026-09-06" },
+      { "home": "Nagoya", "away": "Machida Zelvia", "date": "2026-09-06" },
+      { "home": "Kawasaki", "away": "Shimizu S-Pulse", "date": "2026-09-06" },
+      { "home": "Cerezo Osaka", "away": "Tokyo Verdy", "date": "2026-09-06" },
+      { "home": "Vissel Kobe", "away": "V-Varen Nagasaki", "date": "2026-09-06" },
+      { "home": "Kashiwa Reysol", "away": "Yokohama FM", "date": "2026-09-06" },
+      { "home": "FC Tokyo", "away": "Kyoto Sanga", "date": "2026-09-06" },
+      { "home": "Vissel Kobe", "away": "Kashima Antlers", "date": "2026-09-11" },
+      { "home": "Kyoto Sanga", "away": "Kashiwa Reysol", "date": "2026-09-11" },
+      { "home": "Mito HollyHock", "away": "Kawasaki", "date": "2026-09-12" },
+      { "home": "Shimizu S-Pulse", "away": "Avispa Fukuoka", "date": "2026-09-12" },
+      { "home": "Gamba Osaka", "away": "FC Tokyo", "date": "2026-09-12" },
+      { "home": "Machida Zelvia", "away": "Yokohama FM", "date": "2026-09-12" },
+      { "home": "Sanfrecce", "away": "Cerezo Osaka", "date": "2026-09-12" },
+      { "home": "V-Varen Nagasaki", "away": "Nagoya", "date": "2026-09-12" },
+      { "home": "Tokyo Verdy", "away": "JEF United", "date": "2026-09-13" },
+      { "home": "Urawa Reds", "away": "Okayama", "date": "2026-09-13" }
+    ]
+  },
 
     // ============================================================
     //  CHINA - SUPER LEAGUE
