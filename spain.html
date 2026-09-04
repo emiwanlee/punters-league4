@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spanish Football · La Liga 2026-27 · Punters League</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-TZFW1TD8TC');
+  </script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f4f6fa; }
+    .main-wrapper { max-width: 1600px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .country-hero {
+      background: linear-gradient(135deg, #C60B1E 0%, #FFC400 50%, #C60B1E 100%);
+      color: #1a1a2e;
+      padding: 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      text-align: center;
+      border: 2px solid #1a1a2e;
+    }
+    .country-hero h1 { font-size: 2rem; font-weight: 800; }
+    .country-hero .hero-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+
+    .league-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    .league-tab {
+      padding: 0.75rem 1.5rem;
+      background: transparent;
+      border: none;
+      font-weight: 600;
+      color: #6c757d;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+    .league-tab:hover { background: #f8f9fa; color: #C60B1E; }
+    .league-tab.active { background: linear-gradient(135deg, #C60B1E 0%, #FFC400 100%); color: white; }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.4s ease; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
+
+    .season-card {
+      background: white;
+      border-radius: 20px;
+      padding: 1rem 1rem 0.5rem 1rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+      height: fit-content;
+    }
+    .season-title {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.5rem 0.8rem;
+      margin-bottom: 0.8rem;
+      border-radius: 12px;
+      text-align: center;
+      background: linear-gradient(135deg, #C60B1E 0%, #FFC400 100%);
+      color: white;
+    }
+    .season-sub {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #6c757d;
+      text-align: center;
+      margin-top: -0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .league-table {
+      width: 100%;
+      font-size: 0.75rem;
+      border-collapse: collapse;
+      min-width: 600px;
+    }
+    .league-table th {
+      background: #f8f9fa;
+      padding: 8px 4px;
+      text-align: center;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      border-bottom: 2px solid #dee2e6;
+    }
+    .league-table td {
+      padding: 6px 4px;
+      text-align: center;
+      border-bottom: 1px solid #e9ecef;
+      vertical-align: middle;
+    }
+    .team-cell { text-align: left !important; font-weight: 500; }
+    .team-cell a { text-decoration: none; color: #1a1a2e; transition: 0.2s; }
+    .team-cell a:hover { color: #C60B1E; }
+
+    .champion-row { background: rgba(255, 215, 0, 0.12); }
+    .promotion-zone { background: rgba(16, 185, 129, 0.06); }
+    .relegation-zone { background: rgba(239, 68, 68, 0.06); }
+
+    .points-cell { font-weight: 700; color: #C60B1E; }
+
+    .analysis-card {
+      background: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .info-box {
+      background: linear-gradient(135deg, #C60B1E10, #FFC40010);
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .big-number { font-size: 2rem; font-weight: 800; color: #C60B1E; }
+
+    .fixture-card {
+      background: white;
+      border-radius: 15px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.6rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .fixture-teams { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+    .fixture-vs { color: #6c757d; font-weight: 600; font-size: 0.8rem; }
+    .fixture-date { color: #6c757d; font-size: 0.8rem; }
+
+    .league-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 992px) { .league-grid-2col { grid-template-columns: 1fr; } }
+
+    .badge-spain { background: linear-gradient(135deg, #C60B1E, #FFC400); color: white; padding: 2px 12px; border-radius: 20px; font-size: 0.65rem; font-weight: 600; }
+    footer { margin-top: 3rem; padding: 2rem 1rem; background: white; border-radius: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+    .footer-links { display: flex; justify-content: center; gap: 1.5rem; list-style: none; flex-wrap: wrap; padding: 0; }
+    .footer-links a { color: #C60B1E; text-decoration: none; font-weight: 500; }
+    .social-icons a { margin: 0 6px; }
+    .legal-warning { font-size: 0.85rem; color: #6c757d; }
+    .disclaimer { font-size: 0.75rem; color: #888; margin-top: 0.5rem; }
+    .loading { padding: 2rem 0; }
+  </style>
+  <link rel="icon" type="image/bmp" href="images/logo.png" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Punters League</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Predictions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Chile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Mexico</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Spain</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">England</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="main-wrapper">
+  <div class="country-hero">
+    <div class="hero-icon">🇪🇸</div>
+    <h1><i class="fas fa-futbol"></i> Spanish Football · La Liga 2026-27</h1>
+    <p>La Liga 1 · La Liga 2</p>
+  </div>
+
+  <div class="league-tabs">
+    <button class="league-tab active" data-tab="laliga1">🏆 La Liga 1</button>
+    <button class="league-tab" data-tab="laliga2">🏆 La Liga 2</button>
+    <button class="league-tab" data-tab="fixtures">📅 Fixtures</button>
+    <button class="league-tab" data-tab="stats">📊 Stats</button>
+  </div>
+
+  <div id="tab-laliga1" class="tab-content active"><div id="laliga1Content"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading La Liga 1...</p></div></div></div>
+  <div id="tab-laliga2" class="tab-content"><div id="laliga2Content"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading La Liga 2...</p></div></div></div>
+  <div id="tab-fixtures" class="tab-content"><div id="fixturesContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading fixtures...</p></div></div></div>
+  <div id="tab-stats" class="tab-content"><div id="statsContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading stats...</p></div></div></div>
+</div>
+
+<footer class="footer">
+  <p><strong>Punters League</strong> – football predictions & stats.</p>
+  <ul class="footer-links">
+    <li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li>
+    <li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li>
+  </ul>
+  <div class="legal-warning">⚠️ 18+ Please gamble responsibly. <a href="#">BeGambleAware.org</a></div>
+  <div class="social-icons">
+    <a href="#"><img src="images/facebookicon.png" alt="FB" width="30"></a>
+    <a href="#"><img src="images/xicon.png" alt="X" width="30"></a>
+    <a href="#"><img src="images/youtube-image.png" alt="YT" width="30"></a>
+  </div>
+  <p class="disclaimer">Predictions for entertainment only. 18+</p>
+  <p>© 2026 Punters League</p>
+</footer>
+
+<script>
+// ===================== LA LIGA 1 DATA =====================
+
+// OLD (2025)
+const oldLaliga1Data = {
+  teams: [
+    { rank:1, team:"Barcelona", MP:38, MW:31, MD:1, ML:6, GF:95, GA:36 },
+    { rank:2, team:"Real Madrid", MP:38, MW:27, MD:5, ML:6, GF:77, GA:35 },
+    { rank:3, team:"Villarreal", MP:38, MW:22, MD:6, ML:10, GF:72, GA:46 },
+    { rank:4, team:"Atlético Madrid", MP:38, MW:21, MD:6, ML:11, GF:62, GA:44 },
+    { rank:5, team:"Betis", MP:38, MW:15, MD:15, ML:8, GF:59, GA:48 },
+    { rank:6, team:"Celta", MP:38, MW:14, MD:12, ML:12, GF:53, GA:48 },
+    { rank:7, team:"Getafe", MP:38, MW:15, MD:6, ML:17, GF:32, GA:38 },
+    { rank:8, team:"Rayo Vallecano", MP:38, MW:12, MD:14, ML:12, GF:41, GA:44 },
+    { rank:9, team:"Valencia", MP:38, MW:13, MD:10, ML:15, GF:46, GA:55 },
+    { rank:10, team:"Real Sociedad", MP:38, MW:11, MD:13, ML:14, GF:59, GA:61 },
+    { rank:11, team:"Espanyol", MP:38, MW:12, MD:10, ML:16, GF:43, GA:55 },
+    { rank:12, team:"Athletic", MP:38, MW:13, MD:6, ML:19, GF:43, GA:58 },
+    { rank:13, team:"Sevilla", MP:38, MW:12, MD:7, ML:19, GF:46, GA:60 },
+    { rank:14, team:"Alavés", MP:38, MW:11, MD:10, ML:17, GF:44, GA:56 },
+    { rank:15, team:"Elche", MP:38, MW:10, MD:13, ML:15, GF:49, GA:57 },
+    { rank:16, team:"Levante", MP:38, MW:11, MD:9, ML:18, GF:47, GA:61 },
+    { rank:17, team:"Osasuna", MP:38, MW:11, MD:9, ML:18, GF:44, GA:50 },
+    { rank:18, team:"Mallorca", MP:38, MW:11, MD:9, ML:18, GF:47, GA:57 },
+    { rank:19, team:"Girona", MP:38, MW:9, MD:14, ML:15, GF:39, GA:55 },
+    { rank:20, team:"Real Oviedo", MP:38, MW:6, MD:11, ML:21, GF:26, GA:60 }
+  ]
+};
+
+// NEW (2026-27 current)
+const newLaliga1Data = {
+  teams: [
+    { rank:1, team:"Barcelona", MP:3, MW:3, MD:0, ML:0, GF:12, GA:2 },
+    { rank:2, team:"Real Madrid", MP:3, MW:3, MD:0, ML:0, GF:10, GA:2 },
+    { rank:3, team:"Atlético Madrid", MP:3, MW:2, MD:1, ML:0, GF:7, GA:3 },
+    { rank:4, team:"Alavés", MP:3, MW:2, MD:1, ML:0, GF:5, GA:1 },
+    { rank:5, team:"Osasuna", MP:3, MW:2, MD:1, ML:0, GF:3, GA:1 },
+    { rank:6, team:"Sevilla", MP:3, MW:2, MD:0, ML:1, GF:6, GA:5 },
+    { rank:7, team:"Betis", MP:3, MW:2, MD:0, ML:1, GF:4, GA:5 },
+    { rank:8, team:"Deportivo", MP:3, MW:1, MD:2, ML:0, GF:5, GA:3 },
+    { rank:9, team:"Racing Santander", MP:3, MW:1, MD:1, ML:1, GF:5, GA:5 },
+    { rank:9, team:"Levante", MP:3, MW:1, MD:1, ML:1, GF:5, GA:5 },
+    { rank:11, team:"Real Sociedad", MP:4, MW:1, MD:1, ML:2, GF:3, GA:6 },
+    { rank:12, team:"Espanyol", MP:3, MW:1, MD:0, ML:2, GF:5, GA:4 },
+    { rank:13, team:"Athletic", MP:3, MW:1, MD:0, ML:2, GF:3, GA:5 },
+    { rank:14, team:"Getafe", MP:3, MW:1, MD:0, ML:2, GF:1, GA:4 },
+    { rank:15, team:"Villarreal", MP:3, MW:0, MD:2, ML:1, GF:4, GA:5 },
+    { rank:16, team:"Celta", MP:4, MW:0, MD:2, ML:2, GF:1, GA:4 },
+    { rank:17, team:"Valencia", MP:3, MW:0, MD:1, ML:2, GF:1, GA:4 },
+    { rank:18, team:"Rayo Vallecano", MP:3, MW:0, MD:1, ML:2, GF:4, GA:8 },
+    { rank:19, team:"Elche", MP:3, MW:0, MD:1, ML:2, GF:3, GA:9 },
+    { rank:20, team:"Málaga", MP:3, MW:0, MD:1, ML:2, GF:1, GA:7 }
+  ]
+};
+
+// ===================== LA LIGA 2 DATA =====================
+
+// OLD (2025)
+const oldLaliga2Data = {
+  teams: [
+    { rank:1, team:"Racing Santander", MP:42, MW:25, MD:7, ML:10, GF:90, GA:61 },
+    { rank:2, team:"Deportivo", MP:42, MW:22, MD:11, ML:9, GF:65, GA:44 },
+    { rank:3, team:"Almería", MP:42, MW:22, MD:8, ML:12, GF:81, GA:63 },
+    { rank:4, team:"Málaga", MP:42, MW:21, MD:10, ML:11, GF:75, GA:52 },
+    { rank:5, team:"Las Palmas", MP:42, MW:20, MD:13, ML:9, GF:57, GA:40 },
+    { rank:6, team:"Castellón", MP:42, MW:20, MD:12, ML:10, GF:70, GA:51 },
+    { rank:7, team:"Burgos", MP:42, MW:20, MD:12, ML:10, GF:48, GA:33 },
+    { rank:8, team:"Eibar", MP:42, MW:19, MD:10, ML:13, GF:52, GA:40 },
+    { rank:9, team:"Córdoba", MP:42, MW:17, MD:10, ML:15, GF:57, GA:61 },
+    { rank:10, team:"Sporting Gijón", MP:42, MW:18, MD:7, ML:17, GF:60, GA:54 },
+    { rank:11, team:"Ceuta", MP:42, MW:17, MD:10, ML:15, GF:51, GA:63 },
+    { rank:12, team:"Albacete", MP:42, MW:16, MD:11, ML:15, GF:56, GA:55 },
+    { rank:13, team:"Andorra", MP:42, MW:16, MD:10, ML:16, GF:62, GA:54 },
+    { rank:14, team:"Granada", MP:42, MW:12, MD:12, ML:18, GF:50, GA:56 },
+    { rank:15, team:"Real Sociedad B", MP:42, MW:12, MD:11, ML:19, GF:52, GA:61 },
+    { rank:16, team:"Leganes", MP:42, MW:11, MD:13, ML:18, GF:43, GA:51 },
+    { rank:17, team:"Valladolid", MP:42, MW:12, MD:10, ML:20, GF:44, GA:57 },
+    { rank:18, team:"Cádiz", MP:42, MW:11, MD:10, ML:21, GF:41, GA:61 },
+    { rank:19, team:"Mirandés", MP:42, MW:10, MD:10, ML:22, GF:47, GA:69 },
+    { rank:20, team:"Huesca", MP:42, MW:9, MD:11, ML:22, GF:41, GA:63 },
+    { rank:21, team:"Cultural Leonesa", MP:42, MW:9, MD:10, ML:23, GF:39, GA:68 },
+    { rank:22, team:"Real Zaragoza", MP:42, MW:8, MD:12, ML:22, GF:35, GA:59 }
+  ]
+};
+
+// NEW (2026-27 current)
+const newLaliga2Data = {
+  teams: [
+    { rank:1, team:"Granada", MP:3, MW:2, MD:1, ML:0, GF:5, GA:1 },
+    { rank:2, team:"Castellón", MP:3, MW:2, MD:1, ML:0, GF:3, GA:1 },
+    { rank:2, team:"Leganes", MP:3, MW:2, MD:1, ML:0, GF:3, GA:1 },
+    { rank:4, team:"Sporting Gijón", MP:3, MW:2, MD:1, ML:0, GF:2, GA:0 },
+    { rank:5, team:"Mallorca", MP:3, MW:2, MD:0, ML:1, GF:5, GA:2 },
+    { rank:6, team:"Tenerife", MP:3, MW:2, MD:0, ML:1, GF:4, GA:2 },
+    { rank:7, team:"Las Palmas", MP:3, MW:2, MD:0, ML:1, GF:6, GA:6 },
+    { rank:8, team:"Eibar", MP:3, MW:2, MD:0, ML:1, GF:3, GA:3 },
+    { rank:9, team:"Sabadell", MP:3, MW:1, MD:2, ML:0, GF:1, GA:0 },
+    { rank:10, team:"Girona", MP:3, MW:1, MD:1, ML:1, GF:7, GA:5 },
+    { rank:11, team:"Celta de Vigo II", MP:3, MW:1, MD:1, ML:1, GF:5, GA:4 },
+    { rank:12, team:"Burgos", MP:3, MW:1, MD:1, ML:1, GF:5, GA:5 },
+    { rank:13, team:"Real Sociedad B", MP:3, MW:1, MD:1, ML:1, GF:4, GA:4 },
+    { rank:14, team:"Real Oviedo", MP:3, MW:1, MD:1, ML:1, GF:1, GA:1 },
+    { rank:15, team:"Andorra", MP:3, MW:1, MD:0, ML:2, GF:7, GA:6 },
+    { rank:16, team:"Almería", MP:3, MW:1, MD:0, ML:2, GF:3, GA:2 },
+    { rank:17, team:"Cádiz", MP:3, MW:0, MD:3, ML:0, GF:3, GA:3 },
+    { rank:18, team:"Córdoba", MP:3, MW:1, MD:0, ML:2, GF:5, GA:7 },
+    { rank:19, team:"Valladolid", MP:3, MW:0, MD:1, ML:2, GF:1, GA:4 },
+    { rank:20, team:"Eldense", MP:3, MW:0, MD:1, ML:2, GF:2, GA:6 },
+    { rank:21, team:"Albacete", MP:3, MW:0, MD:0, ML:3, GF:2, GA:5 },
+    { rank:22, team:"Ceuta", MP:3, MW:0, MD:0, ML:3, GF:1, GA:10 }
+  ]
+};
+
+// ===================== FIXTURES (placeholder) =====================
+const laligaFixtures = [
+  { home:"Barcelona", away:"Real Madrid", date:"2026-09-15", league:"La Liga 1" },
+  { home:"Atlético Madrid", away:"Sevilla", date:"2026-09-16", league:"La Liga 1" },
+  { home:"Granada", away:"Sporting Gijón", date:"2026-09-17", league:"La Liga 2" },
+  { home:"Castellón", away:"Leganes", date:"2026-09-18", league:"La Liga 2" }
+];
+
+// ===================== HELPERS =====================
+function escapeHtml(text) { if (!text) return ''; const d=document.createElement('div'); d.textContent=text; return d.innerHTML; }
+function calcPts(t) { return (t.MW||0)*3 + (t.MD||0); }
+function formatDate(d) { if(!d)return ''; return new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); }
+
+function renderTable(season, title, subtitle='') {
+  const sorted = [...season.teams].sort((a,b)=> (a.rank||0) - (b.rank||0));
+  let html = `<div class="season-card"><div class="season-title">${title} ${subtitle}</div>`;
+  if (subtitle) html += `<div class="season-sub">${subtitle}</div>`;
+  html += `<div class="table-responsive"><table class="league-table"><thead><tr>
+    <th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+  </tr></thead><tbody>`;
+  for (const t of sorted) {
+    const w=t.MW||0, d=t.MD||0, l=t.ML||0, gd=t.GF-t.GA, pts=calcPts(t);
+    let cls = '';
+    if (t.rank===1) cls='champion-row';
+    else if (t.rank<=4 && title.includes('La Liga 1')) cls='promotion-zone';
+    else if (t.rank>=18 && title.includes('La Liga 1')) cls='relegation-zone';
+    else if (t.rank<=2 && title.includes('La Liga 2')) cls='promotion-zone';
+    else if (t.rank>=19 && title.includes('La Liga 2')) cls='relegation-zone';
+    html += `<tr class="${cls}"><td><strong>${t.rank}</strong></td>
+      <td class="team-cell"><a href="#">${escapeHtml(t.team)}</a></td>
+      <td>${t.MP}</td><td>${w}</td><td>${d}</td><td>${l}</td>
+      <td>${t.GF}</td><td>${t.GA}</td><td class="${gd>=0?'text-success':'text-danger'}">${gd>=0?'+':''}${gd}</td>
+      <td class="points-cell">${pts}</td></tr>`;
+  }
+  html += `</tbody></table></div></div>`;
+  return html;
+}
+
+// ===================== RENDER FUNCTIONS =====================
+
+function renderLaliga1() {
+  const container = document.getElementById('laliga1Content');
+  let html = `
+    <div class="league-grid-2col">
+      ${renderTable(oldLaliga1Data, 'La Liga 1', '2025 (old)')}
+      ${renderTable(newLaliga1Data, 'La Liga 1', '2026-27 (new)')}
+    </div>
+    <div class="analysis-card">
+      <h3><i class="fas fa-chart-simple"></i> La Liga 1 · Old vs New Comparison</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldLaliga1Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldLaliga1Data.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(oldLaliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldLaliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newLaliga1Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newLaliga1Data.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(newLaliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newLaliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldLaliga1Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newLaliga1Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newLaliga1Data.teams.reduce((s,t)=>s+t.GF,0) / newLaliga1Data.teams.reduce((s,t)=>s+t.MP,0) * 38).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
+
+function renderLaliga2() {
+  const container = document.getElementById('laliga2Content');
+  let html = `
+    <div class="league-grid-2col">
+      ${renderTable(oldLaliga2Data, 'La Liga 2', '2025 (old)')}
+      ${renderTable(newLaliga2Data, 'La Liga 2', '2026-27 (new)')}
+    </div>
+    <div class="analysis-card">
+      <h3><i class="fas fa-chart-simple"></i> La Liga 2 · Old vs New Comparison</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldLaliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldLaliga2Data.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(oldLaliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldLaliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newLaliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newLaliga2Data.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(newLaliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newLaliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldLaliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newLaliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newLaliga2Data.teams.reduce((s,t)=>s+t.GF,0) / newLaliga2Data.teams.reduce((s,t)=>s+t.MP,0) * 42).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
+
+function renderFixtures() {
+  let html = `<div class="analysis-card"><h3><i class="fas fa-calendar-alt"></i> Upcoming Fixtures</h3>`;
+  for (const f of laligaFixtures) {
+    html += `<div class="fixture-card"><div class="fixture-teams"><span><strong>${escapeHtml(f.home)}</strong></span><span class="fixture-vs">vs</span><span><strong>${escapeHtml(f.away)}</strong></span><span class="badge-spain">${f.league}</span></div><div class="fixture-date"><i class="far fa-calendar-alt"></i> ${formatDate(f.date)}</div></div>`;
+  }
+  html += `</div>`;
+  document.getElementById('fixturesContent').innerHTML = html;
+}
+
+function renderStats() {
+  const leagues = [
+    {name:'La Liga 1', old:oldLaliga1Data, new:newLaliga1Data},
+    {name:'La Liga 2', old:oldLaliga2Data, new:newLaliga2Data}
+  ];
+  let html = `<div class="analysis-card"><h3><i class="fas fa-chart-line"></i> League Snapshot · Old vs New</h3><div class="row">`;
+  for (const lg of leagues) {
+    const oldTeams = lg.old.teams;
+    const newTeams = lg.new.teams;
+    const oldGoals = oldTeams.reduce((s,t)=>s+t.GF,0);
+    const newGoals = newTeams.reduce((s,t)=>s+t.GF,0);
+    const oldChamp = oldTeams.find(t=>t.rank===1);
+    const newChamp = newTeams.find(t=>t.rank===1);
+    html += `<div class="col-md-6"><div class="info-box"><h5>🇪🇸 ${lg.name}</h5>
+      <p><strong>2025 champ:</strong> ${oldChamp?escapeHtml(oldChamp.team):'—'} (${oldChamp?calcPts(oldChamp):0} pts)</p>
+      <p><strong>2026-27 leader:</strong> ${newChamp?escapeHtml(newChamp.team):'—'} (${newChamp?calcPts(newChamp):0} pts)</p>
+      <p>Goals: ${oldGoals} → ${newGoals}</p></div></div>`;
+  }
+  html += `</div></div>`;
+  document.getElementById('statsContent').innerHTML = html;
+}
+
+// ===================== TAB SWITCH =====================
+function initTabs() {
+  document.querySelectorAll('.league-tab').forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      document.querySelectorAll('.league-tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(`tab-${tab.dataset.tab}`).classList.add('active');
+    });
+  });
+}
+
+// ===================== DOM READY =====================
+document.addEventListener('DOMContentLoaded', ()=>{
+  renderLaliga1();
+  renderLaliga2();
+  renderFixtures();
+  renderStats();
+  initTabs();
+});
+</script>
+</body>
+</html>
