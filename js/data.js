@@ -357,7 +357,6 @@ const leaguesData = {
       { "rank": 20, "team": "Wolves", "MP": 38, "MW": 3, "MD": 11, "ML": 24, "GF": 27, "GA": 68, "logo": "england/wolves.png" }
     ],
     "fixtures": [
-      { "home": "Ipswich Town", "away": "Liverpool", "date": "2026-09-04" },
       { "home": "Newcastle", "away": "Bournemouth", "date": "2026-09-05" },
       { "home": "Brentford", "away": "Sunderland", "date": "2026-09-05" },
       { "home": "Nottm Forest", "away": "Spurs", "date": "2026-09-05" },
@@ -412,7 +411,6 @@ const leaguesData = {
       { "rank": 20, "team": "Real Oviedo", "MP": 38, "MW": 6, "MD": 11, "ML": 21, "GF": 26, "GA": 60, "logo": "spain/realoviedo.png" }
     ],
     "fixtures": [
-      { "home": "Real Sociedad", "away": "Celta", "date": "2026-09-04" },
       { "home": "Betis", "away": "Real Madrid", "date": "2026-09-05" },
       { "home": "Athletic", "away": "Atlético Madrid", "date": "2026-09-05" },
       { "home": "Rayo Vallecano", "away": "Racing Santander", "date": "2026-09-05" },
@@ -466,7 +464,6 @@ const leaguesData = {
       { "rank": 18, "team": "St. Pauli", "MP": 34, "MW": 6, "MD": 8, "ML": 20, "GF": 29, "GA": 60, "logo": "germany/stpauli.png" }
     ],
     "fixtures": [
-      { "home": "VfB Stuttgart", "away": "Köln", "date": "2026-09-04" },
       { "home": "Mönchengladbach", "away": "SV Elversberg", "date": "2026-09-05" },
       { "home": "Werder", "away": "RB Leipzig", "date": "2026-09-05" },
       { "home": "Hoffenheim", "away": "Dortmund", "date": "2026-09-05" },
@@ -519,7 +516,6 @@ const leaguesData = {
       { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
     ],
     "fixtures": [
-      { "home": "Genoa", "away": "Como", "date": "2026-09-04" },
       { "home": "Fiorentina", "away": "Torino", "date": "2026-09-05" },
       { "home": "Inter", "away": "Napoli", "date": "2026-09-05" },
       { "home": "Roma", "away": "Atalanta", "date": "2026-09-05" },
@@ -572,8 +568,6 @@ const leaguesData = {
       { "rank": 18, "team": "Metz", "MP": 34, "MW": 3, "MD": 8, "ML": 23, "GF": 32, "GA": 76, "logo": "france/metz.png" }
     ],
     "fixtures": [
-      { "home": "OL", "away": "Auxerre", "date": "2026-09-04" },
-      { "home": "PSG", "away": "Monaco", "date": "2026-09-04" },
       { "home": "Lens", "away": "Lorient", "date": "2026-09-05" },
       { "home": "Nice", "away": "Le Mans", "date": "2026-09-05" },
       { "home": "Le Havre", "away": "Brest", "date": "2026-09-05" },
@@ -624,7 +618,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "Sparta Rotterdam", "away": "PEC Zwolle", "date": "2026-09-04" },
       { "home": "NEC", "away": "Feyenoord", "date": "2026-09-05" },
       { "home": "Utrecht", "away": "Go Ahead Eagles", "date": "2026-09-05" },
       { "home": "Ajax", "away": "PSV", "date": "2026-09-05" },
@@ -677,7 +670,6 @@ const leaguesData = {
       { "rank": 18, "team": "AVS", "MP": 34, "MW": 3, "MD": 12, "ML": 19, "GF": 27, "GA": 67, "logo": "portugal/avs.png" }
     ],
     "fixtures": [
-      { "home": "Porto", "away": "Moreirense", "date": "2026-09-04" },
       { "home": "Estrela Amadora", "away": "Famalicão", "date": "2026-09-05" },
       { "home": "Marítimo", "away": "Benfica", "date": "2026-09-05" },
       { "home": "Alverca", "away": "Braga", "date": "2026-09-05" },
@@ -728,7 +720,6 @@ const leaguesData = {
       { "rank": 16, "team": "Dender", "MP": 30, "MW": 3, "MD": 10, "ML": 17, "GF": 24, "GA": 51, "logo": "belgium/dender.png" }
     ],
     "fixtures": [
-      { "home": "Lommel", "away": "Club Brugge", "date": "2026-09-04" },
       { "home": "Charleroi", "away": "Union", "date": "2026-09-05" },
       { "home": "Mechelen", "away": "Westerlo", "date": "2026-09-05" },
       { "home": "STVV", "away": "La Louvière", "date": "2026-09-05" },
@@ -991,6 +982,195 @@ const leaguesData = {
   ]
 },
 
+// ============================================================
+//  SPAIN - LA LIGA 2 (Segunda División)
+// ============================================================
+
+"Spanish La Liga 2": {
+    id: "spanish-la-liga-2",
+    logo: "spain/laliga2.png",
+    isBasketball: false,
+    season: "2025-26",
+    teams: [
+        { rank: 1, team: "Racing Santander", MP: 42, MW: 25, MD: 7, ML: 10, GF: 90, GA: 61, logo: "spain/racingsantander.png" },
+        { rank: 2, team: "Deportivo", MP: 42, MW: 22, MD: 11, ML: 9, GF: 65, GA: 44, logo: "spain/deportivo.png" },
+        { rank: 3, team: "Almería", MP: 42, MW: 22, MD: 8, ML: 12, GF: 81, GA: 63, logo: "spain/almeria.png" },
+        { rank: 4, team: "Málaga", MP: 42, MW: 21, MD: 10, ML: 11, GF: 75, GA: 52, logo: "spain/malaga.png" },
+        { rank: 5, team: "Las Palmas", MP: 42, MW: 20, MD: 13, ML: 9, GF: 57, GA: 40, logo: "spain/laspalmas.png" },
+        { rank: 6, team: "Castellón", MP: 42, MW: 20, MD: 12, ML: 10, GF: 70, GA: 51, logo: "spain/castellon.png" },
+        { rank: 7, team: "Burgos", MP: 42, MW: 20, MD: 12, ML: 10, GF: 48, GA: 33, logo: "spain/burgos.png" },
+        { rank: 8, team: "Eibar", MP: 42, MW: 19, MD: 10, ML: 13, GF: 52, GA: 40, logo: "spain/eibar.png" },
+        { rank: 9, team: "Córdoba", MP: 42, MW: 17, MD: 10, ML: 15, GF: 57, GA: 61, logo: "spain/cordoba.png" },
+        { rank: 10, team: "Sporting Gijón", MP: 42, MW: 18, MD: 7, ML: 17, GF: 60, GA: 54, logo: "spain/sportinggijon.png" },
+        { rank: 11, team: "Ceuta", MP: 42, MW: 17, MD: 10, ML: 15, GF: 51, GA: 63, logo: "spain/ceuta.png" },
+        { rank: 12, team: "Albacete", MP: 42, MW: 16, MD: 11, ML: 15, GF: 56, GA: 55, logo: "spain/albacete.png" },
+        { rank: 13, team: "Andorra", MP: 42, MW: 16, MD: 10, ML: 16, GF: 62, GA: 54, logo: "spain/andorra.png" },
+        { rank: 14, team: "Granada", MP: 42, MW: 12, MD: 12, ML: 18, GF: 50, GA: 56, logo: "spain/granada.png" },
+        { rank: 15, team: "Real Sociedad B", MP: 42, MW: 12, MD: 11, ML: 19, GF: 52, GA: 61, logo: "spain/realsociedadb.png" },
+        { rank: 16, team: "Leganes", MP: 42, MW: 11, MD: 13, ML: 18, GF: 43, GA: 51, logo: "spain/leganes.png" },
+        { rank: 17, team: "Valladolid", MP: 42, MW: 12, MD: 10, ML: 20, GF: 44, GA: 57, logo: "spain/valladolid.png" },
+        { rank: 18, team: "Cádiz", MP: 42, MW: 11, MD: 10, ML: 21, GF: 41, GA: 61, logo: "spain/cadiz.png" },
+        { rank: 19, team: "Mirandés", MP: 42, MW: 10, MD: 10, ML: 22, GF: 47, GA: 69, logo: "spain/mirandes.png" },
+        { rank: 20, team: "Huesca", MP: 42, MW: 9, MD: 11, ML: 22, GF: 41, GA: 63, logo: "spain/huesca.png" },
+        { rank: 21, team: "Cultural Leonesa", MP: 42, MW: 9, MD: 10, ML: 23, GF: 39, GA: 68, logo: "spain/culturalleonesa.png" },
+        { rank: 22, team: "Real Zaragoza", MP: 42, MW: 8, MD: 12, ML: 22, GF: 35, GA: 59, logo: "spain/zaragoza.png" }
+    ],
+    fixtures: [
+        
+        // ===== TOMORROW'S MATCHES =====
+        { home: "Real Sociedad B", away: "Tenerife", date: "2026-09-05 14:00" },
+        { home: "Sporting Gijón", away: "Girona", date: "2026-09-05 16:15" },
+        { home: "Valladolid", away: "Andorra", date: "2026-09-05 18:30" },
+        { home: "Ceuta", away: "Celta de Vigo II", date: "2026-09-05 18:30" },
+        { home: "Eldense", away: "Mallorca", date: "2026-09-05 21:00" },
+        
+        // ===== SUNDAY MATCHES =====
+        { home: "Eibar", away: "Granada", date: "2026-09-06 14:00" },
+        { home: "Real Oviedo", away: "Burgos", date: "2026-09-06 16:15" },
+        { home: "Castellón", away: "Albacete", date: "2026-09-06 18:30" },
+        { home: "Almería", away: "Cádiz", date: "2026-09-06 21:00" },
+        
+        // ===== MONDAY MATCH =====
+        { home: "Sabadell", away: "Córdoba", date: "2026-09-07 20:30" },
+        
+        // ===== MATCHDAY 5 =====
+        { home: "Burgos", away: "Ceuta", date: "2026-09-11 20:30" },
+        { home: "Andorra", away: "Real Sociedad B", date: "2026-09-12 14:00" },
+        { home: "Cádiz", away: "Las Palmas", date: "2026-09-12 16:15" },
+        { home: "Girona", away: "Castellón", date: "2026-09-12 18:30" },
+        { home: "Granada", away: "Albacete", date: "2026-09-12 18:30" },
+        { home: "Córdoba", away: "Almería", date: "2026-09-12 21:00" },
+        { home: "Sporting Gijón", away: "Eldense", date: "2026-09-13 14:00" },
+        { home: "Valladolid", away: "Real Oviedo", date: "2026-09-13 16:15" },
+        { home: "Mallorca", away: "Sabadell", date: "2026-09-13 18:30" },
+        { home: "Tenerife", away: "Leganes", date: "2026-09-13 21:00" },
+        { home: "Eibar", away: "Málaga", date: "2026-09-14 20:30" }
+    ]
+},
+
+// ============================================================
+//  ITALY - SERIE B
+// ============================================================
+
+"Italian Serie B": {
+    id: "italian-serie-b",
+    logo: "italy/serieb.png",
+    isBasketball: false,
+    season: "2025-26",
+    teams: [
+        { rank: 1, team: "Venezia", MP: 38, MW: 24, MD: 10, ML: 4, GF: 77, GA: 31, logo: "italy/venezia.png" },
+        { rank: 2, team: "Frosinone", MP: 38, MW: 23, MD: 12, ML: 3, GF: 76, GA: 34, logo: "italy/frosinone.png" },
+        { rank: 3, team: "Monza", MP: 38, MW: 22, MD: 10, ML: 6, GF: 61, GA: 32, logo: "italy/monza.png" },
+        { rank: 4, team: "Palermo", MP: 38, MW: 20, MD: 12, ML: 6, GF: 61, GA: 33, logo: "italy/palermo.png" },
+        { rank: 5, team: "Catanzaro", MP: 38, MW: 15, MD: 14, ML: 9, GF: 62, GA: 51, logo: "italy/catanzaro.png" },
+        { rank: 6, team: "Modena", MP: 38, MW: 15, MD: 10, ML: 13, GF: 49, GA: 36, logo: "italy/modena.png" },
+        { rank: 7, team: "Juve Stabia", MP: 38, MW: 11, MD: 18, ML: 9, GF: 44, GA: 45, logo: "italy/juvestabia.png" },
+        { rank: 8, team: "Avellino", MP: 38, MW: 13, MD: 10, ML: 15, GF: 43, GA: 55, logo: "italy/avellino.png" },
+        { rank: 9, team: "Mantova", MP: 38, MW: 13, MD: 7, ML: 18, GF: 45, GA: 57, logo: "italy/mantova.png" },
+        { rank: 10, team: "Padova", MP: 38, MW: 12, MD: 10, ML: 16, GF: 39, GA: 49, logo: "italy/padova.png" },
+        { rank: 11, team: "Cesena", MP: 38, MW: 12, MD: 10, ML: 16, GF: 45, GA: 56, logo: "italy/cesena.png" },
+        { rank: 12, team: "Carrarese", MP: 38, MW: 10, MD: 14, ML: 14, GF: 47, GA: 52, logo: "italy/carrarese.png" },
+        { rank: 13, team: "Sampdoria", MP: 38, MW: 11, MD: 11, ML: 16, GF: 35, GA: 48, logo: "italy/sampdoria.png" },
+        { rank: 14, team: "Entella", MP: 38, MW: 10, MD: 12, ML: 16, GF: 36, GA: 51, logo: "italy/entella.png" },
+        { rank: 15, team: "Empoli", MP: 38, MW: 9, MD: 14, ML: 15, GF: 47, GA: 54, logo: "italy/empoli.png" },
+        { rank: 16, team: "FCS", MP: 38, MW: 8, MD: 17, ML: 13, GF: 38, GA: 48, logo: "italy/fcs.png" },
+        { rank: 17, team: "Bari", MP: 38, MW: 10, MD: 10, ML: 18, GF: 38, GA: 60, logo: "italy/bari.png" },
+        { rank: 18, team: "Reggiana", MP: 38, MW: 9, MD: 10, ML: 19, GF: 36, GA: 56, logo: "italy/reggiana.png" },
+        { rank: 19, team: "Spezia U19", MP: 38, MW: 8, MD: 11, ML: 19, GF: 43, GA: 59, logo: "italy/spezia.png" },
+        { rank: 20, team: "Pescara", MP: 38, MW: 7, MD: 14, ML: 17, GF: 51, GA: 66, logo: "italy/pescara.png" }
+    ],
+    fixtures: [
+        // ===== TOMORROW'S MATCHES =====
+        { home: "FCS", away: "Catanzaro", date: "2026-09-05 15:00" },
+        { home: "Ascoli", away: "Benevento", date: "2026-09-05 17:15" },
+        { home: "Carrarese", away: "Empoli", date: "2026-09-05 19:30" },
+        
+        // ===== SUNDAY MATCHES =====
+        { home: "Cesena", away: "Mantova", date: "2026-09-06 15:00" },
+        { home: "Juve Stabia", away: "Pisa", date: "2026-09-06 15:00" },
+        { home: "Entella", away: "LR Vicenza", date: "2026-09-06 15:00" },
+        { home: "Modena", away: "Avellino", date: "2026-09-06 15:00" },
+        { home: "Verona", away: "Arezzo", date: "2026-09-06 17:15" },
+        { home: "Cremonese", away: "Padova", date: "2026-09-06 19:30" },
+        
+        // ===== MONDAY MATCH =====
+        { home: "Palermo", away: "Sampdoria", date: "2026-09-07 20:30" },
+        
+        // ===== MATCHDAY 4 =====
+        { home: "Empoli", away: "Arezzo", date: "2026-09-11 19:00" },
+        { home: "Benevento", away: "Verona", date: "2026-09-11 21:00" },
+        { home: "Pisa", away: "Entella", date: "2026-09-11 21:00" },
+        { home: "FCS", away: "Modena", date: "2026-09-12 15:00" },
+        { home: "Padova", away: "Ascoli", date: "2026-09-12 15:00" },
+        { home: "LR Vicenza", away: "Juve Stabia", date: "2026-09-12 15:00" },
+        { home: "Catanzaro", away: "Carrarese", date: "2026-09-12 17:15" },
+        { home: "Cesena", away: "Cremonese", date: "2026-09-12 19:30" },
+        { home: "Avellino", away: "Palermo", date: "2026-09-13 15:00" },
+        { home: "Mantova", away: "Sampdoria", date: "2026-09-13 17:15" }
+    ]
+},
+
+// ============================================================
+//  FRANCE - LIGUE 2
+// ============================================================
+
+"French Ligue 2": {
+    id: "french-ligue-2",
+    logo: "france/ligue2.png",
+    isBasketball: false,
+    season: "2026-27",
+    teams: [
+        { rank: 1, team: "Troyes", MP: 34, MW: 20, MD: 7, ML: 7, GF: 60, GA: 33, logo: "france/troyes.png" },
+        { rank: 2, team: "Le Mans", MP: 34, MW: 16, MD: 14, ML: 4, GF: 50, GA: 31, logo: "france/lemans.png" },
+        { rank: 3, team: "St-Étienne", MP: 34, MW: 18, MD: 6, ML: 10, GF: 59, GA: 38, logo: "france/stetienne.png" },
+        { rank: 4, team: "Red Star", MP: 34, MW: 16, MD: 10, ML: 8, GF: 45, GA: 37, logo: "france/redstar.png" },
+        { rank: 5, team: "Rodez", MP: 34, MW: 15, MD: 13, ML: 6, GF: 45, GA: 39, logo: "france/rodez.png" },
+        { rank: 6, team: "Reims", MP: 34, MW: 14, MD: 14, ML: 6, GF: 53, GA: 35, logo: "france/reims.png" },
+        { rank: 7, team: "Annecy", MP: 34, MW: 15, MD: 7, ML: 12, GF: 49, GA: 39, logo: "france/annecy.png" },
+        { rank: 8, team: "Montpellier", MP: 34, MW: 14, MD: 9, ML: 11, GF: 41, GA: 31, logo: "france/montpellier.png" },
+        { rank: 9, team: "Pau", MP: 34, MW: 12, MD: 9, ML: 13, GF: 48, GA: 62, logo: "france/pau.png" },
+        { rank: 10, team: "Dunkerque", MP: 34, MW: 11, MD: 10, ML: 13, GF: 53, GA: 45, logo: "france/dunkerque.png" },
+        { rank: 11, team: "Guingamp", MP: 34, MW: 10, MD: 10, ML: 14, GF: 42, GA: 49, logo: "france/guingamp.png" },
+        { rank: 12, team: "Grenoble", MP: 34, MW: 8, MD: 15, ML: 11, GF: 33, GA: 39, logo: "france/grenoble.png" },
+        { rank: 13, team: "Clermont", MP: 34, MW: 9, MD: 10, ML: 15, GF: 38, GA: 44, logo: "france/clermont.png" },
+        { rank: 14, team: "AS Nancy Lorraine", MP: 34, MW: 9, MD: 10, ML: 15, GF: 35, GA: 52, logo: "france/nancy.png" },
+        { rank: 15, team: "Boulogne", MP: 34, MW: 9, MD: 9, ML: 16, GF: 34, GA: 49, logo: "france/boulogne.png" },
+        { rank: 16, team: "Laval", MP: 34, MW: 6, MD: 14, ML: 14, GF: 30, GA: 48, logo: "france/laval.png" },
+        { rank: 17, team: "Bastia", MP: 34, MW: 5, MD: 13, ML: 16, GF: 23, GA: 39, logo: "france/bastia.png" },
+        { rank: 18, team: "Amiens", MP: 34, MW: 6, MD: 6, ML: 22, GF: 37, GA: 65, logo: "france/amiens.png" }
+    ],
+    fixtures: [
+        // ===== TOMORROW'S MATCHES =====
+        { home: "Metz", away: "Rodez", date: "2026-09-05 14:00" },
+        { home: "Reims", away: "Guingamp", date: "2026-09-05 14:00" },
+        { home: "St-Étienne", away: "Montpellier", date: "2026-09-05 20:00" },
+        
+        // ===== MONDAY MATCH =====
+        { home: "Nantes", away: "AS Nancy Lorraine", date: "2026-09-07 20:45" },
+        
+        // ===== MATCHDAY 6 =====
+        { home: "AS Nancy Lorraine", away: "Reims", date: "2026-09-11 20:00" },
+        { home: "Dijon", away: "Laval", date: "2026-09-11 20:00" },
+        { home: "Rodez", away: "Grenoble", date: "2026-09-11 20:00" },
+        { home: "Montpellier", away: "Pau", date: "2026-09-11 20:00" },
+        { home: "Clermont", away: "Boulogne", date: "2026-09-11 20:00" },
+        { home: "Sochaux", away: "Nantes", date: "2026-09-12 14:00" },
+        { home: "Guingamp", away: "Annecy", date: "2026-09-12 14:00" },
+        { home: "Dunkerque", away: "St-Étienne", date: "2026-09-12 20:00" },
+        { home: "Red Star", away: "Metz", date: "2026-09-14 20:45" },
+        
+        // ===== MATCHDAY 7 =====
+        { home: "Laval", away: "Sochaux", date: "2026-09-18 20:00" },
+        { home: "Rodez", away: "AS Nancy Lorraine", date: "2026-09-18 20:00" },
+        { home: "Annecy", away: "Dijon", date: "2026-09-18 20:00" },
+        { home: "Pau", away: "Dunkerque", date: "2026-09-18 20:00" },
+        { home: "Reims", away: "Montpellier", date: "2026-09-18 20:00" },
+        { home: "Grenoble", away: "Clermont", date: "2026-09-19 14:00" },
+        { home: "Guingamp", away: "Red Star", date: "2026-09-19 14:00" },
+        { home: "Boulogne", away: "Nantes", date: "2026-09-19 14:00" },
+        { home: "Metz", away: "St-Étienne", date: "2026-09-19 20:00" }
+    ]
+},
   // ============================================================
     //  USA - MLS
     // ============================================================
@@ -1310,9 +1490,6 @@ const leaguesData = {
       { "rank": 16, "team": "Manta", "MP": 28, "MW": 5, "MD": 5, "ML": 18, "GF": 17, "GA": 41, "logo": "ecuador/manta.png" }
     ],
     "fixtures": [
-      { "home": "Leones", "away": "Orense", "date": "2026-09-03" },
-      { "home": "Libertad Loja", "away": "Emelec", "date": "2026-09-03" },
-      { "home": "Técnico Universitario", "away": "LDU Quito", "date": "2026-09-04" },
       { "home": "Independiente del Valle", "away": "Macará", "date": "2026-09-05" },
       { "home": "Delfín", "away": "U. Católica", "date": "2026-09-06" },
       { "home": "Aucas", "away": "BSC", "date": "2026-09-06" },
@@ -1360,8 +1537,6 @@ const leaguesData = {
             { rank: 18, team: "Puebla", MP: 17, MW: 3, MD: 3, ML: 11, GF: 21, GA: 42, logo: "mexico/puebla.png" }
         ],
         fixtures: [
-  { "home": "Puebla", "away": "Toluca", "home_score": null, "away_score": null, "date": "2026-09-04" },
-  { "home": "Juarez", "away": "Pachuca", "home_score": null, "away_score": null, "date": "2026-09-04" },
   { "home": "San Luis", "away": "Guadalajara", "home_score": null, "away_score": null, "date": "2026-09-05" },
   { "home": "Querétaro", "away": "Monterrey", "home_score": null, "away_score": null, "date": "2026-09-05" },
   { "home": "Tigres UANL", "away": "Necaxa", "home_score": null, "away_score": null, "date": "2026-09-05" },
@@ -1410,8 +1585,6 @@ const leaguesData = {
       { "rank": 16, "team": "Universitario de Vinto", "MP": 17, "MW": 4, "MD": 2, "ML": 11, "GF": 22, "GA": 35, "logo": "bolivia/universitariovinto.png" }
     ],
     "fixtures": [
-      { "home": "Real Oruro", "away": "SA Bulo Bulo", "date": "2026-09-04" },
-      { "home": "Academia del Balompie Boliviano", "away": "Universitario de Vinto", "date": "2026-09-04" },
       { "home": "Guabirá", "away": "Real Potosí", "date": "2026-09-05" },
       { "home": "Aurora", "away": "Gualberto Villarroel San José", "date": "2026-09-05" },
       { "home": "Oriente Petrolero", "away": "Always Ready", "date": "2026-09-06" },
@@ -1461,9 +1634,6 @@ const leaguesData = {
             { rank: 20, team: "Deportivo Pereira", MP: 19, MW: 1, MD: 7, ML: 11, GF: 15, GA: 32, logo: "colombia/depor pereira.png" }
         ],
         fixtures: [
-  { "home": "América de Cali", "away": "Alianza", "home_score": null, "away_score": null, "date": "2026-09-03" },
-  { "home": "Santa Fe", "away": "Millonarios", "home_score": null, "away_score": null, "date": "2026-09-02" },
-  { "home": "Deportivo Pereira", "away": "Independiente Medellín", "home_score": null, "away_score": null, "date": "2026-09-03" },
   { "home": "Boyacá Chicó FC", "away": "Once Caldas", "home_score": null, "away_score": null, "date": "2026-09-05" },
   { "home": "Junior", "away": "Jaguares de Córdoba", "home_score": null, "away_score": null, "date": "2026-09-05" },
   { "home": "Internacional de Bogotá", "away": "Rionegro Águilas", "home_score": null, "away_score": null, "date": "2026-09-06" },

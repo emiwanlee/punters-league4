@@ -837,6 +837,118 @@ const matchesData = {
   { "home": "Walsall", "away": "Accrington Stanley", "home_score": 3, "away_score": 2, "date": "2026-08-29" },
   { "home": "Crawley Town", "away": "Bristol Rovers", "home_score": 0, "away_score": 2, "date": "2026-08-29" }
 ],
+// ============================================================
+//  SPAIN - LA LIGA 2 (Segunda División)
+// ============================================================
+"Spanish La Liga 2": [
+  { "home": "Real Sociedad B", "away": "Castellón", "home_score": 0, "away_score": 1, "date": "2026-08-14" },
+  { "home": "Andorra", "away": "Ceuta", "home_score": 5, "away_score": 1, "date": "2026-08-15" },
+  { "home": "Real Oviedo", "away": "Granada", "home_score": 0, "away_score": 0, "date": "2026-08-15" },
+  { "home": "Cádiz", "away": "Celta de Vigo II", "home_score": 0, "away_score": 0, "date": "2026-08-15" },
+  { "home": "Mallorca", "away": "Valladolid", "home_score": 2, "away_score": 0, "date": "2026-08-15" },
+  { "home": "Eibar", "away": "Tenerife", "home_score": 1, "away_score": 3, "date": "2026-08-16" },
+  { "home": "Burgos", "away": "Córdoba", "home_score": 3, "away_score": 2, "date": "2026-08-16" },
+  { "home": "Girona", "away": "Leganes", "home_score": 1, "away_score": 1, "date": "2026-08-16" },
+  { "home": "Las Palmas", "away": "Albacete", "home_score": 2, "away_score": 1, "date": "2026-08-16" },
+  { "home": "Sporting Gijón", "away": "Sabadell", "home_score": 0, "away_score": 0, "date": "2026-08-17" },
+  { "home": "Almería", "away": "Eldense", "home_score": 3, "away_score": 0, "date": "2026-08-17" },
+  { "home": "Córdoba", "away": "Girona", "home_score": 2, "away_score": 1, "date": "2026-08-21" },
+  { "home": "Real Oviedo", "away": "Leganes", "home_score": 0, "away_score": 1, "date": "2026-08-22" },
+  { "home": "Albacete", "away": "Real Sociedad B", "home_score": 1, "away_score": 2, "date": "2026-08-22" },
+  { "home": "Ceuta", "away": "Las Palmas", "home_score": 0, "away_score": 2, "date": "2026-08-22" },
+  { "home": "Eldense", "away": "Cádiz", "home_score": 2, "away_score": 2, "date": "2026-08-22" },
+  { "home": "Eibar", "away": "Valladolid", "home_score": 1, "away_score": 0, "date": "2026-08-23" },
+  { "home": "Sporting Gijón", "away": "Burgos", "home_score": 1, "away_score": 0, "date": "2026-08-23" },
+  { "home": "Castellón", "away": "Sabadell", "home_score": 0, "away_score": 0, "date": "2026-08-23" },
+  { "home": "Tenerife", "away": "Almería", "home_score": 1, "away_score": 0, "date": "2026-08-23" },
+  { "home": "Celta de Vigo II", "away": "Andorra", "home_score": 4, "away_score": 2, "date": "2026-08-24" },
+  { "home": "Granada", "away": "Mallorca", "home_score": 2, "away_score": 0, "date": "2026-08-24" },
+  { "home": "Tenerife", "away": "Sporting Gijón", "home_score": 0, "away_score": 1, "date": "2026-08-28" },
+  { "home": "Sabadell", "away": "Almería", "home_score": 1, "away_score": 0, "date": "2026-08-29" },
+  { "home": "Leganes", "away": "Eldense", "home_score": 1, "away_score": 0, "date": "2026-08-29" },
+  { "home": "Albacete", "away": "Real Oviedo", "home_score": 0, "away_score": 1, "date": "2026-08-29" },
+  { "home": "Girona", "away": "Las Palmas", "home_score": 5, "away_score": 2, "date": "2026-08-29" },
+  { "home": "Andorra", "away": "Eibar", "home_score": 0, "away_score": 1, "date": "2026-08-30" },
+  { "home": "Cádiz", "away": "Valladolid", "home_score": 1, "away_score": 1, "date": "2026-08-30" },
+  { "home": "Mallorca", "away": "Ceuta", "home_score": 3, "away_score": 0, "date": "2026-08-30" },
+  { "home": "Córdoba", "away": "Granada", "home_score": 1, "away_score": 3, "date": "2026-08-30" },
+  { "home": "Burgos", "away": "Real Sociedad B", "home_score": 2, "away_score": 2, "date": "2026-08-31" },
+  { "home": "Celta de Vigo II", "away": "Castellón", "home_score": 1, "away_score": 2, "date": "2026-08-31" }
+],
+
+// ============================================================
+    //  ITALY SERIE B
+    // ============================================================
+
+"Italy Serie B": [
+  { "home": "LR Vicenza", "away": "Catanzaro", "home_score": 3, "away_score": 2, "date": "2026-08-21" },
+  { "home": "Carrarese", "away": "Mantova", "home_score": 1, "away_score": 2, "date": "2026-08-22" },
+  { "home": "FCS", "away": "Entella", "home_score": 1, "away_score": 0, "date": "2026-08-22" },
+  { "home": "Benevento", "away": "Modena", "home_score": 1, "away_score": 2, "date": "2026-08-22" },
+  { "home": "Empoli", "away": "Cremonese", "home_score": 1, "away_score": 0, "date": "2026-08-22" },
+  { "home": "Avellino", "away": "Arezzo", "home_score": 1, "away_score": 2, "date": "2026-08-22" },
+  { "home": "Pisa", "away": "Padova", "home_score": 0, "away_score": 1, "date": "2026-08-23" },
+  { "home": "Verona", "away": "Ascoli", "home_score": 1, "away_score": 2, "date": "2026-08-23" },
+  { "home": "Palermo", "away": "Juve Stabia", "home_score": 1, "away_score": 0, "date": "2026-08-23" },
+  { "home": "Cesena", "away": "Sampdoria", "home_score": 1, "away_score": 1, "date": "2026-08-23" },
+  { "home": "Cremonese", "away": "Modena", "home_score": 0, "away_score": 3, "date": "2026-08-28" },
+  { "home": "Sampdoria", "away": "Juve Stabia", "home_score": 1, "away_score": 2, "date": "2026-08-29" },
+  { "home": "Entella", "away": "Cesena", "home_score": 1, "away_score": 2, "date": "2026-08-29" },
+  { "home": "Padova", "away": "Verona", "home_score": 1, "away_score": 1, "date": "2026-08-29" },
+  { "home": "Ascoli", "away": "Carrarese", "home_score": 1, "away_score": 1, "date": "2026-08-29" },
+  { "home": "Avellino", "away": "LR Vicenza", "home_score": 3, "away_score": 0, "date": "2026-08-29" },
+  { "home": "Mantova", "away": "Empoli", "home_score": 3, "away_score": 1, "date": "2026-08-30" },
+  { "home": "Arezzo", "away": "Palermo", "home_score": 2, "away_score": 3, "date": "2026-08-30" },
+  { "home": "Pisa", "away": "Catanzaro", "home_score": 2, "away_score": 1, "date": "2026-08-30" },
+  { "home": "Benevento", "away": "FCS", "home_score": 1, "away_score": 1, "date": "2026-08-30" }
+],
+
+// ============================================================
+    //  FRENCH LIGUE 2
+    // ============================================================
+"French Ligue 2": [
+  { "home": "Metz", "away": "Guingamp", "home_score": 2, "away_score": 1, "date": "2026-08-08" },
+  { "home": "Clermont", "away": "Reims", "home_score": 0, "away_score": 0, "date": "2026-08-08" },
+  { "home": "Pau", "away": "Annecy", "home_score": 0, "away_score": 1, "date": "2026-08-08" },
+  { "home": "Dunkerque", "away": "Grenoble", "home_score": 4, "away_score": 2, "date": "2026-08-08" },
+  { "home": "Boulogne", "away": "AS Nancy Lorraine", "home_score": 0, "away_score": 0, "date": "2026-08-08" },
+  { "home": "Sochaux", "away": "St-Étienne", "home_score": 0, "away_score": 3, "date": "2026-08-08" },
+  { "home": "Montpellier", "away": "Dijon", "home_score": 1, "away_score": 1, "date": "2026-08-08" },
+  { "home": "Nantes", "away": "Red Star", "home_score": 0, "away_score": 1, "date": "2026-08-08" },
+  { "home": "Rodez", "away": "Laval", "home_score": 3, "away_score": 1, "date": "2026-08-08" },
+  { "home": "Reims", "away": "Dunkerque", "home_score": 3, "away_score": 3, "date": "2026-08-14" },
+  { "home": "Annecy", "away": "Rodez", "home_score": 2, "away_score": 0, "date": "2026-08-14" },
+  { "home": "Dijon", "away": "Pau", "home_score": 0, "away_score": 1, "date": "2026-08-14" },
+  { "home": "Grenoble", "away": "Metz", "home_score": 0, "away_score": 0, "date": "2026-08-14" },
+  { "home": "Laval", "away": "Nantes", "home_score": 2, "away_score": 1, "date": "2026-08-14" },
+  { "home": "St-Étienne", "away": "Clermont", "home_score": 3, "away_score": 1, "date": "2026-08-14" },
+  { "home": "AS Nancy Lorraine", "away": "Montpellier", "home_score": 0, "away_score": 1, "date": "2026-08-14" },
+  { "home": "Guingamp", "away": "Boulogne", "home_score": 1, "away_score": 0, "date": "2026-08-14" },
+  { "home": "Red Star", "away": "Sochaux", "home_score": 0, "away_score": 0, "date": "2026-08-14" },
+  { "home": "Pau", "away": "AS Nancy Lorraine", "home_score": 0, "away_score": 1, "date": "2026-08-21" },
+  { "home": "Sochaux", "away": "Guingamp", "home_score": 1, "away_score": 0, "date": "2026-08-21" },
+  { "home": "Clermont", "away": "Dijon", "home_score": 1, "away_score": 1, "date": "2026-08-21" },
+  { "home": "Dunkerque", "away": "Montpellier", "home_score": 0, "away_score": 1, "date": "2026-08-21" },
+  { "home": "Boulogne", "away": "Red Star", "home_score": 1, "away_score": 1, "date": "2026-08-21" },
+  { "home": "Metz", "away": "Laval", "home_score": 1, "away_score": 1, "date": "2026-08-22" },
+  { "home": "Nantes", "away": "Rodez", "home_score": 2, "away_score": 5, "date": "2026-08-22" },
+  { "home": "St-Étienne", "away": "Grenoble", "home_score": 4, "away_score": 0, "date": "2026-08-22" },
+  { "home": "Reims", "away": "Annecy", "home_score": 3, "away_score": 1, "date": "2026-08-24" },
+  { "home": "AS Nancy Lorraine", "away": "Dunkerque", "home_score": 2, "away_score": 0, "date": "2026-08-28" },
+  { "home": "Rodez", "away": "Pau", "home_score": 2, "away_score": 2, "date": "2026-08-28" },
+  { "home": "Clermont", "away": "Sochaux", "home_score": 0, "away_score": 0, "date": "2026-08-28" },
+  { "home": "Montpellier", "away": "Boulogne", "home_score": 0, "away_score": 0, "date": "2026-08-28" },
+  { "home": "Laval", "away": "Grenoble", "home_score": 0, "away_score": 3, "date": "2026-08-28" },
+  { "home": "Red Star", "away": "Reims", "home_score": 1, "away_score": 4, "date": "2026-08-29" },
+  { "home": "Annecy", "away": "Metz", "home_score": 1, "away_score": 1, "date": "2026-08-29" },
+  { "home": "Guingamp", "away": "Nantes", "home_score": 3, "away_score": 3, "date": "2026-08-29" },
+  { "home": "Dijon", "away": "St-Étienne", "home_score": 2, "away_score": 3, "date": "2026-08-31" },
+  { "home": "Dunkerque", "away": "Clermont", "home_score": 1, "away_score": 1, "date": "2026-09-04" },
+  { "home": "Laval", "away": "Red Star", "home_score": 1, "away_score": 2, "date": "2026-09-04" },
+  { "home": "Grenoble", "away": "Annecy", "home_score": 1, "away_score": 1, "date": "2026-09-04" },
+  { "home": "Boulogne", "away": "Dijon", "home_score": 1, "away_score": 1, "date": "2026-09-04" },
+  { "home": "Pau", "away": "Sochaux", "home_score": 1, "away_score": 1, "date": "2026-09-04" }
+],
     // ============================================================
     //  CHILEAN PRIMERA DIVISIÓN
     // ============================================================
