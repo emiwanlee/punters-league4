@@ -331,7 +331,15 @@ const matchesData = {
   { "home": "Leeds", "away": "Brentford", "home_score": 1, "away_score": 1, "date": "2026-08-30" },
   { "home": "Sunderland", "away": "Fulham", "home_score": 1, "away_score": 0, "date": "2026-08-30" },
   { "home": "Man United", "away": "Ipswich Town", "home_score": 5, "away_score": 2, "date": "2026-08-30" },
-  { "home": "Aston Villa", "away": "Arsenal", "home_score": 0, "away_score": 1, "date": "2026-08-31" }
+  { "home": "Aston Villa", "away": "Arsenal", "home_score": 0, "away_score": 1, "date": "2026-08-31" },
+  { "home": "Ipswich", "away": "Liverpool", "home_score": 0, "away_score": 2, "date": "2026-09-04" },
+  { "home": "Newcastle", "away": "Bournemouth", "home_score": 2, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Brentford", "away": "Sunderland", "home_score": 1, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Nottingham", "away": "Tottenham", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Manchester City", "away": "Coventry", "home_score": 1, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Fulham", "away": "Crystal Palace", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Nottingham", "away": "Tottenham", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Hull", "away": "Aston Villa", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
 ],
 
     // ============================================================
@@ -368,7 +376,12 @@ const matchesData = {
   { "home": "Deportivo", "away": "Valencia", "home_score": 3, "away_score": 1, "date": "2026-08-30" },
   { "home": "Celta", "away": "Athletic", "home_score": 0, "away_score": 2, "date": "2026-08-30" },
   { "home": "Osasuna", "away": "Getafe", "home_score": 1, "away_score": 0, "date": "2026-08-31" },
-  { "home": "Barcelona", "away": "Rayo Vallecano", "home_score": 5, "away_score": 2, "date": "2026-08-31" }
+  { "home": "Barcelona", "away": "Rayo Vallecano", "home_score": 5, "away_score": 2, "date": "2026-08-31" },
+  { "home": "Real Sociedad", "away": "Celta Vigo", "home_score": 0, "away_score": 0, "date": "2026-09-03" },
+  { "home": "Betis", "away": "Real Madrid", "home_score": 1, "away_score": 0, "date": "2026-09-04" },
+  { "home": "Athletic", "away": "Atlético Madrid", "home_score": 3, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Rayo Vallecano", "away": "Racing Santander", "home_score": 2, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Villarreal", "away": "Deportivo", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
 ],
 
     // ============================================================
@@ -395,7 +408,11 @@ const matchesData = {
   { "home": "Cagliari", "away": "Inter", "home_score": 0, "away_score": 1, "date": "2026-08-30" },
   { "home": "Lazio", "away": "Genoa", "home_score": 1, "away_score": 0, "date": "2026-08-30" },
   { "home": "Leece", "away": "Roma", "home_score": 0, "away_score": 4, "date": "2026-08-31" },
-  { "home": "Atalanta", "away": "Bologna", "home_score": 1, "away_score": 0, "date": "2026-08-31" }
+  { "home": "Atalanta", "away": "Bologna", "home_score": 1, "away_score": 0, "date": "2026-08-31" },
+  { "home": "Genoa", "away": "Como", "home_score": 1, "away_score": 4, "date": "2026-09-04" },
+  { "home": "Torino", "away": "Fiorentina", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Inter", "away": "Napoli", "home_score": 3, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Roma", "away": "Atalanta", "home_score": 2, "away_score": 1, "date": "2026-09-05" },
 ],
 
     // ============================================================
@@ -420,7 +437,14 @@ const matchesData = {
   { "home": "Lorient", "away": "Troyes", "home_score": 1, "away_score": 2, "date": "2026-08-29" },
   { "home": "Paris FC", "away": "Nice", "home_score": 3, "away_score": 0, "date": "2026-08-30" },
   { "home": "Rennes", "away": "Le Mans", "home_score": 3, "away_score": 2, "date": "2026-08-30" },
-  { "home": "Monaco", "away": "Marseille", "home_score": 2, "away_score": 0, "date": "2026-08-30" }
+  { "home": "Monaco", "away": "Marseille", "home_score": 2, "away_score": 0, "date": "2026-08-30" },
+  { "home": "Toulouse", "away": "Lille", "home_score": 0, "away_score": 1, "date": "2026-09-03" },
+  { "home": "OL", "away": "Auxerre", "home_score": 3, "away_score": 1, "date": "2026-09-04" },
+  { "home": "PSG", "away": "Monaco", "home_score": 1, "away_score": 2, "date": "2026-09-04" },
+  { "home": "Lens", "away": "Lorient", "home_score": 0, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Nice", "away": "Le Mans", "home_score": 1, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Le Havre", "away": "Brest", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
+  
 ],
 
     // ============================================================
@@ -436,7 +460,15 @@ const matchesData = {
   { "home": "SV Elversberg", "away": "Leverkusen", "home_score": 3, "away_score": 2, "date": "2026-08-29" },
   { "home": "Dortmund", "away": "Hamburg", "home_score": 2, "away_score": 0, "date": "2026-08-29" },
   { "home": "Freiburg", "away": "Werder", "home_score": 4, "away_score": 1, "date": "2026-08-30" },
-  { "home": "Augsburg", "away": "Schalke", "home_score": 3, "away_score": 0, "date": "2026-08-30" }
+  { "home": "Augsburg", "away": "Schalke", "home_score": 3, "away_score": 0, "date": "2026-08-30" },
+  { "home": "Stuttgart", "away": "Köln", "home_score": 4, "away_score": 1, "date": "2026-09-04" },
+  { "home": "Mönchengladbach", "away": "SV Elversberg", "home_score": 3, "away_score": 4, "date": "2026-09-05" },
+  { "home": "Werder", "away": "RB Leipzig", "home_score": 3, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Hoffenheim", "away": "Dortmund", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Paderborn", "away": "Freiburg", "home_score": 0, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Leverkusen", "away": "Union Berlin", "home_score": 4, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Schalke", "away": "Bayern", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  
 ],
 
 // ============================================================
@@ -475,7 +507,11 @@ const matchesData = {
   { "home": "Willem II", "away": "Heerenveen", "home_score": 2, "away_score": 2, "date": "2026-08-30" },
   { "home": "Feyenoord", "away": "Den Haag", "home_score": 2, "away_score": 2, "date": "2026-08-30" },
   { "home": "Telstar", "away": "Ajax", "home_score": 0, "away_score": 4, "date": "2026-08-30" },
-  { "home": "Cambuur", "away": "Twente", "home_score": 1, "away_score": 4, "date": "2026-08-30" }
+  { "home": "Cambuur", "away": "Twente", "home_score": 1, "away_score": 4, "date": "2026-08-30" },
+   { "home": "Sparta Rotterdam", "away": "PEC Zwolle", "home_score": 2, "away_score": 2, "date": "2026-09-04" },
+  { "home": "NEC", "away": "Feyenoord", "home_score": 1, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Utrecht", "away": "Go Ahead Eagles", "home_score": 1, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Ajax", "away": "PSV", "home_score": 1, "away_score": 3, "date": "2026-09-05" }
 ],
     // ============================================================
     //  PORTUGUESE PREMEIRA LIGA
@@ -512,7 +548,14 @@ const matchesData = {
   { "home": "Académico de Viseu FC", "away": "Porto", "home_score": 0, "away_score": 3, "date": "2026-08-29" },
   { "home": "Nacional", "away": "Estrela Amadora", "home_score": 2, "away_score": 3, "date": "2026-08-30" },
   { "home": "Casa Pia", "away": "Moreirense", "home_score": 0, "away_score": 1, "date": "2026-08-30" },
-  { "home": "Famalicão", "away": "Gil Vicente", "home_score": 0, "away_score": 0, "date": "2026-08-30" }
+  { "home": "Famalicão", "away": "Gil Vicente", "home_score": 0, "away_score": 0, "date": "2026-08-30" },
+  { "home": "Braga", "away": "Vitória SC", "home_score": 1, "away_score": 0, "date": "2026-08-31" },
+  { "home": "Benfica", "away": "Estoril", "home_score": 2, "away_score": 1, "date": "2026-08-31" },
+  { "home": "Porto", "away": "Moreirense", "home_score": 2, "away_score": 1, "date": "2026-09-04" },
+  { "home": "Estrela Amadora", "away": "Famalicão", "home_score": 2, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Marítimo", "away": "Benfica", "home_score": 0, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Alverca", "away": "Braga", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
+  { "home": "SCP", "away": "Nacional", "home_score": 2, "away_score": 0, "date": "2026-09-05" }
 ],
 
    // ============================================================
@@ -551,7 +594,15 @@ const matchesData = {
   { "home": "Gent", "away": "Club Brugge", "home_score": 2, "away_score": 1, "date": "2026-08-30" },
   { "home": "Antwerp", "away": "STVV", "home_score": 1, "away_score": 4, "date": "2026-08-30" },
   { "home": "Union", "away": "Anderlecht", "home_score": 3, "away_score": 0, "date": "2026-08-30" },
-  { "home": "Westerlo", "away": "Zulte Waregem", "home_score": 2, "away_score": 2, "date": "2026-08-30" }
+  { "home": "Westerlo", "away": "Zulte Waregem", "home_score": 2, "away_score": 2, "date": "2026-08-30" },
+    { "home": "STVV", "away": "Union", "home_score": 0, "away_score": 3, "date": "2026-09-02" },
+  { "home": "Gent", "away": "OH Leuven", "home_score": 1, "away_score": 0, "date": "2026-09-03" },
+  { "home": "Anderlecht", "away": "Kortrijk", "home_score": 1, "away_score": 0, "date": "2026-09-03" },
+  { "home": "Lommel", "away": "Club Brugge", "home_score": 0, "away_score": 1, "date": "2026-09-04" },
+  { "home": "Charleroi", "away": "Union", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Mechelen", "away": "Westerlo", "home_score": 0, "away_score": 4, "date": "2026-09-05" },
+  { "home": "STVV", "away": "La Louvière", "home_score": 4, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Standard", "away": "Antwerp", "home_score": 1, "away_score": 0, "date": "2026-09-05" }
 ],
 
 
@@ -708,7 +759,12 @@ const matchesData = {
   { "home": "Göteborg", "away": "ÖIS", "home_score": 1, "away_score": 0, "date": "2026-08-30" },
   { "home": "Djurgården", "away": "Mjällby", "home_score": 4, "away_score": 0, "date": "2026-08-31" },
   { "home": "GAIS", "away": "Brommapojkarna", "home_score": 4, "away_score": 0, "date": "2026-08-31" },
-  { "home": "Sirius", "away": "Malmö", "home_score": 0, "away_score": 1, "date": "2026-08-31" }
+  { "home": "Sirius", "away": "Malmö", "home_score": 0, "away_score": 1, "date": "2026-08-31" },
+   { "home": "Djurgården", "away": "Mjällby", "home_score": 4, "away_score": 0, "date": "2026-08-31" },
+  { "home": "Mjällby", "away": "Djurgården", "home_score": 0, "away_score": 2, "date": "2026-09-03" },
+  { "home": "Degerfors", "away": "Halmstad", "home_score": 2, "away_score": 0, "date": "2026-09-05" },
+  { "home": "GAIS", "away": "Häcken", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Västerås", "away": "Sirius", "home_score": 0, "away_score": 1, "date": "2026-09-05" }
 ],
 
  // ============================================================
@@ -750,7 +806,31 @@ const matchesData = {
   { "home": "Bolton", "away": "Lincoln City", "home_score": 0, "away_score": 1, "date": "2026-08-29" },
   { "home": "Southampton", "away": "Millwall", "home_score": 5, "away_score": 1, "date": "2026-08-29" },
   { "home": "Norwich City", "away": "Burnley", "home_score": 4, "away_score": 1, "date": "2026-08-29" },
-  { "home": "Cardiff City", "away": "Sheffield United", "home_score": 2, "away_score": 2, "date": "2026-08-29" }
+  { "home": "Cardiff City", "away": "Sheffield United", "home_score": 2, "away_score": 2, "date": "2026-08-29" },
+   { "home": "Watford", "away": "West Ham", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Preston", "away": "Bristol City", "home_score": 1, "away_score": 3, "date": "2026-09-01" },
+  { "home": "Portsmouth", "away": "Derby County", "home_score": 0, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Lincoln City", "away": "Blackburn Rovers", "home_score": 0, "away_score": 0, "date": "2026-09-01" },
+  { "home": "West Ham", "away": "Wolves", "home_score": 4, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Sheffield United", "away": "Bolton", "home_score": 3, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Swansea", "away": "Watford", "home_score": 2, "away_score": 0, "date": "2026-09-01" },
+  { "home": "Stoke City", "away": "Norwich City", "home_score": 1, "away_score": 0, "date": "2026-09-01" },
+  { "home": "Birmingham", "away": "Southampton", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "West Brom", "away": "Charlton", "home_score": 1, "away_score": 1, "date": "2026-09-02" },
+  { "home": "Millwall", "away": "Wrexham", "home_score": 0, "away_score": 3, "date": "2026-09-02" },
+  { "home": "QPR", "away": "Cardiff City", "home_score": 2, "away_score": 1, "date": "2026-09-02" },
+  { "home": "Burnley", "away": "Middlesbrough", "home_score": 1, "away_score": 1, "date": "2026-09-02" },
+  { "home": "Lincoln City", "away": "Southampton", "home_score": 1, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Stoke City", "away": "Charlton", "home_score": 4, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Preston", "away": "Blackburn Rovers", "home_score": 2, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Burnley", "away": "Bristol City", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Millwall", "away": "Bolton", "home_score": 4, "away_score": 0, "date": "2026-09-05" },
+  { "home": "QPR", "away": "Middlesbrough", "home_score": 0, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Sheffield United", "away": "Norwich City", "home_score": 1, "away_score": 3, "date": "2026-09-05" },
+  { "home": "West Brom", "away": "Watford", "home_score": 1, "away_score": 0, "date": "2026-09-05" },
+  { "home": "West Ham", "away": "Derby County", "home_score": 3, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Portsmouth", "away": "Cardiff City", "home_score": 2, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Swansea", "away": "Wrexham", "home_score": 0, "away_score": 0, "date": "2026-09-05" }
 ],
 
  // ============================================================
@@ -792,7 +872,30 @@ const matchesData = {
   { "home": "Sheffield Wednesday", "away": "Bromley", "home_score": 7, "away_score": 2, "date": "2026-08-29" },
   { "home": "Stockport", "away": "Wycombe", "home_score": 5, "away_score": 1, "date": "2026-08-29" },
   { "home": "AFC Wimbledon", "away": "Wigan Athletic", "home_score": 1, "away_score": 0, "date": "2026-08-30" },
-  { "home": "Mansfield Town", "away": "Luton Town", "home_score": 5, "away_score": 2, "date": "2026-08-30" }
+  { "home": "Mansfield Town", "away": "Luton Town", "home_score": 5, "away_score": 2, "date": "2026-08-30" },
+   { "home": "Bromley", "away": "Leyton Orient", "home_score": 0, "away_score": 5, "date": "2026-09-01" },
+  { "home": "Wycombe", "away": "Sheffield Wednesday", "home_score": 1, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Doncaster", "away": "Notts County", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Peterborough", "away": "Stevenage", "home_score": 0, "away_score": 0, "date": "2026-09-01" },
+  { "home": "Bradford City", "away": "Cambridge United", "home_score": 1, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Huddersfield", "away": "Oxford Utd", "home_score": 3, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Leicester City", "away": "Plymouth", "home_score": 2, "away_score": 0, "date": "2026-09-01" },
+  { "home": "Wigan Athletic", "away": "MK Dons", "home_score": 3, "away_score": 1, "date": "2026-09-02" },
+  { "home": "Luton Town", "away": "Stockport", "home_score": 2, "away_score": 0, "date": "2026-09-02" },
+  { "home": "Burton", "away": "AFC Wimbledon", "home_score": 4, "away_score": 1, "date": "2026-09-02" },
+  { "home": "Barnsley", "away": "Blackpool", "home_score": 2, "away_score": 1, "date": "2026-09-02" },
+  { "home": "Reading", "away": "Mansfield Town", "home_score": 5, "away_score": 0, "date": "2026-09-02" },
+  { "home": "Peterborough", "away": "Sheffield Wednesday", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Wigan Athletic", "away": "Stockport", "home_score": 0, "away_score": 4, "date": "2026-09-05" },
+  { "home": "Leicester City", "away": "Oxford Utd", "home_score": 0, "away_score": 4, "date": "2026-09-05" },
+  { "home": "Wycombe", "away": "MK Dons", "home_score": 3, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Reading", "away": "Blackpool", "home_score": 3, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Doncaster", "away": "Plymouth", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Bradford City", "away": "Mansfield Town", "home_score": 1, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Barnsley", "away": "Stevenage", "home_score": 1, "away_score": 5, "date": "2026-09-05" },
+  { "home": "Burton", "away": "Cambridge United", "home_score": 2, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Huddersfield", "away": "Notts County", "home_score": 1, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Luton Town", "away": "Leyton Orient", "home_score": 1, "away_score": 1, "date": "2026-09-05" }
 ],
 
 
@@ -835,7 +938,31 @@ const matchesData = {
   { "home": "Grimsby", "away": "Fleetwood", "home_score": 2, "away_score": 2, "date": "2026-08-29" },
   { "home": "Newport County", "away": "Tranmere", "home_score": 2, "away_score": 2, "date": "2026-08-29" },
   { "home": "Walsall", "away": "Accrington Stanley", "home_score": 3, "away_score": 2, "date": "2026-08-29" },
-  { "home": "Crawley Town", "away": "Bristol Rovers", "home_score": 0, "away_score": 2, "date": "2026-08-29" }
+  { "home": "Crawley Town", "away": "Bristol Rovers", "home_score": 0, "away_score": 2, "date": "2026-08-29" },
+  { "home": "Salford City", "away": "Newport County", "home_score": 2, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Rochdale", "away": "Shrewsbury", "home_score": 3, "away_score": 0, "date": "2026-09-01" },
+  { "home": "Swindon Town", "away": "Port Vale", "home_score": 3, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Fleetwood", "away": "Oldham Athletic", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Tranmere", "away": "Rotherham", "home_score": 2, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Northampton Town", "away": "Crawley Town", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Crewe", "away": "Walsall", "home_score": 2, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Chesterfield", "away": "Gillingham", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Cheltenham", "away": "York City", "home_score": 3, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Accrington Stanley", "away": "Grimsby", "home_score": 2, "away_score": 2, "date": "2026-09-01" },
+  { "home": "Bristol Rovers", "away": "Colchester", "home_score": 2, "away_score": 0, "date": "2026-09-01" },
+  { "home": "Exeter City", "away": "Barnet", "home_score": 1, "away_score": 1, "date": "2026-09-01" },
+  { "home": "Salford City", "away": "Port Vale", "home_score": 1, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Fleetwood", "away": "Shrewsbury", "home_score": 2, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Crewe", "away": "York City", "home_score": 1, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Northampton Town", "away": "Newport County", "home_score": 1, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Accrington Stanley", "away": "Crawley Town", "home_score": 3, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Tranmere", "away": "Oldham Athletic", "home_score": 2, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Exeter City", "away": "Walsall", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Cheltenham", "away": "Grimsby", "home_score": 2, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Swindon Town", "away": "Colchester", "home_score": 3, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Chesterfield", "away": "Barnet", "home_score": 3, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Rochdale", "away": "Gillingham", "home_score": 1, "away_score": 4, "date": "2026-09-05" },
+  { "home": "Bristol Rovers", "away": "Rotherham", "home_score": 1, "away_score": 0, "date": "2026-09-05" }
 ],
 // ============================================================
 //  SPAIN - LA LIGA 2 (Segunda División)
