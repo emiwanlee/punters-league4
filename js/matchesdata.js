@@ -340,6 +340,8 @@ const matchesData = {
   { "home": "Fulham", "away": "Crystal Palace", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
   { "home": "Nottingham", "away": "Tottenham", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
   { "home": "Hull", "away": "Aston Villa", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Everton", "away": "Manchester United", "home_score": 2, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Arsenal", "away": "Chelsea", "home_score": 2, "away_score": 1, "date": "2026-09-06" },
 ],
 
     // ============================================================
@@ -382,6 +384,11 @@ const matchesData = {
   { "home": "Athletic", "away": "Atlético Madrid", "home_score": 3, "away_score": 0, "date": "2026-09-05" },
   { "home": "Rayo Vallecano", "away": "Racing Santander", "home_score": 2, "away_score": 2, "date": "2026-09-05" },
   { "home": "Villarreal", "away": "Deportivo", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Barcelona", "away": "Valencia", "home_score": 0, "away_score": 5, "date": "2026-09-06" },
+  { "home": "Alavés", "away": "Osasuna", "home_score": 5, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Málaga", "away": "Levante", "home_score": 0, "away_score": 0, "date": "2026-09-06" },
+  { "home": "Espanyol", "away": "Sevilla", "home_score": 1, "away_score": 1, "date": "2026-09-06" },
+  
 ],
 
     // ============================================================
@@ -413,6 +420,10 @@ const matchesData = {
   { "home": "Torino", "away": "Fiorentina", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
   { "home": "Inter", "away": "Napoli", "home_score": 3, "away_score": 2, "date": "2026-09-05" },
   { "home": "Roma", "away": "Atalanta", "home_score": 2, "away_score": 1, "date": "2026-09-05" },
+  { "home": "Frosinone", "away": "Venezia", "home_score": 3, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Parma", "away": "Monza", "home_score": 1, "away_score": 1, "date": "2026-09-06" },
+  { "home": "Bologna", "away": "Sassuolo", "home_score": 2, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Juventus", "away": "Milan", "home_score": 1, "away_score": 1, "date": "2026-09-06" },
 ],
 
     // ============================================================
@@ -444,6 +455,9 @@ const matchesData = {
   { "home": "Lens", "away": "Lorient", "home_score": 0, "away_score": 1, "date": "2026-09-05" },
   { "home": "Nice", "away": "Le Mans", "home_score": 1, "away_score": 1, "date": "2026-09-05" },
   { "home": "Le Havre", "away": "Brest", "home_score": 1, "away_score": 2, "date": "2026-09-05" },
+  { "home": "Troyes", "away": "Strasbourg", "home_score": 2, "away_score": 6, "date": "2026-09-06" },
+  { "home": "Angers", "away": "Rennes", "home_score": 1, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Marseille", "away": "Paris", "home_score": 2, "away_score": 3, "date": "2026-09-06" },
   
 ],
 
@@ -468,6 +482,8 @@ const matchesData = {
   { "home": "Paderborn", "away": "Freiburg", "home_score": 0, "away_score": 1, "date": "2026-09-05" },
   { "home": "Leverkusen", "away": "Union Berlin", "home_score": 4, "away_score": 0, "date": "2026-09-05" },
   { "home": "Schalke", "away": "Bayern", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Hamburger", "away": "Mainz", "home_score": 0, "away_score": 5, "date": "2026-09-06" },
+  { "home": "Eintracht Frankfurt", "away": "Augsburg", "home_score": 1, "away_score": 4, "date": "2026-09-06" },
   
 ],
 
@@ -511,7 +527,11 @@ const matchesData = {
    { "home": "Sparta Rotterdam", "away": "PEC Zwolle", "home_score": 2, "away_score": 2, "date": "2026-09-04" },
   { "home": "NEC", "away": "Feyenoord", "home_score": 1, "away_score": 3, "date": "2026-09-05" },
   { "home": "Utrecht", "away": "Go Ahead Eagles", "home_score": 1, "away_score": 3, "date": "2026-09-05" },
-  { "home": "Ajax", "away": "PSV", "home_score": 1, "away_score": 3, "date": "2026-09-05" }
+  { "home": "Ajax", "away": "PSV", "home_score": 1, "away_score": 3, "date": "2026-09-05" },
+  { "home": "Groningen", "away": "Twente", "home_score": 2, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Heerenveen", "away": "AZ Alkmaar", "home_score": 2, "away_score": 3, "date": "2026-09-06" },
+  { "home": "Telstar", "away": "Cambuur", "home_score": 2, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Den Haag", "away": "Sittard", "home_score": 2, "away_score": 3, "date": "2026-09-06" },
 ],
     // ============================================================
     //  PORTUGUESE PREMEIRA LIGA
@@ -602,7 +622,11 @@ const matchesData = {
   { "home": "Charleroi", "away": "Union", "home_score": 2, "away_score": 3, "date": "2026-09-05" },
   { "home": "Mechelen", "away": "Westerlo", "home_score": 0, "away_score": 4, "date": "2026-09-05" },
   { "home": "STVV", "away": "La Louvière", "home_score": 4, "away_score": 0, "date": "2026-09-05" },
-  { "home": "Standard", "away": "Antwerp", "home_score": 1, "away_score": 0, "date": "2026-09-05" }
+  { "home": "Standard", "away": "Antwerp", "home_score": 1, "away_score": 0, "date": "2026-09-05" },
+  { "home": "Cercle Brugge", "away": "Gent", "home_score": 0, "away_score": 3, "date": "2026-09-06" },
+  { "home": "Kortrijk", "away": "Waregem", "home_score": 0, "away_score": 2, "date": "2026-09-06" },
+  { "home": "Anderlecht", "away": "Genk", "home_score": 0, "away_score": 0, "date": "2026-09-06" },
+  { "home": "Beveren", "away": "Leuven", "home_score": 3, "away_score": 0, "date": "2026-09-06" },
 ],
 
 

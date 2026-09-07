@@ -357,8 +357,6 @@ const leaguesData = {
       { "rank": 20, "team": "Wolves", "MP": 38, "MW": 3, "MD": 11, "ML": 24, "GF": 27, "GA": 68, "logo": "england/wolves.png" }
     ],
     "fixtures": [
-      { "home": "Everton", "away": "Man Utd", "date": "2026-09-06" },
-      { "home": "Arsenal", "away": "Chelsea", "date": "2026-09-06" },
       { "home": "Liverpool", "away": "Fulham", "date": "2026-09-12" },
       { "home": "Palace", "away": "Ipswich Town", "date": "2026-09-12" },
       { "home": "Bournemouth", "away": "Brentford", "date": "2026-09-12" },
@@ -404,9 +402,6 @@ const leaguesData = {
       { "rank": 20, "team": "Real Oviedo", "MP": 38, "MW": 6, "MD": 11, "ML": 21, "GF": 26, "GA": 60, "logo": "spain/realoviedo.png" }
     ],
     "fixtures": [
-      { "home": "Valencia", "away": "Barcelona", "date": "2026-09-06" },
-      { "home": "Alavés", "away": "Osasuna", "date": "2026-09-06" },
-      { "home": "Málaga", "away": "Levante", "date": "2026-09-06" },
       { "home": "Espanyol", "away": "Sevilla", "date": "2026-09-07" },
       { "home": "Getafe", "away": "Celta", "date": "2026-09-07" },
       { "home": "Elche", "away": "Real Sociedad", "date": "2026-09-11" },
@@ -453,8 +448,6 @@ const leaguesData = {
       { "rank": 18, "team": "St. Pauli", "MP": 34, "MW": 6, "MD": 8, "ML": 20, "GF": 29, "GA": 60, "logo": "germany/stpauli.png" }
     ],
     "fixtures": [
-      { "home": "Hamburg", "away": "Mainz", "date": "2026-09-06" },
-      { "home": "Eintracht Frankfurt", "away": "Augsburg", "date": "2026-09-06" },
       { "home": "Union Berlin", "away": "Schalke", "date": "2026-09-11" },
       { "home": "Dortmund", "away": "Paderborn", "date": "2026-09-12" },
       { "home": "Mainz", "away": "Eintracht Frankfurt", "date": "2026-09-12" },
@@ -499,10 +492,6 @@ const leaguesData = {
       { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
     ],
     "fixtures": [
-      { "home": "Parma", "away": "Monza", "date": "2026-09-06" },
-      { "home": "Frosinone", "away": "Venezia", "date": "2026-09-06" },
-      { "home": "Bologna", "away": "Sassuolo", "date": "2026-09-06" },
-      { "home": "Juventus", "away": "Milan", "date": "2026-09-06" },
       { "home": "Cagliari", "away": "Lecce", "date": "2026-09-07" },
       { "home": "Udinese", "away": "Lazio", "date": "2026-09-07" },
       { "home": "Venezia", "away": "Fiorentina", "date": "2026-09-11" },
@@ -548,9 +537,6 @@ const leaguesData = {
       { "rank": 18, "team": "Metz", "MP": 34, "MW": 3, "MD": 8, "ML": 23, "GF": 32, "GA": 76, "logo": "france/metz.png" }
     ],
     "fixtures": [
-      { "home": "Troyes", "away": "Strasbourg", "date": "2026-09-06" },
-      { "home": "Angers", "away": "Rennes", "date": "2026-09-06" },
-      { "home": "Marseille", "away": "Paris FC", "date": "2026-09-06" },
       { "home": "Rennes", "away": "Marseille", "date": "2026-09-11" },
       { "home": "Strasbourg", "away": "Monaco", "date": "2026-09-12" },
       { "home": "Le Havre", "away": "Angers", "date": "2026-09-12" },
@@ -595,10 +581,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "Groningen", "away": "Twente", "date": "2026-09-06" },
-      { "home": "Telstar", "away": "Cambuur", "date": "2026-09-06" },
-      { "home": "Heerenveen", "away": "AZ Alkmaar", "date": "2026-09-06" },
-      { "home": "Den Haag", "away": "Fortuna Sittard", "date": "2026-09-06" },
       { "home": "NEC", "away": "Excelsior", "date": "2026-09-08" },
       { "home": "Twente", "away": "Telstar", "date": "2026-09-09" },
       { "home": "AZ Alkmaar", "away": "Willem II", "date": "2026-09-11" },
@@ -643,9 +625,6 @@ const leaguesData = {
       { "rank": 18, "team": "AVS", "MP": 34, "MW": 3, "MD": 12, "ML": 19, "GF": 27, "GA": 67, "logo": "portugal/avs.png" }
     ],
     "fixtures": [
-      { "home": "Santa Clara", "away": "Rio Ave", "date": "2026-09-06" },
-      { "home": "Vitória SC", "away": "Casa Pia", "date": "2026-09-06" },
-      { "home": "Gil Vicente", "away": "Académico de Viseu FC", "date": "2026-09-06" },
       { "home": "Estoril", "away": "Arouca", "date": "2026-09-07" },
       { "home": "Moreirense", "away": "Benfica", "date": "2026-09-09" },
       { "home": "Estrela Amadora", "away": "Braga", "date": "2026-09-10" },
@@ -689,10 +668,6 @@ const leaguesData = {
       { "rank": 16, "team": "Dender", "MP": 30, "MW": 3, "MD": 10, "ML": 17, "GF": 24, "GA": 51, "logo": "belgium/dender.png" }
     ],
     "fixtures": [
-      { "home": "Cercle Brugge", "away": "Gent", "date": "2026-09-06" },
-      { "home": "Kortrijk", "away": "Zulte Waregem", "date": "2026-09-06" },
-      { "home": "Anderlecht", "away": "Genk", "date": "2026-09-06" },
-      { "home": "Beveren", "away": "OH Leuven", "date": "2026-09-06" },
       { "home": "Mechelen", "away": "Anderlecht", "date": "2026-09-11" },
       { "home": "Beveren", "away": "STVV", "date": "2026-09-12" },
       { "home": "Westerlo", "away": "Standard", "date": "2026-09-12" },
@@ -732,10 +707,6 @@ const leaguesData = {
         { rank: 16, team: "Halmstad", MP: 19, MW: 2, MD: 5, ML: 12, GF: 13, GA: 35, logo: "sweden/halmstad.png" }
     ],
     fixtures: [
-        // ===== MATCHDAY 20 CONTINUED =====
-        { home: "Västerås", away: "Sirius", date: "2026-09-06 14:00" },
-        { home: "ÖIS", away: "Hammarby", date: "2026-09-06 16:30" },
-        
         // ===== MATCHDAY 21 =====
         { home: "IF Brommapojkarna", away: "IF Elfsborg", date: "2026-09-07 19:00" },
         { home: "Malmö", away: "AIK", date: "2026-09-07 19:00" },
@@ -757,99 +728,127 @@ const leaguesData = {
     //  ENGLISH CHAMPIONSHIP
     // ============================================================
 "English Championship": {
-  "id": "championship",
-  "logo": "england/championship.png",
-  "isBasketball": false,
-  "season": "2026-27",
-  "teams": [
-    { "rank": 1, "team": "Coventry", "MP": 46, "MW": 28, "MD": 11, "ML": 7, "GF": 97, "GA": 45, "logo": "england/coventry.png" },
-    { "rank": 2, "team": "Ipswich Town", "MP": 46, "MW": 23, "MD": 15, "ML": 8, "GF": 80, "GA": 47, "logo": "england/ipswich.png" },
-    { "rank": 3, "team": "Millwall", "MP": 46, "MW": 24, "MD": 11, "ML": 11, "GF": 64, "GA": 49, "logo": "england/millwall.png" },
-    { "rank": 4, "team": "Southampton", "MP": 46, "MW": 22, "MD": 14, "ML": 10, "GF": 82, "GA": 56, "logo": "england/southampton.png" },
-    { "rank": 5, "team": "Middlesbrough", "MP": 46, "MW": 22, "MD": 14, "ML": 10, "GF": 72, "GA": 47, "logo": "england/middlesbrough.png" },
-    { "rank": 6, "team": "Hull", "MP": 46, "MW": 21, "MD": 10, "ML": 15, "GF": 70, "GA": 66, "logo": "england/hull.png" },
-    { "rank": 7, "team": "Wrexham", "MP": 46, "MW": 19, "MD": 14, "ML": 13, "GF": 69, "GA": 65, "logo": "england/wrexham.png" },
-    { "rank": 8, "team": "Derby County", "MP": 46, "MW": 20, "MD": 9, "ML": 17, "GF": 67, "GA": 59, "logo": "england/derby.png" },
-    { "rank": 9, "team": "Norwich City", "MP": 46, "MW": 19, "MD": 8, "ML": 19, "GF": 63, "GA": 56, "logo": "england/norwich.png" },
-    { "rank": 10, "team": "Birmingham", "MP": 46, "MW": 17, "MD": 13, "ML": 16, "GF": 57, "GA": 56, "logo": "england/birmingham.png" },
-    { "rank": 11, "team": "Swansea", "MP": 46, "MW": 18, "MD": 10, "ML": 18, "GF": 57, "GA": 59, "logo": "england/swansea.png" },
-    { "rank": 12, "team": "Bristol City", "MP": 46, "MW": 17, "MD": 11, "ML": 18, "GF": 59, "GA": 59, "logo": "england/bristol.png" },
-    { "rank": 13, "team": "Sheffield United", "MP": 46, "MW": 18, "MD": 6, "ML": 22, "GF": 66, "GA": 66, "logo": "england/sheffieldutd.png" },
-    { "rank": 14, "team": "Preston", "MP": 46, "MW": 15, "MD": 15, "ML": 16, "GF": 55, "GA": 62, "logo": "england/preston.png" },
-    { "rank": 15, "team": "QPR", "MP": 46, "MW": 16, "MD": 10, "ML": 20, "GF": 61, "GA": 73, "logo": "england/qpr.png" },
-    { "rank": 16, "team": "Watford", "MP": 46, "MW": 14, "MD": 15, "ML": 17, "GF": 53, "GA": 65, "logo": "england/watford.png" },
-    { "rank": 17, "team": "Stoke City", "MP": 46, "MW": 15, "MD": 10, "ML": 21, "GF": 51, "GA": 56, "logo": "england/stoke.png" },
-    { "rank": 18, "team": "Portsmouth", "MP": 46, "MW": 14, "MD": 13, "ML": 19, "GF": 49, "GA": 64, "logo": "england/portsmouth.png" },
-    { "rank": 19, "team": "Charlton", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 44, "GA": 58, "logo": "england/charlton.png" },
-    { "rank": 20, "team": "Blackburn Rovers", "MP": 46, "MW": 13, "MD": 13, "ML": 20, "GF": 42, "GA": 56, "logo": "england/blackburn.png" },
-    { "rank": 21, "team": "West Brom", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 48, "GA": 58, "logo": "england/westbrom.png" },
-    { "rank": 22, "team": "Oxford Utd", "MP": 46, "MW": 11, "MD": 14, "ML": 21, "GF": 45, "GA": 59, "logo": "england/oxford.png" },
-    { "rank": 23, "team": "Leicester City", "MP": 46, "MW": 12, "MD": 16, "ML": 18, "GF": 58, "GA": 68, "logo": "england/leicester.png" },
-    { "rank": 24, "team": "Sheffield Wednesday", "MP": 46, "MW": 2, "MD": 12, "ML": 32, "GF": 29, "GA": 89, "logo": "england/sheffieldwed.png" },
-    { "rank": 25, "team": "Wolves", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/wolves.png" },
-    { "rank": 26, "team": "Burnley", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/burnley.png" },
-    { "rank": 27, "team": "West Ham", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/westham.png" },
-    { "rank": 28, "team": "Bolton", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/bolton.png" },
-    { "rank": 29, "team": "Lincoln City", "MP": 0, "MW": 0, "MD": 0, "ML": 0, "GF": 0, "GA": 0, "logo": "england/lincoln.png" }
-  ],
-  "fixtures": [
-
-    { "home": "Birmingham", "away": "Wolves", "date": "2026-09-06" }
-  ]
-},
+    "id": "english-championship",
+    "logo": "england/championship.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Burnley", "MP": 46, "MW": 29, "MD": 12, "ML": 5, "GF": 87, "GA": 39, "logo": "england/burnley.png" },
+      { "rank": 2, "team": "Sheffield United", "MP": 46, "MW": 28, "MD": 9, "ML": 9, "GF": 78, "GA": 42, "logo": "england/sheffieldutd.png" },
+      { "rank": 3, "team": "West Brom", "MP": 46, "MW": 25, "MD": 12, "ML": 9, "GF": 72, "GA": 45, "logo": "england/westbrom.png" },
+      { "rank": 4, "team": "Southampton", "MP": 46, "MW": 24, "MD": 13, "ML": 9, "GF": 81, "GA": 50, "logo": "england/southampton.png" },
+      { "rank": 5, "team": "Norwich City", "MP": 46, "MW": 23, "MD": 11, "ML": 12, "GF": 76, "GA": 52, "logo": "england/norwich.png" },
+      { "rank": 6, "team": "Wolves", "MP": 46, "MW": 21, "MD": 13, "ML": 12, "GF": 68, "GA": 48, "logo": "england/wolves.png" },
+      { "rank": 7, "team": "Birmingham", "MP": 46, "MW": 20, "MD": 14, "ML": 12, "GF": 63, "GA": 55, "logo": "england/birmingham.png" },
+      { "rank": 8, "team": "Middlesbrough", "MP": 46, "MW": 19, "MD": 12, "ML": 15, "GF": 58, "GA": 53, "logo": "england/middlesbrough.png" },
+      { "rank": 9, "team": "Blackburn Rovers", "MP": 46, "MW": 18, "MD": 13, "ML": 15, "GF": 62, "GA": 59, "logo": "england/blackburn.png" },
+      { "rank": 10, "team": "Watford", "MP": 46, "MW": 17, "MD": 14, "ML": 15, "GF": 55, "GA": 54, "logo": "england/watford.png" },
+      { "rank": 11, "team": "Stoke City", "MP": 46, "MW": 16, "MD": 16, "ML": 14, "GF": 51, "GA": 49, "logo": "england/stoke.png" },
+      { "rank": 12, "team": "West Ham", "MP": 46, "MW": 16, "MD": 14, "ML": 16, "GF": 60, "GA": 61, "logo": "england/westham.png" },
+      { "rank": 13, "team": "Swansea", "MP": 46, "MW": 15, "MD": 15, "ML": 16, "GF": 54, "GA": 57, "logo": "england/swansea.png" },
+      { "rank": 14, "team": "Bristol City", "MP": 46, "MW": 14, "MD": 17, "ML": 15, "GF": 48, "GA": 52, "logo": "england/bristolcity.png" },
+      { "rank": 15, "team": "Derby County", "MP": 46, "MW": 14, "MD": 14, "ML": 18, "GF": 50, "GA": 57, "logo": "england/derby.png" },
+      { "rank": 16, "team": "Cardiff City", "MP": 46, "MW": 13, "MD": 16, "ML": 17, "GF": 47, "GA": 55, "logo": "england/cardiff.png" },
+      { "rank": 17, "team": "Bolton", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 52, "GA": 62, "logo": "england/bolton.png" },
+      { "rank": 18, "team": "Preston", "MP": 46, "MW": 12, "MD": 15, "ML": 19, "GF": 44, "GA": 58, "logo": "england/preston.png" },
+      { "rank": 19, "team": "QPR", "MP": 46, "MW": 11, "MD": 15, "ML": 20, "GF": 46, "GA": 61, "logo": "england/qpr.png" },
+      { "rank": 20, "team": "Charlton", "MP": 46, "MW": 10, "MD": 16, "ML": 20, "GF": 43, "GA": 60, "logo": "england/charlton.png" },
+      { "rank": 21, "team": "Portsmouth", "MP": 46, "MW": 9, "MD": 17, "ML": 20, "GF": 40, "GA": 59, "logo": "england/portsmouth.png" },
+      { "rank": 22, "team": "Wrexham", "MP": 46, "MW": 9, "MD": 14, "ML": 23, "GF": 42, "GA": 68, "logo": "england/wrexham.png" },
+      { "rank": 23, "team": "Millwall", "MP": 46, "MW": 7, "MD": 16, "ML": 23, "GF": 35, "GA": 66, "logo": "england/millwall.png" },
+      { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
+    ],
+    "fixtures": [
+      { "home": "Blackburn Rovers", "away": "Sheffield United", "date": "2026-09-08" },
+      { "home": "Cardiff City", "away": "Stoke City", "date": "2026-09-08" },
+      { "home": "Southampton", "away": "Swansea", "date": "2026-09-08" },
+      { "home": "Wrexham", "away": "Burnley", "date": "2026-09-08" },
+      { "home": "Watford", "away": "Preston", "date": "2026-09-08" },
+      { "home": "Bolton", "away": "West Ham", "date": "2026-09-08" },
+      { "home": "Derby County", "away": "West Brom", "date": "2026-09-09" },
+      { "home": "Norwich City", "away": "Birmingham", "date": "2026-09-09" },
+      { "home": "Wolves", "away": "Portsmouth", "date": "2026-09-09" },
+      { "home": "Charlton", "away": "QPR", "date": "2026-09-09" },
+      { "home": "West Ham", "away": "Wrexham", "date": "2026-09-11" },
+      { "home": "Bolton", "away": "Cardiff City", "date": "2026-09-12" },
+      { "home": "Derby County", "away": "Birmingham", "date": "2026-09-12" },
+      { "home": "West Brom", "away": "QPR", "date": "2026-09-12" },
+      { "home": "Swansea", "away": "Burnley", "date": "2026-09-12" },
+      { "home": "Charlton", "away": "Portsmouth", "date": "2026-09-12" },
+      { "home": "Preston", "away": "Lincoln City", "date": "2026-09-12" },
+      { "home": "Watford", "away": "Stoke City", "date": "2026-09-12" },
+      { "home": "Blackburn Rovers", "away": "Millwall", "date": "2026-09-12" },
+      { "home": "Southampton", "away": "Bristol City", "date": "2026-09-12" },
+      { "home": "Middlesbrough", "away": "Norwich City", "date": "2026-09-12" },
+      { "home": "Sheffield United", "away": "Wolves", "date": "2026-09-13" },
+      { "home": "Middlesbrough", "away": "Millwall", "date": "2026-09-15" },
+      { "home": "Bristol City", "away": "Lincoln City", "date": "2026-09-15" }
+    ]
+  },
 
  // ============================================================
     //  ENGLISH LEAGUE ONE
     // ============================================================
   
 "English League One": {
-  "id": "league-one",
-  "logo": "england/leagueone.png",
-  "isBasketball": false,
-  "season": "2026-27",
-  "teams": [
-    { "rank": 1, "team": "Lincoln City", "MP": 46, "MW": 31, "MD": 10, "ML": 5, "GF": 89, "GA": 41, "logo": "england/lincoln.png" },
-    { "rank": 2, "team": "Cardiff City", "MP": 46, "MW": 27, "MD": 10, "ML": 9, "GF": 90, "GA": 50, "logo": "england/cardiff.png" },
-    { "rank": 3, "team": "Stockport", "MP": 46, "MW": 22, "MD": 11, "ML": 13, "GF": 71, "GA": 58, "logo": "england/stockport.png" },
-    { "rank": 4, "team": "Bradford City", "MP": 46, "MW": 22, "MD": 11, "ML": 13, "GF": 58, "GA": 51, "logo": "england/bradford.png" },
-    { "rank": 5, "team": "Bolton", "MP": 46, "MW": 19, "MD": 18, "ML": 9, "GF": 70, "GA": 52, "logo": "england/bolton.png" },
-    { "rank": 6, "team": "Stevenage", "MP": 46, "MW": 21, "MD": 12, "ML": 13, "GF": 49, "GA": 46, "logo": "england/stevenage.png" },
-    { "rank": 7, "team": "Luton Town", "MP": 46, "MW": 21, "MD": 11, "ML": 14, "GF": 68, "GA": 56, "logo": "england/luton.png" },
-    { "rank": 8, "team": "Plymouth", "MP": 46, "MW": 22, "MD": 7, "ML": 17, "GF": 75, "GA": 63, "logo": "england/plymouth.png" },
-    { "rank": 9, "team": "Huddersfield", "MP": 46, "MW": 18, "MD": 13, "ML": 15, "GF": 74, "GA": 64, "logo": "england/huddersfield.png" },
-    { "rank": 10, "team": "Mansfield Town", "MP": 46, "MW": 16, "MD": 17, "ML": 13, "GF": 62, "GA": 50, "logo": "england/mansfield.png" },
-    { "rank": 11, "team": "Wycombe", "MP": 46, "MW": 17, "MD": 12, "ML": 17, "GF": 69, "GA": 58, "logo": "england/wycombe.png" },
-    { "rank": 12, "team": "Reading", "MP": 46, "MW": 16, "MD": 15, "ML": 15, "GF": 64, "GA": 60, "logo": "england/reading.png" },
-    { "rank": 13, "team": "Blackpool", "MP": 46, "MW": 17, "MD": 9, "ML": 20, "GF": 54, "GA": 65, "logo": "england/blackpool.png" },
-    { "rank": 14, "team": "Doncaster", "MP": 46, "MW": 17, "MD": 9, "ML": 20, "GF": 50, "GA": 69, "logo": "england/doncaster.png" },
-    { "rank": 15, "team": "Barnsley", "MP": 46, "MW": 15, "MD": 14, "ML": 17, "GF": 68, "GA": 73, "logo": "england/barnsley.png" },
-    { "rank": 16, "team": "Wigan Athletic", "MP": 46, "MW": 14, "MD": 14, "ML": 18, "GF": 49, "GA": 58, "logo": "england/wigan.png" },
-    { "rank": 17, "team": "Burton", "MP": 46, "MW": 13, "MD": 15, "ML": 18, "GF": 50, "GA": 60, "logo": "england/burton.png" },
-    { "rank": 18, "team": "Peterborough", "MP": 46, "MW": 15, "MD": 8, "ML": 23, "GF": 64, "GA": 68, "logo": "england/peterborough.png" },
-    { "rank": 19, "team": "AFC Wimbledon", "MP": 46, "MW": 15, "MD": 8, "ML": 23, "GF": 51, "GA": 72, "logo": "england/afcwimbledon.png" },
-    { "rank": 20, "team": "Leyton Orient", "MP": 46, "MW": 14, "MD": 10, "ML": 22, "GF": 59, "GA": 71, "logo": "england/leytonorient.png" },
-    { "rank": 21, "team": "Exeter City", "MP": 46, "MW": 12, "MD": 13, "ML": 21, "GF": 52, "GA": 61, "logo": "england/exeter.png" },
-    { "rank": 22, "team": "Port Vale", "MP": 46, "MW": 10, "MD": 12, "ML": 24, "GF": 36, "GA": 61, "logo": "england/portvale.png" },
-    { "rank": 23, "team": "Rotherham", "MP": 46, "MW": 10, "MD": 11, "ML": 25, "GF": 41, "GA": 71, "logo": "england/rotherham.png" },
-    { "rank": 24, "team": "Northampton Town", "MP": 46, "MW": 9, "MD": 8, "ML": 29, "GF": 39, "GA": 74, "logo": "england/northampton.png" }
-  ],
-  "fixtures": [
-    { "home": "Bromley", "away": "AFC Wimbledon", "date": "2026-09-07" },
-    { "home": "Oxford Utd", "away": "Reading", "date": "2026-09-08" },
-    { "home": "Stevenage", "away": "Luton Town", "date": "2026-09-10" },
-    { "home": "Leyton Orient", "away": "Wycombe", "date": "2026-09-12" },
-    { "home": "Notts County", "away": "Bradford City", "date": "2026-09-12" },
-    { "home": "Sheffield Wednesday", "away": "Wigan Athletic", "date": "2026-09-12" },
-    { "home": "Stockport", "away": "Leicester City", "date": "2026-09-12" },
-    { "home": "Plymouth", "away": "Barnsley", "date": "2026-09-12" },
-    { "home": "Oxford Utd", "away": "Burton", "date": "2026-09-12" },
-    { "home": "Cambridge United", "away": "Reading", "date": "2026-09-12" },
-    { "home": "MK Dons", "away": "Peterborough", "date": "2026-09-12" },
-    { "home": "Blackpool", "away": "Bromley", "date": "2026-09-12" },
-    { "home": "Mansfield Town", "away": "Huddersfield", "date": "2026-09-12" },
-    { "home": "AFC Wimbledon", "away": "Doncaster", "date": "2026-09-12" }
-  ]
-},
+    "id": "english-league-one",
+    "logo": "england/leagueone.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Birmingham City", "MP": 46, "MW": 28, "MD": 12, "ML": 6, "GF": 82, "GA": 38, "logo": "england/birmingham.png" },
+      { "rank": 2, "team": "Bolton", "MP": 46, "MW": 27, "MD": 9, "ML": 10, "GF": 76, "GA": 45, "logo": "england/bolton.png" },
+      { "rank": 3, "team": "Peterborough", "MP": 46, "MW": 25, "MD": 12, "ML": 9, "GF": 89, "GA": 61, "logo": "england/peterborough.png" },
+      { "rank": 4, "team": "Barnsley", "MP": 46, "MW": 24, "MD": 10, "ML": 12, "GF": 80, "GA": 58, "logo": "england/barnsley.png" },
+      { "rank": 5, "team": "Oxford Utd", "MP": 46, "MW": 22, "MD": 11, "ML": 13, "GF": 79, "GA": 56, "logo": "england/oxford.png" },
+      { "rank": 6, "team": "Blackpool", "MP": 46, "MW": 21, "MD": 11, "ML": 14, "GF": 65, "GA": 48, "logo": "england/blackpool.png" },
+      { "rank": 7, "team": "Leyton Orient", "MP": 46, "MW": 18, "MD": 15, "ML": 13, "GF": 58, "GA": 50, "logo": "england/leytonorient.png" },
+      { "rank": 8, "team": "Reading", "MP": 46, "MW": 16, "MD": 16, "ML": 14, "GF": 62, "GA": 58, "logo": "england/reading.png" },
+      { "rank": 9, "team": "Leicester City", "MP": 46, "MW": 17, "MD": 12, "ML": 17, "GF": 63, "GA": 63, "logo": "england/leicester.png" },
+      { "rank": 10, "team": "Huddersfield", "MP": 46, "MW": 16, "MD": 14, "ML": 16, "GF": 57, "GA": 56, "logo": "england/huddersfield.png" },
+      { "rank": 11, "team": "Wycombe", "MP": 46, "MW": 16, "MD": 13, "ML": 17, "GF": 61, "GA": 65, "logo": "england/wycombe.png" },
+      { "rank": 12, "team": "Stockport", "MP": 46, "MW": 15, "MD": 14, "ML": 17, "GF": 55, "GA": 57, "logo": "england/stockport.png" },
+      { "rank": 13, "team": "Notts County", "MP": 46, "MW": 14, "MD": 13, "ML": 19, "GF": 49, "GA": 60, "logo": "england/nottscounty.png" },
+      { "rank": 14, "team": "Bradford City", "MP": 46, "MW": 13, "MD": 15, "ML": 18, "GF": 52, "GA": 63, "logo": "england/bradford.png" },
+      { "rank": 15, "team": "Luton Town", "MP": 46, "MW": 14, "MD": 12, "ML": 20, "GF": 55, "GA": 67, "logo": "england/luton.png" },
+      { "rank": 16, "team": "Sheffield Wednesday", "MP": 46, "MW": 13, "MD": 14, "ML": 19, "GF": 51, "GA": 63, "logo": "england/sheffieldwed.png" },
+      { "rank": 17, "team": "Plymouth", "MP": 46, "MW": 12, "MD": 14, "ML": 20, "GF": 48, "GA": 61, "logo": "england/plymouth.png" },
+      { "rank": 18, "team": "Mansfield Town", "MP": 46, "MW": 11, "MD": 16, "ML": 19, "GF": 47, "GA": 58, "logo": "england/mansfield.png" },
+      { "rank": 19, "team": "Burton", "MP": 46, "MW": 11, "MD": 15, "ML": 20, "GF": 44, "GA": 62, "logo": "england/burton.png" },
+      { "rank": 20, "team": "MK Dons", "MP": 46, "MW": 10, "MD": 17, "ML": 19, "GF": 46, "GA": 60, "logo": "england/mkdons.png" },
+      { "rank": 21, "team": "Stevenage", "MP": 46, "MW": 10, "MD": 15, "ML": 21, "GF": 42, "GA": 61, "logo": "england/stevenage.png" },
+      { "rank": 22, "team": "Wigan Athletic", "MP": 46, "MW": 10, "MD": 14, "ML": 22, "GF": 38, "GA": 62, "logo": "england/wigan.png" },
+      { "rank": 23, "team": "Cambridge United", "MP": 46, "MW": 9, "MD": 14, "ML": 23, "GF": 41, "GA": 71, "logo": "england/cambridge.png" },
+      { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
+    ],
+    "fixtures": [
+      { "home": "Bromley", "away": "AFC Wimbledon", "date": "2026-09-09" },
+      { "home": "Stevenage", "away": "Luton Town", "date": "2026-09-10" },
+      { "home": "Leyton Orient", "away": "Wycombe", "date": "2026-09-12" },
+      { "home": "Notts County", "away": "Bradford City", "date": "2026-09-12" },
+      { "home": "Sheffield Wednesday", "away": "Wigan Athletic", "date": "2026-09-12" },
+      { "home": "Stockport", "away": "Leicester City", "date": "2026-09-12" },
+      { "home": "Plymouth", "away": "Barnsley", "date": "2026-09-12" },
+      { "home": "Oxford Utd", "away": "Burton", "date": "2026-09-12" },
+      { "home": "Cambridge United", "away": "Reading", "date": "2026-09-12" },
+      { "home": "MK Dons", "away": "Peterborough", "date": "2026-09-12" },
+      { "home": "Blackpool", "away": "Bromley", "date": "2026-09-12" },
+      { "home": "Mansfield Town", "away": "Huddersfield", "date": "2026-09-12" },
+      { "home": "AFC Wimbledon", "away": "Doncaster", "date": "2026-09-12" },
+      { "home": "AFC Wimbledon", "away": "MK Dons", "date": "2026-09-17" },
+      { "home": "Burton", "away": "Mansfield Town", "date": "2026-09-19" },
+      { "home": "Barnsley", "away": "Leicester City", "date": "2026-09-19" },
+      { "home": "Leyton Orient", "away": "Stevenage", "date": "2026-09-19" },
+      { "home": "Luton Town", "away": "Bradford City", "date": "2026-09-19" },
+      { "home": "Blackpool", "away": "Plymouth", "date": "2026-09-19" },
+      { "home": "Wigan Athletic", "away": "Wycombe", "date": "2026-09-19" },
+      { "home": "Bromley", "away": "Huddersfield", "date": "2026-09-19" },
+      { "home": "Sheffield Wednesday", "away": "Stockport", "date": "2026-09-19" },
+      { "home": "Reading", "away": "Notts County", "date": "2026-09-19" },
+      { "home": "Oxford Utd", "away": "Cambridge United", "date": "2026-09-19" },
+      { "home": "Peterborough", "away": "Doncaster", "date": "2026-09-19" }
+    ]
+  },
 
 
   // ============================================================
@@ -943,12 +942,6 @@ const leaguesData = {
         { rank: 22, team: "Real Zaragoza", MP: 42, MW: 8, MD: 12, ML: 22, GF: 35, GA: 59, logo: "spain/zaragoza.png" }
     ],
     fixtures: [
-        // ===== SUNDAY MATCHES =====
-        { home: "Eibar", away: "Granada", date: "2026-09-06 14:00" },
-        { home: "Real Oviedo", away: "Burgos", date: "2026-09-06 16:15" },
-        { home: "Castellón", away: "Albacete", date: "2026-09-06 18:30" },
-        { home: "Almería", away: "Cádiz", date: "2026-09-06 21:00" },
-        
         // ===== MONDAY MATCH =====
         { home: "Sabadell", away: "Córdoba", date: "2026-09-07 20:30" },
         
@@ -999,11 +992,6 @@ const leaguesData = {
         { rank: 20, team: "Pescara", MP: 38, MW: 7, MD: 14, ML: 17, GF: 51, GA: 66, logo: "italy/pescara.png" }
     ],
     fixtures: [
-        { home: "Cesena", away: "Mantova", date: "2026-09-06 15:00" },
-        { home: "Juve Stabia", away: "Pisa", date: "2026-09-06 15:00" },
-        { home: "Entella", away: "LR Vicenza", date: "2026-09-06 15:00" },
-        { home: "Modena", away: "Avellino", date: "2026-09-06 15:00" },
-        { home: "Verona", away: "Arezzo", date: "2026-09-06 17:15" },
         { home: "Cremonese", away: "Padova", date: "2026-09-06 19:30" },
         
         // ===== MONDAY MATCH =====
@@ -1121,21 +1109,6 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 22, "MW": 4, "MD": 3, "ML": 15, "GF": 20, "GA": 54, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
-      { "home": "New York City", "away": "Nashville", "date": "2026-09-06" },
-      { "home": "Toronto", "away": "Chicago", "date": "2026-09-06" },
-      { "home": "Columbus", "away": "Colorado", "date": "2026-09-06" },
-      { "home": "Orlando City", "away": "San Diego", "date": "2026-09-06" },
-      { "home": "Philadelphia", "away": "Montréal", "date": "2026-09-06" },
-      { "home": "Charlotte", "away": "Houston Dynamo", "date": "2026-09-06" },
-      { "home": "Inter Miami", "away": "Atlanta United", "date": "2026-09-06" },
-      { "home": "Cincinnati", "away": "D.C. United", "date": "2026-09-06" },
-      { "home": "Seattle Sounders", "away": "NY Red Bulls", "date": "2026-09-06" },
-      { "home": "Dallas", "away": "Sporting KC", "date": "2026-09-06" },
-      { "home": "Austin", "away": "San Jose", "date": "2026-09-06" },
-      { "home": "Salt Lake", "away": "LAFC", "date": "2026-09-06" },
-      { "home": "LA Galaxy", "away": "New England", "date": "2026-09-06" },
-      { "home": "Portland", "away": "Minnesota", "date": "2026-09-06" },
-      { "home": "Vancouver", "away": "St. Louis", "date": "2026-09-06" },
       { "home": "Montréal", "away": "Charlotte", "date": "2026-09-10" },
       { "home": "D.C. United", "away": "Columbus", "date": "2026-09-10" },
       { "home": "Atlanta United", "away": "Orlando City", "date": "2026-09-10" },
@@ -1172,99 +1145,120 @@ const leaguesData = {
     //  ARGENTINA
     // ============================================================
 
-    "Argentine Liga Professional": {
-        id: "argentine-liga-professional",
-        logo: "argentina/ligaprofessional.png",
-        isBasketball: false,
-        season: "2026",
-        teams: [
-            { rank: 1, team: "Estudiantes", MP: 16, MW: 9, MD: 4, ML: 3, GF: 19, GA: 7, logo: "argentina/estudiantes.png" },
-            { rank: 2, team: "Boca", MP: 16, MW: 8, MD: 6, ML: 2, GF: 22, GA: 9, logo: "argentina/boca.png" },
-            { rank: 3, team: "Vélez Sársfield", MP: 16, MW: 7, MD: 7, ML: 2, GF: 18, GA: 12, logo: "argentina/velez.png" },
-            { rank: 4, team: "Talleres", MP: 16, MW: 7, MD: 5, ML: 4, GF: 17, GA: 13, logo: "argentina/talleres.png" },
-            { rank: 5, team: "Independiente", MP: 16, MW: 6, MD: 6, ML: 4, GF: 24, GA: 20, logo: "argentina/independiente.png" },
-            { rank: 6, team: "Lanús", MP: 16, MW: 6, MD: 6, ML: 4, GF: 18, GA: 15, logo: "argentina/lanus.png" },
-            { rank: 7, team: "San Lorenzo", MP: 16, MW: 5, MD: 7, ML: 4, GF: 14, GA: 14, logo: "argentina/sanlorenzo.png" },
-            { rank: 8, team: "Unión", MP: 16, MW: 5, MD: 6, ML: 5, GF: 24, GA: 20, logo: "argentina/union.png" },
-            { rank: 9, team: "Instituto", MP: 16, MW: 6, MD: 3, ML: 7, GF: 17, GA: 17, logo: "argentina/instituto.png" },
-            { rank: 10, team: "Defensa y Justicia", MP: 16, MW: 4, MD: 7, ML: 5, GF: 18, GA: 21, logo: "argentina/defensayjusticia.png" },
-            { rank: 11, team: "Gimnasia y Esgirma", MP: 16, MW: 5, MD: 4, ML: 7, GF: 14, GA: 22, logo: "argentina/gimnasiaesgirma.png" },
-            { rank: 12, team: "Platense", MP: 16, MW: 3, MD: 7, ML: 6, GF: 10, GA: 15, logo: "argentina/platense.png" },
-            { rank: 13, team: "Central Córdoba", MP: 16, MW: 4, MD: 4, ML: 8, GF: 11, GA: 21, logo: "argentina/centralcordoba.png" },
-            { rank: 14, team: "Newell's", MP: 16, MW: 3, MD: 6, ML: 7, GF: 15, GA: 27, logo: "argentina/newells.png" },
-            { rank: 15, team: "Deportivo Riestra", MP: 16, MW: 1, MD: 8, ML: 7, GF: 5, GA: 12, logo: "argentina/deportivoriestra.png" },
-            { rank: 16, team: "Independiente Rivadavia", MP: 16, MW: 10, MD: 4, ML: 2, GF: 29, GA: 15, logo: "argentina/independienterivadavia.png" },
-            { rank: 17, team: "River Plate", MP: 16, MW: 9, MD: 2, ML: 5, GF: 22, GA: 12, logo: "argentina/riverplate.png" },
-            { rank: 18, team: "Argentinos Juniors", MP: 16, MW: 8, MD: 5, ML: 3, GF: 17, GA: 13, logo: "argentina/argentinosjuniors.png" },
-            { rank: 19, team: "Central", MP: 16, MW: 8, MD: 4, ML: 4, GF: 20, GA: 16, logo: "argentina/central.png" },
-            { rank: 20, team: "Belgrano", MP: 16, MW: 7, MD: 5, ML: 4, GF: 17, GA: 13, logo: "argentina/belgrano.png" },
-            { rank: 21, team: "Gimnasia LP", MP: 16, MW: 8, MD: 2, ML: 6, GF: 19, GA: 19, logo: "argentina/gimnasialp.png" },
-            { rank: 22, team: "Huracán", MP: 16, MW: 5, MD: 7, ML: 4, GF: 17, GA: 13, logo: "argentina/huracan.png" },
-            { rank: 23, team: "Racing Club", MP: 16, MW: 5, MD: 6, ML: 5, GF: 17, GA: 15, logo: "argentina/racingclub.png" },
-            { rank: 24, team: "Barracas Central", MP: 16, MW: 5, MD: 6, ML: 5, GF: 15, GA: 15, logo: "argentina/barracascentral.png" },
-            { rank: 25, team: "Tigre", MP: 16, MW: 4, MD: 8, ML: 4, GF: 18, GA: 15, logo: "argentina/tigre.png" },
-            { rank: 26, team: "Sarmiento", MP: 16, MW: 6, MD: 1, ML: 9, GF: 13, GA: 20, logo: "argentina/sarmiento.png" },
-            { rank: 27, team: "Banfield", MP: 16, MW: 5, MD: 3, ML: 8, GF: 17, GA: 19, logo: "argentina/banfield.png" },
-            { rank: 28, team: "Atlético Tucumán", MP: 16, MW: 3, MD: 5, ML: 8, GF: 15, GA: 20, logo: "argentina/atleticotucuman.png" },
-            { rank: 29, team: "Aldosivi", MP: 16, MW: 0, MD: 8, ML: 8, GF: 6, GA: 19, logo: "argentina/aldosivi.png" },
-            { rank: 30, team: "Estudiantes de Río Cuarto", MP: 16, MW: 1, MD: 2, ML: 13, GF: 5, GA: 24, logo: "argentina/estudiantesriocuarto.png" }
-        ],
-       fixtures: [
-  { "home": "San Lorenzo", "away": "Talleres", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Gimnasia LP", "away": "Tigre", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Belgrano", "away": "Huracán", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Unión", "away": "Instituto", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "River Plate", "away": "Independiente Rivadavia", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Platense", "away": "Deportivo Riestra", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Vélez Sársfield", "away": "Estudiantes", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Gimnasia y Esgirma", "away": "Boca", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Central", "away": "Newell's", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Central Córdoba", "away": "Independiente", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Racing Club", "away": "Atlético Tucumán", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Barracas Central", "away": "Argentinos Juniors", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Aldosivi", "away": "Banfield", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Estudiantes de Río Cuarto", "away": "Sarmiento", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Lanús", "away": "Defensa y Justicia", "home_score": null, "away_score": null, "date": "2026-09-06" }
-]
-    },
-
-    "Argentina Primera B Metropolitana": {
-        id: "argentina-primera-b-metropolitana",
-        logo: "argentina/primera b metropolitana.png",
-        isBasketball: false,
-        season: "2026",
-        teams: [
-            { rank: 1, team: "Excursionistas", MP: 33, MW: 18, MD: 8, ML: 7, GF: 49, GA: 27, logo: "argentina/excursionistas.png" },
-            { rank: 2, team: "Arsenal Sarandi", MP: 33, MW: 16, MD: 12, ML: 5, GF: 44, GA: 22, logo: "argentina/arsenalsarandi.png" },
-            { rank: 3, team: "Deportivo Camioneros", MP: 33, MW: 16, MD: 12, ML: 5, GF: 39, GA: 20, logo: "argentina/deportivocamioneros.png" },
-            { rank: 4, team: "Talleres Remedios", MP: 33, MW: 17, MD: 9, ML: 7, GF: 35, GA: 17, logo: "argentina/talleresremedios.png" },
-            { rank: 5, team: "Dálmine", MP: 32, MW: 16, MD: 11, ML: 5, GF: 35, GA: 16, logo: "argentina/dalmine.png" },
-            { rank: 6, team: "Sportivo Italiano", MP: 33, MW: 15, MD: 10, ML: 8, GF: 38, GA: 25, logo: "argentina/sportivoitaliano.png" },
-            { rank: 7, team: "Real Pilar", MP: 33, MW: 14, MD: 10, ML: 9, GF: 37, GA: 32, logo: "argentina/realpilar.png" },
-            { rank: 8, team: "Laferrere", MP: 33, MW: 12, MD: 10, ML: 11, GF: 39, GA: 42, logo: "argentina/laferrere.png" },
-            { rank: 9, team: "Dep. Armenio", MP: 32, MW: 12, MD: 8, ML: 12, GF: 34, GA: 37, logo: "argentina/deparmenio.png" },
-            { rank: 10, team: "Dock Sud", MP: 33, MW: 10, MD: 13, ML: 10, GF: 38, GA: 34, logo: "argentina/docksud.png" },
-            { rank: 11, team: "Comunicaciones", MP: 32, MW: 11, MD: 10, ML: 11, GF: 32, GA: 31, logo: "argentina/comunicaciones.png" },
-            { rank: 12, team: "Argentino de Merlo", MP: 32, MW: 10, MD: 10, ML: 12, GF: 30, GA: 32, logo: "argentina/argentinomerlo.png" },
-            { rank: 13, team: "San Martín Burzaco", MP: 32, MW: 9, MD: 13, ML: 10, GF: 31, GA: 34, logo: "argentina/sanmartinburzaco.png" },
-            { rank: 14, team: "Deportivo Merlo", MP: 32, MW: 9, MD: 12, ML: 11, GF: 34, GA: 47, logo: "argentina/deportivomerlo.png" },
-            { rank: 15, team: "Villa San Carlos", MP: 32, MW: 9, MD: 11, ML: 12, GF: 34, GA: 37, logo: "argentina/villasantacarlos.png" },
-            { rank: 16, team: "Argentino Quilmes", MP: 33, MW: 8, MD: 13, ML: 12, GF: 28, GA: 35, logo: "argentina/argentin quilmes.png" },
-            { rank: 17, team: "Liniers", MP: 33, MW: 8, MD: 12, ML: 13, GF: 25, GA: 33, logo: "argentina/liniers.png" },
-            { rank: 18, team: "Defensores Unidos", MP: 33, MW: 7, MD: 12, ML: 14, GF: 28, GA: 36, logo: "argentina/defensoresunidos.png" },
-            { rank: 19, team: "Brown (A)", MP: 33, MW: 7, MD: 12, ML: 14, GF: 21, GA: 35, logo: "argentina/browna.png" },
-            { rank: 20, team: "Flandria", MP: 32, MW: 8, MD: 8, ML: 16, GF: 26, GA: 39, logo: "argentina/flandria.png" },
-            { rank: 21, team: "UAI Urquiza", MP: 33, MW: 3, MD: 19, ML: 11, GF: 15, GA: 29, logo: "argentina/uaiurquiza.png" },
-            { rank: 22, team: "Ituzaingó", MP: 33, MW: 1, MD: 11, ML: 21, GF: 19, GA: 51, logo: "argentina/ituzaingo.png" }
-        ],
-        fixtures: [
-            { home: "Villa San Carlos", away: "Brown (A)", date: "2026-09-06" },
-            { home: "Deportivo Camioneros", away: "Argentino Quilmes", date: "2026-09-06" },
-            { home: "San Martín Burzaco", away: "Dep. Armenio", date: "2026-09-06" },
-            { home: "Dálmine", away: "Arsenal Sarandi", date: "2026-09-06" },
-            { home: "Deportivo Merlo", away: "Defensores Unidos", date: "2026-09-06" }
-        ]
-    },
+   "Argentine Liga Profesional": {
+    "id": "argentine-primera-division",
+    "logo": "argentina/primera.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "River", "MP": 16, "MW": 12, "MD": 3, "ML": 1, "GF": 34, "GA": 10, "logo": "argentina/river.png" },
+      { "rank": 2, "team": "Racing Club", "MP": 16, "MW": 11, "MD": 4, "ML": 1, "GF": 30, "GA": 12, "logo": "argentina/racing.png" },
+      { "rank": 3, "team": "Boca", "MP": 16, "MW": 10, "MD": 4, "ML": 2, "GF": 28, "GA": 14, "logo": "argentina/boca.png" },
+      { "rank": 4, "team": "Independiente", "MP": 16, "MW": 9, "MD": 5, "ML": 2, "GF": 25, "GA": 13, "logo": "argentina/independiente.png" },
+      { "rank": 5, "team": "Huracán", "MP": 16, "MW": 8, "MD": 6, "ML": 2, "GF": 22, "GA": 11, "logo": "argentina/huracan.png" },
+      { "rank": 6, "team": "Talleres", "MP": 16, "MW": 8, "MD": 5, "ML": 3, "GF": 24, "GA": 16, "logo": "argentina/talleres.png" },
+      { "rank": 7, "team": "Vélez Sársfield", "MP": 16, "MW": 7, "MD": 7, "ML": 2, "GF": 20, "GA": 13, "logo": "argentina/velez.png" },
+      { "rank": 8, "team": "Unión", "MP": 16, "MW": 7, "MD": 5, "ML": 4, "GF": 19, "GA": 15, "logo": "argentina/union.png" },
+      { "rank": 9, "team": "Lanús", "MP": 16, "MW": 6, "MD": 7, "ML": 3, "GF": 21, "GA": 18, "logo": "argentina/lanus.png" },
+      { "rank": 10, "team": "Estudiantes", "MP": 16, "MW": 6, "MD": 6, "ML": 4, "GF": 18, "GA": 16, "logo": "argentina/estudiantes.png" },
+      { "rank": 11, "team": "Instituto", "MP": 16, "MW": 6, "MD": 5, "ML": 5, "GF": 17, "GA": 17, "logo": "argentina/instituto.png" },
+      { "rank": 12, "team": "Atlético Tucumán", "MP": 16, "MW": 5, "MD": 7, "ML": 4, "GF": 16, "GA": 15, "logo": "argentina/atleticotucuman.png" },
+      { "rank": 13, "team": "Belgrano", "MP": 16, "MW": 5, "MD": 6, "ML": 5, "GF": 18, "GA": 19, "logo": "argentina/belgrano.png" },
+      { "rank": 14, "team": "Central", "MP": 16, "MW": 5, "MD": 5, "ML": 6, "GF": 15, "GA": 17, "logo": "argentina/central.png" },
+      { "rank": 15, "team": "San Lorenzo", "MP": 16, "MW": 4, "MD": 7, "ML": 5, "GF": 14, "GA": 16, "logo": "argentina/sanlorenzo.png" },
+      { "rank": 16, "team": "Gimnasia LP", "MP": 16, "MW": 4, "MD": 6, "ML": 6, "GF": 16, "GA": 19, "logo": "argentina/gimnasia.png" },
+      { "rank": 17, "team": "Argentinos Juniors", "MP": 16, "MW": 4, "MD": 6, "ML": 6, "GF": 15, "GA": 18, "logo": "argentina/argentinos.png" },
+      { "rank": 18, "team": "Central Córdoba", "MP": 16, "MW": 4, "MD": 5, "ML": 7, "GF": 14, "GA": 19, "logo": "argentina/centralcordoba.png" },
+      { "rank": 19, "team": "Platense", "MP": 16, "MW": 3, "MD": 7, "ML": 6, "GF": 12, "GA": 17, "logo": "argentina/platense.png" },
+      { "rank": 20, "team": "Tigre", "MP": 16, "MW": 3, "MD": 6, "ML": 7, "GF": 13, "GA": 19, "logo": "argentina/tigre.png" },
+      { "rank": 21, "team": "Defensa y Justicia", "MP": 16, "MW": 3, "MD": 5, "ML": 8, "GF": 12, "GA": 20, "logo": "argentina/defensa.png" },
+      { "rank": 22, "team": "Independiente Rivadavia", "MP": 16, "MW": 3, "MD": 4, "ML": 9, "GF": 11, "GA": 22, "logo": "argentina/independienterivadavia.png" },
+      { "rank": 23, "team": "Gimnasia y Esgirma", "MP": 16, "MW": 2, "MD": 6, "ML": 8, "GF": 10, "GA": 20, "logo": "argentina/gimnasiaesgirma.png" },
+      { "rank": 24, "team": "Newell's", "MP": 16, "MW": 2, "MD": 5, "ML": 9, "GF": 9, "GA": 22, "logo": "argentina/newells.png" },
+      { "rank": 25, "team": "Barracas Central", "MP": 16, "MW": 2, "MD": 4, "ML": 10, "GF": 8, "GA": 24, "logo": "argentina/barracas.png" },
+      { "rank": 26, "team": "Sarmiento", "MP": 16, "MW": 1, "MD": 6, "ML": 9, "GF": 7, "GA": 21, "logo": "argentina/sarmiento.png" },
+      { "rank": 27, "team": "Aldosivi", "MP": 16, "MW": 1, "MD": 5, "ML": 10, "GF": 6, "GA": 23, "logo": "argentina/aldosivi.png" },
+      { "rank": 28, "team": "Banfield", "MP": 16, "MW": 1, "MD": 4, "ML": 11, "GF": 5, "GA": 25, "logo": "argentina/banfield.png" },
+      { "rank": 29, "team": "Deportivo Riestra", "MP": 16, "MW": 1, "MD": 3, "ML": 12, "GF": 4, "GA": 28, "logo": "argentina/riestra.png" },
+      { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
+    ],
+    "fixtures": [
+      { "home": "River", "away": "Independiente Rivadavia", "date": "2026-09-07" },
+      { "home": "Racing Club", "away": "Atlético Tucumán", "date": "2026-09-07" },
+      { "home": "Barracas Central", "away": "Argentinos Juniors", "date": "2026-09-08" },
+      { "home": "Unión", "away": "Instituto", "date": "2026-09-08" },
+      { "home": "Newell's", "away": "Vélez Sársfield", "date": "2026-09-11" },
+      { "home": "Defensa y Justicia", "away": "Gimnasia y Esgirma", "date": "2026-09-12" },
+      { "home": "Boca", "away": "Central Córdoba", "date": "2026-09-12" },
+      { "home": "Estudiantes", "away": "Platense", "date": "2026-09-12" },
+      { "home": "Independiente Rivadavia", "away": "Aldosivi", "date": "2026-09-12" },
+      { "home": "Atlético Tucumán", "away": "River", "date": "2026-09-12" },
+      { "home": "Talleres", "away": "Unión", "date": "2026-09-13" },
+      { "home": "Sarmiento", "away": "Belgrano", "date": "2026-09-13" },
+      { "home": "Tigre", "away": "Central", "date": "2026-09-13" },
+      { "home": "Argentinos Juniors", "away": "Gimnasia LP", "date": "2026-09-13" },
+      { "home": "Independiente", "away": "San Lorenzo", "date": "2026-09-14" },
+      { "home": "Huracán", "away": "Racing Club", "date": "2026-09-14" },
+      { "home": "Deportivo Riestra", "away": "Lanús", "date": "2026-09-15" },
+      { "home": "Banfield", "away": "Barracas Central", "date": "2026-09-15" },
+      { "home": "Instituto", "away": "Estudiantes de Río Cuarto", "date": "2026-09-15" }
+    ]
+  },
+    "Argentine Primera B Metropolitana": {
+    "id": "argentine-primera-b-metropolitana",
+    "logo": "argentina/primera-b.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Talleres Remedios", "MP": 34, "MW": 20, "MD": 9, "ML": 5, "GF": 58, "GA": 28, "logo": "argentina/talleresremedios.png" },
+      { "rank": 2, "team": "Dock Sud", "MP": 34, "MW": 19, "MD": 10, "ML": 5, "GF": 52, "GA": 25, "logo": "argentina/docksud.png" },
+      { "rank": 3, "team": "Argentino Quilmes", "MP": 34, "MW": 18, "MD": 11, "ML": 5, "GF": 49, "GA": 27, "logo": "argentina/argentin quilmes.png" },
+      { "rank": 4, "team": "Excursionistas", "MP": 34, "MW": 17, "MD": 10, "ML": 7, "GF": 47, "GA": 30, "logo": "argentina/excursionistas.png" },
+      { "rank": 5, "team": "Arsenal Sarandi", "MP": 34, "MW": 16, "MD": 12, "ML": 6, "GF": 44, "GA": 29, "logo": "argentina/arsenalsarandi.png" },
+      { "rank": 6, "team": "Comunicaciones", "MP": 34, "MW": 15, "MD": 13, "ML": 6, "GF": 43, "GA": 28, "logo": "argentina/comunicaciones.png" },
+      { "rank": 7, "team": "Flandria", "MP": 34, "MW": 14, "MD": 12, "ML": 8, "GF": 41, "GA": 32, "logo": "argentina/flandria.png" },
+      { "rank": 8, "team": "Dep. Armenio", "MP": 34, "MW": 13, "MD": 14, "ML": 7, "GF": 39, "GA": 31, "logo": "argentina/deparmenio.png" },
+      { "rank": 9, "team": "Defensores Unidos", "MP": 34, "MW": 13, "MD": 13, "ML": 8, "GF": 40, "GA": 33, "logo": "argentina/defensoresunidos.png" },
+      { "rank": 10, "team": "Sportivo Italiano", "MP": 34, "MW": 12, "MD": 14, "ML": 8, "GF": 37, "GA": 31, "logo": "argentina/sportivoitaliano.png" },
+      { "rank": 11, "team": "Deportivo Camioneros", "MP": 34, "MW": 11, "MD": 13, "ML": 10, "GF": 35, "GA": 34, "logo": "argentina/deportivocamioneros.png" },
+      { "rank": 12, "team": "Villa San Carlos", "MP": 34, "MW": 10, "MD": 14, "ML": 10, "GF": 33, "GA": 33, "logo": "argentina/villasantacarlos.png" },
+      { "rank": 13, "team": "Brown (A)", "MP": 34, "MW": 10, "MD": 13, "ML": 11, "GF": 32, "GA": 35, "logo": "argentina/brown.png" },
+      { "rank": 14, "team": "Ituzaingó", "MP": 34, "MW": 9, "MD": 14, "ML": 11, "GF": 31, "GA": 34, "logo": "argentina/ituzaingo.png" },
+      { "rank": 15, "team": "Argentino de Merlo", "MP": 34, "MW": 9, "MD": 12, "ML": 13, "GF": 30, "GA": 36, "logo": "argentina/argentinomerlo.png" },
+      { "rank": 16, "team": "UAI Urquiza", "MP": 34, "MW": 8, "MD": 14, "ML": 12, "GF": 29, "GA": 35, "logo": "argentina/uaiurquiza.png" },
+      { "rank": 17, "team": "Laferrere", "MP": 34, "MW": 8, "MD": 13, "ML": 13, "GF": 28, "GA": 37, "logo": "argentina/laferrere.png" },
+      { "rank": 18, "team": "San Martín Burzaco", "MP": 34, "MW": 7, "MD": 15, "ML": 12, "GF": 27, "GA": 36, "logo": "argentina/sanmartinburzaco.png" },
+      { "rank": 19, "team": "Deportivo Merlo", "MP": 34, "MW": 7, "MD": 14, "ML": 13, "GF": 26, "GA": 38, "logo": "argentina/deportivomerlo.png" },
+      { "rank": 20, "team": "Real Pilar", "MP": 34, "MW": 6, "MD": 14, "ML": 14, "GF": 25, "GA": 40, "logo": "argentina/realpilar.png" },
+      { "rank": 21, "team": "Liniers", "MP": 34, "MW": 5, "MD": 13, "ML": 16, "GF": 23, "GA": 44, "logo": "argentina/liniers.png" },
+      { "rank": 22, "team": "Dálmine", "MP": 34, "MW": 4, "MD": 14, "ML": 16, "GF": 21, "GA": 45, "logo": "argentina/dalmine.png" }
+    ],
+    "fixtures": [
+      { "home": "Excursionistas", "away": "Ituzaingó", "date": "2026-09-08" },
+      { "home": "Arsenal Sarandi", "away": "UAI Urquiza", "date": "2026-09-12" },
+      { "home": "Brown (A)", "away": "San Martín Burzaco", "date": "2026-09-12" },
+      { "home": "Excursionistas", "away": "Dálmine", "date": "2026-09-12" },
+      { "home": "Defensores Unidos", "away": "Dock Sud", "date": "2026-09-12" },
+      { "home": "Flandria", "away": "Deportivo Camioneros", "date": "2026-09-12" },
+      { "home": "Laferrere", "away": "Villa San Carlos", "date": "2026-09-12" },
+      { "home": "Argentino Quilmes", "away": "Deportivo Merlo", "date": "2026-09-12" },
+      { "home": "Argentino de Merlo", "away": "Real Pilar", "date": "2026-09-12" },
+      { "home": "Ituzaingó", "away": "Comunicaciones", "date": "2026-09-12" },
+      { "home": "Dep. Armenio", "away": "Sportivo Italiano", "date": "2026-09-12" },
+      { "home": "Talleres Remedios", "away": "Liniers", "date": "2026-09-12" },
+      { "home": "Liniers", "away": "Argentino de Merlo", "date": "2026-09-19" },
+      { "home": "Sportivo Italiano", "away": "Brown (A)", "date": "2026-09-19" },
+      { "home": "Comunicaciones", "away": "Defensores Unidos", "date": "2026-09-19" },
+      { "home": "UAI Urquiza", "away": "Excursionistas", "date": "2026-09-19" },
+      { "home": "Dock Sud", "away": "Argentino Quilmes", "date": "2026-09-19" },
+      { "home": "Deportivo Merlo", "away": "Flandria", "date": "2026-09-19" },
+      { "home": "Real Pilar", "away": "Arsenal Sarandi", "date": "2026-09-19" },
+      { "home": "San Martín Burzaco", "away": "Laferrere", "date": "2026-09-19" },
+      { "home": "Dálmine", "away": "Ituzaingó", "date": "2026-09-19" },
+      { "home": "Deportivo Camioneros", "away": "Dep. Armenio", "date": "2026-09-19" },
+      { "home": "Villa San Carlos", "away": "Talleres Remedios", "date": "2026-09-19" }
+    ]
+  },
 
     // ============================================================
     //  BRAZIL
@@ -1298,13 +1292,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 24, "MW": 2, "MD": 8, "ML": 14, "GF": 25, "GA": 49, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Fluminense", "away": "Vasco", "date": "2026-09-06" },
-      { "home": "Coritiba", "away": "Mirassol", "date": "2026-09-06" },
-      { "home": "Cruzeiro", "away": "Athletico-PR", "date": "2026-09-06" },
-      { "home": "Remo", "away": "Flamengo", "date": "2026-09-06" },
-      { "home": "Internacional", "away": "Santos", "date": "2026-09-06" },
-      { "home": "Botafogo", "away": "Palmeiras", "date": "2026-09-06" },
-      { "home": "Corinthians", "away": "Chapecoense", "date": "2026-09-06" },
       { "home": "Vitória", "away": "Grêmio", "date": "2026-09-08" },
       { "home": "Atlético Mineiro", "away": "Fluminense", "date": "2026-09-13" },
       { "home": "Palmeiras", "away": "São Paulo", "date": "2026-09-13" },
@@ -1347,11 +1334,6 @@ const leaguesData = {
       { "rank": 16, "team": "D. Concepcion", "MP": 25, "MW": 3, "MD": 6, "ML": 16, "GF": 19, "GA": 43, "logo": "chile/dconcepcion.png" }
     ],
     "fixtures": [
-      { "home": "U. De Chile", "away": "Coquimbo", "date": "2026-09-06" },
-      { "home": "La Serena", "away": "Nublense", "date": "2026-09-06" },
-      { "home": "O'Higgins", "away": "Union La Calera", "date": "2026-09-06" },
-      { "home": "Huachipato", "away": "Colo Colo", "date": "2026-09-06" },
-      { "home": "Palestino", "away": "U. De Concepcion", "date": "2026-09-06" },
       { "home": "Limache", "away": "Cobresal", "date": "2026-09-08" },
       { "home": "Nublense", "away": "Everton", "date": "2026-09-12" },
       { "home": "Cobresal", "away": "Coquimbo", "date": "2026-09-12" },
@@ -1392,9 +1374,6 @@ const leaguesData = {
       { "rank": 16, "team": "Manta", "MP": 28, "MW": 5, "MD": 5, "ML": 18, "GF": 17, "GA": 41, "logo": "ecuador/manta.png" }
     ],
     "fixtures": [
-      { "home": "Delfín", "away": "U. Católica", "date": "2026-09-06" },
-      { "home": "Aucas", "away": "BSC", "date": "2026-09-06" },
-      { "home": "Deportivo Cuenca", "away": "Libertad Loja", "date": "2026-09-06" },
       { "home": "Emelec", "away": "Manta", "date": "2026-09-07" },
       { "home": "Orense", "away": "Guayaquil City", "date": "2026-09-07" },
       { "home": "Mushuc Runa", "away": "Leones", "date": "2026-09-07" },
@@ -1438,8 +1417,6 @@ const leaguesData = {
             { rank: 18, team: "Puebla", MP: 17, MW: 3, MD: 3, ML: 11, GF: 21, GA: 42, logo: "mexico/puebla.png" }
         ],
         fixtures: [
-  { "home": "Pumas UNAM", "away": "León", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Cruz Azul", "away": "Santos Laguna", "home_score": null, "away_score": null, "date": "2026-09-06" },
   { "home": "Necaxa", "away": "Puebla", "home_score": null, "away_score": null, "date": "2026-09-11" },
   { "home": "Atlante", "away": "Pachuca", "home_score": null, "away_score": null, "date": "2026-09-11" },
   { "home": "Club Tijuana", "away": "Querétaro", "home_score": null, "away_score": null, "date": "2026-09-11" },
@@ -1481,9 +1458,6 @@ const leaguesData = {
       { "rank": 16, "team": "Universitario de Vinto", "MP": 17, "MW": 4, "MD": 2, "ML": 11, "GF": 22, "GA": 35, "logo": "bolivia/universitariovinto.png" }
     ],
     "fixtures": [
-      { "home": "Oriente Petrolero", "away": "Always Ready", "date": "2026-09-06" },
-      { "home": "Independiente Petrolero", "away": "Bolívar", "date": "2026-09-06" },
-      { "home": "The Strongest", "away": "Real Tomayapo", "date": "2026-09-06" },
       { "home": "Nacional Potosí", "away": "Blooming", "date": "2026-09-07" },
       { "home": "SA Bulo Bulo", "away": "Aurora", "date": "2026-09-11" },
       { "home": "Real Potosí", "away": "Oriente Petrolero", "date": "2026-09-12" },
@@ -1528,10 +1502,6 @@ const leaguesData = {
             { rank: 20, team: "Deportivo Pereira", MP: 19, MW: 1, MD: 7, ML: 11, GF: 15, GA: 32, logo: "colombia/depor pereira.png" }
         ],
         fixtures: [
-  { "home": "Internacional de Bogotá", "away": "Rionegro Águilas", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Cúcuta Deportivo", "away": "Deportivo Pasto", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Deportivo Pereira", "away": "Millonarios", "home_score": null, "away_score": null, "date": "2026-09-06" },
-  { "home": "Santa Fe", "away": "Fortaleza FC", "home_score": null, "away_score": null, "date": "2026-09-06" },
   { "home": "Llaneros FC", "away": "Deportivo Cali", "home_score": null, "away_score": null, "date": "2026-09-07" },
   { "home": "Jaguares de Córdoba", "away": "Fortaleza FC", "home_score": null, "away_score": null, "date": "2026-09-11" },
   { "home": "Alianza", "away": "Junior", "home_score": null, "away_score": null, "date": "2026-09-11" },
@@ -1626,15 +1596,6 @@ const leaguesData = {
       { "rank": 20, "team": "Avispa Fukuoka", "MP": 18, "MW": 3, "MD": 8, "ML": 7, "GF": 17, "GA": 27, "logo": "japan/avispa.png" }
     ],
     "fixtures": [
-      { "home": "JEF United", "away": "Gamba Osaka", "date": "2026-09-06" },
-      { "home": "Okayama", "away": "Sanfrecce", "date": "2026-09-06" },
-      { "home": "Kashima Antlers", "away": "Urawa Reds", "date": "2026-09-06" },
-      { "home": "Nagoya", "away": "Machida Zelvia", "date": "2026-09-06" },
-      { "home": "Kawasaki", "away": "Shimizu S-Pulse", "date": "2026-09-06" },
-      { "home": "Cerezo Osaka", "away": "Tokyo Verdy", "date": "2026-09-06" },
-      { "home": "Vissel Kobe", "away": "V-Varen Nagasaki", "date": "2026-09-06" },
-      { "home": "Kashiwa Reysol", "away": "Yokohama FM", "date": "2026-09-06" },
-      { "home": "FC Tokyo", "away": "Kyoto Sanga", "date": "2026-09-06" },
       { "home": "Vissel Kobe", "away": "Kashima Antlers", "date": "2026-09-11" },
       { "home": "Kyoto Sanga", "away": "Kashiwa Reysol", "date": "2026-09-11" },
       { "home": "Mito HollyHock", "away": "Kawasaki", "date": "2026-09-12" },
@@ -1653,35 +1614,39 @@ const leaguesData = {
     // ============================================================
 
     "Chinese Super League": {
-        id: "chinese-super-league",
-        logo: "china/superleague.png",
-        isBasketball: false,
-        season: "2026",
-        teams: [
-            { rank: 1, team: "Chengdu Rongcheng", MP: 25, MW: 15, MD: 6, ML: 4, GF: 51, GA: 30, logo: "china/chengdu.png" },
-            { rank: 2, team: "Beijing Guoan", MP: 25, MW: 11, MD: 9, ML: 5, GF: 49, GA: 33, logo: "china/beijing.png" },
-            { rank: 3, team: "Qingdao Youth Island", MP: 25, MW: 8, MD: 13, ML: 4, GF: 29, GA: 30, logo: "china/qingdaoyouth.png" },
-            { rank: 4, team: "Dalian Yingbo", MP: 25, MW: 11, MD: 4, ML: 10, GF: 36, GA: 41, logo: "china/dalian.png" },
-            { rank: 5, team: "Shandong Taishan", MP: 25, MW: 13, MD: 3, ML: 9, GF: 45, GA: 42, logo: "china/shandong.png" },
-            { rank: 6, team: "Yunnan Yukun", MP: 25, MW: 10, MD: 5, ML: 10, GF: 49, GA: 51, logo: "china/yunnan.png" },
-            { rank: 7, team: "Shanghai Port", MP: 25, MW: 10, MD: 7, ML: 8, GF: 40, GA: 33, logo: "china/shanghaiport.png" },
-            { rank: 8, team: "Chongqing Tonglianglong", MP: 25, MW: 7, MD: 10, ML: 8, GF: 26, GA: 29, logo: "china/chongqing.png" },
-            { rank: 9, team: "Shanghai Shenhua", MP: 25, MW: 11, MD: 5, ML: 9, GF: 49, GA: 45, logo: "china/shanghaishenhua.png" },
-            { rank: 10, team: "Zhejiang", MP: 24, MW: 9, MD: 6, ML: 9, GF: 40, GA: 40, logo: "china/zhejiang.png" },
-            { rank: 11, team: "Shenzhen Peng City", MP: 25, MW: 8, MD: 3, ML: 14, GF: 33, GA: 44, logo: "china/shenzhen.png" },
-            { rank: 12, team: "Henan", MP: 24, MW: 8, MD: 7, ML: 9, GF: 32, GA: 34, logo: "china/henan.png" },
-            { rank: 13, team: "Shenyang Urban", MP: 24, MW: 7, MD: 4, ML: 13, GF: 34, GA: 41, logo: "china/shenyang.png" },
-            { rank: 14, team: "Tianjin Jinmen Tiger", MP: 24, MW: 7, MD: 8, ML: 9, GF: 33, GA: 31, logo: "china/tianjin.png" },
-            { rank: 15, team: "Wuhan Three Towns", MP: 23, MW: 5, MD: 9, ML: 9, GF: 35, GA: 39, logo: "china/wuhan.png" },
-            { rank: 16, team: "Qingdao Hainiu", MP: 25, MW: 6, MD: 3, ML: 16, GF: 33, GA: 51, logo: "china/qingdaohainiu.png" }
-        ],
-        fixtures: [
-            { home: "Chongqing Tonglianglong", away: "Shanghai Shenhua", date: "2026-09-06" },
-            { home: "Yunnan Yukun", away: "Shenyang Urban", date: "2026-09-06" },
-            { home: "Henan", away: "Chengdu Rongcheng", date: "2026-09-06" },
-            { home: "Tianjin Jinmen Tiger", away: "Zhejiang", date: "2026-09-06" }
-        ]
-    },
+    "id": "chinese-super-league",
+    "logo": "china/csl.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Shanghai Port", "MP": 30, "MW": 23, "MD": 5, "ML": 2, "GF": 78, "GA": 22, "logo": "china/shanghaiport.png" },
+      { "rank": 2, "team": "Shanghai Shenhua", "MP": 30, "MW": 22, "MD": 6, "ML": 2, "GF": 65, "GA": 18, "logo": "china/shanghaishenhua.png" },
+      { "rank": 3, "team": "Chengdu Rongcheng", "MP": 30, "MW": 18, "MD": 8, "ML": 4, "GF": 52, "GA": 26, "logo": "china/chengdu.png" },
+      { "rank": 4, "team": "Beijing Guoan", "MP": 30, "MW": 16, "MD": 9, "ML": 5, "GF": 48, "GA": 30, "logo": "china/beijingguoan.png" },
+      { "rank": 5, "team": "Shandong Taishan", "MP": 30, "MW": 14, "MD": 10, "ML": 6, "GF": 44, "GA": 32, "logo": "china/shandong.png" },
+      { "rank": 6, "team": "Zhejiang", "MP": 30, "MW": 13, "MD": 8, "ML": 9, "GF": 41, "GA": 35, "logo": "china/zhejiang.png" },
+      { "rank": 7, "team": "Tianjin Jinmen Tiger", "MP": 30, "MW": 11, "MD": 11, "ML": 8, "GF": 36, "GA": 33, "logo": "china/tianjin.png" },
+      { "rank": 8, "team": "Wuhan Three Towns", "MP": 30, "MW": 10, "MD": 12, "ML": 8, "GF": 34, "GA": 31, "logo": "china/wuhan.png" },
+      { "rank": 9, "team": "Henan", "MP": 30, "MW": 10, "MD": 9, "ML": 11, "GF": 32, "GA": 36, "logo": "china/henan.png" },
+      { "rank": 10, "team": "Dalian Yingbo", "MP": 30, "MW": 9, "MD": 10, "ML": 11, "GF": 30, "GA": 34, "logo": "china/dalian.png" },
+      { "rank": 11, "team": "Yunnan Yukun", "MP": 30, "MW": 8, "MD": 11, "ML": 11, "GF": 29, "GA": 35, "logo": "china/yunnan.png" },
+      { "rank": 12, "team": "Chongqing Tonglianglong", "MP": 30, "MW": 7, "MD": 12, "ML": 11, "GF": 28, "GA": 37, "logo": "china/chongqing.png" },
+      { "rank": 13, "team": "Qingdao Hainiu", "MP": 30, "MW": 6, "MD": 10, "ML": 14, "GF": 25, "GA": 42, "logo": "china/qingdaohainiu.png" },
+      { "rank": 14, "team": "Shenzhen Peng City", "MP": 30, "MW": 5, "MD": 9, "ML": 16, "GF": 22, "GA": 48, "logo": "china/shenzhen.png" },
+      { "rank": 15, "team": "Shenyang Urban", "MP": 30, "MW": 4, "MD": 8, "ML": 18, "GF": 18, "GA": 52, "logo": "china/shenyang.png" },
+      { "rank": 16, "team": "Qingdao Youth Island", "MP": 30, "MW": 3, "MD": 6, "ML": 21, "GF": 14, "GA": 65, "logo": "china/qingdaoyouth.png" }
+    ],
+    "fixtures": [
+      { "home": "Shenzhen Peng City", "away": "Henan", "date": "2026-10-09" },
+      { "home": "Zhejiang", "away": "Shanghai Port", "date": "2026-10-09" },
+      { "home": "Chengdu Rongcheng", "away": "Tianjin Jinmen Tiger", "date": "2026-10-10" },
+      { "home": "Shanghai Shenhua", "away": "Yunnan Yukun", "date": "2026-10-10" },
+      { "home": "Qingdao Hainiu", "away": "Beijing Guoan", "date": "2026-10-10" },
+      { "home": "Qingdao Youth Island", "away": "Dalian Yingbo", "date": "2026-10-11" },
+      { "home": "Shenyang Urban", "away": "Wuhan Three Towns", "date": "2026-10-11" },
+      { "home": "Chongqing Tonglianglong", "away": "Shandong Taishan", "date": "2026-10-11" }
+    ]
+  },
 
 
 
