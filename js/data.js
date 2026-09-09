@@ -577,7 +577,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "NEC", "away": "Excelsior", "date": "2026-09-08" },
       { "home": "Twente", "away": "Telstar", "date": "2026-09-09" },
       { "home": "AZ Alkmaar", "away": "Willem II", "date": "2026-09-11" },
       { "home": "Twente", "away": "Den Haag", "date": "2026-09-12" },
@@ -750,12 +749,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Blackburn Rovers", "away": "Sheffield United", "date": "2026-09-08" },
-      { "home": "Cardiff City", "away": "Stoke City", "date": "2026-09-08" },
-      { "home": "Southampton", "away": "Swansea", "date": "2026-09-08" },
-      { "home": "Wrexham", "away": "Burnley", "date": "2026-09-08" },
-      { "home": "Watford", "away": "Preston", "date": "2026-09-08" },
-      { "home": "Bolton", "away": "West Ham", "date": "2026-09-08" },
       { "home": "Derby County", "away": "West Brom", "date": "2026-09-09" },
       { "home": "Norwich City", "away": "Birmingham", "date": "2026-09-09" },
       { "home": "Wolves", "away": "Portsmouth", "date": "2026-09-09" },
@@ -1163,8 +1156,6 @@ const leaguesData = {
       { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
     ],
     "fixtures": [
-      { "home": "Barracas Central", "away": "Argentinos Juniors", "date": "2026-09-08" },
-      { "home": "Unión", "away": "Instituto", "date": "2026-09-08" },
       { "home": "Newell's", "away": "Vélez Sársfield", "date": "2026-09-11" },
       { "home": "Defensa y Justicia", "away": "Gimnasia y Esgirma", "date": "2026-09-12" },
       { "home": "Boca", "away": "Central Córdoba", "date": "2026-09-12" },
@@ -1212,7 +1203,6 @@ const leaguesData = {
       { "rank": 22, "team": "Dálmine", "MP": 34, "MW": 4, "MD": 14, "ML": 16, "GF": 21, "GA": 45, "logo": "argentina/dalmine.png" }
     ],
     "fixtures": [
-      { "home": "Excursionistas", "away": "Ituzaingó", "date": "2026-09-08" },
       { "home": "Arsenal Sarandi", "away": "UAI Urquiza", "date": "2026-09-12" },
       { "home": "Brown (A)", "away": "San Martín Burzaco", "date": "2026-09-12" },
       { "home": "Excursionistas", "away": "Dálmine", "date": "2026-09-12" },
@@ -1270,7 +1260,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 24, "MW": 2, "MD": 8, "ML": 14, "GF": 25, "GA": 49, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Vitória", "away": "Grêmio", "date": "2026-09-08" },
       { "home": "Atlético Mineiro", "away": "Fluminense", "date": "2026-09-13" },
       { "home": "Palmeiras", "away": "São Paulo", "date": "2026-09-13" },
       { "home": "Mirassol", "away": "Vitória", "date": "2026-09-13" },
@@ -1312,7 +1301,6 @@ const leaguesData = {
       { "rank": 16, "team": "D. Concepcion", "MP": 25, "MW": 3, "MD": 6, "ML": 16, "GF": 19, "GA": 43, "logo": "chile/dconcepcion.png" }
     ],
     "fixtures": [
-      { "home": "Limache", "away": "Cobresal", "date": "2026-09-08" },
       { "home": "Nublense", "away": "Everton", "date": "2026-09-12" },
       { "home": "Cobresal", "away": "Coquimbo", "date": "2026-09-12" },
       { "home": "Palestino", "away": "U. Catolica", "date": "2026-09-13" },
