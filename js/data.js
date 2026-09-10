@@ -577,7 +577,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "Twente", "away": "Telstar", "date": "2026-09-09" },
       { "home": "AZ Alkmaar", "away": "Willem II", "date": "2026-09-11" },
       { "home": "Twente", "away": "Den Haag", "date": "2026-09-12" },
       { "home": "Go Ahead Eagles", "away": "Groningen", "date": "2026-09-12" },
@@ -621,7 +620,6 @@ const leaguesData = {
     ],
     "fixtures": [
 
-      { "home": "Moreirense", "away": "Benfica", "date": "2026-09-09" },
       { "home": "Estrela Amadora", "away": "Braga", "date": "2026-09-10" },
       { "home": "Braga", "away": "Estoril", "date": "2026-09-12" },
       { "home": "Casa Pia", "away": "Porto", "date": "2026-09-12" },
@@ -749,10 +747,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Derby County", "away": "West Brom", "date": "2026-09-09" },
-      { "home": "Norwich City", "away": "Birmingham", "date": "2026-09-09" },
-      { "home": "Wolves", "away": "Portsmouth", "date": "2026-09-09" },
-      { "home": "Charlton", "away": "QPR", "date": "2026-09-09" },
       { "home": "West Ham", "away": "Wrexham", "date": "2026-09-11" },
       { "home": "Bolton", "away": "Cardiff City", "date": "2026-09-12" },
       { "home": "Derby County", "away": "Birmingham", "date": "2026-09-12" },
@@ -806,7 +800,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "Bromley", "away": "AFC Wimbledon", "date": "2026-09-09" },
       { "home": "Stevenage", "away": "Luton Town", "date": "2026-09-10" },
       { "home": "Leyton Orient", "away": "Wycombe", "date": "2026-09-12" },
       { "home": "Notts County", "away": "Bradford City", "date": "2026-09-12" },
@@ -1040,6 +1033,109 @@ const leaguesData = {
         { home: "Metz", away: "St-Étienne", date: "2026-09-19 20:00" }
     ]
 },
+// ============================================================
+    //  GERMANY - BUNDESLIGA 2
+    // ============================================================
+	"German Bundesliga 2": {
+    "id": "german-bundesliga-2",
+    "logo": "germany/bundesliga2.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Schalke", "MP": 34, "MW": 21, "MD": 7, "ML": 6, "GF": 50, "GA": 31, "logo": "germany/schalke.png" },
+      { "rank": 2, "team": "SV Elversberg", "MP": 34, "MW": 18, "MD": 8, "ML": 8, "GF": 64, "GA": 39, "logo": "germany/elversberg.png" },
+      { "rank": 3, "team": "Paderborn", "MP": 34, "MW": 18, "MD": 8, "ML": 8, "GF": 59, "GA": 45, "logo": "germany/paderborn.png" },
+      { "rank": 4, "team": "Hannover 96", "MP": 34, "MW": 16, "MD": 12, "ML": 6, "GF": 60, "GA": 44, "logo": "germany/hannover.png" },
+      { "rank": 5, "team": "Darmstadt", "MP": 34, "MW": 13, "MD": 13, "ML": 8, "GF": 57, "GA": 45, "logo": "germany/darmstadt.png" },
+      { "rank": 6, "team": "1. FCK", "MP": 34, "MW": 16, "MD": 4, "ML": 14, "GF": 52, "GA": 47, "logo": "germany/fck.png" },
+      { "rank": 7, "team": "Hertha", "MP": 34, "MW": 14, "MD": 9, "ML": 11, "GF": 47, "GA": 44, "logo": "germany/hertha.png" },
+      { "rank": 8, "team": "Nürnberg", "MP": 34, "MW": 12, "MD": 10, "ML": 12, "GF": 47, "GA": 45, "logo": "germany/nurnberg.png" },
+      { "rank": 9, "team": "Bochum", "MP": 34, "MW": 11, "MD": 11, "ML": 12, "GF": 49, "GA": 47, "logo": "germany/bochum.png" },
+      { "rank": 10, "team": "Karlsruher", "MP": 34, "MW": 12, "MD": 8, "ML": 14, "GF": 53, "GA": 64, "logo": "germany/karlsruher.png" },
+      { "rank": 11, "team": "Dynamo", "MP": 34, "MW": 11, "MD": 8, "ML": 15, "GF": 54, "GA": 53, "logo": "germany/dynamo.png" },
+      { "rank": 12, "team": "Holstein Kiel", "MP": 34, "MW": 11, "MD": 8, "ML": 15, "GF": 44, "GA": 48, "logo": "germany/holsteinkiel.png" },
+      { "rank": 13, "team": "Arminia", "MP": 34, "MW": 10, "MD": 9, "ML": 15, "GF": 53, "GA": 51, "logo": "germany/arminia.png" },
+      { "rank": 14, "team": "1. FC Magdeburg", "MP": 34, "MW": 12, "MD": 3, "ML": 19, "GF": 52, "GA": 58, "logo": "germany/magdeburg.png" },
+      { "rank": 15, "team": "Eintracht Braunschweig", "MP": 34, "MW": 10, "MD": 7, "ML": 17, "GF": 36, "GA": 54, "logo": "germany/braunschweig.png" },
+      { "rank": 16, "team": "Fürth", "MP": 34, "MW": 10, "MD": 7, "ML": 17, "GF": 49, "GA": 68, "logo": "germany/furth.png" },
+      { "rank": 17, "team": "Düsseldorf", "MP": 34, "MW": 11, "MD": 4, "ML": 19, "GF": 33, "GA": 53, "logo": "germany/dusseldorf.png" },
+      { "rank": 18, "team": "Preußen Münster", "MP": 34, "MW": 6, "MD": 12, "ML": 16, "GF": 38, "GA": 61, "logo": "germany/preussenmunster.png" }
+    ],
+    "fixtures": [
+      { "home": "Nürnberg", "away": "Hannover 96", "date": "2026-09-11" },
+      { "home": "Darmstadt", "away": "Arminia", "date": "2026-09-11" },
+      { "home": "Eintracht Braunschweig", "away": "Dynamo", "date": "2026-09-12" },
+      { "home": "Bochum", "away": "Fürth", "date": "2026-09-12" },
+      { "home": "1. FC Magdeburg", "away": "1. FCK", "date": "2026-09-12" },
+      { "home": "St. Pauli", "away": "Wolfsburg", "date": "2026-09-12" },
+      { "home": "Karlsruher", "away": "Energie Cottbus", "date": "2026-09-13" },
+      { "home": "Heidenheim", "away": "Holstein Kiel", "date": "2026-09-13" },
+      { "home": "Osnabrück", "away": "Hertha", "date": "2026-09-13" },
+      { "home": "Fürth", "away": "1. FC Magdeburg", "date": "2026-09-18" },
+      { "home": "Wolfsburg", "away": "Darmstadt", "date": "2026-09-18" },
+      { "home": "Karlsruher", "away": "Nürnberg", "date": "2026-09-19" },
+      { "home": "1. FCK", "away": "Eintracht Braunschweig", "date": "2026-09-19" },
+      { "home": "Holstein Kiel", "away": "Osnabrück", "date": "2026-09-19" },
+      { "home": "Dynamo", "away": "Hertha", "date": "2026-09-19" },
+      { "home": "Hannover 96", "away": "Bochum", "date": "2026-09-20" },
+      { "home": "Energie Cottbus", "away": "St. Pauli", "date": "2026-09-20" },
+      { "home": "Arminia", "away": "Heidenheim", "date": "2026-09-20" }
+    ]
+  },
+
+// ============================================================
+    //  NETHERLANDS - EERSTE DIVISIE
+    // ============================================================
+	"Netherlands Eerste Divisie": {
+    "id": "netherlands-eerste-divisie",
+    "logo": "netherlands/eerstedivisie.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Den Haag", "MP": 38, "MW": 29, "MD": 2, "ML": 7, "GF": 90, "GA": 37, "logo": "netherlands/denhaag.png" },
+      { "rank": 2, "team": "Cambuur", "MP": 38, "MW": 23, "MD": 9, "ML": 6, "GF": 75, "GA": 48, "logo": "netherlands/cambuur.png" },
+      { "rank": 3, "team": "Willem II", "MP": 38, "MW": 20, "MD": 8, "ML": 10, "GF": 59, "GA": 42, "logo": "netherlands/willemii.png" },
+      { "rank": 4, "team": "De Graafschap", "MP": 38, "MW": 18, "MD": 9, "ML": 11, "GF": 74, "GA": 58, "logo": "netherlands/degraafschap.png" },
+      { "rank": 5, "team": "Almere", "MP": 38, "MW": 18, "MD": 4, "ML": 16, "GF": 78, "GA": 63, "logo": "netherlands/almere.png" },
+      { "rank": 6, "team": "RKC Waalwijk", "MP": 38, "MW": 16, "MD": 10, "ML": 12, "GF": 71, "GA": 59, "logo": "netherlands/rkcwaalwijk.png" },
+      { "rank": 7, "team": "Jong PSV", "MP": 38, "MW": 17, "MD": 5, "ML": 16, "GF": 66, "GA": 64, "logo": "netherlands/jongpsv.png" },
+      { "rank": 8, "team": "Roda", "MP": 38, "MW": 14, "MD": 13, "ML": 11, "GF": 59, "GA": 54, "logo": "netherlands/roda.png" },
+      { "rank": 9, "team": "Den Bosch", "MP": 38, "MW": 14, "MD": 9, "ML": 15, "GF": 65, "GA": 69, "logo": "netherlands/denbosch.png" },
+      { "rank": 10, "team": "Dordrecht", "MP": 38, "MW": 12, "MD": 11, "ML": 15, "GF": 48, "GA": 56, "logo": "netherlands/dordrecht.png" },
+      { "rank": 11, "team": "FC Eindhoven", "MP": 38, "MW": 14, "MD": 5, "ML": 19, "GF": 51, "GA": 69, "logo": "netherlands/fceindhoven.png" },
+      { "rank": 12, "team": "Jong FC Utrecht", "MP": 38, "MW": 12, "MD": 10, "ML": 16, "GF": 58, "GA": 62, "logo": "netherlands/jongutrecht.png" },
+      { "rank": 13, "team": "VVV", "MP": 38, "MW": 13, "MD": 6, "ML": 19, "GF": 50, "GA": 58, "logo": "netherlands/vvv.png" },
+      { "rank": 14, "team": "FC Emmen", "MP": 38, "MW": 12, "MD": 9, "ML": 17, "GF": 58, "GA": 72, "logo": "netherlands/fcemmen.png" },
+      { "rank": 15, "team": "Vitesse", "MP": 38, "MW": 15, "MD": 11, "ML": 12, "GF": 64, "GA": 55, "logo": "netherlands/vitesse.png" },
+      { "rank": 16, "team": "TOP Oss", "MP": 38, "MW": 11, "MD": 11, "ML": 16, "GF": 54, "GA": 64, "logo": "netherlands/toposs.png" },
+      { "rank": 17, "team": "Jong AZ", "MP": 38, "MW": 12, "MD": 4, "ML": 22, "GF": 61, "GA": 76, "logo": "netherlands/jongaz.png" },
+      { "rank": 18, "team": "Helmond Sport", "MP": 38, "MW": 10, "MD": 9, "ML": 19, "GF": 42, "GA": 62, "logo": "netherlands/helmondsport.png" },
+      { "rank": 19, "team": "MVV", "MP": 38, "MW": 9, "MD": 11, "ML": 18, "GF": 41, "GA": 73, "logo": "netherlands/mvv.png" },
+      { "rank": 20, "team": "Jong Ajax", "MP": 38, "MW": 9, "MD": 8, "ML": 21, "GF": 50, "GA": 73, "logo": "netherlands/jongajax.png" }
+    ],
+    "fixtures": [
+      { "home": "FC Eindhoven", "away": "Dordrecht", "date": "2026-09-11" },
+      { "home": "Helmond Sport", "away": "Jong PSV", "date": "2026-09-11" },
+      { "home": "Heracles", "away": "Jong AZ", "date": "2026-09-11" },
+      { "home": "VVV", "away": "TOP Oss", "date": "2026-09-11" },
+      { "home": "Jong Ajax", "away": "RKC Waalwijk", "date": "2026-09-11" },
+      { "home": "FC Emmen", "away": "De Graafschap", "date": "2026-09-11" },
+      { "home": "NAC", "away": "Jong FC Utrecht", "date": "2026-09-11" },
+      { "home": "MVV", "away": "Almere", "date": "2026-09-11" },
+      { "home": "Roda", "away": "Vitesse", "date": "2026-09-12" },
+      { "home": "FC Volendam", "away": "Den Bosch", "date": "2026-09-13" },
+      { "home": "Jong FC Utrecht", "away": "Jong Ajax", "date": "2026-09-14" },
+      { "home": "Jong PSV", "away": "Jong AZ", "date": "2026-09-14" },
+      { "home": "Den Bosch", "away": "Helmond Sport", "date": "2026-09-18" },
+      { "home": "Jong Ajax", "away": "Roda", "date": "2026-09-18" },
+      { "home": "RKC Waalwijk", "away": "MVV", "date": "2026-09-18" },
+      { "home": "TOP Oss", "away": "Dordrecht", "date": "2026-09-18" },
+      { "home": "Jong FC Utrecht", "away": "VVV", "date": "2026-09-18" },
+      { "home": "FC Eindhoven", "away": "FC Emmen", "date": "2026-09-18" },
+      { "home": "Jong AZ", "away": "FC Volendam", "date": "2026-09-18" },
+      { "home": "Almere", "away": "Heracles", "date": "2026-09-18" }
+    ]
+  },
   // ============================================================
     //  USA - MLS
     // ============================================================

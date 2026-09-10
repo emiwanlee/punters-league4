@@ -1111,6 +1111,124 @@ const matchesData = {
   { "home": "Boulogne", "away": "Dijon", "home_score": 1, "away_score": 1, "date": "2026-09-04" },
   { "home": "Pau", "away": "Sochaux", "home_score": 1, "away_score": 1, "date": "2026-09-04" }
 ],
+
+// ============================================================
+    //  GERMANY - BUNDESLIGA 2
+    // ============================================================
+	"German Bundesliga 2": [
+    // ===== MATCHDAY 1 =====
+    { home: "Bochum", away: "Hertha", home_score: 0, away_score: 1, date: "2026-08-07" },
+    { home: "Heidenheim", away: "Osnabrück", home_score: 4, away_score: 3, date: "2026-08-08" },
+    { home: "Karlsruher", away: "Arminia", home_score: 2, away_score: 1, date: "2026-08-08" },
+    { home: "1. FC Magdeburg", away: "Eintracht Braunschweig", home_score: 1, away_score: 6, date: "2026-08-08" },
+    { home: "Darmstadt", away: "Holstein Kiel", home_score: 2, away_score: 2, date: "2026-08-08" },
+    { home: "Wolfsburg", away: "1. FCK", home_score: 0, away_score: 0, date: "2026-08-08" },
+    { home: "Energie Cottbus", away: "Hannover 96", home_score: 3, away_score: 1, date: "2026-08-09" },
+    { home: "St. Pauli", away: "Fürth", home_score: 1, away_score: 1, date: "2026-08-09" },
+    { home: "Nürnberg", away: "Dynamo", home_score: 3, away_score: 0, date: "2026-08-09" },
+
+    // ===== MATCHDAY 2 =====
+    { home: "Eintracht Braunschweig", away: "Bochum", home_score: 0, away_score: 1, date: "2026-08-14" },
+    { home: "Holstein Kiel", away: "St. Pauli", home_score: 2, away_score: 2, date: "2026-08-14" },
+    { home: "Fürth", away: "Nürnberg", home_score: 2, away_score: 4, date: "2026-08-15" },
+    { home: "Osnabrück", away: "1. FC Magdeburg", home_score: 0, away_score: 3, date: "2026-08-15" },
+    { home: "Hertha", away: "Heidenheim", home_score: 4, away_score: 1, date: "2026-08-15" },
+    { home: "1. FCK", away: "Karlsruher", home_score: 0, away_score: 0, date: "2026-08-15" },
+    { home: "Arminia", away: "Energie Cottbus", home_score: 3, away_score: 0, date: "2026-08-16" },
+    { home: "Hannover 96", away: "Wolfsburg", home_score: 0, away_score: 1, date: "2026-08-16" },
+    { home: "Dynamo", away: "Darmstadt", home_score: 1, away_score: 0, date: "2026-08-16" },
+
+    // ===== MATCHDAY 3 =====
+    { home: "Bochum", away: "Osnabrück", home_score: 0, away_score: 1, date: "2026-08-28" },
+    { home: "Eintracht Braunschweig", away: "Hertha", home_score: 3, away_score: 5, date: "2026-08-28" },
+    { home: "Heidenheim", away: "Dynamo", home_score: 5, away_score: 3, date: "2026-08-29" },
+    { home: "Karlsruher", away: "Wolfsburg", home_score: 2, away_score: 5, date: "2026-08-29" },
+    { home: "Energie Cottbus", away: "Fürth", home_score: 3, away_score: 4, date: "2026-08-29" },
+    { home: "Nürnberg", away: "Arminia", home_score: 4, away_score: 1, date: "2026-08-29" },
+    { home: "St. Pauli", away: "1. FCK", home_score: 1, away_score: 2, date: "2026-08-30" },
+    { home: "Darmstadt", away: "Hannover 96", home_score: 0, away_score: 1, date: "2026-08-30" },
+    { home: "1. FC Magdeburg", away: "Holstein Kiel", home_score: 2, away_score: 0, date: "2026-08-30" },
+
+    // ===== MATCHDAY 4 =====
+    { home: "Arminia", away: "St. Pauli", home_score: 2, away_score: 2, date: "2026-09-04" },
+    { home: "Hannover 96", away: "Karlsruher", home_score: 2, away_score: 2, date: "2026-09-04" },
+    { home: "1. FCK", away: "Darmstadt", home_score: 3, away_score: 0, date: "2026-09-05" },
+    { home: "Holstein Kiel", away: "Nürnberg", home_score: 2, away_score: 2, date: "2026-09-05" },
+    { home: "Wolfsburg", away: "Energie Cottbus", home_score: 4, away_score: 4, date: "2026-09-05" },
+    { home: "Dynamo", away: "Bochum", home_score: 1, away_score: 2, date: "2026-09-05" },
+    { home: "Hertha", away: "1. FC Magdeburg", home_score: 2, away_score: 1, date: "2026-09-06" },
+    { home: "Fürth", away: "Heidenheim", home_score: 0, away_score: 1, date: "2026-09-06" },
+    { home: "Osnabrück", away: "Eintracht Braunschweig", home_score: 3, away_score: 1, date: "2026-09-06" }
+],
+	// ============================================================
+//  NETHERLANDS - EERSTE DIVISIE (Complete Match Results)
+// ============================================================
+
+"Netherlands Eerste Divisie": [
+    // ===== MATCHDAY 1 =====
+    { home: "VVV", away: "Heracles", home_score: 3, away_score: 4, date: "2026-08-07" },
+    { home: "Dordrecht", away: "Jong Ajax", home_score: 2, away_score: 1, date: "2026-08-07" },
+    { home: "TOP Oss", away: "NAC", home_score: 1, away_score: 2, date: "2026-08-07" },
+    { home: "FC Emmen", away: "Roda", home_score: 1, away_score: 0, date: "2026-08-07" },
+    { home: "Vitesse", away: "RKC Waalwijk", home_score: 1, away_score: 1, date: "2026-08-07" },
+    { home: "Den Bosch", away: "Almere", home_score: 1, away_score: 1, date: "2026-08-08" },
+    { home: "Helmond Sport", away: "De Graafschap", home_score: 1, away_score: 1, date: "2026-08-09" },
+    { home: "MVV", away: "Jong FC Utrecht", home_score: 2, away_score: 1, date: "2026-08-09" },
+    { home: "Jong AZ", away: "FC Eindhoven", home_score: 0, away_score: 1, date: "2026-08-10" },
+    { home: "Jong PSV", away: "FC Volendam", home_score: 3, away_score: 2, date: "2026-08-10" },
+
+    // ===== MATCHDAY 2 =====
+    { home: "Roda", away: "Helmond Sport", home_score: 2, away_score: 1, date: "2026-08-14" },
+    { home: "Heracles", away: "Den Bosch", home_score: 3, away_score: 2, date: "2026-08-14" },
+    { home: "NAC", away: "VVV", home_score: 0, away_score: 2, date: "2026-08-14" },
+    { home: "Almere", away: "Jong PSV", home_score: 3, away_score: 1, date: "2026-08-14" },
+    { home: "RKC Waalwijk", away: "Dordrecht", home_score: 2, away_score: 2, date: "2026-08-14" },
+    { home: "FC Eindhoven", away: "MVV", home_score: 2, away_score: 3, date: "2026-08-14" },
+    { home: "FC Volendam", away: "TOP Oss", home_score: 3, away_score: 0, date: "2026-08-15" },
+    { home: "De Graafschap", away: "Jong AZ", home_score: 2, away_score: 5, date: "2026-08-17" },
+    { home: "Jong Ajax", away: "FC Emmen", home_score: 4, away_score: 6, date: "2026-08-17" },
+    { home: "Jong FC Utrecht", away: "Vitesse", home_score: 1, away_score: 3, date: "2026-08-17" },
+
+    // ===== MATCHDAY 3 =====
+    { home: "Vitesse", away: "Almere", home_score: 0, away_score: 3, date: "2026-08-21" },
+    { home: "Den Bosch", away: "FC Eindhoven", home_score: 5, away_score: 2, date: "2026-08-21" },
+    { home: "MVV", away: "FC Volendam", home_score: 1, away_score: 0, date: "2026-08-21" },
+    { home: "Dordrecht", away: "Roda", home_score: 0, away_score: 1, date: "2026-08-21" },
+    { home: "FC Emmen", away: "Jong AZ", home_score: 3, away_score: 1, date: "2026-08-21" },
+    { home: "Helmond Sport", away: "RKC Waalwijk", home_score: 1, away_score: 1, date: "2026-08-21" },
+    { home: "NAC", away: "Jong Ajax", home_score: 3, away_score: 2, date: "2026-08-22" },
+    { home: "VVV", away: "De Graafschap", home_score: 2, away_score: 1, date: "2026-08-23" },
+    { home: "Jong FC Utrecht", away: "Heracles", home_score: 1, away_score: 6, date: "2026-08-24" },
+    { home: "Jong PSV", away: "TOP Oss", home_score: 1, away_score: 0, date: "2026-08-24" },
+
+    // ===== MATCHDAY 4 =====
+    { home: "Jong Ajax", away: "Helmond Sport", home_score: 3, away_score: 2, date: "2026-08-28" },
+    { home: "Den Bosch", away: "Vitesse", home_score: 1, away_score: 4, date: "2026-08-28" },
+    { home: "FC Volendam", away: "Dordrecht", home_score: 6, away_score: 1, date: "2026-08-28" },
+    { home: "Jong AZ", away: "MVV", home_score: 1, away_score: 2, date: "2026-08-28" },
+    { home: "RKC Waalwijk", away: "Jong PSV", home_score: 2, away_score: 2, date: "2026-08-28" },
+    { home: "Roda", away: "NAC", home_score: 2, away_score: 2, date: "2026-08-28" },
+    { home: "TOP Oss", away: "Jong FC Utrecht", home_score: 2, away_score: 1, date: "2026-08-28" },
+    { home: "De Graafschap", away: "Almere", home_score: 1, away_score: 4, date: "2026-08-29" },
+    { home: "FC Eindhoven", away: "Heracles", home_score: 1, away_score: 3, date: "2026-08-30" },
+    { home: "VVV", away: "FC Emmen", home_score: 4, away_score: 0, date: "2026-08-30" },
+
+    // ===== MATCHDAY 5 =====
+    { home: "RKC Waalwijk", away: "NAC", home_score: 4, away_score: 2, date: "2026-09-04" },
+    { home: "Heracles", away: "De Graafschap", home_score: 5, away_score: 0, date: "2026-09-04" },
+    { home: "Helmond Sport", away: "VVV", home_score: 4, away_score: 2, date: "2026-09-04" },
+    { home: "Vitesse", away: "TOP Oss", home_score: 2, away_score: 1, date: "2026-09-04" },
+    { home: "FC Emmen", away: "FC Volendam", home_score: 5, away_score: 3, date: "2026-09-04" },
+    { home: "Almere", away: "Jong Ajax", home_score: 0, away_score: 1, date: "2026-09-04" },
+    { home: "Dordrecht", away: "Jong AZ", home_score: 3, away_score: 6, date: "2026-09-05" },
+    { home: "MVV", away: "Roda", home_score: 1, away_score: 1, date: "2026-09-06" },
+    { home: "Jong PSV", away: "Den Bosch", home_score: 3, away_score: 1, date: "2026-09-07" },
+    { home: "Jong FC Utrecht", away: "FC Eindhoven", home_score: 0, away_score: 0, date: "2026-09-07" },
+
+    // ===== MATCHDAY 8 (Played early) =====
+    { home: "Jong PSV", away: "Jong Ajax", home_score: 1, away_score: 1, date: "2026-08-31" },
+    { home: "Jong AZ", away: "Jong FC Utrecht", home_score: 2, away_score: 1, date: "2026-08-31" }
+],
     // ============================================================
     //  CHILEAN PRIMERA DIVISIÓN
     // ============================================================

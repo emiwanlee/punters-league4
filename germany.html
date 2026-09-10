@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>German Football · Bundesliga 2026-27 · Punters League</title>
+    <title>German Football · Bundesliga 2 2026-27 · Punters League</title>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
     <script>
@@ -279,6 +279,31 @@
         .loading {
             padding: 2rem 0;
         }
+        .matchday-section {
+            margin-bottom: 1.5rem;
+        }
+        .matchday-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #DD0000;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .result-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 0.75rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 0.3rem;
+            font-size: 0.8rem;
+        }
+        .result-score {
+            font-weight: 700;
+            color: #1a1a2e;
+        }
     </style>
     <link rel="icon" type="image/bmp" href="images/logo.png" />
 </head>
@@ -309,30 +334,45 @@
     <div class="main-wrapper">
         <div class="country-hero">
             <div class="hero-icon">????</div>
-            <h1><i class="fas fa-futbol"></i> German Football · Bundesliga 2026-27</h1>
-            <p>Bundesliga 1</p>
+            <h1><i class="fas fa-futbol"></i> German Football · Bundesliga 2 2026-27</h1>
+            <p>Bundesliga 1 · Bundesliga 2</p>
         </div>
 
         <div class="league-tabs">
             <button class="league-tab active" data-tab="bundesliga1">?? Bundesliga 1</button>
-            <button class="league-tab" data-tab="fixtures">?? Fixtures</button>
+            <button class="league-tab" data-tab="bundesliga2">?? Bundesliga 2</button>
+            <button class="league-tab" data-tab="results">?? Results</button>
             <button class="league-tab" data-tab="stats">?? Stats</button>
         </div>
 
+        <!-- Bundesliga 1 Tab -->
         <div id="tab-bundesliga1" class="tab-content active">
             <div id="bundesliga1Content">
                 <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
-                    <p>Loading Bundesliga...</p>
+                    <p>Loading Bundesliga 1...</p>
                 </div>
             </div>
         </div>
-        <div id="tab-fixtures" class="tab-content">
-            <div id="fixturesContent">
+
+        <!-- Bundesliga 2 Tab -->
+        <div id="tab-bundesliga2" class="tab-content">
+            <div id="bundesliga2Content">
                 <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
-                    <p>Loading fixtures...</p>
+                    <p>Loading Bundesliga 2...</p>
                 </div>
             </div>
         </div>
+
+        <!-- Results Tab -->
+        <div id="tab-results" class="tab-content">
+            <div id="resultsContent">
+                <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
+                    <p>Loading results...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Tab -->
         <div id="tab-stats" class="tab-content">
             <div id="statsContent">
                 <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
@@ -365,7 +405,7 @@
         // ===================== BUNDESLIGA 1 DATA =====================
 
         // OLD (2025-26)
-        const oldBundesligaData = {
+        const oldBundesliga1Data = {
             teams: [
                 { rank: 1, team: "Bayern", MP: 34, MW: 28, MD: 5, ML: 1, GF: 122, GA: 36 },
                 { rank: 2, team: "Dortmund", MP: 34, MW: 22, MD: 7, ML: 5, GF: 70, GA: 34 },
@@ -389,7 +429,7 @@
         };
 
         // NEW (2026-27 current)
-        const newBundesligaData = {
+        const newBundesliga1Data = {
             teams: [
                 { rank: 1, team: "Augsburg", MP: 2, MW: 2, MD: 0, ML: 0, GF: 7, GA: 1 },
                 { rank: 2, team: "Freiburg", MP: 2, MW: 2, MD: 0, ML: 0, GF: 5, GA: 1 },
@@ -412,26 +452,111 @@
             ]
         };
 
-        // ===================== FIXTURES =====================
-        const bundesligaFixtures = [
-            { home: "Bayern", away: "Dortmund", date: "2026-09-12", league: "Bundesliga" },
-            { home: "RB Leipzig", away: "Leverkusen", date: "2026-09-12", league: "Bundesliga" },
-            { home: "Augsburg", away: "Freiburg", date: "2026-09-13", league: "Bundesliga" },
-            { home: "Mainz", away: "VfB Stuttgart", date: "2026-09-13", league: "Bundesliga" },
-            { home: "Hoffenheim", away: "Union Berlin", date: "2026-09-13", league: "Bundesliga" },
-            { home: "Eintracht Frankfurt", away: "Werder", date: "2026-09-13", league: "Bundesliga" }
-        ];
+        // ===================== BUNDESLIGA 2 DATA =====================
 
-        // ===================== HELPERS =====================
+        // OLD (2025-26 previous season)
+        const oldBundesliga2Data = {
+            teams: [
+                { rank: 1, team: "Schalke", MP: 34, MW: 21, MD: 7, ML: 6, GF: 50, GA: 31 },
+                { rank: 2, team: "SV Elversberg", MP: 34, MW: 18, MD: 8, ML: 8, GF: 64, GA: 39 },
+                { rank: 3, team: "Paderborn", MP: 34, MW: 18, MD: 8, ML: 8, GF: 59, GA: 45 },
+                { rank: 4, team: "Hannover 96", MP: 34, MW: 16, MD: 12, ML: 6, GF: 60, GA: 44 },
+                { rank: 5, team: "Darmstadt", MP: 34, MW: 13, MD: 13, ML: 8, GF: 57, GA: 45 },
+                { rank: 6, team: "1. FCK", MP: 34, MW: 16, MD: 4, ML: 14, GF: 52, GA: 47 },
+                { rank: 7, team: "Hertha", MP: 34, MW: 14, MD: 9, ML: 11, GF: 47, GA: 44 },
+                { rank: 8, team: "Nürnberg", MP: 34, MW: 12, MD: 10, ML: 12, GF: 47, GA: 45 },
+                { rank: 9, team: "Bochum", MP: 34, MW: 11, MD: 11, ML: 12, GF: 49, GA: 47 },
+                { rank: 10, team: "Karlsruher", MP: 34, MW: 12, MD: 8, ML: 14, GF: 53, GA: 64 },
+                { rank: 11, team: "Dynamo", MP: 34, MW: 11, MD: 8, ML: 15, GF: 54, GA: 53 },
+                { rank: 12, team: "Holstein Kiel", MP: 34, MW: 11, MD: 8, ML: 15, GF: 44, GA: 48 },
+                { rank: 13, team: "Arminia", MP: 34, MW: 10, MD: 9, ML: 15, GF: 53, GA: 51 },
+                { rank: 14, team: "1. FC Magdeburg", MP: 34, MW: 12, MD: 3, ML: 19, GF: 52, GA: 58 },
+                { rank: 15, team: "Eintracht Braunschweig", MP: 34, MW: 10, MD: 7, ML: 17, GF: 36, GA: 54 },
+                { rank: 16, team: "Fürth", MP: 34, MW: 10, MD: 7, ML: 17, GF: 49, GA: 68 },
+                { rank: 17, team: "Düsseldorf", MP: 34, MW: 11, MD: 4, ML: 19, GF: 33, GA: 53 },
+                { rank: 18, team: "Preußen Münster", MP: 34, MW: 6, MD: 12, ML: 16, GF: 38, GA: 61 }
+            ]
+        };
+
+        // NEW (2026-27 current)
+        const newBundesliga2Data = {
+            teams: [
+                { rank: 1, team: "Hertha", MP: 4, MW: 4, MD: 0, ML: 0, GF: 12, GA: 5 },
+                { rank: 2, team: "Nürnberg", MP: 4, MW: 3, MD: 1, ML: 0, GF: 13, GA: 5 },
+                { rank: 3, team: "Heidenheim", MP: 4, MW: 3, MD: 0, ML: 1, GF: 11, GA: 10 },
+                { rank: 4, team: "Wolfsburg", MP: 4, MW: 2, MD: 2, ML: 0, GF: 10, GA: 6 },
+                { rank: 5, team: "1. FCK", MP: 4, MW: 2, MD: 2, ML: 0, GF: 5, GA: 1 },
+                { rank: 6, team: "Bochum", MP: 4, MW: 2, MD: 0, ML: 2, GF: 3, GA: 3 },
+                { rank: 7, team: "1. FC Magdeburg", MP: 4, MW: 2, MD: 0, ML: 2, GF: 7, GA: 8 },
+                { rank: 7, team: "Osnabrück", MP: 4, MW: 2, MD: 0, ML: 2, GF: 7, GA: 8 },
+                { rank: 9, team: "Karlsruher", MP: 4, MW: 1, MD: 2, ML: 1, GF: 6, GA: 8 },
+                { rank: 10, team: "Arminia", MP: 4, MW: 1, MD: 1, ML: 2, GF: 7, GA: 8 },
+                { rank: 11, team: "Energie Cottbus", MP: 4, MW: 1, MD: 1, ML: 2, GF: 10, GA: 12 },
+                { rank: 12, team: "Fürth", MP: 4, MW: 1, MD: 1, ML: 2, GF: 7, GA: 9 },
+                { rank: 13, team: "Hannover 96", MP: 4, MW: 1, MD: 1, ML: 2, GF: 4, GA: 6 },
+                { rank: 14, team: "Eintracht Braunschweig", MP: 4, MW: 1, MD: 0, ML: 3, GF: 10, GA: 10 },
+                { rank: 15, team: "St. Pauli", MP: 4, MW: 0, MD: 3, ML: 1, GF: 6, GA: 7 },
+                { rank: 16, team: "Holstein Kiel", MP: 4, MW: 0, MD: 3, ML: 1, GF: 6, GA: 8 },
+                { rank: 17, team: "Dynamo", MP: 4, MW: 1, MD: 0, ML: 3, GF: 5, GA: 10 },
+                { rank: 18, team: "Darmstadt", MP: 4, MW: 0, MD: 1, ML: 3, GF: 2, GA: 7 }
+            ]
+        };
+
+        // ===================== MATCH RESULTS DATA =====================
+        const matchResults = {
+            matchday1: [
+                { home: "Bochum", away: "Hertha", homeGoals: 0, awayGoals: 1 },
+                { home: "Heidenheim", away: "Osnabrück", homeGoals: 4, awayGoals: 3 },
+                { home: "Karlsruher", away: "Arminia", homeGoals: 2, awayGoals: 1 },
+                { home: "1. FC Magdeburg", away: "Eintracht Braunschweig", homeGoals: 1, awayGoals: 6 },
+                { home: "Darmstadt", away: "Holstein Kiel", homeGoals: 2, awayGoals: 2 },
+                { home: "Wolfsburg", away: "1. FCK", homeGoals: 0, awayGoals: 0 },
+                { home: "Energie Cottbus", away: "Hannover 96", homeGoals: 3, awayGoals: 1 },
+                { home: "St. Pauli", away: "Fürth", homeGoals: 1, awayGoals: 1 },
+                { home: "Nürnberg", away: "Dynamo", homeGoals: 3, awayGoals: 0 }
+            ],
+            matchday2: [
+                { home: "Eintracht Braunschweig", away: "Bochum", homeGoals: 0, awayGoals: 1 },
+                { home: "Holstein Kiel", away: "St. Pauli", homeGoals: 2, awayGoals: 2 },
+                { home: "Fürth", away: "Nürnberg", homeGoals: 2, awayGoals: 4 },
+                { home: "Osnabrück", away: "1. FC Magdeburg", homeGoals: 0, awayGoals: 3 },
+                { home: "Hertha", away: "Heidenheim", homeGoals: 4, awayGoals: 1 },
+                { home: "1. FCK", away: "Karlsruher", homeGoals: 0, awayGoals: 0 },
+                { home: "Arminia", away: "Energie Cottbus", homeGoals: 3, awayGoals: 0 },
+                { home: "Hannover 96", away: "Wolfsburg", homeGoals: 0, awayGoals: 1 },
+                { home: "Dynamo", away: "Darmstadt", homeGoals: 1, awayGoals: 0 }
+            ],
+            matchday3: [
+                { home: "Bochum", away: "Osnabrück", homeGoals: 0, awayGoals: 1 },
+                { home: "Eintracht Braunschweig", away: "Hertha", homeGoals: 3, awayGoals: 5 },
+                { home: "Heidenheim", away: "Dynamo", homeGoals: 5, awayGoals: 3 },
+                { home: "Karlsruher", away: "Wolfsburg", homeGoals: 2, awayGoals: 5 },
+                { home: "Energie Cottbus", away: "Fürth", homeGoals: 3, awayGoals: 4 },
+                { home: "Nürnberg", away: "Arminia", homeGoals: 4, awayGoals: 1 },
+                { home: "St. Pauli", away: "1. FCK", homeGoals: 1, awayGoals: 2 },
+                { home: "Darmstadt", away: "Hannover 96", homeGoals: 0, awayGoals: 1 },
+                { home: "1. FC Magdeburg", away: "Holstein Kiel", homeGoals: 2, awayGoals: 0 }
+            ],
+            matchday4: [
+                { home: "Arminia", away: "St. Pauli", homeGoals: 2, awayGoals: 2 },
+                { home: "Hannover 96", away: "Karlsruher", homeGoals: 2, awayGoals: 2 },
+                { home: "1. FCK", away: "Darmstadt", homeGoals: 3, awayGoals: 0 },
+                { home: "Holstein Kiel", away: "Nürnberg", homeGoals: 2, awayGoals: 2 },
+                { home: "Wolfsburg", away: "Energie Cottbus", homeGoals: 4, awayGoals: 4 },
+                { home: "Dynamo", away: "Bochum", homeGoals: 1, awayGoals: 2 },
+                { home: "Hertha", away: "1. FC Magdeburg", homeGoals: 2, awayGoals: 1 },
+                { home: "Fürth", away: "Heidenheim", homeGoals: 0, awayGoals: 1 },
+                { home: "Osnabrück", away: "Eintracht Braunschweig", homeGoals: 3, awayGoals: 1 }
+            ]
+        };
+
+        // ===================== HELPER FUNCTIONS =====================
         function escapeHtml(text) { if (!text) return '';
             const d = document.createElement('div');
             d.textContent = text;
             return d.innerHTML; }
 
         function calcPts(t) { return (t.MW || 0) * 3 + (t.MD || 0); }
-
-        function formatDate(d) { if (!d) return '';
-            return new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
 
         function renderTable(season, title, subtitle = '') {
             const sorted = [...season.teams].sort((a, b) => (a.rank || 0) - (b.rank || 0));
@@ -449,8 +574,10 @@
                     pts = calcPts(t);
                 let cls = '';
                 if (t.rank === 1) cls = 'champion-row';
-                else if (t.rank <= 4 && title.includes('Bundesliga')) cls = 'promotion-zone';
-                else if (t.rank >= 16 && title.includes('Bundesliga')) cls = 'relegation-zone';
+                else if (t.rank <= 2 && title.includes('Bundesliga 2')) cls = 'promotion-zone';
+                else if (t.rank <= 4 && title.includes('Bundesliga 1')) cls = 'promotion-zone';
+                else if (t.rank >= 16 && title.includes('Bundesliga 1')) cls = 'relegation-zone';
+                else if (t.rank >= 17 && title.includes('Bundesliga 2')) cls = 'relegation-zone';
                 html += `<tr class="${cls}"><td><strong>${t.rank}</strong></td>
               <td class="team-cell"><a href="#">${escapeHtml(t.team)}</a></td>
               <td>${t.MP}</td><td>${w}</td><td>${d}</td><td>${l}</td>
@@ -467,25 +594,25 @@
             const container = document.getElementById('bundesliga1Content');
             let html = `
             <div class="league-grid-2col">
-              ${renderTable(oldBundesligaData, 'Bundesliga 1', '2025-26 (old)')}
-              ${renderTable(newBundesligaData, 'Bundesliga 1', '2026-27 (new)')}
+              ${renderTable(oldBundesliga1Data, 'Bundesliga 1', '2025-26 (old)')}
+              ${renderTable(newBundesliga1Data, 'Bundesliga 1', '2026-27 (new)')}
             </div>
             <div class="analysis-card">
               <h3><i class="fas fa-chart-simple"></i> Bundesliga 1 · Old vs New Comparison</h3>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="info-box"><h5>2025-26 (old) champion</h5><p><strong>${escapeHtml(oldBundesligaData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesligaData.teams.find(t=>t.rank===1))} pts</p>
-                  <p>Top scorer: ${escapeHtml(oldBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+                  <div class="info-box"><h5>2025-26 (old) champion</h5><p><strong>${escapeHtml(oldBundesliga1Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga1Data.teams.find(t=>t.rank===1))} pts</p>
+                  <p>Top scorer: ${escapeHtml(oldBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
                 </div>
                 <div class="col-md-6">
-                  <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesligaData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesligaData.teams.find(t=>t.rank===1))} pts</p>
-                  <p>Top scorer: ${escapeHtml(newBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+                  <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesliga1Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesliga1Data.teams.find(t=>t.rank===1))} pts</p>
+                  <p>Top scorer: ${escapeHtml(newBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
                 </div>
               </div>
               <div class="row mt-2">
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesligaData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025-26)</small></div></div>
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesligaData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesligaData.teams.reduce((s,t)=>s+t.GF,0) / newBundesligaData.teams.reduce((s,t)=>s+t.MP,0) * 34).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesliga1Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025-26)</small></div></div>
+                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesliga1Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesliga1Data.teams.reduce((s,t)=>s+t.GF,0) / newBundesliga1Data.teams.reduce((s,t)=>s+t.MP,0) * 34).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
               </div>
               <div class="row mt-3">
                 <div class="col-md-12">
@@ -505,54 +632,137 @@
             container.innerHTML = html;
         }
 
-        function renderFixtures() {
-            let html = `<div class="analysis-card"><h3><i class="fas fa-calendar-alt"></i> Upcoming Bundesliga Fixtures</h3>`;
-            for (const f of bundesligaFixtures) {
-                html += `<div class="fixture-card"><div class="fixture-teams"><span><strong>${escapeHtml(f.home)}</strong></span><span class="fixture-vs">vs</span><span><strong>${escapeHtml(f.away)}</strong></span><span class="badge-germany">Bundesliga</span></div><div class="fixture-date"><i class="far fa-calendar-alt"></i> ${formatDate(f.date)}</div></div>`;
+        function renderBundesliga2() {
+            const container = document.getElementById('bundesliga2Content');
+            let html = `
+            <div class="league-grid-2col">
+              ${renderTable(oldBundesliga2Data, 'Bundesliga 2', '2025-26 (old)')}
+              ${renderTable(newBundesliga2Data, 'Bundesliga 2', '2026-27 (new)')}
+            </div>
+            <div class="analysis-card">
+              <h3><i class="fas fa-chart-simple"></i> Bundesliga 2 · Old vs New Comparison</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="info-box"><h5>2025-26 (old) champion</h5><p><strong>${escapeHtml(oldBundesliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
+                  <p>Top scorer: ${escapeHtml(oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
+                  <p>Top scorer: ${escapeHtml(newBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025-26)</small></div></div>
+                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0) / newBundesliga2Data.teams.reduce((s,t)=>s+t.MP,0) * 34).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div class="info-box">
+                    <h5><i class="fas fa-lightbulb"></i> Key Insights</h5>
+                    <ul class="mb-0">
+                      <li><strong>Hertha perfect start:</strong> 4 wins from 4, 12 goals scored – early favourites for promotion.</li>
+                      <li><strong>Nürnberg close behind:</strong> 10 points from 4 games, 13 goals scored – strong attacking form.</li>
+                      <li><strong>Heidenheim adapting well:</strong> Relegated from Bundesliga 1, sit 3rd with 9 points.</li>
+                      <li><strong>Darmstadt struggling:</strong> Only 1 point from 4 games, scored just 2 goals.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+            container.innerHTML = html;
+        }
+
+        function renderResults() {
+            const container = document.getElementById('resultsContent');
+            let html = `<div class="analysis-card">
+              <h3><i class="fas fa-futbol"></i> Bundesliga 2 · Match Results (Matchday 1-4)</h3>
+              <p class="text-muted">All 36 matches from the first four matchdays of the 2026-27 season.</p>
+          `;
+
+            const matchdays = [
+                { key: 'matchday1', title: 'Matchday 1' },
+                { key: 'matchday2', title: 'Matchday 2' },
+                { key: 'matchday3', title: 'Matchday 3' },
+                { key: 'matchday4', title: 'Matchday 4' }
+            ];
+
+            for (const md of matchdays) {
+                html += `<div class="matchday-section">
+                  <div class="matchday-title">${md.title}</div>
+              `;
+                for (const match of matchResults[md.key]) {
+                    html += `<div class="result-card">
+                      <span>${escapeHtml(match.home)}</span>
+                      <span class="result-score">${match.homeGoals} - ${match.awayGoals}</span>
+                      <span>${escapeHtml(match.away)}</span>
+                  </div>`;
+                }
+                html += `</div>`;
             }
+
             html += `</div>`;
-            document.getElementById('fixturesContent').innerHTML = html;
+            container.innerHTML = html;
         }
 
         function renderStats() {
-            const oldTeams = oldBundesligaData.teams;
-            const newTeams = newBundesligaData.teams;
-            const oldGoals = oldTeams.reduce((s, t) => s + t.GF, 0);
-            const newGoals = newTeams.reduce((s, t) => s + t.GF, 0);
-            const oldChamp = oldTeams.find(t => t.rank === 1);
-            const newChamp = newTeams.find(t => t.rank === 1);
-            const oldTopScorer = oldTeams.reduce((a, b) => a.GF > b.GF ? a : b);
-            const newTopScorer = newTeams.reduce((a, b) => a.GF > b.GF ? a : b);
+            const oldB1 = oldBundesliga1Data.teams;
+            const newB1 = newBundesliga1Data.teams;
+            const oldB2 = oldBundesliga2Data.teams;
+            const newB2 = newBundesliga2Data.teams;
+
+            const oldB1Champ = oldB1.find(t => t.rank === 1);
+            const newB1Champ = newB1.find(t => t.rank === 1);
+            const oldB2Champ = oldB2.find(t => t.rank === 1);
+            const newB2Champ = newB2.find(t => t.rank === 1);
 
             let html = `
             <div class="analysis-card">
-              <h3><i class="fas fa-chart-line"></i> Bundesliga Snapshot · Old vs New</h3>
+              <h3><i class="fas fa-chart-line"></i> German Football Snapshot · Old vs New</h3>
               <div class="row">
                 <div class="col-md-6">
                   <div class="info-box">
-                    <h5>?? 2025-26 Season</h5>
-                    <p><strong>Champion:</strong> ${escapeHtml(oldChamp?.team)} (${calcPts(oldChamp)} pts)</p>
-                    <p><strong>Top scorer:</strong> ${escapeHtml(oldTopScorer?.team)} (${oldTopScorer?.GF} goals)</p>
-                    <p><strong>Total goals:</strong> ${oldGoals}</p>
-                    <p><strong>Avg goals/match:</strong> ${(oldGoals/306).toFixed(2)}</p>
+                    <h5>?? Bundesliga 1 · 2025-26</h5>
+                    <p><strong>Champion:</strong> ${escapeHtml(oldB1Champ?.team)} (${calcPts(oldB1Champ)} pts)</p>
+                    <p><strong>Total goals:</strong> ${oldB1.reduce((s,t)=>s+t.GF,0)}</p>
+                    <p><strong>Avg goals/match:</strong> ${(oldB1.reduce((s,t)=>s+t.GF,0)/306).toFixed(2)}</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-box">
-                    <h5>?? 2026-27 (so far)</h5>
-                    <p><strong>Current leader:</strong> ${escapeHtml(newChamp?.team)} (${calcPts(newChamp)} pts)</p>
-                    <p><strong>Top scorer so far:</strong> ${escapeHtml(newTopScorer?.team)} (${newTopScorer?.GF} goals)</p>
-                    <p><strong>Total goals:</strong> ${newGoals}</p>
-                    <p><strong>Projected goals (34 matches):</strong> ${(newGoals/2*34).toFixed(0)}</p>
+                    <h5>?? Bundesliga 1 · 2026-27 (so far)</h5>
+                    <p><strong>Current leader:</strong> ${escapeHtml(newB1Champ?.team)} (${calcPts(newB1Champ)} pts)</p>
+                    <p><strong>Total goals:</strong> ${newB1.reduce((s,t)=>s+t.GF,0)}</p>
+                    <p><strong>Projected goals (34 matches):</strong> ${(newB1.reduce((s,t)=>s+t.GF,0)/newB1.reduce((s,t)=>s+t.MP,0)*34).toFixed(0)}</p>
                   </div>
                 </div>
               </div>
               <div class="row mt-2">
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h5>?? Bundesliga 2 · 2025-26</h5>
+                    <p><strong>Champion:</strong> ${escapeHtml(oldB2Champ?.team)} (${calcPts(oldB2Champ)} pts)</p>
+                    <p><strong>Total goals:</strong> ${oldB2.reduce((s,t)=>s+t.GF,0)}</p>
+                    <p><strong>Avg goals/match:</strong> ${(oldB2.reduce((s,t)=>s+t.GF,0)/306).toFixed(2)}</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <h5>?? Bundesliga 2 · 2026-27 (so far)</h5>
+                    <p><strong>Current leader:</strong> ${escapeHtml(newB2Champ?.team)} (${calcPts(newB2Champ)} pts)</p>
+                    <p><strong>Total goals:</strong> ${newB2.reduce((s,t)=>s+t.GF,0)}</p>
+                    <p><strong>Projected goals (34 matches):</strong> ${(newB2.reduce((s,t)=>s+t.GF,0)/newB2.reduce((s,t)=>s+t.MP,0)*34).toFixed(0)}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
                 <div class="col-md-12">
                   <div class="info-box text-center">
-                    <h5>?? Title Race</h5>
-                    <p>Bayern won by <strong>${calcPts(oldChamp) - calcPts(oldTeams.find(t=>t.rank===2))}</strong> points in 2025-26.</p>
-                    <p>2026-27 is already shaping up to be more competitive with Augsburg, Freiburg, and Dortmund all on 6 points.</p>
+                    <h5>?? Promoted Teams Impact</h5>
+                    <p><strong>SV Elversberg</strong> (promoted from 3. Liga) – 6 points from 2 matches in Bundesliga 1.</p>
+                    <p><strong>Schalke & Paderborn</strong> (promoted from Bundesliga 2) – Schalke 1 point, Paderborn 1 point from 2 matches.</p>
+                    <p><strong>Heidenheim & St. Pauli</strong> (relegated from Bundesliga 1) – Heidenheim 9 pts, St. Pauli 3 pts from 4 matches in Bundesliga 2.</p>
                   </div>
                 </div>
               </div>
@@ -576,7 +786,8 @@
         // ===================== DOM READY =====================
         document.addEventListener('DOMContentLoaded', () => {
             renderBundesliga1();
-            renderFixtures();
+            renderBundesliga2();
+            renderResults();
             renderStats();
             initTabs();
         });
