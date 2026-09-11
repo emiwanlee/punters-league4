@@ -619,8 +619,6 @@ const leaguesData = {
       { "rank": 18, "team": "AVS", "MP": 34, "MW": 3, "MD": 12, "ML": 19, "GF": 27, "GA": 67, "logo": "portugal/avs.png" }
     ],
     "fixtures": [
-
-      { "home": "Estrela Amadora", "away": "Braga", "date": "2026-09-10" },
       { "home": "Braga", "away": "Estoril", "date": "2026-09-12" },
       { "home": "Casa Pia", "away": "Porto", "date": "2026-09-12" },
       { "home": "Nacional", "away": "Alverca", "date": "2026-09-12" },
@@ -800,7 +798,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "Stevenage", "away": "Luton Town", "date": "2026-09-10" },
       { "home": "Leyton Orient", "away": "Wycombe", "date": "2026-09-12" },
       { "home": "Notts County", "away": "Bradford City", "date": "2026-09-12" },
       { "home": "Sheffield Wednesday", "away": "Wigan Athletic", "date": "2026-09-12" },
@@ -1178,19 +1175,6 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 22, "MW": 4, "MD": 3, "ML": 15, "GF": 20, "GA": 54, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
-      { "home": "Montréal", "away": "Charlotte", "date": "2026-09-10" },
-      { "home": "D.C. United", "away": "Columbus", "date": "2026-09-10" },
-      { "home": "Atlanta United", "away": "Orlando City", "date": "2026-09-10" },
-      { "home": "Philadelphia", "away": "Cincinnati", "date": "2026-09-10" },
-      { "home": "Toronto", "away": "Nashville", "date": "2026-09-10" },
-      { "home": "New York City", "away": "New England", "date": "2026-09-10" },
-      { "home": "Houston Dynamo", "away": "Salt Lake", "date": "2026-09-10" },
-      { "home": "Austin", "away": "Colorado", "date": "2026-09-10" },
-      { "home": "Minnesota", "away": "Dallas", "date": "2026-09-10" },
-      { "home": "Chicago", "away": "Inter Miami", "date": "2026-09-10" },
-      { "home": "Portland", "away": "St. Louis", "date": "2026-09-10" },
-      { "home": "Vancouver", "away": "LA Galaxy", "date": "2026-09-10" },
-      { "home": "San Diego", "away": "San Jose", "date": "2026-09-10" },
       { "home": "LAFC", "away": "NY Red Bulls", "date": "2026-09-13" },
       { "home": "Orlando City", "away": "Toronto", "date": "2026-09-13" },
       { "home": "D.C. United", "away": "Atlanta United", "date": "2026-09-13" },
