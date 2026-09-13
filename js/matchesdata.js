@@ -342,6 +342,12 @@ const matchesData = {
   { "home": "Hull", "away": "Aston Villa", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
   { "home": "Everton", "away": "Manchester United", "home_score": 2, "away_score": 2, "date": "2026-09-06" },
   { "home": "Arsenal", "away": "Chelsea", "home_score": 2, "away_score": 1, "date": "2026-09-06" },
+  { "home": "Aston Villa", "away": "Nottingham", "home_score": 1, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Bournemouth", "away": "Brentford", "home_score": 2, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Chelsea", "away": "Hull", "home_score": 2, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Crystal Palace", "away": "Ipswich", "home_score": 2, "away_score": 3, "date": "2026-09-12" },
+  { "home": "Liverpool", "away": "Fulham", "home_score": 0, "away_score": 0, "date": "2026-09-12" },
+  { "home": "Tottenham", "away": "Everton", "home_score": 0, "away_score": 0, "date": "2026-09-12" },
 ],
 
     // ============================================================
@@ -390,6 +396,10 @@ const matchesData = {
   { "home": "Espanyol", "away": "Sevilla", "home_score": 1, "away_score": 1, "date": "2026-09-06" },
   { "home": "Getafe", "away": "Celta Vigo", "home_score": 1, "away_score": 1, "date": "2026-09-07" },
   { "home": "Elche", "away": "Real Sociedad", "home_score": 2, "away_score": 3, "date": "2026-09-07" },
+  { "home": "Sevilla", "away": "Valencia", "home_score": 1, "away_score": 0, "date": "2026-09-11" },
+  { "home": "Racing Santander", "away": "Alavés", "home_score": 2, "away_score": 1, "date": "2026-09-12" },
+  { "home": "Osasuna", "away": "Espanyol", "home_score": 0, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Athletic", "away": "Elche", "home_score": 1, "away_score": 1, "date": "2026-09-12" },
   
   
 ],
@@ -429,6 +439,10 @@ const matchesData = {
   { "home": "Juventus", "away": "Milan", "home_score": 1, "away_score": 1, "date": "2026-09-06" },
   { "home": "Cagliari", "away": "Leece", "home_score": 1, "away_score": 0, "date": "2026-09-07" },
   { "home": "Udinese", "away": "Lazio", "home_score": 1, "away_score": 2, "date": "2026-09-07" },
+  { "home": "Fiorentina", "away": "Venezia", "home_score": 2, "away_score": 4, "date": "2026-09-11" },
+  { "home": "Genoa", "away": "Frosinone", "home_score": 1, "away_score": 1, "date": "2026-09-12" },
+  { "home": "Lazio", "away": "Milan", "home_score": 2, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Atalanta", "away": "Cagliari", "home_score": 1, "away_score": 2, "date": "2026-09-12" },
 ],
 
     // ============================================================
@@ -463,6 +477,8 @@ const matchesData = {
   { "home": "Troyes", "away": "Strasbourg", "home_score": 2, "away_score": 6, "date": "2026-09-06" },
   { "home": "Angers", "away": "Rennes", "home_score": 1, "away_score": 2, "date": "2026-09-06" },
   { "home": "Marseille", "away": "Paris", "home_score": 2, "away_score": 3, "date": "2026-09-06" },
+  { "home": "Rennes", "away": "Marseille", "home_score": 1, "away_score": 0, "date": "2026-09-11" },
+  { "home": "Strasbourg", "away": "Monaco", "home_score": 1, "away_score": 1, "date": "2026-09-12" },
   
 ],
 
@@ -489,6 +505,13 @@ const matchesData = {
   { "home": "Schalke", "away": "Bayern", "home_score": 0, "away_score": 0, "date": "2026-09-05" },
   { "home": "Hamburger", "away": "Mainz", "home_score": 0, "away_score": 5, "date": "2026-09-06" },
   { "home": "Eintracht Frankfurt", "away": "Augsburg", "home_score": 1, "away_score": 4, "date": "2026-09-06" },
+  { "home": "Union Berlin", "away": "Schalke", "home_score": 1, "away_score": 3, "date": "2026-09-11" },
+  { "home": "Augsburg", "away": "Leverkusen", "home_score": 2, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Dortmund", "away": "Paderborn", "home_score": 3, "away_score": 0, "date": "2026-09-12" },
+  { "home": "Freiburg", "away": "Mönchengladbach", "home_score": 5, "away_score": 0, "date": "2026-09-12" },
+  { "home": "Hoffenheim", "away": "Stuttgart", "home_score": 2, "away_score": 1, "date": "2026-09-12" },
+  { "home": "Mainz", "away": "Eintracht Frankfurt", "home_score": 1, "away_score": 3, "date": "2026-09-12" },
+  { "home": "Köln", "away": "Werder", "home_score": 1, "away_score": 1, "date": "2026-09-12" },
   
 ],
 
@@ -537,6 +560,7 @@ const matchesData = {
   { "home": "Heerenveen", "away": "AZ Alkmaar", "home_score": 2, "away_score": 3, "date": "2026-09-06" },
   { "home": "Telstar", "away": "Cambuur", "home_score": 2, "away_score": 2, "date": "2026-09-06" },
   { "home": "Den Haag", "away": "Sittard", "home_score": 2, "away_score": 3, "date": "2026-09-06" },
+  { "home": "AZ Alkmaar", "away": "Willem II", "home_score": 1, "away_score": 1, "date": "2026-09-11" },
 ],
     // ============================================================
     //  PORTUGUESE PREMEIRA LIGA
@@ -636,7 +660,51 @@ const matchesData = {
   { "home": "Anderlecht", "away": "Genk", "home_score": 0, "away_score": 0, "date": "2026-09-06" },
   { "home": "Beveren", "away": "Leuven", "home_score": 3, "away_score": 0, "date": "2026-09-06" },
 ],
+// ============================================================
+//  BELGIUM - CHALLENGER PRO LEAGUE (Match Results)
+// ============================================================
 
+"Belgian Challenger Pro League": [
+    // ===== MATCHDAY 1 =====
+    { home: "RFC Seraing", away: "Lokeren", home_score: 0, away_score: 2, date: "2026-08-14" },
+    { home: "Sporting Hasselt", away: "Dender", home_score: 1, away_score: 0, date: "2026-08-14" },
+    { home: "Eupen", away: "Jong Genk", home_score: 4, away_score: 1, date: "2026-08-15" },
+    { home: "Patro Eisden", away: "RSCA FUTURES", home_score: 2, away_score: 1, date: "2026-08-15" },
+    { home: "Virton", away: "Lierse SK", home_score: 3, away_score: 0, date: "2026-08-15" },
+    { home: "Beerschot", away: "Jong KAA Gent", home_score: 4, away_score: 0, date: "2026-08-16" },
+    { home: "RFC Liège", away: "Francs Borains", home_score: 1, away_score: 2, date: "2026-08-17" },
+
+    // ===== MATCHDAY 2 =====
+    { home: "RSCA FUTURES", away: "Virton", home_score: 0, away_score: 1, date: "2026-08-21" },
+    { home: "Lokeren", away: "Eupen", home_score: 2, away_score: 1, date: "2026-08-21" },
+    { home: "Club NXT", away: "RFC Seraing", home_score: 3, away_score: 2, date: "2026-08-22" },
+    { home: "Dender", away: "Beerschot", home_score: 2, away_score: 0, date: "2026-08-22" },
+    { home: "Lierse SK", away: "Patro Eisden", home_score: 2, away_score: 1, date: "2026-08-22" },
+    { home: "Jong Genk", away: "RFC Liège", home_score: 2, away_score: 3, date: "2026-08-23" },
+    { home: "Francs Borains", away: "Sporting Hasselt", home_score: 0, away_score: 1, date: "2026-08-23" },
+
+    // ===== MATCHDAY 3 =====
+    { home: "Sporting Hasselt", away: "Jong KAA Gent", home_score: 0, away_score: 2, date: "2026-08-28" },
+    { home: "Lokeren", away: "Jong Genk", home_score: 2, away_score: 4, date: "2026-08-28" },
+    { home: "RFC Liège", away: "Dender", home_score: 1, away_score: 2, date: "2026-08-29" },
+    { home: "RSCA FUTURES", away: "Beerschot", home_score: 0, away_score: 1, date: "2026-08-29" },
+    { home: "Patro Eisden", away: "Club NXT", home_score: 1, away_score: 2, date: "2026-08-29" },
+    { home: "Virton", away: "Francs Borains", home_score: 0, away_score: 1, date: "2026-08-30" },
+    { home: "RFC Seraing", away: "Lierse SK", home_score: 1, away_score: 1, date: "2026-08-30" },
+
+    // ===== MATCHDAY 4 =====
+    { home: "Dender", away: "RFC Seraing", home_score: 2, away_score: 0, date: "2026-09-04" },
+    { home: "Beerschot", away: "Patro Eisden", home_score: 4, away_score: 2, date: "2026-09-04" },
+    { home: "Jong KAA Gent", away: "RSCA FUTURES", home_score: 2, away_score: 2, date: "2026-09-05" },
+    { home: "Club NXT", away: "Eupen", home_score: 0, away_score: 1, date: "2026-09-05" },
+    { home: "Jong Genk", away: "Sporting Hasselt", home_score: 3, away_score: 0, date: "2026-09-05" },
+    { home: "Lierse SK", away: "RFC Liège", home_score: 0, away_score: 0, date: "2026-09-06" },
+    { home: "Francs Borains", away: "Lokeren", home_score: 3, away_score: 0, date: "2026-09-06" },
+
+    // ===== MATCHDAY 5 =====
+    { home: "Jong KAA Gent", away: "Dender", home_score: 0, away_score: 1, date: "2026-09-11" },
+    { home: "Beerschot", away: "Lierse SK", home_score: 3, away_score: 1, date: "2026-09-11" }
+],
 
 // ============================================================
     //  SWEDEN ALLSVENSKAN
