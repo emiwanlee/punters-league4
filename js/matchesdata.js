@@ -348,6 +348,10 @@ const matchesData = {
   { "home": "Crystal Palace", "away": "Ipswich", "home_score": 2, "away_score": 3, "date": "2026-09-12" },
   { "home": "Liverpool", "away": "Fulham", "home_score": 0, "away_score": 0, "date": "2026-09-12" },
   { "home": "Tottenham", "away": "Everton", "home_score": 0, "away_score": 0, "date": "2026-09-12" },
+  { "home": "Sunderland", "away": "Arsenal", "home_score": 0, "away_score": 2, "date": "2026-09-12" },
+  { "home": "Coventry", "away": "Brighton", "home_score": 0, "away_score": 5, "date": "2026-09-13" },
+  { "home": "Man United", "away": "Manchester City", "home_score": 0, "away_score": 1, "date": "2026-09-13" },
+  { "home": "Leeds", "away": "Newcastle", "home_score": 4, "away_score": 1, "date": "2026-09-14" },
 ],
 
     // ============================================================

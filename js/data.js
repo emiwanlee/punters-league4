@@ -402,15 +402,7 @@ const leaguesData = {
       { "rank": 20, "team": "Real Oviedo", "MP": 38, "MW": 6, "MD": 11, "ML": 21, "GF": 26, "GA": 60, "logo": "spain/realoviedo.png" }
     ],
     "fixtures": [
-      { "home": "Rayo Vallecano", "away": "Espanyol", "date": "2026-09-15" },
-      { "home": "Alavés", "away": "Valencia", "date": "2026-09-15" },
-      { "home": "Elche", "away": "Real Madrid", "date": "2026-09-15" },
-      { "home": "Deportivo", "away": "Sevilla", "date": "2026-09-16" },
-      { "home": "Atlético Madrid", "away": "Osasuna", "date": "2026-09-16" },
-      { "home": "Levante", "away": "Athletic", "date": "2026-09-16" },
-      { "home": "Barcelona", "away": "Racing Santander", "date": "2026-09-16" },
-      { "home": "Betis", "away": "Getafe", "date": "2026-09-17" },
-      { "home": "Málaga", "away": "Villarreal", "date": "2026-09-17" },
+
       { "home": "Espanyol", "away": "Elche", "date": "2026-09-18" },
       { "home": "Osasuna", "away": "Rayo Vallecano", "date": "2026-09-19" },
       { "home": "Athletic", "away": "Alavés", "date": "2026-09-19" },
@@ -612,7 +604,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "Ajax", "away": "Willem II", "date": "2026-09-15" },
       { "home": "Groningen", "away": "PEC Zwolle", "date": "2026-09-18" },
       { "home": "Den Haag", "away": "Cambuur", "date": "2026-09-19" },
       { "home": "Sparta Rotterdam", "away": "Heerenveen", "date": "2026-09-19" },
@@ -760,7 +751,6 @@ const leaguesData = {
       { "rank": 16, "team": "Västerås", "MP": 30, "MW": 4, "MD": 7, "ML": 19, "GF": 24, "GA": 58, "logo": "sweden/vasteras.png" }
     ],
     "fixtures": [
-      { "home": "AIK", "away": "Mjällby", "date": "2026-09-16" },
       { "home": "IF Brommapojkarna", "away": "Göteborg", "date": "2026-09-19" },
       { "home": "Västerås", "away": "Malmö", "date": "2026-09-19" },
       { "home": "ÖIS", "away": "Sirius", "date": "2026-09-19" },
@@ -814,8 +804,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Middlesbrough", "away": "Millwall", "date": "2026-09-15" },
-      { "home": "Bristol City", "away": "Lincoln City", "date": "2026-09-16" },
       { "home": "Bristol City", "away": "Watford", "date": "2026-09-18" },
       { "home": "Cardiff City", "away": "Charlton", "date": "2026-09-19" },
       { "home": "Stoke City", "away": "Sheffield United", "date": "2026-09-19" },
@@ -878,7 +866,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "AFC Wimbledon", "away": "MK Dons", "date": "2026-09-17" },
       { "home": "Burton", "away": "Mansfield Town", "date": "2026-09-19" },
       { "home": "Barnsley", "away": "Leicester City", "date": "2026-09-19" },
       { "home": "Leyton Orient", "away": "Stevenage", "date": "2026-09-19" },
@@ -1003,7 +990,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Albacete", "away": "Córdoba", "date": "2026-09-18" },
       { "home": "Real Sociedad B", "away": "Mallorca", "date": "2026-09-19" },
       { "home": "Andorra", "away": "Sporting Gijón", "date": "2026-09-19" },
       { "home": "Eldense", "away": "Eibar", "date": "2026-09-19" },
@@ -1070,7 +1056,6 @@ const leaguesData = {
       { "rank": 20, "team": "FCS", "MP": 38, "MW": 6, "MD": 12, "ML": 20, "GF": 30, "GA": 55, "logo": "italy/fcs.png" }
     ],
     "fixtures": [
-      { "home": "Juve Stabia", "away": "Cesena", "date": "2026-09-18" },
       { "home": "Carrarese", "away": "Benevento", "date": "2026-09-19" },
       { "home": "Palermo", "away": "Padova", "date": "2026-09-19" },
       { "home": "Cremonese", "away": "Entella", "date": "2026-09-19" },
@@ -1133,11 +1118,6 @@ const leaguesData = {
         { rank: 18, team: "Amiens", MP: 34, MW: 6, MD: 6, ML: 22, GF: 37, GA: 65, logo: "france/amiens.png" }
     ],
     fixtures: [
-        // ===== MATCHDAY 7 =====
-        { home: "Laval", away: "Sochaux", date: "2026-09-18 20:00" },
-        { home: "Rodez", away: "AS Nancy Lorraine", date: "2026-09-18 20:00" },
-        { home: "Annecy", away: "Dijon", date: "2026-09-18 20:00" },
-        { home: "Pau", away: "Dunkerque", date: "2026-09-18 20:00" },
         { home: "Reims", away: "Montpellier", date: "2026-09-18 20:00" },
         { home: "Grenoble", away: "Clermont", date: "2026-09-19 14:00" },
         { home: "Guingamp", away: "Red Star", date: "2026-09-19 14:00" },
@@ -1174,8 +1154,6 @@ const leaguesData = {
       { "rank": 18, "team": "Preußen Münster", "MP": 34, "MW": 6, "MD": 12, "ML": 16, "GF": 38, "GA": 61, "logo": "germany/preussenmunster.png" }
     ],
     "fixtures": [
-      { "home": "Fürth", "away": "1. FC Magdeburg", "date": "2026-09-18" },
-      { "home": "Wolfsburg", "away": "Darmstadt", "date": "2026-09-18" },
       { "home": "Karlsruher", "away": "Nürnberg", "date": "2026-09-19" },
       { "home": "1. FCK", "away": "Eintracht Braunschweig", "date": "2026-09-19" },
       { "home": "Holstein Kiel", "away": "Osnabrück", "date": "2026-09-19" },
@@ -1217,14 +1195,7 @@ const leaguesData = {
       { "rank": 20, "team": "Jong Ajax", "MP": 38, "MW": 9, "MD": 8, "ML": 21, "GF": 50, "GA": 73, "logo": "netherlands/jongajax.png" }
     ],
     "fixtures": [
-      { "home": "Den Bosch", "away": "Helmond Sport", "date": "2026-09-18" },
-      { "home": "Jong Ajax", "away": "Roda", "date": "2026-09-18" },
-      { "home": "RKC Waalwijk", "away": "MVV", "date": "2026-09-18" },
-      { "home": "TOP Oss", "away": "Dordrecht", "date": "2026-09-18" },
-      { "home": "Jong FC Utrecht", "away": "VVV", "date": "2026-09-18" },
-      { "home": "FC Eindhoven", "away": "FC Emmen", "date": "2026-09-18" },
-      { "home": "Jong AZ", "away": "FC Volendam", "date": "2026-09-18" },
-      { "home": "Almere", "away": "Heracles", "date": "2026-09-18" }
+ 
     ]
   },
   
@@ -1257,9 +1228,6 @@ const leaguesData = {
         { rank: 16, team: "Dender", MP: 30, MW: 3, MD: 10, ML: 17, GF: 24, GA: 51, logo: "belgium/dender.png" }
     ],
     fixtures: [
-        
-        // ===== MATCHDAY 7 =====
-        { home: "Gent", away: "Standard", date: "2026-09-18 19:45" },
         { home: "OH Leuven", away: "La Louvière", date: "2026-09-19 15:00" },
         { home: "Charleroi", away: "Cercle Brugge", date: "2026-09-19 17:15" },
         { home: "Anderlecht", away: "Zulte Waregem", date: "2026-09-19 19:45" },
@@ -1299,9 +1267,6 @@ const leaguesData = {
         { rank: 17, team: "Olympic Charleroi", MP: 32, MW: 3, MD: 7, ML: 22, GF: 26, GA: 68, logo: "belgium/roccharleroi.png" }
     ],
     fixtures: [
-        // ===== MATCHDAY 6 =====
-        { home: "Club NXT", away: "Jong KAA Gent", date: "2026-09-18 19:00" },
-        { home: "Francs Borains", away: "RSCA FUTURES", date: "2026-09-18 19:00" },
         { home: "Sporting Hasselt", away: "Beerschot", date: "2026-09-19 15:00" },
         { home: "Jong Genk", away: "RFC Seraing", date: "2026-09-19 15:00" },
         { home: "Eupen", away: "RFC Liège", date: "2026-09-19 19:00" },
@@ -1453,9 +1418,7 @@ const leaguesData = {
       { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
     ],
     "fixtures": [
-      { "home": "Deportivo Riestra", "away": "Lanús", "date": "2026-09-15" },
-      { "home": "Banfield", "away": "Barracas Central", "date": "2026-09-15" },
-      { "home": "Instituto", "away": "Estudiantes de Río Cuarto", "date": "2026-09-15" }
+     
     ]
   },
     "Argentine Primera B Metropolitana": {
@@ -1534,7 +1497,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Botafogo", "away": "Grêmio", "date": "2026-09-17" },
       { "home": "Atlético Mineiro", "away": "Chapecoense", "date": "2026-09-19" },
       { "home": "Mirassol", "away": "Botafogo", "date": "2026-09-19" },
       { "home": "Remo", "away": "Santos", "date": "2026-09-20" },
@@ -1596,7 +1558,6 @@ const leaguesData = {
       { "rank": 16, "team": "Unión La Calera", "MP": 22, "MW": 3, "MD": 5, "ML": 14, "GF": 18, "GA": 40, "logo": "chile/unionlacalera.png" }
     ],
     "fixtures": [
-      { "home": "Unión La Calera", "away": "Deportes Limache", "date": "2026-09-15" },
       { "home": "Universidad de Concepción", "away": "Huachipato", "date": "2026-10-03" },
       { "home": "Universidad de Chile", "away": "Ñublense", "date": "2026-10-10" },
       { "home": "Cobresal", "away": "Universidad de Concepción", "date": "2026-10-10" },
@@ -1679,8 +1640,6 @@ const leaguesData = {
       { "rank": 18, "team": "Atlante", "MP": 17, "MW": 3, "MD": 4, "ML": 10, "GF": 15, "GA": 30, "logo": "mexico/atlante.png" }
     ],
     "fixtures": [
-      { "home": "León", "away": "San Luis", "date": "2026-09-15" },
-      { "home": "Puebla", "away": "Toluca", "date": "2026-09-16" },
       { "home": "Puebla", "away": "Atlante", "date": "2026-09-19" },
       { "home": "Juarez", "away": "Tigres UANL", "date": "2026-09-19" },
       { "home": "San Luis", "away": "Necaxa", "date": "2026-09-20" },
@@ -1740,13 +1699,6 @@ const leaguesData = {
       { "rank": 16, "team": "Gualberto Villarroel San José", "MP": 19, "MW": 2, "MD": 8, "ML": 9, "GF": 19, "GA": 33, "logo": "bolivia/gualbertovillarroel.png" }
     ],
     "fixtures": [
-      { "home": "Real Oruro", "away": "Real Potosí", "date": "2026-09-15" },
-      { "home": "Academia del Balompie Boliviano", "away": "The Strongest", "date": "2026-09-16" },
-      { "home": "Guabirá", "away": "Aurora", "date": "2026-09-16" },
-      { "home": "Nacional Potosí", "away": "Always Ready", "date": "2026-09-17" },
-      { "home": "Blooming", "away": "Universitario de Vinto", "date": "2026-09-17" },
-      { "home": "Real Tomayapo", "away": "Oriente Petrolero", "date": "2026-09-18" },
-      { "home": "Bolívar", "away": "Gualberto Villarroel San José", "date": "2026-09-18" },
       { "home": "Independiente Petrolero", "away": "SA Bulo Bulo", "date": "2026-09-19" }
     ]
   },
@@ -1783,11 +1735,7 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "América de Cali", "away": "Deportivo Pasto", "date": "2026-09-15" },
-      { "home": "Boyacá Chicó FC", "away": "Alianza", "date": "2026-09-16" },
-      { "home": "Once Caldas", "away": "Tolima", "date": "2026-09-17" },
       { "home": "Atlético Bucaramanga", "away": "Independiente Medellín", "date": "2026-09-18" },
-      { "home": "Internacional de Bogotá", "away": "Atl. Nacional", "date": "2026-09-17" },
       { "home": "Rionegro Águilas", "away": "Deportivo Pereira", "date": "2026-09-19" },
       { "home": "Independiente Medellín", "away": "Jaguares de Córdoba", "date": "2026-09-19" },
       { "home": "Millonarios", "away": "Boyacá Chicó FC", "date": "2026-09-19" },
