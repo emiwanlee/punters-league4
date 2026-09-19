@@ -357,7 +357,6 @@ const leaguesData = {
       { "rank": 20, "team": "Wolves", "MP": 38, "MW": 3, "MD": 11, "ML": 24, "GF": 27, "GA": 68, "logo": "england/wolves.png" }
     ],
     "fixtures": [
-      { "home": "Brentford", "away": "Chelsea", "date": "2026-09-18" },
       { "home": "Spurs", "away": "Aston Villa", "date": "2026-09-19" },
       { "home": "Everton", "away": "Ipswich Town", "date": "2026-09-19" },
       { "home": "Brighton", "away": "Arsenal", "date": "2026-09-19" },
@@ -402,8 +401,6 @@ const leaguesData = {
       { "rank": 20, "team": "Real Oviedo", "MP": 38, "MW": 6, "MD": 11, "ML": 21, "GF": 26, "GA": 60, "logo": "spain/realoviedo.png" }
     ],
     "fixtures": [
-
-      { "home": "Espanyol", "away": "Elche", "date": "2026-09-18" },
       { "home": "Osasuna", "away": "Rayo Vallecano", "date": "2026-09-19" },
       { "home": "Athletic", "away": "Alavés", "date": "2026-09-19" },
       { "home": "Celta", "away": "Racing Santander", "date": "2026-09-19" },
@@ -445,7 +442,6 @@ const leaguesData = {
       { "rank": 18, "team": "St. Pauli", "MP": 34, "MW": 6, "MD": 8, "ML": 20, "GF": 29, "GA": 60, "logo": "germany/stpauli.png" }
     ],
     "fixtures": [
-      { "home": "Bayern", "away": "Union Berlin", "date": "2026-09-18" },
       { "home": "Werder", "away": "Augsburg", "date": "2026-09-19" },
       { "home": "Mönchengladbach", "away": "Mainz", "date": "2026-09-19" },
       { "home": "Hamburg", "away": "Köln", "date": "2026-09-19" },
@@ -498,7 +494,6 @@ const leaguesData = {
       { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
     ],
     "fixtures": [
-      { "home": "Monza", "away": "Sassuolo", "date": "2026-09-18" },
       { "home": "Udinese", "away": "Cagliari", "date": "2026-09-19" },
       { "home": "Bologna", "away": "Torino", "date": "2026-09-19" },
       { "home": "Roma", "away": "Inter", "date": "2026-09-19" },
@@ -551,7 +546,6 @@ const leaguesData = {
       { "rank": 18, "team": "Metz", "MP": 34, "MW": 3, "MD": 8, "ML": 23, "GF": 32, "GA": 76, "logo": "france/metz.png" }
     ],
     "fixtures": [
-      { "home": "Monaco", "away": "Lens", "date": "2026-09-18" },
       { "home": "Paris FC", "away": "Strasbourg", "date": "2026-09-19" },
       { "home": "Le Mans", "away": "Lorient", "date": "2026-09-19" },
       { "home": "OL", "away": "Rennes", "date": "2026-09-19" },
@@ -604,7 +598,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "Groningen", "away": "PEC Zwolle", "date": "2026-09-18" },
       { "home": "Den Haag", "away": "Cambuur", "date": "2026-09-19" },
       { "home": "Sparta Rotterdam", "away": "Heerenveen", "date": "2026-09-19" },
       { "home": "Ajax", "away": "Excelsior", "date": "2026-09-19" },
@@ -704,7 +697,6 @@ const leaguesData = {
       { "rank": 16, "team": "Dender", "MP": 30, "MW": 3, "MD": 10, "ML": 17, "GF": 24, "GA": 51, "logo": "belgium/dender.png" }
     ],
     "fixtures": [
-      { "home": "Gent", "away": "Standard", "date": "2026-09-18" },
       { "home": "OH Leuven", "away": "La Louvière", "date": "2026-09-19" },
       { "home": "Charleroi", "away": "Cercle Brugge", "date": "2026-09-19" },
       { "home": "Anderlecht", "away": "Zulte Waregem", "date": "2026-09-19" },
@@ -804,7 +796,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Bristol City", "away": "Watford", "date": "2026-09-18" },
       { "home": "Cardiff City", "away": "Charlton", "date": "2026-09-19" },
       { "home": "Stoke City", "away": "Sheffield United", "date": "2026-09-19" },
       { "home": "Millwall", "away": "West Ham", "date": "2026-09-19" },
@@ -1118,7 +1109,6 @@ const leaguesData = {
         { rank: 18, team: "Amiens", MP: 34, MW: 6, MD: 6, ML: 22, GF: 37, GA: 65, logo: "france/amiens.png" }
     ],
     fixtures: [
-        { home: "Reims", away: "Montpellier", date: "2026-09-18 20:00" },
         { home: "Grenoble", away: "Clermont", date: "2026-09-19 14:00" },
         { home: "Guingamp", away: "Red Star", date: "2026-09-19 14:00" },
         { home: "Boulogne", away: "Nantes", date: "2026-09-19 14:00" },
@@ -1588,25 +1578,47 @@ const leaguesData = {
     "isBasketball": false,
     "season": "2025-26",
     "teams": [
-      { "rank": 1, "team": "Independiente del Valle", "MP": 28, "MW": 22, "MD": 2, "ML": 4, "GF": 67, "GA": 30, "logo": "ecuador/independiente.png" },
-      { "rank": 2, "team": "Macará", "MP": 28, "MW": 14, "MD": 6, "ML": 8, "GF": 39, "GA": 30, "logo": "ecuador/macara.png" },
-      { "rank": 3, "team": "U. Católica", "MP": 28, "MW": 13, "MD": 8, "ML": 7, "GF": 48, "GA": 25, "logo": "ecuador/ucatolica.png" },
-      { "rank": 4, "team": "Aucas", "MP": 28, "MW": 14, "MD": 5, "ML": 9, "GF": 31, "GA": 27, "logo": "ecuador/aucas.png" },
-      { "rank": 5, "team": "BSC", "MP": 28, "MW": 11, "MD": 9, "ML": 8, "GF": 30, "GA": 23, "logo": "ecuador/bsc.png" },
-      { "rank": 6, "team": "LDU Quito", "MP": 28, "MW": 12, "MD": 6, "ML": 10, "GF": 27, "GA": 22, "logo": "ecuador/lduquito.png" },
-      { "rank": 7, "team": "Mushuc Runa", "MP": 28, "MW": 9, "MD": 10, "ML": 9, "GF": 33, "GA": 34, "logo": "ecuador/mushucruna.png" },
-      { "rank": 8, "team": "Libertad Loja", "MP": 27, "MW": 10, "MD": 7, "ML": 10, "GF": 29, "GA": 30, "logo": "ecuador/libertadloja.png" },
-      { "rank": 9, "team": "Guayaquil City", "MP": 28, "MW": 9, "MD": 9, "ML": 10, "GF": 27, "GA": 31, "logo": "ecuador/guayaquilcity.png" },
-      { "rank": 10, "team": "Leones", "MP": 27, "MW": 9, "MD": 8, "ML": 10, "GF": 29, "GA": 30, "logo": "ecuador/leones.png" },
-      { "rank": 11, "team": "Emelec", "MP": 27, "MW": 9, "MD": 8, "ML": 10, "GF": 23, "GA": 32, "logo": "ecuador/emelec.png" },
-      { "rank": 12, "team": "Deportivo Cuenca", "MP": 28, "MW": 10, "MD": 5, "ML": 13, "GF": 24, "GA": 35, "logo": "ecuador/deportivocuenca.png" },
-      { "rank": 13, "team": "Orense", "MP": 27, "MW": 8, "MD": 6, "ML": 13, "GF": 31, "GA": 41, "logo": "ecuador/orense.png" },
-      { "rank": 14, "team": "Técnico Universitario", "MP": 28, "MW": 9, "MD": 2, "ML": 17, "GF": 26, "GA": 39, "logo": "ecuador/tecnico.png" },
-      { "rank": 15, "team": "Delfín", "MP": 28, "MW": 7, "MD": 6, "ML": 15, "GF": 18, "GA": 29, "logo": "ecuador/delfin.png" },
-      { "rank": 16, "team": "Manta", "MP": 28, "MW": 5, "MD": 5, "ML": 18, "GF": 17, "GA": 41, "logo": "ecuador/manta.png" }
+      { "rank": 1, "team": "Independiente del Valle", "MP": 30, "MW": 24, "MD": 2, "ML": 4, "GF": 73, "GA": 33, "logo": "ecuador/independiente.png" },
+      { "rank": 2, "team": "U. Católica", "MP": 30, "MW": 14, "MD": 9, "ML": 7, "GF": 51, "GA": 27, "logo": "ecuador/ucatolica.png" },
+      { "rank": 3, "team": "Macará", "MP": 30, "MW": 15, "MD": 6, "ML": 9, "GF": 41, "GA": 33, "logo": "ecuador/macara.png" },
+      { "rank": 4, "team": "Aucas", "MP": 30, "MW": 14, "MD": 8, "ML": 8, "GF": 33, "GA": 28, "logo": "ecuador/aucas.png" },
+      { "rank": 5, "team": "LDU Quito", "MP": 30, "MW": 13, "MD": 7, "ML": 10, "GF": 31, "GA": 24, "logo": "ecuador/lduquito.png" },
+      { "rank": 6, "team": "BSC", "MP": 30, "MW": 11, "MD": 11, "ML": 8, "GF": 32, "GA": 25, "logo": "ecuador/bsc.png" },
+      { "rank": 7, "team": "Libertad Loja", "MP": 30, "MW": 11, "MD": 8, "ML": 11, "GF": 33, "GA": 34, "logo": "ecuador/libertadloja.png" },
+      { "rank": 8, "team": "Leones", "MP": 30, "MW": 10, "MD": 9, "ML": 11, "GF": 31, "GA": 32, "logo": "ecuador/leones.png" },
+      { "rank": 9, "team": "Guayaquil City", "MP": 30, "MW": 10, "MD": 9, "ML": 11, "GF": 33, "GA": 36, "logo": "ecuador/guayaquilcity.png" },
+      { "rank": 10, "team": "Emelec", "MP": 30, "MW": 10, "MD": 9, "ML": 11, "GF": 25, "GA": 34, "logo": "ecuador/emelec.png" },
+      { "rank": 11, "team": "Mushuc Runa", "MP": 30, "MW": 9, "MD": 11, "ML": 10, "GF": 35, "GA": 38, "logo": "ecuador/mushucruna.png" },
+      { "rank": 12, "team": "Deportivo Cuenca", "MP": 30, "MW": 10, "MD": 6, "ML": 14, "GF": 25, "GA": 37, "logo": "ecuador/deportivocuenca.png" },
+      { "rank": 13, "team": "Orense", "MP": 30, "MW": 9, "MD": 6, "ML": 15, "GF": 36, "GA": 47, "logo": "ecuador/orense.png" },
+      { "rank": 14, "team": "Técnico Universitario", "MP": 30, "MW": 10, "MD": 2, "ML": 18, "GF": 28, "GA": 42, "logo": "ecuador/tecnico.png" },
+      { "rank": 15, "team": "Delfín", "MP": 30, "MW": 7, "MD": 7, "ML": 16, "GF": 19, "GA": 31, "logo": "ecuador/delfin.png" },
+      { "rank": 16, "team": "Manta", "MP": 30, "MW": 5, "MD": 6, "ML": 19, "GF": 17, "GA": 42, "logo": "ecuador/manta.png" }
     ],
     "fixtures": [
-      
+      { "home": "Guayaquil City", "away": "Leones", "date": "2026-09-19" },
+      { "home": "Emelec", "away": "Libertad Loja", "date": "2026-09-20" },
+      { "home": "Técnico Universitario", "away": "Delfín", "date": "2026-09-20" },
+      { "home": "Deportivo Cuenca", "away": "Mushuc Runa", "date": "2026-09-20" },
+      { "home": "LDU Quito", "away": "U. Católica", "date": "2026-09-21" },
+      { "home": "Manta", "away": "Orense", "date": "2026-09-21" },
+      { "home": "BSC", "away": "Independiente del Valle", "date": "2026-09-22" },
+      { "home": "Libertad Loja", "away": "Leones", "date": "2026-10-11" },
+      { "home": "Guayaquil City", "away": "Emelec", "date": "2026-10-11" },
+      { "home": "Manta", "away": "Técnico Universitario", "date": "2026-10-11" },
+      { "home": "Independiente del Valle", "away": "Aucas", "date": "2026-10-11" },
+      { "home": "LDU Quito", "away": "BSC", "date": "2026-10-11" },
+      { "home": "U. Católica", "away": "Macará", "date": "2026-10-11" },
+      { "home": "Orense", "away": "Deportivo Cuenca", "date": "2026-10-11" },
+      { "home": "Delfín", "away": "Mushuc Runa", "date": "2026-10-11" },
+      { "home": "Macará", "away": "Independiente del Valle", "date": "2026-10-18" },
+      { "home": "Leones", "away": "Emelec", "date": "2026-10-18" },
+      { "home": "Deportivo Cuenca", "away": "Técnico Universitario", "date": "2026-10-18" },
+      { "home": "BSC", "away": "U. Católica", "date": "2026-10-18" },
+      { "home": "Mushuc Runa", "away": "Orense", "date": "2026-10-18" },
+      { "home": "Delfín", "away": "Manta", "date": "2026-10-18" },
+      { "home": "Aucas", "away": "LDU Quito", "date": "2026-10-18" },
+      { "home": "Libertad Loja", "away": "Guayaquil City", "date": "2026-10-18" }
     ]
   },
 
@@ -1735,7 +1747,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Atlético Bucaramanga", "away": "Independiente Medellín", "date": "2026-09-18" },
       { "home": "Rionegro Águilas", "away": "Deportivo Pereira", "date": "2026-09-19" },
       { "home": "Independiente Medellín", "away": "Jaguares de Córdoba", "date": "2026-09-19" },
       { "home": "Millonarios", "away": "Boyacá Chicó FC", "date": "2026-09-19" },
@@ -1799,11 +1810,6 @@ const leaguesData = {
       { "rank": 15, "team": "Seattle Storm", "MP": 40, "MW": 8, "MD": 0, "ML": 32, "GF": 0, "GA": 0, "logo": "usa/storm.png" }
     ],
     "fixtures": [
-      { "home": "Connecticut Sun", "away": "Atlanta Dream", "date": "2026-09-18" },
-      { "home": "Washington Mystics", "away": "Chicago Sky", "date": "2026-09-18" },
-      { "home": "Los Angeles Sparks", "away": "Dallas Wings", "date": "2026-09-18" },
-      { "home": "Phoenix Mercury", "away": "Portland Fire", "date": "2026-09-18" },
-      { "home": "Las Vegas Aces", "away": "Seattle Storm", "date": "2026-09-18" },
       { "home": "Indiana Fever", "away": "Toronto Tempo", "date": "2026-09-19" },
       { "home": "New York Liberty", "away": "Minnesota Lynx", "date": "2026-09-19" },
       { "home": "Portland Fire", "away": "Golden State Valkyries", "date": "2026-09-19" },
