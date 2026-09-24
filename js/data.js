@@ -1764,7 +1764,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Santa Fe", "away": "Deportivo Cali", "date": "2026-09-23" },
       { "home": "América de Cali", "away": "Rionegro Águilas", "date": "2026-09-24" },
       { "home": "Atl. Nacional", "away": "Millonarios", "date": "2026-09-25" },
       { "home": "Boyacá Chicó FC", "away": "Deportivo Pasto", "date": "2026-09-26" },
