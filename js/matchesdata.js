@@ -352,6 +352,16 @@ const matchesData = {
   { "home": "Coventry", "away": "Brighton", "home_score": 0, "away_score": 5, "date": "2026-09-13" },
   { "home": "Man United", "away": "Manchester City", "home_score": 0, "away_score": 1, "date": "2026-09-13" },
   { "home": "Leeds", "away": "Newcastle", "home_score": 4, "away_score": 1, "date": "2026-09-14" },
+  { "home": "Brentford", "away": "Chelsea", "home_score": 3, "away_score": 0, "date": "2026-09-18" },
+  { "home": "Tottenham", "away": "Aston Villa", "home_score": 2, "away_score": 3, "date": "2026-09-19" },
+  { "home": "Everton", "away": "Ipswich", "home_score": 1, "away_score": 0, "date": "2026-09-19" },
+  { "home": "Brighton", "away": "Arsenal", "home_score": 3, "away_score": 0, "date": "2026-09-19" },
+  { "home": "Newcastle", "away": "Hull", "home_score": 2, "away_score": 1, "date": "2026-09-19" },
+  { "home": "Nottingham", "away": "Coventry", "home_score": 0, "away_score": 1, "date": "2026-09-19" },
+  { "home": "Bournemouth", "away": "Liverpool", "home_score": 0, "away_score": 1, "date": "2026-09-20" },
+  { "home": "Manchester City", "away": "Sunderland", "home_score": 5, "away_score": 3, "date": "2026-09-20" },
+  { "home": "Leeds", "away": "Crystal Palace", "home_score": 0, "away_score": 0, "date": "2026-09-20" },
+  { "home": "Fulham", "away": "Man United", "home_score": 1, "away_score": 1, "date": "2026-09-20" },
 ],
 
     // ============================================================
