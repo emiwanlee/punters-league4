@@ -873,7 +873,6 @@ const leaguesData = {
       { "rank": 24, "team": "Rotherham", "MP": 46, "MW": 7, "MD": 13, "ML": 26, "GF": 34, "GA": 68, "logo": "england/rotherham.png" }
     ],
     "fixtures": [
-      { "home": "Oldham Athletic", "away": "Salford City", "date": "2026-09-26" },
       { "home": "Chesterfield", "away": "Tranmere", "date": "2026-10-03" },
       { "home": "Rochdale", "away": "Swindon Town", "date": "2026-10-03" },
       { "home": "Salford City", "away": "Fleetwood", "date": "2026-10-03" },
@@ -923,12 +922,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Valladolid", "away": "Córdoba", "date": "2026-09-27" },
-      { "home": "Mallorca", "away": "Almería", "date": "2026-09-27" },
-      { "home": "Eibar", "away": "Las Palmas", "date": "2026-09-27" },
-      { "home": "Burgos", "away": "Eldense", "date": "2026-09-27" },
-      { "home": "Real Oviedo", "away": "Sporting Gijón", "date": "2026-09-27" },
-      { "home": "Leganes", "away": "Castellón", "date": "2026-09-28" },
       { "home": "Eldense", "away": "Real Oviedo", "date": "2026-10-02" },
       { "home": "Albacete", "away": "Eibar", "date": "2026-10-03" },
       { "home": "Almería", "away": "Burgos", "date": "2026-10-03" },
@@ -1128,7 +1121,6 @@ const leaguesData = {
       { "rank": 20, "team": "Jong Ajax", "MP": 38, "MW": 9, "MD": 8, "ML": 21, "GF": 50, "GA": 73, "logo": "netherlands/jongajax.png" }
     ],
     "fixtures": [
-      { "home": "De Graafschap", "away": "Den Bosch", "date": "2026-09-27" },
       { "home": "Helmond Sport", "away": "Heracles", "date": "2026-10-02" },
       { "home": "Vitesse", "away": "NAC", "date": "2026-10-03" },
       { "home": "TOP Oss", "away": "MVV", "date": "2026-10-03" },
@@ -1289,21 +1281,6 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 24, "MW": 5, "MD": 3, "ML": 16, "GF": 26, "GA": 59, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
-      { "home": "NY Red Bulls", "away": "St. Louis", "date": "2026-09-27" },
-      { "home": "Philadelphia", "away": "Orlando City", "date": "2026-09-27" },
-      { "home": "Atlanta United", "away": "New York City", "date": "2026-09-27" },
-      { "home": "Montréal", "away": "Cincinnati", "date": "2026-09-27" },
-      { "home": "Charlotte", "away": "Chicago", "date": "2026-09-27" },
-      { "home": "Austin", "away": "San Diego", "date": "2026-09-27" },
-      { "home": "Houston Dynamo", "away": "Sporting KC", "date": "2026-09-27" },
-      { "home": "Dallas", "away": "LAFC", "date": "2026-09-27" },
-      { "home": "Nashville", "away": "Toronto", "date": "2026-09-27" },
-      { "home": "Seattle Sounders", "away": "Minnesota", "date": "2026-09-27" },
-      { "home": "Salt Lake", "away": "New England", "date": "2026-09-27" },
-      { "home": "Vancouver", "away": "D.C. United", "date": "2026-09-27" },
-      { "home": "LA Galaxy", "away": "Colorado", "date": "2026-09-27" },
-      { "home": "San Jose", "away": "Portland", "date": "2026-09-27" },
-      { "home": "Columbus", "away": "Inter Miami", "date": "2026-09-28" },
       { "home": "Seattle Sounders", "away": "Sporting KC", "date": "2026-10-02" },
       { "home": "Chicago", "away": "Vancouver", "date": "2026-10-07" },
       { "home": "Toronto", "away": "Montréal", "date": "2026-10-10" },
@@ -1633,13 +1610,6 @@ const leaguesData = {
       { "rank": 18, "team": "Atlante", "MP": 17, "MW": 3, "MD": 4, "ML": 10, "GF": 15, "GA": 30, "logo": "mexico/atlante.png" }
     ],
     "fixtures": [
-      { "home": "Cruz Azul", "away": "Toluca", "date": "2026-09-27" },
-      { "home": "Guadalajara", "away": "Querétaro", "date": "2026-09-27" },
-      { "home": "Santos Laguna", "away": "Pachuca", "date": "2026-09-27" },
-      { "home": "Tigres UANL", "away": "Puebla", "date": "2026-09-27" },
-      { "home": "Pumas UNAM", "away": "San Luis", "date": "2026-09-27" },
-      { "home": "León", "away": "Juarez", "date": "2026-09-28" },
-      { "home": "Necaxa", "away": "América", "date": "2026-09-28" },
       { "home": "Puebla", "away": "León", "date": "2026-10-10" },
       { "home": "Querétaro", "away": "Atlante", "date": "2026-10-10" },
       { "home": "Tigres UANL", "away": "Toluca", "date": "2026-10-10" },
@@ -1716,12 +1686,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Deportivo Pereira", "away": "Internacional de Bogotá", "date": "2026-09-27" },
-      { "home": "Cúcuta Deportivo", "away": "Llaneros FC", "date": "2026-09-27" },
-      { "home": "Junior", "away": "Independiente Medellín", "date": "2026-09-27" },
-      { "home": "Jaguares de Córdoba", "away": "Alianza", "date": "2026-09-28" },
-      { "home": "Fortaleza FC", "away": "Tolima", "date": "2026-09-28" },
-      { "home": "Deportivo Cali", "away": "Rionegro Águilas", "date": "2026-09-28" },
       { "home": "Boyacá Chicó FC", "away": "Alianza", "date": "2026-09-29" },
       { "home": "Deportivo Pereira", "away": "Santa Fe", "date": "2026-09-30" },
       { "home": "Independiente Medellín", "away": "Millonarios", "date": "2026-09-30" },
@@ -1764,10 +1728,6 @@ const leaguesData = {
       { "rank": 15, "team": "Seattle Storm", "MP": 40, "MW": 8, "MD": 0, "ML": 32, "GF": 0, "GA": 0, "logo": "usa/storm.png" }
     ],
     "fixtures": [
-    { "home": "New York Liberty", "away": "Minnesota Lynx", "date": "2026-09-27" },
-      { "home": "Indiana Fever", "away": "Las Vegas Aces", "date": "2026-09-27" },
-      { "home": "Washington Mystics", "away": "Atlanta Dream", "date": "2026-09-28" },
-      { "home": "Dallas Wings", "away": "Golden State Valkyries", "date": "2026-09-28" },
       { "home": "Las Vegas Aces", "away": "Indiana Fever", "date": "2026-09-29" },
       { "home": "Minnesota Lynx", "away": "New York Liberty", "date": "2026-09-30" },
       { "home": "Atlanta Dream", "away": "Washington Mystics", "date": "2026-10-01" },
