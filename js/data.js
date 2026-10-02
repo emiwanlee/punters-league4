@@ -1685,8 +1685,7 @@ const leaguesData = {
       { "rank": 19, "team": "Fortaleza FC", "MP": 19, "MW": 3, "MD": 5, "ML": 11, "GF": 14, "GA": 30, "logo": "colombia/fortaleza.png" },
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
-    "fixtures": [
-      { "home": "Atl. Nacional", "away": "Junior", "date": "2026-10-01" },
+    "fixtures": [,
       { "home": "Internacional de Bogotá", "away": "Once Caldas", "date": "2026-10-02" },
       { "home": "Deportivo Cali", "away": "Alianza", "date": "2026-10-03" },
       { "home": "Rionegro Águilas", "away": "Jaguares de Córdoba", "date": "2026-10-03" },
@@ -1725,10 +1724,6 @@ const leaguesData = {
       { "rank": 15, "team": "Seattle Storm", "MP": 40, "MW": 8, "MD": 0, "ML": 32, "GF": 0, "GA": 0, "logo": "usa/storm.png" }
     ],
     "fixtures": [
-      { "home": "Atlanta Dream", "away": "Washington Mystics", "date": "2026-10-01" },
-      { "home": "Golden State Valkyries", "away": "Dallas Wings", "date": "2026-10-01" },
-      { "home": "New York Liberty", "away": "Minnesota Lynx", "date": "2026-10-01" },
-      { "home": "Indiana Fever", "away": "Las Vegas Aces", "date": "2026-10-01" },
       { "home": "Dallas Wings", "away": "Golden State Valkyries", "date": "2026-10-02" },
       { "home": "Washington Mystics", "away": "Atlanta Dream", "date": "2026-10-02" }
     ]
