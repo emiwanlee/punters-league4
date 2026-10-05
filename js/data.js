@@ -935,11 +935,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Real Sociedad B", "away": "Granada", "date": "2026-10-04" },
-      { "home": "Sporting Gijón", "away": "Celta de Vigo II", "date": "2026-10-04" },
-      { "home": "Las Palmas", "away": "Valladolid", "date": "2026-10-04" },
-      { "home": "Castellón", "away": "Ceuta", "date": "2026-10-04" },
-      { "home": "Girona", "away": "Mallorca", "date": "2026-10-04" },
       { "home": "Córdoba", "away": "Tenerife", "date": "2026-10-05" }
     ]
   },
@@ -1129,7 +1124,6 @@ const leaguesData = {
       { "rank": 20, "team": "Jong Ajax", "MP": 38, "MW": 9, "MD": 8, "ML": 21, "GF": 50, "GA": 73, "logo": "netherlands/jongajax.png" }
     ],
     "fixtures": [
-      { "home": "VVV", "away": "Roda", "date": "2026-10-04" },
       { "home": "TOP Oss", "away": "Helmond Sport", "date": "2026-10-09" },
       { "home": "Dordrecht", "away": "FC Emmen", "date": "2026-10-09" },
       { "home": "Almere", "away": "FC Eindhoven", "date": "2026-10-09" },
@@ -1344,9 +1338,6 @@ const leaguesData = {
       { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
     ],
     "fixtures": [
-      { "home": "Talleres", "away": "Belgrano", "date": "2026-10-04" },
-      { "home": "Boca", "away": "Unión", "date": "2026-10-04" },
-      { "home": "Estudiantes de Río Cuarto", "away": "Racing Club", "date": "2026-10-04" },
       { "home": "Deportivo Riestra", "away": "Central Córdoba", "date": "2026-10-05" },
       { "home": "Estudiantes", "away": "Gimnasia y Esgirma", "date": "2026-10-05" },
       { "home": "Vélez Sársfield", "away": "Platense", "date": "2026-10-05" },
@@ -1667,10 +1658,7 @@ const leaguesData = {
       { "rank": 19, "team": "Fortaleza FC", "MP": 19, "MW": 3, "MD": 5, "ML": 11, "GF": 14, "GA": 30, "logo": "colombia/fortaleza.png" },
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
-    "fixtures": [,
-      { "home": "Tolima", "away": "Boyacá Chicó FC", "date": "2026-10-04" },
-      { "home": "Independiente Medellín", "away": "Santa Fe", "date": "2026-10-04" },
-      { "home": "Deportivo Pasto", "away": "Fortaleza FC", "date": "2026-10-04" },
+    "fixtures": [
       { "home": "Cúcuta Deportivo", "away": "Deportivo Pereira", "date": "2026-10-05" },
       { "home": "Atlético Bucaramanga", "away": "Junior", "date": "2026-10-05" },
       { "home": "Llaneros FC", "away": "América de Cali", "date": "2026-10-05" }
@@ -1702,8 +1690,6 @@ const leaguesData = {
       { "rank": 14, "team": "Seattle Storm", "MP": 43, "MW": 8, "MD": 0, "ML": 35, "GF": 0, "GA": 0, "logo": "usa/storm.png" }
     ],
     "fixtures": [
-      { "home": "New York Liberty", "away": "Atlanta Dream", "date": "2026-10-04" },
-      { "home": "Las Vegas Aces", "away": "Golden State Valkyries", "date": "2026-10-04" },
       { "home": "New York Liberty", "away": "Atlanta Dream", "date": "2026-10-08" },
       { "home": "Las Vegas Aces", "away": "Golden State Valkyries", "date": "2026-10-08" },
       { "home": "Atlanta Dream", "away": "New York Liberty", "date": "2026-10-10" },
