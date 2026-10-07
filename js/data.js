@@ -935,7 +935,7 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Córdoba", "away": "Tenerife", "date": "2026-10-05" }
+    
     ]
   },
 // ============================================================
@@ -1276,7 +1276,7 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 24, "MW": 5, "MD": 3, "ML": 16, "GF": 26, "GA": 59, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
-      { "home": "Seattle Sounders", "away": "Sporting KC", "date": "2026-10-02" },
+
       { "home": "Chicago", "away": "Vancouver", "date": "2026-10-07" },
       { "home": "Toronto", "away": "Montréal", "date": "2026-10-10" },
       { "home": "Chicago", "away": "New York City", "date": "2026-10-10" },
@@ -1338,10 +1338,6 @@ const leaguesData = {
       { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
     ],
     "fixtures": [
-      { "home": "Deportivo Riestra", "away": "Central Córdoba", "date": "2026-10-05" },
-      { "home": "Estudiantes", "away": "Gimnasia y Esgirma", "date": "2026-10-05" },
-      { "home": "Vélez Sársfield", "away": "Platense", "date": "2026-10-05" },
-      { "home": "Banfield", "away": "Central", "date": "2026-10-05" },
       { "home": "Sarmiento", "away": "River", "date": "2026-10-07" },
       { "home": "Gimnasia LP", "away": "Atlético Tucumán", "date": "2026-10-11" },
       { "home": "Racing Club", "away": "Belgrano", "date": "2026-10-11" },
@@ -1659,9 +1655,7 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Cúcuta Deportivo", "away": "Deportivo Pereira", "date": "2026-10-05" },
-      { "home": "Atlético Bucaramanga", "away": "Junior", "date": "2026-10-05" },
-      { "home": "Llaneros FC", "away": "América de Cali", "date": "2026-10-05" }
+     
     ]
   },
 	  // ============================================================
