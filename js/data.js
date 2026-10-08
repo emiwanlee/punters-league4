@@ -935,7 +935,28 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-    
+    { "home": "Ceuta", "away": "Sabadell", "date": "2026-10-10" },
+      { "home": "Eldense", "away": "Córdoba", "date": "2026-10-10" },
+      { "home": "Celta de Vigo II", "away": "Real Sociedad B", "date": "2026-10-10" },
+      { "home": "Andorra", "away": "Castellón", "date": "2026-10-11" },
+      { "home": "Almería", "away": "Leganes", "date": "2026-10-11" },
+      { "home": "Mallorca", "away": "Las Palmas", "date": "2026-10-11" },
+      { "home": "Cádiz", "away": "Sporting Gijón", "date": "2026-10-11" },
+      { "home": "Valladolid", "away": "Albacete", "date": "2026-10-12" },
+      { "home": "Burgos", "away": "Granada", "date": "2026-10-12" },
+      { "home": "Oviedo", "away": "Eibar", "date": "2026-10-12" },
+      { "home": "Tenerife", "away": "Girona", "date": "2026-10-12" },
+      { "home": "Leganes", "away": "Córdoba", "date": "2026-10-16" },
+      { "home": "Real Sociedad B", "away": "Almería", "date": "2026-10-17" },
+      { "home": "Eibar", "away": "Mallorca", "date": "2026-10-17" },
+      { "home": "Sporting Gijón", "away": "Albacete", "date": "2026-10-17" },
+      { "home": "Las Palmas", "away": "Castellón", "date": "2026-10-17" },
+      { "home": "Ceuta", "away": "Oviedo", "date": "2026-10-18" },
+      { "home": "Granada", "away": "Cádiz", "date": "2026-10-18" },
+      { "home": "Valladolid", "away": "Eldense", "date": "2026-10-18" },
+      { "home": "Girona", "away": "Andorra", "date": "2026-10-18" },
+      { "home": "Burgos", "away": "Sabadell", "date": "2026-10-18" },
+      { "home": "Celta de Vigo II", "away": "Tenerife", "date": "2026-10-19" }
     ]
   },
 // ============================================================
@@ -1276,8 +1297,6 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 24, "MW": 5, "MD": 3, "ML": 16, "GF": 26, "GA": 59, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
-
-      { "home": "Chicago", "away": "Vancouver", "date": "2026-10-07" },
       { "home": "Toronto", "away": "Montréal", "date": "2026-10-10" },
       { "home": "Chicago", "away": "New York City", "date": "2026-10-10" },
       { "home": "New England", "away": "Seattle Sounders", "date": "2026-10-11" },
@@ -1655,7 +1674,30 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-     
+     { "home": "Atl. Nacional", "away": "Tolima", "date": "2026-10-08" },
+      { "home": "Fortaleza FC", "away": "Millonarios", "date": "2026-10-08" },
+      { "home": "Alianza", "away": "Rionegro Águilas", "date": "2026-10-10" },
+      { "home": "Once Caldas", "away": "Llaneros FC", "date": "2026-10-10" },
+      { "home": "Deportivo Pereira", "away": "Deportivo Cali", "date": "2026-10-10" },
+      { "home": "Junior", "away": "Internacional de Bogotá", "date": "2026-10-11" },
+      { "home": "Jaguares de Córdoba", "away": "Tolima", "date": "2026-10-11" },
+      { "home": "América de Cali", "away": "Independiente Medellín", "date": "2026-10-12" },
+      { "home": "Atlético Bucaramanga", "away": "Rionegro Águilas", "date": "2026-10-14" },
+      { "home": "Boyacá Chicó FC", "away": "Cúcuta Deportivo", "date": "2026-10-13" },
+      { "home": "Junior", "away": "Deportivo Pereira", "date": "2026-10-14" },
+      { "home": "Santa Fe", "away": "Jaguares de Córdoba", "date": "2026-10-15" },
+      { "home": "Millonarios", "away": "Once Caldas", "date": "2026-10-15" },
+      { "home": "Boyacá Chicó FC", "away": "Atl. Nacional", "date": "2026-10-17" },
+      { "home": "Millonarios", "away": "Jaguares de Córdoba", "date": "2026-10-18" },
+      { "home": "Independiente Medellín", "away": "Once Caldas", "date": "2026-10-18" },
+      { "home": "Rionegro Águilas", "away": "Tolima", "date": "2026-10-18" },
+      { "home": "Atlético Bucaramanga", "away": "América de Cali", "date": "2026-10-18" },
+      { "home": "Llaneros FC", "away": "Santa Fe", "date": "2026-10-19" },
+      { "home": "Deportivo Cali", "away": "Junior", "date": "2026-10-19" },
+      { "home": "Cúcuta Deportivo", "away": "Atl. Nacional", "date": "2026-10-20" },
+      { "home": "Deportivo Pasto", "away": "Alianza", "date": "2026-10-20" },
+      { "home": "Deportivo Pereira", "away": "Boyacá Chicó FC", "date": "2026-10-20" },
+      { "home": "Internacional de Bogotá", "away": "Fortaleza FC", "date": "2026-10-21" }
     ]
   },
 	  // ============================================================
