@@ -866,18 +866,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Burnley", "away": "Charlton", "date": "2026-10-13" },
-      { "home": "Cardiff City", "away": "Watford", "date": "2026-10-13" },
-      { "home": "Millwall", "away": "Swansea", "date": "2026-10-13" },
-      { "home": "Wrexham", "away": "West Brom", "date": "2026-10-13" },
-      { "home": "Wolves", "away": "Bolton", "date": "2026-10-13" },
-      { "home": "Bristol City", "away": "Blackburn Rovers", "date": "2026-10-13" },
-      { "home": "Birmingham", "away": "Preston", "date": "2026-10-13" },
-      { "home": "Stoke City", "away": "Middlesbrough", "date": "2026-10-13" },
-      { "home": "QPR", "away": "Derby County", "date": "2026-10-14" },
-      { "home": "Norwich City", "away": "Southampton", "date": "2026-10-14" },
-      { "home": "Portsmouth", "away": "Sheffield United", "date": "2026-10-14" },
-      { "home": "Lincoln City", "away": "West Ham", "date": "2026-10-14" },
       { "home": "Burnley", "away": "Wolves", "date": "2026-10-16" },
       { "home": "Watford", "away": "Charlton", "date": "2026-10-17" },
       { "home": "Middlesbrough", "away": "Cardiff City", "date": "2026-10-17" },
@@ -1121,10 +1109,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Valladolid", "away": "Albacete", "date": "2026-10-12" },
-      { "home": "Burgos", "away": "Granada", "date": "2026-10-12" },
-      { "home": "Oviedo", "away": "Eibar", "date": "2026-10-12" },
-      { "home": "Tenerife", "away": "Girona", "date": "2026-10-12" },
       { "home": "Leganes", "away": "Córdoba", "date": "2026-10-16" },
       { "home": "Real Sociedad B", "away": "Almería", "date": "2026-10-17" },
       { "home": "Eibar", "away": "Mallorca", "date": "2026-10-17" },
@@ -1833,10 +1817,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-
-      { "home": "Atlético Bucaramanga", "away": "Rionegro Águilas", "date": "2026-10-14" },
-      { "home": "Boyacá Chicó FC", "away": "Cúcuta Deportivo", "date": "2026-10-13" },
-      { "home": "Junior", "away": "Deportivo Pereira", "date": "2026-10-14" },
       { "home": "Santa Fe", "away": "Jaguares de Córdoba", "date": "2026-10-15" },
       { "home": "Millonarios", "away": "Once Caldas", "date": "2026-10-15" },
       { "home": "Boyacá Chicó FC", "away": "Atl. Nacional", "date": "2026-10-17" },
