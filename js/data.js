@@ -953,7 +953,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-{ "home": "Mansfield Town", "away": "Oxford Utd", "date": "2026-10-15" },
       { "home": "MK Dons", "away": "Luton Town", "date": "2026-10-17" },
       { "home": "Peterborough", "away": "Burton", "date": "2026-10-17" },
       { "home": "Barnsley", "away": "Cambridge United", "date": "2026-10-17" },
@@ -1604,8 +1603,7 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Chapecoense", "away": "Athletico-PR", "date": "2026-10-13" },
-      { "home": "Bragantino", "away": "Cruzeiro", "date": "2026-10-13" }
+
     ]
   },
 
@@ -1817,8 +1815,7 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Santa Fe", "away": "Jaguares de Córdoba", "date": "2026-10-15" },
-      { "home": "Millonarios", "away": "Once Caldas", "date": "2026-10-15" },
+
       { "home": "Boyacá Chicó FC", "away": "Atl. Nacional", "date": "2026-10-17" },
       { "home": "Millonarios", "away": "Jaguares de Córdoba", "date": "2026-10-18" },
       { "home": "Independiente Medellín", "away": "Once Caldas", "date": "2026-10-18" },
@@ -1858,8 +1855,7 @@ const leaguesData = {
       { "rank": 14, "team": "Seattle Storm", "MP": 43, "MW": 8, "MD": 0, "ML": 35, "GF": 0, "GA": 0, "logo": "usa/storm.png" }
     ],
     "fixtures": [
-      { "home": "New York Liberty", "away": "Atlanta Dream", "date": "2026-10-14" },
-      { "home": "Las Vegas Aces", "away": "Golden State Valkyries", "date": "2026-10-14" }
+	
     ]
   },
 
