@@ -871,7 +871,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Wolves", "away": "Portsmouth", "date": "2026-10-20" },
       { "home": "Bolton", "away": "Middlesbrough", "date": "2026-10-23" },
       { "home": "Sheffield United", "away": "Derby County", "date": "2026-10-24" },
       { "home": "Charlton", "away": "Norwich City", "date": "2026-10-24" },
@@ -946,17 +945,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "Notts County", "away": "Sheffield Wednesday", "date": "2026-10-20" },
-      { "home": "Cambridge United", "away": "Wycombe", "date": "2026-10-20" },
-      { "home": "Burton", "away": "Bradford City", "date": "2026-10-20" },
-      { "home": "Bromley", "away": "Leicester City", "date": "2026-10-20" },
-      { "home": "Blackpool", "away": "MK Dons", "date": "2026-10-20" },
-      { "home": "AFC Wimbledon", "away": "Mansfield Town", "date": "2026-10-20" },
-      { "home": "Luton Town", "away": "Barnsley", "date": "2026-10-20" },
-      { "home": "Stevenage", "away": "Plymouth", "date": "2026-10-20" },
-      { "home": "Huddersfield", "away": "Peterborough", "date": "2026-10-20" },
-      { "home": "Doncaster", "away": "Stockport", "date": "2026-10-20" },
-      { "home": "Oxford Utd", "away": "Wigan Athletic", "date": "2026-10-20" },
       { "home": "Reading", "away": "Leyton Orient", "date": "2026-10-21" },
       { "home": "Luton Town", "away": "Leicester City", "date": "2026-10-24" },
       { "home": "Huddersfield", "away": "Wigan Athletic", "date": "2026-10-24" },
@@ -1028,19 +1016,56 @@ const leaguesData = {
       { "rank": 24, "team": "Rotherham", "MP": 46, "MW": 7, "MD": 13, "ML": 26, "GF": 34, "GA": 68, "logo": "england/rotherham.png" }
     ],
     "fixtures": [
-      { "home": "York City", "away": "Accrington Stanley", "date": "2026-10-20" },
-      { "home": "Northampton Town", "away": "Tranmere", "date": "2026-10-20" },
-      { "home": "Rotherham", "away": "Newport County", "date": "2026-10-20" },
-      { "home": "Crawley Town", "away": "Shrewsbury", "date": "2026-10-20" },
-      { "home": "Exeter City", "away": "Crewe", "date": "2026-10-20" },
-      { "home": "Rochdale", "away": "Grimsby", "date": "2026-10-20" },
-      { "home": "Walsall", "away": "Oldham Athletic", "date": "2026-10-20" },
-      { "home": "Barnet", "away": "Swindon Town", "date": "2026-10-20" },
-      { "home": "Chesterfield", "away": "Colchester", "date": "2026-10-20" },
-      { "home": "Bristol Rovers", "away": "Salford City", "date": "2026-10-20" },
-      { "home": "Cheltenham", "away": "Fleetwood", "date": "2026-10-20" },
-      { "home": "Gillingham", "away": "Port Vale", "date": "2026-10-20" }
-
+ { "home": "Bristol Rovers", "away": "Swindon Town", "date": "2026-10-24" },
+      { "home": "Cheltenham", "away": "Newport County", "date": "2026-10-24" },
+      { "home": "Northampton Town", "away": "Colchester", "date": "2026-10-24" },
+      { "home": "Barnet", "away": "Oldham Athletic", "date": "2026-10-24" },
+      { "home": "Exeter City", "away": "Fleetwood", "date": "2026-10-24" },
+      { "home": "Crawley Town", "away": "Tranmere", "date": "2026-10-24" },
+      { "home": "Rotherham", "away": "Shrewsbury", "date": "2026-10-24" },
+      { "home": "Rochdale", "away": "Accrington Stanley", "date": "2026-10-24" },
+      { "home": "Chesterfield", "away": "Crewe", "date": "2026-10-24" },
+      { "home": "Gillingham", "away": "Grimsby", "date": "2026-10-24" },
+      { "home": "York City", "away": "Port Vale", "date": "2026-10-24" },
+      { "home": "Walsall", "away": "Salford City", "date": "2026-10-26" },
+      { "home": "Barnet", "away": "York City", "date": "2026-10-27" },
+      { "home": "Newport County", "away": "Chesterfield", "date": "2026-10-30" },
+      { "home": "Port Vale", "away": "Rochdale", "date": "2026-10-31" },
+      { "home": "Grimsby", "away": "York City", "date": "2026-10-31" },
+      { "home": "Accrington Stanley", "away": "Northampton Town", "date": "2026-10-31" },
+      { "home": "Swindon Town", "away": "Rotherham", "date": "2026-10-31" },
+      { "home": "Colchester", "away": "Walsall", "date": "2026-10-31" },
+      { "home": "Salford City", "away": "Exeter City", "date": "2026-10-31" },
+      { "home": "Fleetwood", "away": "Bristol Rovers", "date": "2026-10-31" },
+      { "home": "Shrewsbury", "away": "Gillingham", "date": "2026-10-31" },
+      { "home": "Tranmere", "away": "Cheltenham", "date": "2026-10-31" },
+      { "home": "Oldham Athletic", "away": "Crawley Town", "date": "2026-10-31" },
+      { "home": "Crewe", "away": "Barnet", "date": "2026-10-31" },
+      { "home": "Northampton Town", "away": "Oldham Athletic", "date": "2026-11-03" },
+      { "home": "Exeter City", "away": "Cheltenham", "date": "2026-11-14" },
+      { "home": "Shrewsbury", "away": "Oldham Athletic", "date": "2026-11-14" },
+      { "home": "Bristol Rovers", "away": "Chesterfield", "date": "2026-11-14" },
+      { "home": "Rotherham", "away": "Crawley Town", "date": "2026-11-14" },
+      { "home": "Rochdale", "away": "York City", "date": "2026-11-14" },
+      { "home": "Colchester", "away": "Gillingham", "date": "2026-11-14" },
+      { "home": "Crewe", "away": "Newport County", "date": "2026-11-14" },
+      { "home": "Swindon Town", "away": "Grimsby", "date": "2026-11-14" },
+      { "home": "Walsall", "away": "Barnet", "date": "2026-11-14" },
+      { "home": "Salford City", "away": "Northampton Town", "date": "2026-11-14" },
+      { "home": "Port Vale", "away": "Accrington Stanley", "date": "2026-11-14" },
+      { "home": "Fleetwood", "away": "Tranmere", "date": "2026-11-14" },
+      { "home": "Newport County", "away": "Swindon Town", "date": "2026-11-21" },
+      { "home": "Gillingham", "away": "Crewe", "date": "2026-11-21" },
+      { "home": "York City", "away": "Walsall", "date": "2026-11-21" },
+      { "home": "Grimsby", "away": "Rotherham", "date": "2026-11-21" },
+      { "home": "Tranmere", "away": "Colchester", "date": "2026-11-21" },
+      { "home": "Cheltenham", "away": "Bristol Rovers", "date": "2026-11-21" },
+      { "home": "Accrington Stanley", "away": "Salford City", "date": "2026-11-21" },
+      { "home": "Northampton Town", "away": "Rochdale", "date": "2026-11-21" },
+      { "home": "Crawley Town", "away": "Fleetwood", "date": "2026-11-21" },
+      { "home": "Oldham Athletic", "away": "Exeter City", "date": "2026-11-21" },
+      { "home": "Chesterfield", "away": "Shrewsbury", "date": "2026-11-21" },
+      { "home": "Barnet", "away": "Port Vale", "date": "2026-11-21" }
     ]
   },
 
@@ -1156,7 +1181,6 @@ const leaguesData = {
       { "rank": 20, "team": "FCS", "MP": 38, "MW": 6, "MD": 12, "ML": 20, "GF": 30, "GA": 55, "logo": "italy/fcs.png" }
     ],
     "fixtures": [
-	{ "home": "Empoli", "away": "Vicenza", "date": "2026-10-20" },
       { "home": "Entella", "away": "Mantova", "date": "2026-10-24" },
       { "home": "FCS", "away": "Sampdoria", "date": "2026-10-24" },
       { "home": "Avellino", "away": "Padova", "date": "2026-10-24" },
@@ -1287,7 +1311,6 @@ const leaguesData = {
       { "rank": 18, "team": "Preußen Münster", "MP": 34, "MW": 6, "MD": 12, "ML": 16, "GF": 38, "GA": 61, "logo": "germany/preussenmunster.png" }
     ],
     "fixtures": [
-     { "home": "Darmstadt", "away": "St. Pauli", "date": "2026-10-20" },
       { "home": "Bochum", "away": "Wolfsburg", "date": "2026-10-23" },
       { "home": "Magdeburg", "away": "Karlsruher", "date": "2026-10-24" },
       { "home": "Heidenheim", "away": "Energie Cottbus", "date": "2026-10-24" },
@@ -1615,9 +1638,6 @@ const leaguesData = {
       { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
     ],
     "fixtures": [
-      { "home": "Sarmiento", "away": "Barracas Central", "date": "2026-10-19" },
-      { "home": "Newell's", "away": "Central Córdoba", "date": "2026-10-19" },
-      { "home": "Deportivo Riestra", "away": "Unión", "date": "2026-10-20" },
       { "home": "Gimnasia y Esgirma", "away": "Platense", "date": "2026-10-23" },
       { "home": "Gimnasia LP", "away": "Sarmiento", "date": "2026-10-23" },
       { "home": "Tigre", "away": "Atlético Tucumán", "date": "2026-10-24" },
@@ -1737,7 +1757,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Corinthians", "away": "Vitória", "date": "2026-10-20" },
       { "home": "Cruzeiro", "away": "Remo", "date": "2026-10-24" },
       { "home": "Internacional", "away": "Botafogo", "date": "2026-10-24" },
       { "home": "Mirassol", "away": "São Paulo", "date": "2026-10-24" },
@@ -2027,9 +2046,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Cúcuta Deportivo", "away": "Atl. Nacional", "date": "2026-10-20" },
-      { "home": "Deportivo Pasto", "away": "Alianza", "date": "2026-10-20" },
-      { "home": "Deportivo Pereira", "away": "Boyacá Chicó FC", "date": "2026-10-20" },
       { "home": "Internacional de Bogotá", "away": "Fortaleza FC", "date": "2026-10-21" }
     ]
   },
@@ -2193,7 +2209,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Detroit Pistons", "away": "Boston Celtics", "date": "2026-10-20" },
       { "home": "New York Knicks", "away": "Philadelphia 76ers", "date": "2026-10-21" },
       { "home": "San Antonio Spurs", "away": "Oklahoma City Thunder", "date": "2026-10-21" },
       { "home": "Orlando Magic", "away": "Atlanta Hawks", "date": "2026-10-22" },
