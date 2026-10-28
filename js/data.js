@@ -496,9 +496,6 @@ const leaguesData = {
       { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
     ],
     "fixtures": [
-      { "home": "Sassuolo", "away": "Lazio", "date": "2026-10-27" },
-      { "home": "Roma", "away": "Cagliari", "date": "2026-10-27" },
-      { "home": "Torino", "away": "Como", "date": "2026-10-27" },
       { "home": "Parma", "away": "Udinese", "date": "2026-10-28" },
       { "home": "Milan", "away": "Bologna", "date": "2026-10-28" },
       { "home": "Venezia", "away": "Inter", "date": "2026-10-28" },
@@ -734,7 +731,6 @@ const leaguesData = {
       { "rank": 16, "team": "Västerås", "MP": 30, "MW": 4, "MD": 7, "ML": 19, "GF": 24, "GA": 58, "logo": "sweden/vasteras.png" }
     ],
     "fixtures": [
-      { "home": "AIK", "away": "IF Elfsborg", "date": "2026-10-27" },
       { "home": "Göteborg", "away": "Djurgården", "date": "2026-10-28" },
       { "home": "Brommapojkarna", "away": "Häcken", "date": "2026-10-28" },
       { "home": "Halmstad", "away": "Malmö", "date": "2026-10-28" },
