@@ -496,11 +496,6 @@ const leaguesData = {
       { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
     ],
     "fixtures": [
-      { "home": "Parma", "away": "Udinese", "date": "2026-10-28" },
-      { "home": "Milan", "away": "Bologna", "date": "2026-10-28" },
-      { "home": "Venezia", "away": "Inter", "date": "2026-10-28" },
-      { "home": "Monza", "away": "Napoli", "date": "2026-10-28" },
-      { "home": "Genoa", "away": "Juventus", "date": "2026-10-28" },
       { "home": "Frosinone", "away": "Lecce", "date": "2026-10-29" },
       { "home": "Fiorentina", "away": "Atalanta", "date": "2026-10-29" },
       { "home": "Bologna", "away": "Monza", "date": "2026-10-31" },
@@ -731,10 +726,6 @@ const leaguesData = {
       { "rank": 16, "team": "Västerås", "MP": 30, "MW": 4, "MD": 7, "ML": 19, "GF": 24, "GA": 58, "logo": "sweden/vasteras.png" }
     ],
     "fixtures": [
-      { "home": "Göteborg", "away": "Djurgården", "date": "2026-10-28" },
-      { "home": "Brommapojkarna", "away": "Häcken", "date": "2026-10-28" },
-      { "home": "Halmstad", "away": "Malmö", "date": "2026-10-28" },
-      { "home": "Degerfors", "away": "Västerås", "date": "2026-10-28" },
       { "home": "Hammarby", "away": "Sirius", "date": "2026-10-29" },
       { "home": "Kalmar", "away": "GAIS", "date": "2026-10-29" },
       { "home": "ÖIS", "away": "Mjällby", "date": "2026-10-29" },
@@ -1040,9 +1031,6 @@ const leaguesData = {
       { "rank": 20, "team": "FCS", "MP": 38, "MW": 6, "MD": 12, "ML": 20, "GF": 30, "GA": 55, "logo": "italy/fcs.png" }
     ],
     "fixtures": [
-      { "home": "Pisa", "away": "Palermo", "date": "2026-10-28" },
-      { "home": "Juve Stabia", "away": "Verona", "date": "2026-10-28" },
-      { "home": "Carrarese", "away": "Arezzo", "date": "2026-10-28" },
       { "home": "Cremonese", "away": "Benevento", "date": "2026-10-31" },
       { "home": "FCS", "away": "Cesena", "date": "2026-10-31" },
       { "home": "Modena", "away": "Mantova", "date": "2026-10-31" },
@@ -1513,9 +1501,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Santos", "away": "Palmeiras", "date": "2026-10-28" },
-      { "home": "Fluminense", "away": "Internacional", "date": "2026-10-28" },
-      { "home": "Bragantino", "away": "Chapecoense", "date": "2026-10-28" },
       { "home": "Remo", "away": "Botafogo", "date": "2026-10-29" },
       { "home": "Bahia", "away": "São Paulo", "date": "2026-10-29" },
       { "home": "Atlético Mineiro", "away": "Cruzeiro", "date": "2026-10-29" },
@@ -1565,7 +1550,6 @@ const leaguesData = {
       { "rank": 16, "team": "Unión La Calera", "MP": 25, "MW": 5, "MD": 6, "ML": 14, "GF": 23, "GA": 42, "logo": "chile/unionlacalera.png" }
     ],
     "fixtures": [
-      { "home": "Universidad Católica", "away": "Audax Italiano", "date": "2026-10-28" },
       { "home": "Colo-Colo", "away": "Universidad de Concepción", "date": "2026-10-30" },
       { "home": "Coquimbo", "away": "Unión La Calera", "date": "2026-10-30" },
       { "home": "O'Higgins", "away": "Ñublense", "date": "2026-10-31" },
@@ -1791,8 +1775,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Cúcuta Deportivo", "away": "Rionegro Águilas", "date": "2026-10-28" },
-      { "home": "Boyacá Chicó FC", "away": "Junior", "date": "2026-10-28" },
       { "home": "Once Caldas", "away": "Alianza", "date": "2026-10-29" },
       { "home": "Internacional de Bogotá", "away": "Independiente Medellín", "date": "2026-10-29" },
       { "home": "América de Cali", "away": "Fortaleza FC", "date": "2026-10-30" },
@@ -2064,10 +2046,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Boston Celtics", "away": "Brooklyn Nets", "date": "2026-10-28" },
-      { "home": "New York Knicks", "away": "Detroit Pistons", "date": "2026-10-28" },
-      { "home": "San Antonio Spurs", "away": "Sacramento Kings", "date": "2026-10-28" },
-      { "home": "Los Angeles Lakers", "away": "Portland Trail Blazers", "date": "2026-10-28" },
       { "home": "Atlanta Hawks", "away": "Miami Heat", "date": "2026-10-29" },
       { "home": "Cleveland Cavaliers", "away": "Washington Wizards", "date": "2026-10-29" },
       { "home": "Detroit Pistons", "away": "Charlotte Hornets", "date": "2026-10-29" },
