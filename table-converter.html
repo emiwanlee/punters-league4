@@ -309,7 +309,7 @@ Example:
             for (let i = 0; i < teams.length; i++) {
                 const t = teams[i];
                 const gd = t.GD || (t.GF - t.GA);
-                output += `        { rank: ${t.rank}, team: "${t.team}", MP: ${t.MP}, MW: ${t.MW}, MD: ${t.MD}, ML: ${t.ML}, GF: ${t.GF}, GA: ${t.GA}, logo: "${t.team.toLowerCase().replace(/ /g, '')}.png" }`;
+                output += `        { rank: ${t.rank}, team: "${t.team}", MP: ${t.MP}, MW: ${t.MW}, MD: ${t.MD}, ML: ${t.ML}, GF: ${t.GF}, GA: ${t.GA}, GD: ${t.GD} logo: "${t.team.toLowerCase().replace(/ /g, '')}.png" `;
                 if (i < teams.length - 1) output += `,`;
                 output += `\n`;
             }

@@ -357,7 +357,6 @@ const leaguesData = {
       { "rank": 20, "team": "Wolves", "MP": 38, "MW": 3, "MD": 11, "ML": 24, "GF": 27, "GA": 68, "logo": "england/wolves.png" }
     ],
     "fixtures": [
-       { "home": "Liverpool", "away": "Arsenal", "date": "2026-11-01" },
       { "home": "Newcastle", "away": "Everton", "date": "2026-11-02" },
       { "home": "Everton", "away": "Coventry", "date": "2026-11-06" },
       { "home": "Leeds", "away": "Spurs", "date": "2026-11-07" },
@@ -454,10 +453,6 @@ const leaguesData = {
       { "rank": 20, "team": "Real Oviedo", "MP": 38, "MW": 6, "MD": 11, "ML": 21, "GF": 26, "GA": 60, "logo": "spain/realoviedo.png" }
     ],
     "fixtures": [
-      { "home": "Getafe", "away": "Sevilla", "date": "2026-11-01" },
-      { "home": "Racing Santander", "away": "Real Madrid", "date": "2026-11-01" },
-      { "home": "Elche", "away": "Valencia", "date": "2026-11-01" },
-      { "home": "Athletic", "away": "Real Sociedad", "date": "2026-11-01" },
       { "home": "Deportivo", "away": "Osasuna", "date": "2026-11-02" },
       { "home": "Sevilla", "away": "Alavés", "date": "2026-11-06" },
       { "home": "Málaga", "away": "Racing Santander", "date": "2026-11-07" },
@@ -551,8 +546,6 @@ const leaguesData = {
       { "rank": 18, "team": "St. Pauli", "MP": 34, "MW": 6, "MD": 8, "ML": 20, "GF": 29, "GA": 60, "logo": "germany/stpauli.png" }
     ],
     "fixtures": [
-      { "home": "Union Berlin", "away": "Köln", "date": "2026-11-01" },
-      { "home": "Eintracht Frankfurt", "away": "Hamburg", "date": "2026-11-01" },
 	  { "home": "Hamburg", "away": "Mönchengladbach", "date": "2026-11-06" },
       { "home": "Mainz", "away": "Bayern", "date": "2026-11-07" },
       { "home": "Paderborn", "away": "Eintracht Frankfurt", "date": "2026-11-07" },
@@ -633,11 +626,6 @@ const leaguesData = {
       { "rank": 20, "team": "Pisa", "MP": 38, "MW": 2, "MD": 12, "ML": 24, "GF": 26, "GA": 71, "logo": "italy/pisa.png" }
     ],
     "fixtures": [
-      { "home": "Como", "away": "Venezia", "date": "2026-11-01" },
-      { "home": "Frosinone", "away": "Torino", "date": "2026-11-01" },
-      { "home": "Lazio", "away": "Cagliari", "date": "2026-11-01" },
-      { "home": "Lecce", "away": "Genoa", "date": "2026-11-01" },
-      { "home": "Juventus", "away": "Napoli", "date": "2026-11-01" },
       { "home": "Sassuolo", "away": "Fiorentina", "date": "2026-11-02" },
       { "home": "Atalanta", "away": "Parma", "date": "2026-11-02" },
 	  { "home": "Venezia", "away": "Udinese", "date": "2026-11-06" },
@@ -722,9 +710,6 @@ const leaguesData = {
       { "rank": 18, "team": "Metz", "MP": 34, "MW": 3, "MD": 8, "ML": 23, "GF": 32, "GA": 76, "logo": "france/metz.png" }
     ],
     "fixtures": [
-      { "home": "Strasbourg", "away": "Auxerre", "date": "2026-11-01" },
-      { "home": "Paris FC", "away": "Monaco", "date": "2026-11-01" },
-      { "home": "Marseille", "away": "Toulouse", "date": "2026-11-01" },
 	   { "home": "Lorient", "away": "Brest", "date": "2026-11-02" },
       { "home": "Toulouse", "away": "Strasbourg", "date": "2026-11-06" },
       { "home": "Auxerre", "away": "Paris FC", "date": "2026-11-07" },
@@ -806,10 +791,6 @@ const leaguesData = {
       { "rank": 18, "team": "Heracles", "MP": 34, "MW": 5, "MD": 4, "ML": 25, "GF": 35, "GA": 85, "logo": "netherlands/heracles.png" }
     ],
     "fixtures": [
-      { "home": "PEC Zwolle", "away": "Den Haag", "date": "2026-11-01" },
-      { "home": "Excelsior", "away": "Twente", "date": "2026-11-01" },
-      { "home": "Telstar", "away": "Utrecht", "date": "2026-11-01" },
-      { "home": "Groningen", "away": "Sparta Rotterdam", "date": "2026-11-01" },
 	  { "home": "Willem II", "away": "PEC Zwolle", "date": "2026-11-06" },
       { "home": "Fortuna Sittard", "away": "Telstar", "date": "2026-11-07" },
       { "home": "Den Haag", "away": "Sparta Rotterdam", "date": "2026-11-07" },
@@ -888,11 +869,6 @@ const leaguesData = {
       { "rank": 18, "team": "AVS", "MP": 34, "MW": 3, "MD": 12, "ML": 19, "GF": 27, "GA": 67, "logo": "portugal/avs.png" }
     ],
     "fixtures": [
-      { "home": "Casa Pia", "away": "SCP", "date": "2026-11-01" },
-      { "home": "Arouca", "away": "Nacional", "date": "2026-11-01" },
-      { "home": "Académico de Viseu", "away": "Rio Ave", "date": "2026-11-01" },
-      { "home": "Marítimo", "away": "Santa Clara", "date": "2026-11-01" },
-      { "home": "Braga", "away": "Famalicão", "date": "2026-11-01" },
       { "home": "Benfica", "away": "Alverca", "date": "2026-11-02" },
       { "home": "Gil Vicente", "away": "Vitória SC", "date": "2026-11-02" },
       { "home": "Nacional", "away": "Académico de Viseu", "date": "2026-11-07" },
@@ -935,10 +911,6 @@ const leaguesData = {
       { "rank": 16, "team": "Dender", "MP": 30, "MW": 3, "MD": 10, "ML": 17, "GF": 24, "GA": 51, "logo": "belgium/dender.png" }
     ],
     "fixtures": [
-      { "home": "Cercle Brugge", "away": "Antwerp", "date": "2026-11-01" },
-      { "home": "STVV", "away": "OH Leuven", "date": "2026-11-01" },
-      { "home": "Lommel", "away": "Gent", "date": "2026-11-01" },
-      { "home": "Charleroi", "away": "La Louvière", "date": "2026-11-01" },
       { "home": "Standard", "away": "Beveren", "date": "2026-11-06" },
       { "home": "Westerlo", "away": "Charleroi", "date": "2026-11-07" },
       { "home": "OH Leuven", "away": "Mechelen", "date": "2026-11-07" },
@@ -979,11 +951,6 @@ const leaguesData = {
       { "rank": 16, "team": "Västerås", "MP": 30, "MW": 4, "MD": 7, "ML": 19, "GF": 24, "GA": 58, "logo": "sweden/vasteras.png" }
     ],
     "fixtures": [
-      { "home": "Malmö", "away": "Hammarby", "date": "2026-11-01" },
-      { "home": "Djurgården", "away": "Degerfors", "date": "2026-11-01" },
-      { "home": "Häcken", "away": "Göteborg", "date": "2026-11-01" },
-      { "home": "IF Elfsborg", "away": "ÖIS", "date": "2026-11-01" },
-      { "home": "Västerås", "away": "Brommapojkarna", "date": "2026-11-01" },
       { "home": "GAIS", "away": "AIK", "date": "2026-11-02" },
       { "home": "Mjällby", "away": "Kalmar", "date": "2026-11-02" },
       { "home": "Sirius", "away": "Halmstad", "date": "2026-11-03" },
@@ -1182,7 +1149,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "Sheffield Wednesday", "away": "Blackpool", "date": "2026-11-01" },
       { "home": "Huddersfield", "away": "Luton Town", "date": "2026-11-03" },
       { "home": "Oxford Utd", "away": "Reading", "date": "2026-11-04" },
 	  { "home": "Wycombe", "away": "Huddersfield", "date": "2026-11-14" },
@@ -1353,10 +1319,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Eldense", "away": "Granada", "date": "2026-11-01" },
-      { "home": "Ceuta", "away": "Sporting Gijón", "date": "2026-11-01" },
-      { "home": "Burgos", "away": "Castellón", "date": "2026-11-01" },
-      { "home": "Tenerife", "away": "Andorra", "date": "2026-11-01" },
       { "home": "Oviedo", "away": "Las Palmas", "date": "2026-11-02" },
       { "home": "Valladolid", "away": "Leganes", "date": "2026-11-02" },
       { "home": "Mallorca", "away": "Cádiz", "date": "2026-11-02" },
@@ -1416,11 +1378,6 @@ const leaguesData = {
       { "rank": 20, "team": "FCS", "MP": 38, "MW": 6, "MD": 12, "ML": 20, "GF": 30, "GA": 55, "logo": "italy/fcs.png" }
     ],
     "fixtures": [
-      { "home": "Empoli", "away": "Juve Stabia", "date": "2026-11-01" },
-      { "home": "Avellino", "away": "Pisa", "date": "2026-11-01" },
-      { "home": "Arezzo", "away": "Ascoli", "date": "2026-11-01" },
-      { "home": "Verona", "away": "Carrarese", "date": "2026-11-01" },
-      { "home": "Palermo", "away": "Vicenza", "date": "2026-11-01" },
 	  { "home": "Ascoli", "away": "Palermo", "date": "2026-11-06" },
       { "home": "Juve Stabia", "away": "Arezzo", "date": "2026-11-07" },
       { "home": "Cesena", "away": "Catanzaro", "date": "2026-11-07" },
@@ -1574,9 +1531,6 @@ const leaguesData = {
       { "rank": 18, "team": "Preußen Münster", "MP": 34, "MW": 6, "MD": 12, "ML": 16, "GF": 38, "GA": 61, "logo": "germany/preussenmunster.png" }
     ],
     "fixtures": [
-      { "home": "St. Pauli", "away": "Nürnberg", "date": "2026-11-01" },
-      { "home": "Fürth", "away": "Holstein Kiel", "date": "2026-11-01" },
-      { "home": "Hannover 96", "away": "Dynamo", "date": "2026-11-01" },
       { "home": "Dynamo", "away": "Fürth", "date": "2026-11-06" },
       { "home": "Eintracht Braunschweig", "away": "Energie Cottbus", "date": "2026-11-06" },
       { "home": "Osnabrück", "away": "1. FCK", "date": "2026-11-07" },
@@ -1629,7 +1583,6 @@ const leaguesData = {
       { "rank": 20, "team": "Jong Ajax", "MP": 38, "MW": 9, "MD": 8, "ML": 21, "GF": 50, "GA": 73, "logo": "netherlands/jongajax.png" }
     ],
     "fixtures": [
-  { "home": "FC Emmen", "away": "Den Bosch", "home_score": null, "away_score": null, "date": "2026-11-01" },
   { "home": "Jong FC Utrecht", "away": "Dordrecht", "home_score": null, "away_score": null, "date": "2026-11-02" },
   { "home": "Jong PSV", "away": "NAC", "home_score": null, "away_score": null, "date": "2026-11-02" },
   { "home": "Jong Ajax", "away": "Vitesse", "home_score": null, "away_score": null, "date": "2026-11-02" },
@@ -1727,10 +1680,6 @@ const leaguesData = {
         { rank: 16, team: "Dender", MP: 30, MW: 3, MD: 10, ML: 17, GF: 24, GA: 51, logo: "belgium/dender.png" }
     ],
     fixtures: [
-      { "home": "Cercle Brugge", "away": "Antwerp", "date": "2026-11-01" },
-      { "home": "STVV", "away": "OH Leuven", "date": "2026-11-01" },
-      { "home": "Lommel", "away": "Gent", "date": "2026-11-01" },
-      { "home": "Charleroi", "away": "La Louvière", "date": "2026-11-01" },
 	   { "home": "Kortrijk", "away": "Mechelen", "date": "2026-11-04" },
       { "home": "Standard", "away": "Beveren", "date": "2026-11-06" },
       { "home": "Westerlo", "away": "Charleroi", "date": "2026-11-07" },
@@ -1799,8 +1748,6 @@ const leaguesData = {
         { rank: 17, team: "Olympic Charleroi", MP: 32, MW: 3, MD: 7, ML: 22, GF: 26, GA: 68, logo: "belgium/roccharleroi.png" }
     ],
     fixtures: [
-      { "home": "Dender", "away": "Jong Genk", "date": "2026-11-01" },
-      { "home": "Eupen", "away": "Virton", "date": "2026-11-01" },
       { "home": "Lierse SK", "away": "Eupen", "date": "2026-11-06" },
       { "home": "Lokeren", "away": "Dender", "date": "2026-11-06" },
       { "home": "Sporting Hasselt", "away": "Patro Eisden", "date": "2026-11-06" },
@@ -1852,10 +1799,6 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 24, "MW": 5, "MD": 3, "ML": 16, "GF": 26, "GA": 59, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
-      { "home": "Colorado", "away": "Chicago", "date": "2026-11-01" },
-      { "home": "Atlanta United", "away": "Toronto", "date": "2026-11-01" },
-      { "home": "Vancouver", "away": "Seattle Sounders", "date": "2026-11-01" },
-      { "home": "Nashville", "away": "RBNY", "date": "2026-11-01" },
       { "home": "New England", "away": "Inter Miami", "date": "2026-11-02" },
       { "home": "LAFC", "away": "Minnesota", "date": "2026-11-02" },
       { "home": "Portland", "away": "Houston Dynamo", "date": "2026-11-02" }
@@ -1904,10 +1847,6 @@ const leaguesData = {
       { "rank": 30, "team": "Estudiantes de Río Cuarto", "MP": 16, "MW": 0, "MD": 4, "ML": 12, "GF": 3, "GA": 30, "logo": "argentina/estudiantesriocuarto.png" }
     ],
     "fixtures": [
-      { "home": "Estudiantes de Río Cuarto", "away": "Gimnasia LP", "date": "2026-11-01" },
-      { "home": "Boca", "away": "River", "date": "2026-11-01" },
-      { "home": "Belgrano", "away": "Barracas Central", "date": "2026-11-01" },
-      { "home": "Newell's", "away": "Unión", "date": "2026-11-01" },
       { "home": "Lanús", "away": "Gimnasia y Esgirma", "date": "2026-11-02" },
       { "home": "Defensa y Justicia", "away": "Independiente", "date": "2026-11-02" },
       { "home": "Platense", "away": "Central Córdoba", "date": "2026-11-02" },
@@ -1945,7 +1884,6 @@ const leaguesData = {
       { "rank": 22, "team": "Dálmine", "MP": 34, "MW": 4, "MD": 14, "ML": 16, "GF": 21, "GA": 45, "logo": "argentina/dalmine.png" }
     ],
     "fixtures": [
-{ "home": "Dock Sud", "away": "Argentino de Merlo", "date": "2026-11-01" },
       { "home": "Liniers", "away": "Ituzaingó", "date": "2026-11-02" },
       { "home": "Argentino Quilmes", "away": "Brown (A)", "date": "2026-11-02" },
       { "home": "San Martín Burzaco", "away": "UAI Urquiza", "date": "2026-11-02" },
@@ -2028,9 +1966,6 @@ const leaguesData = {
       { "rank": 16, "team": "Unión La Calera", "MP": 25, "MW": 5, "MD": 6, "ML": 14, "GF": 23, "GA": 42, "logo": "chile/unionlacalera.png" }
     ],
     "fixtures": [
-      { "home": "Huachipato", "away": "La Serena", "date": "2026-11-01" },
-      { "home": "Cobresal", "away": "Everton", "date": "2026-11-01" },
-      { "home": "Universidad Católica", "away": "Universidad de Chile", "date": "2026-11-01" },
       { "home": "Deportes Limache", "away": "Audax Italiano", "date": "2026-11-02" },
       { "home": "Concepción", "away": "Palestino", "date": "2026-11-02" },
       { "home": "Ñublense", "away": "Colo-Colo", "date": "2026-11-08" },
@@ -2096,14 +2031,6 @@ const leaguesData = {
       { "rank": 16, "team": "Manta", "MP": 30, "MW": 5, "MD": 6, "ML": 19, "GF": 17, "GA": 42, "logo": "ecuador/manta.png" }
     ],
     "fixtures": [
-      { "home": "Delfín", "away": "Deportivo Cuenca", "date": "2026-11-01" },
-      { "home": "Mushuc Runa", "away": "Manta", "date": "2026-11-01" },
-      { "home": "Orense", "away": "Técnico Universitario", "date": "2026-11-01" },
-      { "home": "Independiente del Valle", "away": "LDU Quito", "date": "2026-11-01" },
-      { "home": "Macará", "away": "Barcelona SC", "date": "2026-11-01" },
-      { "home": "U. Católica", "away": "Aucas", "date": "2026-11-01" },
-      { "home": "Emelec", "away": "Leones del Norte", "date": "2026-11-01" },
-      { "home": "Guayaquil City", "away": "Libertad", "date": "2026-11-01" },
       { "home": "Aucas", "away": "Independiente del Valle", "date": "2026-11-08" },
       { "home": "Barcelona SC", "away": "LDU Quito", "date": "2026-11-08" },
       { "home": "Macará", "away": "U. Católica", "date": "2026-11-08" },
@@ -2148,10 +2075,6 @@ const leaguesData = {
       { "rank": 18, "team": "Atlante", "MP": 17, "MW": 3, "MD": 4, "ML": 10, "GF": 15, "GA": 30, "logo": "mexico/atlante.png" }
     ],
     "fixtures": [
-      { "home": "Pachuca", "away": "Tigres UANL", "date": "2026-11-01" },
-      { "home": "Monterrey", "away": "Club Tijuana", "date": "2026-11-01" },
-      { "home": "Guadalajara", "away": "Atlante", "date": "2026-11-01" },
-      { "home": "América", "away": "Toluca", "date": "2026-11-01" },
       { "home": "Santos Laguna", "away": "Necaxa", "date": "2026-11-02" },
       { "home": "Cruz Azul", "away": "León", "date": "2026-11-02" },
       { "home": "Necaxa", "away": "Club Tijuana", "date": "2026-11-07" },
@@ -2195,9 +2118,6 @@ const leaguesData = {
       { "rank": 16, "team": "Gualberto Villarroel San José", "MP": 19, "MW": 2, "MD": 8, "ML": 9, "GF": 19, "GA": 33, "logo": "bolivia/gualbertovillarroel.png" }
     ],
     "fixtures": [
-      { "home": "The Strongest", "away": "GV San José", "date": "2026-11-01" },
-      { "home": "Guabirá", "away": "Bolívar", "date": "2026-11-01" },
-      { "home": "Universitario de Vinto", "away": "Always Ready", "date": "2026-11-01" },
       { "home": "Real Tomayapo", "away": "Blooming", "date": "2026-11-02" },
       { "home": "Independiente Petrolero", "away": "Real Tomayapo", "date": "2026-11-06" },
       { "home": "GV San José", "away": "Real Oruro", "date": "2026-11-07" },
@@ -2242,7 +2162,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Llaneros FC", "away": "Junior", "date": "2026-11-01" },
       { "home": "Independiente Medellín", "away": "Alianza", "date": "2026-11-02" },
       { "home": "Deportivo Cali", "away": "Boyacá Chicó FC", "date": "2026-11-02" },
       { "home": "Rionegro Águilas", "away": "Fortaleza FC", "date": "2026-11-02" },
@@ -2298,10 +2217,6 @@ const leaguesData = {
       { "rank": 14, "team": "Seattle Storm", "MP": 43, "MW": 8, "MD": 0, "ML": 35, "GF": 0, "GA": 0, "logo": "usa/storm.png" }
     ],
     "fixtures": [
-      { "home": "Colorado", "away": "Chicago", "date": "2026-11-01" },
-      { "home": "Vancouver", "away": "Seattle Sounders", "date": "2026-11-01" },
-      { "home": "Atlanta United", "away": "Toronto", "date": "2026-11-01" },
-      { "home": "Nashville", "away": "NY Red Bulls", "date": "2026-11-01" },
       { "home": "New England", "away": "Inter Miami", "date": "2026-11-02" },
       { "home": "LAFC", "away": "Minnesota", "date": "2026-11-02" },
       { "home": "Portland", "away": "Houston Dynamo", "date": "2026-11-02" },
@@ -2347,8 +2262,6 @@ const leaguesData = {
       { "rank": 12, "team": "Western Sydney Wanderers FC", "MP": 26, "MW": 5, "MD": 6, "ML": 15, "GF": 27, "GA": 43, "logo": "australia/wsw.png" }
     ],
     "fixtures": [
-      { "home": "Melbourne Victory", "away": "Central Coast Mariners", "date": "2026-11-01" },
-      { "home": "Perth Glory", "away": "Adelaide United", "date": "2026-11-01" },
       { "home": "Sydney FC", "away": "Central Coast Mariners", "date": "2026-11-06" },
       { "home": "Auckland FC", "away": "Wellington Phoenix", "date": "2026-11-06" },
       { "home": "Melbourne City FC", "away": "Western Sydney Wanderers FC", "date": "2026-11-07" },
@@ -2406,10 +2319,6 @@ const leaguesData = {
       { "rank": 20, "team": "Avispa Fukuoka", "MP": 18, "MW": 3, "MD": 8, "ML": 7, "GF": 17, "GA": 27, "logo": "japan/avispa.png" }
     ],
     "fixtures": [
-      { "home": "Yokohama FM", "away": "Kawasaki", "date": "2026-11-01" },
-      { "home": "JEF United", "away": "Avispa Fukuoka", "date": "2026-11-01" },
-      { "home": "V-Varen Nagasaki", "away": "Tokyo Verdy", "date": "2026-11-01" },
-      { "home": "Machida Zelvia", "away": "Gamba Osaka", "date": "2026-11-01" },
       { "home": "Shimizu", "away": "Tokyo Verdy", "date": "2026-11-07" },
       { "home": "Nagoya", "away": "Kyoto Sanga", "date": "2026-11-07" },
       { "home": "Yokohama FM", "away": "Okayama", "date": "2026-11-07" },
@@ -2517,8 +2426,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-       { "home": "Orlando Magic", "away": "Boston Celtics", "date": "2026-11-01" },
-      { "home": "Indiana Pacers", "away": "Brooklyn Nets", "date": "2026-11-01" },
       { "home": "Golden State Warriors", "away": "Los Angeles Clippers", "date": "2026-11-02" },
       { "home": "Los Angeles Lakers", "away": "Toronto Raptors", "date": "2026-11-02" },
       { "home": "Cleveland Cavaliers", "away": "Oklahoma City Thunder", "date": "2026-11-03" },
