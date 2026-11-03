@@ -1,796 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>German Football · Bundesliga 2 2026-27 · Punters League</title>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Football · 2026-27 · Punters League</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZFW1TD8TC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-TZFW1TD8TC');
+  </script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f4f6fa; }
+    .main-wrapper { max-width: 1600px; margin: 0 auto; padding: 2rem 1.5rem; }
 
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-TZFW1TD8TC');
-    </script>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f4f6fa;
-        }
-        .main-wrapper {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
+    /* country hero */
+    .country-hero {
+      background: linear-gradient(135deg, #012169 0%, #FFFFFF 50%, #C8102E 100%);
+      color: #1a1a2e;
+      padding: 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      text-align: center;
+      border: 2px solid #1a1a2e;
+    }
+    .country-hero h1 { font-size: 2rem; font-weight: 800; }
+    .country-hero .hero-icon { font-size: 3rem; margin-bottom: 0.5rem; }
 
-        .country-hero {
-            background: linear-gradient(135deg, #000000 0%, #DD0000 50%, #FFCE00 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 20px;
-            margin-bottom: 2rem;
-            text-align: center;
-            border: 2px solid #1a1a2e;
-        }
-        .country-hero h1 {
-            font-size: 2rem;
-            font-weight: 800;
-            color: white;
-        }
-        .country-hero .hero-icon {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        .country-hero p {
-            color: white;
-        }
+    /* league tabs */
+    .league-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    .league-tab {
+      padding: 0.75rem 1.5rem;
+      background: transparent;
+      border: none;
+      font-weight: 600;
+      color: #6c757d;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+    .league-tab:hover { background: #f8f9fa; color: #012169; }
+    .league-tab.active { background: linear-gradient(135deg, #012169 0%, #C8102E 100%); color: white; }
 
-        .league-tabs {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-        }
-        .league-tab {
-            padding: 0.75rem 1.5rem;
-            background: transparent;
-            border: none;
-            font-weight: 600;
-            color: #6c757d;
-            cursor: pointer;
-            transition: 0.3s;
-            border-radius: 10px;
-        }
-        .league-tab:hover {
-            background: #f8f9fa;
-            color: #DD0000;
-        }
-        .league-tab.active {
-            background: linear-gradient(135deg, #000000 0%, #DD0000 100%);
-            color: white;
-        }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; animation: fadeIn 0.4s ease; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
 
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-            animation: fadeIn 0.4s ease;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(8px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    /* cards */
+    .season-card {
+      background: white;
+      border-radius: 20px;
+      padding: 1rem 1rem 0.5rem 1rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+      height: fit-content;
+    }
+    .season-title {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.5rem 0.8rem;
+      margin-bottom: 0.8rem;
+      border-radius: 12px;
+      text-align: center;
+      background: linear-gradient(135deg, #012169 0%, #C8102E 100%);
+      color: white;
+    }
+    .season-sub {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #6c757d;
+      text-align: center;
+      margin-top: -0.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-        .season-card {
-            background: white;
-            border-radius: 20px;
-            padding: 1rem 1rem 0.5rem 1rem;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-            overflow-x: auto;
-            margin-bottom: 1.5rem;
-            height: fit-content;
-        }
-        .season-title {
-            font-size: 1rem;
-            font-weight: 700;
-            padding: 0.5rem 0.8rem;
-            margin-bottom: 0.8rem;
-            border-radius: 12px;
-            text-align: center;
-            background: linear-gradient(135deg, #000000 0%, #DD0000 100%);
-            color: white;
-        }
-        .season-sub {
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: #6c757d;
-            text-align: center;
-            margin-top: -0.5rem;
-            margin-bottom: 0.5rem;
-        }
+    .league-table {
+      width: 100%;
+      font-size: 0.75rem;
+      border-collapse: collapse;
+      min-width: 600px;
+    }
+    .league-table th {
+      background: #f8f9fa;
+      padding: 8px 4px;
+      text-align: center;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      border-bottom: 2px solid #dee2e6;
+    }
+    .league-table td {
+      padding: 6px 4px;
+      text-align: center;
+      border-bottom: 1px solid #e9ecef;
+      vertical-align: middle;
+    }
+    .team-cell { text-align: left !important; font-weight: 500; }
+    .team-cell a { text-decoration: none; color: #1a1a2e; transition: 0.2s; }
+    .team-cell a:hover { color: #012169; }
 
-        .league-table {
-            width: 100%;
-            font-size: 0.75rem;
-            border-collapse: collapse;
-            min-width: 600px;
-        }
-        .league-table th {
-            background: #f8f9fa;
-            padding: 8px 4px;
-            text-align: center;
-            font-weight: 600;
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            border-bottom: 2px solid #dee2e6;
-        }
-        .league-table td {
-            padding: 6px 4px;
-            text-align: center;
-            border-bottom: 1px solid #e9ecef;
-            vertical-align: middle;
-        }
-        .team-cell {
-            text-align: left !important;
-            font-weight: 500;
-        }
-        .team-cell a {
-            text-decoration: none;
-            color: #1a1a2e;
-            transition: 0.2s;
-        }
-        .team-cell a:hover {
-            color: #DD0000;
-        }
+    .champion-row { background: rgba(255, 215, 0, 0.12); }
+    .promotion-zone { background: rgba(16, 185, 129, 0.06); }
+    .relegation-zone { background: rgba(239, 68, 68, 0.06); }
 
-        .champion-row {
-            background: rgba(255, 215, 0, 0.12);
-        }
-        .promotion-zone {
-            background: rgba(16, 185, 129, 0.06);
-        }
-        .relegation-zone {
-            background: rgba(239, 68, 68, 0.06);
-        }
+    .points-cell { font-weight: 700; color: #012169; }
 
-        .points-cell {
-            font-weight: 700;
-            color: #DD0000;
-        }
+    .analysis-card {
+      background: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .info-box {
+      background: linear-gradient(135deg, #01216910, #C8102E10);
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .big-number { font-size: 2rem; font-weight: 800; color: #012169; }
 
-        .analysis-card {
-            background: white;
-            border-radius: 20px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-        }
-        .info-box {
-            background: linear-gradient(135deg, #00000010, #DD000010);
-            border-radius: 15px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-        .big-number {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #DD0000;
-        }
+    .fixture-card {
+      background: white;
+      border-radius: 15px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.6rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .fixture-teams { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+    .fixture-vs { color: #6c757d; font-weight: 600; font-size: 0.8rem; }
+    .fixture-date { color: #6c757d; font-size: 0.8rem; }
 
-        .fixture-card {
-            background: white;
-            border-radius: 15px;
-            padding: 0.75rem 1rem;
-            margin-bottom: 0.6rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .fixture-teams {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            flex-wrap: wrap;
-        }
-        .fixture-vs {
-            color: #6c757d;
-            font-weight: 600;
-            font-size: 0.8rem;
-        }
-        .fixture-date {
-            color: #6c757d;
-            font-size: 0.8rem;
-        }
+    .league-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 992px) { .league-grid-2col { grid-template-columns: 1fr; } }
 
-        .league-grid-2col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-        @media (max-width: 992px) {
-            .league-grid-2col {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .badge-germany {
-            background: linear-gradient(135deg, #000000, #DD0000);
-            color: white;
-            padding: 2px 12px;
-            border-radius: 20px;
-            font-size: 0.65rem;
-            font-weight: 600;
-        }
-        footer {
-            margin-top: 3rem;
-            padding: 2rem 1rem;
-            background: white;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-        }
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            list-style: none;
-            flex-wrap: wrap;
-            padding: 0;
-        }
-        .footer-links a {
-            color: #DD0000;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .social-icons a {
-            margin: 0 6px;
-        }
-        .legal-warning {
-            font-size: 0.85rem;
-            color: #6c757d;
-        }
-        .disclaimer {
-            font-size: 0.75rem;
-            color: #888;
-            margin-top: 0.5rem;
-        }
-        .loading {
-            padding: 2rem 0;
-        }
-        .matchday-section {
-            margin-bottom: 1.5rem;
-        }
-        .matchday-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #DD0000;
-            margin-bottom: 0.5rem;
-            padding-bottom: 0.25rem;
-            border-bottom: 2px solid #e5e7eb;
-        }
-        .result-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.4rem 0.75rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-            margin-bottom: 0.3rem;
-            font-size: 0.8rem;
-        }
-        .result-score {
-            font-weight: 700;
-            color: #1a1a2e;
-        }
-    </style>
-    <link rel="icon" type="image/bmp" href="images/logo.png" />
+    .badge-eng { background: linear-gradient(135deg, #012169, #C8102E); color: white; padding: 2px 12px; border-radius: 20px; font-size: 0.65rem; font-weight: 600; }
+    footer { margin-top: 3rem; padding: 2rem 1rem; background: white; border-radius: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+    .footer-links { display: flex; justify-content: center; gap: 1.5rem; list-style: none; flex-wrap: wrap; padding: 0; }
+    .footer-links a { color: #012169; text-decoration: none; font-weight: 500; }
+    .social-icons a { margin: 0 6px; }
+    .legal-warning { font-size: 0.85rem; color: #6c757d; }
+    .disclaimer { font-size: 0.75rem; color: #888; margin-top: 0.5rem; }
+    .loading { padding: 2rem 0; }
+    .comparison-badge { font-size: 0.7rem; background: #012169; color: white; padding: 2px 10px; border-radius: 20px; display: inline-block; margin-left: 6px; }
+  </style>
+  <link rel="icon" type="image/bmp" href="images/logo.png" />
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Punters League</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Predictions</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Spain</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Italy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">France</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">Germany</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">England</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="main-wrapper">
-        <div class="country-hero">
-            <div class="hero-icon">????</div>
-            <h1><i class="fas fa-futbol"></i> German Football · Bundesliga 2 2026-27</h1>
-            <p>Bundesliga 1 · Bundesliga 2</p>
-        </div>
-
-        <div class="league-tabs">
-            <button class="league-tab active" data-tab="bundesliga1">?? Bundesliga 1</button>
-            <button class="league-tab" data-tab="bundesliga2">?? Bundesliga 2</button>
-            <button class="league-tab" data-tab="results">?? Results</button>
-            <button class="league-tab" data-tab="stats">?? Stats</button>
-        </div>
-
-        <!-- Bundesliga 1 Tab -->
-        <div id="tab-bundesliga1" class="tab-content active">
-            <div id="bundesliga1Content">
-                <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
-                    <p>Loading Bundesliga 1...</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bundesliga 2 Tab -->
-        <div id="tab-bundesliga2" class="tab-content">
-            <div id="bundesliga2Content">
-                <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
-                    <p>Loading Bundesliga 2...</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Results Tab -->
-        <div id="tab-results" class="tab-content">
-            <div id="resultsContent">
-                <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
-                    <p>Loading results...</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Stats Tab -->
-        <div id="tab-stats" class="tab-content">
-            <div id="statsContent">
-                <div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i>
-                    <p>Loading stats...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <p><strong>Punters League</strong> – football predictions & stats.</p>
-        <ul class="footer-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Punters League</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="#">Predictions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Chile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Mexico</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Colombia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Japan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ireland</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">France</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">England</a></li>-->
         </ul>
-        <div class="legal-warning">?? 18+ Please gamble responsibly. <a href="#">BeGambleAware.org</a></div>
-        <div class="social-icons">
-            <a href="#"><img src="images/facebookicon.png" alt="FB" width="30"></a>
-            <a href="#"><img src="images/xicon.png" alt="X" width="30"></a>
-            <a href="#"><img src="images/youtube-image.png" alt="YT" width="30"></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="main-wrapper">
+  <!-- Hero -->
+  <div class="country-hero">
+    <div class="hero-icon">??????????????</div>
+    <h1><i class="fas fa-futbol"></i> German Bundesliga · 2026-27</h1>
+    <p>Bundesliga · Bundesliga 2 </p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="league-tabs">
+    <button class="league-tab active" data-tab="bundesliga">?? Bundesliga 1</button>
+    <button class="league-tab" data-tab="bundesliga2">?? Bundesliga 2</button>
+    <!--<button class="league-tab" data-tab="leagueone">?? League One</button>
+    <button class="league-tab" data-tab="leaguetwo">?? League Two</button>-->
+    <button class="league-tab" data-tab="fixtures">?? Fixtures</button>
+    <button class="league-tab" data-tab="stats">?? Stats</button>
+  </div>
+
+  <!-- Panels -->
+  <div id="tab-bundesliga" class="tab-content active">
+    <div id="bundesligaContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading Bundesliga...</p></div></div>
+  </div>
+  <div id="tab-bundesliga2" class="tab-content"><div id="bundesliga2Content"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading bundesliga2...</p></div></div></div>
+ <!-- <div id="tab-leagueone" class="tab-content"><div id="leagueoneContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading League One...</p></div></div></div>
+  <div id="tab-leaguetwo" class="tab-content"><div id="leaguetwoContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading League Two...</p></div></div></div>-->
+  <div id="tab-fixtures" class="tab-content"><div id="fixturesContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading fixtures...</p></div></div></div>
+  <div id="tab-stats" class="tab-content"><div id="statsContent"><div class="loading text-center"><i class="fas fa-spinner fa-spin fa-3x"></i><p>Loading stats...</p></div></div></div>
+</div>
+
+<footer class="footer">
+  <p><strong>Punters League</strong> – football predictions & stats.</p>
+  <ul class="footer-links">
+    <li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Contact</a></li>
+    <li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li>
+  </ul>
+  <div class="legal-warning">?? 18+ Please gamble responsibly. <a href="#">BeGambleAware.org</a></div>
+  <div class="social-icons">
+    <a href="#"><img src="images/facebookicon.png" alt="FB" width="30"></a>
+    <a href="#"><img src="images/xicon.png" alt="X" width="30"></a>
+    <a href="#"><img src="images/youtube-image.png" alt="YT" width="30"></a>
+  </div>
+  <p class="disclaimer">Predictions for entertainment only. 18+</p>
+  <p>© 2026 Punters League</p>
+</footer>
+
+<script>
+// ===================== DATA =====================
+
+// ----- OLD (2025) -----
+const oldBundesligaData = {
+  teams: [
+    { rank: 1,  team: "Bayern",              MP: 34, MW: 28, MD: 5,  ML: 1,  GF: 122, GA: 36 },
+        { rank: 2,  team: "Dortmund",            MP: 34, MW: 22, MD: 7,  ML: 5,  GF: 70,  GA: 34 },
+        { rank: 3,  team: "RB Leipzig",          MP: 34, MW: 20, MD: 5,  ML: 9,  GF: 66,  GA: 47 },
+        { rank: 4,  team: "VfB Stuttgart",       MP: 34, MW: 18, MD: 8,  ML: 8,  GF: 71,  GA: 49 },
+        { rank: 5,  team: "Hoffenheim",          MP: 34, MW: 18, MD: 7,  ML: 9,  GF: 65,  GA: 52 },
+        { rank: 6,  team: "Leverkusen",          MP: 34, MW: 17, MD: 8,  ML: 9,  GF: 68,  GA: 47 },
+        { rank: 7,  team: "Freiburg",            MP: 34, MW: 13, MD: 8,  ML: 13, GF: 51,  GA: 57 },
+        { rank: 8,  team: "Eintracht Frankfurt", MP: 34, MW: 11, MD: 11, ML: 12, GF: 61,  GA: 65 },
+        { rank: 9,  team: "Augsburg",            MP: 34, MW: 12, MD: 7,  ML: 15, GF: 45,  GA: 61 },
+        { rank: 10, team: "Mainz",               MP: 34, MW: 10, MD: 10, ML: 14, GF: 44,  GA: 53 },
+        { rank: 11, team: "Union Berlin",        MP: 34, MW: 10, MD: 9,  ML: 15, GF: 44,  GA: 58 },
+        { rank: 12, team: "Mönchengladbach",     MP: 34, MW: 9,  MD: 11, ML: 14, GF: 42,  GA: 53 },
+        { rank: 13, team: "Hamburg",             MP: 34, MW: 9,  MD: 11, ML: 14, GF: 40,  GA: 54 },
+        { rank: 14, team: "Köln",                MP: 34, MW: 7,  MD: 11, ML: 16, GF: 49,  GA: 63 },
+        { rank: 15, team: "Werder",              MP: 34, MW: 8,  MD: 8,  ML: 18, GF: 37,  GA: 60 },
+        { rank: 16, team: "Wolfsburg",           MP: 34, MW: 7,  MD: 8,  ML: 19, GF: 45,  GA: 69 },
+        { rank: 17, team: "Heidenheim",          MP: 34, MW: 6,  MD: 8,  ML: 20, GF: 41,  GA: 72 },
+        { rank: 18, team: "St. Pauli",           MP: 34, MW: 6,  MD: 8,  ML: 20, GF: 29,  GA: 60 }
+  ]
+};
+
+const oldbundesliga2Data = {
+  teams: [
+    { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45 },
+    { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47 },
+    { rank: 3, team: "Millwall", MP: 46, MW: 24, MD: 11, ML: 11, GF: 64, GA: 49 },
+    { rank: 4, team: "Southampton", MP: 46, MW: 22, MD: 14, ML: 10, GF: 82, GA: 56 },
+    { rank: 5, team: "Middlesbrough", MP: 46, MW: 22, MD: 14, ML: 10, GF: 72, GA: 47 },
+    { rank: 6, team: "Hull", MP: 46, MW: 21, MD: 10, ML: 15, GF: 70, GA: 66 },
+    { rank: 7, team: "Wrexham", MP: 46, MW: 19, MD: 14, ML: 13, GF: 69, GA: 65 },
+    { rank: 8, team: "Derby County", MP: 46, MW: 20, MD: 9, ML: 17, GF: 67, GA: 59 },
+    { rank: 9, team: "Norwich City", MP: 46, MW: 19, MD: 8, ML: 19, GF: 63, GA: 56 },
+    { rank: 10, team: "Birmingham", MP: 46, MW: 17, MD: 13, ML: 16, GF: 57, GA: 56 },
+    { rank: 11, team: "Swansea", MP: 46, MW: 18, MD: 10, ML: 18, GF: 57, GA: 59 },
+    { rank: 12, team: "Bristol City", MP: 46, MW: 17, MD: 11, ML: 18, GF: 59, GA: 59 },
+    { rank: 13, team: "Sheffield United", MP: 46, MW: 18, MD: 6, ML: 22, GF: 66, GA: 66 },
+    { rank: 14, team: "Preston", MP: 46, MW: 15, MD: 15, ML: 16, GF: 55, GA: 62 },
+    { rank: 15, team: "QPR", MP: 46, MW: 16, MD: 10, ML: 20, GF: 61, GA: 73 },
+    { rank: 16, team: "Watford", MP: 46, MW: 14, MD: 15, ML: 17, GF: 53, GA: 65 },
+    { rank: 17, team: "Stoke City", MP: 46, MW: 15, MD: 10, ML: 21, GF: 51, GA: 56 },
+    { rank: 18, team: "Portsmouth", MP: 46, MW: 14, MD: 13, ML: 19, GF: 49, GA: 64 },
+    { rank: 19, team: "Charlton", MP: 46, MW: 13, MD: 14, ML: 19, GF: 44, GA: 58 },
+    { rank: 20, team: "Blackburn Rovers", MP: 46, MW: 13, MD: 13, ML: 20, GF: 42, GA: 56 },
+    { rank: 21, team: "West Brom", MP: 46, MW: 13, MD: 14, ML: 19, GF: 48, GA: 58 },
+    { rank: 22, team: "Oxford Utd", MP: 46, MW: 11, MD: 14, ML: 21, GF: 45, GA: 59 },
+    { rank: 23, team: "Leicester City", MP: 46, MW: 12, MD: 16, ML: 18, GF: 58, GA: 68 },
+    { rank: 24, team: "Sheffield Wednesday", MP: 46, MW: 2, MD: 12, ML: 32, GF: 29, GA: 89 }
+  ]
+};
+
+
+
+
+// ----- NEW (2026-27) -----
+const newBundesligaData = {
+    teams: [
+        { rank: 1,  team: "Bayern",               MP: 8, MW: 5, MD: 3, ML: 0, GF: 27, GA: 8  },
+        { rank: 2,  team: "Dortmund",             MP: 8, MW: 5, MD: 3, ML: 0, GF: 14, GA: 6  },
+        { rank: 3,  team: "Freiburg",             MP: 8, MW: 5, MD: 1, ML: 2, GF: 18, GA: 10 },
+        { rank: 4,  team: "RB Leipzig",           MP: 8, MW: 5, MD: 0, ML: 3, GF: 22, GA: 11 },
+        { rank: 5,  team: "Werder",               MP: 8, MW: 4, MD: 3, ML: 1, GF: 17, GA: 14 },
+        { rank: 6,  team: "Leverkusen",           MP: 8, MW: 4, MD: 1, ML: 3, GF: 18, GA: 16 },
+        { rank: 7,  team: "SV Elversberg",        MP: 8, MW: 4, MD: 1, ML: 3, GF: 16, GA: 16 },
+        { rank: 8,  team: "Eintracht Frankfurt",  MP: 8, MW: 3, MD: 2, ML: 3, GF: 13, GA: 18 },
+        { rank: 9,  team: "Mainz",                MP: 8, MW: 3, MD: 1, ML: 4, GF: 17, GA: 17 },
+        { rank: 10, team: "Augsburg",             MP: 8, MW: 2, MD: 3, ML: 3, GF: 18, GA: 15 },
+        { rank: 11, team: "VfB Stuttgart",        MP: 8, MW: 3, MD: 0, ML: 5, GF: 14, GA: 15 },
+        { rank: 12, team: "Hoffenheim",           MP: 8, MW: 3, MD: 0, ML: 5, GF: 14, GA: 16 },
+        { rank: 13, team: "Köln",                 MP: 8, MW: 2, MD: 3, ML: 3, GF: 9,  GA: 12 },
+        { rank: 14, team: "Paderborn",            MP: 8, MW: 2, MD: 3, ML: 3, GF: 6,  GA: 9  },
+        { rank: 15, team: "Hamburg",              MP: 8, MW: 3, MD: 0, ML: 5, GF: 7,  GA: 19 },
+        { rank: 16, team: "Union Berlin",         MP: 8, MW: 1, MD: 4, ML: 3, GF: 7,  GA: 19 },
+        { rank: 17, team: "Schalke",              MP: 8, MW: 1, MD: 3, ML: 4, GF: 4,  GA: 9  },
+        { rank: 18, team: "Mönchengladbach",      MP: 8, MW: 1, MD: 1, ML: 6, GF: 11, GA: 22 }
+    ]
+};
+ 
+       
+
+const newBundesliga2Data = {
+   teams: [
+        { rank: 1,  team: "Middlesbrough",     MP: 12, MW: 7, MD: 4, ML: 1, GF: 27, GA: 17 },
+        { rank: 2,  team: "Swansea",           MP: 12, MW: 7, MD: 2, ML: 3, GF: 16, GA: 13 },
+        { rank: 3,  team: "West Ham",          MP: 12, MW: 6, MD: 4, ML: 2, GF: 32, GA: 15 },
+        { rank: 4,  team: "Wolves",            MP: 12, MW: 6, MD: 3, ML: 3, GF: 20, GA: 16 },
+        { rank: 5,  team: "West Brom",         MP: 12, MW: 6, MD: 3, ML: 3, GF: 16, GA: 13 },
+        { rank: 6,  team: "Southampton",       MP: 12, MW: 7, MD: 3, ML: 2, GF: 24, GA: 12 },
+        { rank: 7,  team: "Birmingham",        MP: 12, MW: 5, MD: 5, ML: 2, GF: 20, GA: 12 },
+        { rank: 8,  team: "QPR",               MP: 12, MW: 5, MD: 5, ML: 2, GF: 20, GA: 12 },
+        { rank: 9,  team: "Stoke City",        MP: 12, MW: 6, MD: 2, ML: 4, GF: 18, GA: 16 },
+        { rank: 10, team: "Blackburn Rovers",  MP: 12, MW: 5, MD: 3, ML: 4, GF: 19, GA: 16 },
+        { rank: 11, team: "Portsmouth",        MP: 12, MW: 5, MD: 3, ML: 4, GF: 16, GA: 15 },
+        { rank: 12, team: "Sheffield United",  MP: 12, MW: 4, MD: 4, ML: 4, GF: 16, GA: 15 },
+        { rank: 13, team: "Millwall",          MP: 12, MW: 4, MD: 3, ML: 5, GF: 19, GA: 20 },
+        { rank: 14, team: "Bristol City",      MP: 12, MW: 4, MD: 3, ML: 5, GF: 12, GA: 15 },
+        { rank: 15, team: "Lincoln City",      MP: 12, MW: 4, MD: 3, ML: 5, GF: 13, GA: 20 },
+        { rank: 16, team: "Cardiff City",      MP: 12, MW: 3, MD: 5, ML: 4, GF: 19, GA: 17 },
+        { rank: 17, team: "Wrexham",           MP: 12, MW: 3, MD: 5, ML: 4, GF: 15, GA: 18 },
+        { rank: 18, team: "Bolton",            MP: 12, MW: 4, MD: 2, ML: 6, GF: 16, GA: 23 },
+        { rank: 19, team: "Charlton",          MP: 12, MW: 3, MD: 5, ML: 4, GF: 11, GA: 18 },
+        { rank: 20, team: "Norwich City",      MP: 12, MW: 4, MD: 0, ML: 8, GF: 20, GA: 22 },
+        { rank: 21, team: "Watford",           MP: 12, MW: 3, MD: 2, ML: 7, GF: 10, GA: 20 },
+        { rank: 22, team: "Burnley",           MP: 12, MW: 1, MD: 5, ML: 6, GF: 17, GA: 25 },
+        { rank: 23, team: "Derby County",      MP: 12, MW: 1, MD: 4, ML: 7, GF: 10, GA: 21 },
+        { rank: 24, team: "Preston",           MP: 12, MW: 1, MD: 2, ML: 9, GF: 10, GA: 25 }
+    ]
+};
+
+
+
+// Fixtures (kept for tab)
+const bundesligaFixtures = [
+      { "home": "Everton", "away": "Coventry", "date": "2026-11-06",league:"EPL" },
+      { "home": "Leeds", "away": "Spurs", "date": "2026-11-07",league:"EPL" },
+      { "home": "Fulham", "away": "Newcastle", "date": "2026-11-07",league:"EPL" },
+      { "home": "Arsenal", "away": "Hull", "date": "2026-11-07",league:"EPL" },
+      { "home": "Nottm Forest", "away": "Man City", "date": "2026-11-07",league:"EPL" },
+      { "home": "Ipswich Town", "away": "Bournemouth", "date": "2026-11-08",league:"EPL" },
+      { "home": "Sunderland", "away": "Chelsea", "date": "2026-11-08",league:"EPL" },
+      { "home": "Brighton", "away": "Brentford", "date": "2026-11-08",league:"EPL" },
+      { "home": "Palace", "away": "Liverpool", "date": "2026-11-08",league:"EPL" },
+      { "home": "Man Utd", "away": "Aston Villa", "date": "2026-11-08",league:"EPL" },
+      { "home": "Man City", "away": "Fulham", "date": "2026-11-21",league:"EPL" },
+      { "home": "Bournemouth", "away": "Nottm Forest", "date": "2026-11-21",league:"EPL" },
+      { "home": "Coventry", "away": "Palace", "date": "2026-11-21",league:"EPL" },
+      { "home": "Spurs", "away": "Ipswich Town", "date": "2026-11-21",league:"EPL" },
+      { "home": "Chelsea", "away": "Leeds", "date": "2026-11-21",league:"EPL" },
+      { "home": "Aston Villa", "away": "Sunderland", "date": "2026-11-21",league:"EPL" },
+      { "home": "Newcastle", "away": "Arsenal", "date": "2026-11-21" ,league:"EPL"},
+      { "home": "Hull", "away": "Brighton", "date": "2026-11-22",league:"EPL" },
+      { "home": "Liverpool", "away": "Man Utd", "date": "2026-11-22",league:"EPL" },
+      { "home": "Brentford", "away": "Everton", "date": "2026-11-23",league:"EPL" },
+      { "home": "Nottm Forest", "away": "Chelsea", "date": "2026-11-27",league:"EPL" },
+      { "home": "Man Utd", "away": "Brentford", "date": "2026-11-28",league:"EPL" },
+      { "home": "Leeds", "away": "Coventry", "date": "2026-11-28",league:"EPL" },
+      { "home": "Ipswich Town", "away": "Aston Villa", "date": "2026-11-28",league:"EPL" },
+      { "home": "Everton", "away": "Liverpool", "date": "2026-11-29",league:"EPL" },
+      { "home": "Brighton", "away": "Newcastle", "date": "2026-11-29",league:"EPL" },
+      { "home": "Fulham", "away": "Bournemouth", "date": "2026-11-29",league:"EPL" },
+      { "home": "Sunderland", "away": "Spurs", "date": "2026-11-29",league:"EPL" },
+      { "home": "Palace", "away": "Hull", "date": "2026-11-29",league:"EPL" },
+      { "home": "Arsenal", "away": "Man City", "date": "2026-11-29",league:"EPL" },
+      { "home": "Coventry", "away": "Ipswich Town", "date": "2026-12-01",league:"EPL" },
+      { "home": "Man City", "away": "Leeds", "date": "2026-12-02",league:"EPL" },
+      { "home": "Hull", "away": "Nottm Forest", "date": "2026-12-02",league:"EPL" },
+      { "home": "Liverpool", "away": "Sunderland", "date": "2026-12-02",league:"EPL" },
+      { "home": "Chelsea", "away": "Palace", "date": "2026-12-02",league:"EPL" },
+      { "home": "Newcastle", "away": "Man Utd", "date": "2026-12-02",league:"EPL" },
+      { "home": "Bournemouth", "away": "Brighton", "date": "2026-12-02",league:"EPL" },
+      { "home": "Brentford", "away": "Arsenal", "date": "2026-12-02",league:"EPL" },
+      { "home": "Aston Villa", "away": "Everton", "date": "2026-12-02",league:"EPL" },
+      { "home": "Spurs", "away": "Fulham", "date": "2026-12-03",league:"EPL" },
+      { "home": "Chelsea", "away": "Liverpool", "date": "2026-12-05",league:"EPL" },
+      { "home": "Man Utd", "away": "Coventry", "date": "2026-12-05",league:"EPL" },
+      { "home": "Bournemouth", "away": "Hull", "date": "2026-12-05",league:"EPL" },
+      { "home": "Aston Villa", "away": "Palace", "date": "2026-12-05",league:"EPL" },
+      { "home": "Leeds", "away": "Ipswich Town", "date": "2026-12-05",league:"EPL" },
+      { "home": "Nottm Forest", "away": "Brighton", "date": "2026-12-05",league:"EPL" },
+      { "home": "Brentford", "away": "Man City", "date": "2026-12-05",league:"EPL" },
+      { "home": "Everton", "away": "Fulham", "date": "2026-12-06" ,league:"EPL"},
+      { "home": "Newcastle", "away": "Sunderland", "date": "2026-12-06",league:"EPL" },
+      { "home": "Spurs", "away": "Arsenal", "date": "2026-12-06",league:"EPL" },
+      { "home": "Fulham", "away": "Brentford", "date": "2026-12-12",league:"EPL" },
+      { "home": "Ipswich Town", "away": "Newcastle", "date": "2026-12-12",league:"EPL" },
+      { "home": "Liverpool", "away": "Leeds", "date": "2026-12-12",league:"EPL" },
+      { "home": "Man City", "away": "Chelsea", "date": "2026-12-12",league:"EPL" },
+      { "home": "Brighton", "away": "Everton", "date": "2026-12-13",league:"EPL" },
+      { "home": "Sunderland", "away": "Nottm Forest", "date": "2026-12-13",league:"EPL" },
+      { "home": "Arsenal", "away": "Bournemouth", "date": "2026-12-13",league:"EPL" },
+      { "home": "Coventry", "away": "Aston Villa", "date": "2026-12-13",league:"EPL" },
+      { "home": "Palace", "away": "Man Utd", "date": "2026-12-13",league:"EPL" },
+      { "home": "Hull", "away": "Spurs", "date": "2026-12-14",league:"EPL" }
+];
+const bundesliga2Fixtures = [
+      { "home": "Blackburn Rovers", "away": "Stoke City", "date": "2026-11-03",league:"Championship" },
+      { "home": "Derby County", "away": "Norwich City", "date": "2026-11-03",league:"Championship" },
+      { "home": "Portsmouth", "away": "Swansea", "date": "2026-11-03",league:"Championship" },
+      { "home": "Preston", "away": "Sheffield United", "date": "2026-11-03",league:"Championship" },
+      { "home": "Charlton", "away": "Bolton", "date": "2026-11-03",league:"Championship" },
+      { "home": "Watford", "away": "Lincoln City", "date": "2026-11-03",league:"Championship" },
+      { "home": "QPR", "away": "Burnley", "date": "2026-11-03",league:"Championship" },
+      { "home": "West Brom", "away": "Southampton", "date": "2026-11-03",league:"Championship" },
+      { "home": "Birmingham", "away": "Millwall", "date": "2026-11-03",league:"Championship" },
+      { "home": "Wrexham", "away": "Middlesbrough", "date": "2026-11-04",league:"Championship" },
+      { "home": "Cardiff City", "away": "West Ham", "date": "2026-11-04" ,league:"Championship"},
+      { "home": "Bristol City", "away": "Wolves", "date": "2026-11-04",league:"Championship" }
+];
+
+// ===================== HELPERS =====================
+function escapeHtml(text) { if (!text) return ''; const d=document.createElement('div'); d.textContent=text; return d.innerHTML; }
+function calcPts(t) { return (t.MW||0)*3 + (t.MD||0); }
+function formatDate(d) { if(!d)return ''; return new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); }
+
+function renderTable(season, title, subtitle='') {
+  const sorted = [...season.teams].sort((a,b)=> (a.rank||0) - (b.rank||0));
+  let html = `<div class="season-card"><div class="season-title">${title} ${subtitle}</div>`;
+  if (subtitle) html += `<div class="season-sub">${subtitle}</div>`;
+  html += `<div class="table-responsive"><table class="league-table"><thead><tr>
+    <th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+  </tr></thead><tbody>`;
+  for (const t of sorted) {
+    const w=t.MW||0, d=t.MD||0, l=t.ML||0, gd=t.GF-t.GA, pts=calcPts(t);
+    let cls = '';
+    if (t.rank===1) cls='champion-row';
+    else if (t.rank<=4 && title.includes('Bundesliga')) cls='promotion-zone';
+    else if (t.rank>=18 && title.includes('Bundesliga')) cls='relegation-zone';
+    else if (t.rank<=2 && title.includes('Bundesliga 2')) cls='promotion-zone';
+    else if (t.rank>=22 && title.includes('Bundesliga 2')) cls='relegation-zone';
+    html += `<tr class="${cls}"><td><strong>${t.rank}</strong></td>
+      <td class="team-cell"><a href="#">${escapeHtml(t.team)}</a></td>
+      <td>${t.MP}</td><td>${w}</td><td>${d}</td><td>${l}</td>
+      <td>${t.GF}</td><td>${t.GA}</td><td class="${gd>=0?'text-success':'text-danger'}">${gd>=0?'+':''}${gd}</td>
+      <td class="points-cell">${pts}</td></tr>`;
+  }
+  html += `</tbody></table></div></div>`;
+  return html;
+}
+
+// ===================== RENDER FUNCTIONS (side by side with analysis) =====================
+
+function renderBundesliga() {
+  const container = document.getElementById('bundesligaContent');
+  let html = `
+    <div class="league-grid-2col">
+      ${renderTable(oldBundesligaData, 'Bundesliga', '2025 (old)')}
+      ${renderTable(newBundesligaData, 'Bundesliga', '2026-27 (new)')}
+    </div>
+    <div class="analysis-card">
+      <h3><i class="fas fa-chart-simple"></i> Bundesliga · Old vs New Comparison</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldBundesligaData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesligaData.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(oldBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
         </div>
-        <p class="disclaimer">Predictions for entertainment only. 18+</p>
-        <p>© 2026 Punters League</p>
-    </footer>
+        <div class="col-md-6">
+          <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesligaData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesligaData.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(newBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesligaData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesligaData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesligaData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesligaData.teams.reduce((s,t)=>s+t.GF,0) / newBundesligaData.teams.reduce((s,t)=>s+t.MP,0) * 38).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
 
-    <script>
-        // ===================== BUNDESLIGA 1 DATA =====================
+function renderBundesliga2() {
+  const container = document.getElementById('bundesliga2Content');
+  let html = `
+    <div class="league-grid-2col">
+      ${renderTable(oldBundesliga2Data, 'Bundesliga 2', '2025 (old)')}
+      ${renderTable(newBundesliga2Data, 'Bundesliga 2', '2026-27 (new)')}
+    </div>
+    <div class="analysis-card">
+      <h3><i class="fas fa-chart-simple"></i> Bundesliga 2 · Old vs New Comparison</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldBundesligaData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(newBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0) / newBundesliga2Data.teams.reduce((s,t)=>s+t.MP,0) * 46).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
 
-        // OLD (2025-26)
-        const oldBundesliga1Data = {
-            teams: [
-                { rank: 1, team: "Bayern", MP: 34, MW: 28, MD: 5, ML: 1, GF: 122, GA: 36 },
-                { rank: 2, team: "Dortmund", MP: 34, MW: 22, MD: 7, ML: 5, GF: 70, GA: 34 },
-                { rank: 3, team: "RB Leipzig", MP: 34, MW: 20, MD: 5, ML: 9, GF: 66, GA: 47 },
-                { rank: 4, team: "VfB Stuttgart", MP: 34, MW: 18, MD: 8, ML: 8, GF: 71, GA: 49 },
-                { rank: 5, team: "Hoffenheim", MP: 34, MW: 18, MD: 7, ML: 9, GF: 65, GA: 52 },
-                { rank: 6, team: "Leverkusen", MP: 34, MW: 17, MD: 8, ML: 9, GF: 68, GA: 47 },
-                { rank: 7, team: "Freiburg", MP: 34, MW: 13, MD: 8, ML: 13, GF: 51, GA: 57 },
-                { rank: 8, team: "Eintracht Frankfurt", MP: 34, MW: 11, MD: 11, ML: 12, GF: 61, GA: 65 },
-                { rank: 9, team: "Augsburg", MP: 34, MW: 12, MD: 7, ML: 15, GF: 45, GA: 61 },
-                { rank: 10, team: "Mainz", MP: 34, MW: 10, MD: 10, ML: 14, GF: 44, GA: 53 },
-                { rank: 11, team: "Union Berlin", MP: 34, MW: 10, MD: 9, ML: 15, GF: 44, GA: 58 },
-                { rank: 12, team: "Mönchengladbach", MP: 34, MW: 9, MD: 11, ML: 14, GF: 42, GA: 53 },
-                { rank: 13, team: "Hamburg", MP: 34, MW: 9, MD: 11, ML: 14, GF: 40, GA: 54 },
-                { rank: 14, team: "Köln", MP: 34, MW: 7, MD: 11, ML: 16, GF: 49, GA: 63 },
-                { rank: 15, team: "Werder", MP: 34, MW: 8, MD: 8, ML: 18, GF: 37, GA: 60 },
-                { rank: 16, team: "Wolfsburg", MP: 34, MW: 7, MD: 8, ML: 19, GF: 45, GA: 69 },
-                { rank: 17, team: "Heidenheim", MP: 34, MW: 6, MD: 8, ML: 20, GF: 41, GA: 72 },
-                { rank: 18, team: "St. Pauli", MP: 34, MW: 6, MD: 8, ML: 20, GF: 29, GA: 60 }
-            ]
-        };
+function renderLeagueOne() {
+  const container = document.getElementById('leagueoneContent');
+  let html = `
+    <div class="league-grid-2col">
+      ${renderTable(oldLeagueOneData, 'League One', '2025 (old)')}
+      ${renderTable(newLeagueOneData, 'League One', '2026-27 (new)')}
+    </div>
+    <div class="analysis-card">
+      <h3><i class="fas fa-chart-simple"></i> League One · Old vs New Comparison</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldLeagueOneData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldLeagueOneData.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(oldLeagueOneData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldLeagueOneData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newLeagueOneData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newLeagueOneData.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(newLeagueOneData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newLeagueOneData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldLeagueOneData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newLeagueOneData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newLeagueOneData.teams.reduce((s,t)=>s+t.GF,0) / newLeagueOneData.teams.reduce((s,t)=>s+t.MP,0) * 46).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
 
-        // NEW (2026-27 current)
-        const newBundesliga1Data = {
-            teams: [
-        { rank: 1, team: "Freiburg", MP: 3, MW: 3, MD: 0, ML: 0, GF: 10, GA: 1 },
-        { rank: 2, team: "Dortmund", MP: 3, MW: 3, MD: 0, ML: 0, GF: 8, GA: 2 },
-        { rank: 3, team: "Augsburg", MP: 3, MW: 2, MD: 1, ML: 0, GF: 9, GA: 3 },
-        { rank: 4, team: "Bayern", MP: 3, MW: 2, MD: 1, ML: 0, GF: 7, GA: 2 },
-        { rank: 5, team: "RB Leipzig", MP: 3, MW: 2, MD: 0, ML: 1, GF: 9, GA: 3 },
-        { rank: 6, team: "SV Elversberg", MP: 3, MW: 2, MD: 0, ML: 1, GF: 8, GA: 7 },
-        { rank: 7, team: "Leverkusen", MP: 3, MW: 1, MD: 1, ML: 1, GF: 8, GA: 5 },
-        { rank: 8, team: "Mainz", MP: 3, MW: 1, MD: 1, ML: 1, GF: 6, GA: 3 },
-        { rank: 9, team: "Eintracht Frankfurt", MP: 3, MW: 1, MD: 1, ML: 1, GF: 7, GA: 8 },
-        { rank: 10, team: "Werder", MP: 3, MW: 1, MD: 1, ML: 1, GF: 5, GA: 6 },
-        { rank: 11, team: "Schalke", MP: 3, MW: 1, MD: 1, ML: 1, GF: 3, GA: 4 },
-        { rank: 12, team: "Köln", MP: 3, MW: 1, MD: 1, ML: 1, GF: 5, GA: 7 },
-        { rank: 13, team: "Hoffenheim", MP: 3, MW: 1, MD: 0, ML: 2, GF: 6, GA: 7 },
-        { rank: 14, team: "VfB Stuttgart", MP: 3, MW: 1, MD: 0, ML: 2, GF: 6, GA: 8 },
-        { rank: 15, team: "Paderborn", MP: 3, MW: 0, MD: 1, ML: 2, GF: 0, GA: 4 },
-        { rank: 16, team: "Union Berlin", MP: 3, MW: 0, MD: 1, ML: 2, GF: 4, GA: 10 },
-        { rank: 17, team: "Mönchengladbach", MP: 3, MW: 0, MD: 0, ML: 3, GF: 3, GA: 12 },
-        { rank: 18, team: "Hamburg", MP: 3, MW: 0, MD: 0, ML: 3, GF: 0, GA: 12 }
-            ]
-        };
+function renderLeagueTwo() {
+  const container = document.getElementById('leaguetwoContent');
+  let html = `
+    <div class="league-grid-2col">
+      ${renderTable(oldLeagueTwoData, 'League Two', '2025 (old)')}
+      ${renderTable(newLeagueTwoData, 'League Two', '2026-27 (new)')}
+    </div>
+    <div class="analysis-card">
+      <h3><i class="fas fa-chart-simple"></i> League Two · Old vs New Comparison</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldLeagueTwoData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldLeagueTwoData.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(oldLeagueTwoData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldLeagueTwoData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newLeagueTwoData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newLeagueTwoData.teams.find(t=>t.rank===1))} pts</p>
+          <p>Top scorer: ${escapeHtml(newLeagueTwoData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newLeagueTwoData.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldLeagueTwoData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newLeagueTwoData.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
+        <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newLeagueTwoData.teams.reduce((s,t)=>s+t.GF,0) / newLeagueTwoData.teams.reduce((s,t)=>s+t.MP,0) * 46).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+}
 
-        // ===================== BUNDESLIGA 2 DATA =====================
+function renderFixtures() {
+  let html = `<div class="analysis-card"><h3><i class="fas fa-calendar-alt"></i> Selected Fixtures</h3>`;
+  const all = [...premierFixtures, ...championshipFixtures, ...leagueOneFixtures, ...leagueTwoFixtures];
+  for (const f of all) {
+    html += `<div class="fixture-card"><div class="fixture-teams"><span><strong>${escapeHtml(f.home)}</strong></span><span class="fixture-vs">vs</span><span><strong>${escapeHtml(f.away)}</strong></span><span class="badge-eng">${f.league}</span></div><div class="fixture-date"><i class="far fa-calendar-alt"></i> ${formatDate(f.date)}</div></div>`;
+  }
+  html += `</div>`;
+  document.getElementById('fixturesContent').innerHTML = html;
+}
 
-        // OLD (2025-26 previous season)
-        const oldBundesliga2Data = {
-            teams: [
-                { rank: 1, team: "Schalke", MP: 34, MW: 21, MD: 7, ML: 6, GF: 50, GA: 31 },
-                { rank: 2, team: "SV Elversberg", MP: 34, MW: 18, MD: 8, ML: 8, GF: 64, GA: 39 },
-                { rank: 3, team: "Paderborn", MP: 34, MW: 18, MD: 8, ML: 8, GF: 59, GA: 45 },
-                { rank: 4, team: "Hannover 96", MP: 34, MW: 16, MD: 12, ML: 6, GF: 60, GA: 44 },
-                { rank: 5, team: "Darmstadt", MP: 34, MW: 13, MD: 13, ML: 8, GF: 57, GA: 45 },
-                { rank: 6, team: "1. FCK", MP: 34, MW: 16, MD: 4, ML: 14, GF: 52, GA: 47 },
-                { rank: 7, team: "Hertha", MP: 34, MW: 14, MD: 9, ML: 11, GF: 47, GA: 44 },
-                { rank: 8, team: "Nürnberg", MP: 34, MW: 12, MD: 10, ML: 12, GF: 47, GA: 45 },
-                { rank: 9, team: "Bochum", MP: 34, MW: 11, MD: 11, ML: 12, GF: 49, GA: 47 },
-                { rank: 10, team: "Karlsruher", MP: 34, MW: 12, MD: 8, ML: 14, GF: 53, GA: 64 },
-                { rank: 11, team: "Dynamo", MP: 34, MW: 11, MD: 8, ML: 15, GF: 54, GA: 53 },
-                { rank: 12, team: "Holstein Kiel", MP: 34, MW: 11, MD: 8, ML: 15, GF: 44, GA: 48 },
-                { rank: 13, team: "Arminia", MP: 34, MW: 10, MD: 9, ML: 15, GF: 53, GA: 51 },
-                { rank: 14, team: "1. FC Magdeburg", MP: 34, MW: 12, MD: 3, ML: 19, GF: 52, GA: 58 },
-                { rank: 15, team: "Eintracht Braunschweig", MP: 34, MW: 10, MD: 7, ML: 17, GF: 36, GA: 54 },
-                { rank: 16, team: "Fürth", MP: 34, MW: 10, MD: 7, ML: 17, GF: 49, GA: 68 },
-                { rank: 17, team: "Düsseldorf", MP: 34, MW: 11, MD: 4, ML: 19, GF: 33, GA: 53 },
-                { rank: 18, team: "Preußen Münster", MP: 34, MW: 6, MD: 12, ML: 16, GF: 38, GA: 61 }
-            ]
-        };
+function renderStats() {
+  const leagues = [
+    {name:'Premier League', old:oldPremierData, new:newPremierData},
+    {name:'Championship', old:oldChampionshipData, new:newChampionshipData},
+    {name:'League One', old:oldLeagueOneData, new:newLeagueOneData},
+    {name:'League Two', old:oldLeagueTwoData, new:newLeagueTwoData}
+  ];
+  let html = `<div class="analysis-card"><h3><i class="fas fa-chart-line"></i> League Snapshot · Old vs New</h3><div class="row">`;
+  for (const lg of leagues) {
+    const oldTeams = lg.old.teams;
+    const newTeams = lg.new.teams;
+    const oldGoals = oldTeams.reduce((s,t)=>s+t.GF,0);
+    const newGoals = newTeams.reduce((s,t)=>s+t.GF,0);
+    const oldChamp = oldTeams.find(t=>t.rank===1);
+    const newChamp = newTeams.find(t=>t.rank===1);
+    html += `<div class="col-md-3"><div class="info-box"><h5>?????????????? ${lg.name}</h5>
+      <p><strong>2025 champ:</strong> ${oldChamp?escapeHtml(oldChamp.team):'—'} (${oldChamp?calcPts(oldChamp):0} pts)</p>
+      <p><strong>2026-27 leader:</strong> ${newChamp?escapeHtml(newChamp.team):'—'} (${newChamp?calcPts(newChamp):0} pts)</p>
+      <p>Goals: ${oldGoals} ? ${newGoals}</p></div></div>`;
+  }
+  html += `</div></div>`;
+  document.getElementById('statsContent').innerHTML = html;
+}
 
-        // NEW (2026-27 current)
-        const newBundesliga2Data = {
-            teams: [
-                { rank: 1, team: "Hertha", MP: 4, MW: 4, MD: 0, ML: 0, GF: 12, GA: 5 },
-                { rank: 2, team: "Nürnberg", MP: 4, MW: 3, MD: 1, ML: 0, GF: 13, GA: 5 },
-                { rank: 3, team: "Heidenheim", MP: 4, MW: 3, MD: 0, ML: 1, GF: 11, GA: 10 },
-                { rank: 4, team: "Wolfsburg", MP: 4, MW: 2, MD: 2, ML: 0, GF: 10, GA: 6 },
-                { rank: 5, team: "1. FCK", MP: 4, MW: 2, MD: 2, ML: 0, GF: 5, GA: 1 },
-                { rank: 6, team: "Bochum", MP: 4, MW: 2, MD: 0, ML: 2, GF: 3, GA: 3 },
-                { rank: 7, team: "1. FC Magdeburg", MP: 4, MW: 2, MD: 0, ML: 2, GF: 7, GA: 8 },
-                { rank: 7, team: "Osnabrück", MP: 4, MW: 2, MD: 0, ML: 2, GF: 7, GA: 8 },
-                { rank: 9, team: "Karlsruher", MP: 4, MW: 1, MD: 2, ML: 1, GF: 6, GA: 8 },
-                { rank: 10, team: "Arminia", MP: 4, MW: 1, MD: 1, ML: 2, GF: 7, GA: 8 },
-                { rank: 11, team: "Energie Cottbus", MP: 4, MW: 1, MD: 1, ML: 2, GF: 10, GA: 12 },
-                { rank: 12, team: "Fürth", MP: 4, MW: 1, MD: 1, ML: 2, GF: 7, GA: 9 },
-                { rank: 13, team: "Hannover 96", MP: 4, MW: 1, MD: 1, ML: 2, GF: 4, GA: 6 },
-                { rank: 14, team: "Eintracht Braunschweig", MP: 4, MW: 1, MD: 0, ML: 3, GF: 10, GA: 10 },
-                { rank: 15, team: "St. Pauli", MP: 4, MW: 0, MD: 3, ML: 1, GF: 6, GA: 7 },
-                { rank: 16, team: "Holstein Kiel", MP: 4, MW: 0, MD: 3, ML: 1, GF: 6, GA: 8 },
-                { rank: 17, team: "Dynamo", MP: 4, MW: 1, MD: 0, ML: 3, GF: 5, GA: 10 },
-                { rank: 18, team: "Darmstadt", MP: 4, MW: 0, MD: 1, ML: 3, GF: 2, GA: 7 }
-            ]
-        };
+// ===================== TAB SWITCH =====================
+function initTabs() {
+  document.querySelectorAll('.league-tab').forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      document.querySelectorAll('.league-tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(`tab-${tab.dataset.tab}`).classList.add('active');
+    });
+  });
+}
 
-        // ===================== MATCH RESULTS DATA =====================
-        const matchResults = {
-            matchday1: [
-                { home: "Bochum", away: "Hertha", homeGoals: 0, awayGoals: 1 },
-                { home: "Heidenheim", away: "Osnabrück", homeGoals: 4, awayGoals: 3 },
-                { home: "Karlsruher", away: "Arminia", homeGoals: 2, awayGoals: 1 },
-                { home: "1. FC Magdeburg", away: "Eintracht Braunschweig", homeGoals: 1, awayGoals: 6 },
-                { home: "Darmstadt", away: "Holstein Kiel", homeGoals: 2, awayGoals: 2 },
-                { home: "Wolfsburg", away: "1. FCK", homeGoals: 0, awayGoals: 0 },
-                { home: "Energie Cottbus", away: "Hannover 96", homeGoals: 3, awayGoals: 1 },
-                { home: "St. Pauli", away: "Fürth", homeGoals: 1, awayGoals: 1 },
-                { home: "Nürnberg", away: "Dynamo", homeGoals: 3, awayGoals: 0 }
-            ],
-            matchday2: [
-                { home: "Eintracht Braunschweig", away: "Bochum", homeGoals: 0, awayGoals: 1 },
-                { home: "Holstein Kiel", away: "St. Pauli", homeGoals: 2, awayGoals: 2 },
-                { home: "Fürth", away: "Nürnberg", homeGoals: 2, awayGoals: 4 },
-                { home: "Osnabrück", away: "1. FC Magdeburg", homeGoals: 0, awayGoals: 3 },
-                { home: "Hertha", away: "Heidenheim", homeGoals: 4, awayGoals: 1 },
-                { home: "1. FCK", away: "Karlsruher", homeGoals: 0, awayGoals: 0 },
-                { home: "Arminia", away: "Energie Cottbus", homeGoals: 3, awayGoals: 0 },
-                { home: "Hannover 96", away: "Wolfsburg", homeGoals: 0, awayGoals: 1 },
-                { home: "Dynamo", away: "Darmstadt", homeGoals: 1, awayGoals: 0 }
-            ],
-            matchday3: [
-                { home: "Bochum", away: "Osnabrück", homeGoals: 0, awayGoals: 1 },
-                { home: "Eintracht Braunschweig", away: "Hertha", homeGoals: 3, awayGoals: 5 },
-                { home: "Heidenheim", away: "Dynamo", homeGoals: 5, awayGoals: 3 },
-                { home: "Karlsruher", away: "Wolfsburg", homeGoals: 2, awayGoals: 5 },
-                { home: "Energie Cottbus", away: "Fürth", homeGoals: 3, awayGoals: 4 },
-                { home: "Nürnberg", away: "Arminia", homeGoals: 4, awayGoals: 1 },
-                { home: "St. Pauli", away: "1. FCK", homeGoals: 1, awayGoals: 2 },
-                { home: "Darmstadt", away: "Hannover 96", homeGoals: 0, awayGoals: 1 },
-                { home: "1. FC Magdeburg", away: "Holstein Kiel", homeGoals: 2, awayGoals: 0 }
-            ],
-            matchday4: [
-                { home: "Arminia", away: "St. Pauli", homeGoals: 2, awayGoals: 2 },
-                { home: "Hannover 96", away: "Karlsruher", homeGoals: 2, awayGoals: 2 },
-                { home: "1. FCK", away: "Darmstadt", homeGoals: 3, awayGoals: 0 },
-                { home: "Holstein Kiel", away: "Nürnberg", homeGoals: 2, awayGoals: 2 },
-                { home: "Wolfsburg", away: "Energie Cottbus", homeGoals: 4, awayGoals: 4 },
-                { home: "Dynamo", away: "Bochum", homeGoals: 1, awayGoals: 2 },
-                { home: "Hertha", away: "1. FC Magdeburg", homeGoals: 2, awayGoals: 1 },
-                { home: "Fürth", away: "Heidenheim", homeGoals: 0, awayGoals: 1 },
-                { home: "Osnabrück", away: "Eintracht Braunschweig", homeGoals: 3, awayGoals: 1 }
-            ]
-        };
-
-        // ===================== HELPER FUNCTIONS =====================
-        function escapeHtml(text) { if (!text) return '';
-            const d = document.createElement('div');
-            d.textContent = text;
-            return d.innerHTML; }
-
-        function calcPts(t) { return (t.MW || 0) * 3 + (t.MD || 0); }
-
-        function renderTable(season, title, subtitle = '') {
-            const sorted = [...season.teams].sort((a, b) => (a.rank || 0) - (b.rank || 0));
-            let html = `<div class="season-card"><div class="season-title">${title} ${subtitle}</div>`;
-            if (subtitle) html += `<div class="season-sub">${subtitle}</div>`;
-            html +=
-                `<div class="table-responsive"><table class="league-table"><thead><tr>
-            <th>Rank</th><th>Team</th><th>MP</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
-          </tr></thead><tbody>`;
-            for (const t of sorted) {
-                const w = t.MW || 0,
-                    d = t.MD || 0,
-                    l = t.ML || 0,
-                    gd = t.GF - t.GA,
-                    pts = calcPts(t);
-                let cls = '';
-                if (t.rank === 1) cls = 'champion-row';
-                else if (t.rank <= 2 && title.includes('Bundesliga 2')) cls = 'promotion-zone';
-                else if (t.rank <= 4 && title.includes('Bundesliga 1')) cls = 'promotion-zone';
-                else if (t.rank >= 16 && title.includes('Bundesliga 1')) cls = 'relegation-zone';
-                else if (t.rank >= 17 && title.includes('Bundesliga 2')) cls = 'relegation-zone';
-                html += `<tr class="${cls}"><td><strong>${t.rank}</strong></td>
-              <td class="team-cell"><a href="#">${escapeHtml(t.team)}</a></td>
-              <td>${t.MP}</td><td>${w}</td><td>${d}</td><td>${l}</td>
-              <td>${t.GF}</td><td>${t.GA}</td><td class="${gd>=0?'text-success':'text-danger'}">${gd>=0?'+':''}${gd}</td>
-              <td class="points-cell">${pts}</td></tr>`;
-            }
-            html += `</tbody></table></div></div>`;
-            return html;
-        }
-
-        // ===================== RENDER FUNCTIONS =====================
-
-        function renderBundesliga1() {
-            const container = document.getElementById('bundesliga1Content');
-            let html = `
-            <div class="league-grid-2col">
-              ${renderTable(oldBundesliga1Data, 'Bundesliga 1', '2025-26 (old)')}
-              ${renderTable(newBundesliga1Data, 'Bundesliga 1', '2026-27 (new)')}
-            </div>
-            <div class="analysis-card">
-              <h3><i class="fas fa-chart-simple"></i> Bundesliga 1 · Old vs New Comparison</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="info-box"><h5>2025-26 (old) champion</h5><p><strong>${escapeHtml(oldBundesliga1Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga1Data.teams.find(t=>t.rank===1))} pts</p>
-                  <p>Top scorer: ${escapeHtml(oldBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesliga1Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesliga1Data.teams.find(t=>t.rank===1))} pts</p>
-                  <p>Top scorer: ${escapeHtml(newBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesliga1Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesliga1Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025-26)</small></div></div>
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesliga1Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesliga1Data.teams.reduce((s,t)=>s+t.GF,0) / newBundesliga1Data.teams.reduce((s,t)=>s+t.MP,0) * 34).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
-              </div>
-              <div class="row mt-3">
-                <div class="col-md-12">
-                  <div class="info-box">
-                    <h5><i class="fas fa-lightbulb"></i> Key Insights</h5>
-                    <ul class="mb-0">
-                      <li><strong>Bayern's dominance:</strong> 89 points, +86 goal difference in 2025-26 – one of the best seasons in Bundesliga history.</li>
-                      <li><strong>New challengers:</strong> Augsburg and Freiburg start 2026-27 with perfect 2-0 records, while Bayern have drawn one match.</li>
-                      <li><strong>Promoted teams:</strong> SV Elversberg making an immediate impact with 2 wins from 2.</li>
-                      <li><strong>Relegation battle:</strong> Hamburg and Mönchengladbach yet to get off the mark this season.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `;
-            container.innerHTML = html;
-        }
-
-        function renderBundesliga2() {
-            const container = document.getElementById('bundesliga2Content');
-            let html = `
-            <div class="league-grid-2col">
-              ${renderTable(oldBundesliga2Data, 'Bundesliga 2', '2025-26 (old)')}
-              ${renderTable(newBundesliga2Data, 'Bundesliga 2', '2026-27 (new)')}
-            </div>
-            <div class="analysis-card">
-              <h3><i class="fas fa-chart-simple"></i> Bundesliga 2 · Old vs New Comparison</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="info-box"><h5>2025-26 (old) champion</h5><p><strong>${escapeHtml(oldBundesliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
-                  <p>Top scorer: ${escapeHtml(oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box"><h5>2026-27 (new) early leader</h5><p><strong>${escapeHtml(newBundesliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(newBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
-                  <p>Top scorer: ${escapeHtml(newBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${newBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${oldBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2025-26)</small></div></div>
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${newBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0)}</span><small>Total goals (2026-27 so far)</small></div></div>
-                <div class="col-md-4"><div class="info-box text-center"><span class="big-number">${(newBundesliga2Data.teams.reduce((s,t)=>s+t.GF,0) / newBundesliga2Data.teams.reduce((s,t)=>s+t.MP,0) * 34).toFixed(0)}</span><small>Projected goals (2026-27)</small></div></div>
-              </div>
-              <div class="row mt-3">
-                <div class="col-md-12">
-                  <div class="info-box">
-                    <h5><i class="fas fa-lightbulb"></i> Key Insights</h5>
-                    <ul class="mb-0">
-                      <li><strong>Hertha perfect start:</strong> 4 wins from 4, 12 goals scored – early favourites for promotion.</li>
-                      <li><strong>Nürnberg close behind:</strong> 10 points from 4 games, 13 goals scored – strong attacking form.</li>
-                      <li><strong>Heidenheim adapting well:</strong> Relegated from Bundesliga 1, sit 3rd with 9 points.</li>
-                      <li><strong>Darmstadt struggling:</strong> Only 1 point from 4 games, scored just 2 goals.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `;
-            container.innerHTML = html;
-        }
-
-        function renderResults() {
-            const container = document.getElementById('resultsContent');
-            let html = `<div class="analysis-card">
-              <h3><i class="fas fa-futbol"></i> Bundesliga 2 · Match Results (Matchday 1-4)</h3>
-              <p class="text-muted">All 36 matches from the first four matchdays of the 2026-27 season.</p>
-          `;
-
-            const matchdays = [
-                { key: 'matchday1', title: 'Matchday 1' },
-                { key: 'matchday2', title: 'Matchday 2' },
-                { key: 'matchday3', title: 'Matchday 3' },
-                { key: 'matchday4', title: 'Matchday 4' }
-            ];
-
-            for (const md of matchdays) {
-                html += `<div class="matchday-section">
-                  <div class="matchday-title">${md.title}</div>
-              `;
-                for (const match of matchResults[md.key]) {
-                    html += `<div class="result-card">
-                      <span>${escapeHtml(match.home)}</span>
-                      <span class="result-score">${match.homeGoals} - ${match.awayGoals}</span>
-                      <span>${escapeHtml(match.away)}</span>
-                  </div>`;
-                }
-                html += `</div>`;
-            }
-
-            html += `</div>`;
-            container.innerHTML = html;
-        }
-
-        function renderStats() {
-            const oldB1 = oldBundesliga1Data.teams;
-            const newB1 = newBundesliga1Data.teams;
-            const oldB2 = oldBundesliga2Data.teams;
-            const newB2 = newBundesliga2Data.teams;
-
-            const oldB1Champ = oldB1.find(t => t.rank === 1);
-            const newB1Champ = newB1.find(t => t.rank === 1);
-            const oldB2Champ = oldB2.find(t => t.rank === 1);
-            const newB2Champ = newB2.find(t => t.rank === 1);
-
-            let html = `
-            <div class="analysis-card">
-              <h3><i class="fas fa-chart-line"></i> German Football Snapshot · Old vs New</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <h5>?? Bundesliga 1 · 2025-26</h5>
-                    <p><strong>Champion:</strong> ${escapeHtml(oldB1Champ?.team)} (${calcPts(oldB1Champ)} pts)</p>
-                    <p><strong>Total goals:</strong> ${oldB1.reduce((s,t)=>s+t.GF,0)}</p>
-                    <p><strong>Avg goals/match:</strong> ${(oldB1.reduce((s,t)=>s+t.GF,0)/306).toFixed(2)}</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <h5>?? Bundesliga 1 · 2026-27 (so far)</h5>
-                    <p><strong>Current leader:</strong> ${escapeHtml(newB1Champ?.team)} (${calcPts(newB1Champ)} pts)</p>
-                    <p><strong>Total goals:</strong> ${newB1.reduce((s,t)=>s+t.GF,0)}</p>
-                    <p><strong>Projected goals (34 matches):</strong> ${(newB1.reduce((s,t)=>s+t.GF,0)/newB1.reduce((s,t)=>s+t.MP,0)*34).toFixed(0)}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <h5>?? Bundesliga 2 · 2025-26</h5>
-                    <p><strong>Champion:</strong> ${escapeHtml(oldB2Champ?.team)} (${calcPts(oldB2Champ)} pts)</p>
-                    <p><strong>Total goals:</strong> ${oldB2.reduce((s,t)=>s+t.GF,0)}</p>
-                    <p><strong>Avg goals/match:</strong> ${(oldB2.reduce((s,t)=>s+t.GF,0)/306).toFixed(2)}</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <h5>?? Bundesliga 2 · 2026-27 (so far)</h5>
-                    <p><strong>Current leader:</strong> ${escapeHtml(newB2Champ?.team)} (${calcPts(newB2Champ)} pts)</p>
-                    <p><strong>Total goals:</strong> ${newB2.reduce((s,t)=>s+t.GF,0)}</p>
-                    <p><strong>Projected goals (34 matches):</strong> ${(newB2.reduce((s,t)=>s+t.GF,0)/newB2.reduce((s,t)=>s+t.MP,0)*34).toFixed(0)}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="col-md-12">
-                  <div class="info-box text-center">
-                    <h5>?? Promoted Teams Impact</h5>
-                    <p><strong>SV Elversberg</strong> (promoted from 3. Liga) – 6 points from 2 matches in Bundesliga 1.</p>
-                    <p><strong>Schalke & Paderborn</strong> (promoted from Bundesliga 2) – Schalke 1 point, Paderborn 1 point from 2 matches.</p>
-                    <p><strong>Heidenheim & St. Pauli</strong> (relegated from Bundesliga 1) – Heidenheim 9 pts, St. Pauli 3 pts from 4 matches in Bundesliga 2.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          `;
-            document.getElementById('statsContent').innerHTML = html;
-        }
-
-        // ===================== TAB SWITCH =====================
-        function initTabs() {
-            document.querySelectorAll('.league-tab').forEach(tab => {
-                tab.addEventListener('click', (e) => {
-                    document.querySelectorAll('.league-tab').forEach(t => t.classList.remove('active'));
-                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                    tab.classList.add('active');
-                    document.getElementById(`tab-${tab.dataset.tab}`).classList.add('active');
-                });
-            });
-        }
-
-        // ===================== DOM READY =====================
-        document.addEventListener('DOMContentLoaded', () => {
-            renderBundesliga1();
-            renderBundesliga2();
-            renderResults();
-            renderStats();
-            initTabs();
-        });
-    </script>
+// ===================== DOM READY =====================
+document.addEventListener('DOMContentLoaded', ()=>{
+  renderBundesliga();
+  renderBundesliga2();
+  renderLeagueOne();
+  renderLeagueTwo();
+  renderFixtures();
+  renderStats();
+  initTabs();
+});
+</script>
 </body>
 </html>
