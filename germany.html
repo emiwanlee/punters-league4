@@ -270,7 +270,7 @@ const oldBundesligaData = {
   ]
 };
 
-const oldbundesliga2Data = {
+const oldBundesliga2Data = {
   teams: [
     { rank: 1, team: "Coventry", MP: 46, MW: 28, MD: 11, ML: 7, GF: 97, GA: 45 },
     { rank: 2, team: "Ipswich Town", MP: 46, MW: 23, MD: 15, ML: 8, GF: 80, GA: 47 },
@@ -509,7 +509,7 @@ function renderBundesliga2() {
       <h3><i class="fas fa-chart-simple"></i> Bundesliga 2 · Old vs New Comparison</h3>
       <div class="row">
         <div class="col-md-6">
-          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldBundesligaData.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
+          <div class="info-box"><h5>2025 (old) champion</h5><p><strong>${escapeHtml(oldBundesliga2Data.teams.find(t=>t.rank===1)?.team)}</strong> · ${calcPts(oldBundesliga2Data.teams.find(t=>t.rank===1))} pts</p>
           <p>Top scorer: ${escapeHtml(oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.team)} (${oldBundesliga2Data.teams.reduce((a,b)=>a.GF>b.GF?a:b)?.GF} goals)</p></div>
         </div>
         <div class="col-md-6">
@@ -526,7 +526,7 @@ function renderBundesliga2() {
   `;
   container.innerHTML = html;
 }
-
+<!--
 function renderLeagueOne() {
   const container = document.getElementById('leagueoneContent');
   let html = `
@@ -584,7 +584,7 @@ function renderLeagueTwo() {
   `;
   container.innerHTML = html;
 }
-
+-->
 function renderFixtures() {
   let html = `<div class="analysis-card"><h3><i class="fas fa-calendar-alt"></i> Selected Fixtures</h3>`;
   const all = [...premierFixtures, ...championshipFixtures, ...leagueOneFixtures, ...leagueTwoFixtures];
