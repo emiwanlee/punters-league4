@@ -1005,9 +1005,6 @@ const leaguesData = {
       { "rank": 24, "team": "Lincoln City", "MP": 46, "MW": 6, "MD": 10, "ML": 30, "GF": 30, "GA": 82, "logo": "england/lincoln.png" }
     ],
     "fixtures": [
-      { "home": "Wrexham", "away": "Middlesbrough", "date": "2026-11-04" },
-      { "home": "Cardiff City", "away": "West Ham", "date": "2026-11-04" },
-      { "home": "Bristol City", "away": "Wolves", "date": "2026-11-04" },
 	   { "home": "Derby County", "away": "Bolton", "date": "2026-11-06" },
       { "home": "Portsmouth", "away": "Stoke City", "date": "2026-11-07" },
       { "home": "Bristol City", "away": "Norwich City", "date": "2026-11-07" },
@@ -1130,7 +1127,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "Oxford Utd", "away": "Reading", "date": "2026-11-04" },
 	  { "home": "Wycombe", "away": "Huddersfield", "date": "2026-11-14" },
       { "home": "Peterborough", "away": "Oxford Utd", "date": "2026-11-14" },
       { "home": "Doncaster", "away": "Leyton Orient", "date": "2026-11-14" },
@@ -1650,8 +1646,6 @@ const leaguesData = {
         { rank: 16, team: "Dender", MP: 30, MW: 3, MD: 10, ML: 17, GF: 24, GA: 51, logo: "belgium/dender.png" }
     ],
     fixtures: [
-	   { "home": "Kortrijk", "away": "Mechelen", "date": "2026-11-04" },
-      { "home": "Standard", "away": "Beveren", "date": "2026-11-06" },
       { "home": "Westerlo", "away": "Charleroi", "date": "2026-11-07" },
       { "home": "OH Leuven", "away": "Mechelen", "date": "2026-11-07" },
       { "home": "Antwerp", "away": "Lommel", "date": "2026-11-07" },
@@ -1899,9 +1893,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Internacional", "away": "Coritiba", "date": "2026-11-04" },
-      { "home": "Flamengo", "away": "Grêmio", "date": "2026-11-04" },
-      { "home": "Athletico-PR", "away": "Vasco", "date": "2026-11-04" },
       { "home": "Botafogo", "away": "Atlético Mineiro", "date": "2026-11-05" },
       { "home": "São Paulo", "away": "Corinthians", "date": "2026-11-05" },
       { "home": "Palmeiras", "away": "Remo", "date": "2026-11-05" },
@@ -2130,8 +2121,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Millonarios", "away": "América de Cali", "date": "2026-11-04" },
-      { "home": "Boyacá Chicó FC", "away": "Internacional de Bogotá", "date": "2026-11-04" },
       { "home": "Junior", "away": "Cúcuta Deportivo", "date": "2026-11-05" },
       { "home": "Deportivo Pasto", "away": "Jaguares de Córdoba", "date": "2026-11-05" },
       { "home": "Once Caldas", "away": "Rionegro Águilas", "date": "2026-11-07" },
@@ -2219,7 +2208,6 @@ const leaguesData = {
       { "rank": 12, "team": "Western Sydney Wanderers FC", "MP": 26, "MW": 5, "MD": 6, "ML": 15, "GF": 27, "GA": 43, "logo": "australia/wsw.png" }
     ],
     "fixtures": [
-      { "home": "Sydney FC", "away": "Central Coast Mariners", "date": "2026-11-06" },
       { "home": "Auckland FC", "away": "Wellington Phoenix", "date": "2026-11-06" },
       { "home": "Melbourne City FC", "away": "Western Sydney Wanderers FC", "date": "2026-11-07" },
       { "home": "Perth Glory", "away": "Newcastle Jets", "date": "2026-11-07" },
