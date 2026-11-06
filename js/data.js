@@ -1784,7 +1784,7 @@ const leaguesData = {
    // ============================================================
     //  ARGENTINA
     // ============================================================
-
+/*
    "Argentine Liga Profesional": {
     "id": "argentine-primera-division",
     "logo": "argentina/primera.png",
@@ -1826,7 +1826,7 @@ const leaguesData = {
 
     ]
   },
-  /*
+  
     "Argentine Primera B Metropolitana": {
     "id": "argentine-primera-b-metropolitana",
     "logo": "argentina/primera-b.png",
@@ -1893,9 +1893,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Botafogo", "away": "Atlético Mineiro", "date": "2026-11-05" },
-      { "home": "São Paulo", "away": "Corinthians", "date": "2026-11-05" },
-      { "home": "Palmeiras", "away": "Remo", "date": "2026-11-05" },
       { "home": "Cruzeiro", "away": "Bahia", "date": "2026-11-06" },
       { "home": "Vitória", "away": "Fluminense", "date": "2026-11-07" }
 
@@ -2121,8 +2118,6 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Junior", "away": "Cúcuta Deportivo", "date": "2026-11-05" },
-      { "home": "Deportivo Pasto", "away": "Jaguares de Córdoba", "date": "2026-11-05" },
       { "home": "Once Caldas", "away": "Rionegro Águilas", "date": "2026-11-07" },
       { "home": "Tolima", "away": "Millonarios", "date": "2026-11-07" },
       { "home": "Atl. Nacional", "away": "Deportivo Pereira", "date": "2026-11-08" },
@@ -2229,6 +2224,56 @@ const leaguesData = {
       { "home": "Central Coast Mariners", "away": "Brisbane Roar", "date": "2026-12-12" },
       { "home": "Melbourne Victory", "away": "Newcastle Jets", "date": "2026-12-12" },
       { "home": "Western Sydney Wanderers FC", "away": "Wellington Phoenix", "date": "2026-12-13" }
+    ]
+  },
+  // ============================================================
+    //  NEW ZEALAND - NATIONAL LEAGUE
+    // ============================================================
+  
+  "NewZealand National League": {
+    "id": "new-zealand-national-league",
+    "logo": "newzealand/nationalleague.png",
+    "isBasketball": false,
+    "season": "2025-26",
+    "teams": [
+      { "rank": 1, "team": "Cashmere Technical", "MP": 6, "MW": 4, "MD": 1, "ML": 1, "GF": 21, "GA": 3, "logo": "newzealand/cashmere.png" },
+      { "rank": 2, "team": "Birkenhead", "MP": 5, "MW": 4, "MD": 0, "ML": 1, "GF": 11, "GA": 5, "logo": "newzealand/birkenhead.png" },
+      { "rank": 3, "team": "Auckland City", "MP": 5, "MW": 3, "MD": 2, "ML": 0, "GF": 12, "GA": 5, "logo": "newzealand/aucklandcity.png" },
+      { "rank": 4, "team": "Wellington Olympic", "MP": 5, "MW": 3, "MD": 1, "ML": 1, "GF": 12, "GA": 6, "logo": "newzealand/wellingtonolympic.png" },
+      { "rank": 5, "team": "Miramar", "MP": 6, "MW": 3, "MD": 1, "ML": 2, "GF": 11, "GA": 8, "logo": "newzealand/miramar.png" },
+      { "rank": 6, "team": "Auckland United", "MP": 6, "MW": 2, "MD": 2, "ML": 2, "GF": 13, "GA": 9, "logo": "newzealand/aucklandunited.png" },
+      { "rank": 7, "team": "Napier City", "MP": 5, "MW": 2, "MD": 1, "ML": 2, "GF": 7, "GA": 12, "logo": "newzealand/napiercity.png" },
+      { "rank": 8, "team": "Eastern Suburbs", "MP": 5, "MW": 1, "MD": 1, "ML": 3, "GF": 5, "GA": 13, "logo": "newzealand/easternsuburbs.png" },
+      { "rank": 9, "team": "Ferrymead Bays", "MP": 6, "MW": 1, "MD": 1, "ML": 4, "GF": 3, "GA": 11, "logo": "newzealand/ferrymeadbays.png" },
+      { "rank": 10, "team": "Wellington Phoenix 2", "MP": 5, "MW": 1, "MD": 1, "ML": 3, "GF": 5, "GA": 17, "logo": "newzealand/wellingtonphoenix2.png" },
+      { "rank": 11, "team": "Auckland FC 2", "MP": 6, "MW": 0, "MD": 1, "ML": 5, "GF": 8, "GA": 19, "logo": "newzealand/aucklandfc2.png" }
+    ],
+    "fixtures": [
+      { "home": "Auckland City", "away": "Birkenhead", "date": "2026-11-07" },
+      { "home": "Wellington Olympic", "away": "Auckland United", "date": "2026-11-07" },
+      { "home": "Ferrymead Bays", "away": "Wellington Phoenix 2", "date": "2026-11-07" },
+      { "home": "Auckland FC 2", "away": "Napier City", "date": "2026-11-08" },
+      { "home": "Eastern Suburbs", "away": "Cashmere Technical", "date": "2026-11-08" },
+      { "home": "Wellington Phoenix 2", "away": "Auckland City", "date": "2026-11-14" },
+      { "home": "Cashmere Technical", "away": "Wellington Olympic", "date": "2026-11-15" },
+      { "home": "Napier City", "away": "Ferrymead Bays", "date": "2026-11-15" },
+      { "home": "Auckland United", "away": "Miramar", "date": "2026-11-15" },
+      { "home": "Birkenhead", "away": "Eastern Suburbs", "date": "2026-11-15" },
+      { "home": "Auckland City", "away": "Napier City", "date": "2026-11-21" },
+      { "home": "Miramar", "away": "Cashmere Technical", "date": "2026-11-21" },
+      { "home": "Ferrymead Bays", "away": "Auckland FC 2", "date": "2026-11-21" },
+      { "home": "Wellington Olympic", "away": "Birkenhead", "date": "2026-11-21" },
+      { "home": "Eastern Suburbs", "away": "Wellington Phoenix 2", "date": "2026-11-22" },
+      { "home": "Wellington Phoenix 2", "away": "Wellington Olympic", "date": "2026-11-28" },
+      { "home": "Auckland FC 2", "away": "Auckland City", "date": "2026-11-29" },
+      { "home": "Cashmere Technical", "away": "Auckland United", "date": "2026-11-29" },
+      { "home": "Napier City", "away": "Eastern Suburbs", "date": "2026-11-29" },
+      { "home": "Birkenhead", "away": "Miramar", "date": "2026-11-29" },
+      { "home": "Auckland City", "away": "Ferrymead Bays", "date": "2026-12-06" },
+      { "home": "Auckland United", "away": "Birkenhead", "date": "2026-12-06" },
+      { "home": "Eastern Suburbs", "away": "Auckland FC 2", "date": "2026-12-06" },
+      { "home": "Miramar", "away": "Wellington Phoenix 2", "date": "2026-12-06" },
+      { "home": "Wellington Olympic", "away": "Napier City", "date": "2026-12-06" }
     ]
   },
 
@@ -2371,20 +2416,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Detroit Pistons", "away": "Philadelphia 76ers", "date": "2026-11-05" },
-      { "home": "Washington Wizards", "away": "Atlanta Hawks", "date": "2026-11-05" },
-      { "home": "Boston Celtics", "away": "Milwaukee Bucks", "date": "2026-11-05" },
-      { "home": "Brooklyn Nets", "away": "Charlotte Hornets", "date": "2026-11-05" },
-      { "home": "New York Knicks", "away": "Chicago Bulls", "date": "2026-11-05" },
-      { "home": "Memphis Grizzlies", "away": "Indiana Pacers", "date": "2026-11-05" },
-      { "home": "New Orleans Pelicans", "away": "Utah Jazz", "date": "2026-11-05" },
-      { "home": "Oklahoma City Thunder", "away": "Cleveland Cavaliers", "date": "2026-11-05" },
-      { "home": "Houston Rockets", "away": "Minnesota Timberwolves", "date": "2026-11-05" },
-      { "home": "Denver Nuggets", "away": "Toronto Raptors", "date": "2026-11-05" },
-      { "home": "Phoenix Suns", "away": "Portland Trail Blazers", "date": "2026-11-05" },
-      { "home": "San Antonio Spurs", "away": "Dallas Mavericks", "date": "2026-11-05" },
-      { "home": "Sacramento Kings", "away": "Los Angeles Lakers", "date": "2026-11-05" },
-      { "home": "Los Angeles Clippers", "away": "Miami Heat", "date": "2026-11-05" },
       { "home": "Phoenix Suns", "away": "Orlando Magic", "date": "2026-11-06" },
       { "home": "Golden State Warriors", "away": "Miami Heat", "date": "2026-11-06" },
       { "home": "Atlanta Hawks", "away": "Washington Wizards", "date": "2026-11-07" },

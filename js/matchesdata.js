@@ -392,6 +392,16 @@ const matchesData = {
   { "home": "Man Utd", "away": "Bournemouth", "home_score": 0, "away_score": 3, "date": "2026-10-25" },
   { "home": "Palace", "away": "Newcastle", "home_score": 0, "away_score": 2, "date": "2026-10-25" },
   { "home": "Sunderland", "away": "Leeds", "home_score": 0, "away_score": null, "date": "2026-10-25" },
+  { "home": "Chelsea", "away": "Man Utd", "home_score": 2, "away_score": 0, "date": "2026-10-31" },
+  { "home": "Bournemouth", "away": "Leeds", "home_score": 2, "away_score": 0, "date": "2026-10-31" },
+  { "home": "Coventry", "away": "Sunderland", "home_score": 3, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Man City", "away": "Brighton", "home_score": 0, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Brentford", "away": "Nottm Forest", "home_score": 2, "away_score": 0, "date": "2026-10-31" },
+  { "home": "Hull", "away": "Ipswich Town", "home_score": 2, "away_score": 2, "date": "2026-10-31" },
+  { "home": "Spurs", "away": "Palace", "home_score": 2, "away_score": 0, "date": "2026-10-31" },
+  { "home": "Aston Villa", "away": "Fulham", "home_score": 1, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Liverpool", "away": "Arsenal", "home_score": 0, "away_score": 1, "date": "2026-11-01" },
+  { "home": "Newcastle", "away": "Everton", "home_score": null, "away_score": null, "date": "2026-11-02" },
   
 ],
 
@@ -499,6 +509,14 @@ const matchesData = {
   { "home": "Real Sociedad", "away": "Levante", "home_score": 2, "away_score": 1, "date": "2026-10-25" },
   { "home": "Barcelona", "away": "Real Madrid", "home_score": 1, "away_score": 2, "date": "2026-10-25" },
   { "home": "Sevilla", "away": "Osasuna", "home_score": 2, "away_score": 0, "date": "2026-10-26" },
+   { "home": "Villarreal", "away": "Espanyol", "home_score": 0, "away_score": 1, "date": "2026-10-30" },
+  { "home": "Levante", "away": "Atlético", "home_score": 0, "away_score": 2, "date": "2026-10-31" },
+  { "home": "Rayo", "away": "Celta", "home_score": 3, "away_score": 0, "date": "2026-10-31" },
+  { "home": "Betis", "away": "Málaga", "home_score": 2, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Barcelona", "away": "Alavés", "home_score": 6, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Getafe", "away": "Sevilla", "home_score": 3, "away_score": 1, "date": "2026-11-01" },
+  { "home": "Racing Santander", "away": "Real Madrid", "home_score": 0, "away_score": 3, "date": "2026-11-01" },
+  { "home": "Elche", "away": "Valencia", "home_score": 0, "away_score": 1, "date": "2026-11-01" },
   
   
 ],
@@ -591,6 +609,13 @@ const matchesData = {
   { "home": "Sassuolo", "away": "Lazio", "home_score": 2, "away_score": 6, "date": "2026-10-27" },
   { "home": "Roma", "away": "Cagliari", "home_score": 4, "away_score": 2, "date": "2026-10-27" },
   { "home": "Torino", "away": "Como", "home_score": 1, "away_score": 3, "date": "2026-10-27" },
+  { "home": "Bologna", "away": "Monza", "home_score": 2, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Udinese", "away": "Roma", "home_score": 2, "away_score": 5, "date": "2026-10-31" },
+  { "home": "Milan", "away": "Inter", "home_score": 3, "away_score": 1, "date": "2026-10-31" },
+  { "home": "Como", "away": "Venezia", "home_score": 1, "away_score": 0, "date": "2026-11-01" },
+  { "home": "Frosinone", "away": "Torino", "home_score": 2, "away_score": 0, "date": "2026-11-01" },
+  { "home": "Lazio", "away": "Cagliari", "home_score": 2, "away_score": 1, "date": "2026-11-01" },
+  { "home": "Lecce", "away": "Genoa", "home_score": 1, "away_score": 2, "date": "2026-11-01" },
 ],
 
     // ============================================================
@@ -2591,7 +2616,42 @@ const matchesData = {
         { home: "Canberra Juventus", away: "Tuggeranong Utd", home_score: 5, away_score: 0, date: "2025-05-30" },
         { home: "O'Connor Knights", away: "Queanbeyan City", home_score: 0, away_score: 4, date: "2025-05-30" }
     ],
-
+	
+	// ============================================================
+    //  NEW ZEALAND NATIONAL LEAGUE
+    // ============================================================
+"New Zealand National League - Championship Group": [
+  { "home": "Birkenhead", "away": "Ferrymead Bays", "home_score": 2, "away_score": 0, "date": "2026-11-01" },
+  { "home": "Cashmere Technical", "away": "Auckland City", "home_score": 1, "away_score": 1, "date": "2026-11-01" },
+  { "home": "Auckland United", "away": "Eastern Suburbs", "home_score": 1, "away_score": 2, "date": "2026-10-31" },
+  { "home": "Miramar", "away": "Wellington Olympic", "home_score": 0, "away_score": 2, "date": "2026-10-31" },
+  { "home": "Wellington Phoenix 2", "away": "Auckland FC 2", "home_score": 3, "away_score": 2, "date": "2026-10-31" },
+  { "home": "Eastern Suburbs", "away": "Miramar", "home_score": 1, "away_score": 4, "date": "2026-10-25" },
+  { "home": "Napier City", "away": "Wellington Phoenix 2", "home_score": 3, "away_score": 1, "date": "2026-10-25" },
+  { "home": "Auckland FC 2", "away": "Birkenhead", "home_score": 1, "away_score": 6, "date": "2026-10-25" },
+  { "home": "Auckland City", "away": "Auckland United", "home_score": 3, "away_score": 0, "date": "2026-10-24" },
+  { "home": "Ferrymead Bays", "away": "Cashmere Technical", "home_score": 0, "away_score": 2, "date": "2026-10-23" },
+  { "home": "Auckland United", "away": "Ferrymead Bays", "home_score": 2, "away_score": 0, "date": "2026-10-18" },
+  { "home": "Birkenhead", "away": "Napier City", "home_score": 2, "away_score": 0, "date": "2026-10-18" },
+  { "home": "Cashmere Technical", "away": "Auckland FC 2", "home_score": 3, "away_score": 0, "date": "2026-10-18" },
+  { "home": "Wellington Olympic", "away": "Eastern Suburbs", "home_score": 4, "away_score": 0, "date": "2026-10-17" },
+  { "home": "Miramar", "away": "Auckland City", "home_score": 0, "away_score": 2, "date": "2026-10-17" },
+  { "home": "Napier City", "away": "Cashmere Technical", "home_score": 2, "away_score": 1, "date": "2026-10-11" },
+  { "home": "Auckland FC 2", "away": "Auckland United", "home_score": 2, "away_score": 2, "date": "2026-10-11" },
+  { "home": "Ferrymead Bays", "away": "Miramar", "home_score": 1, "away_score": 4, "date": "2026-10-10" },
+  { "home": "Auckland City", "away": "Wellington Olympic", "home_score": 2, "away_score": 2, "date": "2026-10-10" },
+  { "home": "Wellington Phoenix 2", "away": "Birkenhead", "home_score": 0, "away_score": 1, "date": "2026-10-10" },
+  { "home": "Cashmere Technical", "away": "Wellington Phoenix 2", "home_score": 10, "away_score": 0, "date": "2026-10-04" },
+  { "home": "Auckland United", "away": "Napier City", "home_score": 7, "away_score": 1, "date": "2026-10-04" },
+  { "home": "Eastern Suburbs", "away": "Auckland City", "home_score": 2, "away_score": 4, "date": "2026-10-03" },
+  { "home": "Miramar", "away": "Auckland FC 2", "home_score": 2, "away_score": 1, "date": "2026-10-03" },
+  { "home": "Wellington Olympic", "away": "Ferrymead Bays", "home_score": 1, "away_score": 2, "date": "2026-10-03" },
+  { "home": "Birkenhead", "away": "Cashmere Technical", "home_score": 0, "away_score": 4, "date": "2026-09-27" },
+  { "home": "Auckland FC 2", "away": "Wellington Olympic", "home_score": 2, "away_score": 3, "date": "2026-09-27" },
+  { "home": "Napier City", "away": "Miramar", "home_score": 1, "away_score": 1, "date": "2026-09-27" },
+  { "home": "Ferrymead Bays", "away": "Eastern Suburbs", "home_score": 0, "away_score": 0, "date": "2026-09-26" },
+  { "home": "Wellington Phoenix 2", "away": "Auckland United", "home_score": 1, "away_score": 1, "date": "2026-09-26" }
+],
     // ============================================================
     //  CHINESE SUPER LEAGUE
     // ============================================================
