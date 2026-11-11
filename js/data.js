@@ -781,14 +781,14 @@ const leaguesData = {
     //  PORTUGAL - PRIMEIRA LIGA
     // ============================================================
 
-    "Portuguese Primeira Liga": {
+   "Portuguese Primeira Liga": {
     "id": "portuguese-primeira-liga",
     "logo": "portugal/primeiraliga.png",
     "isBasketball": false,
     "season": "2025-26",
     "teams": [
       { "rank": 1, "team": "Porto", "MP": 34, "MW": 28, "MD": 4, "ML": 2, "GF": 66, "GA": 18, "logo": "portugal/porto.png" },
-      { "rank": 2, "team": "SCP", "MP": 34, "MW": 25, "MD": 7, "ML": 2, "GF": 89, "GA": 24, "logo": "portugal/scp.png" },
+      { "rank": 2, "team": "Sporting", "MP": 34, "MW": 25, "MD": 7, "ML": 2, "GF": 89, "GA": 24, "logo": "portugal/scp.png" },
       { "rank": 3, "team": "Benfica", "MP": 34, "MW": 23, "MD": 11, "ML": 0, "GF": 74, "GA": 25, "logo": "portugal/benfica.png" },
       { "rank": 4, "team": "Braga", "MP": 34, "MW": 16, "MD": 11, "ML": 7, "GF": 64, "GA": 36, "logo": "portugal/braga.png" },
       { "rank": 5, "team": "Famalicão", "MP": 34, "MW": 15, "MD": 11, "ML": 8, "GF": 42, "GA": 29, "logo": "portugal/famalicao.png" },
@@ -807,6 +807,51 @@ const leaguesData = {
       { "rank": 18, "team": "AVS", "MP": 34, "MW": 3, "MD": 12, "ML": 19, "GF": 27, "GA": 67, "logo": "portugal/avs.png" }
     ],
     "fixtures": [
+      { "home": "Arouca", "away": "Rio Ave", "date": "2026-11-28" },
+      { "home": "Moreirense", "away": "Santa Clara", "date": "2026-11-28" },
+      { "home": "Académico de Viseu", "away": "Alverca", "date": "2026-11-28" },
+      { "home": "Vitória SC", "away": "Estrela Amadora", "date": "2026-11-28" },
+      { "home": "Marítimo", "away": "Nacional", "date": "2026-11-29" },
+      { "home": "Gil Vicente", "away": "Estoril", "date": "2026-11-29" },
+      { "home": "Porto", "away": "Sporting", "date": "2026-11-29" },
+      { "home": "Casa Pia", "away": "Braga", "date": "2026-11-30" },
+      { "home": "Benfica", "away": "Famalicão", "date": "2026-11-30" },
+      { "home": "Nacional", "away": "Benfica", "date": "2026-12-05" },
+      { "home": "Santa Clara", "away": "Porto", "date": "2026-12-05" },
+      { "home": "Braga", "away": "Arouca", "date": "2026-12-05" },
+      { "home": "Sporting", "away": "Marítimo", "date": "2026-12-06" },
+      { "home": "Estrela Amadora", "away": "Gil Vicente", "date": "2026-12-06" },
+      { "home": "Rio Ave", "away": "Casa Pia", "date": "2026-12-06" },
+      { "home": "Estoril", "away": "Vitória SC", "date": "2026-12-06" },
+      { "home": "Famalicão", "away": "Académico de Viseu", "date": "2026-12-06" },
+      { "home": "Alverca", "away": "Moreirense", "date": "2026-12-07" },
+      { "home": "Estoril", "away": "Santa Clara", "date": "2026-12-12" },
+      { "home": "Marítimo", "away": "Rio Ave", "date": "2026-12-12" },
+      { "home": "Gil Vicente", "away": "Sporting", "date": "2026-12-12" },
+      { "home": "Académico de Viseu", "away": "Arouca", "date": "2026-12-13" },
+      { "home": "Moreirense", "away": "Famalicão", "date": "2026-12-13" },
+      { "home": "Casa Pia", "away": "Nacional", "date": "2026-12-13" },
+      { "home": "Vitória SC", "away": "Alverca", "date": "2026-12-13" },
+      { "home": "Porto", "away": "Estrela Amadora", "date": "2026-12-13" },
+      { "home": "Benfica", "away": "Braga", "date": "2026-12-14" },
+      { "home": "Sporting", "away": "Estoril", "date": "2026-12-20" },
+      { "home": "Nacional", "away": "Moreirense", "date": "2026-12-20" },
+      { "home": "Estrela Amadora", "away": "Marítimo", "date": "2026-12-20" },
+      { "home": "Arouca", "away": "Casa Pia", "date": "2026-12-20" },
+      { "home": "Famalicão", "away": "Porto", "date": "2026-12-20" },
+      { "home": "Braga", "away": "Académico de Viseu", "date": "2026-12-20" },
+      { "home": "Santa Clara", "away": "Vitória SC", "date": "2026-12-20" },
+      { "home": "Rio Ave", "away": "Benfica", "date": "2026-12-20" },
+      { "home": "Alverca", "away": "Gil Vicente", "date": "2026-12-20" },
+      { "home": "Benfica", "away": "Sporting", "date": "2026-12-27" },
+      { "home": "Vitória SC", "away": "Rio Ave", "date": "2026-12-27" },
+      { "home": "Casa Pia", "away": "Famalicão", "date": "2026-12-27" },
+      { "home": "Moreirense", "away": "Académico de Viseu", "date": "2026-12-27" },
+      { "home": "Estoril", "away": "Alverca", "date": "2026-12-27" },
+      { "home": "Gil Vicente", "away": "Arouca", "date": "2026-12-27" },
+      { "home": "Marítimo", "away": "Braga", "date": "2026-12-27" },
+      { "home": "Porto", "away": "Nacional", "date": "2026-12-27" },
+      { "home": "Santa Clara", "away": "Estrela Amadora", "date": "2026-12-27" }
     ]
   },
 
@@ -1200,7 +1245,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Sabadell", "away": "Real Sociedad B", "date": "2026-11-09" },
       { "home": "Leganes", "away": "Burgos", "date": "2026-11-13" },
       { "home": "Valladolid", "away": "Castellón", "date": "2026-11-14" },
       { "home": "Real Sociedad B", "away": "Sporting Gijón", "date": "2026-11-14" },
