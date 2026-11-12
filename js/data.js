@@ -1693,6 +1693,20 @@ const leaguesData = {
       { "rank": 30, "team": "Sporting KC", "MP": 33, "MW": 6, "MD": 5, "ML": 22, "GF": 39, "GA": 81, "logo": "usa/sportingkc.png" }
     ],
     "fixtures": [
+	{ "home": "Orlando City", "away": "Cincinnati", "date": "2026-11-20" },
+      { "home": "Seattle Sounders", "away": "Salt Lake", "date": "2026-11-20" },
+      { "home": "New England", "away": "Philadelphia", "date": "2026-11-21" },
+      { "home": "Dallas", "away": "Portland", "date": "2026-11-21" },
+      { "home": "Inter Miami", "away": "Columbus", "date": "2026-11-22" },
+      { "home": "Chicago", "away": "Charlotte", "date": "2026-11-23" },
+      { "home": "St. Louis", "away": "LAFC", "date": "2026-11-24" },
+      { "home": "San Jose", "away": "Houston Dynamo", "date": "2026-11-25" },
+      { "home": "Columbus", "away": "Inter Miami", "date": "2026-11-28" },
+      { "home": "Charlotte", "away": "Chicago", "date": "2026-11-28" },
+      { "home": "Houston Dynamo", "away": "San Jose", "date": "2026-11-28" },
+      { "home": "Philadelphia", "away": "New England", "date": "2026-11-28" },
+      { "home": "LAFC", "away": "St. Louis", "date": "2026-11-29" },
+      { "home": "Portland", "away": "Dallas", "date": "2026-11-29" }
     ]
   },
   
@@ -1972,8 +1986,16 @@ const leaguesData = {
       { "rank": 18, "team": "Atlante", "MP": 17, "MW": 3, "MD": 4, "ML": 10, "GF": 15, "GA": 30, "logo": "mexico/atlante.png" }
     ],
     "fixtures": [
-      { "home": "Querétaro", "away": "Puebla", "date": "2026-11-09" },
-      { "home": "León", "away": "Guadalajara", "date": "2026-11-09" }
+      { "home": "Querétaro", "away": "Monterrey", "date": "2026-11-15" },
+      { "home": "Puebla", "away": "San Luis", "date": "2026-11-21" },
+      { "home": "Juarez", "away": "Atlas", "date": "2026-11-21" },
+      { "home": "Club Tijuana", "away": "Atlante", "date": "2026-11-21" },
+      { "home": "Santos Laguna", "away": "León", "date": "2026-11-22" },
+      { "home": "Pachuca", "away": "Toluca", "date": "2026-11-22" },
+      { "home": "Pumas UNAM", "away": "Monterrey", "date": "2026-11-22" },
+      { "home": "Tigres UANL", "away": "América", "date": "2026-11-22" },
+      { "home": "Guadalajara", "away": "Cruz Azul", "date": "2026-11-23" },
+      { "home": "Querétaro", "away": "Necaxa", "date": "2026-11-23" }
     ]
   },
 	
@@ -2006,7 +2028,30 @@ const leaguesData = {
       { "rank": 16, "team": "Gualberto Villarroel San José", "MP": 19, "MW": 2, "MD": 8, "ML": 9, "GF": 19, "GA": 33, "logo": "bolivia/gualbertovillarroel.png" }
     ],
     "fixtures": [
-      { "home": "Aurora", "away": "Universitario de Vinto", "date": "2026-11-09" }
+     { "home": "Real Tomayapo", "away": "Nacional Potosí", "date": "2026-11-21" },
+      { "home": "Academia del Balompie Boliviano", "away": "Aurora", "date": "2026-11-21" },
+      { "home": "Oriente Petrolero", "away": "Independiente Petrolero", "date": "2026-11-22" },
+      { "home": "Real Potosí", "away": "Bolívar", "date": "2026-11-22" },
+      { "home": "The Strongest", "away": "Blooming", "date": "2026-11-22" },
+      { "home": "SA Bulo Bulo", "away": "Always Ready", "date": "2026-11-23" },
+      { "home": "Real Oruro", "away": "Guabirá", "date": "2026-11-23" },
+      { "home": "Universitario de Vinto", "away": "GV San José", "date": "2026-11-23" },
+      { "home": "Academia del Balompie Boliviano", "away": "Real Tomayapo", "date": "2026-11-27" },
+      { "home": "Independiente Petrolero", "away": "Real Oruro", "date": "2026-11-28" },
+      { "home": "GV San José", "away": "Real Potosí", "date": "2026-11-28" },
+      { "home": "Guabirá", "away": "Universitario de Vinto", "date": "2026-11-28" },
+      { "home": "Nacional Potosí", "away": "Oriente Petrolero", "date": "2026-11-29" },
+      { "home": "Aurora", "away": "The Strongest", "date": "2026-11-29" },
+      { "home": "Bolívar", "away": "Always Ready", "date": "2026-11-29" },
+      { "home": "Blooming", "away": "SA Bulo Bulo", "date": "2026-11-30" },
+      { "home": "Real Oruro", "away": "Academia del Balompie Boliviano", "date": "2026-12-01" },
+      { "home": "Real Tomayapo", "away": "Guabirá", "date": "2026-12-01" },
+      { "home": "Real Potosí", "away": "Universitario de Vinto", "date": "2026-12-02" },
+      { "home": "Always Ready", "away": "Blooming", "date": "2026-12-02" },
+      { "home": "The Strongest", "away": "Nacional Potosí", "date": "2026-12-02" },
+      { "home": "Oriente Petrolero", "away": "Bolívar", "date": "2026-12-03" },
+      { "home": "SA Bulo Bulo", "away": "GV San José", "date": "2026-12-03" },
+      { "home": "Aurora", "away": "Independiente Petrolero", "date": "2026-12-04" }
     ]
   },
 
@@ -2042,7 +2087,7 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      { "home": "Santa Fe", "away": "Deportivo Pasto", "date": "2026-11-10" }
+      
     ]
   },
 	  // ============================================================
@@ -2285,26 +2330,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Detroit Pistons", "away": "Los Angeles Lakers", "date": "2026-11-09" },
-      { "home": "Minnesota Timberwolves", "away": "Utah Jazz", "date": "2026-11-09" },
-      { "home": "Dallas Mavericks", "away": "Brooklyn Nets", "date": "2026-11-09" },
-      { "home": "Milwaukee Bucks", "away": "Boston Celtics", "date": "2026-11-09" },
-      { "home": "Los Angeles Clippers", "away": "New Orleans Pelicans", "date": "2026-11-09" },
-      { "home": "Sacramento Kings", "away": "Miami Heat", "date": "2026-11-09" },
-      { "home": "Atlanta Hawks", "away": "Los Angeles Lakers", "date": "2026-11-10" },
-      { "home": "Charlotte Hornets", "away": "Cleveland Cavaliers", "date": "2026-11-10" },
-      { "home": "Detroit Pistons", "away": "Washington Wizards", "date": "2026-11-10" },
-      { "home": "Toronto Raptors", "away": "Memphis Grizzlies", "date": "2026-11-10" },
-      { "home": "Dallas Mavericks", "away": "Indiana Pacers", "date": "2026-11-10" },
-      { "home": "Houston Rockets", "away": "Denver Nuggets", "date": "2026-11-10" },
-      { "home": "Phoenix Suns", "away": "San Antonio Spurs", "date": "2026-11-10" },
-      { "home": "Golden State Warriors", "away": "New Orleans Pelicans", "date": "2026-11-10" },
-      { "home": "New York Knicks", "away": "Milwaukee Bucks", "date": "2026-11-11" },
-      { "home": "Philadelphia 76ers", "away": "Boston Celtics", "date": "2026-11-11" },
-      { "home": "Phoenix Suns", "away": "Los Angeles Clippers", "date": "2026-11-11" },
-      { "home": "Utah Jazz", "away": "Miami Heat", "date": "2026-11-11" },
-      { "home": "Sacramento Kings", "away": "Orlando Magic", "date": "2026-11-11" },
-      { "home": "Portland Trail Blazers", "away": "Oklahoma City Thunder", "date": "2026-11-11" },
       { "home": "Indiana Pacers", "away": "Washington Wizards", "date": "2026-11-12" },
       { "home": "New York Knicks", "away": "Cleveland Cavaliers", "date": "2026-11-12" },
       { "home": "Toronto Raptors", "away": "Boston Celtics", "date": "2026-11-12" },
