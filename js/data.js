@@ -2330,16 +2330,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Indiana Pacers", "away": "Washington Wizards", "date": "2026-11-12" },
-      { "home": "New York Knicks", "away": "Cleveland Cavaliers", "date": "2026-11-12" },
-      { "home": "Toronto Raptors", "away": "Boston Celtics", "date": "2026-11-12" },
-      { "home": "Chicago Bulls", "away": "San Antonio Spurs", "date": "2026-11-12" },
-      { "home": "Memphis Grizzlies", "away": "Denver Nuggets", "date": "2026-11-12" },
-      { "home": "Milwaukee Bucks", "away": "Los Angeles Lakers", "date": "2026-11-12" },
-      { "home": "New Orleans Pelicans", "away": "Brooklyn Nets", "date": "2026-11-12" },
-      { "home": "Utah Jazz", "away": "Orlando Magic", "date": "2026-11-12" },
-      { "home": "Houston Rockets", "away": "Golden State Warriors", "date": "2026-11-12" },
-      { "home": "Portland Trail Blazers", "away": "Oklahoma City Thunder", "date": "2026-11-12" },
       { "home": "Philadelphia 76ers", "away": "Toronto Raptors", "date": "2026-11-13" },
       { "home": "Washington Wizards", "away": "Detroit Pistons", "date": "2026-11-13" },
       { "home": "Minnesota Timberwolves", "away": "Dallas Mavericks", "date": "2026-11-13" },
