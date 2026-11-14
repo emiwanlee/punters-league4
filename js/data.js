@@ -2330,10 +2330,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Philadelphia 76ers", "away": "Toronto Raptors", "date": "2026-11-13" },
-      { "home": "Washington Wizards", "away": "Detroit Pistons", "date": "2026-11-13" },
-      { "home": "Minnesota Timberwolves", "away": "Dallas Mavericks", "date": "2026-11-13" },
-      { "home": "Phoenix Suns", "away": "Charlotte Hornets", "date": "2026-11-13" },
       { "home": "Indiana Pacers", "away": "New York Knicks", "date": "2026-11-14" },
       { "home": "Orlando Magic", "away": "Milwaukee Bucks", "date": "2026-11-14" },
       { "home": "Chicago Bulls", "away": "Atlanta Hawks", "date": "2026-11-14" },
