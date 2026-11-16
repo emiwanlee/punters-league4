@@ -1264,11 +1264,18 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-      { "home": "Tenerife", "away": "Ceuta", "date": "2026-11-15" },
-      { "home": "Granada", "away": "Las Palmas", "date": "2026-11-15" },
-      { "home": "Eibar", "away": "Cádiz", "date": "2026-11-15" },
-      { "home": "Eldense", "away": "Sabadell", "date": "2026-11-15" },
-      { "home": "Albacete", "away": "Celta de Vigo II", "date": "2026-11-16" }
+       { "home": "Albacete", "away": "Celta de Vigo", "date": "2026-11-16" },
+      { "home": "FC Andorra", "away": "Leganes", "date": "2026-11-20" },
+      { "home": "Sabadell", "away": "Granada", "date": "2026-11-21" },
+      { "home": "Real Sociedad B", "away": "Cádiz", "date": "2026-11-21" },
+      { "home": "Castellón", "away": "Eldense", "date": "2026-11-21" },
+      { "home": "Tenerife", "away": "Mallorca", "date": "2026-11-21" },
+      { "home": "Córdoba", "away": "Real Oviedo", "date": "2026-11-22" },
+      { "home": "Sporting Gijón", "away": "Las Palmas", "date": "2026-11-22" },
+      { "home": "Girona", "away": "Eibar", "date": "2026-11-22" },
+      { "home": "Celta de Vigo", "away": "Valladolid", "date": "2026-11-22" },
+      { "home": "Burgos", "away": "Albacete", "date": "2026-11-22" },
+      { "home": "AD Ceuta FC", "away": "Almería", "date": "2026-11-23" }
     ]
   },
 // ============================================================
@@ -1479,7 +1486,6 @@ const leaguesData = {
       { "rank": 20, "team": "Jong Ajax", "MP": 38, "MW": 9, "MD": 8, "ML": 21, "GF": 50, "GA": 73, "logo": "netherlands/jongajax.png" }
     ],
     "fixtures": [
-      { "home": "MVV", "away": "Vitesse", "date": "2026-11-15" },
       { "home": "FC Volendam", "away": "Jong Ajax", "date": "2026-11-20" },
       { "home": "Almere", "away": "NAC", "date": "2026-11-20" },
       { "home": "TOP Oss", "away": "Roda", "date": "2026-11-20" },
@@ -1828,7 +1834,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-{ "home": "Chapecoense", "away": "Vasco", "date": "2026-11-15" },
       { "home": "Coritiba", "away": "Santos", "date": "2026-11-18" },
       { "home": "Remo", "away": "Chapecoense", "date": "2026-11-19" },
       { "home": "Flamengo", "away": "Athletico-PR", "date": "2026-11-19" },
@@ -1991,7 +1996,6 @@ const leaguesData = {
       { "rank": 18, "team": "Atlante", "MP": 17, "MW": 3, "MD": 4, "ML": 10, "GF": 15, "GA": 30, "logo": "mexico/atlante.png" }
     ],
     "fixtures": [
-      { "home": "Querétaro", "away": "Monterrey", "date": "2026-11-15" },
       { "home": "Puebla", "away": "San Luis", "date": "2026-11-21" },
       { "home": "Juarez", "away": "Atlas", "date": "2026-11-21" },
       { "home": "Club Tijuana", "away": "Atlante", "date": "2026-11-21" },
@@ -2092,7 +2096,10 @@ const leaguesData = {
       { "rank": 20, "team": "Llaneros FC", "MP": 19, "MW": 2, "MD": 5, "ML": 12, "GF": 12, "GA": 32, "logo": "colombia/llaneros.png" }
     ],
     "fixtures": [
-      
+      { "home": "Atlético Bucaramanga", "away": "América de Cali", "date": "2026-11-21" },
+      { "home": "Independiente Medellín", "away": "Santa Fe", "date": "2026-11-21" },
+      { "home": "Deportivo Cali", "away": "Millonarios", "date": "2026-11-22" },
+      { "home": "Once Caldas", "away": "Atl. Nacional", "date": "2026-11-22" }
     ]
   },
 	  // ============================================================
@@ -2190,10 +2197,6 @@ const leaguesData = {
       { "rank": 11, "team": "Auckland FC 2", "MP": 6, "MW": 0, "MD": 1, "ML": 5, "GF": 8, "GA": 19, "logo": "newzealand/aucklandfc2.png" }
     ],
     "fixtures": [
-      { "home": "Cashmere Technical", "away": "Wellington Olympic", "date": "2026-11-15" },
-      { "home": "Napier City", "away": "Ferrymead Bays", "date": "2026-11-15" },
-      { "home": "Auckland United", "away": "Miramar", "date": "2026-11-15" },
-      { "home": "Birkenhead", "away": "Eastern Suburbs", "date": "2026-11-15" },
       { "home": "Auckland City", "away": "Napier City", "date": "2026-11-21" },
       { "home": "Miramar", "away": "Cashmere Technical", "date": "2026-11-21" },
       { "home": "Ferrymead Bays", "away": "Auckland FC 2", "date": "2026-11-21" },
@@ -2334,15 +2337,6 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "New Orleans Pelicans", "away": "Denver Nuggets", "date": "2026-11-15" },
-      { "home": "Cleveland Cavaliers", "away": "Dallas Mavericks", "date": "2026-11-15" },
-      { "home": "Memphis Grizzlies", "away": "Brooklyn Nets", "date": "2026-11-15" },
-      { "home": "Miami Heat", "away": "Detroit Pistons", "date": "2026-11-15" },
-      { "home": "Minnesota Timberwolves", "away": "Chicago Bulls", "date": "2026-11-15" },
-      { "home": "Philadelphia 76ers", "away": "Indiana Pacers", "date": "2026-11-15" },
-      { "home": "Phoenix Suns", "away": "Los Angeles Lakers", "date": "2026-11-15" },
-      { "home": "Los Angeles Clippers", "away": "Charlotte Hornets", "date": "2026-11-15" },
-      { "home": "Utah Jazz", "away": "San Antonio Spurs", "date": "2026-11-15" },
       { "home": "Boston Celtics", "away": "Dallas Mavericks", "date": "2026-11-16" },
       { "home": "Toronto Raptors", "away": "New York Knicks", "date": "2026-11-16" },
       { "home": "Washington Wizards", "away": "Houston Rockets", "date": "2026-11-16" },
