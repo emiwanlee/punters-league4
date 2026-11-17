@@ -1264,7 +1264,6 @@ const leaguesData = {
       { "rank": 22, "team": "Celta de Vigo II", "MP": 42, "MW": 7, "MD": 13, "ML": 22, "GF": 30, "GA": 58, "logo": "spain/celtavigoii.png" }
     ],
     "fixtures": [
-       { "home": "Albacete", "away": "Celta de Vigo", "date": "2026-11-16" },
       { "home": "FC Andorra", "away": "Leganes", "date": "2026-11-20" },
       { "home": "Sabadell", "away": "Granada", "date": "2026-11-21" },
       { "home": "Real Sociedad B", "away": "Cádiz", "date": "2026-11-21" },
@@ -2337,12 +2336,8 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
-      { "home": "Boston Celtics", "away": "Dallas Mavericks", "date": "2026-11-16" },
-      { "home": "Toronto Raptors", "away": "New York Knicks", "date": "2026-11-16" },
-      { "home": "Washington Wizards", "away": "Houston Rockets", "date": "2026-11-16" },
-      { "home": "Milwaukee Bucks", "away": "Atlanta Hawks", "date": "2026-11-16" },
-      { "home": "Sacramento Kings", "away": "Oklahoma City Thunder", "date": "2026-11-16" }
-    ]
+  
+   ]
   },
 
 };
