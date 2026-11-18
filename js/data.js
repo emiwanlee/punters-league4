@@ -1833,7 +1833,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Coritiba", "away": "Santos", "date": "2026-11-18" },
       { "home": "Remo", "away": "Chapecoense", "date": "2026-11-19" },
       { "home": "Flamengo", "away": "Athletico-PR", "date": "2026-11-19" },
       { "home": "Cruzeiro", "away": "Palmeiras", "date": "2026-11-19" },
@@ -2336,6 +2335,18 @@ const leaguesData = {
       { "rank": 30, "team": "Utah Jazz", "MP": 82, "MW": 22, "MD": 0, "ML": 60, "GF": 0, "GA": 0, "logo": "usa/jazz.png" }
     ],
     "fixtures": [
+	{ "home": "Houston Rockets", "away": "Indiana Pacers", "date": "2026-11-19" },
+      { "home": "Philadelphia 76ers", "away": "Orlando Magic", "date": "2026-11-19" },
+      { "home": "Milwaukee Bucks", "away": "Miami Heat", "date": "2026-11-19" },
+      { "home": "Memphis Grizzlies", "away": "Cleveland Cavaliers", "date": "2026-11-19" },
+      { "home": "Chicago Bulls", "away": "Brooklyn Nets", "date": "2026-11-19" },
+      { "home": "Washington Wizards", "away": "Toronto Raptors", "date": "2026-11-19" },
+      { "home": "Golden State Warriors", "away": "Dallas Mavericks", "date": "2026-11-19" },
+      { "home": "Atlanta Hawks", "away": "Oklahoma City Thunder", "date": "2026-11-19" },
+      { "home": "Detroit Pistons", "away": "New Orleans Pelicans", "date": "2026-11-19" },
+      { "home": "Boston Celtics", "away": "Denver Nuggets", "date": "2026-11-19" },
+      { "home": "Phoenix Suns", "away": "Sacramento Kings", "date": "2026-11-19" },
+      { "home": "Utah Jazz", "away": "Los Angeles Lakers", "date": "2026-11-19" }
   
    ]
   },
