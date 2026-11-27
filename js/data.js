@@ -1023,7 +1023,6 @@ const leaguesData = {
       { "rank": 24, "team": "Doncaster", "MP": 46, "MW": 8, "MD": 12, "ML": 26, "GF": 38, "GA": 73, "logo": "england/doncaster.png" }
     ],
     "fixtures": [
-      { "home": "Doncaster", "away": "Huddersfield", "date": "2026-11-26" },
       { "home": "Peterborough", "away": "Cambridge United", "date": "2026-11-28" },
       { "home": "MK Dons", "away": "Notts County", "date": "2026-11-28" },
       { "home": "Bromley", "away": "Burton", "date": "2026-11-28" },
@@ -1787,7 +1786,6 @@ const leaguesData = {
       { "rank": 20, "team": "Chapecoense", "MP": 26, "MW": 3, "MD": 8, "ML": 15, "GF": 28, "GA": 52, "logo": "brazil/chapecoense.png" }
     ],
     "fixtures": [
-      { "home": "Atlético Mineiro", "away": "Corinthians", "date": "2026-11-26" },
       { "home": "Botafogo", "away": "Bahia", "date": "2026-11-29" },
       { "home": "São Paulo", "away": "Remo", "date": "2026-11-29" },
       { "home": "Fluminense", "away": "Cruzeiro", "date": "2026-11-29" },
